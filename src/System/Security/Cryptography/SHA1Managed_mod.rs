@@ -51,7 +51,7 @@ impl crate::System::Security::Cryptography::SHA1Managed {
         ibStart: i32,
         cbSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -63,12 +63,13 @@ impl crate::System::Security::Cryptography::SHA1Managed {
             >("HashCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashCore", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "HashCore", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rgb, ibStart, cbSize))
+            method.invoke_unchecked(self, (rgb, ibStart, cbSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +78,7 @@ impl crate::System::Security::Cryptography::SHA1Managed {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -85,44 +86,47 @@ impl crate::System::Security::Cryptography::SHA1Managed {
             >("HashFinal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashFinal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "HashFinal", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitializeState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "InitializeState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,7 +140,7 @@ impl crate::System::Security::Cryptography::SHA1Managed {
     pub fn SHAExpand(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -144,12 +148,13 @@ impl crate::System::Security::Cryptography::SHA1Managed {
             >("SHAExpand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SHAExpand", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "SHAExpand", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x))
+            method.invoke_unchecked((), (x))?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +163,7 @@ impl crate::System::Security::Cryptography::SHA1Managed {
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -170,12 +175,13 @@ impl crate::System::Security::Cryptography::SHA1Managed {
             >("SHATransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SHATransform", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "SHATransform", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (expandedBuffer, state, block))
+            method.invoke_unchecked((), (expandedBuffer, state, block))?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,7 +190,7 @@ impl crate::System::Security::Cryptography::SHA1Managed {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -192,13 +198,14 @@ impl crate::System::Security::Cryptography::SHA1Managed {
             >("_EndHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "_EndHash", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "_EndHash", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _HashData(
@@ -207,7 +214,7 @@ impl crate::System::Security::Cryptography::SHA1Managed {
         ibStart: i32,
         cbSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -219,28 +226,30 @@ impl crate::System::Security::Cryptography::SHA1Managed {
             >("_HashData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "_HashData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), "_HashData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (partIn, ibStart, cbSize))
+            method.invoke_unchecked(self, (partIn, ibStart, cbSize))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::SHA1Managed as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::SHA1Managed as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

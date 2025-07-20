@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
         command: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>),
                 quest_hook::libil2cpp::Void,
@@ -78,12 +78,13 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("CheckCommand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckCommand", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckCommand", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (command))
+            method.invoke_unchecked(self, (command))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +94,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
@@ -101,12 +102,14 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("CommandNotFoundMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CommandNotFoundMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "CommandNotFoundMessage",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = unsafe {
-            method.invoke_unchecked(self, (command))
+            method.invoke_unchecked(self, (command))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +117,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
         message: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::DebugConsoleController_ConsoleMessage),
                 quest_hook::libil2cpp::Void,
@@ -122,28 +125,30 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("DisplayMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisplayMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "DisplayMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message))
+            method.invoke_unchecked(self, (message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteCommands(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ExecuteCommands")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExecuteCommands", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "ExecuteCommands", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,7 +157,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -160,13 +165,15 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("ExecuteCommandsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExecuteCommandsAsync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "ExecuteCommandsAsync",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FillDictOfCommands(
@@ -177,7 +184,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -191,12 +198,13 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("FillDictOfCommands")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillDictOfCommands", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "FillDictOfCommands", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (commandInstances))
+            method.invoke_unchecked(self, (commandInstances))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +217,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -223,15 +231,17 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("GetAllConsoleCommandInstances")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllConsoleCommandInstances", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetAllConsoleCommandInstances", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCommand(
@@ -240,7 +250,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
@@ -248,13 +258,14 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("GetCommand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCommand", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCommand", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConsoleCommandBase,
-        > = unsafe { method.invoke_unchecked(self, (commandName)) };
+        > = unsafe { method.invoke_unchecked(self, (commandName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCommands(
@@ -267,7 +278,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -282,8 +293,9 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("GetCommands")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCommands", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCommands", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -291,22 +303,23 @@ impl crate::GlobalNamespace::DebugConsoleController {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,7 +327,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 bool,
@@ -322,11 +335,12 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("IsCommandClass")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCommandClass", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCommandClass", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -340,7 +354,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -348,12 +362,13 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("QueueNewInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueueNewInput", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "QueueNewInput", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (input))
+            method.invoke_unchecked(self, (input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -363,7 +378,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -371,28 +386,31 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("StripExtraWhitespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StripExtraWhitespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "StripExtraWhitespace",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (commandText)) };
+        > = unsafe { method.invoke_unchecked(self, (commandText))? };
         Ok(__cordl_ret.into())
     }
     pub fn Tick(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Tick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Tick", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "Tick", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +425,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -422,44 +440,47 @@ impl crate::GlobalNamespace::DebugConsoleController {
             >("TryExecuteCommand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryExecuteCommand", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "TryExecuteCommand", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, (commandText, messages)) };
+        > = unsafe { method.invoke_unchecked(self, (commandText, messages))? };
         Ok(__cordl_ret.into())
     }
     pub fn _Initialize_b__8_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("<Initialize>b__8_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<Initialize>b__8_0", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), "<Initialize>b__8_0", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -611,7 +632,7 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController_ConsoleMessage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -619,13 +640,14 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController_ConsoleMessage as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -633,7 +655,7 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: crate::UnityEngine::LogType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController_ConsoleMessage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -644,12 +666,13 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController_ConsoleMessage as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, _cordl_type))
+            method.invoke_unchecked(self, (message, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -659,7 +682,7 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DebugConsoleController_ConsoleMessage as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
@@ -670,12 +693,13 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
             >("op_Addition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Addition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DebugConsoleController_ConsoleMessage as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Addition", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = unsafe {
-            method.invoke_unchecked((), (a, b))
+            method.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }

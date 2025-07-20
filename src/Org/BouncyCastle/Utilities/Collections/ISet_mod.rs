@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -51,12 +51,13 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "Add", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (o))
+            method.invoke_unchecked(self, (o))?
         };
         Ok(__cordl_ret.into())
     }
@@ -64,7 +65,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>),
                 quest_hook::libil2cpp::Void,
@@ -72,28 +73,30 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             >("AddAll")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAll", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "AddAll", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e))
+            method.invoke_unchecked(self, (e))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "Clear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +104,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -109,18 +112,19 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -128,12 +132,13 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             >("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "Remove", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (o))
+            method.invoke_unchecked(self, (o))?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +146,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>),
                 quest_hook::libil2cpp::Void,
@@ -149,12 +154,13 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
             >("RemoveAll")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveAll", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveAll", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e))
+            method.invoke_unchecked(self, (e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,39 +170,42 @@ impl crate::Org::BouncyCastle::Utilities::Collections::ISet {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsEmpty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsEmpty", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsFixedSize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsFixedSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsFixedSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsFixedSize", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Collections::ISet as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsReadOnly")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsReadOnly", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Collections::ISet as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsReadOnly", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

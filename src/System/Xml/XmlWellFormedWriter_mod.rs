@@ -61,7 +61,7 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -73,12 +73,14 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, index, count))
+            method.invoke_unchecked(self, (buffer, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +152,7 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
         _cordl_type: crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
@@ -161,28 +163,30 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
             >("Set")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Set", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item as
+                    quest_hook::libil2cpp::Type > ::class(), "Set", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, data))
+            method.invoke_unchecked(self, (_cordl_type, data))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,7 +417,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -425,12 +429,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("AddAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAttribute", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "AddAttribute", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, localName, namespaceName))
+            method.invoke_unchecked(self, (prefix, localName, namespaceName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -440,7 +445,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         kind: crate::System::Xml::XmlWellFormedWriter_NamespaceKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -452,12 +457,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("AddNamespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddNamespace", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "AddNamespace", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, ns, kind))
+            method.invoke_unchecked(self, (prefix, ns, kind))?
         };
         Ok(__cordl_ret.into())
     }
@@ -465,7 +471,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         attributeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -473,12 +479,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("AddToAttrHashTable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddToAttrHashTable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "AddToAttrHashTable", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (attributeIndex))
+            method.invoke_unchecked(self, (attributeIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -486,7 +493,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         namespaceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -494,12 +501,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("AddToNamespaceHashtable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddToNamespaceHashtable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "AddToNamespaceHashtable",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (namespaceIndex))
+            method.invoke_unchecked(self, (namespaceIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -507,7 +516,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         token: crate::System::Xml::XmlWellFormedWriter_Token,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Xml::XmlWellFormedWriter_Token),
                 quest_hook::libil2cpp::Void,
@@ -515,12 +524,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("AdvanceState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AdvanceState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "AdvanceState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (token))
+            method.invoke_unchecked(self, (token))?
         };
         Ok(__cordl_ret.into())
     }
@@ -528,7 +538,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         ncname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -536,28 +546,30 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("CheckNCName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckNCName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckNCName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ncname))
+            method.invoke_unchecked(self, (ncname))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Close", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "Close", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -567,7 +579,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -578,28 +590,30 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("DupAttrException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DupAttrException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "DupAttrException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlException> = unsafe {
-            method.invoke_unchecked((), (prefix, localName))
+            method.invoke_unchecked((), (prefix, localName))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Flush(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Flush", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "Flush", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -608,7 +622,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -616,13 +630,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("GeneratePrefix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GeneratePrefix", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "GeneratePrefix", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStateName(
@@ -630,7 +645,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Xml::XmlWellFormedWriter_State),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -638,13 +653,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("GetStateName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStateName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStateName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (state)) };
+        > = unsafe { method.invoke_unchecked((), (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvalidCharsException(
@@ -653,7 +669,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -661,12 +677,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("InvalidCharsException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvalidCharsException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "InvalidCharsException",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (name, badCharIndex))
+            method.invoke_unchecked((), (name, badCharIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -676,7 +694,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -684,13 +702,15 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("LookupLocalNamespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LookupLocalNamespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "LookupLocalNamespace",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (prefix)) };
+        > = unsafe { method.invoke_unchecked(self, (prefix))? };
         Ok(__cordl_ret.into())
     }
     pub fn LookupNamespace(
@@ -699,7 +719,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -707,20 +727,21 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("LookupNamespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LookupNamespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "LookupNamespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (prefix)) };
+        > = unsafe { method.invoke_unchecked(self, (prefix))? };
         Ok(__cordl_ret.into())
     }
     pub fn LookupNamespaceIndex(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -728,11 +749,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("LookupNamespaceIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LookupNamespaceIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "LookupNamespaceIndex",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (prefix)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (prefix))? };
         Ok(__cordl_ret.into())
     }
     pub fn LookupPrefix(
@@ -741,7 +764,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -749,13 +772,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("LookupPrefix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LookupPrefix", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "LookupPrefix", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (ns)) };
+        > = unsafe { method.invoke_unchecked(self, (ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -773,7 +797,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         indexFrom: i32,
         indexTo: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -781,12 +805,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("PopNamespaces")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PopNamespaces", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "PopNamespaces", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (indexFrom, indexTo))
+            method.invoke_unchecked(self, (indexFrom, indexTo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -795,7 +820,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -806,11 +831,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("PushNamespaceExplicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PushNamespaceExplicit", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "PushNamespaceExplicit",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (prefix, ns)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (prefix, ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn PushNamespaceImplicit(
@@ -818,7 +845,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -829,12 +856,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("PushNamespaceImplicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PushNamespaceImplicit", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "PushNamespaceImplicit",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, ns))
+            method.invoke_unchecked(self, (prefix, ns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -842,7 +871,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         special: crate::System::Xml::XmlWellFormedWriter_SpecialAttribute,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Xml::XmlWellFormedWriter_SpecialAttribute),
                 quest_hook::libil2cpp::Void,
@@ -850,19 +879,21 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("SetSpecialAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSpecialAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSpecialAttribute",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (special))
+            method.invoke_unchecked(self, (special))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StartElementContent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -870,28 +901,31 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("StartElementContent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartElementContent", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "StartElementContent",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StartFragment(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartFragment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartFragment", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "StartFragment", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -900,7 +934,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         token: crate::System::Xml::XmlWellFormedWriter_Token,
         currentState: crate::System::Xml::XmlWellFormedWriter_State,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::XmlWellFormedWriter_Token,
@@ -911,12 +945,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("ThrowInvalidStateTransition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowInvalidStateTransition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ThrowInvalidStateTransition", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (token, currentState))
+            method.invoke_unchecked(self, (token, currentState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -926,7 +962,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -938,12 +974,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteBase64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteBase64", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteBase64", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, index, count))
+            method.invoke_unchecked(self, (buffer, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -953,7 +990,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -965,12 +1002,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteBinHex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteBinHex", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteBinHex", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, index, count))
+            method.invoke_unchecked(self, (buffer, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -978,7 +1016,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -986,12 +1024,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteCData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteCData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteCData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (text))
+            method.invoke_unchecked(self, (text))?
         };
         Ok(__cordl_ret.into())
     }
@@ -999,7 +1038,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         ch: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (char),
                 quest_hook::libil2cpp::Void,
@@ -1007,12 +1046,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteCharEntity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteCharEntity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteCharEntity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ch))
+            method.invoke_unchecked(self, (ch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1022,7 +1062,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -1034,12 +1074,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteChars")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteChars", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteChars", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, index, count))
+            method.invoke_unchecked(self, (buffer, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1047,7 +1088,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1055,12 +1096,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteComment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteComment", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteComment", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (text))
+            method.invoke_unchecked(self, (text))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1071,7 +1113,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         sysid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         subset: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1084,60 +1126,64 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteDocType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteDocType", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteDocType", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, pubid, sysid, subset))
+            method.invoke_unchecked(self, (name, pubid, sysid, subset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WriteEndAttribute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("WriteEndAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEndAttribute", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEndAttribute", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WriteEndDocument(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("WriteEndDocument")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEndDocument", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEndDocument", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WriteEndElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("WriteEndElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEndElement", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEndElement", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1145,7 +1191,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1153,19 +1199,20 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteEntityRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEntityRef", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEntityRef", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WriteFullEndElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -1173,12 +1220,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteFullEndElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteFullEndElement", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteFullEndElement",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1187,7 +1236,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1198,12 +1247,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteProcessingInstruction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteProcessingInstruction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteProcessingInstruction", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, text))
+            method.invoke_unchecked(self, (name, text))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1213,7 +1264,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -1225,12 +1276,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteRaw", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteRaw", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, index, count))
+            method.invoke_unchecked(self, (buffer, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1238,7 +1290,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1246,12 +1298,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteRaw", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteRaw", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))
+            method.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1261,7 +1314,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1273,12 +1326,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteStartAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteStartAttribute", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteStartAttribute",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, localName, namespaceName))
+            method.invoke_unchecked(self, (prefix, localName, namespaceName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1286,7 +1341,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         standalone: crate::System::Xml::XmlStandalone,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Xml::XmlStandalone),
                 quest_hook::libil2cpp::Void,
@@ -1294,28 +1349,31 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteStartDocumentImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteStartDocumentImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteStartDocumentImpl",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (standalone))
+            method.invoke_unchecked(self, (standalone))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WriteStartDocument_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("WriteStartDocument")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteStartDocument", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteStartDocument", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1323,7 +1381,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         standalone: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1331,12 +1389,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteStartDocument")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteStartDocument", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteStartDocument", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (standalone))
+            method.invoke_unchecked(self, (standalone))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1346,7 +1405,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1358,12 +1417,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteStartElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteStartElement", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteStartElement", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, localName, ns))
+            method.invoke_unchecked(self, (prefix, localName, ns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1371,7 +1431,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1379,12 +1439,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (text))
+            method.invoke_unchecked(self, (text))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1393,7 +1454,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         lowChar: char,
         highChar: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (char, char),
                 quest_hook::libil2cpp::Void,
@@ -1401,12 +1462,14 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteSurrogateCharEntity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteSurrogateCharEntity", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteSurrogateCharEntity",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lowChar, highChar))
+            method.invoke_unchecked(self, (lowChar, highChar))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1414,7 +1477,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1422,12 +1485,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1435,7 +1499,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         &mut self,
         ws: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1443,12 +1507,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("WriteWhitespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteWhitespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteWhitespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ws))
+            method.invoke_unchecked(self, (ws))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1457,7 +1522,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -1468,37 +1533,41 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer, settings))
+            method.invoke_unchecked(self, (writer, settings))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_InBase64(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_InBase64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_InBase64", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_InBase64", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsClosedOrErrorState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsClosedOrErrorState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsClosedOrErrorState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsClosedOrErrorState",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RawWriter(
@@ -1506,7 +1575,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
@@ -1514,40 +1583,43 @@ impl crate::System::Xml::XmlWellFormedWriter {
             >("get_RawWriter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RawWriter", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_RawWriter", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_SaveAttrValue(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_SaveAttrValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SaveAttrValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_SaveAttrValue", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_WriteState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::WriteState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::Xml::WriteState, 0usize>("get_WriteState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_WriteState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_WriteState", 0usize
                 )
             });
         let __cordl_ret: crate::System::Xml::WriteState = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1673,7 +1745,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttrName as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1685,12 +1757,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
             >("IsDuplicate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDuplicate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttrName as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDuplicate", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (prefix, localName, namespaceUri))
+            method.invoke_unchecked(self, (prefix, localName, namespaceUri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1700,7 +1773,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttrName as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1712,12 +1785,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
             >("Set")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Set", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttrName as
+                    quest_hook::libil2cpp::Type > ::class(), "Set", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, localName, namespaceUri))
+            method.invoke_unchecked(self, (prefix, localName, namespaceUri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1787,7 +1861,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         _cordl_type: crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
@@ -1798,28 +1872,30 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("AddItem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddItem", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "AddItem", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, data))
+            method.invoke_unchecked(self, (_cordl_type, data))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "Clear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1834,7 +1910,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>),
                 quest_hook::libil2cpp::Void,
@@ -1842,44 +1918,47 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("Replay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Replay", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "Replay", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StartComplexValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartComplexValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartComplexValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "StartComplexValue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Trim(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Trim")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Trim", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "Trim", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1887,7 +1966,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         &mut self,
         ch: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (char),
                 quest_hook::libil2cpp::Void,
@@ -1895,12 +1974,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteCharEntity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteCharEntity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteCharEntity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ch))
+            method.invoke_unchecked(self, (ch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1910,7 +1990,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -1922,12 +2002,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteChars")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteChars", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteChars", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, index, count))
+            method.invoke_unchecked(self, (buffer, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1935,7 +2016,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1943,12 +2024,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteEntityRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEntityRef", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEntityRef", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1958,7 +2040,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -1970,12 +2052,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteRaw", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteRaw", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, index, count))
+            method.invoke_unchecked(self, (buffer, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1983,7 +2066,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1991,12 +2074,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteRaw", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteRaw", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))
+            method.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2004,7 +2088,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -2012,12 +2096,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (text))
+            method.invoke_unchecked(self, (text))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2026,7 +2111,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         lowChar: char,
         highChar: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (char, char),
                 quest_hook::libil2cpp::Void,
@@ -2034,12 +2119,14 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteSurrogateCharEntity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteSurrogateCharEntity", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteSurrogateCharEntity",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lowChar, highChar))
+            method.invoke_unchecked(self, (lowChar, highChar))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2047,7 +2134,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -2055,12 +2142,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2068,7 +2156,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         &mut self,
         ws: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -2076,28 +2164,30 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("WriteWhitespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteWhitespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteWhitespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ws))
+            method.invoke_unchecked(self, (ws))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2106,7 +2196,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_AttributeValueCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2114,13 +2204,14 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             >("get_StringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_StringValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_AttributeValueCache as
+                    quest_hook::libil2cpp::Type > ::class(), "get_StringValue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -2249,7 +2340,7 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
         namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         prevNSTop: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_ElementScope as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2262,12 +2353,13 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
             >("Set")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Set", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_ElementScope as
+                    quest_hook::libil2cpp::Type > ::class(), "Set", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, localName, namespaceUri, prevNSTop))
+            method.invoke_unchecked(self, (prefix, localName, namespaceUri, prevNSTop))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2275,7 +2367,7 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
         &mut self,
         rawWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_ElementScope as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>),
                 quest_hook::libil2cpp::Void,
@@ -2283,12 +2375,13 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
             >("WriteEndElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEndElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_ElementScope as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEndElement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rawWriter))
+            method.invoke_unchecked(self, (rawWriter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2296,7 +2389,7 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
         &mut self,
         rawWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_ElementScope as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>),
                 quest_hook::libil2cpp::Void,
@@ -2304,12 +2397,14 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
             >("WriteFullEndElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteFullEndElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_ElementScope as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteFullEndElement",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rawWriter))
+            method.invoke_unchecked(self, (rawWriter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2426,7 +2521,7 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
         namespaceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         kind: crate::System::Xml::XmlWellFormedWriter_NamespaceKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_Namespace as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2438,12 +2533,13 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
             >("Set")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Set", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_Namespace as
+                    quest_hook::libil2cpp::Type > ::class(), "Set", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, namespaceUri, kind))
+            method.invoke_unchecked(self, (prefix, namespaceUri, kind))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2452,7 +2548,7 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         rawWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_Namespace as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -2463,12 +2559,13 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
             >("WriteDecl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteDecl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_Namespace as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteDecl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer, rawWriter))
+            method.invoke_unchecked(self, (writer, rawWriter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2630,7 +2727,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Xml::XmlNamespaceScope),
                 quest_hook::libil2cpp::Gc<
@@ -2643,8 +2740,10 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
             >("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -2652,7 +2751,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (scope)) };
+        > = unsafe { method.invoke_unchecked(self, (scope))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_IXmlNamespaceResolver_LookupNamespace(
@@ -2661,7 +2760,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2669,13 +2768,15 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
             >("System.Xml.IXmlNamespaceResolver.LookupNamespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.Xml.IXmlNamespaceResolver.LookupNamespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "System.Xml.IXmlNamespaceResolver.LookupNamespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (prefix)) };
+        > = unsafe { method.invoke_unchecked(self, (prefix))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_IXmlNamespaceResolver_LookupPrefix(
@@ -2684,7 +2785,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2692,20 +2793,22 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
             >("System.Xml.IXmlNamespaceResolver.LookupPrefix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.Xml.IXmlNamespaceResolver.LookupPrefix", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "System.Xml.IXmlNamespaceResolver.LookupPrefix", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (namespaceName)) };
+        > = unsafe { method.invoke_unchecked(self, (namespaceName))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         wfWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWellFormedWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWellFormedWriter>),
                 quest_hook::libil2cpp::Void,
@@ -2713,12 +2816,13 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (wfWriter))
+            method.invoke_unchecked(self, (wfWriter))?
         };
         Ok(__cordl_ret.into())
     }

@@ -50,7 +50,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
     pub fn ClearAccessControlSectionsModified(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -58,12 +58,14 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             >("ClearAccessControlSectionsModified")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearAccessControlSectionsModified", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::NativeObjectSecurity as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ClearAccessControlSectionsModified", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +79,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -92,12 +94,14 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             >("DefaultExceptionFromErrorCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DefaultExceptionFromErrorCode", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::NativeObjectSecurity as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DefaultExceptionFromErrorCode", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (errorCode, name, handle, context))
+            method.invoke_unchecked((), (errorCode, name, handle, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +110,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -117,12 +121,13 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             >("InternalGet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalGet", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::NativeObjectSecurity as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalGet", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (name, includeSections))
+            method.invoke_unchecked(self, (name, includeSections))?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +195,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         >,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -205,12 +210,14 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             >("RaiseExceptionOnFailure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RaiseExceptionOnFailure", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::NativeObjectSecurity as
+                    quest_hook::libil2cpp::Type > ::class(), "RaiseExceptionOnFailure",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (errorCode, name, handle, context))
+            method.invoke_unchecked(self, (errorCode, name, handle, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +228,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -234,8 +241,9 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::NativeObjectSecurity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -243,7 +251,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
                 .invoke_unchecked(
                     self,
                     (isContainer, resourceType, name, includeSections),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +266,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         >,
         exceptionContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -275,8 +283,9 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::NativeObjectSecurity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -291,7 +300,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
                         exceptionFromErrorCode,
                         exceptionContext,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +313,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
         >,
         exceptionContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -319,8 +328,9 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::NativeObjectSecurity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -328,7 +338,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
                 .invoke_unchecked(
                     self,
                     (isContainer, resourceType, exceptionFromErrorCode, exceptionContext),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +417,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromE
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -422,12 +432,14 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromE
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode
+                    as quest_hook::libil2cpp::Type > ::class(), "Invoke", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked(self, (errorCode, name, handle, context))
+            method.invoke_unchecked(self, (errorCode, name, handle, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -446,7 +458,7 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromE
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -457,12 +469,14 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromE
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

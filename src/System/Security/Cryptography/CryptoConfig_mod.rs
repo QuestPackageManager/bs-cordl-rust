@@ -49,7 +49,7 @@ impl crate::System::Security::Cryptography::CryptoConfig {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::CryptoConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -66,13 +66,14 @@ impl crate::System::Security::Cryptography::CryptoConfig {
             >("CreateFromName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateFromName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::CryptoConfig as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateFromName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (name, args)) };
+        > = unsafe { method.invoke_unchecked((), (name, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateFromName_Il2CppString0(
@@ -80,7 +81,7 @@ impl crate::System::Security::Cryptography::CryptoConfig {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::CryptoConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -88,13 +89,14 @@ impl crate::System::Security::Cryptography::CryptoConfig {
             >("CreateFromName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateFromName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::CryptoConfig as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateFromName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeLongNumber(
@@ -102,7 +104,7 @@ impl crate::System::Security::Cryptography::CryptoConfig {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::CryptoConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -110,13 +112,14 @@ impl crate::System::Security::Cryptography::CryptoConfig {
             >("EncodeLongNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeLongNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::CryptoConfig as
+                    quest_hook::libil2cpp::Type > ::class(), "EncodeLongNumber", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (x)) };
+        > = unsafe { method.invoke_unchecked((), (x))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeOID(
@@ -124,7 +127,7 @@ impl crate::System::Security::Cryptography::CryptoConfig {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::CryptoConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -132,13 +135,14 @@ impl crate::System::Security::Cryptography::CryptoConfig {
             >("EncodeOID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeOID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::CryptoConfig as
+                    quest_hook::libil2cpp::Type > ::class(), "EncodeOID", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (str)) };
+        > = unsafe { method.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn MapNameToOID(
@@ -146,7 +150,7 @@ impl crate::System::Security::Cryptography::CryptoConfig {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::CryptoConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -154,25 +158,28 @@ impl crate::System::Security::Cryptography::CryptoConfig {
             >("MapNameToOID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MapNameToOID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::CryptoConfig as
+                    quest_hook::libil2cpp::Type > ::class(), "MapNameToOID", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_AllowOnlyFipsAlgorithms() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::CryptoConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_AllowOnlyFipsAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AllowOnlyFipsAlgorithms", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::CryptoConfig as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_AllowOnlyFipsAlgorithms", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,7 +50,7 @@ impl crate::Zenject::IProviderExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -71,12 +71,13 @@ impl crate::Zenject::IProviderExtensions {
             >("GetAllInstancesWithInjectSplit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllInstancesWithInjectSplit", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllInstancesWithInjectSplit", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (creator, context, injectAction, buffer))
+            method.invoke_unchecked((), (creator, context, injectAction, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +90,7 @@ impl crate::Zenject::IProviderExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -107,12 +108,13 @@ impl crate::Zenject::IProviderExtensions {
             >("GetAllInstances")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllInstances", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllInstances", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (creator, context, buffer))
+            method.invoke_unchecked((), (creator, context, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +130,7 @@ impl crate::Zenject::IProviderExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -151,12 +153,13 @@ impl crate::Zenject::IProviderExtensions {
             >("GetAllInstances")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllInstances", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllInstances", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (creator, context, args, buffer))
+            method.invoke_unchecked((), (creator, context, args, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +169,7 @@ impl crate::Zenject::IProviderExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -177,13 +180,14 @@ impl crate::Zenject::IProviderExtensions {
             >("GetInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "GetInstance", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (creator, context)) };
+        > = unsafe { method.invoke_unchecked((), (creator, context))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInstance_List_1_1(
@@ -195,7 +199,7 @@ impl crate::Zenject::IProviderExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -211,13 +215,14 @@ impl crate::Zenject::IProviderExtensions {
             >("GetInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstance", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "GetInstance", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (creator, context, args)) };
+        > = unsafe { method.invoke_unchecked((), (creator, context, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInstance_IProvider_InjectContext0(
@@ -226,7 +231,7 @@ impl crate::Zenject::IProviderExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -237,13 +242,14 @@ impl crate::Zenject::IProviderExtensions {
             >("TryGetInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInstance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetInstance", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (creator, context)) };
+        > = unsafe { method.invoke_unchecked((), (creator, context))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInstance_List_1_1(
@@ -255,7 +261,7 @@ impl crate::Zenject::IProviderExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -271,13 +277,14 @@ impl crate::Zenject::IProviderExtensions {
             >("TryGetInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInstance", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IProviderExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetInstance", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (creator, context, args)) };
+        > = unsafe { method.invoke_unchecked((), (creator, context, args))? };
         Ok(__cordl_ret.into())
     }
 }

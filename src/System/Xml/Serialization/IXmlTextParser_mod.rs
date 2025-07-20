@@ -45,31 +45,33 @@ impl crate::System::Xml::Serialization::IXmlTextParser {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_Normalized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::IXmlTextParser as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Normalized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Normalized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::IXmlTextParser as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Normalized", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Normalized(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::IXmlTextParser as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_Normalized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Normalized", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::IXmlTextParser as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Normalized", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

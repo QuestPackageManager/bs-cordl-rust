@@ -54,7 +54,7 @@ impl crate::System::Data::UniqueConstraint {
         >,
         fThrowException: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::ConstraintCollection>,
@@ -65,32 +65,34 @@ impl crate::System::Data::UniqueConstraint {
             >("CanBeRemovedFromCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanBeRemovedFromCollection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "CanBeRemovedFromCollection", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, fThrowException))
+            method.invoke_unchecked(self, (constraints, fThrowException))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CanEnableConstraint(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("CanEnableConstraint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanEnableConstraint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "CanEnableConstraint", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckCanAddToCollection(
         &mut self,
         constraints: quest_hook::libil2cpp::Gc<crate::System::Data::ConstraintCollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::ConstraintCollection>),
                 quest_hook::libil2cpp::Void,
@@ -98,12 +100,13 @@ impl crate::System::Data::UniqueConstraint {
             >("CheckCanAddToCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckCanAddToCollection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "CheckCanAddToCollection", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (constraints))
+            method.invoke_unchecked(self, (constraints))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +115,7 @@ impl crate::System::Data::UniqueConstraint {
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         action: crate::System::Data::DataRowAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -123,28 +126,30 @@ impl crate::System::Data::UniqueConstraint {
             >("CheckConstraint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckConstraint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "CheckConstraint", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (row, action))
+            method.invoke_unchecked(self, (row, action))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "CheckState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +159,7 @@ impl crate::System::Data::UniqueConstraint {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                 quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
@@ -162,12 +167,13 @@ impl crate::System::Data::UniqueConstraint {
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "Clone", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint> = unsafe {
-            method.invoke_unchecked(self, (destination))
+            method.invoke_unchecked(self, (destination))?
         };
         Ok(__cordl_ret.into())
     }
@@ -178,7 +184,7 @@ impl crate::System::Data::UniqueConstraint {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>, bool),
                 quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
@@ -186,12 +192,13 @@ impl crate::System::Data::UniqueConstraint {
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "Clone", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint> = unsafe {
-            method.invoke_unchecked(self, (destination, ignorNSforTableLookup))
+            method.invoke_unchecked(self, (destination, ignorNSforTableLookup))?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,7 +208,7 @@ impl crate::System::Data::UniqueConstraint {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                 quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
@@ -209,19 +216,20 @@ impl crate::System::Data::UniqueConstraint {
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "Clone", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::UniqueConstraint,
-        > = unsafe { method.invoke_unchecked(self, (table)) };
+        > = unsafe { method.invoke_unchecked(self, (table))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConstraintIndexClear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -229,19 +237,20 @@ impl crate::System::Data::UniqueConstraint {
             >("ConstraintIndexClear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConstraintIndexClear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "ConstraintIndexClear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ConstraintIndexInitialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -249,12 +258,13 @@ impl crate::System::Data::UniqueConstraint {
             >("ConstraintIndexInitialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConstraintIndexInitialize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "ConstraintIndexInitialize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -262,7 +272,7 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>),
                 bool,
@@ -270,11 +280,12 @@ impl crate::System::Data::UniqueConstraint {
             >("ContainsColumn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsColumn", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "ContainsColumn", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (column)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (column))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
@@ -286,7 +297,7 @@ impl crate::System::Data::UniqueConstraint {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -301,12 +312,13 @@ impl crate::System::Data::UniqueConstraint {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "Create", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (constraintName, columns))
+            method.invoke_unchecked(self, (constraintName, columns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,7 +326,7 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
         key2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -322,35 +334,38 @@ impl crate::System::Data::UniqueConstraint {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key2))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsConstraintViolated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsConstraintViolated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsConstraintViolated", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "IsConstraintViolated", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_DataColumn0(
@@ -422,7 +437,7 @@ impl crate::System::Data::UniqueConstraint {
     pub fn NonVirtualCheckState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -430,12 +445,13 @@ impl crate::System::Data::UniqueConstraint {
             >("NonVirtualCheckState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NonVirtualCheckState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "NonVirtualCheckState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -443,7 +459,7 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>),
                 quest_hook::libil2cpp::Void,
@@ -451,12 +467,13 @@ impl crate::System::Data::UniqueConstraint {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column))
+            method.invoke_unchecked(self, (column))?
         };
         Ok(__cordl_ret.into())
     }
@@ -468,7 +485,7 @@ impl crate::System::Data::UniqueConstraint {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -480,12 +497,13 @@ impl crate::System::Data::UniqueConstraint {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (columns))
+            method.invoke_unchecked(self, (columns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -498,7 +516,7 @@ impl crate::System::Data::UniqueConstraint {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -513,12 +531,13 @@ impl crate::System::Data::UniqueConstraint {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, columns))
+            method.invoke_unchecked(self, (name, columns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -532,7 +551,7 @@ impl crate::System::Data::UniqueConstraint {
         >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -550,12 +569,13 @@ impl crate::System::Data::UniqueConstraint {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, columnNames, isPrimaryKey))
+            method.invoke_unchecked(self, (name, columnNames, isPrimaryKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -569,7 +589,7 @@ impl crate::System::Data::UniqueConstraint {
         >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -585,12 +605,13 @@ impl crate::System::Data::UniqueConstraint {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, columns, isPrimaryKey))
+            method.invoke_unchecked(self, (name, columns, isPrimaryKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -603,7 +624,7 @@ impl crate::System::Data::UniqueConstraint {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -615,15 +636,16 @@ impl crate::System::Data::UniqueConstraint {
             >("get_ColumnNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ColumnNames", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_ColumnNames", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Columns(
@@ -635,7 +657,7 @@ impl crate::System::Data::UniqueConstraint {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -647,15 +669,16 @@ impl crate::System::Data::UniqueConstraint {
             >("get_Columns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Columns", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Columns", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ColumnsReference(
@@ -667,7 +690,7 @@ impl crate::System::Data::UniqueConstraint {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -679,15 +702,16 @@ impl crate::System::Data::UniqueConstraint {
             >("get_ColumnsReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ColumnsReference", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_ColumnsReference", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ConstraintIndex(
@@ -695,7 +719,7 @@ impl crate::System::Data::UniqueConstraint {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
@@ -703,40 +727,43 @@ impl crate::System::Data::UniqueConstraint {
             >("get_ConstraintIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ConstraintIndex", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_ConstraintIndex", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::Index> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsPrimaryKey(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsPrimaryKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsPrimaryKey", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_IsPrimaryKey", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Key(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::DataKey> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::Data::DataKey, 0usize>("get_Key")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Key", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Key", 0usize
                 )
             });
         let __cordl_ret: crate::System::Data::DataKey = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -745,7 +772,7 @@ impl crate::System::Data::UniqueConstraint {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -753,12 +780,13 @@ impl crate::System::Data::UniqueConstraint {
             >("get_Table")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Table", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Table", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -766,7 +794,7 @@ impl crate::System::Data::UniqueConstraint {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -774,12 +802,13 @@ impl crate::System::Data::UniqueConstraint {
             >("set_InCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_InCollection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::UniqueConstraint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_InCollection", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

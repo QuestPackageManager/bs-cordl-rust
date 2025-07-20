@@ -47,7 +47,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 quest_hook::libil2cpp::Void,
@@ -55,28 +55,30 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Add", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (item))
+            method.invoke_unchecked(self, (item))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Clear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +90,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Newtonsoft::Json::Linq::JsonCloneSettings,
@@ -98,20 +100,21 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("CloneToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloneToken", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "CloneToken", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JToken,
-        > = unsafe { method.invoke_unchecked(self, (settings)) };
+        > = unsafe { method.invoke_unchecked(self, (settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 bool,
@@ -119,11 +122,12 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Contains", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (item)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (item))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyTo(
@@ -135,7 +139,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         >,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -152,12 +156,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("CopyTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyTo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "CopyTo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (array, arrayIndex))
+            method.invoke_unchecked(self, (array, arrayIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +170,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 bool,
@@ -173,11 +178,12 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("DeepEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeepEquals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "DeepEquals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (node)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromObject_Il2CppObject0(
@@ -185,7 +191,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
@@ -193,13 +199,14 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("FromObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "FromObject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JArray,
-        > = unsafe { method.invoke_unchecked((), (o)) };
+        > = unsafe { method.invoke_unchecked((), (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromObject_JsonSerializer1(
@@ -210,7 +217,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -221,25 +228,27 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("FromObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "FromObject", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JArray,
-        > = unsafe { method.invoke_unchecked((), (o, jsonSerializer)) };
+        > = unsafe { method.invoke_unchecked((), (o, jsonSerializer))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeepHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetDeepHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDeepHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "GetDeepHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
@@ -251,7 +260,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -263,22 +272,23 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("GetEnumerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnumerator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "GetEnumerator", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerator_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 i32,
@@ -286,18 +296,19 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "IndexOf", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfItem(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 i32,
@@ -305,11 +316,12 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("IndexOfItem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOfItem", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "IndexOfItem", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item))? };
         Ok(__cordl_ret.into())
     }
     pub fn Insert(
@@ -317,7 +329,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         index: i32,
         item: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 quest_hook::libil2cpp::Void,
@@ -325,12 +337,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Insert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Insert", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Insert", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index, item))
+            method.invoke_unchecked(self, (index, item))?
         };
         Ok(__cordl_ret.into())
     }
@@ -344,7 +357,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
@@ -359,15 +372,16 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("LoadAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "LoadAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
             >,
-        > = unsafe { method.invoke_unchecked((), (reader, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (reader, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAsync_JsonLoadSettings_CancellationToken1(
@@ -383,7 +397,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
@@ -401,8 +415,9 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("LoadAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "LoadAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -410,7 +425,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (reader, settings, cancellationToken))
+            method.invoke_unchecked((), (reader, settings, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -422,7 +437,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
@@ -435,13 +450,14 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Load")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Load", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Load", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JArray,
-        > = unsafe { method.invoke_unchecked((), (reader, settings)) };
+        > = unsafe { method.invoke_unchecked((), (reader, settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn Load_JsonReader0(
@@ -449,7 +465,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
@@ -457,13 +473,14 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Load")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Load", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Load", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JArray,
-        > = unsafe { method.invoke_unchecked((), (reader)) };
+        > = unsafe { method.invoke_unchecked((), (reader))? };
         Ok(__cordl_ret.into())
     }
     pub fn MergeItem(
@@ -473,7 +490,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             crate::Newtonsoft::Json::Linq::JsonMergeSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -486,12 +503,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("MergeItem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MergeItem", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "MergeItem", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (content, settings))
+            method.invoke_unchecked(self, (content, settings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -550,7 +568,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
@@ -558,13 +576,14 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Parse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JArray,
-        > = unsafe { method.invoke_unchecked((), (json)) };
+        > = unsafe { method.invoke_unchecked((), (json))? };
         Ok(__cordl_ret.into())
     }
     pub fn Parse_JsonLoadSettings1(
@@ -575,7 +594,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -588,20 +607,21 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Parse", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JArray,
-        > = unsafe { method.invoke_unchecked((), (json, settings)) };
+        > = unsafe { method.invoke_unchecked((), (json, settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 bool,
@@ -609,27 +629,29 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "Remove", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (item)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (item))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveAt(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("RemoveAt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveAt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "RemoveAt", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -642,7 +664,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
@@ -659,12 +681,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("WriteTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteTo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "WriteTo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer, converters))
+            method.invoke_unchecked(self, (writer, converters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -680,7 +703,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
@@ -698,30 +721,32 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("WriteToAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteToAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "WriteToAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = unsafe {
-            method.invoke_unchecked(self, (writer, cancellationToken, converters))
+            method.invoke_unchecked(self, (writer, cancellationToken, converters))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -733,7 +758,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -745,12 +770,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (content))
+            method.invoke_unchecked(self, (content))?
         };
         Ok(__cordl_ret.into())
     }
@@ -758,7 +784,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         &mut self,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -766,12 +792,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (content))
+            method.invoke_unchecked(self, (content))?
         };
         Ok(__cordl_ret.into())
     }
@@ -779,7 +806,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>),
                 quest_hook::libil2cpp::Void,
@@ -787,12 +814,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (other))
+            method.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -803,7 +831,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             crate::Newtonsoft::Json::Linq::JsonCloneSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
@@ -816,12 +844,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (other, settings))
+            method.invoke_unchecked(self, (other, settings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -834,7 +863,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -846,27 +875,29 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("get_ChildrenTokens")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ChildrenTokens", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "get_ChildrenTokens", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsReadOnly")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsReadOnly", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "get_IsReadOnly", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_Il2CppObject0(
@@ -875,7 +906,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
@@ -883,13 +914,14 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("get_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Item", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Item", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JToken,
-        > = unsafe { method.invoke_unchecked(self, (key)) };
+        > = unsafe { method.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_i32_1(
@@ -898,7 +930,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
@@ -906,19 +938,20 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("get_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Item", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Item", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JToken,
-        > = unsafe { method.invoke_unchecked(self, (index)) };
+        > = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Newtonsoft::Json::Linq::JTokenType,
@@ -926,12 +959,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("get_Type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Type", 0usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -940,7 +974,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -951,12 +985,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("set_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Item", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "set_Item", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (key, value))
+            method.invoke_unchecked(self, (key, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -965,7 +1000,7 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         index: i32,
         value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
                 quest_hook::libil2cpp::Void,
@@ -973,12 +1008,13 @@ impl crate::Newtonsoft::Json::Linq::JArray {
             >("set_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Item", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JArray as quest_hook::libil2cpp::Type
+                    > ::class(), "set_Item", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index, value))
+            method.invoke_unchecked(self, (index, value))?
         };
         Ok(__cordl_ret.into())
     }

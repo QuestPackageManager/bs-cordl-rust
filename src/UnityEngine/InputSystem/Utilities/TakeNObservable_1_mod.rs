@@ -90,7 +90,9 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>),
                 quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -98,12 +100,14 @@ impl<
             >("Subscribe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subscribe", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::TakeNObservable_1 <
+                    TValue > as quest_hook::libil2cpp::Type > ::class(), "Subscribe",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
-            method.invoke_unchecked(self, (observer))
+            method.invoke_unchecked(self, (observer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +120,9 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>, i32),
                 quest_hook::libil2cpp::Void,
@@ -124,12 +130,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::TakeNObservable_1 <
+                    TValue > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, count))
+            method.invoke_unchecked(self, (source, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,16 +252,20 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnCompleted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnCompleted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take <
+                    TValue > as quest_hook::libil2cpp::Type > ::class(), "OnCompleted",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -266,7 +277,9 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Exception>),
                 quest_hook::libil2cpp::Void,
@@ -274,12 +287,14 @@ impl<
             >("OnError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnError", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take <
+                    TValue > as quest_hook::libil2cpp::Type > ::class(), "OnError",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (error))
+            method.invoke_unchecked(self, (error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -291,16 +306,19 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TValue), quest_hook::libil2cpp::Void, 1usize>("OnNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnNext", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take <
+                    TValue > as quest_hook::libil2cpp::Type > ::class(), "OnNext", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (evt))
+            method.invoke_unchecked(self, (evt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -315,7 +333,9 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -330,12 +350,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take <
+                    TValue > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (observable, observer))
+            method.invoke_unchecked(self, (observable, observer))?
         };
         Ok(__cordl_ret.into())
     }

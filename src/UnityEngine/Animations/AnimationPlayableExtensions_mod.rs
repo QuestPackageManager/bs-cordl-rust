@@ -47,7 +47,7 @@ impl crate::UnityEngine::Animations::AnimationPlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationPlayableExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (U, quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>),
                 quest_hook::libil2cpp::Void,
@@ -55,12 +55,14 @@ impl crate::UnityEngine::Animations::AnimationPlayableExtensions {
             >("SetAnimatedProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAnimatedProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationPlayableExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAnimatedProperties",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (playable, clip))
+            method.invoke_unchecked((), (playable, clip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +72,7 @@ impl crate::UnityEngine::Animations::AnimationPlayableExtensions {
         >,
         animatedProperties: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationPlayableExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -83,12 +85,14 @@ impl crate::UnityEngine::Animations::AnimationPlayableExtensions {
             >("SetAnimatedPropertiesInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAnimatedPropertiesInternal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationPlayableExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetAnimatedPropertiesInternal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (playable, animatedProperties))
+            method.invoke_unchecked((), (playable, animatedProperties))?
         };
         Ok(__cordl_ret.into())
     }

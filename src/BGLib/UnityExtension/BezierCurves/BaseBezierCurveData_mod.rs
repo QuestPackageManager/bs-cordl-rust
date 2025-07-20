@@ -53,23 +53,24 @@ impl crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_endControlPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Vector3,
@@ -77,35 +78,38 @@ impl crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData {
             >("get_endControlPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_endControlPoint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_endControlPoint",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_endPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_endPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_endPoint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_endPoint", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_startControlPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Vector3,
@@ -113,28 +117,31 @@ impl crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData {
             >("get_startControlPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_startControlPoint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_startControlPoint",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_startPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_startPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_startPoint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_startPoint", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,7 +149,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -150,12 +157,14 @@ impl crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData {
             >("set_endControlPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_endControlPoint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_endControlPoint",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +172,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -171,12 +180,14 @@ impl crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData {
             >("set_startControlPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_startControlPoint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_startControlPoint",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

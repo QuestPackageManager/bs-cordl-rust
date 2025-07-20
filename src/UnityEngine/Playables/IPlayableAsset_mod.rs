@@ -44,7 +44,7 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::IPlayableAsset as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -55,12 +55,13 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
             >("CreatePlayable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreatePlayable", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Playables::IPlayableAsset as
+                    quest_hook::libil2cpp::Type > ::class(), "CreatePlayable", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            method.invoke_unchecked(self, (graph, owner))
+            method.invoke_unchecked(self, (graph, owner))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,15 +71,16 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::IPlayableAsset as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f64, 0usize>("get_duration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_duration", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Playables::IPlayableAsset as
+                    quest_hook::libil2cpp::Type > ::class(), "get_duration", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -53,7 +53,7 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::SerializationErrorCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -69,12 +69,13 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::SerializationErrorCallback
+                    as quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (o, context, errorContext, callback, object))
+            method.invoke_unchecked(self, (o, context, errorContext, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +83,7 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::SerializationErrorCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Void,
@@ -90,12 +91,13 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::SerializationErrorCallback
+                    as quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result))
+            method.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +109,7 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
             crate::Newtonsoft::Json::Serialization::ErrorContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::SerializationErrorCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -121,12 +123,13 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::SerializationErrorCallback
+                    as quest_hook::libil2cpp::Type > ::class(), "Invoke", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (o, context, errorContext))
+            method.invoke_unchecked(self, (o, context, errorContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +148,7 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::SerializationErrorCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -156,12 +159,13 @@ impl crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::SerializationErrorCallback
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

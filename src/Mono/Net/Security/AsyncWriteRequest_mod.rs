@@ -60,7 +60,7 @@ impl crate::Mono::Net::Security::AsyncWriteRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::Mono::Net::Security::AsyncOperationStatus,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::AsyncWriteRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Mono::Net::Security::AsyncOperationStatus),
                 crate::Mono::Net::Security::AsyncOperationStatus,
@@ -68,12 +68,13 @@ impl crate::Mono::Net::Security::AsyncWriteRequest {
             >("Run")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Run", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Net::Security::AsyncWriteRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "Run", 1usize
                 )
             });
         let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus = unsafe {
-            method.invoke_unchecked(self, (status))
+            method.invoke_unchecked(self, (status))?
         };
         Ok(__cordl_ret.into())
     }
@@ -87,7 +88,7 @@ impl crate::Mono::Net::Security::AsyncWriteRequest {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::AsyncWriteRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -103,12 +104,13 @@ impl crate::Mono::Net::Security::AsyncWriteRequest {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Net::Security::AsyncWriteRequest as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parent, sync, buffer, offset, _cordl_size))
+            method.invoke_unchecked(self, (parent, sync, buffer, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }

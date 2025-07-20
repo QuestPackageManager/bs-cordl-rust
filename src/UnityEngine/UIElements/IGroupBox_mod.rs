@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::IGroupBox {
             crate::UnityEngine::UIElements::IGroupBoxOption,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IGroupBox as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IGroupBoxOption,
@@ -54,12 +54,13 @@ impl crate::UnityEngine::UIElements::IGroupBox {
             >("OnOptionAdded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnOptionAdded", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IGroupBox as
+                    quest_hook::libil2cpp::Type > ::class(), "OnOptionAdded", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (option))
+            method.invoke_unchecked(self, (option))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +70,7 @@ impl crate::UnityEngine::UIElements::IGroupBox {
             crate::UnityEngine::UIElements::IGroupBoxOption,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IGroupBox as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IGroupBoxOption,
@@ -79,12 +80,13 @@ impl crate::UnityEngine::UIElements::IGroupBox {
             >("OnOptionRemoved")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnOptionRemoved", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IGroupBox as
+                    quest_hook::libil2cpp::Type > ::class(), "OnOptionRemoved", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (option))
+            method.invoke_unchecked(self, (option))?
         };
         Ok(__cordl_ret.into())
     }

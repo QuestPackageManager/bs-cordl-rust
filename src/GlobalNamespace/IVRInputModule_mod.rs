@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::IVRInputModule {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IVRInputModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -58,12 +58,14 @@ impl crate::GlobalNamespace::IVRInputModule {
             >("add_onProcessMousePressEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_onProcessMousePressEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IVRInputModule as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_onProcessMousePressEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +79,7 @@ impl crate::GlobalNamespace::IVRInputModule {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IVRInputModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -91,12 +93,14 @@ impl crate::GlobalNamespace::IVRInputModule {
             >("add_pointerDidClickEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_pointerDidClickEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IVRInputModule as
+                    quest_hook::libil2cpp::Type > ::class(), "add_pointerDidClickEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -113,7 +117,7 @@ impl crate::GlobalNamespace::IVRInputModule {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IVRInputModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -125,12 +129,14 @@ impl crate::GlobalNamespace::IVRInputModule {
             >("remove_onProcessMousePressEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_onProcessMousePressEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IVRInputModule as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_onProcessMousePressEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +150,7 @@ impl crate::GlobalNamespace::IVRInputModule {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IVRInputModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -158,12 +164,14 @@ impl crate::GlobalNamespace::IVRInputModule {
             >("remove_pointerDidClickEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_pointerDidClickEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IVRInputModule as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_pointerDidClickEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

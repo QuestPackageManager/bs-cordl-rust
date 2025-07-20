@@ -39,21 +39,22 @@ impl std::ops::DerefMut for crate::UnityEngine::SystemInfo {
 #[cfg(feature = "UnityEngine+SystemInfo")]
 impl crate::UnityEngine::SystemInfo {
     pub fn GetBatteryLevel() -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), f32, 0usize>("GetBatteryLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBatteryLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBatteryLevel", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBatteryStatus() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::BatteryStatus,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::BatteryStatus,
@@ -61,12 +62,13 @@ impl crate::UnityEngine::SystemInfo {
             >("GetBatteryStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBatteryStatus", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBatteryStatus", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::BatteryStatus = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +78,7 @@ impl crate::UnityEngine::SystemInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -87,19 +89,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetCompatibleFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCompatibleFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetCompatibleFormat", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format, usage))
+            method.invoke_unchecked((), (format, usage))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeviceModel() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -107,19 +110,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetDeviceModel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDeviceModel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetDeviceModel", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeviceName() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -127,19 +131,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetDeviceName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDeviceName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetDeviceName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeviceType() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::DeviceType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::DeviceType,
@@ -147,19 +152,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetDeviceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDeviceType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetDeviceType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::DeviceType = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeviceUniqueIdentifier() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -167,31 +173,33 @@ impl crate::UnityEngine::SystemInfo {
             >("GetDeviceUniqueIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDeviceUniqueIdentifier", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetDeviceUniqueIdentifier", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsDeviceID() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetGraphicsDeviceID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsDeviceID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsDeviceID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsDeviceName() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -199,19 +207,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetGraphicsDeviceName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsDeviceName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsDeviceName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsDeviceType() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::GraphicsDeviceType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::Rendering::GraphicsDeviceType,
@@ -219,19 +228,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetGraphicsDeviceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsDeviceType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsDeviceType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::GraphicsDeviceType = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsDeviceVendor() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -239,31 +249,33 @@ impl crate::UnityEngine::SystemInfo {
             >("GetGraphicsDeviceVendor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsDeviceVendor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsDeviceVendor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsDeviceVendorID() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetGraphicsDeviceVendorID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsDeviceVendorID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsDeviceVendorID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsDeviceVersion() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -271,13 +283,14 @@ impl crate::UnityEngine::SystemInfo {
             >("GetGraphicsDeviceVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsDeviceVersion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsDeviceVersion", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsFormat(
@@ -285,7 +298,7 @@ impl crate::UnityEngine::SystemInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Experimental::Rendering::DefaultFormat),
                 crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -293,79 +306,85 @@ impl crate::UnityEngine::SystemInfo {
             >("GetGraphicsFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsFormat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsFormat", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
-            method.invoke_unchecked((), (format))
+            method.invoke_unchecked((), (format))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsMemorySize() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetGraphicsMemorySize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsMemorySize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsMemorySize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsMultiThreaded() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("GetGraphicsMultiThreaded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsMultiThreaded", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsMultiThreaded", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsShaderLevel() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetGraphicsShaderLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGraphicsShaderLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGraphicsShaderLevel", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxRenderTextureSize() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetMaxRenderTextureSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaxRenderTextureSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetMaxRenderTextureSize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxTextureSize() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetMaxTextureSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaxTextureSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetMaxTextureSize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOperatingSystem() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -373,19 +392,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetOperatingSystem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOperatingSystem", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOperatingSystem", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOperatingSystemFamily() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::OperatingSystemFamily,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::OperatingSystemFamily,
@@ -393,55 +413,59 @@ impl crate::UnityEngine::SystemInfo {
             >("GetOperatingSystemFamily")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOperatingSystemFamily", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOperatingSystemFamily", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::OperatingSystemFamily = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetPhysicalMemoryMB() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetPhysicalMemoryMB")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPhysicalMemoryMB", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPhysicalMemoryMB", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetProcessorCount() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetProcessorCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProcessorCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetProcessorCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetProcessorFrequencyMHz() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetProcessorFrequencyMHz")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProcessorFrequencyMHz", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetProcessorFrequencyMHz", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetProcessorType() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -449,19 +473,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetProcessorType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProcessorType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetProcessorType", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRenderingThreadingMode() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::RenderingThreadingMode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::Rendering::RenderingThreadingMode,
@@ -469,19 +494,20 @@ impl crate::UnityEngine::SystemInfo {
             >("GetRenderingThreadingMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRenderingThreadingMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRenderingThreadingMode", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::RenderingThreadingMode = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasRenderTextureNative(
         format: crate::UnityEngine::RenderTextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::RenderTextureFormat),
                 bool,
@@ -489,18 +515,19 @@ impl crate::UnityEngine::SystemInfo {
             >("HasRenderTextureNative")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasRenderTextureNative", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "HasRenderTextureNative", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFormatSupported(
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         usage: crate::UnityEngine::Experimental::Rendering::FormatUsage,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -511,17 +538,18 @@ impl crate::UnityEngine::SystemInfo {
             >("IsFormatSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsFormatSupported", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "IsFormatSupported", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format, usage)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format, usage))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidEnumValue(
         value: quest_hook::libil2cpp::Gc<crate::System::Enum>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Enum>),
                 bool,
@@ -529,41 +557,44 @@ impl crate::UnityEngine::SystemInfo {
             >("IsValidEnumValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidEnumValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "IsValidEnumValue", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn SupportsComputeShaders() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("SupportsComputeShaders")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SupportsComputeShaders", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "SupportsComputeShaders", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SupportsInstancing() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("SupportsInstancing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SupportsInstancing", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "SupportsInstancing", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SupportsRenderTextureFormat(
         format: crate::UnityEngine::RenderTextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::RenderTextureFormat),
                 bool,
@@ -571,17 +602,18 @@ impl crate::UnityEngine::SystemInfo {
             >("SupportsRenderTextureFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SupportsRenderTextureFormat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "SupportsRenderTextureFormat", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn SupportsTextureFormat(
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextureFormat),
                 bool,
@@ -589,17 +621,18 @@ impl crate::UnityEngine::SystemInfo {
             >("SupportsTextureFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SupportsTextureFormat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "SupportsTextureFormat", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn SupportsTextureFormatNative(
         format: crate::UnityEngine::TextureFormat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextureFormat),
                 bool,
@@ -607,41 +640,44 @@ impl crate::UnityEngine::SystemInfo {
             >("SupportsTextureFormatNative")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SupportsTextureFormatNative", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "SupportsTextureFormatNative", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn UsesReversedZBuffer() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("UsesReversedZBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UsesReversedZBuffer", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "UsesReversedZBuffer", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_batteryLevel() -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), f32, 0usize>("get_batteryLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_batteryLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_batteryLevel", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_batteryStatus() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::BatteryStatus,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::BatteryStatus,
@@ -649,19 +685,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_batteryStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_batteryStatus", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_batteryStatus", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::BatteryStatus = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_deviceModel() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -669,19 +706,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_deviceModel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deviceModel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_deviceModel", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deviceName() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -689,19 +727,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_deviceName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deviceName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_deviceName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deviceType() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::DeviceType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::DeviceType,
@@ -709,19 +748,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_deviceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deviceType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_deviceType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::DeviceType = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_deviceUniqueIdentifier() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -729,31 +769,33 @@ impl crate::UnityEngine::SystemInfo {
             >("get_deviceUniqueIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deviceUniqueIdentifier", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_deviceUniqueIdentifier", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsDeviceID() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_graphicsDeviceID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsDeviceID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsDeviceID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsDeviceName() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -761,19 +803,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_graphicsDeviceName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsDeviceName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsDeviceName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsDeviceType() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::GraphicsDeviceType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::Rendering::GraphicsDeviceType,
@@ -781,19 +824,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_graphicsDeviceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsDeviceType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsDeviceType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::GraphicsDeviceType = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsDeviceVendor() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -801,31 +845,33 @@ impl crate::UnityEngine::SystemInfo {
             >("get_graphicsDeviceVendor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsDeviceVendor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsDeviceVendor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsDeviceVendorID() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_graphicsDeviceVendorID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsDeviceVendorID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsDeviceVendorID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsDeviceVersion() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -833,79 +879,85 @@ impl crate::UnityEngine::SystemInfo {
             >("get_graphicsDeviceVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsDeviceVersion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsDeviceVersion", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsMemorySize() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_graphicsMemorySize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsMemorySize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsMemorySize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsMultiThreaded() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_graphicsMultiThreaded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsMultiThreaded", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsMultiThreaded", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsShaderLevel() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_graphicsShaderLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_graphicsShaderLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_graphicsShaderLevel", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_maxRenderTextureSize() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_maxRenderTextureSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_maxRenderTextureSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_maxRenderTextureSize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_maxTextureSize() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_maxTextureSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_maxTextureSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_maxTextureSize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_operatingSystem() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -913,19 +965,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_operatingSystem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_operatingSystem", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_operatingSystem", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_operatingSystemFamily() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::OperatingSystemFamily,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::OperatingSystemFamily,
@@ -933,43 +986,46 @@ impl crate::UnityEngine::SystemInfo {
             >("get_operatingSystemFamily")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_operatingSystemFamily", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_operatingSystemFamily", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::OperatingSystemFamily = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_processorCount() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_processorCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_processorCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_processorCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_processorFrequency() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_processorFrequency")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_processorFrequency", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_processorFrequency", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_processorType() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -977,19 +1033,20 @@ impl crate::UnityEngine::SystemInfo {
             >("get_processorType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_processorType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_processorType", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_renderingThreadingMode() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::RenderingThreadingMode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::Rendering::RenderingThreadingMode,
@@ -997,61 +1054,66 @@ impl crate::UnityEngine::SystemInfo {
             >("get_renderingThreadingMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_renderingThreadingMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_renderingThreadingMode", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::RenderingThreadingMode = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_supportsComputeShaders() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_supportsComputeShaders")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_supportsComputeShaders", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_supportsComputeShaders", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_supportsInstancing() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_supportsInstancing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_supportsInstancing", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_supportsInstancing", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_systemMemorySize() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_systemMemorySize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_systemMemorySize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_systemMemorySize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_usesReversedZBuffer() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_usesReversedZBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_usesReversedZBuffer", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SystemInfo as quest_hook::libil2cpp::Type >
+                    ::class(), "get_usesReversedZBuffer", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

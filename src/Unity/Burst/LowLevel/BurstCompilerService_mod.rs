@@ -45,7 +45,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         delegateMethod: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         compilerOptions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -56,12 +56,14 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("CompileAsyncDelegateMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompileAsyncDelegateMethod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CompileAsyncDelegateMethod", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (delegateMethod, compilerOptions))
+            method.invoke_unchecked((), (delegateMethod, compilerOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +72,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -78,25 +80,29 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("GetAsyncCompiledAsyncDelegateMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAsyncCompiledAsyncDelegateMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetAsyncCompiledAsyncDelegateMethod", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (userID)) };
+        > = unsafe { method.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentExecutionMode() -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), u32, 0usize>("GetCurrentExecutionMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentExecutionMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurrentExecutionMode",
+                    0usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDisassembly(
@@ -105,7 +111,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -116,13 +122,14 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("GetDisassembly")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDisassembly", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDisassembly", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (m, compilerOptions)) };
+        > = unsafe { method.invoke_unchecked((), (m, compilerOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreateSharedMemory(
@@ -132,7 +139,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>, u32, u32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -140,13 +147,15 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("GetOrCreateSharedMemory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOrCreateSharedMemory", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOrCreateSharedMemory",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (key, size_of, alignment)) };
+        > = unsafe { method.invoke_unchecked((), (key, size_of, alignment))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBurstLibrary(
@@ -154,7 +163,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -162,12 +171,13 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("LoadBurstLibrary")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadBurstLibrary", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadBurstLibrary", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (fullPathToLibBurstGenerated))
+            method.invoke_unchecked((), (fullPathToLibBurstGenerated))?
         };
         Ok(__cordl_ret.into())
     }
@@ -178,7 +188,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         lineNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -192,13 +202,17 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("Log")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Log", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(), "Log", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (userData, logType, message, filename, lineNumber))
+                .invoke_unchecked(
+                    (),
+                    (userData, logType, message, filename, lineNumber),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +223,7 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         lineNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -223,20 +237,24 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("RuntimeLog")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RuntimeLog", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(), "RuntimeLog", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (userData, logType, message, filename, lineNumber))
+                .invoke_unchecked(
+                    (),
+                    (userData, logType, message, filename, lineNumber),
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurrentExecutionMode(
         environment: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::LowLevel::BurstCompilerService as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32),
                 quest_hook::libil2cpp::Void,
@@ -244,12 +262,14 @@ impl crate::Unity::Burst::LowLevel::BurstCompilerService {
             >("SetCurrentExecutionMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCurrentExecutionMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::LowLevel::BurstCompilerService as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCurrentExecutionMode",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (environment))
+            method.invoke_unchecked((), (environment))?
         };
         Ok(__cordl_ret.into())
     }

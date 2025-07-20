@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyLeaderboardIdsSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -71,15 +71,17 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
             >("ILeaderboardIdContainer.get_leaderboardIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ILeaderboardIdContainer.get_leaderboardIds", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyLeaderboardIdsSO as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ILeaderboardIdContainer.get_leaderboardIds", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -92,16 +94,17 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyLeaderboardIdsSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyLeaderboardIdsSO as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +119,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyLeaderboardIdsSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -130,8 +133,9 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
             >("get_leaderboardIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_leaderboardIds", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyLeaderboardIdsSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_leaderboardIds", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -140,7 +144,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
                     crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_leaderboardIds(
@@ -153,7 +157,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyLeaderboardIdsSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -167,12 +171,13 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO {
             >("set_leaderboardIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_leaderboardIds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyLeaderboardIdsSO as
+                    quest_hook::libil2cpp::Type > ::class(), "set_leaderboardIds", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -265,7 +270,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -273,12 +278,13 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sonyLeaderboardId, difficultyBeatmapId))
+            method.invoke_unchecked(self, (sonyLeaderboardId, difficultyBeatmapId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -287,7 +293,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -295,25 +301,29 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
             >("get_difficultyBeatmapId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_difficultyBeatmapId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_difficultyBeatmapId",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_sonyLeaderboardId(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u32, 0usize>("get_sonyLeaderboardId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_sonyLeaderboardId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_sonyLeaderboardId",
+                    0usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

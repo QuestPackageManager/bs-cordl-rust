@@ -54,7 +54,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MiscHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -70,13 +70,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
             >("EveryNth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EveryNth", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MiscHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "EveryNth", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TValue>,
-        > = unsafe { method.invoke_unchecked((), (enumerable, n, start)) };
+        > = unsafe { method.invoke_unchecked((), (enumerable, n, start))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault<TKey, TValue>(
@@ -91,7 +92,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MiscHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -104,12 +105,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
             >("GetValueOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValueOrDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MiscHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "GetValueOrDefault", 2usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked((), (dictionary, key))
+            method.invoke_unchecked((), (dictionary, key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +125,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MiscHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -136,12 +138,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MiscHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "IndexOf", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (enumerable, value))
+            method.invoke_unchecked((), (enumerable, value))?
         };
         Ok(__cordl_ret.into())
     }

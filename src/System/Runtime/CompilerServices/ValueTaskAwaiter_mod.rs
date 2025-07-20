@@ -104,16 +104,17 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
     pub fn GetResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::ValueTaskAwaiter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("GetResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResult", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::ValueTaskAwaiter as
+                    quest_hook::libil2cpp::Type > ::class(), "GetResult", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +122,7 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
         &mut self,
         continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::ValueTaskAwaiter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -129,12 +130,13 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
             >("OnCompleted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnCompleted", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::ValueTaskAwaiter as
+                    quest_hook::libil2cpp::Type > ::class(), "OnCompleted", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (continuation))
+            method.invoke_unchecked(self, (continuation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,7 +144,7 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
         &mut self,
         continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::ValueTaskAwaiter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -150,12 +152,13 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
             >("UnsafeOnCompleted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnsafeOnCompleted", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::ValueTaskAwaiter as
+                    quest_hook::libil2cpp::Type > ::class(), "UnsafeOnCompleted", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (continuation))
+            method.invoke_unchecked(self, (continuation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +166,7 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
         &mut self,
         value: crate::System::Threading::Tasks::ValueTask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::ValueTaskAwaiter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::Tasks::ValueTask),
                 quest_hook::libil2cpp::Void,
@@ -171,25 +174,27 @@ impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::ValueTaskAwaiter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::ValueTaskAwaiter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsCompleted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsCompleted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::ValueTaskAwaiter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsCompleted", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -42,7 +42,7 @@ impl crate::UnityEngine::Rendering::OnDemandRendering {
     pub fn GetRenderFrameInterval(
         frameInterval: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::OnDemandRendering as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Void,
@@ -50,25 +50,29 @@ impl crate::UnityEngine::Rendering::OnDemandRendering {
             >("GetRenderFrameInterval")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRenderFrameInterval", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::OnDemandRendering as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRenderFrameInterval",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (frameInterval))
+            method.invoke_unchecked((), (frameInterval))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_renderFrameInterval() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::OnDemandRendering as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_renderFrameInterval")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_renderFrameInterval", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::OnDemandRendering as
+                    quest_hook::libil2cpp::Type > ::class(), "get_renderFrameInterval",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

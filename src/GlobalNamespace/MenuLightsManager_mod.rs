@@ -58,16 +58,17 @@ impl crate::GlobalNamespace::MenuLightsManager {
         &mut self,
         lightId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), crate::UnityEngine::Color, 1usize>("CurrentColorForID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CurrentColorForID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "CurrentColorForID", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, (lightId))
+            method.invoke_unchecked(self, (lightId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +78,7 @@ impl crate::GlobalNamespace::MenuLightsManager {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ValueTuple_2<i32, crate::UnityEngine::Color>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::System::ValueTuple_2<i32, crate::UnityEngine::Color>,
@@ -85,31 +86,33 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("GetLightForIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLightForIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLightForIndex", 1usize
                 )
             });
         let __cordl_ret: crate::System::ValueTuple_2<i32, crate::UnityEngine::Color> = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetLightsCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetLightsCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLightsCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLightsCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleTweenFinished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -117,12 +120,14 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("HandleTweenFinished")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleTweenFinished", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleTweenFinished",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,16 +141,17 @@ impl crate::GlobalNamespace::MenuLightsManager {
     pub fn RefreshColors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RefreshColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshColors", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshColors", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +159,7 @@ impl crate::GlobalNamespace::MenuLightsManager {
         &mut self,
         animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -161,28 +167,31 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("ResetColorPresetToDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResetColorPresetToDefault", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "ResetColorPresetToDefault",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (animated))
+            method.invoke_unchecked(self, (animated))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SaveOriginalColors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SaveOriginalColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveOriginalColors", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveOriginalColors", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +201,7 @@ impl crate::GlobalNamespace::MenuLightsManager {
         animated: bool,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, bool, f32),
                 quest_hook::libil2cpp::Void,
@@ -200,12 +209,13 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("SetAlphaMultiplier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAlphaMultiplier", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAlphaMultiplier", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alphaMultiplier, animated, duration))
+            method.invoke_unchecked(self, (alphaMultiplier, animated, duration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +224,7 @@ impl crate::GlobalNamespace::MenuLightsManager {
         lightId: i32,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -222,12 +232,13 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("SetColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lightId, color))
+            method.invoke_unchecked(self, (lightId, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -237,7 +248,7 @@ impl crate::GlobalNamespace::MenuLightsManager {
         animated: bool,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -251,12 +262,13 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("SetColorPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColorPreset", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColorPreset", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (preset, animated, duration))
+            method.invoke_unchecked(self, (preset, animated, duration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -265,7 +277,7 @@ impl crate::GlobalNamespace::MenuLightsManager {
         preset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
         animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -278,28 +290,30 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("SetDefaultPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDefaultPreset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDefaultPreset", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (preset, animated))
+            method.invoke_unchecked(self, (preset, animated))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetTargetColors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetTargetColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTargetColors", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTargetColors", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -308,7 +322,7 @@ impl crate::GlobalNamespace::MenuLightsManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -316,20 +330,21 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StartLightAnimation(
         &mut self,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -337,12 +352,14 @@ impl crate::GlobalNamespace::MenuLightsManager {
             >("StartLightAnimation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartLightAnimation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "StartLightAnimation",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (duration))
+            method.invoke_unchecked(self, (duration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -350,32 +367,34 @@ impl crate::GlobalNamespace::MenuLightsManager {
         &mut self,
         interpolationFactor: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("UpdateColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateColors", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateColors", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (interpolationFactor))
+            method.invoke_unchecked(self, (interpolationFactor))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuLightsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuLightsManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

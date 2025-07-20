@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -66,14 +66,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities {
             >("GenerateEncryptedPreMasterSecret")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateEncryptedPreMasterSecret", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateEncryptedPreMasterSecret", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
-            method.invoke_unchecked((), (context, rsaServerPublicKey, output))
+            method.invoke_unchecked((), (context, rsaServerPublicKey, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +99,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -113,8 +115,10 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities {
             >("SafeDecryptPreMasterSecret")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SafeDecryptPreMasterSecret", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SafeDecryptPreMasterSecret", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -124,23 +128,24 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities {
                 .invoke_unchecked(
                     (),
                     (context, rsaServerPrivateKey, encryptedPreMasterSecret),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsRsaUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

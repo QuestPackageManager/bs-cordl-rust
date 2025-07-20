@@ -67,23 +67,24 @@ impl crate::System::Net::FtpControlStream {
     pub fn AbortConnect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AbortConnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AbortConnect", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "AbortConnect", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AcceptCallback(
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Void,
@@ -91,12 +92,13 @@ impl crate::System::Net::FtpControlStream {
             >("AcceptCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AcceptCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "AcceptCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asyncResult))
+            method.invoke_unchecked((), (asyncResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +114,7 @@ impl crate::System::Net::FtpControlStream {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>),
                 quest_hook::libil2cpp::Gc<
@@ -126,8 +128,9 @@ impl crate::System::Net::FtpControlStream {
             >("BuildCommandsList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildCommandsList", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "BuildCommandsList", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -136,7 +139,7 @@ impl crate::System::Net::FtpControlStream {
                     crate::System::Net::CommandStream_PipelineEntry,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (req)) };
+        > = unsafe { method.invoke_unchecked(self, (req))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckValid(
@@ -145,7 +148,7 @@ impl crate::System::Net::FtpControlStream {
         validThrough: quest_hook::libil2cpp::ByRefMut<i32>,
         completeLength: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::ResponseDescription>,
@@ -157,35 +160,37 @@ impl crate::System::Net::FtpControlStream {
             >("CheckValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckValid", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "CheckValid", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (response, validThrough, completeLength))
+            method.invoke_unchecked(self, (response, validThrough, completeLength))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "ClearState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ConnectCallback(
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Void,
@@ -193,12 +198,13 @@ impl crate::System::Net::FtpControlStream {
             >("ConnectCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConnectCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "ConnectCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asyncResult))
+            method.invoke_unchecked((), (asyncResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +215,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,
@@ -220,20 +226,21 @@ impl crate::System::Net::FtpControlStream {
             >("CreateFtpDataSocket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateFtpDataSocket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateFtpDataSocket", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Sockets::Socket,
-        > = unsafe { method.invoke_unchecked(self, (request, templateSocket)) };
+        > = unsafe { method.invoke_unchecked(self, (request, templateSocket))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateFtpListenerSocket(
         &mut self,
         request: quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>),
                 quest_hook::libil2cpp::Void,
@@ -241,12 +248,13 @@ impl crate::System::Net::FtpControlStream {
             >("CreateFtpListenerSocket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateFtpListenerSocket", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateFtpListenerSocket", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (request))
+            method.invoke_unchecked(self, (request))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +265,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -265,13 +273,14 @@ impl crate::System::Net::FtpControlStream {
             >("FormatAddress")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatAddress", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "FormatAddress", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (address, Port)) };
+        > = unsafe { method.invoke_unchecked(self, (address, Port))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatAddressV6(
@@ -281,7 +290,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -289,13 +298,14 @@ impl crate::System::Net::FtpControlStream {
             >("FormatAddressV6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatAddressV6", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "FormatAddressV6", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (address, port)) };
+        > = unsafe { method.invoke_unchecked(self, (address, port))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatFtpCommand(
@@ -305,7 +315,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -316,20 +326,21 @@ impl crate::System::Net::FtpControlStream {
             >("FormatFtpCommand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatFtpCommand", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "FormatFtpCommand", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (command, parameter)) };
+        > = unsafe { method.invoke_unchecked(self, (command, parameter))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetContentLengthFrom213Response(
         &mut self,
         responseString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i64,
@@ -337,12 +348,13 @@ impl crate::System::Net::FtpControlStream {
             >("GetContentLengthFrom213Response")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetContentLengthFrom213Response", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "GetContentLengthFrom213Response", 1usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked(self, (responseString))
+            method.invoke_unchecked(self, (responseString))?
         };
         Ok(__cordl_ret.into())
     }
@@ -350,7 +362,7 @@ impl crate::System::Net::FtpControlStream {
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::System::DateTime,
@@ -358,12 +370,13 @@ impl crate::System::Net::FtpControlStream {
             >("GetLastModifiedFrom213Response")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLastModifiedFrom213Response", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLastModifiedFrom213Response", 1usize
                 )
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked(self, (str))
+            method.invoke_unchecked(self, (str))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,7 +386,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -381,13 +394,14 @@ impl crate::System::Net::FtpControlStream {
             >("GetLoginDirectory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLoginDirectory", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLoginDirectory", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (str)) };
+        > = unsafe { method.invoke_unchecked(self, (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPathInfo(
@@ -403,7 +417,7 @@ impl crate::System::Net::FtpControlStream {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Net::FtpControlStream_GetPathOption,
@@ -423,12 +437,13 @@ impl crate::System::Net::FtpControlStream {
             >("GetPathInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPathInfo", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "GetPathInfo", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (pathOption, uri, path, directory, filename))
+            method.invoke_unchecked((), (pathOption, uri, path, directory, filename))?
         };
         Ok(__cordl_ret.into())
     }
@@ -438,7 +453,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -446,20 +461,21 @@ impl crate::System::Net::FtpControlStream {
             >("GetPortCommandLine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPortCommandLine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "GetPortCommandLine", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (request)) };
+        > = unsafe { method.invoke_unchecked(self, (request))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPortV4(
         &mut self,
         responseString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -467,12 +483,13 @@ impl crate::System::Net::FtpControlStream {
             >("GetPortV4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPortV4", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "GetPortV4", 1usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (responseString))
+            method.invoke_unchecked(self, (responseString))?
         };
         Ok(__cordl_ret.into())
     }
@@ -480,7 +497,7 @@ impl crate::System::Net::FtpControlStream {
         &mut self,
         responseString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -488,19 +505,20 @@ impl crate::System::Net::FtpControlStream {
             >("GetPortV6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPortV6", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "GetPortV6", 1usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (responseString))
+            method.invoke_unchecked(self, (responseString))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsFtpDataStreamWriteable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::TriState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Net::TriState,
@@ -508,12 +526,13 @@ impl crate::System::Net::FtpControlStream {
             >("IsFtpDataStreamWriteable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsFtpDataStreamWriteable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "IsFtpDataStreamWriteable", 0usize
                 )
             });
         let __cordl_ret: crate::System::Net::TriState = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -539,7 +558,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::CommandStream_PipelineInstruction,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -556,12 +575,13 @@ impl crate::System::Net::FtpControlStream {
             >("PipelineCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PipelineCallback", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "PipelineCallback", 4usize
                 )
             });
         let __cordl_ret: crate::System::Net::CommandStream_PipelineInstruction = unsafe {
-            method.invoke_unchecked(self, (entry, response, timeout, stream))
+            method.invoke_unchecked(self, (entry, response, timeout, stream))?
         };
         Ok(__cordl_ret.into())
     }
@@ -579,7 +599,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::CommandStream_PipelineInstruction,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -597,8 +617,9 @@ impl crate::System::Net::FtpControlStream {
             >("QueueOrCreateDataConection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueueOrCreateDataConection", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "QueueOrCreateDataConection", 5usize
                 )
             });
         let __cordl_ret: crate::System::Net::CommandStream_PipelineInstruction = unsafe {
@@ -606,7 +627,7 @@ impl crate::System::Net::FtpControlStream {
                 .invoke_unchecked(
                     self,
                     (entry, response, timeout, stream, isSocketReady),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -618,7 +639,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::CommandStream_PipelineInstruction,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -628,19 +649,20 @@ impl crate::System::Net::FtpControlStream {
             >("QueueOrCreateFtpDataStream")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueueOrCreateFtpDataStream", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "QueueOrCreateFtpDataStream", 1usize
                 )
             });
         let __cordl_ret: crate::System::Net::CommandStream_PipelineInstruction = unsafe {
-            method.invoke_unchecked(self, (stream))
+            method.invoke_unchecked(self, (stream))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SSLHandshakeCallback(
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Void,
@@ -648,12 +670,13 @@ impl crate::System::Net::FtpControlStream {
             >("SSLHandshakeCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SSLHandshakeCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "SSLHandshakeCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asyncResult))
+            method.invoke_unchecked((), (asyncResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -661,7 +684,7 @@ impl crate::System::Net::FtpControlStream {
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -669,12 +692,13 @@ impl crate::System::Net::FtpControlStream {
             >("TryUpdateContentLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryUpdateContentLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "TryUpdateContentLength", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (str))
+            method.invoke_unchecked(self, (str))?
         };
         Ok(__cordl_ret.into())
     }
@@ -683,7 +707,7 @@ impl crate::System::Net::FtpControlStream {
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         request: quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -694,12 +718,13 @@ impl crate::System::Net::FtpControlStream {
             >("TryUpdateResponseUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryUpdateResponseUri", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "TryUpdateResponseUri", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (str, request))
+            method.invoke_unchecked(self, (str, request))?
         };
         Ok(__cordl_ret.into())
     }
@@ -707,7 +732,7 @@ impl crate::System::Net::FtpControlStream {
         &mut self,
         client: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>),
                 quest_hook::libil2cpp::Void,
@@ -715,12 +740,13 @@ impl crate::System::Net::FtpControlStream {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (client))
+            method.invoke_unchecked(self, (client))?
         };
         Ok(__cordl_ret.into())
     }
@@ -729,7 +755,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -737,25 +763,27 @@ impl crate::System::Net::FtpControlStream {
             >("get_BannerMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_BannerMessage", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "get_BannerMessage", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ContentLength(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_ContentLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ContentLength", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "get_ContentLength", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Credentials(
@@ -763,7 +791,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
@@ -771,13 +799,14 @@ impl crate::System::Net::FtpControlStream {
             >("get_Credentials")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Credentials", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Credentials", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::NetworkCredential,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ExitMessage(
@@ -785,7 +814,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -793,35 +822,37 @@ impl crate::System::Net::FtpControlStream {
             >("get_ExitMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ExitMessage", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "get_ExitMessage", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_LastModified(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::DateTime, 0usize>("get_LastModified")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LastModified", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "get_LastModified", 0usize
                 )
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ResponseUri(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -829,12 +860,13 @@ impl crate::System::Net::FtpControlStream {
             >("get_ResponseUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ResponseUri", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "get_ResponseUri", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -843,7 +875,7 @@ impl crate::System::Net::FtpControlStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -851,20 +883,21 @@ impl crate::System::Net::FtpControlStream {
             >("get_WelcomeMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_WelcomeMessage", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "get_WelcomeMessage", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Credentials(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::FtpControlStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>),
                 quest_hook::libil2cpp::Void,
@@ -872,12 +905,13 @@ impl crate::System::Net::FtpControlStream {
             >("set_Credentials")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Credentials", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::FtpControlStream as quest_hook::libil2cpp::Type
+                    > ::class(), "set_Credentials", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

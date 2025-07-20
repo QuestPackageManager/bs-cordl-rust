@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::NullAllowedIf {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NullAllowedIf as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -57,12 +57,13 @@ impl crate::GlobalNamespace::NullAllowedIf {
             >("IsNullAllowedFor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNullAllowedFor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NullAllowedIf as quest_hook::libil2cpp::Type
+                    > ::class(), "IsNullAllowedFor", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (value, context))
+            method.invoke_unchecked(self, (value, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -99,7 +100,7 @@ impl crate::GlobalNamespace::NullAllowedIf {
         valueToCompare: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NullAllowedIf as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -112,8 +113,9 @@ impl crate::GlobalNamespace::NullAllowedIf {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NullAllowedIf as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -121,7 +123,7 @@ impl crate::GlobalNamespace::NullAllowedIf {
                 .invoke_unchecked(
                     self,
                     (propertyName, comparisonOperation, valueToCompare, context),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,7 +133,7 @@ impl crate::GlobalNamespace::NullAllowedIf {
         equalsTo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NullAllowedIf as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -143,12 +145,13 @@ impl crate::GlobalNamespace::NullAllowedIf {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NullAllowedIf as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (propertyName, equalsTo, context))
+            method.invoke_unchecked(self, (propertyName, equalsTo, context))?
         };
         Ok(__cordl_ret.into())
     }

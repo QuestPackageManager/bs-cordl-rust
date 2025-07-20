@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -68,13 +68,15 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             >("LookupParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LookupParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters
+                    as quest_hook::libil2cpp::Type > ::class(), "LookupParameters",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
-        > = unsafe { method.invoke_unchecked((), (publicKeyParamSet)) };
+        > = unsafe { method.invoke_unchecked((), (publicKeyParamSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_DerObjectIdentifier1(
@@ -108,7 +110,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -121,12 +123,13 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isPrivate, publicKeyParamSet))
+            method.invoke_unchecked(self, (isPrivate, publicKeyParamSet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +140,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -150,12 +153,13 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isPrivate, parameters))
+            method.invoke_unchecked(self, (isPrivate, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +170,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -176,13 +180,14 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             >("get_Parameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Parameters", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Parameters", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PublicKeyParamSet(
@@ -190,7 +195,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -200,13 +205,15 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
             >("get_PublicKeyParamSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PublicKeyParamSet", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters
+                    as quest_hook::libil2cpp::Type > ::class(), "get_PublicKeyParamSet",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

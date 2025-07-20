@@ -42,16 +42,17 @@ impl crate::Tweening::ColorTween {
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Tweening::ColorTween as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), crate::UnityEngine::Color, 1usize>("GetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Tweening::ColorTween as quest_hook::libil2cpp::Type >
+                    ::class(), "GetValue", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, (t))
+            method.invoke_unchecked(self, (t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,16 +85,17 @@ impl crate::Tweening::ColorTween {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Tweening::ColorTween as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Tweening::ColorTween as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,7 +110,7 @@ impl crate::Tweening::ColorTween {
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Tweening::ColorTween as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Color,
@@ -125,8 +127,9 @@ impl crate::Tweening::ColorTween {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Tweening::ColorTween as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -134,7 +137,7 @@ impl crate::Tweening::ColorTween {
                 .invoke_unchecked(
                     self,
                     (fromValue, toValue, onUpdate, duration, easeType, delay),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

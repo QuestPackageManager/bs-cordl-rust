@@ -62,7 +62,7 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
         value: i32,
         floatValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, crate::BeatmapSaveDataCommon::BeatmapEventType, i32, f32),
                 quest_hook::libil2cpp::Void,
@@ -70,43 +70,46 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time, _cordl_type, value, floatValue))
+            method.invoke_unchecked(self, (_cordl_time, _cordl_type, value, floatValue))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_floatValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_floatValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_floatValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_floatValue", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_time")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_time", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_time", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::BeatmapEventType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatmapSaveDataCommon::BeatmapEventType,
@@ -114,25 +117,27 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData {
             >("get_type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_type", 0usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::BeatmapEventType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_value")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_value", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion2_6_0AndEarlier::EventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_value", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

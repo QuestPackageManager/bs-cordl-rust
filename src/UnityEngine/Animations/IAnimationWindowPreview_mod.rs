@@ -43,7 +43,7 @@ impl crate::UnityEngine::Animations::IAnimationWindowPreview {
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::IAnimationWindowPreview as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Playables::PlayableGraph),
                 quest_hook::libil2cpp::Void,
@@ -51,12 +51,13 @@ impl crate::UnityEngine::Animations::IAnimationWindowPreview {
             >("UpdatePreviewGraph")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdatePreviewGraph", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::IAnimationWindowPreview as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdatePreviewGraph", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (graph))
+            method.invoke_unchecked(self, (graph))?
         };
         Ok(__cordl_ret.into())
     }

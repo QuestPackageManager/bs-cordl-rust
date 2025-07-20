@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -56,13 +56,16 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
             >("CreateStandardAttributeTable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateStandardAttributeTable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "CreateStandardAttributeTable", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IDictionary,
-        > = unsafe { method.invoke_unchecked(self, (parameters)) };
+        > = unsafe { method.invoke_unchecked(self, (parameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttributes(
@@ -71,7 +74,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::AttributeTable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
                 quest_hook::libil2cpp::Gc<
@@ -81,13 +84,15 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
             >("GetAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator
+                    as quest_hook::libil2cpp::Type > ::class(), "GetAttributes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
-        > = unsafe { method.invoke_unchecked(self, (parameters)) };
+        > = unsafe { method.invoke_unchecked(self, (parameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -111,16 +116,18 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +137,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
             crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
@@ -140,12 +147,14 @@ impl crate::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator 
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Cms::DefaultAuthenticatedAttributeTableGenerator
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (attributeTable))
+            method.invoke_unchecked(self, (attributeTable))?
         };
         Ok(__cordl_ret.into())
     }

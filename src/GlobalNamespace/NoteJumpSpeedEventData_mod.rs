@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteJumpSpeedEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -54,12 +54,14 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
             >("ChangeRelativeNoteJumpSpeed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ChangeRelativeNoteJumpSpeed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NoteJumpSpeedEventData as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ChangeRelativeNoteJumpSpeed", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,7 +70,7 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteJumpSpeedEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
@@ -76,13 +78,14 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
             >("GetCopy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCopy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NoteJumpSpeedEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCopy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataItem,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefault(
@@ -90,7 +93,7 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteJumpSpeedEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
@@ -98,13 +101,14 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
             >("GetDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefault", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NoteJumpSpeedEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDefault", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapEventData,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -129,7 +133,7 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
         easeType: crate::GlobalNamespace::EaseType,
         usePreviousValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteJumpSpeedEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32, crate::GlobalNamespace::EaseType, bool),
                 quest_hook::libil2cpp::Void,
@@ -137,8 +141,9 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NoteJumpSpeedEventData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -146,27 +151,29 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
                 .invoke_unchecked(
                     self,
                     (_cordl_time, relativeNoteJumpSpeed, easeType, usePreviousValue),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_relativeNoteJumpSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteJumpSpeedEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_relativeNoteJumpSpeed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_relativeNoteJumpSpeed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NoteJumpSpeedEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_relativeNoteJumpSpeed",
+                    0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_relativeNoteJumpSpeed(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NoteJumpSpeedEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -174,12 +181,14 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventData {
             >("set_relativeNoteJumpSpeed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_relativeNoteJumpSpeed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NoteJumpSpeedEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_relativeNoteJumpSpeed",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

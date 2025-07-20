@@ -50,7 +50,7 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::TypeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -66,13 +66,15 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
             >("GetAnyStaticMethodValidated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAnyStaticMethodValidated", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::TypeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetAnyStaticMethodValidated", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, name, types)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, name, types))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetParametersCached(
@@ -84,7 +86,7 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::TypeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>),
                 quest_hook::libil2cpp::Gc<
@@ -98,21 +100,23 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
             >("GetParametersCached")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParametersCached", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::TypeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParametersCached",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (method)) };
+        > = unsafe { method.invoke_unchecked((), (method))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetReturnType(
         mi: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::TypeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -120,19 +124,20 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
             >("GetReturnType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetReturnType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::TypeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetReturnType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (mi))
+            method.invoke_unchecked((), (mi))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeCode(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::TypeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 crate::System::TypeCode,
@@ -140,12 +145,13 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
             >("GetTypeCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTypeCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::TypeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTypeCode", 1usize
                 )
             });
         let __cordl_ret: crate::System::TypeCode = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +163,7 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::TypeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -172,11 +178,13 @@ impl crate::System::Dynamic::Utils::TypeExtensions {
             >("MatchesArgumentTypes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchesArgumentTypes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::TypeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchesArgumentTypes",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mi, argTypes)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mi, argTypes))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,7 +47,7 @@ impl crate::UnityEngine::AssetBundle {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -59,15 +59,16 @@ impl crate::UnityEngine::AssetBundle {
             >("GetAllAssetNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllAssetNames", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllAssetNames", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllLoadedAssetBundles() -> quest_hook::libil2cpp::Result<
@@ -77,7 +78,7 @@ impl crate::UnityEngine::AssetBundle {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -89,15 +90,16 @@ impl crate::UnityEngine::AssetBundle {
             >("GetAllLoadedAssetBundles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllLoadedAssetBundles", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllLoadedAssetBundles", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllLoadedAssetBundles_Native() -> quest_hook::libil2cpp::Result<
@@ -107,7 +109,7 @@ impl crate::UnityEngine::AssetBundle {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -119,15 +121,16 @@ impl crate::UnityEngine::AssetBundle {
             >("GetAllLoadedAssetBundles_Native")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllLoadedAssetBundles_Native", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllLoadedAssetBundles_Native", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllScenePaths(
@@ -139,7 +142,7 @@ impl crate::UnityEngine::AssetBundle {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -151,15 +154,16 @@ impl crate::UnityEngine::AssetBundle {
             >("GetAllScenePaths")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllScenePaths", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllScenePaths", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAllAssetsAsync_0(
@@ -167,7 +171,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
@@ -175,13 +179,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAllAssetsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAllAssetsAsync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAllAssetsAsync", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAllAssetsAsync_1<T>(
@@ -193,7 +198,7 @@ impl crate::UnityEngine::AssetBundle {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
@@ -201,13 +206,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAllAssetsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAllAssetsAsync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAllAssetsAsync", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAllAssetsAsync_Type2(
@@ -216,7 +222,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
@@ -224,13 +230,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAllAssetsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAllAssetsAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAllAssetsAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetAsync_Il2CppString0<T>(
@@ -243,7 +250,7 @@ impl crate::UnityEngine::AssetBundle {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
@@ -251,13 +258,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAssetAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAssetAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAssetAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, (name)) };
+        > = unsafe { method.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetAsync_Internal(
@@ -267,7 +275,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -278,13 +286,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAssetAsync_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAssetAsync_Internal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAssetAsync_Internal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetAsync_Type1(
@@ -294,7 +303,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -305,13 +314,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAssetAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAssetAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAssetAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetWithSubAssetsAsync(
@@ -321,7 +331,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -332,13 +342,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAssetWithSubAssetsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAssetWithSubAssetsAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAssetWithSubAssetsAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetWithSubAssetsAsync_Internal(
@@ -348,7 +359,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -359,13 +370,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAssetWithSubAssetsAsync_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAssetWithSubAssetsAsync_Internal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAssetWithSubAssetsAsync_Internal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleRequest,
-        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (name, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAsset_Il2CppString0(
@@ -374,7 +386,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -382,12 +394,13 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -399,7 +412,7 @@ impl crate::UnityEngine::AssetBundle {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 T,
@@ -407,11 +420,12 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAsset", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (name)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAsset_Internal(
@@ -421,7 +435,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -432,12 +446,13 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAsset_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAsset_Internal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAsset_Internal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
-            method.invoke_unchecked(self, (name, _cordl_type))
+            method.invoke_unchecked(self, (name, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -448,7 +463,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -459,12 +474,13 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAsset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAsset", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
-            method.invoke_unchecked(self, (name, _cordl_type))
+            method.invoke_unchecked(self, (name, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -473,7 +489,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
@@ -481,12 +497,13 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadFromFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadFromFile", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadFromFile", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle> = unsafe {
-            method.invoke_unchecked((), (path))
+            method.invoke_unchecked((), (path))?
         };
         Ok(__cordl_ret.into())
     }
@@ -495,7 +512,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
@@ -503,13 +520,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadFromFileAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadFromFileAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadFromFileAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleCreateRequest,
-        > = unsafe { method.invoke_unchecked((), (path)) };
+        > = unsafe { method.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromFileAsync_Internal(
@@ -519,7 +537,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -531,13 +549,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadFromFileAsync_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadFromFileAsync_Internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadFromFileAsync_Internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleCreateRequest,
-        > = unsafe { method.invoke_unchecked((), (path, crc, offset)) };
+        > = unsafe { method.invoke_unchecked((), (path, crc, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromFileAsync_u32_1(
@@ -546,7 +565,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, u32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
@@ -554,13 +573,14 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadFromFileAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadFromFileAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadFromFileAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleCreateRequest,
-        > = unsafe { method.invoke_unchecked((), (path, crc)) };
+        > = unsafe { method.invoke_unchecked((), (path, crc))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromFile_Internal(
@@ -570,7 +590,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -582,12 +602,13 @@ impl crate::UnityEngine::AssetBundle {
             >("LoadFromFile_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadFromFile_Internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadFromFile_Internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle> = unsafe {
-            method.invoke_unchecked((), (path, crc, offset))
+            method.invoke_unchecked((), (path, crc, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -602,16 +623,17 @@ impl crate::UnityEngine::AssetBundle {
         &mut self,
         unloadAllLoadedObjects: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Unload")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Unload", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "Unload", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (unloadAllLoadedObjects))
+            method.invoke_unchecked(self, (unloadAllLoadedObjects))?
         };
         Ok(__cordl_ret.into())
     }
@@ -621,7 +643,7 @@ impl crate::UnityEngine::AssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleUnloadOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -631,28 +653,30 @@ impl crate::UnityEngine::AssetBundle {
             >("UnloadAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnloadAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), "UnloadAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleUnloadOperation,
-        > = unsafe { method.invoke_unchecked(self, (unloadAllLoadedObjects)) };
+        > = unsafe { method.invoke_unchecked(self, (unloadAllLoadedObjects))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AssetBundle as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

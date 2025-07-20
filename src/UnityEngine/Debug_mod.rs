@@ -39,16 +39,17 @@ impl std::ops::DerefMut for crate::UnityEngine::Debug {
 #[cfg(feature = "UnityEngine+Debug")]
 impl crate::UnityEngine::Debug {
     pub fn Break() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Break")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Break", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "Break", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -56,7 +57,7 @@ impl crate::UnityEngine::Debug {
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -67,11 +68,14 @@ impl crate::UnityEngine::Debug {
             >("CallOverridenDebugHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CallOverridenDebugHandler", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "CallOverridenDebugHandler", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (exception, obj)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (exception, obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractStackTraceNoAlloc(
@@ -79,7 +83,7 @@ impl crate::UnityEngine::Debug {
         bufferMax: i32,
         projectFolder: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -91,31 +95,33 @@ impl crate::UnityEngine::Debug {
             >("ExtractStackTraceNoAlloc")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractStackTraceNoAlloc", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractStackTraceNoAlloc", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (buffer, bufferMax, projectFolder))
+            method.invoke_unchecked((), (buffer, bufferMax, projectFolder))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsLoggingEnabled() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("IsLoggingEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLoggingEnabled", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "IsLoggingEnabled", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LogAssertion(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -123,12 +129,13 @@ impl crate::UnityEngine::Debug {
             >("LogAssertion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogAssertion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogAssertion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +147,7 @@ impl crate::UnityEngine::Debug {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -157,12 +164,13 @@ impl crate::UnityEngine::Debug {
             >("LogAssertionFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogAssertionFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogAssertionFormat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (format, args))
+            method.invoke_unchecked((), (format, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -174,7 +182,7 @@ impl crate::UnityEngine::Debug {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -191,12 +199,13 @@ impl crate::UnityEngine::Debug {
             >("LogErrorFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogErrorFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogErrorFormat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (format, args))
+            method.invoke_unchecked((), (format, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +218,7 @@ impl crate::UnityEngine::Debug {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -227,19 +236,20 @@ impl crate::UnityEngine::Debug {
             >("LogErrorFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogErrorFormat", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogErrorFormat", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (context, format, args))
+            method.invoke_unchecked((), (context, format, args))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LogError_Il2CppObject0(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -247,12 +257,13 @@ impl crate::UnityEngine::Debug {
             >("LogError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogError", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogError", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,7 +271,7 @@ impl crate::UnityEngine::Debug {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -271,19 +282,20 @@ impl crate::UnityEngine::Debug {
             >("LogError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogError", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogError", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message, context))
+            method.invoke_unchecked((), (message, context))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LogException_Exception0(
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Exception>),
                 quest_hook::libil2cpp::Void,
@@ -291,12 +303,13 @@ impl crate::UnityEngine::Debug {
             >("LogException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (exception))
+            method.invoke_unchecked((), (exception))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +317,7 @@ impl crate::UnityEngine::Debug {
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         context: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -315,12 +328,13 @@ impl crate::UnityEngine::Debug {
             >("LogException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (exception, context))
+            method.invoke_unchecked((), (exception, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,7 +346,7 @@ impl crate::UnityEngine::Debug {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -349,12 +363,13 @@ impl crate::UnityEngine::Debug {
             >("LogFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogFormat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (format, args))
+            method.invoke_unchecked((), (format, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +381,7 @@ impl crate::UnityEngine::Debug {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -383,12 +398,13 @@ impl crate::UnityEngine::Debug {
             >("LogWarningFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogWarningFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogWarningFormat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (format, args))
+            method.invoke_unchecked((), (format, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -401,7 +417,7 @@ impl crate::UnityEngine::Debug {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -419,19 +435,20 @@ impl crate::UnityEngine::Debug {
             >("LogWarningFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogWarningFormat", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogWarningFormat", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (context, format, args))
+            method.invoke_unchecked((), (context, format, args))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LogWarning_Il2CppObject0(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -439,12 +456,13 @@ impl crate::UnityEngine::Debug {
             >("LogWarning")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogWarning", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogWarning", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -452,7 +470,7 @@ impl crate::UnityEngine::Debug {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -463,19 +481,20 @@ impl crate::UnityEngine::Debug {
             >("LogWarning")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogWarning", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "LogWarning", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message, context))
+            method.invoke_unchecked((), (message, context))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Log_Il2CppObject0(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -483,12 +502,13 @@ impl crate::UnityEngine::Debug {
             >("Log")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Log", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "Log", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -496,7 +516,7 @@ impl crate::UnityEngine::Debug {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -507,12 +527,13 @@ impl crate::UnityEngine::Debug {
             >("Log")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Log", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "Log", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message, context))
+            method.invoke_unchecked((), (message, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -520,7 +541,7 @@ impl crate::UnityEngine::Debug {
         condition: bool,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -528,47 +549,50 @@ impl crate::UnityEngine::Debug {
             >("Assert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Assert", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "Assert", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition, message))
+            method.invoke_unchecked((), (condition, message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _cordl_Assert__cordl_bool0(
         condition: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Assert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Assert", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "Assert", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition))
+            method.invoke_unchecked((), (condition))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_isDebugBuild() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_isDebugBuild")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isDebugBuild", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "get_isDebugBuild", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_unityLogger() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogger>,
@@ -576,12 +600,13 @@ impl crate::UnityEngine::Debug {
             >("get_unityLogger")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_unityLogger", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "get_unityLogger", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ILogger> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }

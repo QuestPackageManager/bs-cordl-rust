@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::RandomExtensions {
     pub fn GetBool(
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RandomExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Random>),
                 bool,
@@ -49,11 +49,12 @@ impl crate::GlobalNamespace::RandomExtensions {
             >("GetBool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBool", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RandomExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBool", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (random)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (random))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRange(
@@ -61,7 +62,7 @@ impl crate::GlobalNamespace::RandomExtensions {
         min: f32,
         max: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RandomExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Random>, f32, f32),
                 f32,
@@ -69,12 +70,13 @@ impl crate::GlobalNamespace::RandomExtensions {
             >("GetRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRange", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RandomExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRange", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (random, min, max))
+            method.invoke_unchecked((), (random, min, max))?
         };
         Ok(__cordl_ret.into())
     }

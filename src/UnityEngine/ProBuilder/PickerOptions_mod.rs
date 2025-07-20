@@ -106,7 +106,7 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -114,18 +114,19 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_PickerOptions1(
         &mut self,
         other: crate::UnityEngine::ProBuilder::PickerOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ProBuilder::PickerOptions),
                 bool,
@@ -133,29 +134,31 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Default() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::PickerOptions,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::ProBuilder::PickerOptions,
@@ -163,31 +166,33 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             >("get_Default")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Default", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Default", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::PickerOptions = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_depthTest(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_depthTest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_depthTest", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_depthTest", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_rectSelectMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::RectSelectMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ProBuilder::RectSelectMode,
@@ -195,12 +200,13 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             >("get_rectSelectMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_rectSelectMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_rectSelectMode", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::RectSelectMode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -208,7 +214,7 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
         a: crate::UnityEngine::ProBuilder::PickerOptions,
         b: crate::UnityEngine::ProBuilder::PickerOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::ProBuilder::PickerOptions,
@@ -219,18 +225,19 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Equality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
         a: crate::UnityEngine::ProBuilder::PickerOptions,
         b: crate::UnityEngine::ProBuilder::PickerOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::ProBuilder::PickerOptions,
@@ -241,27 +248,29 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Inequality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_depthTest(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_depthTest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_depthTest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_depthTest", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -269,7 +278,7 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
         &mut self,
         value: crate::UnityEngine::ProBuilder::RectSelectMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::PickerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ProBuilder::RectSelectMode),
                 quest_hook::libil2cpp::Void,
@@ -277,12 +286,13 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             >("set_rectSelectMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_rectSelectMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::PickerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_rectSelectMode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

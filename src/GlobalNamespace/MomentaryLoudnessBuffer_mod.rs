@@ -46,16 +46,17 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         &mut self,
         data: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MomentaryLoudnessBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("AddSample")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSample", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MomentaryLoudnessBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSample", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))
+            method.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +87,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         momentaryWindowDuration: f32,
         readingsPerBuffer: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MomentaryLoudnessBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, f32, i32),
                 quest_hook::libil2cpp::Void,
@@ -94,8 +95,9 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MomentaryLoudnessBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -108,7 +110,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
                         momentaryWindowDuration,
                         readingsPerBuffer,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +119,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MomentaryLoudnessBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -125,27 +127,30 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
             >("get_buffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_buffer", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MomentaryLoudnessBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_buffer", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isNextReadingIntervalReady(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MomentaryLoudnessBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isNextReadingIntervalReady")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isNextReadingIntervalReady", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MomentaryLoudnessBuffer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_isNextReadingIntervalReady", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

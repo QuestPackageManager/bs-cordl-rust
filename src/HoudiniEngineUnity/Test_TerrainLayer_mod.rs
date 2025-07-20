@@ -44,7 +44,7 @@ impl crate::HoudiniEngineUnity::Test_TerrainLayer {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TerrainLayer>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::Test_TerrainLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::HoudiniEngineUnity::Test_TerrainLayer,
@@ -54,23 +54,25 @@ impl crate::HoudiniEngineUnity::Test_TerrainLayer {
             >("IsEquivalentTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEquivalentTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::Test_TerrainLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEquivalentTo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::Test_TerrainLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNull", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::Test_TerrainLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNull", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -86,7 +88,7 @@ impl crate::HoudiniEngineUnity::Test_TerrainLayer {
         &mut self,
         _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::Test_TerrainLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>),
                 quest_hook::libil2cpp::Void,
@@ -94,12 +96,13 @@ impl crate::HoudiniEngineUnity::Test_TerrainLayer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::Test_TerrainLayer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_self))
+            method.invoke_unchecked(self, (_cordl_self))?
         };
         Ok(__cordl_ret.into())
     }

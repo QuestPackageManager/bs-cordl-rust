@@ -50,7 +50,7 @@ impl crate::System::Reflection::ICustomAttributeProvider {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::ICustomAttributeProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                 quest_hook::libil2cpp::Gc<
@@ -62,15 +62,17 @@ impl crate::System::Reflection::ICustomAttributeProvider {
             >("GetCustomAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCustomAttributes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::ICustomAttributeProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCustomAttributes",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (attributeType, inherit)) };
+        > = unsafe { method.invoke_unchecked(self, (attributeType, inherit))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes__cordl_bool0(
@@ -83,7 +85,7 @@ impl crate::System::Reflection::ICustomAttributeProvider {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::ICustomAttributeProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -95,15 +97,17 @@ impl crate::System::Reflection::ICustomAttributeProvider {
             >("GetCustomAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCustomAttributes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::ICustomAttributeProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCustomAttributes",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (inherit)) };
+        > = unsafe { method.invoke_unchecked(self, (inherit))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDefined(
@@ -111,7 +115,7 @@ impl crate::System::Reflection::ICustomAttributeProvider {
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::ICustomAttributeProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                 bool,
@@ -119,12 +123,13 @@ impl crate::System::Reflection::ICustomAttributeProvider {
             >("IsDefined")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDefined", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::ICustomAttributeProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDefined", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (attributeType, inherit))
+            method.invoke_unchecked(self, (attributeType, inherit))?
         };
         Ok(__cordl_ret.into())
     }

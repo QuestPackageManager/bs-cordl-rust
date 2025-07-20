@@ -72,7 +72,7 @@ impl crate::LiteNetLib::NatPunchModule {
         &mut self,
         listener: quest_hook::libil2cpp::Gc<crate::LiteNetLib::INatPunchListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::INatPunchListener>),
                 quest_hook::libil2cpp::Void,
@@ -80,12 +80,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listener))
+            method.invoke_unchecked(self, (listener))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +98,7 @@ impl crate::LiteNetLib::NatPunchModule {
         clientExternal: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         additionalInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -111,8 +112,9 @@ impl crate::LiteNetLib::NatPunchModule {
             >("NatIntroduce")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NatIntroduce", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "NatIntroduce", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -126,7 +128,7 @@ impl crate::LiteNetLib::NatPunchModule {
                         clientExternal,
                         additionalInfo,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +148,7 @@ impl crate::LiteNetLib::NatPunchModule {
         >,
         senderEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -159,12 +161,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >("OnNatIntroductionRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnNatIntroductionRequest", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "OnNatIntroductionRequest", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (req, senderEndPoint))
+            method.invoke_unchecked(self, (req, senderEndPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -174,7 +177,7 @@ impl crate::LiteNetLib::NatPunchModule {
             crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket,
@@ -184,12 +187,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >("OnNatIntroductionResponse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnNatIntroductionResponse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "OnNatIntroductionResponse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (req))
+            method.invoke_unchecked(self, (req))?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +202,7 @@ impl crate::LiteNetLib::NatPunchModule {
         req: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NatPunchModule_NatPunchPacket>,
         senderEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -211,28 +215,30 @@ impl crate::LiteNetLib::NatPunchModule {
             >("OnNatPunch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnNatPunch", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "OnNatPunch", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (req, senderEndPoint))
+            method.invoke_unchecked(self, (req, senderEndPoint))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn PollEvents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PollEvents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PollEvents", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "PollEvents", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -241,7 +247,7 @@ impl crate::LiteNetLib::NatPunchModule {
         senderEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -252,12 +258,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >("ProcessMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessMessage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "ProcessMessage", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (senderEndPoint, packet))
+            method.invoke_unchecked(self, (senderEndPoint, packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +277,7 @@ impl crate::LiteNetLib::NatPunchModule {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (T, quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                 quest_hook::libil2cpp::Void,
@@ -278,12 +285,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "Send", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, target))
+            method.invoke_unchecked(self, (packet, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -292,7 +300,7 @@ impl crate::LiteNetLib::NatPunchModule {
         masterServerEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
         additionalInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -303,12 +311,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >("SendNatIntroduceRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendNatIntroduceRequest", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "SendNatIntroduceRequest", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (masterServerEndPoint, additionalInfo))
+            method.invoke_unchecked(self, (masterServerEndPoint, additionalInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +327,7 @@ impl crate::LiteNetLib::NatPunchModule {
         port: i32,
         additionalInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -330,12 +339,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >("SendNatIntroduceRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendNatIntroduceRequest", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), "SendNatIntroduceRequest", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (host, port, additionalInfo))
+            method.invoke_unchecked(self, (host, port, additionalInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -343,7 +353,7 @@ impl crate::LiteNetLib::NatPunchModule {
         &mut self,
         socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>),
                 quest_hook::libil2cpp::Void,
@@ -351,12 +361,13 @@ impl crate::LiteNetLib::NatPunchModule {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (socket))
+            method.invoke_unchecked(self, (socket))?
         };
         Ok(__cordl_ret.into())
     }
@@ -427,16 +438,17 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -445,7 +457,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -453,12 +465,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
             >("get_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Internal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Internal", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -467,7 +480,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -475,20 +488,21 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
             >("get_Token")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Token", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Token", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Internal(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                 quest_hook::libil2cpp::Void,
@@ -496,12 +510,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
             >("set_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Internal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Internal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -509,7 +524,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -517,12 +532,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
             >("set_Token")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Token", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Token", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -598,16 +614,17 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -616,7 +633,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -624,12 +641,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
             >("get_External")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_External", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_External", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -638,7 +656,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -646,12 +664,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
             >("get_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Internal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Internal", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -660,7 +679,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -668,20 +687,21 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
             >("get_Token")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Token", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Token", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_External(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                 quest_hook::libil2cpp::Void,
@@ -689,12 +709,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
             >("set_External")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_External", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "set_External", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -702,7 +723,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                 quest_hook::libil2cpp::Void,
@@ -710,12 +731,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
             >("set_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Internal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Internal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -723,7 +745,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -731,12 +753,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
             >("set_Token")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Token", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Token", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -806,29 +829,31 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatPunchPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatPunchPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsExternal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatPunchPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsExternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsExternal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatPunchPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsExternal", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Token(
@@ -836,7 +861,7 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatPunchPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -844,29 +869,31 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
             >("get_Token")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Token", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatPunchPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Token", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_IsExternal(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatPunchPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_IsExternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_IsExternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatPunchPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "set_IsExternal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -874,7 +901,7 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NatPunchModule_NatPunchPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -882,12 +909,13 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
             >("set_Token")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Token", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NatPunchModule_NatPunchPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Token", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

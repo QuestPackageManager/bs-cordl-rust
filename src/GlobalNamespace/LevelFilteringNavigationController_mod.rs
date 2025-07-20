@@ -138,7 +138,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         addedToHierarchy: bool,
         screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -146,8 +146,9 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("DidActivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DidActivate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "DidActivate", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -155,7 +156,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
                 .invoke_unchecked(
                     self,
                     (firstActivation, addedToHierarchy, screenSystemEnabling),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +165,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         removedFromHierarchy: bool,
         screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -172,19 +173,20 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("DidDeactivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DidDeactivate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "DidDeactivate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))
+            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandleAnnotatedBeatmapLevelCollectionsViewControllerDidCloseBeatmapLevelCollections(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -194,21 +196,22 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             )
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "HandleAnnotatedBeatmapLevelCollectionsViewControllerDidCloseBeatmapLevelCollections",
                     0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandleAnnotatedBeatmapLevelCollectionsViewControllerDidOpenBeatmapLevelCollections(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -218,14 +221,15 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             )
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "HandleAnnotatedBeatmapLevelCollectionsViewControllerDidOpenBeatmapLevelCollections",
                     0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,7 +239,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             crate::GlobalNamespace::BeatmapLevelPack,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>),
                 quest_hook::libil2cpp::Void,
@@ -245,21 +249,22 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             )
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "HandleAnnotatedBeatmapLevelCollectionsViewControllerDidSelectAnnotatedBeatmapLevelCollection",
                     1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (annotatedBeatmapLevelCollection))
+            method.invoke_unchecked(self, (annotatedBeatmapLevelCollection))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandleIncreaseNumberOfGameplays(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -267,12 +272,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("HandleIncreaseNumberOfGameplays")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleIncreaseNumberOfGameplays", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleIncreaseNumberOfGameplays", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -283,7 +290,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         >,
         options: crate::GlobalNamespace::LevelSelectionOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
@@ -294,14 +301,15 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("HandleLevelSearchViewControllerDidFilterBeatmapLevelCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "HandleLevelSearchViewControllerDidFilterBeatmapLevelCollection",
                     2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (annotatedBeatmapLevelCollection, options))
+            method.invoke_unchecked(self, (annotatedBeatmapLevelCollection, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -309,7 +317,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelSearchViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::LevelSearchViewController,
@@ -319,19 +327,21 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("HandleLevelSearchViewControllerDidStartLoading")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleLevelSearchViewControllerDidStartLoading", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleLevelSearchViewControllerDidStartLoading", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obj))
+            method.invoke_unchecked(self, (obj))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerDataFavoriteLevelsSetDidChange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -339,12 +349,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("HandlePlayerDataFavoriteLevelsSetDidChange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlayerDataFavoriteLevelsSetDidChange", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandlePlayerDataFavoriteLevelsSetDidChange", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -355,7 +367,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         >,
         levelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -368,14 +380,15 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("HandleSelectLevelCategoryViewControllerDidSelectLevelCategory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "HandleSelectLevelCategoryViewControllerDidSelectLevelCategory",
                     2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (viewController, levelCategory))
+            method.invoke_unchecked(self, (viewController, levelCategory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -390,7 +403,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>),
                 quest_hook::libil2cpp::Void,
@@ -398,12 +411,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("ReplaceSecondViewController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReplaceSecondViewController", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReplaceSecondViewController", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (viewController))
+            method.invoke_unchecked(self, (viewController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +426,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         levelPack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>),
                 quest_hook::libil2cpp::Void,
@@ -419,12 +434,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("SelectAnnotatedBeatmapLevelCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectAnnotatedBeatmapLevelCollection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SelectAnnotatedBeatmapLevelCollection", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (levelPack))
+            method.invoke_unchecked(self, (levelPack))?
         };
         Ok(__cordl_ret.into())
     }
@@ -438,7 +455,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         hidePacksIfOneOrNone: bool,
         enableCustomLevels: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::SongPackMask,
@@ -452,8 +469,9 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("Setup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Setup", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "Setup", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -467,14 +485,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
                         hidePacksIfOneOrNone,
                         enableCustomLevels,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetupBeatmapLevelPacks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -482,12 +500,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("SetupBeatmapLevelPacks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetupBeatmapLevelPacks", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "SetupBeatmapLevelPacks",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,7 +519,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IReadOnlyList_1<
@@ -513,28 +533,31 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("ShowPacksInSecondChildController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShowPacksInSecondChildController", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ShowPacksInSecondChildController", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beatmapLevelPacks))
+            method.invoke_unchecked(self, (beatmapLevelPacks))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateCustomSongs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateCustomSongs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateCustomSongs", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateCustomSongs", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -542,7 +565,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         levelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory),
                 quest_hook::libil2cpp::Void,
@@ -550,12 +573,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("UpdateSecondChildControllerContent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateSecondChildControllerContent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UpdateSecondChildControllerContent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (levelCategory))
+            method.invoke_unchecked(self, (levelCategory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -563,7 +588,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>),
                 bool,
@@ -571,18 +596,20 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("<SetupBeatmapLevelPacks>b__39_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<SetupBeatmapLevelPacks>b__39_0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<SetupBeatmapLevelPacks>b__39_0", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pack)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pack))? };
         Ok(__cordl_ret.into())
     }
     pub fn _SetupBeatmapLevelPacks_b__39_1(
         &mut self,
         pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>),
                 bool,
@@ -590,26 +617,29 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("<SetupBeatmapLevelPacks>b__39_1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<SetupBeatmapLevelPacks>b__39_1", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<SetupBeatmapLevelPacks>b__39_1", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pack)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pack))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -617,7 +647,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -625,12 +655,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("add_didCloseBeatmapLevelCollectionsEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_didCloseBeatmapLevelCollectionsEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_didCloseBeatmapLevelCollectionsEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -638,7 +670,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -646,12 +678,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("add_didOpenBeatmapLevelCollectionsEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_didOpenBeatmapLevelCollectionsEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_didOpenBeatmapLevelCollectionsEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -665,7 +699,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -679,12 +713,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("add_didPressAllSongsEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_didPressAllSongsEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "add_didPressAllSongsEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -701,7 +737,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_4<
@@ -720,12 +756,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("add_didSelectBeatmapLevelPackEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_didSelectBeatmapLevelPackEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_didSelectBeatmapLevelPackEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -739,7 +777,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -753,12 +791,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("add_didStartLoadingEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_didStartLoadingEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "add_didStartLoadingEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -767,7 +807,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
@@ -775,13 +815,15 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("get_selectedBeatmapLevelPack")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_selectedBeatmapLevelPack", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_selectedBeatmapLevelPack", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPack,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedLevelCategory(
@@ -789,7 +831,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
@@ -797,12 +839,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("get_selectedLevelCategory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_selectedLevelCategory", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(), "get_selectedLevelCategory",
+                    0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -810,7 +854,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -818,12 +862,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("remove_didCloseBeatmapLevelCollectionsEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_didCloseBeatmapLevelCollectionsEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_didCloseBeatmapLevelCollectionsEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -831,7 +877,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -839,12 +885,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("remove_didOpenBeatmapLevelCollectionsEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_didOpenBeatmapLevelCollectionsEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_didOpenBeatmapLevelCollectionsEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -858,7 +906,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -872,12 +920,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("remove_didPressAllSongsEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_didPressAllSongsEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_didPressAllSongsEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -894,7 +944,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_4<
@@ -913,12 +963,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("remove_didSelectBeatmapLevelPackEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_didSelectBeatmapLevelPackEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_didSelectBeatmapLevelPackEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -932,7 +984,7 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelFilteringNavigationController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -946,12 +998,14 @@ impl crate::GlobalNamespace::LevelFilteringNavigationController {
             >("remove_didStartLoadingEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_didStartLoadingEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelFilteringNavigationController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_didStartLoadingEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

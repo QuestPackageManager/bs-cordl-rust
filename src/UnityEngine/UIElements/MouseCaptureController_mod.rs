@@ -42,7 +42,7 @@ impl crate::UnityEngine::UIElements::MouseCaptureController {
     pub fn CaptureMouse(
         handler: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseCaptureController as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IEventHandler,
@@ -52,19 +52,20 @@ impl crate::UnityEngine::UIElements::MouseCaptureController {
             >("CaptureMouse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CaptureMouse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseCaptureController as
+                    quest_hook::libil2cpp::Type > ::class(), "CaptureMouse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handler))
+            method.invoke_unchecked((), (handler))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasMouseCapture(
         handler: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseCaptureController as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IEventHandler,
@@ -74,17 +75,18 @@ impl crate::UnityEngine::UIElements::MouseCaptureController {
             >("HasMouseCapture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasMouseCapture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseCaptureController as
+                    quest_hook::libil2cpp::Type > ::class(), "HasMouseCapture", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handler)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handler))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseMouse(
         handler: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseCaptureController as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IEventHandler,
@@ -94,12 +96,13 @@ impl crate::UnityEngine::UIElements::MouseCaptureController {
             >("ReleaseMouse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReleaseMouse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseCaptureController as
+                    quest_hook::libil2cpp::Type > ::class(), "ReleaseMouse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handler))
+            method.invoke_unchecked((), (handler))?
         };
         Ok(__cordl_ret.into())
     }

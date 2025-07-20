@@ -75,15 +75,19 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IFactory_2<
+            TParam1,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TParam1), TValue, 1usize>("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IFactory_2 < TParam1, TValue > as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 1usize
                 )
             });
-        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, (param)) };
+        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, (param))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

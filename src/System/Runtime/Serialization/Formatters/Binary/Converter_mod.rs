@@ -45,7 +45,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
         code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
@@ -56,12 +56,14 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("CreatePrimitiveArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreatePrimitiveArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "CreatePrimitiveArray",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = unsafe {
-            method.invoke_unchecked((), (code, length))
+            method.invoke_unchecked((), (code, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +73,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -82,19 +84,20 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("FromString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "FromString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (value, code)) };
+        > = unsafe { method.invoke_unchecked((), (value, code))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitArrayTypeA() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -102,47 +105,50 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("InitArrayTypeA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitArrayTypeA", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "InitArrayTypeA", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitCodeA() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitCodeA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitCodeA", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "InitCodeA", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitTypeA() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitTypeA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitTypeA", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "InitTypeA", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitTypeCodeA() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -150,26 +156,28 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("InitTypeCodeA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitTypeCodeA", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "InitTypeCodeA", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitValueA() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitValueA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitValueA", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "InitValueA", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +187,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -192,19 +200,21 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("IsPrimitiveArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPrimitiveArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "IsPrimitiveArray",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_type, typeInformation))
+            method.invoke_unchecked((), (_cordl_type, typeInformation))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsWriteAsByteArray(
         code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE),
                 bool,
@@ -212,17 +222,19 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("IsWriteAsByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsWriteAsByteArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "IsWriteAsByteArray",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (code)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (code))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToArrayType(
         code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -230,12 +242,13 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("ToArrayType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToArrayType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "ToArrayType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (code))
+            method.invoke_unchecked((), (code))?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +257,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
@@ -252,12 +265,13 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("ToCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "ToCode", 1usize
                 )
             });
         let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -266,7 +280,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -274,13 +288,14 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("ToComType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToComType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "ToComType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (code)) };
+        > = unsafe { method.invoke_unchecked((), (code))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToPrimitiveTypeEnum(
@@ -288,7 +303,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TypeCode),
                 crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
@@ -296,19 +311,21 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("ToPrimitiveTypeEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToPrimitiveTypeEnum", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "ToPrimitiveTypeEnum",
+                    1usize
                 )
             });
         let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE = unsafe {
-            method.invoke_unchecked((), (typeCode))
+            method.invoke_unchecked((), (typeCode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToType(
         code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -316,19 +333,20 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("ToType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "ToType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (code))
+            method.invoke_unchecked((), (code))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToTypeCode(
         code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE),
                 crate::System::TypeCode,
@@ -336,19 +354,20 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("ToTypeCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToTypeCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "ToTypeCode", 1usize
                 )
             });
         let __cordl_ret: crate::System::TypeCode = unsafe {
-            method.invoke_unchecked((), (code))
+            method.invoke_unchecked((), (code))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn TypeLength(
         code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::Converter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE),
                 i32,
@@ -356,11 +375,12 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::Converter {
             >("TypeLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TypeLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::Converter
+                    as quest_hook::libil2cpp::Type > ::class(), "TypeLength", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (code)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (code))? };
         Ok(__cordl_ret.into())
     }
 }

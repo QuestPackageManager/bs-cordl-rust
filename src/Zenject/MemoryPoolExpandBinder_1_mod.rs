@@ -75,7 +75,9 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::MemoryPoolExpandBinder_1<
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -85,13 +87,14 @@ impl<
             >("ExpandByDoubling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandByDoubling", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::MemoryPoolExpandBinder_1 < TContract > as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandByDoubling", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
-        > = unsafe { method.invoke_unchecked(self, (showExpandWarning)) };
+        > = unsafe { method.invoke_unchecked(self, (showExpandWarning))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExpandByOneAtATime(
@@ -106,7 +109,9 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::MemoryPoolExpandBinder_1<
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -116,13 +121,14 @@ impl<
             >("ExpandByOneAtATime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandByOneAtATime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::MemoryPoolExpandBinder_1 < TContract > as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandByOneAtATime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
-        > = unsafe { method.invoke_unchecked(self, (showExpandWarning)) };
+        > = unsafe { method.invoke_unchecked(self, (showExpandWarning))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -155,7 +161,9 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::MemoryPoolExpandBinder_1<
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -168,8 +176,9 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::MemoryPoolExpandBinder_1 < TContract > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -177,7 +186,7 @@ impl<
                 .invoke_unchecked(
                     self,
                     (bindContainer, bindInfo, factoryBindInfo, poolBindInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +199,9 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::MemoryPoolExpandBinder_1<
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolBindInfo>,
@@ -198,12 +209,14 @@ impl<
             >("get_MemoryPoolBindInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_MemoryPoolBindInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::MemoryPoolExpandBinder_1 < TContract > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_MemoryPoolBindInfo",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolBindInfo> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,7 +228,9 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::MemoryPoolExpandBinder_1<
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolBindInfo>),
                 quest_hook::libil2cpp::Void,
@@ -223,12 +238,14 @@ impl<
             >("set_MemoryPoolBindInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_MemoryPoolBindInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::MemoryPoolExpandBinder_1 < TContract > as
+                    quest_hook::libil2cpp::Type > ::class(), "set_MemoryPoolBindInfo",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

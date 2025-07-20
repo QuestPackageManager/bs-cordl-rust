@@ -95,7 +95,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         >,
         targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -165,8 +165,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >("AccumulateMeshesInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AccumulateMeshesInfo", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as
+                    quest_hook::libil2cpp::Type > ::class(), "AccumulateMeshesInfo",
+                    9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -184,7 +186,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                         materialMap,
                         targetTransform,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,7 +203,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -221,15 +223,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >("CombineToNewMeshes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombineToNewMeshes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as
+                    quest_hook::libil2cpp::Type > ::class(), "CombineToNewMeshes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
             >,
-        > = unsafe { method.invoke_unchecked((), (meshes)) };
+        > = unsafe { method.invoke_unchecked((), (meshes))? };
         Ok(__cordl_ret.into())
     }
     pub fn Combine_IEnumerable_1_0(
@@ -245,7 +248,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -265,15 +268,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >("Combine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Combine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as
+                    quest_hook::libil2cpp::Type > ::class(), "Combine", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
             >,
-        > = unsafe { method.invoke_unchecked((), (meshes)) };
+        > = unsafe { method.invoke_unchecked((), (meshes))? };
         Ok(__cordl_ret.into())
     }
     pub fn Combine_ProBuilderMesh1(
@@ -292,7 +296,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -317,15 +321,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >("Combine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Combine", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as
+                    quest_hook::libil2cpp::Type > ::class(), "Combine", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
             >,
-        > = unsafe { method.invoke_unchecked((), (meshes, meshTarget)) };
+        > = unsafe { method.invoke_unchecked((), (meshes, meshTarget))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMeshFromSplit(
@@ -356,7 +361,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -395,8 +400,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >("CreateMeshFromSplit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMeshFromSplit", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMeshFromSplit",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -413,7 +420,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                         remap,
                         materials,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -446,7 +453,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -490,8 +497,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
             >("SplitByMaxVertexCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SplitByMaxVertexCount", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::CombineMeshes as
+                    quest_hook::libil2cpp::Type > ::class(), "SplitByMaxVertexCount",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -503,7 +512,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                 .invoke_unchecked(
                     (),
                     (vertices, faces, sharedVertices, sharedTextures, maxVertexCount),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

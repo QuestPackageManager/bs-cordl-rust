@@ -144,7 +144,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             crate::UnityEngine::InputSystem::InputActionMap,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::InputSystem::InputActionMap,
@@ -154,12 +154,13 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             >("AddActionMap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddActionMap", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "AddActionMap", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (actionMap))
+            method.invoke_unchecked(self, (actionMap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,7 +182,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
@@ -202,8 +203,9 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             >("ApplyParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyParameters", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyParameters", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -218,7 +220,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
                         objectRegistrationName,
                         namesAndParameters,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +229,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         currentCompositePartCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -239,28 +241,31 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             >("AssignCompositePartIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssignCompositePartIndex", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "AssignCompositePartIndex",
+                    3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (composite, name, currentCompositePartCount))
+            method.invoke_unchecked((), (composite, name, currentCompositePartCount))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -274,7 +279,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBindingComposite>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -291,13 +296,15 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             >("InstantiateBindingComposite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateBindingComposite", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InstantiateBindingComposite", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputBindingComposite,
-        > = unsafe { method.invoke_unchecked((), (binding, actionMap)) };
+        > = unsafe { method.invoke_unchecked((), (binding, actionMap))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateWithParameters<TType>(
@@ -321,7 +328,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::TypeTable,
@@ -344,8 +351,10 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             >("InstantiateWithParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateWithParameters", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "InstantiateWithParameters",
+                    6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -353,7 +362,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
                 .invoke_unchecked(
                     self,
                     (registrations, namesAndParameters, array, count, actionMap, binding),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -364,7 +373,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
         >,
         isFullResolve: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -377,61 +386,70 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             >("StartWithPreviousResolve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartWithPreviousResolve", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "StartWithPreviousResolve",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (state, isFullResolve))
+            method.invoke_unchecked(self, (state, isFullResolve))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_totalActionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_totalActionCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_totalActionCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_totalActionCount",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_totalBindingCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_totalBindingCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_totalBindingCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_totalBindingCount",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_totalControlCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_totalControlCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_totalControlCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_totalControlCount",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_totalMapCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::InputBindingResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_totalMapCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_totalMapCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::InputBindingResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_totalMapCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

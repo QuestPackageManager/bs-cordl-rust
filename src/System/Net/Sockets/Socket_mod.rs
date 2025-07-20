@@ -79,7 +79,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::SocketAsyncEventArgs,
@@ -89,11 +89,12 @@ impl crate::System::Net::Sockets::Socket {
             >("AcceptAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AcceptAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "AcceptAsync", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (e)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn Accept_0(
@@ -101,7 +102,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
@@ -109,20 +110,21 @@ impl crate::System::Net::Sockets::Socket {
             >("Accept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Accept", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Accept", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Sockets::Socket,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Accept_Socket1(
         &mut self,
         acceptSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>),
                 quest_hook::libil2cpp::Void,
@@ -130,12 +132,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Accept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Accept", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Accept", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (acceptSocket))
+            method.invoke_unchecked(self, (acceptSocket))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +147,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>, bool),
                 crate::System::IntPtr,
@@ -152,12 +155,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Accept_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Accept_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Accept_icall", 3usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (sock, error, blocking))
+            method.invoke_unchecked((), (sock, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +174,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -184,20 +188,21 @@ impl crate::System::Net::Sockets::Socket {
             >("Accept_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Accept_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Accept_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Sockets::SafeSocketHandle,
-        > = unsafe { method.invoke_unchecked((), (safeHandle, error, blocking)) };
+        > = unsafe { method.invoke_unchecked((), (safeHandle, error, blocking))? };
         Ok(__cordl_ret.into())
     }
     pub fn Available_icall(
         socket: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>),
                 i32,
@@ -205,11 +210,12 @@ impl crate::System::Net::Sockets::Socket {
             >("Available_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Available_icall", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Available_icall", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (socket, error)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (socket, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Available_internal(
@@ -218,7 +224,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -231,12 +237,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Available_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Available_internal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Available_internal", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (safeHandle, error))
+            method.invoke_unchecked((), (safeHandle, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -247,7 +254,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
@@ -258,12 +265,13 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginAccept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginAccept", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginAccept", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (callback, state))
+            method.invoke_unchecked(self, (callback, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +283,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
@@ -287,12 +295,13 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginConnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginConnect", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginConnect", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (remoteEP, callback, state))
+            method.invoke_unchecked(self, (remoteEP, callback, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,7 +314,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -318,12 +327,13 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginConnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginConnect", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginConnect", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (host, port, callback, state))
+            method.invoke_unchecked(self, (host, port, callback, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,7 +342,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketAsyncResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::SocketAsyncResult,
@@ -342,11 +352,12 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginMConnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginMConnect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginMConnect", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sockares)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sockares))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginReceive_AsyncCallback_Il2CppObject0(
@@ -360,7 +371,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -375,8 +386,9 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginReceive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginReceive", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginReceive", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -384,7 +396,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, callback, state),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,7 +414,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -420,8 +432,9 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginReceive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginReceive", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginReceive", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -437,7 +450,7 @@ impl crate::System::Net::Sockets::Socket {
                         callback,
                         state,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -446,7 +459,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketAsyncResult,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::SocketAsyncResult,
@@ -456,11 +469,12 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginSConnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginSConnect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginSConnect", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sockares)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (sockares))? };
         Ok(__cordl_ret.into())
     }
     pub fn BeginSendCallback(
@@ -469,7 +483,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         sent_so_far: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -482,12 +496,13 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginSendCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginSendCallback", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginSendCallback", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sockares, sent_so_far))
+            method.invoke_unchecked((), (sockares, sent_so_far))?
         };
         Ok(__cordl_ret.into())
     }
@@ -502,7 +517,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -517,8 +532,9 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginSend")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginSend", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginSend", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -526,7 +542,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, callback, state),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -544,7 +560,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -562,8 +578,9 @@ impl crate::System::Net::Sockets::Socket {
             >("BeginSend")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginSend", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginSend", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -579,7 +596,7 @@ impl crate::System::Net::Sockets::Socket {
                         callback,
                         state,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -587,7 +604,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         localEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>),
                 quest_hook::libil2cpp::Void,
@@ -595,12 +612,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Bind")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Bind", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Bind", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (localEP))
+            method.invoke_unchecked(self, (localEP))?
         };
         Ok(__cordl_ret.into())
     }
@@ -609,7 +627,7 @@ impl crate::System::Net::Sockets::Socket {
         sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -621,12 +639,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Bind_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Bind_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Bind_icall", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sock, sa, error))
+            method.invoke_unchecked((), (sock, sa, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -637,7 +656,7 @@ impl crate::System::Net::Sockets::Socket {
         sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -651,12 +670,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Bind_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Bind_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Bind_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (safeHandle, sa, error))
+            method.invoke_unchecked((), (safeHandle, sa, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -665,7 +685,7 @@ impl crate::System::Net::Sockets::Socket {
         block: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, bool, quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Void,
@@ -673,12 +693,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Blocking_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Blocking_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Blocking_icall", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (socket, block, error))
+            method.invoke_unchecked((), (socket, block, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -689,7 +710,7 @@ impl crate::System::Net::Sockets::Socket {
         block: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -703,12 +724,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Blocking_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Blocking_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Blocking_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (safeHandle, block, error))
+            method.invoke_unchecked((), (safeHandle, block, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -716,7 +738,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         family: crate::System::Net::Sockets::AddressFamily,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Sockets::AddressFamily),
                 bool,
@@ -724,26 +746,28 @@ impl crate::System::Net::Sockets::Socket {
             >("CanTryAddressFamily")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanTryAddressFamily", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "CanTryAddressFamily", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (family)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (family))? };
         Ok(__cordl_ret.into())
     }
     pub fn Close_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Close", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Close", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -751,16 +775,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         timeout: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Close")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Close", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Close", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (timeout))
+            method.invoke_unchecked(self, (timeout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -768,7 +793,7 @@ impl crate::System::Net::Sockets::Socket {
         socket: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Void,
@@ -776,12 +801,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Close_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Close_icall", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Close_icall", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (socket, error))
+            method.invoke_unchecked((), (socket, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -793,7 +819,7 @@ impl crate::System::Net::Sockets::Socket {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
@@ -810,12 +836,13 @@ impl crate::System::Net::Sockets::Socket {
             >("CompleteAccept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompleteAccept", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "CompleteAccept", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (s, saea))
+            method.invoke_unchecked((), (s, saea))?
         };
         Ok(__cordl_ret.into())
     }
@@ -826,7 +853,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         isReceive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
@@ -840,12 +867,13 @@ impl crate::System::Net::Sockets::Socket {
             >("CompleteSendReceive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompleteSendReceive", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "CompleteSendReceive", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (s, saea, isReceive))
+            method.invoke_unchecked((), (s, saea, isReceive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -853,7 +881,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>),
                 quest_hook::libil2cpp::Void,
@@ -861,12 +889,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Connect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Connect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Connect", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (remoteEP))
+            method.invoke_unchecked(self, (remoteEP))?
         };
         Ok(__cordl_ret.into())
     }
@@ -875,7 +904,7 @@ impl crate::System::Net::Sockets::Socket {
         address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>, i32),
                 quest_hook::libil2cpp::Void,
@@ -883,12 +912,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Connect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Connect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Connect", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (address, port))
+            method.invoke_unchecked(self, (address, port))?
         };
         Ok(__cordl_ret.into())
     }
@@ -898,7 +928,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -911,12 +941,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Connect_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Connect_icall", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Connect_icall", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sock, sa, error, blocking))
+            method.invoke_unchecked((), (sock, sa, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -928,7 +959,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -943,12 +974,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Connect_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Connect_internal", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Connect_internal", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (safeHandle, sa, error, blocking))
+            method.invoke_unchecked((), (safeHandle, sa, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -956,16 +988,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         reuseSocket: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Disconnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Disconnect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Disconnect", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reuseSocket))
+            method.invoke_unchecked(self, (reuseSocket))?
         };
         Ok(__cordl_ret.into())
     }
@@ -974,7 +1007,7 @@ impl crate::System::Net::Sockets::Socket {
         reuse: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, bool, quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Void,
@@ -982,12 +1015,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Disconnect_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Disconnect_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Disconnect_icall", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sock, reuse, error))
+            method.invoke_unchecked((), (sock, reuse, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -998,7 +1032,7 @@ impl crate::System::Net::Sockets::Socket {
         reuse: bool,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1012,28 +1046,30 @@ impl crate::System::Net::Sockets::Socket {
             >("Disconnect_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Disconnect_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Disconnect_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (safeHandle, reuse, error))
+            method.invoke_unchecked((), (safeHandle, reuse, error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1041,16 +1077,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Dispose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disposing))
+            method.invoke_unchecked(self, (disposing))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1064,7 +1101,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1078,14 +1115,15 @@ impl crate::System::Net::Sockets::Socket {
             >("EndAccept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndAccept", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndAccept", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Sockets::Socket,
         > = unsafe {
-            method.invoke_unchecked(self, (buffer, bytesTransferred, asyncResult))
+            method.invoke_unchecked(self, (buffer, bytesTransferred, asyncResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1095,7 +1133,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
@@ -1103,20 +1141,21 @@ impl crate::System::Net::Sockets::Socket {
             >("EndAccept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndAccept", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndAccept", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Sockets::Socket,
-        > = unsafe { method.invoke_unchecked(self, (asyncResult)) };
+        > = unsafe { method.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndConnect(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Void,
@@ -1124,12 +1163,13 @@ impl crate::System::Net::Sockets::Socket {
             >("EndConnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndConnect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndConnect", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (asyncResult))
+            method.invoke_unchecked(self, (asyncResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1137,7 +1177,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Void,
@@ -1145,12 +1185,13 @@ impl crate::System::Net::Sockets::Socket {
             >("EndDisconnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndDisconnect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndDisconnect", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (asyncResult))
+            method.invoke_unchecked(self, (asyncResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1163,7 +1204,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketAsyncEventArgs,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1178,12 +1219,13 @@ impl crate::System::Net::Sockets::Socket {
             >("EndReceiveFrom_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndReceiveFrom_internal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndReceiveFrom_internal", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (sockares, ares))
+            method.invoke_unchecked(self, (sockares, ares))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1194,7 +1236,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
@@ -1207,12 +1249,13 @@ impl crate::System::Net::Sockets::Socket {
             >("EndReceive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndReceive", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndReceive", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (asyncResult, errorCode))
+            method.invoke_unchecked(self, (asyncResult, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1220,7 +1263,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 i32,
@@ -1228,18 +1271,19 @@ impl crate::System::Net::Sockets::Socket {
             >("EndReceive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndReceive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndReceive", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (asyncResult)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndSendTo(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 i32,
@@ -1247,11 +1291,12 @@ impl crate::System::Net::Sockets::Socket {
             >("EndSendTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndSendTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndSendTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (asyncResult)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndSend_ByRefMut1(
@@ -1261,7 +1306,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
@@ -1274,12 +1319,13 @@ impl crate::System::Net::Sockets::Socket {
             >("EndSend")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndSend", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndSend", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (asyncResult, errorCode))
+            method.invoke_unchecked(self, (asyncResult, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1287,7 +1333,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 i32,
@@ -1295,26 +1341,28 @@ impl crate::System::Net::Sockets::Socket {
             >("EndSend")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndSend", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "EndSend", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (asyncResult)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (asyncResult))? };
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Finalize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Finalize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1324,7 +1372,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Net::Sockets::SocketError, bool),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -1332,12 +1380,13 @@ impl crate::System::Net::Sockets::Socket {
             >("GetException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "GetException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (error, wrapExceptionsInIOExceptions))
+            method.invoke_unchecked((), (error, wrapExceptionsInIOExceptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1348,7 +1397,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Sockets::SocketOptionLevel,
@@ -1359,13 +1408,14 @@ impl crate::System::Net::Sockets::Socket {
             >("GetSocketOption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSocketOption", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSocketOption", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (optionLevel, optionName)) };
+        > = unsafe { method.invoke_unchecked(self, (optionLevel, optionName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSocketOption_obj_icall(
@@ -1377,7 +1427,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -1393,12 +1443,13 @@ impl crate::System::Net::Sockets::Socket {
             >("GetSocketOption_obj_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSocketOption_obj_icall", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSocketOption_obj_icall", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (socket, level, name, obj_val, error))
+            method.invoke_unchecked((), (socket, level, name, obj_val, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1413,7 +1464,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1431,12 +1482,13 @@ impl crate::System::Net::Sockets::Socket {
             >("GetSocketOption_obj_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSocketOption_obj_internal", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSocketOption_obj_internal", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (safeHandle, level, name, obj_val, error))
+            method.invoke_unchecked((), (safeHandle, level, name, obj_val, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1446,7 +1498,7 @@ impl crate::System::Net::Sockets::Socket {
         optionInValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         optionOutValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Sockets::IOControlCode,
@@ -1458,12 +1510,14 @@ impl crate::System::Net::Sockets::Socket {
             >("IOControl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IOControl", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "IOControl", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (ioControlCode, optionInValue, optionOutValue))
+            method
+                .invoke_unchecked(self, (ioControlCode, optionInValue, optionOutValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1473,7 +1527,7 @@ impl crate::System::Net::Sockets::Socket {
         optionInValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         optionOutValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1485,12 +1539,14 @@ impl crate::System::Net::Sockets::Socket {
             >("IOControl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IOControl", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "IOControl", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (ioControlCode, optionInValue, optionOutValue))
+            method
+                .invoke_unchecked(self, (ioControlCode, optionInValue, optionOutValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1501,7 +1557,7 @@ impl crate::System::Net::Sockets::Socket {
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -1515,12 +1571,13 @@ impl crate::System::Net::Sockets::Socket {
             >("IOControl_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IOControl_icall", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "IOControl_icall", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (sock, ioctl_code, input, output, error))
+            method.invoke_unchecked((), (sock, ioctl_code, input, output, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1533,7 +1590,7 @@ impl crate::System::Net::Sockets::Socket {
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1549,12 +1606,13 @@ impl crate::System::Net::Sockets::Socket {
             >("IOControl_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IOControl_internal", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "IOControl_internal", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (safeHandle, ioctl_code, input, output, error))
+            method.invoke_unchecked((), (safeHandle, ioctl_code, input, output, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1565,7 +1623,7 @@ impl crate::System::Net::Sockets::Socket {
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         operation: crate::System::Net::Sockets::SocketOperation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1580,19 +1638,20 @@ impl crate::System::Net::Sockets::Socket {
             >("InitSocketAsyncEventArgs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSocketAsyncEventArgs", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "InitSocketAsyncEventArgs", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e, callback, state, operation))
+            method.invoke_unchecked(self, (e, callback, state, operation))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeSockets() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -1600,12 +1659,13 @@ impl crate::System::Net::Sockets::Socket {
             >("InitializeSockets")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeSockets", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "InitializeSockets", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1613,7 +1673,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         how: crate::System::Net::Sockets::SocketShutdown,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Sockets::SocketShutdown),
                 quest_hook::libil2cpp::Void,
@@ -1621,19 +1681,20 @@ impl crate::System::Net::Sockets::Socket {
             >("InternalShutdown")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalShutdown", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "InternalShutdown", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (how))
+            method.invoke_unchecked(self, (how))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsProtocolSupported(
         networkInterface: crate::System::Net::NetworkInformation::NetworkInterfaceComponent,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Net::NetworkInformation::NetworkInterfaceComponent),
                 bool,
@@ -1641,19 +1702,20 @@ impl crate::System::Net::Sockets::Socket {
             >("IsProtocolSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsProtocolSupported", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "IsProtocolSupported", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (networkInterface))
+            method.invoke_unchecked((), (networkInterface))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsProtocolSupported_internal(
         networkInterface: crate::System::Net::NetworkInformation::NetworkInterfaceComponent,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Net::NetworkInformation::NetworkInterfaceComponent),
                 bool,
@@ -1661,12 +1723,13 @@ impl crate::System::Net::Sockets::Socket {
             >("IsProtocolSupported_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsProtocolSupported_internal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "IsProtocolSupported_internal", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (networkInterface))
+            method.invoke_unchecked((), (networkInterface))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1674,7 +1737,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -1682,12 +1745,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Linger")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Linger", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Linger", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))
+            method.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1695,16 +1759,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         backlog: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Listen")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Listen", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Listen", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (backlog))
+            method.invoke_unchecked(self, (backlog))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1713,7 +1778,7 @@ impl crate::System::Net::Sockets::Socket {
         backlog: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Void,
@@ -1721,12 +1786,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Listen_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Listen_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Listen_icall", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sock, backlog, error))
+            method.invoke_unchecked((), (sock, backlog, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1737,7 +1803,7 @@ impl crate::System::Net::Sockets::Socket {
         backlog: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1751,12 +1817,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Listen_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Listen_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Listen_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (safeHandle, backlog, error))
+            method.invoke_unchecked((), (safeHandle, backlog, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1767,7 +1834,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
@@ -1775,12 +1842,13 @@ impl crate::System::Net::Sockets::Socket {
             >("LocalEndPoint_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalEndPoint_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "LocalEndPoint_icall", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            method.invoke_unchecked((), (socket, family, error))
+            method.invoke_unchecked((), (socket, family, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1793,7 +1861,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1807,12 +1875,13 @@ impl crate::System::Net::Sockets::Socket {
             >("LocalEndPoint_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalEndPoint_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "LocalEndPoint_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            method.invoke_unchecked((), (safeHandle, family, error))
+            method.invoke_unchecked((), (safeHandle, family, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1846,7 +1915,7 @@ impl crate::System::Net::Sockets::Socket {
         microSeconds: i32,
         mode: crate::System::Net::Sockets::SelectMode,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::System::Net::Sockets::SelectMode),
                 bool,
@@ -1854,12 +1923,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Poll")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Poll", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Poll", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (microSeconds, mode))
+            method.invoke_unchecked(self, (microSeconds, mode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1869,7 +1939,7 @@ impl crate::System::Net::Sockets::Socket {
         timeout: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -1882,12 +1952,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Poll_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Poll_icall", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Poll_icall", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (socket, mode, timeout, error))
+            method.invoke_unchecked((), (socket, mode, timeout, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1899,7 +1970,7 @@ impl crate::System::Net::Sockets::Socket {
         timeout: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1914,12 +1985,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Poll_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Poll_internal", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Poll_internal", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (safeHandle, mode, timeout, error))
+            method.invoke_unchecked((), (safeHandle, mode, timeout, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1929,7 +2001,7 @@ impl crate::System::Net::Sockets::Socket {
         handle: crate::System::IntPtr,
         job: quest_hook::libil2cpp::Gc<crate::System::IOSelectorJob>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim>,
@@ -1941,12 +2013,13 @@ impl crate::System::Net::Sockets::Socket {
             >("QueueIOSelectorJob")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueueIOSelectorJob", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "QueueIOSelectorJob", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sem, handle, job))
+            method.invoke_unchecked(self, (sem, handle, job))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1957,7 +2030,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Memory_1<u8>, crate::System::Net::Sockets::SocketFlags),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
@@ -1965,13 +2038,14 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveAsyncApm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveAsyncApm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveAsyncApm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe { method.invoke_unchecked(self, (buffer, socketFlags)) };
+        > = unsafe { method.invoke_unchecked(self, (buffer, socketFlags))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveAsync_Memory_1_SocketFlags__cordl_bool_CancellationToken0(
@@ -1983,7 +2057,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::Tasks::ValueTask_1<i32>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Memory_1<u8>,
@@ -1996,8 +2070,9 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveAsync", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveAsync", 4usize
                 )
             });
         let __cordl_ret: crate::System::Threading::Tasks::ValueTask_1<i32> = unsafe {
@@ -2005,7 +2080,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, socketFlags, fromNetworkStream, cancellationToken),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2013,7 +2088,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::SocketAsyncEventArgs,
@@ -2023,11 +2098,12 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveAsync", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (e)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveFrom_Il2CppArray0(
@@ -2040,7 +2116,7 @@ impl crate::System::Net::Sockets::Socket {
             quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2056,8 +2132,9 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveFrom", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveFrom", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2065,7 +2142,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, remoteEP),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2082,7 +2159,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2101,8 +2178,9 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveFrom", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveFrom", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2110,7 +2188,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, remoteEP, errorCode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2127,7 +2205,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Memory_1<u8>,
@@ -2146,8 +2224,9 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveFrom", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveFrom", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2155,7 +2234,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, remoteEP, errorCode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2170,7 +2249,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -2188,8 +2267,9 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveFrom_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveFrom_icall", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveFrom_icall", 7usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2197,7 +2277,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (sock, buffer, count, flags, sockaddr, error, blocking),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2214,7 +2294,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2234,8 +2314,9 @@ impl crate::System::Net::Sockets::Socket {
             >("ReceiveFrom_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveFrom_internal", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReceiveFrom_internal", 7usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2243,7 +2324,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (safeHandle, buffer, count, flags, sockaddr, error, blocking),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2256,7 +2337,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2271,12 +2352,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffers, socketFlags))
+            method.invoke_unchecked(self, (buffers, socketFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2292,7 +2374,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2310,12 +2392,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffers, socketFlags, errorCode))
+            method.invoke_unchecked(self, (buffers, socketFlags, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2326,7 +2409,7 @@ impl crate::System::Net::Sockets::Socket {
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2339,12 +2422,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2358,7 +2442,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2374,8 +2458,9 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2383,7 +2468,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, errorCode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2397,7 +2482,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Memory_1<u8>,
@@ -2413,8 +2498,9 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2422,7 +2508,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, errorCode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2434,7 +2520,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Span_1<u8>,
@@ -2448,12 +2534,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, socketFlags, errorCode))
+            method.invoke_unchecked(self, (buffer, socketFlags, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2465,7 +2552,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -2480,12 +2567,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive_array_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive_array_icall", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive_array_icall", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (sock, bufarray, count, flags, error, blocking))
+            method.invoke_unchecked((), (sock, bufarray, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2497,7 +2585,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -2512,12 +2600,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive_icall", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive_icall", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (sock, buffer, count, flags, error, blocking))
+            method.invoke_unchecked((), (sock, buffer, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2531,7 +2620,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2548,8 +2637,9 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive_internal", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive_internal", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2557,7 +2647,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (safeHandle, bufarray, count, flags, error, blocking),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2571,7 +2661,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2588,8 +2678,9 @@ impl crate::System::Net::Sockets::Socket {
             >("Receive_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Receive_internal", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Receive_internal", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2597,7 +2688,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (safeHandle, buffer, count, flags, error, blocking),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2607,7 +2698,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -2615,12 +2706,13 @@ impl crate::System::Net::Sockets::Socket {
             >("RemapIPEndPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemapIPEndPoint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "RemapIPEndPoint", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = unsafe {
-            method.invoke_unchecked(self, (input))
+            method.invoke_unchecked(self, (input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2631,7 +2723,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
@@ -2639,12 +2731,13 @@ impl crate::System::Net::Sockets::Socket {
             >("RemoteEndPoint_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoteEndPoint_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoteEndPoint_icall", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            method.invoke_unchecked((), (socket, family, error))
+            method.invoke_unchecked((), (socket, family, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2657,7 +2750,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2671,12 +2764,13 @@ impl crate::System::Net::Sockets::Socket {
             >("RemoteEndPoint_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoteEndPoint_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoteEndPoint_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = unsafe {
-            method.invoke_unchecked((), (safeHandle, family, error))
+            method.invoke_unchecked((), (safeHandle, family, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2687,7 +2781,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         isReceive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2700,12 +2794,13 @@ impl crate::System::Net::Sockets::Socket {
             >("ReturnSocketAsyncEventArgs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReturnSocketAsyncEventArgs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReturnSocketAsyncEventArgs", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (saea, isReceive))
+            method.invoke_unchecked(self, (saea, isReceive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2717,7 +2812,7 @@ impl crate::System::Net::Sockets::Socket {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
@@ -2729,12 +2824,13 @@ impl crate::System::Net::Sockets::Socket {
             >("ReturnSocketAsyncEventArgs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReturnSocketAsyncEventArgs", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ReturnSocketAsyncEventArgs", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (saea))
+            method.invoke_unchecked(self, (saea))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2742,7 +2838,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::SocketAsyncEventArgs,
@@ -2752,11 +2848,12 @@ impl crate::System::Net::Sockets::Socket {
             >("SendAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SendAsync", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (e)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsyncApm(
@@ -2766,7 +2863,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ReadOnlyMemory_1<u8>,
@@ -2777,13 +2874,14 @@ impl crate::System::Net::Sockets::Socket {
             >("SendAsyncApm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendAsyncApm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SendAsyncApm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe { method.invoke_unchecked(self, (buffer, socketFlags)) };
+        > = unsafe { method.invoke_unchecked(self, (buffer, socketFlags))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsyncForNetworkStream(
@@ -2792,7 +2890,7 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ReadOnlyMemory_1<u8>,
@@ -2804,12 +2902,13 @@ impl crate::System::Net::Sockets::Socket {
             >("SendAsyncForNetworkStream")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendAsyncForNetworkStream", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SendAsyncForNetworkStream", 3usize
                 )
             });
         let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
-            method.invoke_unchecked(self, (buffer, socketFlags, cancellationToken))
+            method.invoke_unchecked(self, (buffer, socketFlags, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2821,7 +2920,7 @@ impl crate::System::Net::Sockets::Socket {
         socketFlags: crate::System::Net::Sockets::SocketFlags,
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2835,8 +2934,9 @@ impl crate::System::Net::Sockets::Socket {
             >("SendTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendTo", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SendTo", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2844,7 +2944,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, remoteEP),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2857,7 +2957,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -2873,13 +2973,14 @@ impl crate::System::Net::Sockets::Socket {
             >("SendTo_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendTo_icall", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SendTo_icall", 7usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
             method
-                .invoke_unchecked((), (sock, buffer, count, flags, sa, error, blocking))
+                .invoke_unchecked((), (sock, buffer, count, flags, sa, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2894,7 +2995,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2912,8 +3013,9 @@ impl crate::System::Net::Sockets::Socket {
             >("SendTo_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendTo_internal", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SendTo_internal", 7usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -2921,7 +3023,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (safeHandle, buffer, count, flags, sa, error, blocking),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2934,7 +3036,7 @@ impl crate::System::Net::Sockets::Socket {
         >,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2949,12 +3051,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffers, socketFlags))
+            method.invoke_unchecked(self, (buffers, socketFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2970,7 +3073,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2988,12 +3091,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffers, socketFlags, errorCode))
+            method.invoke_unchecked(self, (buffers, socketFlags, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3004,7 +3108,7 @@ impl crate::System::Net::Sockets::Socket {
         _cordl_size: i32,
         socketFlags: crate::System::Net::Sockets::SocketFlags,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -3017,12 +3121,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size, socketFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3036,7 +3141,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -3052,8 +3157,9 @@ impl crate::System::Net::Sockets::Socket {
             >("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -3061,7 +3167,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     self,
                     (buffer, offset, _cordl_size, socketFlags, errorCode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -3073,7 +3179,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SocketError,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ReadOnlySpan_1<u8>,
@@ -3087,12 +3193,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (buffer, socketFlags, errorCode))
+            method.invoke_unchecked(self, (buffer, socketFlags, errorCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3104,7 +3211,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -3119,12 +3226,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Send_array_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send_array_icall", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send_array_icall", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (sock, bufarray, count, flags, error, blocking))
+            method.invoke_unchecked((), (sock, bufarray, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3136,7 +3244,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -3151,12 +3259,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Send_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send_icall", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send_icall", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (sock, buffer, count, flags, error, blocking))
+            method.invoke_unchecked((), (sock, buffer, count, flags, error, blocking))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3170,7 +3279,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3187,8 +3296,9 @@ impl crate::System::Net::Sockets::Socket {
             >("Send_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send_internal", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send_internal", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -3196,7 +3306,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (safeHandle, bufarray, count, flags, error, blocking),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -3210,7 +3320,7 @@ impl crate::System::Net::Sockets::Socket {
         error: quest_hook::libil2cpp::ByRefMut<i32>,
         blocking: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3227,8 +3337,9 @@ impl crate::System::Net::Sockets::Socket {
             >("Send_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send_internal", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Send_internal", 6usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -3236,7 +3347,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (safeHandle, buffer, count, flags, error, blocking),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -3244,7 +3355,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         level: crate::System::Net::Sockets::IPProtectionLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Sockets::IPProtectionLevel),
                 quest_hook::libil2cpp::Void,
@@ -3252,12 +3363,13 @@ impl crate::System::Net::Sockets::Socket {
             >("SetIPProtectionLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetIPProtectionLevel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SetIPProtectionLevel", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (level))
+            method.invoke_unchecked(self, (level))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3267,7 +3379,7 @@ impl crate::System::Net::Sockets::Socket {
         optionName: crate::System::Net::Sockets::SocketOptionName,
         optionValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Sockets::SocketOptionLevel,
@@ -3279,12 +3391,13 @@ impl crate::System::Net::Sockets::Socket {
             >("SetSocketOption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSocketOption", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SetSocketOption", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (optionLevel, optionName, optionValue))
+            method.invoke_unchecked(self, (optionLevel, optionName, optionValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3294,7 +3407,7 @@ impl crate::System::Net::Sockets::Socket {
         optionName: crate::System::Net::Sockets::SocketOptionName,
         optionValue: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Sockets::SocketOptionLevel,
@@ -3306,12 +3419,13 @@ impl crate::System::Net::Sockets::Socket {
             >("SetSocketOption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSocketOption", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SetSocketOption", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (optionLevel, optionName, optionValue))
+            method.invoke_unchecked(self, (optionLevel, optionName, optionValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3322,7 +3436,7 @@ impl crate::System::Net::Sockets::Socket {
         optionValue: i32,
         silent: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Sockets::SocketOptionLevel,
@@ -3335,12 +3449,14 @@ impl crate::System::Net::Sockets::Socket {
             >("SetSocketOption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSocketOption", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SetSocketOption", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (optionLevel, optionName, optionValue, silent))
+            method
+                .invoke_unchecked(self, (optionLevel, optionName, optionValue, silent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3353,7 +3469,7 @@ impl crate::System::Net::Sockets::Socket {
         int_val: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -3369,8 +3485,9 @@ impl crate::System::Net::Sockets::Socket {
             >("SetSocketOption_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSocketOption_icall", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SetSocketOption_icall", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -3378,7 +3495,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (socket, level, name, obj_val, byte_val, int_val, error),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -3393,7 +3510,7 @@ impl crate::System::Net::Sockets::Socket {
         int_val: i32,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3411,8 +3528,9 @@ impl crate::System::Net::Sockets::Socket {
             >("SetSocketOption_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSocketOption_internal", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SetSocketOption_internal", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -3420,7 +3538,7 @@ impl crate::System::Net::Sockets::Socket {
                 .invoke_unchecked(
                     (),
                     (safeHandle, level, name, obj_val, byte_val, int_val, error),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -3428,7 +3546,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         how: crate::System::Net::Sockets::SocketShutdown,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Sockets::SocketShutdown),
                 quest_hook::libil2cpp::Void,
@@ -3436,12 +3554,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Shutdown")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Shutdown", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Shutdown", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (how))
+            method.invoke_unchecked(self, (how))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3450,7 +3569,7 @@ impl crate::System::Net::Sockets::Socket {
         how: crate::System::Net::Sockets::SocketShutdown,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -3462,12 +3581,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Shutdown_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Shutdown_icall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Shutdown_icall", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (socket, how, error))
+            method.invoke_unchecked((), (socket, how, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3478,7 +3598,7 @@ impl crate::System::Net::Sockets::Socket {
         how: crate::System::Net::Sockets::SocketShutdown,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3492,28 +3612,30 @@ impl crate::System::Net::Sockets::Socket {
             >("Shutdown_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Shutdown_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Shutdown_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (safeHandle, how, error))
+            method.invoke_unchecked((), (safeHandle, how, error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SocketDefaults(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SocketDefaults")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SocketDefaults", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SocketDefaults", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3523,7 +3645,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::Sockets::SocketAsyncOperation,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Sockets::SocketOperation),
                 crate::System::Net::Sockets::SocketAsyncOperation,
@@ -3531,12 +3653,13 @@ impl crate::System::Net::Sockets::Socket {
             >("SocketOperationToSocketAsyncOperation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SocketOperationToSocketAsyncOperation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "SocketOperationToSocketAsyncOperation", 1usize
                 )
             });
         let __cordl_ret: crate::System::Net::Sockets::SocketAsyncOperation = unsafe {
-            method.invoke_unchecked(self, (op))
+            method.invoke_unchecked(self, (op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3546,7 +3669,7 @@ impl crate::System::Net::Sockets::Socket {
         proto: crate::System::Net::Sockets::ProtocolType,
         error: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Net::Sockets::AddressFamily,
@@ -3559,12 +3682,13 @@ impl crate::System::Net::Sockets::Socket {
             >("Socket_icall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Socket_icall", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "Socket_icall", 4usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (family, _cordl_type, proto, error))
+            method.invoke_unchecked((), (family, _cordl_type, proto, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3572,7 +3696,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -3580,12 +3704,13 @@ impl crate::System::Net::Sockets::Socket {
             >("ThrowIfBufferNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIfBufferNull", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowIfBufferNull", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer))
+            method.invoke_unchecked(self, (buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3595,7 +3720,7 @@ impl crate::System::Net::Sockets::Socket {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -3607,19 +3732,20 @@ impl crate::System::Net::Sockets::Socket {
             >("ThrowIfBufferOutOfRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIfBufferOutOfRange", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowIfBufferOutOfRange", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfDisposedAndClosed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -3627,28 +3753,30 @@ impl crate::System::Net::Sockets::Socket {
             >("ThrowIfDisposedAndClosed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIfDisposedAndClosed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowIfDisposedAndClosed", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfUdp(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ThrowIfUdp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIfUdp", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowIfUdp", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3660,7 +3788,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
@@ -3674,13 +3802,14 @@ impl crate::System::Net::Sockets::Socket {
             >("ValidateEndIAsyncResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateEndIAsyncResult", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "ValidateEndIAsyncResult", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Sockets::SocketAsyncResult,
-        > = unsafe { method.invoke_unchecked(self, (ares, methodName, argName)) };
+        > = unsafe { method.invoke_unchecked(self, (ares, methodName, argName))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_AddressFamily_SocketType_ProtocolType0(
@@ -3689,7 +3818,7 @@ impl crate::System::Net::Sockets::Socket {
         socketType: crate::System::Net::Sockets::SocketType,
         protocolType: crate::System::Net::Sockets::ProtocolType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Sockets::AddressFamily,
@@ -3701,12 +3830,13 @@ impl crate::System::Net::Sockets::Socket {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (addressFamily, socketType, protocolType))
+            method.invoke_unchecked(self, (addressFamily, socketType, protocolType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3719,7 +3849,7 @@ impl crate::System::Net::Sockets::Socket {
             crate::System::Net::Sockets::SafeSocketHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Sockets::AddressFamily,
@@ -3734,19 +3864,20 @@ impl crate::System::Net::Sockets::Socket {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (family, _cordl_type, proto, safe_handle))
+            method.invoke_unchecked(self, (family, _cordl_type, proto, safe_handle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn cancel_blocking_socket_operation(
         thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>),
                 quest_hook::libil2cpp::Void,
@@ -3754,19 +3885,20 @@ impl crate::System::Net::Sockets::Socket {
             >("cancel_blocking_socket_operation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "cancel_blocking_socket_operation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "cancel_blocking_socket_operation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (thread))
+            method.invoke_unchecked((), (thread))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_AddressFamily(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::AddressFamily> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Net::Sockets::AddressFamily,
@@ -3774,107 +3906,115 @@ impl crate::System::Net::Sockets::Socket {
             >("get_AddressFamily")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AddressFamily", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_AddressFamily", 0usize
                 )
             });
         let __cordl_ret: crate::System::Net::Sockets::AddressFamily = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Available(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Available")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Available", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Available", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Blocking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Blocking")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Blocking", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Blocking", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CleanedUp(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_CleanedUp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CleanedUp", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_CleanedUp", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Connected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Connected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Connected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Connected", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DualMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_DualMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DualMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_DualMode", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_FamilyHint() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_FamilyHint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_FamilyHint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_FamilyHint", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Handle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::IntPtr, 0usize>("get_Handle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Handle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Handle", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_InternalSyncObject() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -3882,37 +4022,40 @@ impl crate::System::Net::Sockets::Socket {
             >("get_InternalSyncObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_InternalSyncObject", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_InternalSyncObject", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsBound(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsBound")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsBound", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_IsBound", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDualMode(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsDualMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsDualMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_IsDualMode", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_LocalEndPoint(
@@ -3920,7 +4063,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
@@ -3928,43 +4071,46 @@ impl crate::System::Net::Sockets::Socket {
             >("get_LocalEndPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LocalEndPoint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_LocalEndPoint", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_OSSupportsIPv4() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_OSSupportsIPv4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_OSSupportsIPv4", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_OSSupportsIPv4", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_OSSupportsIPv6() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_OSSupportsIPv6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_OSSupportsIPv6", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_OSSupportsIPv6", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ProtocolType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::ProtocolType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Net::Sockets::ProtocolType,
@@ -3972,12 +4118,13 @@ impl crate::System::Net::Sockets::Socket {
             >("get_ProtocolType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ProtocolType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_ProtocolType", 0usize
                 )
             });
         let __cordl_ret: crate::System::Net::Sockets::ProtocolType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3986,7 +4133,7 @@ impl crate::System::Net::Sockets::Socket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
@@ -3994,19 +4141,20 @@ impl crate::System::Net::Sockets::Socket {
             >("get_RemoteEndPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RemoteEndPoint", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_RemoteEndPoint", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_SocketType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::SocketType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Net::Sockets::SocketType,
@@ -4014,41 +4162,44 @@ impl crate::System::Net::Sockets::Socket {
             >("get_SocketType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SocketType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_SocketType", 0usize
                 )
             });
         let __cordl_ret: crate::System::Net::Sockets::SocketType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Ttl(&mut self) -> quest_hook::libil2cpp::Result<i16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i16, 0usize>("get_Ttl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Ttl", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Ttl", 0usize
                 )
             });
-        let __cordl_ret: i16 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i16 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Blocking(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_Blocking")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Blocking", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_Blocking", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4056,7 +4207,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -4064,12 +4215,13 @@ impl crate::System::Net::Sockets::Socket {
             >("set_DontFragment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_DontFragment", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_DontFragment", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4077,16 +4229,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_DualMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_DualMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_DualMode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4094,7 +4247,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -4102,12 +4255,13 @@ impl crate::System::Net::Sockets::Socket {
             >("set_EnableBroadcast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnableBroadcast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_EnableBroadcast", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4115,7 +4269,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -4123,12 +4277,13 @@ impl crate::System::Net::Sockets::Socket {
             >("set_ExclusiveAddressUse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ExclusiveAddressUse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_ExclusiveAddressUse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4136,16 +4291,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_NoDelay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_NoDelay", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_NoDelay", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4153,7 +4309,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -4161,12 +4317,13 @@ impl crate::System::Net::Sockets::Socket {
             >("set_ReceiveBufferSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ReceiveBufferSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_ReceiveBufferSize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4174,7 +4331,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -4182,12 +4339,13 @@ impl crate::System::Net::Sockets::Socket {
             >("set_ReceiveTimeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ReceiveTimeout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_ReceiveTimeout", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4195,7 +4353,7 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -4203,12 +4361,13 @@ impl crate::System::Net::Sockets::Socket {
             >("set_SendBufferSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_SendBufferSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_SendBufferSize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4216,16 +4375,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_SendTimeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_SendTimeout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_SendTimeout", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4233,16 +4393,17 @@ impl crate::System::Net::Sockets::Socket {
         &mut self,
         value: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i16), quest_hook::libil2cpp::Void, 1usize>("set_Ttl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Ttl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket as quest_hook::libil2cpp::Type >
+                    ::class(), "set_Ttl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4328,7 +4489,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Sockets::SocketError),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -4336,25 +4497,27 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("CreateException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked(self, (error))
+            method.invoke_unchecked(self, (error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetResult(&mut self, token: i16) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i16), i32, 1usize>("GetResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResult", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "GetResult", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (token)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStatus(
@@ -4363,7 +4526,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i16),
                 crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus,
@@ -4371,12 +4534,13 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("GetStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStatus", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStatus", 1usize
                 )
             });
         let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = unsafe {
-            method.invoke_unchecked(self, (token))
+            method.invoke_unchecked(self, (token))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4390,7 +4554,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         forceAsync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -4408,12 +4572,13 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("InvokeContinuation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeContinuation", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "InvokeContinuation", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (continuation, state, forceAsync))
+            method.invoke_unchecked(self, (continuation, state, forceAsync))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4435,7 +4600,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         token: i16,
         flags: crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -4454,12 +4619,13 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("OnCompleted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnCompleted", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "OnCompleted", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (continuation, state, token, flags))
+            method.invoke_unchecked(self, (continuation, state, token, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4469,7 +4635,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             crate::System::Net::Sockets::SocketAsyncEventArgs,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::SocketAsyncEventArgs,
@@ -4479,12 +4645,13 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("OnCompleted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnCompleted", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "OnCompleted", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl__))
+            method.invoke_unchecked(self, (_cordl__))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4494,7 +4661,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::Tasks::ValueTask_1<i32>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>),
                 crate::System::Threading::Tasks::ValueTask_1<i32>,
@@ -4502,48 +4669,51 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("ReceiveAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceiveAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "ReceiveAsync", 1usize
                 )
             });
         let __cordl_ret: crate::System::Threading::Tasks::ValueTask_1<i32> = unsafe {
-            method.invoke_unchecked(self, (socket))
+            method.invoke_unchecked(self, (socket))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Reserve(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("Reserve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reserve", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "Reserve", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsyncForNetworkStream(
         &mut self,
         socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>),
                 crate::System::Threading::Tasks::ValueTask,
@@ -4551,12 +4721,14 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("SendAsyncForNetworkStream")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendAsyncForNetworkStream", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "SendAsyncForNetworkStream",
+                    1usize
                 )
             });
         let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
-            method.invoke_unchecked(self, (socket))
+            method.invoke_unchecked(self, (socket))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4564,7 +4736,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         &mut self,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i16),
                 quest_hook::libil2cpp::Void,
@@ -4572,13 +4744,14 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("System.Threading.Tasks.Sources.IValueTaskSource.GetResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.Threading.Tasks.Sources.IValueTaskSource.GetResult",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "System.Threading.Tasks.Sources.IValueTaskSource.GetResult", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (token))
+            method.invoke_unchecked(self, (token))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4586,7 +4759,7 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
         &mut self,
         error: crate::System::Net::Sockets::SocketError,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Sockets::SocketError),
                 quest_hook::libil2cpp::Void,
@@ -4594,19 +4767,20 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("ThrowException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "ThrowException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (error))
+            method.invoke_unchecked(self, (error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIncorrectTokenException(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -4614,19 +4788,21 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("ThrowIncorrectTokenException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIncorrectTokenException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ThrowIncorrectTokenException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowMultipleContinuationsException(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -4634,50 +4810,55 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("ThrowMultipleContinuationsException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowMultipleContinuationsException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ThrowMultipleContinuationsException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_WrapExceptionsInIOExceptions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_WrapExceptionsInIOExceptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_WrapExceptionsInIOExceptions", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_WrapExceptionsInIOExceptions", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_WrapExceptionsInIOExceptions(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -4685,12 +4866,14 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
             >("set_WrapExceptionsInIOExceptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_WrapExceptionsInIOExceptions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_WrapExceptionsInIOExceptions", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4807,16 +4990,17 @@ impl crate::System::Net::Sockets::Socket_CachedEventArgs {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_CachedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_CachedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4885,16 +5069,17 @@ impl crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4985,7 +5170,9 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<bool>),
                 crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
@@ -4995,13 +5182,15 @@ impl<
             >("GetCompletionResponsibility")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCompletionResponsibility", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1 <
+                    TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "GetCompletionResponsibility", 1usize
                 )
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
             TResult,
-        > = unsafe { method.invoke_unchecked(self, (responsibleForReturningToPool)) };
+        > = unsafe { method.invoke_unchecked(self, (responsibleForReturningToPool))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -5020,16 +5209,19 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1 <
+                    TResult > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

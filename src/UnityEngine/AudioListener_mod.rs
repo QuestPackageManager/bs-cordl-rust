@@ -44,7 +44,7 @@ impl crate::UnityEngine::AudioListener {
         >,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -59,12 +59,13 @@ impl crate::UnityEngine::AudioListener {
             >("GetOutputDataHelper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOutputDataHelper", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOutputDataHelper", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (samples, channel))
+            method.invoke_unchecked((), (samples, channel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +73,7 @@ impl crate::UnityEngine::AudioListener {
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -83,12 +84,13 @@ impl crate::UnityEngine::AudioListener {
             >("GetOutputData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOutputData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOutputData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (samples, channel))
+            method.invoke_unchecked((), (samples, channel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +100,7 @@ impl crate::UnityEngine::AudioListener {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -106,13 +108,14 @@ impl crate::UnityEngine::AudioListener {
             >("GetOutputData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOutputData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOutputData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked((), (numSamples, channel)) };
+        > = unsafe { method.invoke_unchecked((), (numSamples, channel))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpectrumDataHelper(
@@ -122,7 +125,7 @@ impl crate::UnityEngine::AudioListener {
         channel: i32,
         window: crate::UnityEngine::FFTWindow,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -138,12 +141,13 @@ impl crate::UnityEngine::AudioListener {
             >("GetSpectrumDataHelper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSpectrumDataHelper", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSpectrumDataHelper", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (samples, channel, window))
+            method.invoke_unchecked((), (samples, channel, window))?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,7 +156,7 @@ impl crate::UnityEngine::AudioListener {
         channel: i32,
         window: crate::UnityEngine::FFTWindow,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -164,12 +168,13 @@ impl crate::UnityEngine::AudioListener {
             >("GetSpectrumData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSpectrumData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSpectrumData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (samples, channel, window))
+            method.invoke_unchecked((), (samples, channel, window))?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +185,7 @@ impl crate::UnityEngine::AudioListener {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, crate::UnityEngine::FFTWindow),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -188,13 +193,14 @@ impl crate::UnityEngine::AudioListener {
             >("GetSpectrumData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSpectrumData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSpectrumData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked((), (numSamples, channel, window)) };
+        > = unsafe { method.invoke_unchecked((), (numSamples, channel, window))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -207,35 +213,37 @@ impl crate::UnityEngine::AudioListener {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_pause() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_pause")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pause", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "get_pause", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_velocityUpdateMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::AudioVelocityUpdateMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::AudioVelocityUpdateMode,
@@ -243,31 +251,33 @@ impl crate::UnityEngine::AudioListener {
             >("get_velocityUpdateMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_velocityUpdateMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "get_velocityUpdateMode", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::AudioVelocityUpdateMode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_volume() -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), f32, 0usize>("get_volume")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_volume", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "get_volume", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_pause(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -275,12 +285,13 @@ impl crate::UnityEngine::AudioListener {
             >("set_pause")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_pause", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "set_pause", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -288,7 +299,7 @@ impl crate::UnityEngine::AudioListener {
         &mut self,
         value: crate::UnityEngine::AudioVelocityUpdateMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::AudioVelocityUpdateMode),
                 quest_hook::libil2cpp::Void,
@@ -296,19 +307,20 @@ impl crate::UnityEngine::AudioListener {
             >("set_velocityUpdateMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_velocityUpdateMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "set_velocityUpdateMode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_volume(
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AudioListener as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -316,12 +328,13 @@ impl crate::UnityEngine::AudioListener {
             >("set_volume")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_volume", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AudioListener as quest_hook::libil2cpp::Type >
+                    ::class(), "set_volume", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }

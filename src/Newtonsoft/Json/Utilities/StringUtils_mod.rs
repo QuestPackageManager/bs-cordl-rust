@@ -51,7 +51,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter>,
@@ -59,12 +59,13 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("CreateStringWriter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateStringWriter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateStringWriter", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter> = unsafe {
-            method.invoke_unchecked((), (capacity))
+            method.invoke_unchecked((), (capacity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +73,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, char),
                 bool,
@@ -80,11 +81,12 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("EndsWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndsWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "EndsWith", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ForgivingCaseSensitiveFind<TSource>(
@@ -103,7 +105,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -124,12 +126,14 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("ForgivingCaseSensitiveFind")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ForgivingCaseSensitiveFind", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ForgivingCaseSensitiveFind", 3usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, valueSelector, testValue))
+            method.invoke_unchecked((), (source, valueSelector, testValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +148,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -162,13 +166,14 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("FormatWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatWith", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatWith", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (format, provider, args)) };
+        > = unsafe { method.invoke_unchecked((), (format, provider, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatWith_Il2CppObject0(
@@ -178,7 +183,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -190,13 +195,14 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("FormatWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatWith", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatWith", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (format, provider, arg0)) };
+        > = unsafe { method.invoke_unchecked((), (format, provider, arg0))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatWith_Il2CppObject_Il2CppObject1(
@@ -207,7 +213,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,13 +226,14 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("FormatWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatWith", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatWith", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (format, provider, arg0, arg1)) };
+        > = unsafe { method.invoke_unchecked((), (format, provider, arg0, arg1))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatWith_Il2CppObject_Il2CppObject_Il2CppObject2(
@@ -238,7 +245,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -252,13 +259,16 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("FormatWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatWith", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatWith", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (format, provider, arg0, arg1, arg2)) };
+        > = unsafe {
+            method.invoke_unchecked((), (format, provider, arg0, arg1, arg2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatWith_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject3(
@@ -271,7 +281,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -286,14 +296,15 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("FormatWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatWith", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatWith", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (format, provider, arg0, arg1, arg2, arg3))
+            method.invoke_unchecked((), (format, provider, arg0, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -301,7 +312,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         c: char,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, char),
                 i32,
@@ -309,41 +320,44 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IndexOf", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (s, c)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (s, c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsHighSurrogate(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(char), bool, 1usize>("IsHighSurrogate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsHighSurrogate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsHighSurrogate", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLowSurrogate(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(char), bool, 1usize>("IsLowSurrogate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLowSurrogate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsLowSurrogate", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNullOrEmpty(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -351,17 +365,18 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("IsNullOrEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNullOrEmpty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNullOrEmpty", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsWhiteSpace(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -369,11 +384,12 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("IsWhiteSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsWhiteSpace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsWhiteSpace", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn Replace(
@@ -383,7 +399,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -395,20 +411,21 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("Replace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Replace", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Replace", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s, oldValue, newValue)) };
+        > = unsafe { method.invoke_unchecked((), (s, oldValue, newValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartsWith(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, char),
                 bool,
@@ -416,11 +433,12 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("StartsWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartsWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "StartsWith", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToCamelCase(
@@ -428,7 +446,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -436,20 +454,21 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("ToCamelCase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToCamelCase", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToCamelCase", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s)) };
+        > = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToCharAsUnicode(
         c: char,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     char,
@@ -460,12 +479,13 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("ToCharAsUnicode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToCharAsUnicode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToCharAsUnicode", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (c, buffer))
+            method.invoke_unchecked((), (c, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -474,7 +494,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -482,25 +502,27 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("ToKebabCase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToKebabCase", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToKebabCase", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s)) };
+        > = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToLower(c: char) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(char), char, 1usize>("ToLower")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToLower", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToLower", 1usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToSeparatedCase(
@@ -509,7 +531,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, char),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -517,13 +539,14 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("ToSeparatedCase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToSeparatedCase", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToSeparatedCase", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s, separator)) };
+        > = unsafe { method.invoke_unchecked((), (s, separator))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToSnakeCase(
@@ -531,7 +554,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -539,13 +562,14 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("ToSnakeCase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToSnakeCase", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToSnakeCase", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s)) };
+        > = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn Trim(
@@ -555,7 +579,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -567,13 +591,14 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
             >("Trim")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Trim", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Trim", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s, start, length)) };
+        > = unsafe { method.invoke_unchecked((), (s, start, length))? };
         Ok(__cordl_ret.into())
     }
 }

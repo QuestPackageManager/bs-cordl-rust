@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
         &mut self,
         relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>),
                 quest_hook::libil2cpp::Void,
@@ -60,28 +60,32 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             >("AddCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddCore", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), "AddCore", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (relation))
+            method.invoke_unchecked(self, (relation))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), "Clear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +94,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -98,12 +102,14 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             >("GetDataSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDataSet", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), "GetDataSet", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +126,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
         &mut self,
         relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>),
                 quest_hook::libil2cpp::Void,
@@ -128,12 +134,14 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             >("RemoveCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveCore", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), "RemoveCore", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (relation))
+            method.invoke_unchecked(self, (relation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +149,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
         &mut self,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                 quest_hook::libil2cpp::Void,
@@ -149,12 +157,14 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataSet))
+            method.invoke_unchecked(self, (dataSet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +174,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
@@ -172,12 +182,14 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             >("get_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Item", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Item", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation> = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +199,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
@@ -195,12 +207,14 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             >("get_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Item", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Item", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation> = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +223,7 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -217,13 +231,15 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             >("get_List")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_List", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::DataRelationCollection_DataSetRelationCollection
+                    as quest_hook::libil2cpp::Type > ::class(), "get_List", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ArrayList,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,15 +50,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEv
 impl crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
     pub const kLookAheadTime: f32 = 0.2f32;
     pub fn GetTiltAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("GetTiltAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTiltAngle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTiltAngle", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -86,7 +87,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
         >,
         gravity: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,
@@ -100,8 +101,9 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -109,7 +111,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator {
                 .invoke_unchecked(
                     self,
                     (audioTimeSource, bezierSplineEvaluator, gravity),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

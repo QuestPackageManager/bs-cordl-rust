@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         &mut self,
         beatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::BeatmapDifficultyMask),
                 i32,
@@ -66,19 +66,21 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("GetIdxForBeatmapDifficultyMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetIdxForBeatmapDifficultyMask", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetIdxForBeatmapDifficultyMask", 1usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (beatmapDifficultyMask))
+            method.invoke_unchecked(self, (beatmapDifficultyMask))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetSelectedBeatmapDifficultyMask(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficultyMask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -86,12 +88,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("GetSelectedBeatmapDifficultyMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSelectedBeatmapDifficultyMask", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSelectedBeatmapDifficultyMask", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapDifficultyMask = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +106,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         >,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>, i32),
                 quest_hook::libil2cpp::Void,
@@ -110,12 +114,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("HandleSimpleTextDropdownDidSelectCellWithIdx")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleSimpleTextDropdownDidSelectCellWithIdx", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleSimpleTextDropdownDidSelectCellWithIdx", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dropdownWithTableView, idx))
+            method.invoke_unchecked(self, (dropdownWithTableView, idx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,16 +135,17 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +153,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         &mut self,
         beatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::BeatmapDifficultyMask),
                 quest_hook::libil2cpp::Void,
@@ -154,44 +161,48 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("SelectCellWithBeatmapDifficultyMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectCellWithBeatmapDifficultyMask", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SelectCellWithBeatmapDifficultyMask", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beatmapDifficultyMask))
+            method.invoke_unchecked(self, (beatmapDifficultyMask))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +210,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                 quest_hook::libil2cpp::Void,
@@ -207,12 +218,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("add_didSelectCellWithIdxEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_didSelectCellWithIdxEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_didSelectCellWithIdxEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -230,7 +243,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -249,8 +262,10 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("get_beatmapDifficultyData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_beatmapDifficultyData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(), "get_beatmapDifficultyData",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -262,26 +277,28 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_includeAllDifficulties(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_includeAllDifficulties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_includeAllDifficulties", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_includeAllDifficulties", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                 quest_hook::libil2cpp::Void,
@@ -289,12 +306,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("remove_didSelectCellWithIdxEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_didSelectCellWithIdxEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_didSelectCellWithIdxEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +321,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyDropdown as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -310,12 +329,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
             >("set_includeAllDifficulties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_includeAllDifficulties", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyDropdown as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_includeAllDifficulties", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

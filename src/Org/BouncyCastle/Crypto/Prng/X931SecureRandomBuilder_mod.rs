@@ -64,7 +64,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandom,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -82,13 +82,16 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandom,
-        > = unsafe { method.invoke_unchecked(self, (engine, key, predictionResistant)) };
+        > = unsafe {
+            method.invoke_unchecked(self, (engine, key, predictionResistant))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -129,7 +132,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -139,28 +142,30 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             >("SetDateTimeVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDateTimeVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDateTimeVector", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder,
-        > = unsafe { method.invoke_unchecked(self, (dateTimeVector)) };
+        > = unsafe { method.invoke_unchecked(self, (dateTimeVector))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +175,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
@@ -180,12 +185,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (entropySourceProvider))
+            method.invoke_unchecked(self, (entropySourceProvider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +202,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
         >,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -209,12 +215,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::X931SecureRandomBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (entropySource, predictionResistant))
+            method.invoke_unchecked(self, (entropySource, predictionResistant))?
         };
         Ok(__cordl_ret.into())
     }

@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -54,13 +54,15 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >("GetDataToSign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDataToSign", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDataToSign", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -145,7 +147,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             crate::Org::BouncyCastle::Asn1::DerBitString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerBitString,
@@ -155,12 +157,14 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >("SignRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignRequest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), "SignRequest", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (signedData))
+            method.invoke_unchecked(self, (signedData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +172,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
         &mut self,
         signedData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -176,28 +180,32 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >("SignRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignRequest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), "SignRequest", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (signedData))
+            method.invoke_unchecked(self, (signedData))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +213,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -215,12 +223,14 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (seq))
+            method.invoke_unchecked(self, (seq))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +238,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
         &mut self,
         encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -236,12 +246,14 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (encoded))
+            method.invoke_unchecked(self, (encoded))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +270,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
         >,
         attributes: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -275,8 +287,10 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -284,7 +298,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
                 .invoke_unchecked(
                     self,
                     (signatureAlgorithm, subject, publicKey, attributes),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +318,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -324,8 +338,10 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -333,7 +349,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
                 .invoke_unchecked(
                     self,
                     (signatureAlgorithm, subject, publicKey, attributes, signingKey),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -341,7 +357,7 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -349,12 +365,14 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (input))
+            method.invoke_unchecked(self, (input))?
         };
         Ok(__cordl_ret.into())
     }

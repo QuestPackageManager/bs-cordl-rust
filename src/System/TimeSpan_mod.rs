@@ -118,7 +118,7 @@ impl crate::System::TimeSpan {
         &mut self,
         ts: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::TimeSpan),
                 crate::System::TimeSpan,
@@ -126,12 +126,13 @@ impl crate::System::TimeSpan {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Add", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked(self, (ts))
+            method.invoke_unchecked(self, (ts))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +140,7 @@ impl crate::System::TimeSpan {
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 i32,
@@ -147,18 +148,19 @@ impl crate::System::TimeSpan {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Compare", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (t1, t2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 i32,
@@ -166,41 +168,44 @@ impl crate::System::TimeSpan {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo_TimeSpan1(
         &mut self,
         value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(crate::System::TimeSpan), i32, 1usize>("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Duration(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::TimeSpan, 0usize>("Duration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Duration", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Duration", 0usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -208,7 +213,7 @@ impl crate::System::TimeSpan {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -216,64 +221,68 @@ impl crate::System::TimeSpan {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_TimeSpan1(
         &mut self,
         obj: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(crate::System::TimeSpan), bool, 1usize>("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromDays(
         value: f64,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), crate::System::TimeSpan, 1usize>("FromDays")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromDays", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "FromDays", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FromHours(
         value: f64,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), crate::System::TimeSpan, 1usize>("FromHours")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromHours", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "FromHours", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FromMilliseconds(
         value: f64,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64),
                 crate::System::TimeSpan,
@@ -281,80 +290,85 @@ impl crate::System::TimeSpan {
             >("FromMilliseconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMilliseconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "FromMilliseconds", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FromMinutes(
         value: f64,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), crate::System::TimeSpan, 1usize>("FromMinutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMinutes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "FromMinutes", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FromSeconds(
         value: f64,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), crate::System::TimeSpan, 1usize>("FromSeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromSeconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "FromSeconds", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FromTicks(
         value: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), crate::System::TimeSpan, 1usize>("FromTicks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromTicks", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "FromTicks", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Interval(
         value: f64,
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, i32),
                 crate::System::TimeSpan,
@@ -362,26 +376,28 @@ impl crate::System::TimeSpan {
             >("Interval")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Interval", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Interval", 2usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (value, scale))
+            method.invoke_unchecked((), (value, scale))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Negate(&mut self) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::TimeSpan, 0usize>("Negate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Negate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Negate", 0usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -389,7 +405,7 @@ impl crate::System::TimeSpan {
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -400,19 +416,20 @@ impl crate::System::TimeSpan {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Parse", 2usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (input, formatProvider))
+            method.invoke_unchecked((), (input, formatProvider))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Parse_Il2CppString0(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::System::TimeSpan,
@@ -420,12 +437,13 @@ impl crate::System::TimeSpan {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Parse", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (s))
+            method.invoke_unchecked((), (s))?
         };
         Ok(__cordl_ret.into())
     }
@@ -433,7 +451,7 @@ impl crate::System::TimeSpan {
         &mut self,
         ts: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::TimeSpan),
                 crate::System::TimeSpan,
@@ -441,12 +459,13 @@ impl crate::System::TimeSpan {
             >("Subtract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subtract", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "Subtract", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked(self, (ts))
+            method.invoke_unchecked(self, (ts))?
         };
         Ok(__cordl_ret.into())
     }
@@ -455,16 +474,17 @@ impl crate::System::TimeSpan {
         minute: i32,
         second: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32, i32), i64, 3usize>("TimeToTicks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TimeToTicks", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "TimeToTicks", 3usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (hour, minute, second))
+            method.invoke_unchecked((), (hour, minute, second))?
         };
         Ok(__cordl_ret.into())
     }
@@ -473,7 +493,7 @@ impl crate::System::TimeSpan {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -481,13 +501,14 @@ impl crate::System::TimeSpan {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString1(
@@ -496,7 +517,7 @@ impl crate::System::TimeSpan {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -504,13 +525,14 @@ impl crate::System::TimeSpan {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "ToString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (format)) };
+        > = unsafe { method.invoke_unchecked(self, (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider2(
@@ -520,7 +542,7 @@ impl crate::System::TimeSpan {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -531,13 +553,14 @@ impl crate::System::TimeSpan {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "ToString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (format, formatProvider)) };
+        > = unsafe { method.invoke_unchecked(self, (format, formatProvider))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryFormat(
@@ -547,7 +570,7 @@ impl crate::System::TimeSpan {
         format: crate::System::ReadOnlySpan_1<char>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Span_1<char>,
@@ -560,8 +583,9 @@ impl crate::System::TimeSpan {
             >("TryFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryFormat", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "TryFormat", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -569,7 +593,7 @@ impl crate::System::TimeSpan {
                 .invoke_unchecked(
                     self,
                     (destination, charsWritten, format, formatProvider),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -579,7 +603,7 @@ impl crate::System::TimeSpan {
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -592,12 +616,13 @@ impl crate::System::TimeSpan {
             >("TryParseExact")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryParseExact", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "TryParseExact", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (input, format, formatProvider, result))
+            method.invoke_unchecked((), (input, format, formatProvider, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -607,16 +632,17 @@ impl crate::System::TimeSpan {
         minutes: i32,
         seconds: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hours, minutes, seconds))
+            method.invoke_unchecked(self, (hours, minutes, seconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -628,7 +654,7 @@ impl crate::System::TimeSpan {
         seconds: i32,
         milliseconds: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -636,12 +662,13 @@ impl crate::System::TimeSpan {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (days, hours, minutes, seconds, milliseconds))
+            method.invoke_unchecked(self, (days, hours, minutes, seconds, milliseconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -649,144 +676,155 @@ impl crate::System::TimeSpan {
         &mut self,
         ticks: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ticks))
+            method.invoke_unchecked(self, (ticks))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Days(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Days")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Days", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_Days", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Hours(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Hours")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Hours", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_Hours", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Minutes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Minutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Minutes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_Minutes", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Seconds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Seconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Seconds", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_Seconds", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Ticks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_Ticks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Ticks", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_Ticks", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TotalDays(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f64, 0usize>("get_TotalDays")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TotalDays", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_TotalDays", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TotalHours(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f64, 0usize>("get_TotalHours")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TotalHours", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_TotalHours", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TotalMilliseconds(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f64, 0usize>("get_TotalMilliseconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TotalMilliseconds", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_TotalMilliseconds", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TotalMinutes(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f64, 0usize>("get_TotalMinutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TotalMinutes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_TotalMinutes", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TotalSeconds(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f64, 0usize>("get_TotalSeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TotalSeconds", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "get_TotalSeconds", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 crate::System::TimeSpan,
@@ -794,12 +832,13 @@ impl crate::System::TimeSpan {
             >("op_Addition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Addition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_Addition", 2usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (t1, t2))
+            method.invoke_unchecked((), (t1, t2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -807,7 +846,7 @@ impl crate::System::TimeSpan {
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 bool,
@@ -815,18 +854,19 @@ impl crate::System::TimeSpan {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_Equality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThan(
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 bool,
@@ -834,18 +874,19 @@ impl crate::System::TimeSpan {
             >("op_GreaterThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_GreaterThan", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThanOrEqual(
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 bool,
@@ -853,18 +894,19 @@ impl crate::System::TimeSpan {
             >("op_GreaterThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_GreaterThanOrEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 bool,
@@ -872,18 +914,19 @@ impl crate::System::TimeSpan {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_Inequality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThan(
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 bool,
@@ -891,18 +934,19 @@ impl crate::System::TimeSpan {
             >("op_LessThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_LessThan", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThanOrEqual(
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 bool,
@@ -910,18 +954,19 @@ impl crate::System::TimeSpan {
             >("op_LessThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_LessThanOrEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t1, t2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Subtraction(
         t1: crate::System::TimeSpan,
         t2: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan, crate::System::TimeSpan),
                 crate::System::TimeSpan,
@@ -929,19 +974,20 @@ impl crate::System::TimeSpan {
             >("op_Subtraction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Subtraction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_Subtraction", 2usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (t1, t2))
+            method.invoke_unchecked((), (t1, t2))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_UnaryNegation(
         t: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TimeSpan as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan),
                 crate::System::TimeSpan,
@@ -949,12 +995,13 @@ impl crate::System::TimeSpan {
             >("op_UnaryNegation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_UnaryNegation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TimeSpan as quest_hook::libil2cpp::Type > ::class(),
+                    "op_UnaryNegation", 1usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), (t))
+            method.invoke_unchecked((), (t))?
         };
         Ok(__cordl_ret.into())
     }

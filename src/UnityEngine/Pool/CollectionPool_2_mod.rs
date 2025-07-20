@@ -79,15 +79,19 @@ impl<
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Pool::CollectionPool_2<
+            TCollection,
+            TItem,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), TCollection, 0usize>("Get")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Pool::CollectionPool_2 < TCollection, TItem > as
+                    quest_hook::libil2cpp::Type > ::class(), "Get", 0usize
                 )
             });
-        let __cordl_ret: TCollection = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: TCollection = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Get_ByRefMut1(
@@ -101,7 +105,10 @@ impl<
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Pool::CollectionPool_2<
+            TCollection,
+            TItem,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<TCollection>),
                 crate::UnityEngine::Pool::PooledObject_1<TCollection>,
@@ -109,12 +116,13 @@ impl<
             >("Get")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Pool::CollectionPool_2 < TCollection, TItem > as
+                    quest_hook::libil2cpp::Type > ::class(), "Get", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Pool::PooledObject_1<TCollection> = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -127,7 +135,10 @@ impl<
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Pool::CollectionPool_2<
+            TCollection,
+            TItem,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (TCollection),
                 quest_hook::libil2cpp::Void,
@@ -135,12 +146,13 @@ impl<
             >("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Pool::CollectionPool_2 < TCollection, TItem > as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (toRelease))
+            method.invoke_unchecked((), (toRelease))?
         };
         Ok(__cordl_ret.into())
     }

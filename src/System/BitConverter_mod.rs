@@ -39,15 +39,16 @@ impl std::ops::DerefMut for crate::System::BitConverter {
 #[cfg(feature = "System+BitConverter")]
 impl crate::System::BitConverter {
     pub fn DoubleToInt64Bits(value: f64) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), i64, 1usize>("DoubleToInt64Bits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoubleToInt64Bits", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "DoubleToInt64Bits", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes__cordl_bool0(
@@ -55,7 +56,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -63,13 +64,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes__cordl_char1(
@@ -77,7 +79,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (char),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -85,13 +87,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_f32_8(
@@ -99,7 +102,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -107,13 +110,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_f64_9(
@@ -121,7 +125,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -129,13 +133,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_i16_2(
@@ -143,7 +148,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i16),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -151,13 +156,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_i32_3(
@@ -165,7 +171,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -173,13 +179,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_i64_4(
@@ -187,7 +194,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -195,13 +202,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_u16_5(
@@ -209,7 +217,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u16),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -217,13 +225,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_u32_6(
@@ -231,7 +240,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -239,13 +248,14 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBytes_u64_7(
@@ -253,7 +263,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -261,56 +271,60 @@ impl crate::System::BitConverter {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Int32BitsToSingle(value: i32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), f32, 1usize>("Int32BitsToSingle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Int32BitsToSingle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "Int32BitsToSingle", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Int64BitsToDouble(value: i64) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), f64, 1usize>("Int64BitsToDouble")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Int64BitsToDouble", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "Int64BitsToDouble", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn SingleToInt32Bits(value: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("SingleToInt32Bits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SingleToInt32Bits", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "SingleToInt32Bits", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToChar(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 char,
@@ -318,12 +332,13 @@ impl crate::System::BitConverter {
             >("ToChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToChar", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToChar", 2usize
                 )
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -331,7 +346,7 @@ impl crate::System::BitConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 f64,
@@ -339,12 +354,13 @@ impl crate::System::BitConverter {
             >("ToDouble")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToDouble", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToDouble", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -352,7 +368,7 @@ impl crate::System::BitConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i16,
@@ -360,12 +376,13 @@ impl crate::System::BitConverter {
             >("ToInt16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToInt16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToInt16", 2usize
                 )
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,7 +390,7 @@ impl crate::System::BitConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i32,
@@ -381,12 +398,13 @@ impl crate::System::BitConverter {
             >("ToInt32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToInt32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToInt32", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -394,7 +412,7 @@ impl crate::System::BitConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i64,
@@ -402,12 +420,13 @@ impl crate::System::BitConverter {
             >("ToInt64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToInt64", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToInt64", 2usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -415,7 +434,7 @@ impl crate::System::BitConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 f32,
@@ -423,12 +442,13 @@ impl crate::System::BitConverter {
             >("ToSingle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToSingle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToSingle", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -437,7 +457,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -445,13 +465,14 @@ impl crate::System::BitConverter {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_i32_i32_0(
@@ -461,7 +482,7 @@ impl crate::System::BitConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -473,20 +494,21 @@ impl crate::System::BitConverter {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToString", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value, startIndex, length)) };
+        > = unsafe { method.invoke_unchecked((), (value, startIndex, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToUInt16(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<u16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u16,
@@ -494,12 +516,13 @@ impl crate::System::BitConverter {
             >("ToUInt16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUInt16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToUInt16", 2usize
                 )
             });
         let __cordl_ret: u16 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -507,7 +530,7 @@ impl crate::System::BitConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u32,
@@ -515,12 +538,13 @@ impl crate::System::BitConverter {
             >("ToUInt32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUInt32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToUInt32", 2usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -528,7 +552,7 @@ impl crate::System::BitConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u64,
@@ -536,12 +560,13 @@ impl crate::System::BitConverter {
             >("ToUInt64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUInt64", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "ToUInt64", 2usize
                 )
             });
         let __cordl_ret: u64 = unsafe {
-            method.invoke_unchecked((), (value, startIndex))
+            method.invoke_unchecked((), (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -549,7 +574,7 @@ impl crate::System::BitConverter {
         destination: crate::System::Span_1<u8>,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::BitConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Span_1<u8>, u32),
                 bool,
@@ -557,12 +582,13 @@ impl crate::System::BitConverter {
             >("TryWriteBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryWriteBytes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::BitConverter as quest_hook::libil2cpp::Type >
+                    ::class(), "TryWriteBytes", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (destination, value))
+            method.invoke_unchecked((), (destination, value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -42,15 +42,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatToTimeConverter {
 #[cfg(feature = "BeatToTimeConverter")]
 impl crate::GlobalNamespace::BeatToTimeConverter {
     pub fn BeatToTime(&mut self, beat: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatToTimeConverter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), f32, 1usize>("BeatToTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeatToTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatToTimeConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "BeatToTime", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (beat)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (beat))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -70,7 +71,7 @@ impl crate::GlobalNamespace::BeatToTimeConverter {
             crate::GlobalNamespace::IBeatToTimeConverter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatToTimeConverter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::IBeatToTimeConverter,
@@ -80,12 +81,13 @@ impl crate::GlobalNamespace::BeatToTimeConverter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatToTimeConverter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bpmTimeProcessor))
+            method.invoke_unchecked(self, (bpmTimeProcessor))?
         };
         Ok(__cordl_ret.into())
     }

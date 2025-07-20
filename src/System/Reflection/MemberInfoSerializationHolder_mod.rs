@@ -54,7 +54,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::MemberInfoSerializationHolder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -67,12 +67,13 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
             >("GetObjectData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::MemberInfoSerializationHolder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetObjectData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (info, context))
+            method.invoke_unchecked(self, (info, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +83,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::MemberInfoSerializationHolder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Runtime::Serialization::StreamingContext),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -90,13 +91,14 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
             >("GetRealObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRealObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::MemberInfoSerializationHolder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRealObject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (context)) };
+        > = unsafe { method.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSerializationInfo_Il2CppString_MemberTypes_Il2CppArray1(
@@ -114,7 +116,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::MemberInfoSerializationHolder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -136,8 +138,10 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
             >("GetSerializationInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSerializationInfo", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::MemberInfoSerializationHolder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSerializationInfo",
+                    7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -153,7 +157,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
                         _cordl_type,
                         genericArguments,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +170,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_type: crate::System::Reflection::MemberTypes,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::MemberInfoSerializationHolder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -182,8 +186,10 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
             >("GetSerializationInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSerializationInfo", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::MemberInfoSerializationHolder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSerializationInfo",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -191,7 +197,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
                 .invoke_unchecked(
                     (),
                     (info, name, reflectedClass, signature, _cordl_type),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +220,7 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Reflection::MemberInfoSerializationHolder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -227,12 +233,13 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Reflection::MemberInfoSerializationHolder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (info, context))
+            method.invoke_unchecked(self, (info, context))?
         };
         Ok(__cordl_ret.into())
     }

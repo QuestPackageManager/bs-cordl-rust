@@ -63,15 +63,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::IList_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(T), i32, 1usize>("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::IList_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "IndexOf", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (item))? };
         Ok(__cordl_ret.into())
     }
     pub fn Insert(
@@ -83,16 +86,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::IList_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, T), quest_hook::libil2cpp::Void, 2usize>("Insert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Insert", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::IList_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "Insert", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index, item))
+            method.invoke_unchecked(self, (index, item))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,16 +110,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::IList_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("RemoveAt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveAt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::IList_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveAt", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -127,15 +136,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::IList_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), T, 1usize>("get_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Item", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::IList_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Item", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (index)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(
@@ -147,16 +159,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::IList_
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::IList_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, T), quest_hook::libil2cpp::Void, 2usize>("set_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Item", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::IList_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Item", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index, value))
+            method.invoke_unchecked(self, (index, value))?
         };
         Ok(__cordl_ret.into())
     }

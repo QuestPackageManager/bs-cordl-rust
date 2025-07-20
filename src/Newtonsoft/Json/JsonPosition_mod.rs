@@ -109,7 +109,7 @@ impl crate::Newtonsoft::Json::JsonPosition {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -124,25 +124,27 @@ impl crate::Newtonsoft::Json::JsonPosition {
             >("BuildPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildPath", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type
+                    > ::class(), "BuildPath", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (positions, currentPosition)) };
+        > = unsafe { method.invoke_unchecked((), (positions, currentPosition))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("CalculateLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateLength", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type
+                    > ::class(), "CalculateLength", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatMessage(
@@ -152,7 +154,7 @@ impl crate::Newtonsoft::Json::JsonPosition {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>,
@@ -164,19 +166,20 @@ impl crate::Newtonsoft::Json::JsonPosition {
             >("FormatMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatMessage", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type
+                    > ::class(), "FormatMessage", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (lineInfo, path, message)) };
+        > = unsafe { method.invoke_unchecked((), (lineInfo, path, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn TypeHasIndex(
         _cordl_type: crate::Newtonsoft::Json::JsonContainerType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Newtonsoft::Json::JsonContainerType),
                 bool,
@@ -184,11 +187,12 @@ impl crate::Newtonsoft::Json::JsonPosition {
             >("TypeHasIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TypeHasIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type
+                    > ::class(), "TypeHasIndex", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteTo(
@@ -201,7 +205,7 @@ impl crate::Newtonsoft::Json::JsonPosition {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -219,12 +223,13 @@ impl crate::Newtonsoft::Json::JsonPosition {
             >("WriteTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteTo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type
+                    > ::class(), "WriteTo", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sb, writer, buffer))
+            method.invoke_unchecked(self, (sb, writer, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -232,7 +237,7 @@ impl crate::Newtonsoft::Json::JsonPosition {
         &mut self,
         _cordl_type: crate::Newtonsoft::Json::JsonContainerType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Newtonsoft::Json::JsonContainerType),
                 quest_hook::libil2cpp::Void,
@@ -240,12 +245,13 @@ impl crate::Newtonsoft::Json::JsonPosition {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::JsonPosition as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type))
+            method.invoke_unchecked(self, (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }

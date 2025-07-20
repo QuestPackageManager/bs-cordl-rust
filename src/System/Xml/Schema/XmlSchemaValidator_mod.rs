@@ -95,7 +95,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn AddIdentityConstraints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -103,12 +103,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("AddIdentityConstraints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddIdentityConstraints", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddIdentityConstraints",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +118,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>),
                 quest_hook::libil2cpp::Void,
@@ -124,19 +126,20 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("AddSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSchema", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSchema", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (schema))
+            method.invoke_unchecked(self, (schema))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddXmlNamespaceSchema(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -144,12 +147,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("AddXmlNamespaceSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddXmlNamespaceSchema", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddXmlNamespaceSchema",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +168,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -179,12 +184,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("AttributeIdentityConstraints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AttributeIdentityConstraints", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AttributeIdentityConstraints", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, ns, obj, sobj, datatype))
+            method.invoke_unchecked(self, (name, ns, obj, sobj, datatype))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +201,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -205,13 +212,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("BuildElementName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElementName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElementName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (localName, ns)) };
+        > = unsafe { method.invoke_unchecked((), (localName, ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn BuildElementName_XmlQualifiedName0(
@@ -219,7 +227,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -227,13 +235,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("BuildElementName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElementName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElementName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (qname)) };
+        > = unsafe { method.invoke_unchecked((), (qname))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckAttributeValue(
@@ -243,7 +252,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -254,19 +263,21 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckAttributeValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckAttributeValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckAttributeValue",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (value, attdef)) };
+        > = unsafe { method.invoke_unchecked(self, (value, attdef))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckElementProperties(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -274,12 +285,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckElementProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckElementProperties", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckElementProperties",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -289,7 +302,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -297,28 +310,30 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckElementValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckElementValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckElementValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (stringValue)) };
+        > = unsafe { method.invoke_unchecked(self, (stringValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckForwardRefs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckForwardRefs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckForwardRefs", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckForwardRefs", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -328,7 +343,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
@@ -336,13 +351,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckIsXmlAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckIsXmlAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckIsXmlAttribute",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::SchemaAttDef,
-        > = unsafe { method.invoke_unchecked(self, (attQName)) };
+        > = unsafe { method.invoke_unchecked(self, (attQName))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckMixedValueConstraint(
@@ -351,7 +368,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -359,13 +376,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckMixedValueConstraint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckMixedValueConstraint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckMixedValueConstraint",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (elementValue)) };
+        > = unsafe { method.invoke_unchecked(self, (elementValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckRequiredAttributes(
@@ -374,7 +393,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::SchemaElementDecl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::Schema::SchemaElementDecl,
@@ -384,12 +403,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckRequiredAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckRequiredAttributes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckRequiredAttributes",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (currentElementDecl))
+            method.invoke_unchecked(self, (currentElementDecl))?
         };
         Ok(__cordl_ret.into())
     }
@@ -398,7 +419,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         toState: crate::System::Xml::Schema::ValidatorState,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::Schema::ValidatorState,
@@ -409,12 +430,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckStateTransition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckStateTransition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckStateTransition",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (toState, methodName))
+            method.invoke_unchecked(self, (toState, methodName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -424,7 +447,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         typedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         attrValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -438,12 +461,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckTokenizedTypes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckTokenizedTypes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckTokenizedTypes",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dtype, typedValue, attrValue))
+            method.invoke_unchecked(self, (dtype, typedValue, attrValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -458,7 +483,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -473,30 +498,32 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CheckXsiTypeAndNil")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckXsiTypeAndNil", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckXsiTypeAndNil", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::SchemaElementDecl,
         > = unsafe {
-            method.invoke_unchecked(self, (elementDecl, xsiType, xsiNil, declFound))
+            method.invoke_unchecked(self, (elementDecl, xsiType, xsiNil, declFound))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearPSVI(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearPSVI")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearPSVI", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearPSVI", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -511,7 +538,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         linePos: i32,
         schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -531,8 +558,10 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("CompleteValidationError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompleteValidationError", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CompleteValidationError",
+                    7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -548,14 +577,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
                         linePos,
                         schemaSet,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ElementIdentityConstraints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -563,12 +592,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ElementIdentityConstraints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ElementIdentityConstraints", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ElementIdentityConstraints", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -584,7 +615,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         linePos: i32,
         schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -605,8 +636,10 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ElementValidationError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ElementValidationError", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ElementValidationError",
+                    8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -623,7 +656,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
                         linePos,
                         schemaSet,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -635,7 +668,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -649,28 +682,31 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("EndElementIdentityConstraints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndElementIdentityConstraints", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EndElementIdentityConstraints", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typedValue, stringValue, datatype))
+            method.invoke_unchecked(self, (typedValue, stringValue, datatype))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndValidation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EndValidation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndValidation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "EndValidation", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -678,7 +714,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         namespaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -689,12 +725,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("EnumerateAny")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnumerateAny", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "EnumerateAny", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, namespaces))
+            method.invoke_unchecked((), (builder, namespaces))?
         };
         Ok(__cordl_ret.into())
     }
@@ -705,7 +742,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -716,13 +753,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("FastGetElementDecl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FastGetElementDecl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "FastGetElementDecl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::SchemaElementDecl,
-        > = unsafe { method.invoke_unchecked(self, (elementName, particle)) };
+        > = unsafe { method.invoke_unchecked(self, (elementName, particle))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindId(
@@ -731,7 +769,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -739,13 +777,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("FindId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "FindId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (name)) };
+        > = unsafe { method.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetConcatenatedValue(
@@ -753,7 +792,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -761,13 +800,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("GetConcatenatedValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConcatenatedValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetConcatenatedValue",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultAttributePrefix(
@@ -776,7 +817,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -784,13 +825,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("GetDefaultAttributePrefix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultAttributePrefix", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDefaultAttributePrefix",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (attributeNS)) };
+        > = unsafe { method.invoke_unchecked(self, (attributeNS))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSchemaElement(
@@ -798,7 +841,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
@@ -806,13 +849,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("GetSchemaElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSchemaElement", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSchemaElement", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSubstitutionGroupHead(
@@ -821,7 +865,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
@@ -829,13 +873,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("GetSubstitutionGroupHead")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSubstitutionGroupHead", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSubstitutionGroupHead",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = unsafe { method.invoke_unchecked(self, (member)) };
+        > = unsafe { method.invoke_unchecked(self, (member))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeName(
@@ -844,7 +890,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaDeclBase>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -852,13 +898,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("GetTypeName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTypeName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTypeName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (decl)) };
+        > = unsafe { method.invoke_unchecked(self, (decl))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnspecifiedDefaultAttributes(
@@ -868,7 +915,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         >,
         createNodeData: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>, bool),
                 quest_hook::libil2cpp::Void,
@@ -876,44 +923,48 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("GetUnspecifiedDefaultAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUnspecifiedDefaultAttributes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetUnspecifiedDefaultAttributes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (defaultAttributes, createNodeData))
+            method.invoke_unchecked(self, (defaultAttributes, createNodeData))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -923,7 +974,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlSchemaObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>),
                 quest_hook::libil2cpp::Void,
@@ -931,12 +982,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("Initialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (partialValidationType))
+            method.invoke_unchecked(self, (partialValidationType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -947,7 +999,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaInfo>,
@@ -958,13 +1010,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("InternalValidateEndElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalValidateEndElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InternalValidateEndElement", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (schemaInfo, typedValue)) };
+        > = unsafe { method.invoke_unchecked(self, (schemaInfo, typedValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSchema(
@@ -972,7 +1026,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -983,12 +1037,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("LoadSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSchema", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadSchema", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (uri, url))
+            method.invoke_unchecked(self, (uri, url))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1010,16 +1065,17 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         Ok(__cordl_object.into())
     }
     pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Pop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Pop", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Pop", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1029,7 +1085,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>, bool),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1037,13 +1093,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("PrintExpectedElements")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrintExpectedElements", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "PrintExpectedElements",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (expected, getParticles)) };
+        > = unsafe { method.invoke_unchecked((), (expected, getParticles))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrintNames(
@@ -1051,7 +1109,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1059,20 +1117,21 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("PrintNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrintNames", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "PrintNames", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (expected)) };
+        > = unsafe { method.invoke_unchecked((), (expected))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrintNamesWithNS(
         expected: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -1083,12 +1142,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("PrintNamesWithNS")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrintNamesWithNS", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "PrintNamesWithNS", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (expected, builder))
+            method.invoke_unchecked((), (expected, builder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1096,7 +1156,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1104,12 +1164,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ProcessEntity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessEntity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessEntity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1122,7 +1183,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1133,8 +1194,10 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ProcessSchemaLocations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessSchemaLocations", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessSchemaLocations",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1142,7 +1205,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
                 .invoke_unchecked(
                     self,
                     (xsiSchemaLocation, xsiNoNamespaceSchemaLocation),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1152,7 +1215,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attrValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::XmlTokenizedType,
@@ -1164,12 +1227,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ProcessTokenizedType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessTokenizedType", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessTokenizedType",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ttype, name, attrValue))
+            method.invoke_unchecked(self, (ttype, name, attrValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1177,7 +1242,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         elementName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
                 quest_hook::libil2cpp::Void,
@@ -1185,12 +1250,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("Push")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Push", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Push", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (elementName))
+            method.invoke_unchecked(self, (elementName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1200,7 +1266,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1211,44 +1277,47 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("QNameString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QNameString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "QNameString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (localName, ns)) };
+        > = unsafe { method.invoke_unchecked((), (localName, ns))? };
         Ok(__cordl_ret.into())
     }
     pub fn RecompileSchemaSet(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RecompileSchemaSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecompileSchemaSet", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "RecompileSchemaSet", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1256,7 +1325,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -1264,12 +1333,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SaveTextValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveTextValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveTextValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1277,7 +1347,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1285,12 +1355,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code))
+            method.invoke_unchecked(self, (code))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1303,7 +1375,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1320,12 +1392,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, args))
+            method.invoke_unchecked(self, (code, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1339,7 +1413,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         >,
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1357,12 +1431,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, args, innerException))
+            method.invoke_unchecked(self, (code, args, innerException))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1377,7 +1453,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1396,12 +1472,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, args, innerException, severity))
+            method.invoke_unchecked(self, (code, args, innerException, severity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1410,7 +1488,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1421,12 +1499,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, arg))
+            method.invoke_unchecked(self, (code, arg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1436,7 +1516,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1448,12 +1528,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, arg1, arg2))
+            method.invoke_unchecked(self, (code, arg1, arg2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1463,7 +1545,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1475,12 +1557,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, msg, severity))
+            method.invoke_unchecked(self, (code, msg, severity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1494,7 +1578,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         >,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1511,12 +1595,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (eventHandler, sender, e, severity))
+            method.invoke_unchecked((), (eventHandler, sender, e, severity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1524,7 +1610,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::Schema::XmlSchemaException,
@@ -1534,12 +1620,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e))
+            method.invoke_unchecked(self, (e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1549,7 +1637,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlSchemaValidationException,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::Schema::XmlSchemaValidationException,
@@ -1559,12 +1647,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e))
+            method.invoke_unchecked(self, (e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1575,7 +1665,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         >,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1588,12 +1678,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e, severity))
+            method.invoke_unchecked(self, (e, severity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1601,7 +1693,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         dtdSchemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>),
                 quest_hook::libil2cpp::Void,
@@ -1609,12 +1701,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SetDtdSchemaInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDtdSchemaInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDtdSchemaInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dtdSchemaInfo))
+            method.invoke_unchecked(self, (dtdSchemaInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1622,7 +1715,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaInfo>),
                 quest_hook::libil2cpp::Void,
@@ -1630,12 +1723,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("SkipToEndElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SkipToEndElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SkipToEndElement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (schemaInfo))
+            method.invoke_unchecked(self, (schemaInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1643,7 +1737,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         declFound: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1651,12 +1745,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ThrowDeclNotFoundWarningOrError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowDeclNotFoundWarningOrError", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ThrowDeclNotFoundWarningOrError", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (declFound))
+            method.invoke_unchecked(self, (declFound))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1669,7 +1765,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1684,13 +1780,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateAtomicValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateAtomicValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateAtomicValue",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (parsedValue, memberType)) };
+        > = unsafe { method.invoke_unchecked(self, (parsedValue, memberType))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateAtomicValue_Il2CppString0(
@@ -1702,7 +1800,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1717,13 +1815,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateAtomicValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateAtomicValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateAtomicValue",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (stringValue, memberType)) };
+        > = unsafe { method.invoke_unchecked(self, (stringValue, memberType))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateAttribute_Il2CppString_XmlSchemaInfo1(
@@ -1740,7 +1840,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1756,8 +1856,9 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateAttribute", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateAttribute", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1767,7 +1868,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
                 .invoke_unchecked(
                     self,
                     (lName, ns, attributeValueGetter, attributeStringValue, schemaInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1782,7 +1883,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1797,8 +1898,9 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateAttribute", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateAttribute", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1808,7 +1910,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
                 .invoke_unchecked(
                     self,
                     (localName, namespaceUri, attributeValue, schemaInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1826,7 +1928,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1842,8 +1944,9 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateElement", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateElement", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1859,7 +1962,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
                         xsiSchemaLocation,
                         xsiNoNamespaceSchemaLocation,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1870,7 +1973,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -1881,14 +1984,16 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateElementContext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateElementContext", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateElementContext",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked(self, (elementName, invalidElementInContext))
+            method.invoke_unchecked(self, (elementName, invalidElementInContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1898,7 +2003,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaInfo>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1906,20 +2011,21 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateEndElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateEndElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateEndElement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (schemaInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (schemaInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateEndOfAttributes(
         &mut self,
         schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaInfo>),
                 quest_hook::libil2cpp::Void,
@@ -1927,19 +2033,21 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateEndOfAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateEndOfAttributes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateEndOfAttributes",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (schemaInfo))
+            method.invoke_unchecked(self, (schemaInfo))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateStartElementIdentityConstraints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -1947,12 +2055,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateStartElementIdentityConstraints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateStartElementIdentityConstraints", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ValidateStartElementIdentityConstraints", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1965,7 +2075,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlValueGetter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1976,12 +2086,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateText", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateText", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (elementStringValue, elementValueGetter))
+            method.invoke_unchecked(self, (elementStringValue, elementValueGetter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1991,7 +2102,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlValueGetter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueGetter>),
                 quest_hook::libil2cpp::Void,
@@ -1999,12 +2110,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateText", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateText", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (elementValue))
+            method.invoke_unchecked(self, (elementValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2017,7 +2129,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlValueGetter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2028,12 +2140,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateWhitespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateWhitespace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateWhitespace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (elementStringValue, elementValueGetter))
+            method.invoke_unchecked(self, (elementStringValue, elementValueGetter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2043,7 +2156,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::XmlValueGetter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueGetter>),
                 quest_hook::libil2cpp::Void,
@@ -2051,12 +2164,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("ValidateWhitespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateWhitespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateWhitespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (elementValue))
+            method.invoke_unchecked(self, (elementValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2069,7 +2183,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         >,
         validationFlags: crate::System::Xml::Schema::XmlSchemaValidationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -2082,8 +2196,9 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2091,7 +2206,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
                 .invoke_unchecked(
                     self,
                     (nameTable, schemas, namespaceResolver, validationFlags),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2101,7 +2216,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::ValidationEventHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::Schema::ValidationEventHandler,
@@ -2111,12 +2226,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("add_ValidationEventHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_ValidationEventHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_ValidationEventHandler", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2125,7 +2242,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Xml::Schema::XmlSchemaContentType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Xml::Schema::XmlSchemaContentType,
@@ -2133,77 +2250,88 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("get_CurrentContentType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CurrentContentType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_CurrentContentType",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaContentType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_HasIdentityConstraints(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_HasIdentityConstraints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_HasIdentityConstraints", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_HasIdentityConstraints", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_HasSchema(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_HasSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_HasSchema", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_HasSchema", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ProcessIdentityConstraints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_ProcessIdentityConstraints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ProcessIdentityConstraints", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ProcessIdentityConstraints", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ProcessSchemaHints(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_ProcessSchemaHints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ProcessSchemaHints", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ProcessSchemaHints",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ReportValidationWarnings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_ReportValidationWarnings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ReportValidationWarnings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ReportValidationWarnings", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SchemaSet(
@@ -2211,7 +2339,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
@@ -2219,25 +2347,28 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("get_SchemaSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SchemaSet", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_SchemaSet", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaSet,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_StrictlyAssessed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_StrictlyAssessed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_StrictlyAssessed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_StrictlyAssessed",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationFlags(
@@ -2245,7 +2376,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Xml::Schema::XmlSchemaValidationFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Xml::Schema::XmlSchemaValidationFlags,
@@ -2253,12 +2384,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("get_ValidationFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ValidationFlags", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ValidationFlags",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::Xml::Schema::XmlSchemaValidationFlags = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2268,7 +2401,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             crate::System::Xml::Schema::ValidationEventHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::Schema::ValidationEventHandler,
@@ -2278,12 +2411,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("remove_ValidationEventHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_ValidationEventHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_ValidationEventHandler", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2291,7 +2426,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>),
                 quest_hook::libil2cpp::Void,
@@ -2299,12 +2434,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("set_LineInfoProvider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_LineInfoProvider", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "set_LineInfoProvider",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2312,7 +2449,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                 quest_hook::libil2cpp::Void,
@@ -2320,12 +2457,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("set_SourceUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_SourceUri", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "set_SourceUri", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2333,7 +2471,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -2341,12 +2479,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("set_ValidationEventSender")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ValidationEventSender", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ValidationEventSender",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2354,7 +2494,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XmlSchemaValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>),
                 quest_hook::libil2cpp::Void,
@@ -2362,12 +2502,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             >("set_XmlResolver")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_XmlResolver", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XmlSchemaValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "set_XmlResolver", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

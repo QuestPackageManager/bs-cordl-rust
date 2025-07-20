@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -99,12 +99,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("AreSortedUserListsEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AreSortedUserListsEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "AreSortedUserListsEqual",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (sortedList1, sortedList2))
+            method.invoke_unchecked((), (sortedList1, sortedList2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +123,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -141,21 +143,23 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("CopyAnchorListIntoListFromPool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyAnchorListIntoListFromPool", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CopyAnchorListIntoListFromPool", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpatialAnchor>,
             >,
-        > = unsafe { method.invoke_unchecked((), (anchorList)) };
+        > = unsafe { method.invoke_unchecked((), (anchorList))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSpatialAnchor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -163,19 +167,21 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("CreateSpatialAnchor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSpatialAnchor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateSpatialAnchor",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EraseAsync_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRTask_1<bool>,
@@ -183,12 +189,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("EraseAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EraseAsync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "EraseAsync", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +203,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         &mut self,
         eraseOptions: crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions),
                 crate::GlobalNamespace::OVRTask_1<bool>,
@@ -204,12 +211,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("EraseAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EraseAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "EraseAsync", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            method.invoke_unchecked(self, (eraseOptions))
+            method.invoke_unchecked(self, (eraseOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -222,7 +230,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
@@ -237,12 +245,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Erase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Erase", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Erase", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (onComplete))
+            method.invoke_unchecked(self, (onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -256,7 +265,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions,
@@ -274,12 +283,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Erase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Erase", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Erase", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eraseOptions, onComplete))
+            method.invoke_unchecked(self, (eraseOptions, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -297,7 +307,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -315,21 +325,23 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("GetListToStoreTheShareRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetListToStoreTheShareRequest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetListToStoreTheShareRequest", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpatialAnchor>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (users)) };
+        > = unsafe { method.invoke_unchecked(self, (users))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrackingSpacePose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRPose,
@@ -337,12 +349,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("GetTrackingSpacePose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTrackingSpacePose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTrackingSpacePose",
+                    0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPose = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +365,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         space: crate::GlobalNamespace::OVRSpace,
         uuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpace, crate::System::Guid),
                 quest_hook::libil2cpp::Void,
@@ -359,19 +373,21 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("InitializeFromExisting")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeFromExisting", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "InitializeFromExisting",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (space, uuid))
+            method.invoke_unchecked(self, (space, uuid))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeOnLoad() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -379,12 +395,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("InitializeOnLoad")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeOnLoad", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "InitializeOnLoad", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -393,7 +410,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         space: crate::GlobalNamespace::OVRSpace,
         uuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpace, crate::System::Guid),
                 quest_hook::libil2cpp::Void,
@@ -401,12 +418,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("InitializeUnchecked")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeUnchecked", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "InitializeUnchecked",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (space, uuid))
+            method.invoke_unchecked(self, (space, uuid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -415,7 +434,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         result: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         actionType: crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -427,28 +446,31 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("InvokeMultiAnchorDelegate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeMultiAnchorDelegate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "InvokeMultiAnchorDelegate",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, result, actionType))
+            method.invoke_unchecked((), (requestId, result, actionType))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LateUpdate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "LateUpdate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,7 +486,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions,
@@ -483,12 +505,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("LoadUnboundAnchors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadUnboundAnchors", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadUnboundAnchors", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (options, onComplete))
+            method.invoke_unchecked((), (options, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -503,7 +526,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions),
                 crate::GlobalNamespace::OVRTask_1<
@@ -517,8 +540,10 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("LoadUnboundAnchorsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadUnboundAnchorsAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadUnboundAnchorsAsync",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
@@ -527,7 +552,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
                     crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (options)) };
+        > = unsafe { method.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -540,16 +565,17 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -557,7 +583,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         requestId: u64,
         result: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
                 quest_hook::libil2cpp::Void,
@@ -565,12 +591,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("OnShareSpacesComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnShareSpacesComplete", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "OnShareSpacesComplete",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, result))
+            method.invoke_unchecked((), (requestId, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -580,7 +608,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         uuid: crate::System::Guid,
         location: crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -593,12 +621,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("OnSpaceEraseComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpaceEraseComplete", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "OnSpaceEraseComplete",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, result, uuid, location))
+            method.invoke_unchecked((), (requestId, result, uuid, location))?
         };
         Ok(__cordl_ret.into())
     }
@@ -606,7 +636,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         requestId: u64,
         result: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, crate::GlobalNamespace::OVRSpatialAnchor_OperationResult),
                 quest_hook::libil2cpp::Void,
@@ -614,12 +644,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("OnSpaceListSaveComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpaceListSaveComplete", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "OnSpaceListSaveComplete",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, result))
+            method.invoke_unchecked((), (requestId, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -627,7 +659,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         requestId: u64,
         queryResult: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, bool),
                 quest_hook::libil2cpp::Void,
@@ -635,12 +667,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("OnSpaceQueryComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpaceQueryComplete", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "OnSpaceQueryComplete",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, queryResult))
+            method.invoke_unchecked((), (requestId, queryResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -650,7 +684,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         result: bool,
         uuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, crate::GlobalNamespace::OVRSpace, bool, crate::System::Guid),
                 quest_hook::libil2cpp::Void,
@@ -658,12 +692,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("OnSpaceSaveComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpaceSaveComplete", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "OnSpaceSaveComplete",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, space, result, uuid))
+            method.invoke_unchecked((), (requestId, space, result, uuid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -675,7 +711,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         componentType: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
         enabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -690,8 +726,10 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("OnSpaceSetComponentStatusComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpaceSetComponentStatusComplete", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "OnSpaceSetComponentStatusComplete", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -699,7 +737,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
                 .invoke_unchecked(
                     (),
                     (requestId, result, space, uuid, componentType, enabled),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -709,7 +747,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         space: crate::GlobalNamespace::OVRSpace,
         uuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, bool, crate::GlobalNamespace::OVRSpace, crate::System::Guid),
                 quest_hook::libil2cpp::Void,
@@ -717,12 +755,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("OnSpatialAnchorCreateComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpatialAnchorCreateComplete", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "OnSpatialAnchorCreateComplete", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, success, space, uuid))
+            method.invoke_unchecked((), (requestId, success, space, uuid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -730,7 +770,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         uuid: crate::System::Guid,
         space: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Guid, u64),
                 quest_hook::libil2cpp::Void,
@@ -738,19 +778,20 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("PopulateUnbound")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PopulateUnbound", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "PopulateUnbound", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uuid, space))
+            method.invoke_unchecked((), (uuid, space))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SaveAsync_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRTask_1<bool>,
@@ -758,12 +799,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("SaveAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveAsync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveAsync", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -771,7 +813,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         &mut self,
         saveOptions: crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions),
                 crate::GlobalNamespace::OVRTask_1<bool>,
@@ -779,19 +821,20 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("SaveAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveAsync", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            method.invoke_unchecked(self, (saveOptions))
+            method.invoke_unchecked(self, (saveOptions))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SaveBatchAnchors() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -799,12 +842,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("SaveBatchAnchors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveBatchAnchors", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveBatchAnchors", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -817,7 +861,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
@@ -832,12 +876,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Save", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (onComplete))
+            method.invoke_unchecked(self, (onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -861,7 +906,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -890,12 +935,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Save", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (anchors, saveOptions, onComplete))
+            method.invoke_unchecked((), (anchors, saveOptions, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -909,7 +955,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions,
@@ -927,12 +973,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Save", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (saveOptions, onComplete))
+            method.invoke_unchecked(self, (saveOptions, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -948,7 +995,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -962,13 +1009,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ShareAsyncInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShareAsyncInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShareAsyncInternal", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = unsafe { method.invoke_unchecked(self, (users)) };
+        > = unsafe { method.invoke_unchecked(self, (users))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShareAsync_IEnumerable_1_4(
@@ -983,7 +1031,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -997,13 +1045,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ShareAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShareAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShareAsync", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = unsafe { method.invoke_unchecked(self, (users)) };
+        > = unsafe { method.invoke_unchecked(self, (users))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShareAsync_OVRSpaceUser0(
@@ -1014,7 +1063,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpaceUser),
                 crate::GlobalNamespace::OVRTask_1<
@@ -1024,13 +1073,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ShareAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShareAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShareAsync", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = unsafe { method.invoke_unchecked(self, (user)) };
+        > = unsafe { method.invoke_unchecked(self, (user))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShareAsync_OVRSpaceUser_OVRSpaceUser1(
@@ -1042,7 +1092,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpaceUser,
@@ -1055,13 +1105,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ShareAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShareAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShareAsync", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = unsafe { method.invoke_unchecked(self, (user1, user2)) };
+        > = unsafe { method.invoke_unchecked(self, (user1, user2))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShareAsync_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser2(
@@ -1074,7 +1125,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpaceUser,
@@ -1088,13 +1139,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ShareAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShareAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShareAsync", 3usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = unsafe { method.invoke_unchecked(self, (user1, user2, user3)) };
+        > = unsafe { method.invoke_unchecked(self, (user1, user2, user3))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShareAsync_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser_OVRSpaceUser3(
@@ -1108,7 +1160,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpaceUser,
@@ -1123,19 +1175,20 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ShareAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShareAsync", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShareAsync", 4usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
             crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-        > = unsafe { method.invoke_unchecked(self, (user1, user2, user3, user4)) };
+        > = unsafe { method.invoke_unchecked(self, (user1, user2, user3, user4))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShareBatchAnchors() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -1143,12 +1196,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ShareBatchAnchors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShareBatchAnchors", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShareBatchAnchors", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1176,7 +1230,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1209,12 +1263,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Share")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Share", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Share", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (anchors, users, onComplete))
+            method.invoke_unchecked((), (anchors, users, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1231,7 +1286,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1250,12 +1305,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Share")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Share", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Share", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (users, onComplete))
+            method.invoke_unchecked(self, (users, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1268,7 +1324,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpaceUser,
@@ -1283,12 +1339,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Share")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Share", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Share", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (user, onComplete))
+            method.invoke_unchecked(self, (user, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1302,7 +1359,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpaceUser,
@@ -1318,12 +1375,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Share")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Share", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Share", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (user1, user2, onComplete))
+            method.invoke_unchecked(self, (user1, user2, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1338,7 +1396,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpaceUser,
@@ -1355,12 +1413,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Share")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Share", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Share", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (user1, user2, user3, onComplete))
+            method.invoke_unchecked(self, (user1, user2, user3, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1376,7 +1435,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::OVRSpaceUser,
@@ -1394,35 +1453,37 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("Share")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Share", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Share", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (user1, user2, user3, user4, onComplete))
+            method.invoke_unchecked(self, (user1, user2, user3, user4, onComplete))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfBound(
         uuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Guid),
                 quest_hook::libil2cpp::Void,
@@ -1430,12 +1491,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ThrowIfBound")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIfBound", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ThrowIfBound", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uuid))
+            method.invoke_unchecked((), (uuid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1446,7 +1508,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u64>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::ICollection_1<
@@ -1460,12 +1522,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("ToNativeArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToNativeArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ToNativeArray", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<u64> = unsafe {
-            method.invoke_unchecked((), (anchors))
+            method.invoke_unchecked((), (anchors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1482,7 +1545,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1496,12 +1559,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("TryExtractValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryExtractValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "TryExtractValue", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (dict, key, value))
+            method.invoke_unchecked((), (dict, key, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1509,7 +1573,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         space: crate::GlobalNamespace::OVRSpace,
         pose: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPose>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::OVRSpace,
@@ -1520,58 +1584,62 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("TryGetPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetPose", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetPose", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space, pose)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (space, pose))? };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Update", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Update", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateTransform(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateTransform", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateTransform", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1583,7 +1651,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1595,78 +1663,85 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("add_OnLocalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_OnLocalize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "add_OnLocalize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Created(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Created")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Created", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Created", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Localized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Localized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Localized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Localized", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PendingCreation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_PendingCreation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PendingCreation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_PendingCreation",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Space(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSpace> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::GlobalNamespace::OVRSpace, 0usize>("get_Space")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Space", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Space", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRSpace = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::Guid, 0usize>("get_Uuid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Uuid", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Uuid", 0usize
                 )
             });
         let __cordl_ret: crate::System::Guid = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1678,7 +1753,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1690,12 +1765,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("remove_OnLocalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_OnLocalize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_OnLocalize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1703,7 +1779,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         &mut self,
         value: crate::GlobalNamespace::OVRSpace,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpace),
                 quest_hook::libil2cpp::Void,
@@ -1711,12 +1787,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("set_Space")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Space", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Space", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1724,7 +1801,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
         &mut self,
         value: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Guid),
                 quest_hook::libil2cpp::Void,
@@ -1732,12 +1809,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
             >("set_Uuid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Uuid", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Uuid", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1795,7 +1873,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
     pub fn Log(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_Development as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1803,19 +1881,20 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
             >("Log")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Log", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_Development as
+                    quest_hook::libil2cpp::Type > ::class(), "Log", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LogError(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_Development as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1823,12 +1902,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
             >("LogError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogError", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_Development as
+                    quest_hook::libil2cpp::Type > ::class(), "LogError", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1836,7 +1916,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
         requestId: u64,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_Development as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1844,12 +1924,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
             >("LogRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogRequest", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_Development as
+                    quest_hook::libil2cpp::Type > ::class(), "LogRequest", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (requestId, message))
+            method.invoke_unchecked((), (requestId, message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1859,7 +1940,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
         successMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         failureMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_Development as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -1872,8 +1953,9 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
             >("LogRequestResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogRequestResult", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_Development as
+                    quest_hook::libil2cpp::Type > ::class(), "LogRequestResult", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1881,14 +1963,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
                 .invoke_unchecked(
                     (),
                     (requestId, result, successMessage, failureMessage),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LogWarning(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_Development as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1896,12 +1978,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_Development {
             >("LogWarning")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogWarning", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_Development as
+                    quest_hook::libil2cpp::Type > ::class(), "LogWarning", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2178,7 +2261,10 @@ impl<
         TCapture: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<
+            TResult,
+            TCapture,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::OVRTask_1<TResult>,
@@ -2192,12 +2278,14 @@ impl<
             >("ContinueTaskWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContinueTaskWith", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2 <
+                    TResult, TCapture > as quest_hook::libil2cpp::Type > ::class(),
+                    "ContinueTaskWith", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (task, onCompleted, state))
+            method.invoke_unchecked((), (task, onCompleted, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2214,7 +2302,10 @@ impl<
         TCapture: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<
+            TResult,
+            TCapture,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     TResult,
@@ -2228,12 +2319,14 @@ impl<
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2 <
+                    TResult, TCapture > as quest_hook::libil2cpp::Type > ::class(),
+                    "Invoke", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (result, invertedCapture))
+            method.invoke_unchecked((), (result, invertedCapture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2248,7 +2341,10 @@ impl<
         TCapture: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<
+            TResult,
+            TCapture,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2261,12 +2357,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2 <
+                    TResult, TCapture > as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (callback, capture))
+            method.invoke_unchecked(self, (callback, capture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2383,7 +2481,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     pub fn ToQueryOptions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSpaceQuery_Options> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRSpaceQuery_Options,
@@ -2391,25 +2489,27 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             >("ToQueryOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToQueryOptions", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToQueryOptions", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRSpaceQuery_Options = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_MaxAnchorCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_MaxAnchorCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_MaxAnchorCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_MaxAnchorCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_StorageLocation(
@@ -2417,7 +2517,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRSpace_StorageLocation,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRSpace_StorageLocation,
@@ -2425,25 +2525,28 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             >("get_StorageLocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_StorageLocation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_StorageLocation",
+                    0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRSpace_StorageLocation = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Timeout(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f64, 0usize>("get_Timeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Timeout", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Timeout", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Uuids(
@@ -2453,7 +2556,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             crate::System::Collections::Generic::IReadOnlyList_1<crate::System::Guid>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -2465,20 +2568,21 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             >("get_Uuids")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Uuids", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Uuids", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<crate::System::Guid>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_MaxAnchorCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -2486,12 +2590,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             >("set_MaxAnchorCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_MaxAnchorCount", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_MaxAnchorCount", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2499,7 +2604,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         &mut self,
         value: crate::GlobalNamespace::OVRSpace_StorageLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpace_StorageLocation),
                 quest_hook::libil2cpp::Void,
@@ -2507,12 +2612,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             >("set_StorageLocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_StorageLocation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_StorageLocation",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2520,16 +2627,17 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("set_Timeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Timeout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Timeout", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2539,7 +2647,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             crate::System::Collections::Generic::IReadOnlyList_1<crate::System::Guid>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IReadOnlyList_1<
@@ -2551,12 +2659,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
             >("set_Uuids")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Uuids", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_LoadOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Uuids", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3077,7 +3186,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     pub fn AddStorableAndShareableComponents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -3085,12 +3194,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             >("AddStorableAndShareableComponents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddStorableAndShareableComponents", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddStorableAndShareableComponents", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3100,7 +3211,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             crate::GlobalNamespace::OVRSpatialAnchor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpatialAnchor>),
                 quest_hook::libil2cpp::Void,
@@ -3108,12 +3219,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             >("BindTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BindTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "BindTo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (spatialAnchor))
+            method.invoke_unchecked(self, (spatialAnchor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3127,7 +3239,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
         >,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3143,12 +3255,13 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             >("Localize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Localize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "Localize", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (onComplete, timeout))
+            method.invoke_unchecked(self, (onComplete, timeout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3156,7 +3269,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
         &mut self,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f64),
                 crate::GlobalNamespace::OVRTask_1<bool>,
@@ -3164,19 +3277,20 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             >("LocalizeAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalizeAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalizeAsync", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            method.invoke_unchecked(self, (timeout))
+            method.invoke_unchecked(self, (timeout))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateLocalization(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -3184,12 +3298,14 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             >("ValidateLocalization")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateLocalization", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateLocalization",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3198,7 +3314,7 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
         space: crate::GlobalNamespace::OVRSpace,
         uuid: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRSpace, crate::System::Guid),
                 quest_hook::libil2cpp::Void,
@@ -3206,66 +3322,71 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (space, uuid))
+            method.invoke_unchecked(self, (space, uuid))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Localized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Localized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Localized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Localized", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Localizing(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Localizing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Localizing", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Localizing", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Pose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Pose, 0usize>("get_Pose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Pose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Pose", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::Guid, 0usize>("get_Uuid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Uuid", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Uuid", 0usize
                 )
             });
         let __cordl_ret: crate::System::Guid = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

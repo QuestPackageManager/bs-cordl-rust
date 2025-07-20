@@ -45,7 +45,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Proxies::ProxyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -53,12 +53,13 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             >("CreateInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateInstance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Proxies::ProxyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateInstance", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject> = unsafe {
-            method.invoke_unchecked(self, (serverType))
+            method.invoke_unchecked(self, (serverType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -73,7 +74,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Proxies::RealProxy>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Proxies::ProxyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
@@ -90,8 +91,9 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             >("CreateProxy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateProxy", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Proxies::ProxyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateProxy", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -101,7 +103,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
                 .invoke_unchecked(
                     self,
                     (objRef, serverType, serverObject, serverContext),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -111,7 +113,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Proxies::ProxyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
@@ -121,12 +123,14 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             >("GetPropertiesForNewContext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertiesForNewContext", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Proxies::ProxyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetPropertiesForNewContext", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))
+            method.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +143,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Proxies::ProxyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -154,11 +158,12 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
             >("IsContextOK")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsContextOK", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Proxies::ProxyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "IsContextOK", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ctx, msg)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ctx, msg))? };
         Ok(__cordl_ret.into())
     }
 }

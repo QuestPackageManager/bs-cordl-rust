@@ -49,7 +49,7 @@ impl crate::System::Net::CookieContainer {
         cookie: quest_hook::libil2cpp::Gc<crate::System::Net::Cookie>,
         throwOnError: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::Cookie>, bool),
                 quest_hook::libil2cpp::Void,
@@ -57,12 +57,13 @@ impl crate::System::Net::CookieContainer {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "Add", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cookie, throwOnError))
+            method.invoke_unchecked(self, (cookie, throwOnError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +72,7 @@ impl crate::System::Net::CookieContainer {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::System::Net::PathList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -82,12 +83,13 @@ impl crate::System::Net::CookieContainer {
             >("AddRemoveDomain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddRemoveDomain", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "AddRemoveDomain", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (key, value))
+            method.invoke_unchecked(self, (key, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +97,7 @@ impl crate::System::Net::CookieContainer {
         &mut self,
         domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -103,11 +105,12 @@ impl crate::System::Net::CookieContainer {
             >("AgeCookies")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AgeCookies", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "AgeCookies", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (domain)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (domain))? };
         Ok(__cordl_ret.into())
     }
     pub fn BuildCookieCollectionFromDomainMatches(
@@ -123,7 +126,7 @@ impl crate::System::Net::CookieContainer {
         >,
         matchOnlyPlainCookie: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -144,8 +147,9 @@ impl crate::System::Net::CookieContainer {
             >("BuildCookieCollectionFromDomainMatches")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildCookieCollectionFromDomainMatches", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "BuildCookieCollectionFromDomainMatches", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -153,7 +157,7 @@ impl crate::System::Net::CookieContainer {
                 .invoke_unchecked(
                     self,
                     (uri, isSecure, port, cookies, domainAttribute, matchOnlyPlainCookie),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +170,7 @@ impl crate::System::Net::CookieContainer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -179,14 +183,15 @@ impl crate::System::Net::CookieContainer {
             >("CookieCutter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CookieCutter", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "CookieCutter", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::CookieCollection,
         > = unsafe {
-            method.invoke_unchecked(self, (uri, headerName, setCookieHeader, isThrow))
+            method.invoke_unchecked(self, (uri, headerName, setCookieHeader, isThrow))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +199,7 @@ impl crate::System::Net::CookieContainer {
         &mut self,
         cc: quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>),
                 i32,
@@ -202,11 +207,12 @@ impl crate::System::Net::CookieContainer {
             >("ExpireCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpireCollection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "ExpireCollection", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (cc)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (cc))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCookieHeader_ByRefMut1(
@@ -218,7 +224,7 @@ impl crate::System::Net::CookieContainer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -231,13 +237,14 @@ impl crate::System::Net::CookieContainer {
             >("GetCookieHeader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCookieHeader", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "GetCookieHeader", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (uri, optCookie2)) };
+        > = unsafe { method.invoke_unchecked(self, (uri, optCookie2))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCookieHeader_Uri0(
@@ -246,7 +253,7 @@ impl crate::System::Net::CookieContainer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -254,13 +261,14 @@ impl crate::System::Net::CookieContainer {
             >("GetCookieHeader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCookieHeader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "GetCookieHeader", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (uri)) };
+        > = unsafe { method.invoke_unchecked(self, (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetCookies(
@@ -269,7 +277,7 @@ impl crate::System::Net::CookieContainer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                 quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
@@ -277,20 +285,21 @@ impl crate::System::Net::CookieContainer {
             >("InternalGetCookies")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalGetCookies", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "InternalGetCookies", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::CookieCollection,
-        > = unsafe { method.invoke_unchecked(self, (uri)) };
+        > = unsafe { method.invoke_unchecked(self, (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLocalDomain(
         &mut self,
         host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -298,11 +307,12 @@ impl crate::System::Net::CookieContainer {
             >("IsLocalDomain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLocalDomain", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "IsLocalDomain", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (host)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (host))? };
         Ok(__cordl_ret.into())
     }
     pub fn MergeUpdateCollections(
@@ -313,7 +323,7 @@ impl crate::System::Net::CookieContainer {
         isSecure: bool,
         isPlainOnly: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
@@ -327,8 +337,9 @@ impl crate::System::Net::CookieContainer {
             >("MergeUpdateCollections")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MergeUpdateCollections", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), "MergeUpdateCollections", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -336,7 +347,7 @@ impl crate::System::Net::CookieContainer {
                 .invoke_unchecked(
                     self,
                     (destination, source, port, isSecure, isPlainOnly),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -350,16 +361,17 @@ impl crate::System::Net::CookieContainer {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::CookieContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::CookieContainer as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

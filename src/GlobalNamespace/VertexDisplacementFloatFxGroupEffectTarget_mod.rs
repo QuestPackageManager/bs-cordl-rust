@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 crate::UnityEngine::Vector4,
@@ -64,12 +64,14 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
             >("CalculateDisplacementVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateDisplacementVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateDisplacementVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,32 +85,34 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
     pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnEnable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget
+                    as quest_hook::libil2cpp::Type > ::class(), "OnEnable", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnValidate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnValidate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget
+                    as quest_hook::libil2cpp::Type > ::class(), "OnValidate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,16 +120,17 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget
+                    as quest_hook::libil2cpp::Type > ::class(), "SetValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +140,7 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         elementId: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, f32),
                 quest_hook::libil2cpp::Void,
@@ -143,12 +148,13 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
             >("SetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget
+                    as quest_hook::libil2cpp::Type > ::class(), "SetValue", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (groupId, elementId, value))
+            method.invoke_unchecked(self, (groupId, elementId, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +164,7 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         elementId: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, f32),
                 quest_hook::libil2cpp::Void,
@@ -166,28 +172,30 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
             >("TriggerValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriggerValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget
+                    as quest_hook::libil2cpp::Type > ::class(), "TriggerValue", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (groupId, elementId, value))
+            method.invoke_unchecked(self, (groupId, elementId, value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

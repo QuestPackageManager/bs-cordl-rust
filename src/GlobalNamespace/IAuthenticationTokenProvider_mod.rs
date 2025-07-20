@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IAuthenticationTokenProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -60,15 +60,17 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
             >("GetAuthenticationToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAuthenticationToken", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IAuthenticationTokenProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAuthenticationToken",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::AuthenticationToken,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTokenPlatform(
@@ -77,7 +79,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AuthenticationToken_Platform,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IAuthenticationTokenProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::PlatformEnvironment),
                 crate::GlobalNamespace::AuthenticationToken_Platform,
@@ -85,12 +87,13 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
             >("GetTokenPlatform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTokenPlatform", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IAuthenticationTokenProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTokenPlatform", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = unsafe {
-            method.invoke_unchecked(self, (tokenPlatformEnvironment))
+            method.invoke_unchecked(self, (tokenPlatformEnvironment))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +107,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IAuthenticationTokenProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -112,13 +115,14 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
             >("get_hashedUserId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_hashedUserId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IAuthenticationTokenProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "get_hashedUserId", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_platform(
@@ -126,7 +130,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AuthenticationToken_Platform,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IAuthenticationTokenProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::AuthenticationToken_Platform,
@@ -134,12 +138,13 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
             >("get_platform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_platform", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IAuthenticationTokenProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "get_platform", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +153,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IAuthenticationTokenProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -156,13 +161,14 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
             >("get_userName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_userName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IAuthenticationTokenProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "get_userName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

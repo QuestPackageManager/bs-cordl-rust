@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::SaberMovementData {
             crate::GlobalNamespace::ISaberMovementDataProcessor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ISaberMovementDataProcessor,
@@ -72,12 +72,13 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("AddDataProcessor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddDataProcessor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "AddDataProcessor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataProcessor))
+            method.invoke_unchecked(self, (dataProcessor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -87,7 +88,7 @@ impl crate::GlobalNamespace::SaberMovementData {
         bottomPos: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                 quest_hook::libil2cpp::Void,
@@ -95,12 +96,13 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("AddNewData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddNewData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "AddNewData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (topPos, bottomPos, _cordl_time))
+            method.invoke_unchecked(self, (topPos, bottomPos, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +114,7 @@ impl crate::GlobalNamespace::SaberMovementData {
         segmentNormal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         segmentAngle: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -126,8 +128,10 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("ComputeAdditionalData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeAdditionalData", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeAdditionalData",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -135,14 +139,14 @@ impl crate::GlobalNamespace::SaberMovementData {
                 .invoke_unchecked(
                     self,
                     (topPos, bottomPos, idxOffset, segmentNormal, segmentAngle),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeCutPlaneNormal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Vector3,
@@ -150,12 +154,14 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("ComputeCutPlaneNormal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeCutPlaneNormal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeCutPlaneNormal",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +172,7 @@ impl crate::GlobalNamespace::SaberMovementData {
         tp1: crate::UnityEngine::Vector3,
         bp1: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -179,25 +185,27 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("ComputePlaneNormal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputePlaneNormal", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputePlaneNormal", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (tp0, bp0, tp1, bp1))
+            method.invoke_unchecked(self, (tp0, bp0, tp1, bp1))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeSwingRating_1(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("ComputeSwingRating")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeSwingRating", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeSwingRating", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeSwingRating__cordl_bool_f32_2(
@@ -205,16 +213,17 @@ impl crate::GlobalNamespace::SaberMovementData {
         overrideSegmenAngle: bool,
         overrideValue: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool, f32), f32, 2usize>("ComputeSwingRating")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeSwingRating", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeSwingRating", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked(self, (overrideSegmenAngle, overrideValue))
+            method.invoke_unchecked(self, (overrideSegmenAngle, overrideValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -222,16 +231,17 @@ impl crate::GlobalNamespace::SaberMovementData {
         &mut self,
         overrideSegmentAngle: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), f32, 1usize>("ComputeSwingRating")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeSwingRating", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeSwingRating", 1usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked(self, (overrideSegmentAngle))
+            method.invoke_unchecked(self, (overrideSegmentAngle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -248,7 +258,7 @@ impl crate::GlobalNamespace::SaberMovementData {
             crate::GlobalNamespace::ISaberMovementDataProcessor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ISaberMovementDataProcessor,
@@ -258,12 +268,14 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("RemoveDataProcessor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveDataProcessor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveDataProcessor",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataProcessor))
+            method.invoke_unchecked(self, (dataProcessor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,7 +285,7 @@ impl crate::GlobalNamespace::SaberMovementData {
             crate::GlobalNamespace::ISaberMovementDataProcessor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ISaberMovementDataProcessor,
@@ -283,41 +295,45 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("RequestLastDataProcessing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RequestLastDataProcessing", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "RequestLastDataProcessing",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataProcessor))
+            method.invoke_unchecked(self, (dataProcessor))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_bladeSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_bladeSpeed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_bladeSpeed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_bladeSpeed", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_lastAddedData(
@@ -325,7 +341,7 @@ impl crate::GlobalNamespace::SaberMovementData {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BladeMovementDataElement,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::BladeMovementDataElement,
@@ -333,12 +349,13 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("get_lastAddedData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lastAddedData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_lastAddedData", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -347,7 +364,7 @@ impl crate::GlobalNamespace::SaberMovementData {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BladeMovementDataElement,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SaberMovementData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::BladeMovementDataElement,
@@ -355,12 +372,13 @@ impl crate::GlobalNamespace::SaberMovementData {
             >("get_prevAddedData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_prevAddedData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SaberMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_prevAddedData", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

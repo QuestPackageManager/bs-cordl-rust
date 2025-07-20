@@ -82,7 +82,7 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
         strobeBrightness: f32,
         strobeFade: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -98,8 +98,9 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -115,32 +116,34 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
                         strobeBrightness,
                         strobeFade,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_beat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_beat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_beat", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_beat", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_brightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_brightness")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_brightness", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_brightness", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_colorType(
@@ -148,7 +151,7 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatmapSaveDataCommon::EnvironmentColorType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatmapSaveDataCommon::EnvironmentColorType,
@@ -156,55 +159,61 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
             >("get_colorType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_colorType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_colorType", 0usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::EnvironmentColorType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_strobeBeatFrequency(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_strobeBeatFrequency")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_strobeBeatFrequency", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_strobeBeatFrequency",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_strobeBrightness(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_strobeBrightness")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_strobeBrightness", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_strobeBrightness",
+                    0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_strobeFade(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_strobeFade")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_strobeFade", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_strobeFade", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_transitionType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataVersion3::TransitionType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightColorBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatmapSaveDataVersion3::TransitionType,
@@ -212,12 +221,13 @@ impl crate::BeatmapSaveDataVersion3::LightColorBaseData {
             >("get_transitionType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_transitionType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightColorBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_transitionType", 0usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataVersion3::TransitionType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

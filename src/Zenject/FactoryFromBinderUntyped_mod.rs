@@ -60,7 +60,7 @@ impl crate::Zenject::FactoryFromBinderUntyped {
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
         factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinderUntyped as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -73,8 +73,9 @@ impl crate::Zenject::FactoryFromBinderUntyped {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinderUntyped as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -82,7 +83,7 @@ impl crate::Zenject::FactoryFromBinderUntyped {
                 .invoke_unchecked(
                     self,
                     (bindContainer, contractType, bindInfo, factoryBindInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

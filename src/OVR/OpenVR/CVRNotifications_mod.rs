@@ -51,7 +51,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
         >,
         pNotificationId: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRNotificationError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRNotifications as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -69,8 +69,9 @@ impl crate::OVR::OpenVR::CVRNotifications {
             >("CreateNotification")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNotification", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRNotifications as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateNotification", 7usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRNotificationError = unsafe {
@@ -86,7 +87,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
                         pImage,
                         pNotificationId,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +104,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
         &mut self,
         notificationId: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRNotificationError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRNotifications as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32),
                 crate::OVR::OpenVR::EVRNotificationError,
@@ -111,12 +112,13 @@ impl crate::OVR::OpenVR::CVRNotifications {
             >("RemoveNotification")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveNotification", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRNotifications as quest_hook::libil2cpp::Type
+                    > ::class(), "RemoveNotification", 1usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRNotificationError = unsafe {
-            method.invoke_unchecked(self, (notificationId))
+            method.invoke_unchecked(self, (notificationId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +126,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRNotifications as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -132,12 +134,13 @@ impl crate::OVR::OpenVR::CVRNotifications {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRNotifications as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

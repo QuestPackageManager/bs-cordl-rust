@@ -45,7 +45,7 @@ impl crate::System::Linq::Expressions::ConstantCheck {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::AnalyzeTypeIsResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::ConstantCheck as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -58,12 +58,13 @@ impl crate::System::Linq::Expressions::ConstantCheck {
             >("AnalyzeTypeIs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AnalyzeTypeIs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::ConstantCheck as
+                    quest_hook::libil2cpp::Type > ::class(), "AnalyzeTypeIs", 2usize
                 )
             });
         let __cordl_ret: crate::System::Linq::Expressions::AnalyzeTypeIsResult = unsafe {
-            method.invoke_unchecked((), (operand, testType))
+            method.invoke_unchecked((), (operand, testType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +75,7 @@ impl crate::System::Linq::Expressions::ConstantCheck {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::AnalyzeTypeIsResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::ConstantCheck as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Linq::Expressions::TypeBinaryExpression,
@@ -84,12 +85,13 @@ impl crate::System::Linq::Expressions::ConstantCheck {
             >("AnalyzeTypeIs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AnalyzeTypeIs", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::ConstantCheck as
+                    quest_hook::libil2cpp::Type > ::class(), "AnalyzeTypeIs", 1usize
                 )
             });
         let __cordl_ret: crate::System::Linq::Expressions::AnalyzeTypeIsResult = unsafe {
-            method.invoke_unchecked((), (typeIs))
+            method.invoke_unchecked((), (typeIs))?
         };
         Ok(__cordl_ret.into())
     }

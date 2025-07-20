@@ -52,7 +52,7 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::ActivationMixerPlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Playables::PlayableGraph, i32),
                 crate::UnityEngine::Playables::ScriptPlayable_1<
@@ -64,15 +64,16 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::ActivationMixerPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::ActivationMixerPlayable,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, inputCount)) };
+        > = unsafe { method.invoke_unchecked((), (graph, inputCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -86,7 +87,7 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::ActivationMixerPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Playables::Playable),
                 quest_hook::libil2cpp::Void,
@@ -94,12 +95,13 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
             >("OnPlayableDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnPlayableDestroy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::ActivationMixerPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "OnPlayableDestroy", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable))
+            method.invoke_unchecked(self, (playable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +111,7 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
         info: crate::UnityEngine::Playables::FrameData,
         playerData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::ActivationMixerPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::Playable,
@@ -121,28 +123,30 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
             >("ProcessFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessFrame", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::ActivationMixerPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessFrame", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable, info, playerData))
+            method.invoke_unchecked(self, (playable, info, playerData))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::ActivationMixerPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::ActivationMixerPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,7 +155,7 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::ActivationMixerPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
@@ -159,12 +163,14 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
             >("get_postPlaybackState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_postPlaybackState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::ActivationMixerPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "get_postPlaybackState",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,7 +178,7 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
         &mut self,
         value: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::ActivationMixerPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState),
                 quest_hook::libil2cpp::Void,
@@ -180,12 +186,14 @@ impl crate::UnityEngine::Timeline::ActivationMixerPlayable {
             >("set_postPlaybackState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_postPlaybackState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::ActivationMixerPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "set_postPlaybackState",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

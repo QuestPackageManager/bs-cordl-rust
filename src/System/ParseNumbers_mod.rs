@@ -42,7 +42,7 @@ impl crate::System::ParseNumbers {
         s: crate::System::ReadOnlySpan_1<char>,
         i: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -53,12 +53,13 @@ impl crate::System::ParseNumbers {
             >("EatWhiteSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EatWhiteSpace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "EatWhiteSpace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (s, i))
+            method.invoke_unchecked((), (s, i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,7 +69,7 @@ impl crate::System::ParseNumbers {
         i: quest_hook::libil2cpp::ByRefMut<i32>,
         isUnsigned: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -81,12 +82,13 @@ impl crate::System::ParseNumbers {
             >("GrabInts")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GrabInts", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "GrabInts", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (radix, s, i, isUnsigned))
+            method.invoke_unchecked((), (radix, s, i, isUnsigned))?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +98,7 @@ impl crate::System::ParseNumbers {
         i: quest_hook::libil2cpp::ByRefMut<i32>,
         isUnsigned: bool,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -109,12 +111,13 @@ impl crate::System::ParseNumbers {
             >("GrabLongs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GrabLongs", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "GrabLongs", 4usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (radix, s, i, isUnsigned))
+            method.invoke_unchecked((), (radix, s, i, isUnsigned))?
         };
         Ok(__cordl_ret.into())
     }
@@ -127,7 +130,7 @@ impl crate::System::ParseNumbers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, i32, char, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -135,14 +138,15 @@ impl crate::System::ParseNumbers {
             >("IntToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntToString", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "IntToString", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (n, radix, width, paddingChar, flags))
+            method.invoke_unchecked((), (n, radix, width, paddingChar, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,7 +155,7 @@ impl crate::System::ParseNumbers {
         radix: i32,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (char, i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -159,12 +163,13 @@ impl crate::System::ParseNumbers {
             >("IsDigit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDigit", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "IsDigit", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (c, radix, result))
+            method.invoke_unchecked((), (c, radix, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,7 +182,7 @@ impl crate::System::ParseNumbers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, i32, i32, char, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -185,14 +190,15 @@ impl crate::System::ParseNumbers {
             >("LongToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LongToString", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "LongToString", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (n, radix, width, paddingChar, flags))
+            method.invoke_unchecked((), (n, radix, width, paddingChar, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -202,7 +208,7 @@ impl crate::System::ParseNumbers {
         flags: i32,
         currPos: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -215,12 +221,13 @@ impl crate::System::ParseNumbers {
             >("StringToInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringToInt", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "StringToInt", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (s, radix, flags, currPos))
+            method.invoke_unchecked((), (s, radix, flags, currPos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +236,7 @@ impl crate::System::ParseNumbers {
         radix: i32,
         flags: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, i32, i32),
                 i32,
@@ -237,11 +244,14 @@ impl crate::System::ParseNumbers {
             >("StringToInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringToInt", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "StringToInt", 3usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (s, radix, flags)) };
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (s, radix, flags))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StringToLong_ByRefMut1(
@@ -250,7 +260,7 @@ impl crate::System::ParseNumbers {
         flags: i32,
         currPos: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -263,12 +273,13 @@ impl crate::System::ParseNumbers {
             >("StringToLong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringToLong", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "StringToLong", 4usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (s, radix, flags, currPos))
+            method.invoke_unchecked((), (s, radix, flags, currPos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,7 +288,7 @@ impl crate::System::ParseNumbers {
         radix: i32,
         flags: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, i32, i32),
                 i64,
@@ -285,17 +296,20 @@ impl crate::System::ParseNumbers {
             >("StringToLong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringToLong", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "StringToLong", 3usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (s, radix, flags)) };
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (s, radix, flags))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowOverflowInt32Exception() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -303,19 +317,20 @@ impl crate::System::ParseNumbers {
             >("ThrowOverflowInt32Exception")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowOverflowInt32Exception", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowOverflowInt32Exception", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowOverflowInt64Exception() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -323,19 +338,20 @@ impl crate::System::ParseNumbers {
             >("ThrowOverflowInt64Exception")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowOverflowInt64Exception", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowOverflowInt64Exception", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowOverflowUInt32Exception() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -343,19 +359,20 @@ impl crate::System::ParseNumbers {
             >("ThrowOverflowUInt32Exception")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowOverflowUInt32Exception", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowOverflowUInt32Exception", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowOverflowUInt64Exception() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ParseNumbers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -363,12 +380,13 @@ impl crate::System::ParseNumbers {
             >("ThrowOverflowUInt64Exception")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowOverflowUInt64Exception", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ParseNumbers as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowOverflowUInt64Exception", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }

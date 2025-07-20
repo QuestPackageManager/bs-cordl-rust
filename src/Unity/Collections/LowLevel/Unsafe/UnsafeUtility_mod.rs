@@ -56,7 +56,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<T>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -64,13 +64,14 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("AddressOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddressOf", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "AddressOf", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (output)) };
+        > = unsafe { method.invoke_unchecked((), (output))? };
         Ok(__cordl_ret.into())
     }
     pub fn AlignOf<T>() -> quest_hook::libil2cpp::Result<i32>
@@ -78,15 +79,16 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("AlignOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AlignOf", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "AlignOf", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn As<U, T>(
@@ -98,7 +100,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<U>),
                 quest_hook::libil2cpp::ByRefMut<T>,
@@ -106,12 +108,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("As")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "As", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "As", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            method.invoke_unchecked((), (from))
+            method.invoke_unchecked((), (from))?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,7 +125,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::ByRefMut<T>,
@@ -130,12 +133,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("AsRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsRef", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "AsRef", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
-            method.invoke_unchecked((), (ptr))
+            method.invoke_unchecked((), (ptr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,15 +148,16 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(T, T), bool, 2usize>("EnumEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnumEquals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "EnumEquals", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnumToInt<T>(enumValue: T) -> quest_hook::libil2cpp::Result<i32>
@@ -160,22 +165,23 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(T), i32, 1usize>("EnumToInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnumToInt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "EnumToInt", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (enumValue)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (enumValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn Free(
         memory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -186,12 +192,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("Free")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Free", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "Free", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (memory, allocator))
+            method.invoke_unchecked((), (memory, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +206,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         memory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -210,12 +217,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("FreeTracked")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeTracked", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "FreeTracked", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (memory, allocator))
+            method.invoke_unchecked((), (memory, allocator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +232,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Array>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -232,13 +240,15 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("GetReasonForArrayNonBlittable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetReasonForArrayNonBlittable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetReasonForArrayNonBlittable", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (arr)) };
+        > = unsafe { method.invoke_unchecked((), (arr))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetReasonForGenericListNonBlittable<T>() -> quest_hook::libil2cpp::Result<
@@ -248,7 +258,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -256,13 +266,15 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("GetReasonForGenericListNonBlittable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetReasonForGenericListNonBlittable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetReasonForGenericListNonBlittable", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetReasonForTypeNonBlittableImpl(
@@ -271,7 +283,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -282,19 +294,21 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("GetReasonForTypeNonBlittableImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetReasonForTypeNonBlittableImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetReasonForTypeNonBlittableImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (t, name)) };
+        > = unsafe { method.invoke_unchecked((), (t, name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetScriptingTypeFlags(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 i32,
@@ -302,11 +316,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("GetScriptingTypeFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetScriptingTypeFlags", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetScriptingTypeFlags",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalEnumToInt<T>(
@@ -317,7 +333,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -328,19 +344,20 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("InternalEnumToInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalEnumToInt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalEnumToInt", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (enumValue, intValue))
+            method.invoke_unchecked((), (enumValue, intValue))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsArrayBlittable(
         arr: quest_hook::libil2cpp::Gc<crate::System::Array>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Array>),
                 bool,
@@ -348,17 +365,18 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("IsArrayBlittable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsArrayBlittable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsArrayBlittable", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (arr)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (arr))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsBlittableValueType(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 bool,
@@ -366,11 +384,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("IsBlittableValueType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsBlittableValueType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsBlittableValueType",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsBlittable_0<T>() -> quest_hook::libil2cpp::Result<bool>
@@ -378,21 +398,22 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("IsBlittable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsBlittable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsBlittable", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsBlittable_Type1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 bool,
@@ -400,11 +421,12 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("IsBlittable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsBlittable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsBlittable", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsGenericListBlittable<T>() -> quest_hook::libil2cpp::Result<bool>
@@ -412,15 +434,17 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("IsGenericListBlittable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsGenericListBlittable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsGenericListBlittable",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsUnmanaged<T>() -> quest_hook::libil2cpp::Result<bool>
@@ -428,22 +452,23 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("IsUnmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsUnmanaged", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsUnmanaged", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LeakErase(
         handle: crate::System::IntPtr,
         category: crate::Unity::Collections::LeakCategory,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::Unity::Collections::LeakCategory),
                 i32,
@@ -451,12 +476,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("LeakErase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LeakErase", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LeakErase", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (handle, category))
+            method.invoke_unchecked((), (handle, category))?
         };
         Ok(__cordl_ret.into())
     }
@@ -465,7 +491,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         category: crate::Unity::Collections::LeakCategory,
         callstacksToSkip: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::Unity::Collections::LeakCategory, i32),
                 i32,
@@ -473,12 +499,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("LeakRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LeakRecord", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LeakRecord", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (handle, category, callstacksToSkip))
+            method.invoke_unchecked((), (handle, category, callstacksToSkip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -489,7 +516,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, i32, crate::Unity::Collections::Allocator),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -497,13 +524,14 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("Malloc")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Malloc", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "Malloc", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (_cordl_size, alignment, allocator)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_size, alignment, allocator))? };
         Ok(__cordl_ret.into())
     }
     pub fn MallocTracked(
@@ -514,7 +542,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, i32, crate::Unity::Collections::Allocator, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -522,8 +550,9 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("MallocTracked")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MallocTracked", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "MallocTracked", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -533,7 +562,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
                 .invoke_unchecked(
                     (),
                     (_cordl_size, alignment, allocator, callstacksToSkip),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -541,7 +570,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_size: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i64),
                 quest_hook::libil2cpp::Void,
@@ -549,12 +578,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("MemClear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemClear", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "MemClear", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, _cordl_size))
+            method.invoke_unchecked((), (destination, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -563,7 +593,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         ptr2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_size: i64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -575,12 +605,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("MemCmp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemCmp", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "MemCmp", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (ptr1, ptr2, _cordl_size))
+            method.invoke_unchecked((), (ptr1, ptr2, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -589,7 +620,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_size: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -601,12 +632,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("MemCpy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemCpy", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "MemCpy", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, source, _cordl_size))
+            method.invoke_unchecked((), (destination, source, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -618,7 +650,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         elementSize: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -633,8 +665,9 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("MemCpyStride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemCpyStride", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "MemCpyStride", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -649,7 +682,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
                         elementSize,
                         count,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -658,7 +691,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_size: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -670,12 +703,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("MemMove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemMove", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "MemMove", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, source, _cordl_size))
+            method.invoke_unchecked((), (destination, source, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -684,7 +718,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         value: u8,
         _cordl_size: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -696,12 +730,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("MemSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemSet", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "MemSet", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, value, _cordl_size))
+            method.invoke_unchecked((), (destination, value, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -713,7 +748,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 T,
@@ -721,11 +756,12 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("ReadArrayElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadArrayElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadArrayElement", 2usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (source, index)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (source, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadArrayElementWithStride<T>(
@@ -737,7 +773,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -749,12 +785,14 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("ReadArrayElementWithStride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadArrayElementWithStride", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadArrayElementWithStride", 3usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (source, index, stride))
+            method.invoke_unchecked((), (source, index, stride))?
         };
         Ok(__cordl_ret.into())
     }
@@ -763,15 +801,16 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("SizeOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SizeOf", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SizeOf", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteArrayElement<T>(
@@ -783,7 +822,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32, T),
                 quest_hook::libil2cpp::Void,
@@ -791,12 +830,13 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("WriteArrayElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteArrayElement", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteArrayElement", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, index, value))
+            method.invoke_unchecked((), (destination, index, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -810,7 +850,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -823,12 +863,14 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
             >("WriteArrayElementWithStride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteArrayElementWithStride", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteArrayElementWithStride", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, index, stride, value))
+            method.invoke_unchecked((), (destination, index, stride, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1094,7 +1136,9 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<i32>),
                 quest_hook::libil2cpp::Void,
@@ -1102,12 +1146,14 @@ impl<
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1
+                    < T > as quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (flags))
+            method.invoke_unchecked((), (flags))?
         };
         Ok(__cordl_ret.into())
     }

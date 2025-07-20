@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -100,8 +100,9 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
             >("CreateData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -115,14 +116,14 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
                 .invoke_unchecked(
                     (),
                     (beatmapLevels, sortBeatmapLevels, sortedBeatmapLevels),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsNumericOrSpecial(
         comparedChar: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -130,11 +131,12 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
             >("IsNumericOrSpecial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNumericOrSpecial", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNumericOrSpecial", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (comparedChar)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (comparedChar))? };
         Ok(__cordl_ret.into())
     }
 }

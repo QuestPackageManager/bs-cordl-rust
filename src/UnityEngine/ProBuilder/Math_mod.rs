@@ -45,7 +45,7 @@ impl crate::UnityEngine::ProBuilder::Math {
     pub fn Abs(
         v: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -53,25 +53,27 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Abs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Abs", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Abs", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Approx(a: f32, b: f32, delta: f32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32, f32), bool, 3usize>("Approx")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Approx", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Approx", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn Approx2(
@@ -79,7 +81,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         b: crate::UnityEngine::Vector2,
         delta: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2, f32),
                 bool,
@@ -87,11 +89,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Approx2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Approx2", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Approx2", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn Approx3(
@@ -99,7 +102,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         b: crate::UnityEngine::Vector3,
         delta: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                 bool,
@@ -107,11 +110,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Approx3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Approx3", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Approx3", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn Approx4(
@@ -119,7 +123,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         b: crate::UnityEngine::Vector4,
         delta: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector4, crate::UnityEngine::Vector4, f32),
                 bool,
@@ -127,11 +131,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Approx4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Approx4", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Approx4", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApproxC(
@@ -139,7 +144,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         b: crate::UnityEngine::Color,
         delta: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color, crate::UnityEngine::Color, f32),
                 bool,
@@ -147,11 +152,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("ApproxC")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApproxC", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "ApproxC", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, delta))? };
         Ok(__cordl_ret.into())
     }
     pub fn Average_IList_1_IList_1_0(
@@ -162,7 +168,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -179,12 +185,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Average")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Average", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Average", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (array, indexes))
+            method.invoke_unchecked((), (array, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +203,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -213,12 +220,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Average")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Average", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Average", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (array, indexes))
+            method.invoke_unchecked((), (array, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -230,7 +238,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -247,12 +255,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Average")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Average", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Average", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (array, indexes))
+            method.invoke_unchecked((), (array, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -261,16 +270,17 @@ impl crate::UnityEngine::ProBuilder::Math {
         lowerBound: i32,
         upperBound: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32, i32), i32, 3usize>("Clamp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clamp", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Clamp", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (value, lowerBound, upperBound))
+            method.invoke_unchecked((), (value, lowerBound, upperBound))?
         };
         Ok(__cordl_ret.into())
     }
@@ -279,7 +289,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         b: crate::UnityEngine::Vector3,
         res: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -291,12 +301,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Cross")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Cross", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Cross", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (a, b, res))
+            method.invoke_unchecked((), (a, b, res))?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,7 +316,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         lineStart: crate::UnityEngine::Vector2,
         lineEnd: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -317,12 +328,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("DistancePointLineSegment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DistancePointLineSegment", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "DistancePointLineSegment", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (point, lineStart, lineEnd))
+            method.invoke_unchecked((), (point, lineStart, lineEnd))?
         };
         Ok(__cordl_ret.into())
     }
@@ -331,7 +343,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         lineStart: crate::UnityEngine::Vector3,
         lineEnd: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -343,12 +355,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("DistancePointLineSegment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DistancePointLineSegment", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "DistancePointLineSegment", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (point, lineStart, lineEnd))
+            method.invoke_unchecked((), (point, lineStart, lineEnd))?
         };
         Ok(__cordl_ret.into())
     }
@@ -356,7 +369,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         v: crate::UnityEngine::Vector2,
         o: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
                 crate::UnityEngine::Vector2,
@@ -364,12 +377,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("DivideBy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DivideBy", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "DivideBy", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (v, o))
+            method.invoke_unchecked((), (v, o))?
         };
         Ok(__cordl_ret.into())
     }
@@ -377,7 +391,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         v: crate::UnityEngine::Vector3,
         o: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -385,19 +399,20 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("DivideBy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DivideBy", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "DivideBy", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (v, o))
+            method.invoke_unchecked((), (v, o))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureUnitVector_Vector2_0(
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2),
                 crate::UnityEngine::Vector2,
@@ -405,19 +420,20 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("EnsureUnitVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureUnitVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "EnsureUnitVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureUnitVector_Vector3_1(
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -425,19 +441,20 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("EnsureUnitVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureUnitVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "EnsureUnitVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureUnitVector_Vector4_2(
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector4),
                 crate::UnityEngine::Vector4,
@@ -445,19 +462,20 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("EnsureUnitVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureUnitVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "EnsureUnitVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FixNaN(
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector4),
                 crate::UnityEngine::Vector4,
@@ -465,12 +483,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("FixNaN")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FixNaN", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "FixNaN", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -482,7 +501,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -497,12 +516,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("GetBounds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBounds", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "GetBounds", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
-            method.invoke_unchecked((), (positions, indices))
+            method.invoke_unchecked((), (positions, indices))?
         };
         Ok(__cordl_ret.into())
     }
@@ -513,7 +533,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         p3: crate::UnityEngine::Vector2,
         intersect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -527,12 +547,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("GetLineSegmentIntersect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLineSegmentIntersect", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLineSegmentIntersect", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (p0, p1, p2, p3, intersect))
+            method.invoke_unchecked((), (p0, p1, p2, p3, intersect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -542,7 +563,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         p2: crate::UnityEngine::Vector2,
         p3: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -555,18 +576,21 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("GetLineSegmentIntersect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLineSegmentIntersect", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLineSegmentIntersect", 4usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (p0, p1, p2, p3)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (p0, p1, p2, p3))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNearestPointRayRay_Ray_Ray0(
         a: crate::UnityEngine::Ray,
         b: crate::UnityEngine::Ray,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Ray, crate::UnityEngine::Ray),
                 crate::UnityEngine::Vector3,
@@ -574,12 +598,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("GetNearestPointRayRay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNearestPointRayRay", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "GetNearestPointRayRay", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (a, b))
+            method.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -589,7 +614,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         bo: crate::UnityEngine::Vector3,
         bd: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -602,19 +627,20 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("GetNearestPointRayRay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNearestPointRayRay", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "GetNearestPointRayRay", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (ao, ad, bo, bd))
+            method.invoke_unchecked((), (ao, ad, bo, bd))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InvertScaleVector(
         scaleVector: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -622,12 +648,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("InvertScaleVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvertScaleVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "InvertScaleVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (scaleVector))
+            method.invoke_unchecked((), (scaleVector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -635,7 +662,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         v: crate::UnityEngine::Vector3,
         epsilon: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3, f32),
                 bool,
@@ -643,17 +670,18 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("IsCardinalAxis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCardinalAxis", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "IsCardinalAxis", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (v, epsilon)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (v, epsilon))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNumber_Vector2_1(
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2),
                 bool,
@@ -661,17 +689,18 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("IsNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "IsNumber", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNumber_Vector3_2(
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 bool,
@@ -679,17 +708,18 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("IsNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "IsNumber", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNumber_Vector4_3(
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector4),
                 bool,
@@ -697,29 +727,31 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("IsNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "IsNumber", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNumber_f32_0(value: f32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), bool, 1usize>("IsNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "IsNumber", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn LargestValue_Vector2_1(
         v: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2),
                 f32,
@@ -727,17 +759,18 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("LargestValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LargestValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "LargestValue", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (v)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn LargestValue_Vector3_0(
         v: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 f32,
@@ -745,11 +778,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("LargestValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LargestValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "LargestValue", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (v)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn LargestVector2_IList_1_1(
@@ -760,7 +794,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -775,12 +809,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("LargestVector2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LargestVector2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "LargestVector2", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (v, indexes))
+            method.invoke_unchecked((), (v, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -789,7 +824,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
@@ -799,25 +834,27 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("LargestVector2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LargestVector2", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "LargestVector2", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MakeNonZero(value: f32, min: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32), f32, 2usize>("MakeNonZero")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeNonZero", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "MakeNonZero", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (value, min)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (value, min))? };
         Ok(__cordl_ret.into())
     }
     pub fn Max<T>(
@@ -827,7 +864,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>),
                 T,
@@ -835,11 +872,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Max", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (array)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn Min<T>(
@@ -849,7 +887,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>),
                 T,
@@ -857,18 +895,19 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Min", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (array)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn NormalTangentBitangent(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Normal> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -881,12 +920,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("NormalTangentBitangent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NormalTangentBitangent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "NormalTangentBitangent", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Normal = unsafe {
-            method.invoke_unchecked((), (mesh, face))
+            method.invoke_unchecked((), (mesh, face))?
         };
         Ok(__cordl_ret.into())
     }
@@ -900,7 +940,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -919,12 +959,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Normal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Normal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Normal", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (vertices, indexes))
+            method.invoke_unchecked((), (vertices, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -932,7 +973,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -945,12 +986,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Normal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Normal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Normal", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (mesh, face))
+            method.invoke_unchecked((), (mesh, face))?
         };
         Ok(__cordl_ret.into())
     }
@@ -959,7 +1001,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         p1: crate::UnityEngine::Vector3,
         p2: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -971,19 +1013,20 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Normal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Normal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Normal", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (p0, p1, p2))
+            method.invoke_unchecked((), (p0, p1, p2))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Perpendicular(
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2),
                 crate::UnityEngine::Vector2,
@@ -991,12 +1034,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Perpendicular")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Perpendicular", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Perpendicular", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1005,7 +1049,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         angleInDegrees: f32,
         origin: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, crate::UnityEngine::Vector2),
                 crate::UnityEngine::Vector2,
@@ -1013,12 +1057,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PointInCircumference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInCircumference", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PointInCircumference", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (radius, angleInDegrees, origin))
+            method.invoke_unchecked((), (radius, angleInDegrees, origin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1029,7 +1074,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         origin: crate::UnityEngine::Vector2,
         tangent: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     f32,
@@ -1043,8 +1088,9 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PointInEllipseCircumference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInEllipseCircumference", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PointInEllipseCircumference", 5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
@@ -1052,7 +1098,7 @@ impl crate::UnityEngine::ProBuilder::Math {
                 .invoke_unchecked(
                     (),
                     (xRadius, yRadius, angleInDegrees, origin, tangent),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1063,7 +1109,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         origin: crate::UnityEngine::Vector2,
         tangent: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     f32,
@@ -1077,8 +1123,9 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PointInEllipseCircumferenceWithConstantAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInEllipseCircumferenceWithConstantAngle", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PointInEllipseCircumferenceWithConstantAngle", 5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
@@ -1086,7 +1133,7 @@ impl crate::UnityEngine::ProBuilder::Math {
                 .invoke_unchecked(
                     (),
                     (xRadius, yRadius, angleInDegrees, origin, tangent),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1100,7 +1147,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         >,
         point: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1119,12 +1166,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PointInPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInPolygon", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PointInPolygon", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (positions, polyBounds, edges, point))
+            method.invoke_unchecked((), (positions, polyBounds, edges, point))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1138,7 +1186,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         >,
         point: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1157,12 +1205,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PointInPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInPolygon", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PointInPolygon", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (positions, polyBounds, edges, point))
+            method.invoke_unchecked((), (positions, polyBounds, edges, point))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1173,7 +1222,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         point: crate::UnityEngine::Vector2,
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1187,12 +1236,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PointInPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInPolygon", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PointInPolygon", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (polygon, point, indexes))
+            method.invoke_unchecked((), (polygon, point, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1201,7 +1251,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         latitudeAngle: f32,
         longitudeAngle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32),
                 crate::UnityEngine::Vector3,
@@ -1209,12 +1259,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PointInSphere")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInSphere", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PointInSphere", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (radius, latitudeAngle, longitudeAngle))
+            method.invoke_unchecked((), (radius, latitudeAngle, longitudeAngle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1224,7 +1275,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         >,
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1237,12 +1288,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("PolygonArea")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PolygonArea", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "PolygonArea", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (vertices, indexes))
+            method.invoke_unchecked((), (vertices, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1254,7 +1306,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         OutDistance: quest_hook::libil2cpp::ByRefMut<f32>,
         OutPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Ray,
@@ -1269,8 +1321,9 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("RayIntersectsTriangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RayIntersectsTriangle", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "RayIntersectsTriangle", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1278,7 +1331,7 @@ impl crate::UnityEngine::ProBuilder::Math {
                 .invoke_unchecked(
                     (),
                     (InRay, InTriangleA, InTriangleB, InTriangleC, OutDistance, OutPoint),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1291,7 +1344,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         distance: quest_hook::libil2cpp::ByRefMut<f32>,
         normal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -1307,8 +1360,9 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("RayIntersectsTriangle2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RayIntersectsTriangle2", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "RayIntersectsTriangle2", 7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1316,7 +1370,7 @@ impl crate::UnityEngine::ProBuilder::Math {
                 .invoke_unchecked(
                     (),
                     (origin, dir, vert0, vert1, vert2, distance, normal),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1325,7 +1379,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         a: crate::UnityEngine::Vector2,
         b: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Rect,
@@ -1337,11 +1391,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("RectIntersectsLineSegment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RectIntersectsLineSegment", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "RectIntersectsLineSegment", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rect, a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rect, a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn RectIntersectsLineSegment_Vector3_Vector3_1(
@@ -1349,7 +1404,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         a: crate::UnityEngine::Vector3,
         b: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Rect,
@@ -1361,11 +1416,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("RectIntersectsLineSegment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RectIntersectsLineSegment", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "RectIntersectsLineSegment", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rect, a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rect, a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReflectPoint(
@@ -1373,7 +1429,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         lineStart: crate::UnityEngine::Vector2,
         lineEnd: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -1385,12 +1441,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("ReflectPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReflectPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "ReflectPoint", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (point, lineStart, lineEnd))
+            method.invoke_unchecked((), (point, lineStart, lineEnd))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1399,7 +1456,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         origin: crate::UnityEngine::Vector2,
         theta: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2, f32),
                 crate::UnityEngine::Vector2,
@@ -1407,12 +1464,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("RotateAroundPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotateAroundPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "RotateAroundPoint", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (v, origin, theta))
+            method.invoke_unchecked((), (v, origin, theta))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1421,7 +1479,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         origin: crate::UnityEngine::Vector2,
         scale: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -1433,31 +1491,33 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("ScaleAroundPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScaleAroundPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "ScaleAroundPoint", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (v, origin, scale))
+            method.invoke_unchecked((), (v, origin, scale))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Secant(x: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), f32, 1usize>("Secant")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Secant", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Secant", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (x)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (x))? };
         Ok(__cordl_ret.into())
     }
     pub fn Sign(
         v: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -1465,12 +1525,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Sign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sign", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Sign", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1478,7 +1539,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         a: crate::UnityEngine::Vector2,
         b: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
                 f32,
@@ -1486,11 +1547,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("SignedAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignedAngle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "SignedAngle", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn SmallestVector2_IList_1_1(
@@ -1501,7 +1563,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1516,12 +1578,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("SmallestVector2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SmallestVector2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "SmallestVector2", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (v, indexes))
+            method.invoke_unchecked((), (v, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1530,7 +1593,7 @@ impl crate::UnityEngine::ProBuilder::Math {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
@@ -1540,12 +1603,13 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("SmallestVector2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SmallestVector2", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "SmallestVector2", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1553,7 +1617,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         a: crate::UnityEngine::Vector3,
         b: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
                 f32,
@@ -1561,18 +1625,19 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("SqrDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SqrDistance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "SqrDistance", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn SqrDistanceRayPoint(
         ray: crate::UnityEngine::Ray,
         point: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Ray, crate::UnityEngine::Vector3),
                 f32,
@@ -1580,11 +1645,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("SqrDistanceRayPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SqrDistanceRayPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "SqrDistanceRayPoint", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (ray, point)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (ray, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract(
@@ -1592,7 +1658,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         b: crate::UnityEngine::Vector3,
         res: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -1604,25 +1670,27 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("Subtract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subtract", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Subtract", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (a, b, res))
+            method.invoke_unchecked((), (a, b, res))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Sum(v: crate::UnityEngine::Vector3) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(crate::UnityEngine::Vector3), f32, 1usize>("Sum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sum", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "Sum", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (v)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn TriangleArea(
@@ -1630,7 +1698,7 @@ impl crate::UnityEngine::ProBuilder::Math {
         y: crate::UnityEngine::Vector3,
         z: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -1642,11 +1710,12 @@ impl crate::UnityEngine::ProBuilder::Math {
             >("TriangleArea")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriangleArea", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Math as quest_hook::libil2cpp::Type
+                    > ::class(), "TriangleArea", 3usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (x, y, z)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (x, y, z))? };
         Ok(__cordl_ret.into())
     }
 }

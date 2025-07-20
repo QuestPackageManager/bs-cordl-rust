@@ -59,7 +59,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -67,11 +67,12 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("CanResetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanResetValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "CanResetValue", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (component)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (component))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtenderCanResetValue(
@@ -81,7 +82,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         >,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -94,19 +95,21 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ExtenderCanResetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtenderCanResetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtenderCanResetValue",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (provider, component))
+            method.invoke_unchecked(self, (provider, component))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ExtenderGetReceiverType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -114,12 +117,14 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ExtenderGetReceiverType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtenderGetReceiverType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtenderGetReceiverType",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +134,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             crate::System::ComponentModel::IExtenderProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::ComponentModel::IExtenderProvider,
@@ -139,12 +144,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ExtenderGetType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtenderGetType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtenderGetType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, (provider))
+            method.invoke_unchecked(self, (provider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +163,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -170,13 +176,14 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ExtenderGetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtenderGetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtenderGetValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (provider, component)) };
+        > = unsafe { method.invoke_unchecked(self, (provider, component))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtenderResetValue(
@@ -189,7 +196,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             crate::System::ComponentModel::PropertyDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -205,12 +212,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ExtenderResetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtenderResetValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtenderResetValue", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (provider, component, notifyDesc))
+            method.invoke_unchecked(self, (provider, component, notifyDesc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -225,7 +233,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             crate::System::ComponentModel::PropertyDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -242,12 +250,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ExtenderSetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtenderSetValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtenderSetValue", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (provider, component, value, notifyDesc))
+            method.invoke_unchecked(self, (provider, component, value, notifyDesc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +267,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         >,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -271,12 +280,14 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ExtenderShouldSerializeValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtenderShouldSerializeValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ExtenderShouldSerializeValue", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (provider, component))
+            method.invoke_unchecked(self, (provider, component))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +295,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
                 quest_hook::libil2cpp::Void,
@@ -292,12 +303,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("FillAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillAttributes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "FillAttributes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (attributes))
+            method.invoke_unchecked(self, (attributes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +319,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -315,13 +327,14 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("GetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (component)) };
+        > = unsafe { method.invoke_unchecked(self, (component))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray0(
@@ -405,7 +418,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         e: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -416,12 +429,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("OnValueChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnValueChanged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "OnValueChanged", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (component, e))
+            method.invoke_unchecked(self, (component, e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -429,7 +443,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -437,12 +451,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ResetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResetValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ResetValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (component))
+            method.invoke_unchecked(self, (component))?
         };
         Ok(__cordl_ret.into())
     }
@@ -451,7 +466,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -462,12 +477,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("SetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "SetValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (component, value))
+            method.invoke_unchecked(self, (component, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -475,7 +491,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
         &mut self,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -483,11 +499,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("ShouldSerializeValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldSerializeValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldSerializeValue",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (component)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (component))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray0(
@@ -501,7 +519,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -518,13 +536,14 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (componentClass, name, _cordl_type, attributes))
+                .invoke_unchecked(self, (componentClass, name, _cordl_type, attributes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -542,7 +561,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -562,8 +581,9 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -579,7 +599,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
                         setMethod,
                         attrs,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -597,7 +617,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -617,8 +637,9 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -634,7 +655,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
                         setMethod,
                         attrs,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -643,7 +664,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -651,19 +672,20 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_AmbientValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AmbientValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_AmbientValue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ComponentType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -671,12 +693,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_ComponentType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ComponentType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ComponentType", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -685,7 +708,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -693,13 +716,14 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_DefaultValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DefaultValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DefaultValue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_GetMethodValue(
@@ -707,7 +731,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -715,43 +739,46 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_GetMethodValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_GetMethodValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_GetMethodValue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsExtender(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsExtender")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsExtender", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsExtender", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsReadOnly")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsReadOnly", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsReadOnly", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PropertyType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -759,12 +786,13 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_PropertyType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PropertyType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_PropertyType", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -773,7 +801,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -781,13 +809,15 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_ResetMethodValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ResetMethodValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ResetMethodValue",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SetMethodValue(
@@ -795,7 +825,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -803,13 +833,14 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_SetMethodValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SetMethodValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(), "get_SetMethodValue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ShouldSerializeMethodValue(
@@ -817,7 +848,7 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ReflectPropertyDescriptor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -825,13 +856,15 @@ impl crate::System::ComponentModel::ReflectPropertyDescriptor {
             >("get_ShouldSerializeMethodValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ShouldSerializeMethodValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ReflectPropertyDescriptor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ShouldSerializeMethodValue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

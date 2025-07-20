@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         channels: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -95,12 +95,13 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("CacheAudioData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CacheAudioData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "CacheAudioData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data, channels))
+            method.invoke_unchecked(self, (data, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,48 +109,51 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         &mut self,
         castTextureIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("CastMrcFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CastMrcFrame", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "CastMrcFrame", 1usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (castTextureIndex))
+            method.invoke_unchecked(self, (castTextureIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Cleanup", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "Cleanup", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupAudioFilter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CleanupAudioFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CleanupAudioFilter", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "CleanupAudioFilter", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +162,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRManager_CompositionMethod,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRManager_CompositionMethod,
@@ -166,12 +170,13 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("CompositionMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompositionMethod", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "CompositionMethod", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +185,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         fromRefreshRate: f32,
         toRefreshRate: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -188,12 +193,14 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("DisplayRefreshRateChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisplayRefreshRateChanged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "DisplayRefreshRateChanged",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fromRefreshRate, toRefreshRate))
+            method.invoke_unchecked(self, (fromRefreshRate, toRefreshRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +212,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         audioFrames: quest_hook::libil2cpp::ByRefMut<i32>,
         channels: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -221,12 +228,14 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("GetAndResetAudioData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAndResetAudioData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAndResetAudioData",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (audioData, audioFrames, channels))
+            method.invoke_unchecked(self, (audioData, audioFrames, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -247,7 +256,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         &mut self,
         mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
                 quest_hook::libil2cpp::Void,
@@ -255,12 +264,13 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("RefreshAudioFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshAudioFilter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshAudioFilter", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (mainCamera))
+            method.invoke_unchecked(self, (mainCamera))?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,7 +282,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -286,12 +296,14 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("RefreshCameraObjects")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshCameraObjects", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshCameraObjects",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parentObject, mainCamera, configuration))
+            method.invoke_unchecked(self, (parentObject, mainCamera, configuration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +311,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         &mut self,
         drawTextureIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -307,12 +319,14 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("SetCameraTargetTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCameraTargetTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCameraTargetTexture",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (drawTextureIndex))
+            method.invoke_unchecked(self, (drawTextureIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -325,7 +339,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         >,
         trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -340,8 +354,9 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >("Update")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Update", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), "Update", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -349,7 +364,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                 .invoke_unchecked(
                     self,
                     (gameObject, mainCamera, configuration, trackingOrigin),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -361,7 +376,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRExternalComposition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -375,12 +390,13 @@ impl crate::GlobalNamespace::OVRExternalComposition {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRExternalComposition as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parentObject, mainCamera, configuration))
+            method.invoke_unchecked(self, (parentObject, mainCamera, configuration))?
         };
         Ok(__cordl_ret.into())
     }

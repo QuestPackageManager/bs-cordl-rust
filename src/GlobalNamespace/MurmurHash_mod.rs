@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::MurmurHash {
     pub fn MurmurHash2(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MurmurHash as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 u32,
@@ -49,11 +49,12 @@ impl crate::GlobalNamespace::MurmurHash {
             >("MurmurHash2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MurmurHash2", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MurmurHash as quest_hook::libil2cpp::Type >
+                    ::class(), "MurmurHash2", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (key)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())
     }
 }

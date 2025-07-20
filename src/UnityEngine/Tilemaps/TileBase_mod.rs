@@ -46,7 +46,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             crate::UnityEngine::Tilemaps::TileAnimationData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -60,12 +60,14 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("GetTileAnimationData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTileAnimationData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTileAnimationData",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, tileAnimationData))
+            method.invoke_unchecked(self, (position, tilemap, tileAnimationData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +76,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         position: crate::UnityEngine::Vector3Int,
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileAnimationData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -85,12 +87,14 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("GetTileAnimationDataNoRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTileAnimationDataNoRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTileAnimationDataNoRef",
+                    2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Tilemaps::TileAnimationData = unsafe {
-            method.invoke_unchecked(self, (position, tilemap))
+            method.invoke_unchecked(self, (position, tilemap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +107,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         >,
         hasAnimation: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -118,8 +122,10 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("GetTileAnimationDataRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTileAnimationDataRef", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTileAnimationDataRef",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -127,7 +133,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
                 .invoke_unchecked(
                     self,
                     (position, tilemap, tileAnimationData, hasAnimation),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +143,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
         tileData: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Tilemaps::TileData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -151,12 +157,13 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("GetTileData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTileData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTileData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, tileData))
+            method.invoke_unchecked(self, (position, tilemap, tileData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +172,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         position: crate::UnityEngine::Vector3Int,
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Tilemaps::TileData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -176,12 +183,13 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("GetTileDataNoRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTileDataNoRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTileDataNoRef", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Tilemaps::TileData = unsafe {
-            method.invoke_unchecked(self, (position, tilemap))
+            method.invoke_unchecked(self, (position, tilemap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,7 +205,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         position: crate::UnityEngine::Vector3Int,
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -208,12 +216,13 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("RefreshTile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshTile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshTile", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (position, tilemap))
+            method.invoke_unchecked(self, (position, tilemap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +232,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -235,12 +244,13 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("StartUp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartUp", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "StartUp", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, go))
+            method.invoke_unchecked(self, (position, tilemap, go))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,7 +261,7 @@ impl crate::UnityEngine::Tilemaps::TileBase {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         startUpInvokedByUser: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3Int,
@@ -264,28 +274,30 @@ impl crate::UnityEngine::Tilemaps::TileBase {
             >("StartUpRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartUpRef", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), "StartUpRef", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (position, tilemap, go, startUpInvokedByUser))
+            method.invoke_unchecked(self, (position, tilemap, go, startUpInvokedByUser))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TileBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TileBase as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

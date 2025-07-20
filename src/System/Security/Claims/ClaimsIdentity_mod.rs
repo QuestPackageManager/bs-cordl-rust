@@ -82,7 +82,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
         claim: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>),
                 quest_hook::libil2cpp::Void,
@@ -90,12 +90,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("AddClaim")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddClaim", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "AddClaim", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (claim))
+            method.invoke_unchecked(self, (claim))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +105,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -114,13 +115,14 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Claims::ClaimsIdentity,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
@@ -131,7 +133,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         context: crate::System::Runtime::Serialization::StreamingContext,
         useContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -145,12 +147,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (info, context, useContext))
+            method.invoke_unchecked(self, (info, context, useContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +161,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
         serializedClaims: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -166,12 +169,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("DeserializeClaims")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeserializeClaims", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "DeserializeClaims", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (serializedClaims))
+            method.invoke_unchecked(self, (serializedClaims))?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,7 +185,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
@@ -189,13 +193,14 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("FindFirst")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindFirst", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "FindFirst", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Claims::Claim,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectData(
@@ -205,7 +210,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -218,12 +223,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("GetObjectData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "GetObjectData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (info, context))
+            method.invoke_unchecked(self, (info, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -233,7 +239,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             crate::System::Security::Claims::ClaimsIdentity,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Claims::ClaimsIdentity,
@@ -243,11 +249,12 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("IsCircular")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCircular", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCircular", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (subject)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (subject))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -344,7 +351,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Runtime::Serialization::StreamingContext),
                 quest_hook::libil2cpp::Void,
@@ -352,12 +359,14 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("OnDeserializedMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDeserializedMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDeserializedMethod",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (context))
+            method.invoke_unchecked(self, (context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -365,7 +374,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Runtime::Serialization::StreamingContext),
                 quest_hook::libil2cpp::Void,
@@ -373,12 +382,14 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("OnDeserializingMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDeserializingMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDeserializingMethod",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (context))
+            method.invoke_unchecked(self, (context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -386,7 +397,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Runtime::Serialization::StreamingContext),
                 quest_hook::libil2cpp::Void,
@@ -394,12 +405,14 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("OnSerializingMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSerializingMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "OnSerializingMethod",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (context))
+            method.invoke_unchecked(self, (context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +420,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
         claim: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>),
                 quest_hook::libil2cpp::Void,
@@ -415,12 +428,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("SafeAddClaim")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SafeAddClaim", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "SafeAddClaim", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (claim))
+            method.invoke_unchecked(self, (claim))?
         };
         Ok(__cordl_ret.into())
     }
@@ -432,7 +446,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -444,12 +458,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("SafeAddClaims")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SafeAddClaims", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "SafeAddClaims", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (claims))
+            method.invoke_unchecked(self, (claims))?
         };
         Ok(__cordl_ret.into())
     }
@@ -458,7 +473,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -466,28 +481,30 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("SerializeClaims")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializeClaims", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializeClaims", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -495,7 +512,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Claims::ClaimsIdentity,
@@ -505,12 +522,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (other))
+            method.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -522,7 +540,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -534,12 +552,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (claims))
+            method.invoke_unchecked(self, (claims))?
         };
         Ok(__cordl_ret.into())
     }
@@ -559,7 +578,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         nameType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         roleType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -581,8 +600,9 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -590,7 +610,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                 .invoke_unchecked(
                     self,
                     (identity, claims, authenticationType, nameType, roleType),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -611,7 +631,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         roleType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         checkAuthType: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -634,8 +654,9 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -650,7 +671,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                         roleType,
                         checkAuthType,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -661,7 +682,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -674,12 +695,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (info, context))
+            method.invoke_unchecked(self, (info, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -688,7 +710,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -698,13 +720,14 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("get_Actor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Actor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Actor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Claims::ClaimsIdentity,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_AuthenticationType(
@@ -712,7 +735,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -720,13 +743,15 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("get_AuthenticationType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AuthenticationType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "get_AuthenticationType",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Claims(
@@ -738,7 +763,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -750,15 +775,16 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("get_Claims")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Claims", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Claims", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Name(
@@ -766,7 +792,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -774,13 +800,14 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("get_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Name", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Name", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NameClaimType(
@@ -788,7 +815,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -796,20 +823,21 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("get_NameClaimType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_NameClaimType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "get_NameClaimType", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Actor(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Claims::ClaimsIdentity as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Claims::ClaimsIdentity,
@@ -819,12 +847,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             >("set_Actor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Actor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Claims::ClaimsIdentity as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Actor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

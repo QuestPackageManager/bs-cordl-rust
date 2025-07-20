@@ -53,7 +53,7 @@ impl crate::HMUI::GradientImage {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
@@ -70,12 +70,13 @@ impl crate::HMUI::GradientImage {
             >("AddQuad")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddQuad", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "AddQuad", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (vertexHelper, quadPositions, color, quadUVs))
+            method.invoke_unchecked((), (vertexHelper, quadPositions, color, quadUVs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +91,7 @@ impl crate::HMUI::GradientImage {
         elementWidthScale: f32,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
@@ -108,8 +109,9 @@ impl crate::HMUI::GradientImage {
             >("AddQuad")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddQuad", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "AddQuad", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -127,7 +129,7 @@ impl crate::HMUI::GradientImage {
                         elementWidthScale,
                         curvedUIRadius,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +141,7 @@ impl crate::HMUI::GradientImage {
         uvMin: crate::UnityEngine::Vector2,
         uvMax: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
@@ -154,8 +156,9 @@ impl crate::HMUI::GradientImage {
             >("AddQuad")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddQuad", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "AddQuad", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -163,7 +166,7 @@ impl crate::HMUI::GradientImage {
                 .invoke_unchecked(
                     (),
                     (vertexHelper, posMin, posMax, color, uvMin, uvMax),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,7 +175,7 @@ impl crate::HMUI::GradientImage {
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         preserveAspect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>, bool),
                 quest_hook::libil2cpp::Void,
@@ -180,12 +183,13 @@ impl crate::HMUI::GradientImage {
             >("GenerateFilledSprite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateFilledSprite", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateFilledSprite", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (toFill, preserveAspect))
+            method.invoke_unchecked(self, (toFill, preserveAspect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +199,7 @@ impl crate::HMUI::GradientImage {
         lPreserveAspect: bool,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
@@ -207,12 +211,13 @@ impl crate::HMUI::GradientImage {
             >("GenerateSimpleSprite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateSimpleSprite", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateSimpleSprite", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (vh, lPreserveAspect, curvedUIRadius))
+            method.invoke_unchecked(self, (vh, lPreserveAspect, curvedUIRadius))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +226,7 @@ impl crate::HMUI::GradientImage {
         vh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>, f32),
                 quest_hook::libil2cpp::Void,
@@ -229,12 +234,13 @@ impl crate::HMUI::GradientImage {
             >("GenerateSlicedSprite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateSlicedSprite", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateSlicedSprite", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (vh, curvedUIRadius))
+            method.invoke_unchecked(self, (vh, curvedUIRadius))?
         };
         Ok(__cordl_ret.into())
     }
@@ -242,7 +248,7 @@ impl crate::HMUI::GradientImage {
         &mut self,
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>),
                 quest_hook::libil2cpp::Void,
@@ -250,12 +256,13 @@ impl crate::HMUI::GradientImage {
             >("GenerateTiledSprite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateTiledSprite", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateTiledSprite", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (toFill))
+            method.invoke_unchecked(self, (toFill))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +271,7 @@ impl crate::HMUI::GradientImage {
         border: crate::UnityEngine::Vector4,
         rect: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector4, crate::UnityEngine::Rect),
                 crate::UnityEngine::Vector4,
@@ -272,12 +279,13 @@ impl crate::HMUI::GradientImage {
             >("GetAdjustedBorders")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAdjustedBorders", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAdjustedBorders", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked(self, (border, rect))
+            method.invoke_unchecked(self, (border, rect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -285,7 +293,7 @@ impl crate::HMUI::GradientImage {
         &mut self,
         shouldPreserveAspect: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 crate::UnityEngine::Vector4,
@@ -293,12 +301,13 @@ impl crate::HMUI::GradientImage {
             >("GetDrawingDimensions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDrawingDimensions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "GetDrawingDimensions", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked(self, (shouldPreserveAspect))
+            method.invoke_unchecked(self, (shouldPreserveAspect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -313,7 +322,7 @@ impl crate::HMUI::GradientImage {
         &mut self,
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>),
                 quest_hook::libil2cpp::Void,
@@ -321,12 +330,13 @@ impl crate::HMUI::GradientImage {
             >("OnPopulateMesh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnPopulateMesh", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "OnPopulateMesh", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (toFill))
+            method.invoke_unchecked(self, (toFill))?
         };
         Ok(__cordl_ret.into())
     }
@@ -341,7 +351,7 @@ impl crate::HMUI::GradientImage {
         invert: bool,
         corner: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -359,12 +369,13 @@ impl crate::HMUI::GradientImage {
             >("RadialCut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RadialCut", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "RadialCut", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (xy, uv, fill, invert, corner))
+            method.invoke_unchecked((), (xy, uv, fill, invert, corner))?
         };
         Ok(__cordl_ret.into())
     }
@@ -377,7 +388,7 @@ impl crate::HMUI::GradientImage {
         invert: bool,
         corner: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -393,60 +404,64 @@ impl crate::HMUI::GradientImage {
             >("RadialCut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RadialCut", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "RadialCut", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (xy, cos, sin, invert, corner))
+            method.invoke_unchecked((), (xy, cos, sin, invert, corner))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_color0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_color0", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "get_color0", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_color1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_color1", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "get_color1", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +469,7 @@ impl crate::HMUI::GradientImage {
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -462,12 +477,13 @@ impl crate::HMUI::GradientImage {
             >("set_color0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_color0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "set_color0", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -475,7 +491,7 @@ impl crate::HMUI::GradientImage {
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::GradientImage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -483,12 +499,13 @@ impl crate::HMUI::GradientImage {
             >("set_color1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_color1", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::GradientImage as quest_hook::libil2cpp::Type >
+                    ::class(), "set_color1", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

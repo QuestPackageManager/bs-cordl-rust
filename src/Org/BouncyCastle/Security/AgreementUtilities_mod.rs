@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -56,13 +56,14 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetAlgorithmName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAlgorithmName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAlgorithmName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (oid)) };
+        > = unsafe { method.invoke_unchecked((), (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBasicAgreementWithKdf_DerObjectIdentifier0(
@@ -73,7 +74,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -88,13 +89,15 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetBasicAgreementWithKdf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBasicAgreementWithKdf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBasicAgreementWithKdf",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,
-        > = unsafe { method.invoke_unchecked((), (oid, wrapAlgorithm)) };
+        > = unsafe { method.invoke_unchecked((), (oid, wrapAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBasicAgreementWithKdf_Il2CppString1(
@@ -103,7 +106,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -116,13 +119,15 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetBasicAgreementWithKdf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBasicAgreementWithKdf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBasicAgreementWithKdf",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,
-        > = unsafe { method.invoke_unchecked((), (agreeAlgorithm, wrapAlgorithm)) };
+        > = unsafe { method.invoke_unchecked((), (agreeAlgorithm, wrapAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBasicAgreement_DerObjectIdentifier0(
@@ -132,7 +137,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -144,13 +149,14 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetBasicAgreement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBasicAgreement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBasicAgreement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,
-        > = unsafe { method.invoke_unchecked((), (oid)) };
+        > = unsafe { method.invoke_unchecked((), (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBasicAgreement_Il2CppString1(
@@ -158,7 +164,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -168,13 +174,14 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetBasicAgreement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBasicAgreement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBasicAgreement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBasicAgreement,
-        > = unsafe { method.invoke_unchecked((), (algorithm)) };
+        > = unsafe { method.invoke_unchecked((), (algorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMechanism(
@@ -182,7 +189,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -190,13 +197,14 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetMechanism")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMechanism", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMechanism", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (algorithm)) };
+        > = unsafe { method.invoke_unchecked((), (algorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRawAgreement_DerObjectIdentifier0(
@@ -206,7 +214,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
@@ -218,13 +226,14 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetRawAgreement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRawAgreement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRawAgreement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IRawAgreement,
-        > = unsafe { method.invoke_unchecked((), (oid)) };
+        > = unsafe { method.invoke_unchecked((), (oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRawAgreement_Il2CppString1(
@@ -232,7 +241,7 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -242,13 +251,14 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
             >("GetRawAgreement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRawAgreement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRawAgreement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IRawAgreement,
-        > = unsafe { method.invoke_unchecked((), (algorithm)) };
+        > = unsafe { method.invoke_unchecked((), (algorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -261,16 +271,17 @@ impl crate::Org::BouncyCastle::Security::AgreementUtilities {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::AgreementUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::AgreementUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

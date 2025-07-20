@@ -56,7 +56,7 @@ impl crate::Oculus::Platform::MessageWithInstalledApplicationList {
             crate::Oculus::Platform::Models::InstalledApplicationList,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::MessageWithInstalledApplicationList as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Gc<
@@ -66,13 +66,14 @@ impl crate::Oculus::Platform::MessageWithInstalledApplicationList {
             >("GetDataFromMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDataFromMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::MessageWithInstalledApplicationList as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDataFromMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::InstalledApplicationList,
-        > = unsafe { method.invoke_unchecked(self, (c_message)) };
+        > = unsafe { method.invoke_unchecked(self, (c_message))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInstalledApplicationList(
@@ -82,7 +83,7 @@ impl crate::Oculus::Platform::MessageWithInstalledApplicationList {
             crate::Oculus::Platform::Models::InstalledApplicationList,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::MessageWithInstalledApplicationList as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -92,13 +93,15 @@ impl crate::Oculus::Platform::MessageWithInstalledApplicationList {
             >("GetInstalledApplicationList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstalledApplicationList", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::MessageWithInstalledApplicationList as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetInstalledApplicationList", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::InstalledApplicationList,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -114,7 +117,7 @@ impl crate::Oculus::Platform::MessageWithInstalledApplicationList {
         &mut self,
         c_message: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::MessageWithInstalledApplicationList as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -122,12 +125,13 @@ impl crate::Oculus::Platform::MessageWithInstalledApplicationList {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::MessageWithInstalledApplicationList as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (c_message))
+            method.invoke_unchecked(self, (c_message))?
         };
         Ok(__cordl_ret.into())
     }

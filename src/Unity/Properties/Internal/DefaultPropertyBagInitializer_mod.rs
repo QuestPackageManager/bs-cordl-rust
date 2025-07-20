@@ -42,16 +42,17 @@ for crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {
 #[cfg(feature = "Unity+Properties+Internal+DefaultPropertyBagInitializer")]
 impl crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {
     pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::DefaultPropertyBagInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Properties::Internal::DefaultPropertyBagInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }

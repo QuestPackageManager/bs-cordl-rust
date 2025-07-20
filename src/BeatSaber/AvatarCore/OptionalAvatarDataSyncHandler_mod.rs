@@ -62,16 +62,17 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -87,7 +88,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::AvatarCore::OptionalAvatarData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -101,12 +102,14 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >("HandleOptionalAvatarDataChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleOptionalAvatarDataChanged", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleOptionalAvatarDataChanged", 3usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::AvatarCore::OptionalAvatarData = unsafe {
-            method.invoke_unchecked(self, (dataType, data, connectedPlayer))
+            method.invoke_unchecked(self, (dataType, data, connectedPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +122,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             crate::GlobalNamespace::IConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -132,12 +135,14 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >("HandleOptionalAvatarDataPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleOptionalAvatarDataPacket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleOptionalAvatarDataPacket", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, connectedPlayer))
+            method.invoke_unchecked(self, (packet, connectedPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +161,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
         &mut self,
         data: crate::BeatSaber::AvatarCore::OptionalAvatarData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::AvatarCore::OptionalAvatarData),
                 quest_hook::libil2cpp::Void,
@@ -164,12 +169,14 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >("SendOptionalAvatarData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendOptionalAvatarData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "SendOptionalAvatarData",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))
+            method.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +194,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
@@ -205,12 +212,14 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >("TryGetAllLatestOptionalAvatarData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetAllLatestOptionalAvatarData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetAllLatestOptionalAvatarData", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (connectedPlayer, data))
+            method.invoke_unchecked(self, (connectedPlayer, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +229,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             crate::GlobalNamespace::IMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::IMultiplayerSessionManager,
@@ -230,12 +239,13 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (multiplayerSessionManager))
+            method.invoke_unchecked(self, (multiplayerSessionManager))?
         };
         Ok(__cordl_ret.into())
     }
@@ -248,7 +258,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
@@ -263,12 +273,14 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >("add_didChangeOptionalAvatarDataEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_didChangeOptionalAvatarDataEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_didChangeOptionalAvatarDataEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +293,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
@@ -296,12 +308,14 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
             >("remove_didChangeOptionalAvatarDataEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_didChangeOptionalAvatarDataEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_didChangeOptionalAvatarDataEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

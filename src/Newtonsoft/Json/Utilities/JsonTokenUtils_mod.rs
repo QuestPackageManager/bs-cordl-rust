@@ -42,7 +42,7 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
     pub fn IsEndToken(
         token: crate::Newtonsoft::Json::JsonToken,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JsonTokenUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Newtonsoft::Json::JsonToken),
                 bool,
@@ -50,17 +50,18 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
             >("IsEndToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEndToken", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JsonTokenUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEndToken", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPrimitiveToken(
         token: crate::Newtonsoft::Json::JsonToken,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JsonTokenUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Newtonsoft::Json::JsonToken),
                 bool,
@@ -68,17 +69,18 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
             >("IsPrimitiveToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPrimitiveToken", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JsonTokenUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsPrimitiveToken", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsStartToken(
         token: crate::Newtonsoft::Json::JsonToken,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JsonTokenUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Newtonsoft::Json::JsonToken),
                 bool,
@@ -86,11 +88,12 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
             >("IsStartToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsStartToken", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JsonTokenUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsStartToken", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
 }

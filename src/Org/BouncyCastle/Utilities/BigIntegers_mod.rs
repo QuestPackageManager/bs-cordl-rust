@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::BigIntegers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -53,13 +53,15 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             >("AsUnsignedByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsUnsignedByteArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::BigIntegers as
+                    quest_hook::libil2cpp::Type > ::class(), "AsUnsignedByteArray",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (n)) };
+        > = unsafe { method.invoke_unchecked((), (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsUnsignedByteArray_BigInteger_Il2CppArray_i32_i32_2(
@@ -68,7 +70,7 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
         off: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::BigIntegers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -83,12 +85,14 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             >("AsUnsignedByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsUnsignedByteArray", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::BigIntegers as
+                    quest_hook::libil2cpp::Type > ::class(), "AsUnsignedByteArray",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value, buf, off, len))
+            method.invoke_unchecked((), (value, buf, off, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +102,7 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::BigIntegers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -109,13 +113,15 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             >("AsUnsignedByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsUnsignedByteArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::BigIntegers as
+                    quest_hook::libil2cpp::Type > ::class(), "AsUnsignedByteArray",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (length, n)) };
+        > = unsafe { method.invoke_unchecked((), (length, n))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRandomBigInteger(
@@ -126,7 +132,7 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::BigIntegers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -139,13 +145,15 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             >("CreateRandomBigInteger")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateRandomBigInteger", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::BigIntegers as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateRandomBigInteger",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (bitLength, secureRandom)) };
+        > = unsafe { method.invoke_unchecked((), (bitLength, secureRandom))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRandomInRange(
@@ -157,7 +165,7 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::BigIntegers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -175,19 +183,21 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             >("CreateRandomInRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateRandomInRange", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::BigIntegers as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateRandomInRange",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (min, max, random)) };
+        > = unsafe { method.invoke_unchecked((), (min, max, random))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnsignedByteLength(
         n: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::BigIntegers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 i32,
@@ -195,11 +205,13 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
             >("GetUnsignedByteLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUnsignedByteLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::BigIntegers as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUnsignedByteLength",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (n)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -212,16 +224,17 @@ impl crate::Org::BouncyCastle::Utilities::BigIntegers {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::BigIntegers as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::BigIntegers as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

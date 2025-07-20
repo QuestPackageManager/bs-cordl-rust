@@ -53,7 +53,7 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
         &mut self,
         collectionAccessType: crate::JetBrains::Annotations::CollectionAccessType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::CollectionAccessAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::CollectionAccessType),
                 quest_hook::libil2cpp::Void,
@@ -61,12 +61,13 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::CollectionAccessAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (collectionAccessType))
+            method.invoke_unchecked(self, (collectionAccessType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +76,7 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
     ) -> quest_hook::libil2cpp::Result<
         crate::JetBrains::Annotations::CollectionAccessType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::CollectionAccessAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::JetBrains::Annotations::CollectionAccessType,
@@ -83,12 +84,14 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
             >("get_CollectionAccessType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CollectionAccessType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::CollectionAccessAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "get_CollectionAccessType",
+                    0usize
                 )
             });
         let __cordl_ret: crate::JetBrains::Annotations::CollectionAccessType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +99,7 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
         &mut self,
         value: crate::JetBrains::Annotations::CollectionAccessType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::CollectionAccessAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::CollectionAccessType),
                 quest_hook::libil2cpp::Void,
@@ -104,12 +107,14 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
             >("set_CollectionAccessType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_CollectionAccessType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::CollectionAccessAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "set_CollectionAccessType",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

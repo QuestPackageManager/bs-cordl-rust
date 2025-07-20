@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<
@@ -59,13 +59,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Add", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Add_SimpleBigDecimal0(
@@ -78,7 +79,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -90,13 +91,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Add", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustScale(
@@ -107,7 +109,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -117,13 +119,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("AdjustScale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AdjustScale", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "AdjustScale", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (newScale)) };
+        > = unsafe { method.invoke_unchecked(self, (newScale))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckScale(
@@ -132,7 +135,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -142,12 +145,13 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("CheckScale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckScale", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckScale", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (b))
+            method.invoke_unchecked(self, (b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -155,7 +159,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         &mut self,
         val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 i32,
@@ -163,11 +167,12 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (val)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo_SimpleBigDecimal0(
@@ -176,7 +181,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -186,11 +191,12 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (val)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Divide_BigInteger1(
@@ -201,7 +207,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<
@@ -211,13 +217,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Divide")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Divide", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Divide", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Divide_SimpleBigDecimal0(
@@ -230,7 +237,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -242,20 +249,21 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Divide")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Divide", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Divide", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -263,11 +271,12 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn Floor(
@@ -275,7 +284,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -283,25 +292,27 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Floor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Floor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Floor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetInstance(
@@ -312,7 +323,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -327,13 +338,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("GetInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "GetInstance", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked((), (val, scale)) };
+        > = unsafe { method.invoke_unchecked((), (val, scale))? };
         Ok(__cordl_ret.into())
     }
     pub fn Multiply_BigInteger1(
@@ -344,7 +356,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<
@@ -354,13 +366,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Multiply", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Multiply", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Multiply_SimpleBigDecimal0(
@@ -373,7 +386,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -385,13 +398,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Multiply", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Multiply", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Negate(
@@ -401,7 +415,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -411,13 +425,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Negate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Negate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Negate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_BigInteger_i32_0(
@@ -446,7 +461,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -454,13 +469,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Round")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Round", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Round", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ShiftLeft(
@@ -471,7 +487,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -481,13 +497,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("ShiftLeft")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShiftLeft", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "ShiftLeft", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (n)) };
+        > = unsafe { method.invoke_unchecked(self, (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract_BigInteger1(
@@ -498,7 +515,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<
@@ -508,13 +525,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Subtract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subtract", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Subtract", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract_SimpleBigDecimal0(
@@ -527,7 +545,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -539,13 +557,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("Subtract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subtract", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "Subtract", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
-        > = unsafe { method.invoke_unchecked(self, (b)) };
+        > = unsafe { method.invoke_unchecked(self, (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -553,7 +572,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -561,13 +580,14 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_BigInteger_i32_0(
@@ -575,7 +595,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         bigInt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         scale: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -588,12 +608,13 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bigInt, scale))
+            method.invoke_unchecked(self, (bigInt, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -603,7 +624,7 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
@@ -613,49 +634,53 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (limBigDec))
+            method.invoke_unchecked(self, (limBigDec))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IntValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_IntValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IntValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IntValue", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_LongValue(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_LongValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LongValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "get_LongValue", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Scale(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Scale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Scale", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Scale", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

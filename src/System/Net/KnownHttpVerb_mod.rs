@@ -70,7 +70,7 @@ impl crate::System::Net::KnownHttpVerb {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::KnownHttpVerb>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::KnownHttpVerb as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Net::KnownHttpVerb>,
@@ -78,12 +78,13 @@ impl crate::System::Net::KnownHttpVerb {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::KnownHttpVerb as quest_hook::libil2cpp::Type >
+                    ::class(), "Parse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::KnownHttpVerb> = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +96,7 @@ impl crate::System::Net::KnownHttpVerb {
         connectRequest: bool,
         expectNoContentResponse: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::KnownHttpVerb as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -109,8 +110,9 @@ impl crate::System::Net::KnownHttpVerb {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::KnownHttpVerb as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -124,7 +126,7 @@ impl crate::System::Net::KnownHttpVerb {
                         connectRequest,
                         expectNoContentResponse,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

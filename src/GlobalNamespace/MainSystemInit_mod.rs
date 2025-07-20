@@ -162,7 +162,7 @@ impl crate::GlobalNamespace::MainSystemInit {
             crate::GlobalNamespace::SettingsApplicatorSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SettingsApplicatorSO,
@@ -172,12 +172,13 @@ impl crate::GlobalNamespace::MainSystemInit {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (settingsApplicator))
+            method.invoke_unchecked(self, (settingsApplicator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,7 +187,7 @@ impl crate::GlobalNamespace::MainSystemInit {
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         isRunningFromTests: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>, bool),
                 quest_hook::libil2cpp::Void,
@@ -194,12 +195,13 @@ impl crate::GlobalNamespace::MainSystemInit {
             >("InstallBindings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallBindings", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(), "InstallBindings", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container, isRunningFromTests))
+            method.invoke_unchecked(self, (container, isRunningFromTests))?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +209,7 @@ impl crate::GlobalNamespace::MainSystemInit {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                 quest_hook::libil2cpp::Void,
@@ -215,12 +217,14 @@ impl crate::GlobalNamespace::MainSystemInit {
             >("InstallOculusDestinationBindings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallOculusDestinationBindings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InstallOculusDestinationBindings", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container))
+            method.invoke_unchecked(self, (container))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +232,7 @@ impl crate::GlobalNamespace::MainSystemInit {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                 quest_hook::libil2cpp::Void,
@@ -236,12 +240,13 @@ impl crate::GlobalNamespace::MainSystemInit {
             >("InstallPS4Bindings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallPS4Bindings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(), "InstallPS4Bindings", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container))
+            method.invoke_unchecked(self, (container))?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +254,7 @@ impl crate::GlobalNamespace::MainSystemInit {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                 quest_hook::libil2cpp::Void,
@@ -257,12 +262,13 @@ impl crate::GlobalNamespace::MainSystemInit {
             >("InstallPS5Bindings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallPS5Bindings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(), "InstallPS5Bindings", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container))
+            method.invoke_unchecked(self, (container))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,7 +277,7 @@ impl crate::GlobalNamespace::MainSystemInit {
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         isRunningFromTests: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>, bool),
                 quest_hook::libil2cpp::Void,
@@ -279,12 +285,14 @@ impl crate::GlobalNamespace::MainSystemInit {
             >("InstallPlatformLeaderboardsModel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallPlatformLeaderboardsModel", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InstallPlatformLeaderboardsModel", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container, isRunningFromTests))
+            method.invoke_unchecked(self, (container, isRunningFromTests))?
         };
         Ok(__cordl_ret.into())
     }
@@ -293,7 +301,7 @@ impl crate::GlobalNamespace::MainSystemInit {
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         isRunningFromTests: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>, bool),
                 quest_hook::libil2cpp::Void,
@@ -301,12 +309,14 @@ impl crate::GlobalNamespace::MainSystemInit {
             >("InstallRichPresence")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallRichPresence", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(), "InstallRichPresence",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container, isRunningFromTests))
+            method.invoke_unchecked(self, (container, isRunningFromTests))?
         };
         Ok(__cordl_ret.into())
     }
@@ -320,16 +330,17 @@ impl crate::GlobalNamespace::MainSystemInit {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MainSystemInit as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MainSystemInit as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::IAsyncComputeManager {
             crate::GlobalNamespace::AsyncComputeOperation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IAsyncComputeManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::AsyncComputeOperation,
@@ -55,12 +55,13 @@ impl crate::GlobalNamespace::IAsyncComputeManager {
             >("BeginOperation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginOperation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IAsyncComputeManager as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginOperation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (asyncComputeOperation))
+            method.invoke_unchecked(self, (asyncComputeOperation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +77,7 @@ impl crate::GlobalNamespace::IAsyncComputeManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IAsyncComputeManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::AsyncComputeOperation_1<T>,
@@ -86,13 +87,14 @@ impl crate::GlobalNamespace::IAsyncComputeManager {
             >("BeginOperation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginOperation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IAsyncComputeManager as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginOperation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<T>,
-        > = unsafe { method.invoke_unchecked(self, (asyncComputeOperation)) };
+        > = unsafe { method.invoke_unchecked(self, (asyncComputeOperation))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

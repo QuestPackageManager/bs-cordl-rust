@@ -43,7 +43,7 @@ impl crate::Oculus::Platform::AbuseReport {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AbuseReport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Oculus::Platform::ReportRequestResponse),
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -51,12 +51,13 @@ impl crate::Oculus::Platform::AbuseReport {
             >("ReportRequestHandled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReportRequestHandled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AbuseReport as quest_hook::libil2cpp::Type
+                    > ::class(), "ReportRequestHandled", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            method.invoke_unchecked((), (response))
+            method.invoke_unchecked((), (response))?
         };
         Ok(__cordl_ret.into())
     }
@@ -67,7 +68,7 @@ impl crate::Oculus::Platform::AbuseReport {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AbuseReport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Message_1_Callback<
@@ -79,12 +80,13 @@ impl crate::Oculus::Platform::AbuseReport {
             >("SetReportButtonPressedNotificationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetReportButtonPressedNotificationCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AbuseReport as quest_hook::libil2cpp::Type
+                    > ::class(), "SetReportButtonPressedNotificationCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))
+            method.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }

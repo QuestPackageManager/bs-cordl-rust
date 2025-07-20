@@ -59,7 +59,7 @@ impl crate::System::Net::BufferedReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::BufferedReadStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -72,15 +72,19 @@ impl crate::System::Net::BufferedReadStream {
             >("ProcessReadAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessReadAsync", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::BufferedReadStream as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessReadAsync", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<i32>,
         > = unsafe {
             method
-                .invoke_unchecked(self, (buffer, offset, _cordl_size, cancellationToken))
+                .invoke_unchecked(
+                    self,
+                    (buffer, offset, _cordl_size, cancellationToken),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +95,7 @@ impl crate::System::Net::BufferedReadStream {
         _cordl_size: i32,
         result: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::BufferedReadStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -104,12 +108,13 @@ impl crate::System::Net::BufferedReadStream {
             >("TryReadFromBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryReadFromBuffer", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::BufferedReadStream as
+                    quest_hook::libil2cpp::Type > ::class(), "TryReadFromBuffer", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (buffer, offset, _cordl_size, result))
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +124,7 @@ impl crate::System::Net::BufferedReadStream {
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         readBuffer: quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::BufferedReadStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
@@ -131,12 +136,13 @@ impl crate::System::Net::BufferedReadStream {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::BufferedReadStream as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (operation, innerStream, readBuffer))
+            method.invoke_unchecked(self, (operation, innerStream, readBuffer))?
         };
         Ok(__cordl_ret.into())
     }

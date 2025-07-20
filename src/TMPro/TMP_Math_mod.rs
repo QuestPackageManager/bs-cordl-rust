@@ -45,27 +45,29 @@ impl crate::TMPro::TMP_Math {
     pub const _cordl_INT_MAX: i32 = 2147483647i32;
     pub const _cordl_INT_MIN: i32 = -2147483647i32;
     pub fn Approximately(a: f32, b: f32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32), bool, 2usize>("Approximately")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Approximately", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_Math as quest_hook::libil2cpp::Type > ::class(),
+                    "Approximately", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn _cordl_Mod(a: i32, b: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32), i32, 2usize>("Mod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Mod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_Math as quest_hook::libil2cpp::Type > ::class(),
+                    "Mod", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -58,7 +58,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
@@ -71,13 +71,15 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
             >("GetFocusChangeDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFocusChangeDirection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFocusChangeDirection",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::FocusChangeDirection,
-        > = unsafe { method.invoke_unchecked(self, (currentFocusable, e)) };
+        > = unsafe { method.invoke_unchecked(self, (currentFocusable, e))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusable(
@@ -91,7 +93,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
@@ -104,13 +106,14 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
             >("GetNextFocusable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextFocusable", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextFocusable", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { method.invoke_unchecked(self, (currentFocusable, direction)) };
+        > = unsafe { method.invoke_unchecked(self, (currentFocusable, direction))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusable2D(
@@ -124,7 +127,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
@@ -137,19 +140,20 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
             >("GetNextFocusable2D")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextFocusable2D", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextFocusable2D", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { method.invoke_unchecked(self, (currentFocusable, direction)) };
+        > = unsafe { method.invoke_unchecked(self, (currentFocusable, direction))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsActive(
         v: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -159,17 +163,18 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
             >("IsActive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsActive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "IsActive", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (v)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNavigable(
         focusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>),
                 bool,
@@ -177,11 +182,12 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
             >("IsNavigable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNavigable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNavigable", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (focusable)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (focusable))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -197,7 +203,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -207,12 +213,13 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (root))
+            method.invoke_unchecked(self, (root))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +228,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusController>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -231,13 +238,15 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
             >("get_focusController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_focusController", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "get_focusController",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::FocusController,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -321,16 +330,17 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (i))
+            method.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -466,7 +476,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -481,13 +491,15 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             >("GetBestOverall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBestOverall", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal
+                    as quest_hook::libil2cpp::Type > ::class(), "GetBestOverall", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
-        > = unsafe { method.invoke_unchecked(self, (candidate, bestSoFar)) };
+        > = unsafe { method.invoke_unchecked(self, (candidate, bestSoFar))? };
         Ok(__cordl_ret.into())
     }
     pub fn Order(
@@ -495,7 +507,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
         a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -510,11 +522,13 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             >("Order")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Order", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal
+                    as quest_hook::libil2cpp::Type > ::class(), "Order", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn StrictOrder_Rect_Rect1(
@@ -522,7 +536,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
         ra: crate::UnityEngine::Rect,
         rb: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
                 i32,
@@ -530,11 +544,13 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             >("StrictOrder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StrictOrder", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal
+                    as quest_hook::libil2cpp::Type > ::class(), "StrictOrder", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (ra, rb)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (ra, rb))? };
         Ok(__cordl_ret.into())
     }
     pub fn StrictOrder_VisualElement_VisualElement0(
@@ -542,7 +558,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
         a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -557,11 +573,13 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             >("StrictOrder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StrictOrder", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal
+                    as quest_hook::libil2cpp::Type > ::class(), "StrictOrder", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn TieBreaker(
@@ -569,7 +587,7 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
         ra: crate::UnityEngine::Rect,
         rb: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
                 i32,
@@ -577,18 +595,20 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             >("TieBreaker")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TieBreaker", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal
+                    as quest_hook::libil2cpp::Type > ::class(), "TieBreaker", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (ra, rb)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (ra, rb))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateElement(
         &mut self,
         v: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -598,18 +618,20 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             >("ValidateElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal
+                    as quest_hook::libil2cpp::Type > ::class(), "ValidateElement", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (v)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateHierarchyTraversal(
         &mut self,
         v: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -619,11 +641,14 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTravers
             >("ValidateHierarchyTraversal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateHierarchyTraversal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "ValidateHierarchyTraversal", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (v)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (v))? };
         Ok(__cordl_ret.into())
     }
 }

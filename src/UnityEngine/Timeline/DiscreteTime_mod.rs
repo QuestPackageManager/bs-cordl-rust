@@ -105,7 +105,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 i32,
@@ -113,30 +113,33 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn DoubleToDiscreteTime(_cordl_time: f64) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), i64, 1usize>("DoubleToDiscreteTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoubleToDiscreteTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "DoubleToDiscreteTime",
+                    1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_DiscreteTime0(
         &mut self,
         other: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Timeline::DiscreteTime),
                 bool,
@@ -144,18 +147,19 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -163,29 +167,32 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn FloatToDiscreteTime(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i64, 1usize>("FloatToDiscreteTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FloatToDiscreteTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "FloatToDiscreteTime",
+                    1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromTicks(
         ticks: i64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 crate::UnityEngine::Timeline::DiscreteTime,
@@ -193,68 +200,73 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("FromTicks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromTicks", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "FromTicks", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (ticks))
+            method.invoke_unchecked((), (ticks))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNearestTick(_cordl_time: f64) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), i64, 1usize>("GetNearestTick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNearestTick", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNearestTick", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTick(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("GetTick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTick", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTick", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IntToDiscreteTime(_cordl_time: i32) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i64, 1usize>("IntToDiscreteTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntToDiscreteTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "IntToDiscreteTime", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn Max(
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -265,12 +277,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "Max", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -278,7 +291,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -289,19 +302,20 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "Min", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OneTickAfter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Timeline::DiscreteTime,
@@ -309,19 +323,20 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("OneTickAfter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OneTickAfter", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "OneTickAfter", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OneTickBefore(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Timeline::DiscreteTime,
@@ -329,65 +344,70 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("OneTickBefore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OneTickBefore", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "OneTickBefore", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SnapToNearestTick_f32_1(
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), f32, 1usize>("SnapToNearestTick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SnapToNearestTick", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "SnapToNearestTick", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn SnapToNearestTick_f64_0(
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), f64, 1usize>("SnapToNearestTick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SnapToNearestTick", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "SnapToNearestTick", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToDouble(_cordl_time: i64) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), f64, 1usize>("ToDouble")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToDouble", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "ToDouble", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToFloat(_cordl_time: i64) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), f32, 1usize>("ToFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToFloat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "ToFloat", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -395,7 +415,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -403,20 +423,21 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DiscreteTime0(
         &mut self,
         _cordl_time: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Timeline::DiscreteTime),
                 quest_hook::libil2cpp::Void,
@@ -424,12 +445,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -437,16 +459,17 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         &mut self,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,16 +477,17 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         &mut self,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -471,16 +495,17 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         &mut self,
         _cordl_time: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -489,16 +514,17 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         frame: i32,
         fps: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, f64), quest_hook::libil2cpp::Void, 2usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (frame, fps))
+            method.invoke_unchecked(self, (frame, fps))?
         };
         Ok(__cordl_ret.into())
     }
@@ -506,36 +532,38 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         &mut self,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_tickValue() -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), f64, 0usize>("get_tickValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_tickValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "get_tickValue", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -546,12 +574,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Addition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Addition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Addition", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -559,7 +588,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -570,17 +599,18 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Equality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_DiscreteTime0(
         b: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Timeline::DiscreteTime),
                 f64,
@@ -588,17 +618,18 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Explicit", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (b)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_DiscreteTime1(
         b: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Timeline::DiscreteTime),
                 f32,
@@ -606,17 +637,18 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Explicit", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (b)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_DiscreteTime2(
         b: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Timeline::DiscreteTime),
                 i64,
@@ -624,17 +656,18 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Explicit", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (b)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_f32_4(
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 crate::UnityEngine::Timeline::DiscreteTime,
@@ -642,19 +675,20 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Explicit", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))
+            method.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_f64_3(
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64),
                 crate::UnityEngine::Timeline::DiscreteTime,
@@ -662,19 +696,20 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Explicit", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))
+            method.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_i64_5(
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 crate::UnityEngine::Timeline::DiscreteTime,
@@ -682,12 +717,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Explicit", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))
+            method.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -695,7 +731,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -706,18 +742,19 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_GreaterThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_GreaterThan", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThanOrEqual(
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -728,17 +765,19 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_GreaterThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_GreaterThanOrEqual",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         _cordl_time: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::UnityEngine::Timeline::DiscreteTime,
@@ -746,12 +785,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (_cordl_time))
+            method.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -759,7 +799,7 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -770,18 +810,19 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Inequality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThan(
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -792,18 +833,19 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_LessThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_LessThan", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThanOrEqual(
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -814,18 +856,19 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_LessThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_LessThanOrEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Subtraction(
         lhs: crate::UnityEngine::Timeline::DiscreteTime,
         rhs: crate::UnityEngine::Timeline::DiscreteTime,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::DiscreteTime as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::DiscreteTime,
@@ -836,12 +879,13 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             >("op_Subtraction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Subtraction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::DiscreteTime as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Subtraction", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }

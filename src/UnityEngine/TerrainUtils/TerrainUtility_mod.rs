@@ -40,23 +40,24 @@ impl std::ops::DerefMut for crate::UnityEngine::TerrainUtils::TerrainUtility {
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility")]
 impl crate::UnityEngine::TerrainUtils::TerrainUtility {
     pub fn AutoConnect() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("AutoConnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoConnect", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TerrainUtils::TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "AutoConnect", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearConnectivity() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -64,12 +65,13 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
             >("ClearConnectivity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearConnectivity", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TerrainUtils::TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearConnectivity", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,7 +85,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -98,8 +100,9 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
             >("CollectTerrains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CollectTerrains", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TerrainUtils::TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CollectTerrains", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -107,19 +110,20 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
                 i32,
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
             >,
-        > = unsafe { method.invoke_unchecked((), (onlyAutoConnectedTerrains)) };
+        > = unsafe { method.invoke_unchecked((), (onlyAutoConnectedTerrains))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidTerrainsExist() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TerrainUtils::TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("ValidTerrainsExist")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidTerrainsExist", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TerrainUtils::TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidTerrainsExist", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,7 +50,7 @@ impl crate::Newtonsoft::Json::Serialization::ISerializationBinder {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::ISerializationBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -66,12 +66,13 @@ impl crate::Newtonsoft::Json::Serialization::ISerializationBinder {
             >("BindToName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BindToName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::ISerializationBinder as
+                    quest_hook::libil2cpp::Type > ::class(), "BindToName", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (serializedType, assemblyName, typeName))
+            method.invoke_unchecked(self, (serializedType, assemblyName, typeName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +81,7 @@ impl crate::Newtonsoft::Json::Serialization::ISerializationBinder {
         assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::ISerializationBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -91,12 +92,13 @@ impl crate::Newtonsoft::Json::Serialization::ISerializationBinder {
             >("BindToType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BindToType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::ISerializationBinder as
+                    quest_hook::libil2cpp::Type > ::class(), "BindToType", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, (assemblyName, typeName))
+            method.invoke_unchecked(self, (assemblyName, typeName))?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
         &mut self,
         basicBeatmapEventType: crate::BeatmapSaveDataCommon::BeatmapEventType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::SpecialEventsFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatmapSaveDataCommon::BeatmapEventType),
                 bool,
@@ -56,12 +56,13 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
             >("IsEventValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEventValid", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::SpecialEventsFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEventValid", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (basicBeatmapEventType))
+            method.invoke_unchecked(self, (basicBeatmapEventType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +89,7 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
             crate::GlobalNamespace::EnvironmentKeywords,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::SpecialEventsFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -103,8 +104,9 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::SpecialEventsFilter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -112,7 +114,7 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
                 .invoke_unchecked(
                     self,
                     (basicEventTypesWithKeywords, environmentKeywords),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

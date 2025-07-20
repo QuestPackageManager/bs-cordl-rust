@@ -45,7 +45,7 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::MethodBinaryExpression as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -53,13 +53,14 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
             >("GetMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethod", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::MethodBinaryExpression as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMethod", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -83,7 +84,7 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::MethodBinaryExpression as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Linq::Expressions::ExpressionType,
@@ -101,12 +102,13 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::MethodBinaryExpression as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeType, left, right, _cordl_type, method))
+            method.invoke_unchecked(self, (nodeType, left, right, _cordl_type, method))?
         };
         Ok(__cordl_ret.into())
     }

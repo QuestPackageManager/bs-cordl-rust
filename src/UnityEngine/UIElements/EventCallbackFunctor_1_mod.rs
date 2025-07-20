@@ -73,7 +73,9 @@ impl<
         TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EventCallbackFunctor_1<
+            TEventType,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -84,12 +86,13 @@ impl<
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EventCallbackFunctor_1 < TEventType
+                    > as quest_hook::libil2cpp::Type > ::class(), "Invoke", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (evt, propagationPhase))
+            method.invoke_unchecked(self, (evt, propagationPhase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +106,9 @@ impl<
         TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EventCallbackFunctor_1<
+            TEventType,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i64,
@@ -115,12 +120,14 @@ impl<
             >("IsEquivalentTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEquivalentTo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EventCallbackFunctor_1 < TEventType
+                    > as quest_hook::libil2cpp::Type > ::class(), "IsEquivalentTo",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (eventTypeId, callback, phase))
+            method.invoke_unchecked(self, (eventTypeId, callback, phase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +160,9 @@ impl<
         TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EventCallbackFunctor_1<
+            TEventType,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -167,12 +176,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EventCallbackFunctor_1 < TEventType
+                    > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (callback, phase, invokePolicy))
+            method.invoke_unchecked(self, (callback, phase, invokePolicy))?
         };
         Ok(__cordl_ret.into())
     }

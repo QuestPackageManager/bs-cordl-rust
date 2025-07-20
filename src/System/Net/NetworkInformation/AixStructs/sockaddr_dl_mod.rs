@@ -112,7 +112,7 @@ impl crate::System::Net::NetworkInformation::AixStructs::sockaddr_dl {
         &mut self,
         ptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::NetworkInformation::AixStructs::sockaddr_dl as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -120,12 +120,13 @@ impl crate::System::Net::NetworkInformation::AixStructs::sockaddr_dl {
             >("Read")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Read", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::NetworkInformation::AixStructs::sockaddr_dl as
+                    quest_hook::libil2cpp::Type > ::class(), "Read", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ptr))
+            method.invoke_unchecked(self, (ptr))?
         };
         Ok(__cordl_ret.into())
     }

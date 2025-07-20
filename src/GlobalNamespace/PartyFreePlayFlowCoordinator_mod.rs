@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             crate::GlobalNamespace::ResultsViewController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ResultsViewController,
@@ -77,12 +77,14 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("HandleResultsViewControllerContinueButtonPressed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleResultsViewControllerContinueButtonPressed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleResultsViewControllerContinueButtonPressed", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (resultsViewController))
+            method.invoke_unchecked(self, (resultsViewController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +94,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             crate::GlobalNamespace::ResultsViewController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ResultsViewController,
@@ -102,12 +104,14 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("HandleResultsViewControllerRestartButtonPressed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleResultsViewControllerRestartButtonPressed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleResultsViewControllerRestartButtonPressed", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (resultsViewController))
+            method.invoke_unchecked(self, (resultsViewController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +122,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         >,
         leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -131,12 +135,13 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("IsNewHighScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNewHighScore", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNewHighScore", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (levelCompletionResults, leaderboardId))
+            method.invoke_unchecked(self, (levelCompletionResults, leaderboardId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +165,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         modifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         practice: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -179,8 +184,10 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("ProcessLevelCompletionResultsAfterLevelDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessLevelCompletionResultsAfterLevelDidFinish", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ProcessLevelCompletionResultsAfterLevelDidFinish", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -195,7 +202,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                         modifiers,
                         practice,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +214,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -221,8 +228,9 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("ProcessScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessScore", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessScore", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -230,7 +238,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 .invoke_unchecked(
                     self,
                     (levelCompletionResults, leaderboardId, playerName),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +247,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         firstActivation: bool,
         addedToHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -247,12 +255,14 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("SinglePlayerLevelSelectionFlowCoordinatorDidActivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SinglePlayerLevelSelectionFlowCoordinatorDidActivate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SinglePlayerLevelSelectionFlowCoordinatorDidActivate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (firstActivation, addedToHierarchy))
+            method.invoke_unchecked(self, (firstActivation, addedToHierarchy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,7 +270,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         &mut self,
         removedFromHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -268,13 +278,14 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (removedFromHierarchy))
+            method.invoke_unchecked(self, (removedFromHierarchy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,7 +297,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         practice: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -300,8 +311,10 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("WillScoreGoToLeaderboard")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WillScoreGoToLeaderboard", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "WillScoreGoToLeaderboard",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -309,23 +322,24 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
                 .invoke_unchecked(
                     self,
                     (levelCompletionResults, leaderboardId, practice),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +348,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -342,13 +356,14 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("get_gameMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_gameMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_gameMode", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_leaderboardViewController(
@@ -356,7 +371,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardViewController>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -366,13 +381,15 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("get_leaderboardViewController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_leaderboardViewController", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_leaderboardViewController", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LeaderboardViewController,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_mainTitle(
@@ -380,7 +397,7 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -388,27 +405,30 @@ impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
             >("get_mainTitle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_mainTitle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_mainTitle", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_showBackButtonForMainViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PartyFreePlayFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_showBackButtonForMainViewController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_showBackButtonForMainViewController", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PartyFreePlayFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_showBackButtonForMainViewController", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

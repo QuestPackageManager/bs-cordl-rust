@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::ProjectionUtils {
         near: f32,
         far: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ProjectionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32, f32, f32, f32),
                 crate::UnityEngine::Matrix4x4,
@@ -55,12 +55,13 @@ impl crate::UnityEngine::UIElements::ProjectionUtils {
             >("Ortho")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ortho", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ProjectionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Ortho", 6usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (left, right, bottom, top, near, far))
+            method.invoke_unchecked((), (left, right, bottom, top, near, far))?
         };
         Ok(__cordl_ret.into())
     }

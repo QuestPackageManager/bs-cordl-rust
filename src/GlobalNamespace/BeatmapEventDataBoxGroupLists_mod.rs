@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataBoxGroupLists as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -89,8 +89,9 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             >("Insert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Insert", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataBoxGroupLists as
+                    quest_hook::libil2cpp::Type > ::class(), "Insert", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -100,7 +101,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (groupId, beatmapEventDataBoxGroup))
+            method.invoke_unchecked(self, (groupId, beatmapEventDataBoxGroup))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +140,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataBoxGroupLists as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -156,19 +157,20 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             >("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataBoxGroupLists as
+                    quest_hook::libil2cpp::Type > ::class(), "Remove", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (groupId, nodeToDelete))
+            method.invoke_unchecked(self, (groupId, nodeToDelete))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SyncWithBeatmapData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataBoxGroupLists as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -176,12 +178,14 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             >("SyncWithBeatmapData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SyncWithBeatmapData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataBoxGroupLists as
+                    quest_hook::libil2cpp::Type > ::class(), "SyncWithBeatmapData",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +193,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
         &mut self,
         enableUpdateOnInsert: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataBoxGroupLists as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -197,12 +201,14 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             >("ToggleUpdateBeatmapDataOnInsert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToggleUpdateBeatmapDataOnInsert", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataBoxGroupLists as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ToggleUpdateBeatmapDataOnInsert", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (enableUpdateOnInsert))
+            method.invoke_unchecked(self, (enableUpdateOnInsert))?
         };
         Ok(__cordl_ret.into())
     }
@@ -217,7 +223,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataBoxGroupLists as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
@@ -234,8 +240,9 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataBoxGroupLists as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -248,7 +255,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
                         updateBeatmapDataOnInsert,
                         lightEventConverter,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

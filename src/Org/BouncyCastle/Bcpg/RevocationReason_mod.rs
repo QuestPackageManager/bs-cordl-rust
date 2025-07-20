@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationReason as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
@@ -56,13 +56,14 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             >("CreateData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::RevocationReason as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (reason, description)) };
+        > = unsafe { method.invoke_unchecked((), (reason, description))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRevocationDescription(
@@ -70,7 +71,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationReason as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -78,13 +79,15 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             >("GetRevocationDescription")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRevocationDescription", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::RevocationReason as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRevocationDescription",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRevocationReason(
@@ -92,7 +95,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
     ) -> quest_hook::libil2cpp::Result<
         crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationReason as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
@@ -100,12 +103,14 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             >("GetRevocationReason")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRevocationReason", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::RevocationReason as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRevocationReason",
+                    0usize
                 )
             });
         let __cordl_ret: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +142,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
         reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
         description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationReason as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -149,12 +154,13 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::RevocationReason as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isCritical, reason, description))
+            method.invoke_unchecked(self, (isCritical, reason, description))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +170,7 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::RevocationReason as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -176,12 +182,13 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::RevocationReason as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isCritical, isLongLength, data))
+            method.invoke_unchecked(self, (isCritical, isLongLength, data))?
         };
         Ok(__cordl_ret.into())
     }

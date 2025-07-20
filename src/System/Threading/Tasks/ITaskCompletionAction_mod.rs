@@ -43,7 +43,7 @@ impl crate::System::Threading::Tasks::ITaskCompletionAction {
         &mut self,
         completingTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::ITaskCompletionAction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
                 quest_hook::libil2cpp::Void,
@@ -51,12 +51,13 @@ impl crate::System::Threading::Tasks::ITaskCompletionAction {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::ITaskCompletionAction as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (completingTask))
+            method.invoke_unchecked(self, (completingTask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,15 +69,17 @@ impl crate::System::Threading::Tasks::ITaskCompletionAction {
     pub fn get_InvokeMayRunArbitraryCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::ITaskCompletionAction as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_InvokeMayRunArbitraryCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_InvokeMayRunArbitraryCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::ITaskCompletionAction as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_InvokeMayRunArbitraryCode", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -88,7 +88,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -98,13 +98,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoTlsSettings,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CloneWithValidator(
@@ -115,7 +116,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Mono::Security::Interface::ICertificateValidator,
@@ -127,19 +128,20 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("CloneWithValidator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloneWithValidator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "CloneWithValidator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoTlsSettings,
-        > = unsafe { method.invoke_unchecked(self, (validator)) };
+        > = unsafe { method.invoke_unchecked(self, (validator))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyDefaultSettings() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -149,13 +151,15 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("CopyDefaultSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyDefaultSettings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyDefaultSettings",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoTlsSettings,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -179,16 +183,17 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +203,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::Mono::Security::Interface::MonoTlsSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Mono::Security::Interface::MonoTlsSettings,
@@ -208,27 +213,30 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (other))
+            method.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_CallbackNeedsCertificateChain(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_CallbackNeedsCertificateChain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CallbackNeedsCertificateChain", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_CallbackNeedsCertificateChain", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CertificateSearchPaths(
@@ -240,7 +248,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -252,15 +260,17 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_CertificateSearchPaths")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CertificateSearchPaths", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_CertificateSearchPaths", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CertificateValidationTime(
@@ -268,7 +278,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::DateTime>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Nullable_1<crate::System::DateTime>,
@@ -276,12 +286,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_CertificateValidationTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CertificateValidationTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_CertificateValidationTime", 0usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<crate::System::DateTime> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -292,7 +304,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::Mono::Security::Interface::ICertificateValidator,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -302,13 +314,15 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_CertificateValidator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CertificateValidator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_CertificateValidator",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::ICertificateValidator,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ClientCertificateIssuers(
@@ -320,7 +334,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -332,15 +346,17 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_ClientCertificateIssuers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ClientCertificateIssuers", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ClientCertificateIssuers", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ClientCertificateSelectionCallback(
@@ -350,7 +366,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -360,19 +376,21 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_ClientCertificateSelectionCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ClientCertificateSelectionCallback", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ClientCertificateSelectionCallback", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DefaultSettings() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -382,19 +400,21 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_DefaultSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DefaultSettings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DefaultSettings",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoTlsSettings,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DisallowUnauthenticatedCertificateRequest(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 bool,
@@ -402,11 +422,13 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_DisallowUnauthenticatedCertificateRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DisallowUnauthenticatedCertificateRequest", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_DisallowUnauthenticatedCertificateRequest", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnabledCiphers(
@@ -418,7 +440,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -430,15 +452,16 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_EnabledCiphers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnabledCiphers", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_EnabledCiphers", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::Mono::Security::Interface::CipherSuiteCode,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnabledProtocols(
@@ -446,7 +469,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::Mono::Security::Interface::TlsProtocols>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Nullable_1<
@@ -456,13 +479,15 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_EnabledProtocols")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnabledProtocols", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_EnabledProtocols",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<
             crate::Mono::Security::Interface::TlsProtocols,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RemoteCertificateValidationCallback(
@@ -472,7 +497,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -482,25 +507,29 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_RemoteCertificateValidationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RemoteCertificateValidationCallback", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_RemoteCertificateValidationCallback", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SendCloseNotify(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_SendCloseNotify")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SendCloseNotify", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_SendCloseNotify",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TrustAnchors(
@@ -510,7 +539,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -520,19 +549,20 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_TrustAnchors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TrustAnchors", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_TrustAnchors", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UseServicePointManagerCallback(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Nullable_1<bool>,
@@ -540,12 +570,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_UseServicePointManagerCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UseServicePointManagerCallback", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_UseServicePointManagerCallback", 0usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<bool> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -554,7 +586,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -562,13 +594,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("get_UserSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UserSettings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_UserSettings", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_CertificateSearchPaths(
@@ -579,7 +612,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -591,12 +624,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_CertificateSearchPaths")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_CertificateSearchPaths", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_CertificateSearchPaths", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -604,7 +639,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         &mut self,
         value: crate::System::Nullable_1<crate::System::DateTime>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Nullable_1<crate::System::DateTime>),
                 quest_hook::libil2cpp::Void,
@@ -612,12 +647,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_CertificateValidationTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_CertificateValidationTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_CertificateValidationTime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -629,7 +666,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -641,12 +678,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_ClientCertificateIssuers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ClientCertificateIssuers", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_ClientCertificateIssuers", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -656,7 +695,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
@@ -666,12 +705,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_ClientCertificateSelectionCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ClientCertificateSelectionCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_ClientCertificateSelectionCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -679,7 +720,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -687,12 +728,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_DisallowUnauthenticatedCertificateRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_DisallowUnauthenticatedCertificateRequest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_DisallowUnauthenticatedCertificateRequest", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -704,7 +747,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -716,12 +759,13 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_EnabledCiphers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnabledCiphers", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "set_EnabledCiphers", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -729,7 +773,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         &mut self,
         value: crate::System::Nullable_1<crate::Mono::Security::Interface::TlsProtocols>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Nullable_1<
                     crate::Mono::Security::Interface::TlsProtocols,
@@ -739,12 +783,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_EnabledProtocols")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnabledProtocols", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "set_EnabledProtocols",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -754,7 +800,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
@@ -764,12 +810,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_RemoteCertificateValidationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_RemoteCertificateValidationCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_RemoteCertificateValidationCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -777,7 +825,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -785,12 +833,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_SendCloseNotify")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_SendCloseNotify", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "set_SendCloseNotify",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -800,7 +850,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
@@ -810,12 +860,13 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_TrustAnchors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_TrustAnchors", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "set_TrustAnchors", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -823,7 +874,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         &mut self,
         value: crate::System::Nullable_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Nullable_1<bool>),
                 quest_hook::libil2cpp::Void,
@@ -831,12 +882,14 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_UseServicePointManagerCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_UseServicePointManagerCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_UseServicePointManagerCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -844,7 +897,7 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::MonoTlsSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -852,12 +905,13 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
             >("set_UserSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_UserSettings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::MonoTlsSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "set_UserSettings", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

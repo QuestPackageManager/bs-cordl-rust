@@ -45,15 +45,16 @@ impl crate::GlobalNamespace::IRemoteProcedureCall {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IRemoteProcedureCall as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_syncTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_syncTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IRemoteProcedureCall as
+                    quest_hook::libil2cpp::Type > ::class(), "get_syncTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

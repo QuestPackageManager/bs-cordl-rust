@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -60,13 +60,14 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier {
             >("Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Multiplier::ECMultiplier as
+                    quest_hook::libil2cpp::Type > ::class(), "Multiply", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { method.invoke_unchecked(self, (p, k)) };
+        > = unsafe { method.invoke_unchecked(self, (p, k))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

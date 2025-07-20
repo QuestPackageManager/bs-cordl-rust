@@ -55,7 +55,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         &mut self,
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                 quest_hook::libil2cpp::Void,
@@ -63,12 +63,14 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("CreateTablesHierarchy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTablesHierarchy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateTablesHierarchy",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dt))
+            method.invoke_unchecked(self, (dt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +83,7 @@ impl crate::System::Data::XmlDataTreeWriter {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -93,15 +95,17 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("CreateToplevelTables")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateToplevelTables", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateToplevelTables",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNestedChildRelations(
@@ -110,7 +114,7 @@ impl crate::System::Data::XmlDataTreeWriter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -118,13 +122,15 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("GetNestedChildRelations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNestedChildRelations", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNestedChildRelations",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ArrayList,
-        > = unsafe { method.invoke_unchecked(self, (row)) };
+        > = unsafe { method.invoke_unchecked(self, (row))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_DataSet0(
@@ -149,7 +155,7 @@ impl crate::System::Data::XmlDataTreeWriter {
     pub fn PreserveSpace(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -157,17 +163,18 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("PreserveSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PreserveSpace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "PreserveSpace", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn RowHasErrors(
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                 bool,
@@ -175,11 +182,12 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("RowHasErrors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RowHasErrors", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "RowHasErrors", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (row)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (row))? };
         Ok(__cordl_ret.into())
     }
     pub fn Save(
@@ -187,7 +195,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         writeSchema: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>, bool),
                 quest_hook::libil2cpp::Void,
@@ -195,12 +203,13 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "Save", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (xw, writeSchema))
+            method.invoke_unchecked(self, (xw, writeSchema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +218,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         rowsOrder: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -220,12 +229,13 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("SaveDiffgramData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveDiffgramData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveDiffgramData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (xw, rowsOrder))
+            method.invoke_unchecked(self, (xw, rowsOrder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -234,7 +244,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         encodedTableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -245,12 +255,13 @@ impl crate::System::Data::XmlDataTreeWriter {
             >("XmlDataRowWriter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "XmlDataRowWriter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), "XmlDataRowWriter", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (row, encodedTableName))
+            method.invoke_unchecked(self, (row, encodedTableName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +269,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         &mut self,
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                 quest_hook::libil2cpp::Void,
@@ -266,12 +277,13 @@ impl crate::System::Data::XmlDataTreeWriter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ds))
+            method.invoke_unchecked(self, (ds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -280,7 +292,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         writeHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlDataTreeWriter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>, bool),
                 quest_hook::libil2cpp::Void,
@@ -288,12 +300,13 @@ impl crate::System::Data::XmlDataTreeWriter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlDataTreeWriter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dt, writeHierarchy))
+            method.invoke_unchecked(self, (dt, writeHierarchy))?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::System::Security::Cryptography::AesTransform {
         outdata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         ekey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::AesTransform as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -60,12 +60,13 @@ impl crate::System::Security::Cryptography::AesTransform {
             >("Decrypt128")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decrypt128", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::AesTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "Decrypt128", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (indata, outdata, ekey))
+            method.invoke_unchecked(self, (indata, outdata, ekey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +75,7 @@ impl crate::System::Security::Cryptography::AesTransform {
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::AesTransform as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -85,12 +86,13 @@ impl crate::System::Security::Cryptography::AesTransform {
             >("ECB")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ECB", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::AesTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "ECB", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (input, output))
+            method.invoke_unchecked(self, (input, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +102,7 @@ impl crate::System::Security::Cryptography::AesTransform {
         outdata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         ekey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::AesTransform as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -112,12 +114,13 @@ impl crate::System::Security::Cryptography::AesTransform {
             >("Encrypt128")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encrypt128", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::AesTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "Encrypt128", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (indata, outdata, ekey))
+            method.invoke_unchecked(self, (indata, outdata, ekey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,15 +137,16 @@ impl crate::System::Security::Cryptography::AesTransform {
         Ok(__cordl_object.into())
     }
     pub fn SubByte(&mut self, a: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::AesTransform as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), u32, 1usize>("SubByte")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SubByte", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::AesTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "SubByte", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (a)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (a))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -152,7 +156,7 @@ impl crate::System::Security::Cryptography::AesTransform {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::AesTransform as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -167,12 +171,13 @@ impl crate::System::Security::Cryptography::AesTransform {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::Cryptography::AesTransform as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (algo, encryption, key, iv))
+            method.invoke_unchecked(self, (algo, encryption, key, iv))?
         };
         Ok(__cordl_ret.into())
     }

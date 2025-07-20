@@ -45,7 +45,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         offset: f32,
         textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -60,25 +60,27 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("AdjustLineOffset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AdjustLineOffset", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "AdjustLineOffset", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (startIndex, endIndex, offset, textInfo))
+            method.invoke_unchecked((), (startIndex, endIndex, offset, textInfo))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Approximately(a: f32, b: f32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32), bool, 2usize>("Approximately")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Approximately", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "Approximately", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToFloat_ByRefMut1(
@@ -87,7 +89,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         length: i32,
         lastIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -100,12 +102,13 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ConvertToFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertToFloat", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertToFloat", 4usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (chars, startIndex, length, lastIndex))
+            method.invoke_unchecked((), (chars, startIndex, length, lastIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +117,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         startIndex: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -126,12 +129,13 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ConvertToFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertToFloat", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertToFloat", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (chars, startIndex, length))
+            method.invoke_unchecked((), (chars, startIndex, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,16 +143,17 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         highSurrogate: u32,
         lowSurrogate: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32, u32), u32, 2usize>("ConvertToUTF32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertToUTF32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertToUTF32", 2usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (highSurrogate, lowSurrogate))
+            method.invoke_unchecked((), (highSurrogate, lowSurrogate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +165,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         >,
         textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -177,8 +182,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("FillCharacterVertexBuffers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillCharacterVertexBuffers", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "FillCharacterVertexBuffers", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -186,7 +193,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                 .invoke_unchecked(
                     (),
                     (i, convertToLinearSpace, generationSettings, textInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +205,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         >,
         textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -215,8 +222,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("FillSpriteVertexBuffers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillSpriteVertexBuffers", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FillSpriteVertexBuffers",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -224,14 +233,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                 .invoke_unchecked(
                     (),
                     (i, convertToLinearSpace, generationSettings, textInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GammaToLinear_Color32_0(
         c: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32),
                 crate::UnityEngine::Color32,
@@ -239,25 +248,27 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GammaToLinear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GammaToLinear", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GammaToLinear", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (c))
+            method.invoke_unchecked((), (c))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GammaToLinear_u8_1(value: u8) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u8), u8, 1usize>("GammaToLinear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GammaToLinear", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GammaToLinear", 1usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttributeParameters(
@@ -268,7 +279,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -285,12 +296,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetAttributeParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeParameters", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeParameters",
+                    4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (chars, startIndex, length, parameters))
+            method.invoke_unchecked((), (chars, startIndex, length, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -300,7 +313,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         >,
         readIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -311,12 +324,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetMarkupTagHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMarkupTagHashCode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMarkupTagHashCode",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (styleDefinition, readIndex))
+            method.invoke_unchecked((), (styleDefinition, readIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -324,7 +339,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         styleDefinition: crate::UnityEngine::TextCore::Text::TextBackingContainer,
         readIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextCore::Text::TextBackingContainer, i32),
                 i32,
@@ -332,12 +347,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetMarkupTagHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMarkupTagHashCode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMarkupTagHashCode",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (styleDefinition, readIndex))
+            method.invoke_unchecked((), (styleDefinition, readIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -349,7 +366,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -362,13 +379,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetStyle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStyle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStyle", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextStyle,
-        > = unsafe { method.invoke_unchecked((), (generationSetting, hashCode)) };
+        > = unsafe { method.invoke_unchecked((), (generationSetting, hashCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStyleHashCode_ByRefMut_i32_ByRefMut0(
@@ -378,7 +396,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         index: i32,
         closeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -394,12 +412,13 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetStyleHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStyleHashCode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStyleHashCode", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (text, index, closeIndex))
+            method.invoke_unchecked((), (text, index, closeIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -410,7 +429,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         index: i32,
         closeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -424,12 +443,13 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetStyleHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStyleHashCode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStyleHashCode", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (text, index, closeIndex))
+            method.invoke_unchecked((), (text, index, closeIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -437,7 +457,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -448,18 +468,19 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetUTF16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUTF16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUTF16", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUTF16_TextBackingContainer1(
         text: crate::UnityEngine::TextCore::Text::TextBackingContainer,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextCore::Text::TextBackingContainer, i32),
                 u32,
@@ -467,18 +488,19 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetUTF16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUTF16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUTF16", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUTF32_Il2CppArray0(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -489,18 +511,19 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetUTF32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUTF32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUTF32", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUTF32_TextBackingContainer1(
         text: crate::UnityEngine::TextCore::Text::TextBackingContainer,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextCore::Text::TextBackingContainer, i32),
                 u32,
@@ -508,18 +531,19 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("GetUTF32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUTF32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUTF32", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (text, i))? };
         Ok(__cordl_ret.into())
     }
     pub fn HexCharsToColor_Il2CppArray_i32_0(
         hexChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         tagCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -530,12 +554,13 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("HexCharsToColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HexCharsToColor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HexCharsToColor", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (hexChars, tagCount))
+            method.invoke_unchecked((), (hexChars, tagCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -544,7 +569,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         startIndex: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -556,25 +581,27 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("HexCharsToColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HexCharsToColor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HexCharsToColor", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (hexChars, startIndex, length))
+            method.invoke_unchecked((), (hexChars, startIndex, length))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HexToInt(hex: char) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(char), u32, 1usize>("HexToInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HexToInt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HexToInt", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (hex)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (hex))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertClosingStyleTag(
@@ -600,7 +627,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -632,8 +659,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("InsertClosingStyleTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertClosingStyleTag", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertClosingStyleTag",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -647,7 +676,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -675,7 +704,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -710,8 +739,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("InsertClosingTextStyle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertClosingTextStyle", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertClosingTextStyle",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -726,7 +757,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -754,7 +785,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -789,8 +820,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("InsertOpeningStyleTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertOpeningStyleTag", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertOpeningStyleTag",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -805,7 +838,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -833,7 +866,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -868,8 +901,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("InsertOpeningTextStyle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertOpeningTextStyle", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertOpeningTextStyle",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -884,7 +919,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -914,7 +949,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -947,8 +982,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("InsertTextStyleInTextProcessingArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertTextStyleInTextProcessingArray", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InsertTextStyleInTextProcessingArray", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -963,26 +1000,27 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsBaseGlyph(c: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), bool, 1usize>("IsBaseGlyph")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsBaseGlyph", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsBaseGlyph", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsBitmapRendering(
         glyphRenderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode),
                 bool,
@@ -990,44 +1028,47 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("IsBitmapRendering")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsBitmapRendering", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsBitmapRendering", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (glyphRenderMode))
+            method.invoke_unchecked((), (glyphRenderMode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsCJK(c: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), bool, 1usize>("IsCJK")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCJK", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCJK", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsHangul(c: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), bool, 1usize>("IsHangul")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsHangul", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsHangul", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUTF16(
         text: crate::UnityEngine::TextCore::Text::TextBackingContainer,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextCore::Text::TextBackingContainer, i32),
                 bool,
@@ -1035,18 +1076,19 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("IsValidUTF16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUTF16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUTF16", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, index)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUTF32(
         text: crate::UnityEngine::TextCore::Text::TextBackingContainer,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextCore::Text::TextBackingContainer, i32),
                 bool,
@@ -1054,11 +1096,12 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("IsValidUTF32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUTF32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUTF32", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, index)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn LegacyAlignmentToNewAlignment(
@@ -1066,7 +1109,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::Text::TextAlignment,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextAnchor),
                 crate::UnityEngine::TextCore::Text::TextAlignment,
@@ -1074,19 +1117,21 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("LegacyAlignmentToNewAlignment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LegacyAlignmentToNewAlignment", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LegacyAlignmentToNewAlignment", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::TextCore::Text::TextAlignment = unsafe {
-            method.invoke_unchecked((), (anchor))
+            method.invoke_unchecked((), (anchor))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LegacyStyleToNewStyle(
         fontStyle: crate::UnityEngine::FontStyle,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::Text::FontStyles> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::FontStyle),
                 crate::UnityEngine::TextCore::Text::FontStyles,
@@ -1094,12 +1139,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("LegacyStyleToNewStyle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LegacyStyleToNewStyle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "LegacyStyleToNewStyle",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::TextCore::Text::FontStyles = unsafe {
-            method.invoke_unchecked((), (fontStyle))
+            method.invoke_unchecked((), (fontStyle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1107,7 +1154,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         c1: crate::UnityEngine::Color,
         c2: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color, crate::UnityEngine::Color),
                 crate::UnityEngine::Color,
@@ -1115,12 +1162,13 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("MinAlpha")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MinAlpha", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "MinAlpha", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked((), (c1, c2))
+            method.invoke_unchecked((), (c1, c2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1129,7 +1177,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         y: f32,
         scale: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32),
                 crate::UnityEngine::Vector2,
@@ -1137,12 +1185,13 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("PackUV")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PackUV", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "PackUV", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (x, y, scale))
+            method.invoke_unchecked((), (x, y, scale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1169,7 +1218,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1201,8 +1250,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ReplaceClosingStyleTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReplaceClosingStyleTag", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReplaceClosingStyleTag",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1216,7 +1267,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1248,7 +1299,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1285,8 +1336,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ReplaceOpeningStyleTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReplaceOpeningStyleTag", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReplaceOpeningStyleTag",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1303,7 +1356,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1335,7 +1388,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1374,8 +1427,10 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ReplaceOpeningStyleTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReplaceOpeningStyleTag", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReplaceOpeningStyleTag",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1392,7 +1447,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                         textStyleStacks,
                         generationSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1405,7 +1460,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -1415,12 +1470,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ResizeInternalArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResizeInternalArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ResizeInternalArray",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array))
+            method.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1434,7 +1491,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1447,12 +1504,14 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ResizeInternalArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResizeInternalArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ResizeInternalArray",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, _cordl_size))
+            method.invoke_unchecked((), (array, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1460,7 +1519,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         _cordl_size: i32,
         textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -1473,51 +1532,55 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             >("ResizeLineExtents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResizeLineExtents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ResizeLineExtents", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_size, textInfo))
+            method.invoke_unchecked((), (_cordl_size, textInfo))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToUpperASCIIFast__cordl_char0(
         c: char,
     ) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(char), char, 1usize>("ToUpperASCIIFast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUpperASCIIFast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToUpperASCIIFast", 1usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToUpperASCIIFast_u32_1(c: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), u32, 1usize>("ToUpperASCIIFast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUpperASCIIFast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToUpperASCIIFast", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToUpperFast(c: char) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextGeneratorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(char), char, 1usize>("ToUpperFast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUpperFast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextGeneratorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToUpperFast", 1usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (c)) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
 }

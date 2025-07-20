@@ -41,7 +41,7 @@ impl crate::UnityEngine::FrameTimingManager {
     pub fn CaptureFrameTimings() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::FrameTimingManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -49,12 +49,14 @@ impl crate::UnityEngine::FrameTimingManager {
             >("CaptureFrameTimings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CaptureFrameTimings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::FrameTimingManager as
+                    quest_hook::libil2cpp::Type > ::class(), "CaptureFrameTimings",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -64,7 +66,7 @@ impl crate::UnityEngine::FrameTimingManager {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::FrameTiming>,
         >,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::FrameTimingManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u32,
@@ -79,12 +81,13 @@ impl crate::UnityEngine::FrameTimingManager {
             >("GetLatestTimings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLatestTimings", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::FrameTimingManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLatestTimings", 2usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (numFrames, timings))
+            method.invoke_unchecked((), (numFrames, timings))?
         };
         Ok(__cordl_ret.into())
     }

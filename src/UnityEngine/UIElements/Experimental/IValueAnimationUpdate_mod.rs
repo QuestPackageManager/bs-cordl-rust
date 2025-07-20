@@ -45,16 +45,17 @@ impl crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate {
         &mut self,
         currentTimeMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("Tick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Tick", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::Experimental::IValueAnimationUpdate
+                    as quest_hook::libil2cpp::Type > ::class(), "Tick", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (currentTimeMs))
+            method.invoke_unchecked(self, (currentTimeMs))?
         };
         Ok(__cordl_ret.into())
     }

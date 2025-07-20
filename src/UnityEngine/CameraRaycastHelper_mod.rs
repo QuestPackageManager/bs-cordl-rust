@@ -46,7 +46,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CameraRaycastHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -59,12 +59,13 @@ impl crate::UnityEngine::CameraRaycastHelper {
             >("RaycastTry")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RaycastTry", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CameraRaycastHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "RaycastTry", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (cam, ray, distance, layerMask))
+            method.invoke_unchecked((), (cam, ray, distance, layerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +77,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CameraRaycastHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -89,12 +90,13 @@ impl crate::UnityEngine::CameraRaycastHelper {
             >("RaycastTry2D")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RaycastTry2D", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CameraRaycastHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "RaycastTry2D", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (cam, ray, distance, layerMask))
+            method.invoke_unchecked((), (cam, ray, distance, layerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +108,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CameraRaycastHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -119,12 +121,14 @@ impl crate::UnityEngine::CameraRaycastHelper {
             >("RaycastTry2D_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RaycastTry2D_Injected", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CameraRaycastHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "RaycastTry2D_Injected",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (cam, ray, distance, layerMask))
+            method.invoke_unchecked((), (cam, ray, distance, layerMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,7 +140,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CameraRaycastHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -149,12 +153,14 @@ impl crate::UnityEngine::CameraRaycastHelper {
             >("RaycastTry_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RaycastTry_Injected", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CameraRaycastHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "RaycastTry_Injected",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (cam, ray, distance, layerMask))
+            method.invoke_unchecked((), (cam, ray, distance, layerMask))?
         };
         Ok(__cordl_ret.into())
     }

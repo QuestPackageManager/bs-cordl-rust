@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
         &mut self,
         os: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::SignatureSubpacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -55,12 +55,13 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
             >("Encode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::SignatureSubpacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Encode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (os))
+            method.invoke_unchecked(self, (os))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +70,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::SignatureSubpacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -77,37 +78,40 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
             >("GetData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::SignatureSubpacket as
+                    quest_hook::libil2cpp::Type > ::class(), "GetData", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCritical(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::SignatureSubpacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsCritical")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCritical", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::SignatureSubpacket as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCritical", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLongLength(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::SignatureSubpacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsLongLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLongLength", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::SignatureSubpacket as
+                    quest_hook::libil2cpp::Type > ::class(), "IsLongLength", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -129,7 +133,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::SignatureSubpacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
@@ -142,12 +146,13 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::SignatureSubpacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, critical, isLongLength, data))
+            method.invoke_unchecked(self, (_cordl_type, critical, isLongLength, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +161,7 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
     ) -> quest_hook::libil2cpp::Result<
         crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::SignatureSubpacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
@@ -164,12 +169,13 @@ impl crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
             >("get_SubpacketType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SubpacketType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::SignatureSubpacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_SubpacketType", 0usize
                 )
             });
         let __cordl_ret: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -62,7 +62,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>),
                 quest_hook::libil2cpp::Gc<
@@ -72,13 +72,15 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("GetLogicalCallContext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLogicalCallContext", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLogicalCallContext",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-        > = unsafe { method.invoke_unchecked(self, (args)) };
+        > = unsafe { method.invoke_unchecked(self, (args))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethod(
@@ -86,7 +88,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
@@ -94,13 +96,14 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("GetMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethod", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMethod", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSignature(
@@ -113,7 +116,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>, bool),
                 quest_hook::libil2cpp::Gc<
@@ -125,21 +128,22 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("GetSignature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSignature", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSignature", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
             >,
-        > = unsafe { method.invoke_unchecked((), (methodBase, load)) };
+        > = unsafe { method.invoke_unchecked((), (methodBase, load))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPossibleToIgnoreMarshal(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -147,11 +151,13 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("IsPossibleToIgnoreMarshal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPossibleToIgnoreMarshal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "IsPossibleToIgnoreMarshal",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn MarshalArgument(
@@ -163,7 +169,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -176,13 +182,14 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("MarshalArgument")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MarshalArgument", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "MarshalArgument", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (arg, args)) };
+        > = unsafe { method.invoke_unchecked(self, (arg, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn MarshalArguments(
@@ -202,7 +209,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -225,15 +232,16 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("MarshalArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MarshalArguments", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "MarshalArguments", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (arguments, args)) };
+        > = unsafe { method.invoke_unchecked(self, (arguments, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn MarshalProperties(
@@ -242,7 +250,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -255,11 +263,12 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("MarshalProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MarshalProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "MarshalProperties", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (dict, args)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (dict, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -282,7 +291,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -297,12 +306,14 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("SaveLogicalCallContext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveLogicalCallContext", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveLogicalCallContext",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg, serializeList))
+            method.invoke_unchecked(self, (msg, serializeList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -313,7 +324,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -324,13 +335,14 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("UnmarshalArgument")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnmarshalArgument", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "UnmarshalArgument", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (arg, args)) };
+        > = unsafe { method.invoke_unchecked(self, (arg, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnmarshalArguments(
@@ -348,7 +360,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -369,15 +381,16 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("UnmarshalArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnmarshalArguments", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "UnmarshalArguments", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (arguments, args)) };
+        > = unsafe { method.invoke_unchecked(self, (arguments, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnmarshalProperties(
@@ -385,7 +398,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         count: i32,
         args: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -397,12 +410,14 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >("UnmarshalProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnmarshalProperties", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "UnmarshalProperties",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (dict, count, args))
+            method.invoke_unchecked((), (dict, count, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -412,7 +427,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             crate::System::Runtime::Remoting::Messaging::IMethodMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::CADMessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Messaging::IMethodMessage,
@@ -422,12 +437,13 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::CADMessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))
+            method.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }

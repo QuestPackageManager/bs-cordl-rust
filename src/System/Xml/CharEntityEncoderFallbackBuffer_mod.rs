@@ -48,16 +48,17 @@ impl crate::System::Xml::CharEntityEncoderFallbackBuffer {
         charUnknownLow: char,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(char, char, i32), bool, 3usize>("Fallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Fallback", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "Fallback", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (charUnknownHigh, charUnknownLow, index))
+            method.invoke_unchecked(self, (charUnknownHigh, charUnknownLow, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,41 +67,44 @@ impl crate::System::Xml::CharEntityEncoderFallbackBuffer {
         charUnknown: char,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(char, i32), bool, 2usize>("Fallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Fallback", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "Fallback", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (charUnknown, index))
+            method.invoke_unchecked(self, (charUnknown, index))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), char, 0usize>("GetNextChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextChar", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextChar", 0usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MovePrevious(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MovePrevious")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MovePrevious", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "MovePrevious", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -115,16 +119,17 @@ impl crate::System::Xml::CharEntityEncoderFallbackBuffer {
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,16 +138,18 @@ impl crate::System::Xml::CharEntityEncoderFallbackBuffer {
         highSurrogate: char,
         lowSurrogate: char,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(char, char), i32, 2usize>("SurrogateCharToUtf32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SurrogateCharToUtf32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "SurrogateCharToUtf32",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (highSurrogate, lowSurrogate))
+            method.invoke_unchecked(self, (highSurrogate, lowSurrogate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +157,7 @@ impl crate::System::Xml::CharEntityEncoderFallbackBuffer {
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::System::Xml::CharEntityEncoderFallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::CharEntityEncoderFallback,
@@ -160,25 +167,27 @@ impl crate::System::Xml::CharEntityEncoderFallbackBuffer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parent))
+            method.invoke_unchecked(self, (parent))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Remaining(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::CharEntityEncoderFallbackBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Remaining")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Remaining", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::CharEntityEncoderFallbackBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Remaining", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

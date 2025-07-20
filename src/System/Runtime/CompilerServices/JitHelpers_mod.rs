@@ -46,7 +46,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::JitHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 T,
@@ -54,11 +54,12 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
             >("UnsafeCast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnsafeCast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::JitHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "UnsafeCast", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (o)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnsafeEnumCast<T>(val: T) -> quest_hook::libil2cpp::Result<i32>
@@ -66,15 +67,16 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::JitHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(T), i32, 1usize>("UnsafeEnumCast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnsafeEnumCast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::JitHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "UnsafeEnumCast", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (val)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnsafeEnumCastLong<T>(val: T) -> quest_hook::libil2cpp::Result<i64>
@@ -82,15 +84,16 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::JitHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(T), i64, 1usize>("UnsafeEnumCastLong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnsafeEnumCastLong", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::JitHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "UnsafeEnumCastLong", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (val)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
 }

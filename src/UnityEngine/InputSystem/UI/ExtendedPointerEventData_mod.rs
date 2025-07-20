@@ -54,7 +54,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     pub fn GetPenPointerId(
         pen: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pen>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pen>),
                 i32,
@@ -62,11 +62,12 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("GetPenPointerId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPenPointerId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPenPointerId", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (pen)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (pen))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTouchPointerId(
@@ -74,7 +75,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             crate::UnityEngine::InputSystem::Controls::TouchControl,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::InputSystem::Controls::TouchControl,
@@ -84,27 +85,30 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("GetTouchPointerId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTouchPointerId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTouchPointerId", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (touchControl)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (touchControl))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakePointerIdForTouch(
         deviceId: i32,
         touchId: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32), i32, 2usize>("MakePointerIdForTouch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakePointerIdForTouch", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "MakePointerIdForTouch",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (deviceId, touchId))
+            method.invoke_unchecked((), (deviceId, touchId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,16 +126,17 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     pub fn ReadDeviceState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ReadDeviceState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadDeviceState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadDeviceState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +145,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -148,25 +153,28 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TouchIdFromPointerId(pointerId: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("TouchIdFromPointerId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TouchIdFromPointerId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "TouchIdFromPointerId",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (pointerId)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (pointerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -175,7 +183,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             crate::UnityEngine::EventSystems::EventSystem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::EventSystem,
@@ -185,12 +193,13 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventSystem))
+            method.invoke_unchecked(self, (eventSystem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +208,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -207,13 +216,14 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("get_control")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_control", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_control", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_device(
@@ -221,7 +231,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
@@ -229,13 +239,14 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("get_device")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_device", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_device", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputDevice,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerType(
@@ -243,7 +254,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::UI::UIPointerType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::UI::UIPointerType,
@@ -251,31 +262,33 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("get_pointerType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pointerType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pointerType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::UI::UIPointerType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_touchId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_touchId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_touchId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_touchId", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_trackedDeviceOrientation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Quaternion,
@@ -283,19 +296,21 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("get_trackedDeviceOrientation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_trackedDeviceOrientation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_trackedDeviceOrientation", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_trackedDevicePosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Vector3,
@@ -303,32 +318,36 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("get_trackedDevicePosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_trackedDevicePosition", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_trackedDevicePosition",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_uiToolkitPointerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_uiToolkitPointerId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_uiToolkitPointerId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_uiToolkitPointerId",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_control(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::InputSystem::InputControl,
@@ -338,12 +357,13 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("set_control")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_control", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_control", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +371,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::InputSystem::InputDevice,
@@ -361,12 +381,13 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("set_device")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_device", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_device", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -374,7 +395,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         &mut self,
         value: crate::UnityEngine::InputSystem::UI::UIPointerType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::UI::UIPointerType),
                 quest_hook::libil2cpp::Void,
@@ -382,12 +403,13 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("set_pointerType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_pointerType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_pointerType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,16 +417,17 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_touchId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_touchId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_touchId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -412,7 +435,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         &mut self,
         value: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Quaternion),
                 quest_hook::libil2cpp::Void,
@@ -420,12 +443,14 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("set_trackedDeviceOrientation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_trackedDeviceOrientation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_trackedDeviceOrientation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -433,7 +458,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -441,12 +466,14 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("set_trackedDevicePosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_trackedDevicePosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_trackedDevicePosition",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +481,7 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -462,12 +489,14 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
             >("set_uiToolkitPointerId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_uiToolkitPointerId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::UI::ExtendedPointerEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_uiToolkitPointerId",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

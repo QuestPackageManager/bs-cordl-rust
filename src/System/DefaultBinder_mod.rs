@@ -55,7 +55,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Reflection::BindingFlags,
@@ -74,15 +74,16 @@ impl crate::System::DefaultBinder {
             >("BindToField")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BindToField", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "BindToField", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::FieldInfo,
         > = unsafe {
             method
-                .invoke_unchecked(self, (bindingAttr, _cordl_match, value, cultureInfo))
+                .invoke_unchecked(self, (bindingAttr, _cordl_match, value, cultureInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +121,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Reflection::BindingFlags,
@@ -162,8 +163,9 @@ impl crate::System::DefaultBinder {
             >("BindToMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BindToMethod", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "BindToMethod", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -181,7 +183,7 @@ impl crate::System::DefaultBinder {
                         names,
                         state,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +191,7 @@ impl crate::System::DefaultBinder {
         source: quest_hook::libil2cpp::Gc<crate::System::Type>,
         target: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -200,18 +202,21 @@ impl crate::System::DefaultBinder {
             >("CanChangePrimitive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanChangePrimitive", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "CanChangePrimitive", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, target)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (source, target))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CanConvertPrimitive(
         source: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
         target: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
@@ -222,18 +227,21 @@ impl crate::System::DefaultBinder {
             >("CanConvertPrimitive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanConvertPrimitive", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "CanConvertPrimitive", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, target)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (source, target))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CanConvertPrimitiveObjectToType(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -244,12 +252,13 @@ impl crate::System::DefaultBinder {
             >("CanConvertPrimitiveObjectToType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanConvertPrimitiveObjectToType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "CanConvertPrimitiveObjectToType", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (source, _cordl_type))
+            method.invoke_unchecked((), (source, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +266,7 @@ impl crate::System::DefaultBinder {
         source: quest_hook::libil2cpp::Gc<crate::System::Type>,
         target: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -268,11 +277,14 @@ impl crate::System::DefaultBinder {
             >("CanPrimitiveWiden")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanPrimitiveWiden", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "CanPrimitiveWiden", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, target)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (source, target))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ChangeType(
@@ -283,7 +295,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -295,20 +307,21 @@ impl crate::System::DefaultBinder {
             >("ChangeType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ChangeType", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "ChangeType", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (value, _cordl_type, cultureInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (value, _cordl_type, cultureInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareMethodSig(
         m1: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
         m2: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
@@ -319,18 +332,19 @@ impl crate::System::DefaultBinder {
             >("CompareMethodSig")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareMethodSig", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "CompareMethodSig", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (m1, m2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (m1, m2))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareMethodSigAndName(
         m1: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
         m2: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
@@ -341,11 +355,12 @@ impl crate::System::DefaultBinder {
             >("CompareMethodSigAndName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareMethodSigAndName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "CompareMethodSigAndName", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (m1, m2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (m1, m2))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateParamOrder(
@@ -361,7 +376,7 @@ impl crate::System::DefaultBinder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -385,12 +400,13 @@ impl crate::System::DefaultBinder {
             >("CreateParamOrder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateParamOrder", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateParamOrder", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (paramOrder, pars, names))
+            method.invoke_unchecked((), (paramOrder, pars, names))?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,7 +429,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -439,13 +455,14 @@ impl crate::System::DefaultBinder {
             >("ExactBinding")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExactBinding", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "ExactBinding", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (_cordl_match, types, modifiers)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_match, types, modifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExactPropertyBinding(
@@ -468,7 +485,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -495,14 +512,15 @@ impl crate::System::DefaultBinder {
             >("ExactPropertyBinding")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExactPropertyBinding", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "ExactPropertyBinding", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::PropertyInfo,
         > = unsafe {
-            method.invoke_unchecked((), (_cordl_match, returnType, types, modifiers))
+            method.invoke_unchecked((), (_cordl_match, returnType, types, modifiers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -516,7 +534,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -533,13 +551,14 @@ impl crate::System::DefaultBinder {
             >("FindMostDerivedNewSlotMeth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindMostDerivedNewSlotMeth", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "FindMostDerivedNewSlotMeth", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (_cordl_match, cMatches)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_match, cMatches))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindMostSpecific(
@@ -568,7 +587,7 @@ impl crate::System::DefaultBinder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -607,8 +626,9 @@ impl crate::System::DefaultBinder {
             >("FindMostSpecific")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindMostSpecific", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "FindMostSpecific", 8usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -625,7 +645,7 @@ impl crate::System::DefaultBinder {
                         types,
                         args,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -633,7 +653,7 @@ impl crate::System::DefaultBinder {
         cur1: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
         cur2: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
@@ -644,11 +664,12 @@ impl crate::System::DefaultBinder {
             >("FindMostSpecificField")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindMostSpecificField", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "FindMostSpecificField", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cur1, cur2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cur1, cur2))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindMostSpecificMethod(
@@ -669,7 +690,7 @@ impl crate::System::DefaultBinder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
@@ -696,8 +717,9 @@ impl crate::System::DefaultBinder {
             >("FindMostSpecificMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindMostSpecificMethod", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "FindMostSpecificMethod", 8usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -714,7 +736,7 @@ impl crate::System::DefaultBinder {
                         types,
                         args,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -722,7 +744,7 @@ impl crate::System::DefaultBinder {
         cur1: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         cur2: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
@@ -733,11 +755,12 @@ impl crate::System::DefaultBinder {
             >("FindMostSpecificProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindMostSpecificProperty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "FindMostSpecificProperty", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cur1, cur2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cur1, cur2))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindMostSpecificType(
@@ -745,7 +768,7 @@ impl crate::System::DefaultBinder {
         c2: quest_hook::libil2cpp::Gc<crate::System::Type>,
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -757,17 +780,18 @@ impl crate::System::DefaultBinder {
             >("FindMostSpecificType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindMostSpecificType", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "FindMostSpecificType", 3usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (c1, c2, t)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (c1, c2, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHierarchyDepth(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 i32,
@@ -775,11 +799,12 @@ impl crate::System::DefaultBinder {
             >("GetHierarchyDepth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHierarchyDepth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "GetHierarchyDepth", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (t)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -800,7 +825,7 @@ impl crate::System::DefaultBinder {
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -819,12 +844,13 @@ impl crate::System::DefaultBinder {
             >("ReorderArgumentArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReorderArgumentArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "ReorderArgumentArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (args, state))
+            method.invoke_unchecked(self, (args, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -836,7 +862,7 @@ impl crate::System::DefaultBinder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -853,12 +879,13 @@ impl crate::System::DefaultBinder {
             >("ReorderParams")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReorderParams", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "ReorderParams", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (paramOrder, vars))
+            method.invoke_unchecked((), (paramOrder, vars))?
         };
         Ok(__cordl_ret.into())
     }
@@ -883,7 +910,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Reflection::BindingFlags,
@@ -910,14 +937,15 @@ impl crate::System::DefaultBinder {
             >("SelectMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectMethod", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "SelectMethod", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
         > = unsafe {
-            method.invoke_unchecked(self, (bindingAttr, _cordl_match, types, modifiers))
+            method.invoke_unchecked(self, (bindingAttr, _cordl_match, types, modifiers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -943,7 +971,7 @@ impl crate::System::DefaultBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Reflection::BindingFlags,
@@ -971,8 +999,9 @@ impl crate::System::DefaultBinder {
             >("SelectProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectProperty", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), "SelectProperty", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -982,23 +1011,24 @@ impl crate::System::DefaultBinder {
                 .invoke_unchecked(
                     self,
                     (bindingAttr, _cordl_match, returnType, indexes, modifiers),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1072,7 +1102,7 @@ impl crate::System::DefaultBinder_BinderState {
         originalSize: i32,
         isParamArray: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DefaultBinder_BinderState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -1084,12 +1114,13 @@ impl crate::System::DefaultBinder_BinderState {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DefaultBinder_BinderState as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (argsMap, originalSize, isParamArray))
+            method.invoke_unchecked(self, (argsMap, originalSize, isParamArray))?
         };
         Ok(__cordl_ret.into())
     }

@@ -104,7 +104,7 @@ impl crate::LufsMetering::SplitAudioJob {
         numChannels: i32,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::SplitAudioJob> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::SplitAudioJob as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Collections::NativeArray_1<f32>,
@@ -117,8 +117,9 @@ impl crate::LufsMetering::SplitAudioJob {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::SplitAudioJob as quest_hook::libil2cpp::Type >
+                    ::class(), "Create", 4usize
                 )
             });
         let __cordl_ret: crate::LufsMetering::SplitAudioJob = unsafe {
@@ -126,7 +127,7 @@ impl crate::LufsMetering::SplitAudioJob {
                 .invoke_unchecked(
                     (),
                     (interleavedData, channelData, numChannels, channel),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,16 +135,17 @@ impl crate::LufsMetering::SplitAudioJob {
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::SplitAudioJob as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Execute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::SplitAudioJob as quest_hook::libil2cpp::Type >
+                    ::class(), "Execute", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (i))
+            method.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }

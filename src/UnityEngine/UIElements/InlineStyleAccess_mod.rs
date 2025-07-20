@@ -71,7 +71,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -84,12 +84,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("ApplyFromComputedStyle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyFromComputedStyle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyFromComputedStyle",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id, newStyle))
+            method.invoke_unchecked(self, (id, newStyle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -99,7 +101,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::ComputedStyle,
@@ -109,12 +111,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("ApplyInlineStyles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyInlineStyles", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyInlineStyles", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (computedStyle))
+            method.invoke_unchecked(self, (computedStyle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,7 +125,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         translate: crate::UnityEngine::UIElements::StyleTranslate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleTranslate),
                 quest_hook::libil2cpp::Void,
@@ -130,12 +133,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("ApplyStyleTranslate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyStyleTranslate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyStyleTranslate",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (translate))
+            method.invoke_unchecked(self, (translate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +148,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleSheets::StyleValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleSheets::StyleValue),
                 quest_hook::libil2cpp::Void,
@@ -151,28 +156,30 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("ApplyStyleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyStyleValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyStyleValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Finalize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "Finalize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +187,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
                 bool,
@@ -188,11 +195,12 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("IsValueSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValueSet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValueSet", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (id)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -208,7 +216,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
                 bool,
@@ -216,11 +224,12 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("RemoveInlineStyle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveInlineStyle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveInlineStyle", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (id)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetInlineRule(
@@ -228,7 +237,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         rule: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -241,12 +250,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetInlineRule")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetInlineRule", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetInlineRule", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sheet, rule))
+            method.invoke_unchecked(self, (sheet, rule))?
         };
         Ok(__cordl_ret.into())
     }
@@ -254,7 +264,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         inlineValue: crate::UnityEngine::UIElements::StyleTranslate,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleTranslate),
                 bool,
@@ -262,11 +272,12 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetInlineTranslate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetInlineTranslate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetInlineTranslate", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (inlineValue)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (inlineValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetStyleValue_StyleColor2(
@@ -274,7 +285,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         inlineValue: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -285,12 +296,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetStyleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetStyleValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetStyleValue", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (id, inlineValue))
+            method.invoke_unchecked(self, (id, inlineValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -303,7 +315,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -314,12 +326,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetStyleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetStyleValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetStyleValue", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (id, inlineValue))
+            method.invoke_unchecked(self, (id, inlineValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -328,7 +341,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         inlineValue: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -339,12 +352,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetStyleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetStyleValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetStyleValue", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (id, inlineValue))
+            method.invoke_unchecked(self, (id, inlineValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -353,7 +367,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         inlineValue: crate::UnityEngine::UIElements::StyleFont,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -364,12 +378,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetStyleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetStyleValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetStyleValue", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (id, inlineValue))
+            method.invoke_unchecked(self, (id, inlineValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -378,7 +393,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         inlineValue: crate::UnityEngine::UIElements::StyleFontDefinition,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -389,12 +404,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetStyleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetStyleValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetStyleValue", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (id, inlineValue))
+            method.invoke_unchecked(self, (id, inlineValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -403,7 +419,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         inlineValue: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -414,12 +430,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("SetStyleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetStyleValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "SetStyleValue", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (id, inlineValue))
+            method.invoke_unchecked(self, (id, inlineValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -429,7 +446,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::StyleBackgroundSize,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::StyleBackgroundSize,
@@ -439,11 +456,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("TryGetInlineBackgroundSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInlineBackgroundSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetInlineBackgroundSize", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInlineCursor(
@@ -452,7 +471,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::StyleCursor,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::StyleCursor,
@@ -462,11 +481,12 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("TryGetInlineCursor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInlineCursor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetInlineCursor", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInlineRotate(
@@ -475,7 +495,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::StyleRotate,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::StyleRotate,
@@ -485,11 +505,12 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("TryGetInlineRotate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInlineRotate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetInlineRotate", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInlineScale(
@@ -498,7 +519,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::StyleScale,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::StyleScale,
@@ -508,11 +529,12 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("TryGetInlineScale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInlineScale", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetInlineScale", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInlineTextShadow(
@@ -521,7 +543,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::StyleTextShadow,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::StyleTextShadow,
@@ -531,11 +553,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("TryGetInlineTextShadow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInlineTextShadow", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetInlineTextShadow",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInlineTransformOrigin(
@@ -544,7 +568,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::StyleTransformOrigin,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::StyleTransformOrigin,
@@ -554,11 +578,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("TryGetInlineTransformOrigin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInlineTransformOrigin", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetInlineTransformOrigin", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetInlineTranslate(
@@ -567,7 +593,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::StyleTranslate,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::StyleTranslate,
@@ -577,11 +603,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("TryGetInlineTranslate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetInlineTranslate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetInlineTranslate",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_backgroundSize(
@@ -589,7 +617,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleBackgroundSize,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleBackgroundSize,
@@ -597,19 +625,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_backgroundSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_backgroundSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_backgroundSize", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleBackgroundSize = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_cursor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleCursor> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleCursor,
@@ -617,12 +647,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_cursor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_cursor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_cursor", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleCursor = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -633,7 +665,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::DisplayStyle,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleEnum_1<
@@ -643,19 +675,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_display")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_display", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_display", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleEnum_1<
             crate::UnityEngine::UIElements::DisplayStyle,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_paddingTop(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleLength> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleLength,
@@ -663,19 +697,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_paddingTop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_paddingTop", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_paddingTop", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_rotate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleRotate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleRotate,
@@ -683,19 +719,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_rotate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_rotate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_rotate", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleRotate = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_scale(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleScale> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleScale,
@@ -703,19 +741,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_scale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_scale", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_scale", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleScale = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_textShadow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleTextShadow> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleTextShadow,
@@ -723,12 +763,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_textShadow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_textShadow", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_textShadow", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleTextShadow = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -737,7 +779,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleTransformOrigin,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleTransformOrigin,
@@ -745,19 +787,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_transformOrigin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_transformOrigin", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_transformOrigin", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleTransformOrigin = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_translate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleTranslate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleTranslate,
@@ -765,19 +809,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_translate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_translate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_translate", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleTranslate = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IStyle_get_width(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleLength> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::StyleLength,
@@ -785,12 +831,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.get_width")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.get_width", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.get_width", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -798,7 +846,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleColor),
                 quest_hook::libil2cpp::Void,
@@ -806,12 +854,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_backgroundColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_backgroundColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_backgroundColor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -819,7 +869,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleColor),
                 quest_hook::libil2cpp::Void,
@@ -827,12 +877,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderBottomColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderBottomColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderBottomColor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -840,7 +892,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -848,13 +900,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderBottomLeftRadius")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderBottomLeftRadius",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderBottomLeftRadius", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -862,7 +915,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -870,13 +923,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderBottomRightRadius")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderBottomRightRadius",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderBottomRightRadius", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -884,7 +938,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFloat),
                 quest_hook::libil2cpp::Void,
@@ -892,12 +946,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderBottomWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderBottomWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderBottomWidth", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -905,7 +961,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleColor),
                 quest_hook::libil2cpp::Void,
@@ -913,12 +969,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderLeftColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderLeftColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderLeftColor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -926,7 +984,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFloat),
                 quest_hook::libil2cpp::Void,
@@ -934,12 +992,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderLeftWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderLeftWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderLeftWidth", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -947,7 +1007,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleColor),
                 quest_hook::libil2cpp::Void,
@@ -955,12 +1015,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderRightColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderRightColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderRightColor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -968,7 +1030,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFloat),
                 quest_hook::libil2cpp::Void,
@@ -976,12 +1038,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderRightWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderRightWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderRightWidth", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -989,7 +1053,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleColor),
                 quest_hook::libil2cpp::Void,
@@ -997,12 +1061,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderTopColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderTopColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderTopColor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1010,7 +1076,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1018,12 +1084,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderTopLeftRadius")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderTopLeftRadius", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderTopLeftRadius", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1031,7 +1099,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1039,13 +1107,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderTopRightRadius")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderTopRightRadius",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderTopRightRadius", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1053,7 +1122,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFloat),
                 quest_hook::libil2cpp::Void,
@@ -1061,12 +1130,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_borderTopWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_borderTopWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_borderTopWidth", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1074,7 +1145,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1082,12 +1153,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_bottom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_bottom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_bottom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1095,7 +1168,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleColor),
                 quest_hook::libil2cpp::Void,
@@ -1103,12 +1176,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_color")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_color", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_color", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1118,7 +1193,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::DisplayStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleEnum_1<
                     crate::UnityEngine::UIElements::DisplayStyle,
@@ -1128,12 +1203,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_display")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_display", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_display", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1141,7 +1218,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1149,12 +1226,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_flexBasis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_flexBasis", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_flexBasis", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1164,7 +1243,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::FlexDirection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleEnum_1<
                     crate::UnityEngine::UIElements::FlexDirection,
@@ -1174,12 +1253,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_flexDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_flexDirection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_flexDirection", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1187,7 +1268,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFloat),
                 quest_hook::libil2cpp::Void,
@@ -1195,12 +1276,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_flexGrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_flexGrow", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_flexGrow", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1208,7 +1291,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFloat),
                 quest_hook::libil2cpp::Void,
@@ -1216,12 +1299,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_flexShrink")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_flexShrink", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_flexShrink", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1229,7 +1314,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1237,12 +1322,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_fontSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_fontSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_fontSize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1250,7 +1337,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1258,12 +1345,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_height")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_height", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_height", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1271,7 +1360,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1279,12 +1368,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_left")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_left", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_left", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1292,7 +1383,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1300,12 +1391,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_marginBottom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_marginBottom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_marginBottom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1313,7 +1406,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1321,12 +1414,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_marginLeft")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_marginLeft", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_marginLeft", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1334,7 +1429,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1342,12 +1437,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_marginRight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_marginRight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_marginRight", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1355,7 +1452,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1363,12 +1460,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_marginTop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_marginTop", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_marginTop", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1376,7 +1475,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1384,12 +1483,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_maxHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_maxHeight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_maxHeight", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1397,7 +1498,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1405,12 +1506,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_maxWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_maxWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_maxWidth", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1418,7 +1521,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1426,12 +1529,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_minWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_minWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_minWidth", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1439,7 +1544,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFloat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFloat),
                 quest_hook::libil2cpp::Void,
@@ -1447,12 +1552,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_opacity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_opacity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_opacity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1462,7 +1569,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::Overflow,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleEnum_1<
                     crate::UnityEngine::UIElements::Overflow,
@@ -1472,12 +1579,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_overflow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_overflow", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_overflow", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1485,7 +1594,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1493,12 +1602,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_paddingBottom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_paddingBottom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_paddingBottom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1506,7 +1617,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1514,12 +1625,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_paddingLeft")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_paddingLeft", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_paddingLeft", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1527,7 +1640,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1535,12 +1648,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_paddingRight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_paddingRight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_paddingRight", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1548,7 +1663,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1556,12 +1671,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_paddingTop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_paddingTop", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_paddingTop", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1571,7 +1688,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::Position,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleEnum_1<
                     crate::UnityEngine::UIElements::Position,
@@ -1581,12 +1698,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_position")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_position", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_position", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1594,7 +1713,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1602,12 +1721,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_right")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_right", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_right", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1615,7 +1736,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1623,12 +1744,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_top")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_top", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_top", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1636,7 +1759,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleTranslate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleTranslate),
                 quest_hook::libil2cpp::Void,
@@ -1644,12 +1767,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_translate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_translate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_translate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1657,7 +1782,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleColor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleColor),
                 quest_hook::libil2cpp::Void,
@@ -1665,14 +1790,15 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_unityBackgroundImageTintColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "UnityEngine.UIElements.IStyle.set_unityBackgroundImageTintColor",
                     1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1680,7 +1806,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFont,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFont),
                 quest_hook::libil2cpp::Void,
@@ -1688,12 +1814,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_unityFont")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_unityFont", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_unityFont", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1701,7 +1829,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleFontDefinition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleFontDefinition),
                 quest_hook::libil2cpp::Void,
@@ -1709,12 +1837,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_unityFontDefinition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_unityFontDefinition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_unityFontDefinition", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1724,7 +1854,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             crate::UnityEngine::UIElements::Visibility,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleEnum_1<
                     crate::UnityEngine::UIElements::Visibility,
@@ -1734,12 +1864,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_visibility")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_visibility", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_visibility", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1747,7 +1879,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         value: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 quest_hook::libil2cpp::Void,
@@ -1755,12 +1887,14 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("UnityEngine.UIElements.IStyle.set_width")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IStyle.set_width", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IStyle.set_width", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1768,7 +1902,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -1778,12 +1912,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ve))
+            method.invoke_unchecked(self, (ve))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1792,7 +1927,7 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -1800,20 +1935,21 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("get_ve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ve", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ve", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ve(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::InlineStyleAccess as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -1823,12 +1959,13 @@ impl crate::UnityEngine::UIElements::InlineStyleAccess {
             >("set_ve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ve", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::InlineStyleAccess as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ve", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

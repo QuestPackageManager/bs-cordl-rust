@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::SettingsManager {
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         platform: crate::GlobalNamespace::HardwareCategory,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -56,19 +56,21 @@ impl crate::GlobalNamespace::SettingsManager {
             >("AdjustPlatformSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AdjustPlatformSettings", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AdjustPlatformSettings",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (settings, platform))
+            method.invoke_unchecked((), (settings, platform))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInstanceWithCurrentPlatformPreset() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
@@ -76,19 +78,21 @@ impl crate::GlobalNamespace::SettingsManager {
             >("CreateInstanceWithCurrentPlatformPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateInstanceWithCurrentPlatformPreset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateInstanceWithCurrentPlatformPreset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SettingsManager,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateUninitialized() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
@@ -96,19 +100,21 @@ impl crate::GlobalNamespace::SettingsManager {
             >("CreateUninitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateUninitialized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateUninitialized",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SettingsManager,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentPlatformPreset() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
@@ -116,13 +122,15 @@ impl crate::GlobalNamespace::SettingsManager {
             >("GetCurrentPlatformPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentPlatformPreset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurrentPlatformPreset",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::BeatSaber::Settings::Settings,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlatformPreset(
@@ -130,7 +138,7 @@ impl crate::GlobalNamespace::SettingsManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::HardwareCategory),
                 quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
@@ -138,13 +146,14 @@ impl crate::GlobalNamespace::SettingsManager {
             >("GetPlatformPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlatformPreset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlatformPreset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::BeatSaber::Settings::Settings,
-        > = unsafe { method.invoke_unchecked((), (platform)) };
+        > = unsafe { method.invoke_unchecked((), (platform))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -157,16 +166,17 @@ impl crate::GlobalNamespace::SettingsManager {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -44,7 +44,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         pnAdapterIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         pnAdapterOutputIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRExtendedDisplay as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<i32>,
@@ -55,12 +55,13 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
             >("GetDXGIOutputInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDXGIOutputInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRExtendedDisplay as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDXGIOutputInfo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pnAdapterIndex, pnAdapterOutputIndex))
+            method.invoke_unchecked(self, (pnAdapterIndex, pnAdapterOutputIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +73,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
         pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRExtendedDisplay as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::OVR::OpenVR::EVREye,
@@ -86,12 +87,14 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
             >("GetEyeOutputViewport")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEyeOutputViewport", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRExtendedDisplay as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEyeOutputViewport",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eEye, pnX, pnY, pnWidth, pnHeight))
+            method.invoke_unchecked(self, (eEye, pnX, pnY, pnWidth, pnHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +105,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         pnWidth: quest_hook::libil2cpp::ByRefMut<u32>,
         pnHeight: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRExtendedDisplay as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<i32>,
@@ -115,12 +118,13 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
             >("GetWindowBounds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWindowBounds", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRExtendedDisplay as
+                    quest_hook::libil2cpp::Type > ::class(), "GetWindowBounds", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pnX, pnY, pnWidth, pnHeight))
+            method.invoke_unchecked(self, (pnX, pnY, pnWidth, pnHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +141,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRExtendedDisplay as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -145,12 +149,13 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRExtendedDisplay as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

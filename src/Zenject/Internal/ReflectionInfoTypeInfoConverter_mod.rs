@@ -47,7 +47,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectConstructorInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -62,13 +62,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("ConvertConstructor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertConstructor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertConstructor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::InjectTypeInfo_InjectConstructorInfo,
-        > = unsafe { method.invoke_unchecked((), (injectConstructor, _cordl_type)) };
+        > = unsafe { method.invoke_unchecked((), (injectConstructor, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertField(
@@ -79,7 +80,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMemberInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -94,13 +95,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("ConvertField")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertField", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertField", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::InjectTypeInfo_InjectMemberInfo,
-        > = unsafe { method.invoke_unchecked((), (parentType, injectField)) };
+        > = unsafe { method.invoke_unchecked((), (parentType, injectField))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertMethod(
@@ -110,7 +112,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMethodInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
@@ -122,13 +124,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("ConvertMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertMethod", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::InjectTypeInfo_InjectMethodInfo,
-        > = unsafe { method.invoke_unchecked((), (injectMethod)) };
+        > = unsafe { method.invoke_unchecked((), (injectMethod))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertProperty(
@@ -139,7 +142,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMemberInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -154,13 +157,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("ConvertProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertProperty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertProperty", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::InjectTypeInfo_InjectMemberInfo,
-        > = unsafe { method.invoke_unchecked((), (parentType, injectProperty)) };
+        > = unsafe { method.invoke_unchecked((), (parentType, injectProperty))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllFields(
@@ -173,7 +177,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -188,15 +192,16 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("GetAllFields")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllFields", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAllFields", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (t, flags)) };
+        > = unsafe { method.invoke_unchecked((), (t, flags))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOnlyPropertySetter(
@@ -205,7 +210,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenMemberSetterMethod>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -216,13 +221,15 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("GetOnlyPropertySetter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOnlyPropertySetter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOnlyPropertySetter",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ZenMemberSetterMethod,
-        > = unsafe { method.invoke_unchecked((), (parentType, propertyName)) };
+        > = unsafe { method.invoke_unchecked((), (parentType, propertyName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSetter(
@@ -231,7 +238,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenMemberSetterMethod>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -242,13 +249,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("GetSetter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSetter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSetter", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ZenMemberSetterMethod,
-        > = unsafe { method.invoke_unchecked((), (parentType, memInfo)) };
+        > = unsafe { method.invoke_unchecked((), (parentType, memInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryCreateActionForMethod(
@@ -256,7 +264,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenInjectMethod>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>),
                 quest_hook::libil2cpp::Gc<crate::Zenject::ZenInjectMethod>,
@@ -264,12 +272,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("TryCreateActionForMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryCreateActionForMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "TryCreateActionForMethod",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ZenInjectMethod> = unsafe {
-            method.invoke_unchecked((), (methodInfo))
+            method.invoke_unchecked((), (methodInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +291,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -294,12 +304,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("TryCreateFactoryMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryCreateFactoryMethod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "TryCreateFactoryMethod",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod> = unsafe {
-            method.invoke_unchecked((), (_cordl_type, reflectionInfo))
+            method.invoke_unchecked((), (_cordl_type, reflectionInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -311,7 +323,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -322,12 +334,14 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("TryCreateFactoryMethodCompiledLambdaExpression")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryCreateFactoryMethodCompiledLambdaExpression", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryCreateFactoryMethodCompiledLambdaExpression", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod> = unsafe {
-            method.invoke_unchecked((), (_cordl_type, constructor))
+            method.invoke_unchecked((), (_cordl_type, constructor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -337,7 +351,7 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenMemberSetterMethod>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionInfoTypeInfoConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -348,13 +362,15 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
             >("TryGetSetterAsCompiledExpression")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetSetterAsCompiledExpression", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionInfoTypeInfoConverter as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetSetterAsCompiledExpression", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ZenMemberSetterMethod,
-        > = unsafe { method.invoke_unchecked((), (parentType, memInfo)) };
+        > = unsafe { method.invoke_unchecked((), (parentType, memInfo))? };
         Ok(__cordl_ret.into())
     }
 }

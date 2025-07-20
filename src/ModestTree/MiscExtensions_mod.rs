@@ -46,7 +46,7 @@ impl crate::ModestTree::MiscExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -61,12 +61,13 @@ impl crate::ModestTree::MiscExtensions {
             >("AllocFreeAddRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocFreeAddRange", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "AllocFreeAddRange", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, items))
+            method.invoke_unchecked((), (list, items))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +81,7 @@ impl crate::ModestTree::MiscExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -97,13 +98,14 @@ impl crate::ModestTree::MiscExtensions {
             >("Fmt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Fmt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "Fmt", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s, args)) };
+        > = unsafe { method.invoke_unchecked((), (s, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueAndRemove<TKey, TVal>(
@@ -118,7 +120,7 @@ impl crate::ModestTree::MiscExtensions {
         TVal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -131,12 +133,13 @@ impl crate::ModestTree::MiscExtensions {
             >("GetValueAndRemove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValueAndRemove", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "GetValueAndRemove", 2usize
                 )
             });
         let __cordl_ret: TVal = unsafe {
-            method.invoke_unchecked((), (dictionary, key))
+            method.invoke_unchecked((), (dictionary, key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +151,7 @@ impl crate::ModestTree::MiscExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -161,11 +164,12 @@ impl crate::ModestTree::MiscExtensions {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOf", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, item)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, item))? };
         Ok(__cordl_ret.into())
     }
     pub fn Join(
@@ -178,7 +182,7 @@ impl crate::ModestTree::MiscExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -195,13 +199,14 @@ impl crate::ModestTree::MiscExtensions {
             >("Join")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Join", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "Join", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (values, separator)) };
+        > = unsafe { method.invoke_unchecked((), (values, separator))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveWithConfirm_HashSet_1_T3<T>(
@@ -214,7 +219,7 @@ impl crate::ModestTree::MiscExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -227,12 +232,13 @@ impl crate::ModestTree::MiscExtensions {
             >("RemoveWithConfirm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveWithConfirm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoveWithConfirm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (set, item))
+            method.invoke_unchecked((), (set, item))?
         };
         Ok(__cordl_ret.into())
     }
@@ -248,7 +254,7 @@ impl crate::ModestTree::MiscExtensions {
         TVal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -261,12 +267,13 @@ impl crate::ModestTree::MiscExtensions {
             >("RemoveWithConfirm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveWithConfirm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoveWithConfirm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (dictionary, key))
+            method.invoke_unchecked((), (dictionary, key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -278,7 +285,7 @@ impl crate::ModestTree::MiscExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -291,12 +298,13 @@ impl crate::ModestTree::MiscExtensions {
             >("RemoveWithConfirm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveWithConfirm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoveWithConfirm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, item))
+            method.invoke_unchecked((), (list, item))?
         };
         Ok(__cordl_ret.into())
     }
@@ -310,7 +318,7 @@ impl crate::ModestTree::MiscExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -323,12 +331,13 @@ impl crate::ModestTree::MiscExtensions {
             >("RemoveWithConfirm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveWithConfirm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::MiscExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoveWithConfirm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, item))
+            method.invoke_unchecked((), (list, item))?
         };
         Ok(__cordl_ret.into())
     }

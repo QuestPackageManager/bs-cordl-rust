@@ -49,7 +49,7 @@ impl crate::ENet::InterceptCallback {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::InterceptCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::ENet::Event>,
@@ -64,8 +64,9 @@ impl crate::ENet::InterceptCallback {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::InterceptCallback as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginInvoke", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -73,7 +74,7 @@ impl crate::ENet::InterceptCallback {
                 .invoke_unchecked(
                     self,
                     (event, address, receivedData, receivedDataLength, callback, object),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,7 +84,7 @@ impl crate::ENet::InterceptCallback {
         address: quest_hook::libil2cpp::ByRefMut<crate::ENet::Address>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::InterceptCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::ENet::Event>,
@@ -95,12 +96,13 @@ impl crate::ENet::InterceptCallback {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::InterceptCallback as quest_hook::libil2cpp::Type >
+                    ::class(), "EndInvoke", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (event, address, result))
+            method.invoke_unchecked(self, (event, address, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -111,7 +113,7 @@ impl crate::ENet::InterceptCallback {
         receivedData: crate::System::IntPtr,
         receivedDataLength: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::InterceptCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::ENet::Event>,
@@ -124,8 +126,9 @@ impl crate::ENet::InterceptCallback {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::InterceptCallback as quest_hook::libil2cpp::Type >
+                    ::class(), "Invoke", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -133,7 +136,7 @@ impl crate::ENet::InterceptCallback {
                 .invoke_unchecked(
                     self,
                     (event, address, receivedData, receivedDataLength),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,7 +155,7 @@ impl crate::ENet::InterceptCallback {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::InterceptCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -163,12 +166,13 @@ impl crate::ENet::InterceptCallback {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::InterceptCallback as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

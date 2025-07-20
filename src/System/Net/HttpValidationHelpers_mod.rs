@@ -41,7 +41,7 @@ impl crate::System::Net::HttpValidationHelpers {
     pub fn IsInvalidMethodOrHeaderString(
         stringValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpValidationHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -49,11 +49,13 @@ impl crate::System::Net::HttpValidationHelpers {
             >("IsInvalidMethodOrHeaderString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsInvalidMethodOrHeaderString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpValidationHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsInvalidMethodOrHeaderString", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (stringValue)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (stringValue))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -149,7 +149,14 @@ impl<
         TSubFactory: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
@@ -157,13 +164,15 @@ impl<
             >("FromFactory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromFactory", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "FromFactory", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FromMethod(
@@ -196,7 +205,14 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Func_7<
@@ -214,13 +230,15 @@ impl<
             >("FromMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "FromMethod", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked(self, (method)) };
+        > = unsafe { method.invoke_unchecked(self, (method))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromSubContainerResolve_0(
@@ -251,7 +269,14 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -268,8 +293,10 @@ impl<
             >("FromSubContainerResolve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromSubContainerResolve", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "FromSubContainerResolve", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -281,7 +308,7 @@ impl<
                 TParam5,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FromSubContainerResolve_Il2CppObject1(
@@ -313,7 +340,14 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<
@@ -330,8 +364,10 @@ impl<
             >("FromSubContainerResolve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromSubContainerResolve", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "FromSubContainerResolve", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -343,7 +379,7 @@ impl<
                 TParam5,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, (subIdentifier)) };
+        > = unsafe { method.invoke_unchecked(self, (subIdentifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -391,7 +427,14 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -403,12 +446,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container, bindInfo, factoryBindInfo))
+            method.invoke_unchecked(self, (container, bindInfo, factoryBindInfo))?
         };
         Ok(__cordl_ret.into())
     }

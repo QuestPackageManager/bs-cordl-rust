@@ -44,7 +44,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
     pub fn BeginSample(
         markerPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -52,12 +52,13 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("BeginSample")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginSample", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginSample", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (markerPtr))
+            method.invoke_unchecked((), (markerPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +67,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
         nameLen: i32,
         colorIndex: crate::Unity::Profiling::ProfilerCategoryColor,
     ) -> quest_hook::libil2cpp::Result<u16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -78,12 +79,14 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("CreateCategory__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCategory__Unmanaged", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateCategory__Unmanaged",
+                    3usize
                 )
             });
         let __cordl_ret: u16 = unsafe {
-            method.invoke_unchecked((), (name, nameLen, colorIndex))
+            method.invoke_unchecked((), (name, nameLen, colorIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +103,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
@@ -118,8 +121,10 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("CreateCounterValue__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCounterValue__Unmanaged", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateCounterValue__Unmanaged", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -139,7 +144,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
                         dataSize,
                         counterOptions,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,7 +154,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
         flags: crate::Unity::Profiling::LowLevel::MarkerFlags,
         metadataCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -162,12 +167,13 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("CreateMarker")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMarker", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMarker", 4usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (name, categoryId, flags, metadataCount))
+            method.invoke_unchecked((), (name, categoryId, flags, metadataCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -178,7 +184,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
         flags: crate::Unity::Profiling::LowLevel::MarkerFlags,
         metadataCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -192,20 +198,22 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("CreateMarker__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMarker__Unmanaged", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMarker__Unmanaged",
+                    5usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             method
-                .invoke_unchecked((), (name, nameLen, categoryId, flags, metadataCount))
+                .invoke_unchecked((), (name, nameLen, categoryId, flags, metadataCount))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndSample(
         markerPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -213,12 +221,13 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("EndSample")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndSample", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "EndSample", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (markerPtr))
+            method.invoke_unchecked((), (markerPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +236,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u16),
                 crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription,
@@ -235,12 +244,14 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("GetCategoryDescription")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCategoryDescription", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCategoryDescription",
+                    1usize
                 )
             });
         let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription = unsafe {
-            method.invoke_unchecked((), (categoryId))
+            method.invoke_unchecked((), (categoryId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +261,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u16,
@@ -263,12 +274,14 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("GetCategoryDescription_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCategoryDescription_Injected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCategoryDescription_Injected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (categoryId, ret))
+            method.invoke_unchecked((), (categoryId, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -280,7 +293,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
         _cordl_type: u8,
         unit: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -295,8 +308,10 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("SetMarkerMetadata__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMarkerMetadata__Unmanaged", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetMarkerMetadata__Unmanaged", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -304,7 +319,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
                 .invoke_unchecked(
                     (),
                     (markerPtr, index, name, nameLen, _cordl_type, unit),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,7 +329,7 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -322,13 +337,14 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
             >("Utf8ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Utf8ToString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "Utf8ToString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (chars, charsLen)) };
+        > = unsafe { method.invoke_unchecked((), (chars, charsLen))? };
         Ok(__cordl_ret.into())
     }
 }

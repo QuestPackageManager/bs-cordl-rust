@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataStrobeFilterTransform as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -67,8 +67,10 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
             >("CreateTransformedData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTransformedData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataStrobeFilterTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateTransformedData",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -78,14 +80,14 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
                 .invoke_unchecked(
                     (),
                     (beatmapData, environmentIntensityReductionOptions),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetFlashAndFadeToBlackEventDataValue(
         lightColorType: crate::GlobalNamespace::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataStrobeFilterTransform as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::EnvironmentColorType),
                 i32,
@@ -93,17 +95,19 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
             >("GetFlashAndFadeToBlackEventDataValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFlashAndFadeToBlackEventDataValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataStrobeFilterTransform as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetFlashAndFadeToBlackEventDataValue", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (lightColorType)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (lightColorType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOnEventDataValue(
         lightColorType: crate::GlobalNamespace::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataStrobeFilterTransform as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::EnvironmentColorType),
                 i32,
@@ -111,11 +115,13 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
             >("GetOnEventDataValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOnEventDataValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataStrobeFilterTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOnEventDataValue",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (lightColorType)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (lightColorType))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -188,7 +194,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::BasicBeatmapEventData,
@@ -198,12 +204,14 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
             >("AddStrobeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddStrobeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData
+                    as quest_hook::libil2cpp::Type > ::class(), "AddStrobeData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (basicBeatmapEventData))
+            method.invoke_unchecked(self, (basicBeatmapEventData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +228,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::BasicBeatmapEventData,
@@ -230,28 +238,33 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
             >("StartPotentialStrobe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartPotentialStrobe", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData
+                    as quest_hook::libil2cpp::Type > ::class(), "StartPotentialStrobe",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (startBasicBeatmapEventData))
+            method.invoke_unchecked(self, (startBasicBeatmapEventData))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -49,7 +49,7 @@ impl crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LambdaExpression>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -59,13 +59,15 @@ impl crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression 
             >("GetConversion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConversion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression
+                    as quest_hook::libil2cpp::Type > ::class(), "GetConversion", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::LambdaExpression,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -98,7 +100,7 @@ impl crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression 
             crate::System::Linq::Expressions::LambdaExpression,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Linq::Expressions::ExpressionType,
@@ -119,8 +121,10 @@ impl crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression 
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -128,7 +132,7 @@ impl crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression 
                 .invoke_unchecked(
                     self,
                     (nodeType, left, right, _cordl_type, method, conversion),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

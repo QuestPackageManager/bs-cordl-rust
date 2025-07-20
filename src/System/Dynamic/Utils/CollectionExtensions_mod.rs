@@ -53,7 +53,7 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -68,13 +68,14 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
             >("AddFirst")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddFirst", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::CollectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AddFirst", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::TrueReadOnlyCollection_1<T>,
-        > = unsafe { method.invoke_unchecked((), (list, item)) };
+        > = unsafe { method.invoke_unchecked((), (list, item))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddLast<T>(
@@ -87,7 +88,7 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>, T),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -95,13 +96,14 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
             >("AddLast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddLast", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::CollectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AddLast", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { method.invoke_unchecked((), (array, item)) };
+        > = unsafe { method.invoke_unchecked((), (array, item))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveFirst<T>(
@@ -113,7 +115,7 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -121,13 +123,14 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
             >("RemoveFirst")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveFirst", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::CollectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveFirst", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { method.invoke_unchecked((), (array)) };
+        > = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveLast<T>(
@@ -139,7 +142,7 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -147,13 +150,14 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
             >("RemoveLast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveLast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::CollectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveLast", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { method.invoke_unchecked((), (array)) };
+        > = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToReadOnly<T>(
@@ -169,7 +173,7 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::Utils::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<T>,
@@ -181,13 +185,14 @@ impl crate::System::Dynamic::Utils::CollectionExtensions {
             >("ToReadOnly")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToReadOnly", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::Utils::CollectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToReadOnly", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = unsafe { method.invoke_unchecked((), (enumerable)) };
+        > = unsafe { method.invoke_unchecked((), (enumerable))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -45,7 +45,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -57,13 +57,14 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("AllTriangles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllTriangles", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "AllTriangles", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked((), (edges)) };
+        > = unsafe { method.invoke_unchecked((), (edges))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains_Edge0(
@@ -72,7 +73,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
         >,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -87,11 +88,12 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (edges, edge)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (edges, edge))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains_i32_i32_1(
@@ -101,7 +103,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
         x: i32,
         y: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -117,18 +119,19 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (edges, x, y)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (edges, x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeWithSharedVertexHandles(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -141,12 +144,14 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("GetEdgeWithSharedVertexHandles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEdgeWithSharedVertexHandles", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetEdgeWithSharedVertexHandles", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = unsafe {
-            method.invoke_unchecked((), (mesh, edge))
+            method.invoke_unchecked((), (mesh, edge))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +161,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -169,20 +174,21 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("GetFace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (mesh, edge)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, edge))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSharedVertexHandleEdge(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -195,12 +201,14 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("GetSharedVertexHandleEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSharedVertexHandleEdge", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSharedVertexHandleEdge",
+                    2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = unsafe {
-            method.invoke_unchecked((), (mesh, edge))
+            method.invoke_unchecked((), (mesh, edge))?
         };
         Ok(__cordl_ret.into())
     }
@@ -218,7 +226,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -239,15 +247,17 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("GetSharedVertexHandleEdges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSharedVertexHandleEdges", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSharedVertexHandleEdges", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, edges)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, edges))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
@@ -259,7 +269,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
         >,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -277,12 +287,13 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IndexOf", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (mesh, edges, edge))
+            method.invoke_unchecked((), (mesh, edges, edge))?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +307,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::EdgeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -317,12 +328,13 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
             >("ValidateEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateEdge", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::EdgeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateEdge", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (mesh, edge, validEdge))
+            method.invoke_unchecked((), (mesh, edge, validEdge))?
         };
         Ok(__cordl_ret.into())
     }

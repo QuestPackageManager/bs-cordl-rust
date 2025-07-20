@@ -119,7 +119,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
     pub fn AllocClipRect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -127,19 +127,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AllocClipRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocClipRect", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "AllocClipRect", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AllocColor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -147,19 +148,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AllocColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocColor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "AllocColor", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AllocOpacity(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -167,12 +169,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AllocOpacity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocOpacity", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "AllocOpacity", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +183,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         settings: crate::UnityEngine::UIElements::UIR::TextCoreSettings,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::TextCoreSettings),
                 crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -188,19 +191,21 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AllocTextCoreSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocTextCoreSettings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "AllocTextCoreSettings",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
-            method.invoke_unchecked(self, (settings))
+            method.invoke_unchecked(self, (settings))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AllocToConstantBufferIndex(
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 i32,
@@ -208,11 +213,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AllocToConstantBufferIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocToConstantBufferIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AllocToConstantBufferIndex", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (alloc)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (alloc))? };
         Ok(__cordl_ret.into())
     }
     pub fn AllocToTexelCoord(
@@ -221,7 +228,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         >,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -234,19 +241,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AllocToTexelCoord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocToTexelCoord", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "AllocToTexelCoord", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2Int = unsafe {
-            method.invoke_unchecked((), (allocator, alloc))
+            method.invoke_unchecked((), (allocator, alloc))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AllocTransform(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -254,12 +262,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AllocTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocTransform", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "AllocTransform", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +279,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         defAlloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
         atlasRect: crate::UnityEngine::RectInt,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -284,12 +293,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("AtlasRectMatchesPage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AtlasRectMatchesPage", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "AtlasRectMatchesPage",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (allocator, defAlloc, atlasRect))
+            method.invoke_unchecked((), (allocator, defAlloc, atlasRect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -297,7 +308,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 crate::UnityEngine::Color32,
@@ -305,12 +316,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("ClipRectAllocToVertexData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClipRectAllocToVertexData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "ClipRectAllocToVertexData",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +331,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 crate::UnityEngine::Color32,
@@ -326,44 +339,48 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("ColorAllocToVertexData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ColorAllocToVertexData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "ColorAllocToVertexData",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Construct(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Construct")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Construct", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "Construct", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -371,7 +388,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 quest_hook::libil2cpp::Void,
@@ -379,12 +396,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("FreeClipRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeClipRect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "FreeClipRect", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -392,7 +410,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 quest_hook::libil2cpp::Void,
@@ -400,12 +418,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("FreeColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "FreeColor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,7 +432,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 quest_hook::libil2cpp::Void,
@@ -421,12 +440,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("FreeOpacity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeOpacity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "FreeOpacity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -434,7 +454,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 quest_hook::libil2cpp::Void,
@@ -442,12 +462,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("FreeTextCoreSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeTextCoreSettings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "FreeTextCoreSettings",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -455,7 +477,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 quest_hook::libil2cpp::Void,
@@ -463,19 +485,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("FreeTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeTransform", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "FreeTransform", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IssuePendingStorageChanges(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -483,12 +506,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("IssuePendingStorageChanges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IssuePendingStorageChanges", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IssuePendingStorageChanges", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -496,7 +521,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 crate::UnityEngine::Color32,
@@ -504,19 +529,21 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("OpacityAllocToVertexData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpacityAllocToVertexData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "OpacityAllocToVertexData",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ReallyCreateStorage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -524,12 +551,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("ReallyCreateStorage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReallyCreateStorage", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "ReallyCreateStorage",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -538,7 +567,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
         clipRect: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -549,12 +578,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("SetClipRectValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetClipRectValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetClipRectValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc, clipRect))
+            method.invoke_unchecked(self, (alloc, clipRect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -564,7 +594,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         color: crate::UnityEngine::Color,
         isEditorContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -576,12 +606,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("SetColorValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColorValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColorValue", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc, color, isEditorContext))
+            method.invoke_unchecked(self, (alloc, color, isEditorContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -590,7 +621,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
         opacity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc, f32),
                 quest_hook::libil2cpp::Void,
@@ -598,12 +629,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("SetOpacityValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetOpacityValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetOpacityValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc, opacity))
+            method.invoke_unchecked(self, (alloc, opacity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -613,7 +645,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         settings: crate::UnityEngine::UIElements::UIR::TextCoreSettings,
         isEditorContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -625,12 +657,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("SetTextCoreSettingValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTextCoreSettingValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTextCoreSettingValue",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc, settings, isEditorContext))
+            method.invoke_unchecked(self, (alloc, settings, isEditorContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -639,7 +673,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
         xform: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -650,12 +684,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("SetTransformValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTransformValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTransformValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc, xform))
+            method.invoke_unchecked(self, (alloc, xform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -663,7 +698,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 crate::UnityEngine::Color32,
@@ -671,12 +706,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("TextCoreSettingsToVertexData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TextCoreSettingsToVertexData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TextCoreSettingsToVertexData", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -684,7 +721,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 crate::UnityEngine::Color32,
@@ -692,12 +729,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("TransformAllocToVertexData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransformAllocToVertexData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TransformAllocToVertexData", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -706,7 +745,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -714,12 +753,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("get_atlas")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_atlas", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_atlas", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -728,7 +768,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
@@ -736,37 +776,41 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("get_clipRectConstants")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_clipRectConstants", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_clipRectConstants",
+                    0usize
                 )
             });
         let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
             crate::UnityEngine::Vector4,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pageHeight() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_pageHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pageHeight", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pageHeight", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pageWidth() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_pageWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pageWidth", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pageWidth", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_transformConstants(
@@ -776,7 +820,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             crate::UnityEngine::UIElements::UIR::Transform3x4,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Unity::Collections::NativeSlice_1<
@@ -786,13 +830,15 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             >("get_transformConstants")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_transformConstants", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_transformConstants",
+                    0usize
                 )
             });
         let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
             crate::UnityEngine::UIElements::UIR::Transform3x4,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

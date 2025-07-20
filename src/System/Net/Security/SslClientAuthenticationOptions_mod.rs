@@ -66,16 +66,17 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +87,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -96,13 +97,15 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("get_ClientCertificates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ClientCertificates", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ClientCertificates",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnabledSslProtocols(
@@ -110,7 +113,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Authentication::SslProtocols,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Security::Authentication::SslProtocols,
@@ -118,12 +121,14 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("get_EnabledSslProtocols")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnabledSslProtocols", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_EnabledSslProtocols",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::Security::Authentication::SslProtocols = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,7 +139,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             crate::System::Net::Security::LocalCertificateSelectionCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -144,13 +149,15 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("get_LocalCertificateSelectionCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LocalCertificateSelectionCallback", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_LocalCertificateSelectionCallback", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Security::LocalCertificateSelectionCallback,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RemoteCertificateValidationCallback(
@@ -160,7 +167,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             crate::System::Net::Security::RemoteCertificateValidationCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -170,13 +177,15 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("get_RemoteCertificateValidationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RemoteCertificateValidationCallback", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_RemoteCertificateValidationCallback", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Security::RemoteCertificateValidationCallback,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TargetHost(
@@ -184,7 +193,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -192,20 +201,21 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("get_TargetHost")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TargetHost", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_TargetHost", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_CertificateRevocationCheckMode(
         &mut self,
         value: crate::System::Security::Cryptography::X509Certificates::X509RevocationMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Security::Cryptography::X509Certificates::X509RevocationMode),
                 quest_hook::libil2cpp::Void,
@@ -213,12 +223,14 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("set_CertificateRevocationCheckMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_CertificateRevocationCheckMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_CertificateRevocationCheckMode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +240,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
@@ -238,12 +250,14 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("set_ClientCertificates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ClientCertificates", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ClientCertificates",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,7 +265,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
         &mut self,
         value: crate::System::Security::Authentication::SslProtocols,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Security::Authentication::SslProtocols),
                 quest_hook::libil2cpp::Void,
@@ -259,12 +273,14 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("set_EnabledSslProtocols")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnabledSslProtocols", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_EnabledSslProtocols",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,7 +288,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
         &mut self,
         value: crate::System::Net::Security::EncryptionPolicy,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Security::EncryptionPolicy),
                 quest_hook::libil2cpp::Void,
@@ -280,12 +296,14 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("set_EncryptionPolicy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EncryptionPolicy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_EncryptionPolicy",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -295,7 +313,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             crate::System::Net::Security::LocalCertificateSelectionCallback,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Security::LocalCertificateSelectionCallback,
@@ -305,12 +323,14 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("set_LocalCertificateSelectionCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_LocalCertificateSelectionCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_LocalCertificateSelectionCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +338,7 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Security::SslClientAuthenticationOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -326,12 +346,13 @@ impl crate::System::Net::Security::SslClientAuthenticationOptions {
             >("set_TargetHost")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_TargetHost", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Security::SslClientAuthenticationOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_TargetHost", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

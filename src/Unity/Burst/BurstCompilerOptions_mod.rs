@@ -156,7 +156,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         option: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -167,25 +167,28 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("AddOption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddOption", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "AddOption", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, option))
+            method.invoke_unchecked((), (builder, option))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckIsSecondaryUnityProcess() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("CheckIsSecondaryUnityProcess")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckIsSecondaryUnityProcess", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CheckIsSecondaryUnityProcess", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Clone(
@@ -193,7 +196,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompilerOptions>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompilerOptions>,
@@ -201,13 +204,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Burst::BurstCompilerOptions,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserialiseCompilationOptionsSafe(
@@ -227,7 +231,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::System::ValueTuple_3<
@@ -251,8 +255,10 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("DeserialiseCompilationOptionsSafe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeserialiseCompilationOptionsSafe", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DeserialiseCompilationOptionsSafe", 1usize
                 )
             });
         let __cordl_ret: crate::System::ValueTuple_3<
@@ -267,7 +273,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
                 >,
             >,
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        > = unsafe { method.invoke_unchecked((), (from)) };
+        > = unsafe { method.invoke_unchecked((), (from))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBurstCompileAttribute(
@@ -275,7 +281,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
@@ -283,13 +289,15 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("GetBurstCompileAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBurstCompileAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBurstCompileAttribute",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Burst::BurstCompileAttribute,
-        > = unsafe { method.invoke_unchecked((), (memberInfo)) };
+        > = unsafe { method.invoke_unchecked((), (memberInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOption(
@@ -298,7 +306,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -309,13 +317,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("GetOption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOption", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOption", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (optionName, value)) };
+        > = unsafe { method.invoke_unchecked((), (optionName, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOptions(
@@ -326,7 +335,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -340,8 +349,9 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("GetOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOptions", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOptions", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -351,14 +361,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
                 .invoke_unchecked(
                     self,
                     (attr, isForILPostProcessing, isForCompilerClient),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasBurstCompileAttribute(
         member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 bool,
@@ -366,17 +376,19 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("HasBurstCompileAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasBurstCompileAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "HasBurstCompileAttribute",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (member)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (member))? };
         Ok(__cordl_ret.into())
     }
     pub fn MaybeTriggerRecompilation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -384,12 +396,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("MaybeTriggerRecompilation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MaybeTriggerRecompilation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "MaybeTriggerRecompilation",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -401,7 +415,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -420,12 +434,13 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("MergeAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MergeAttributes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "MergeAttributes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (memberAttribute, assemblyAttribute))
+            method.invoke_unchecked((), (memberAttribute, assemblyAttribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -448,16 +463,17 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     pub fn OnOptionsChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnOptionsChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnOptionsChanged", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "OnOptionsChanged", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -476,7 +492,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -500,13 +516,15 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("SerialiseCompilationOptionsSafe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerialiseCompilationOptionsSafe", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SerialiseCompilationOptionsSafe", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (roots, folders, options)) };
+        > = unsafe { method.invoke_unchecked((), (roots, folders, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetAttribute_Assembly1(
@@ -515,7 +533,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
@@ -530,12 +548,13 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("TryGetAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetAttribute", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetAttribute", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (assembly, attribute))
+            method.invoke_unchecked((), (assembly, attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -545,7 +564,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
@@ -560,12 +579,13 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("TryGetAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetAttribute", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetAttribute", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (member, attribute))
+            method.invoke_unchecked((), (member, attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -578,7 +598,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         isForILPostProcessing: bool,
         isForCompilerClient: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
@@ -593,8 +613,9 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("TryGetOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetOptions", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetOptions", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -602,23 +623,24 @@ impl crate::Unity::Burst::BurstCompilerOptions {
                 .invoke_unchecked(
                     self,
                     (member, flagsOut, isForILPostProcessing, isForCompilerClient),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -626,143 +648,161 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         isGlobal: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isGlobal))
+            method.invoke_unchecked(self, (isGlobal))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_DisableOptimizations(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_DisableOptimizations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DisableOptimizations", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DisableOptimizations",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnableBurstCompilation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_EnableBurstCompilation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnableBurstCompilation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_EnableBurstCompilation", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnableBurstCompileSynchronously(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_EnableBurstCompileSynchronously")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnableBurstCompileSynchronously", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_EnableBurstCompileSynchronously", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnableBurstDebug(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_EnableBurstDebug")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnableBurstDebug", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_EnableBurstDebug",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnableBurstSafetyChecks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_EnableBurstSafetyChecks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnableBurstSafetyChecks", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_EnableBurstSafetyChecks", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnableBurstTimings(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_EnableBurstTimings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnableBurstTimings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_EnableBurstTimings",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnableFastMath(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_EnableFastMath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnableFastMath", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_EnableFastMath", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ForceEnableBurstSafetyChecks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_ForceEnableBurstSafetyChecks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ForceEnableBurstSafetyChecks", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ForceEnableBurstSafetyChecks", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsEnabled", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsEnabled", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsGlobal(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsGlobal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsGlobal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsGlobal", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_OptionsChanged(
@@ -770,7 +810,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Action>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -778,34 +818,37 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("get_OptionsChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_OptionsChanged", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "get_OptionsChanged", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_RequiresSynchronousCompilation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_RequiresSynchronousCompilation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RequiresSynchronousCompilation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_RequiresSynchronousCompilation", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_DisableOptimizations(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -813,12 +856,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_DisableOptimizations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_DisableOptimizations", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_DisableOptimizations",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -826,7 +871,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -834,12 +879,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_EnableBurstCompilation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnableBurstCompilation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_EnableBurstCompilation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -847,7 +894,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -855,12 +902,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_EnableBurstCompileSynchronously")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnableBurstCompileSynchronously", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_EnableBurstCompileSynchronously", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -868,7 +917,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -876,12 +925,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_EnableBurstDebug")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnableBurstDebug", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_EnableBurstDebug",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -889,7 +940,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -897,12 +948,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_EnableBurstSafetyChecks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnableBurstSafetyChecks", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_EnableBurstSafetyChecks", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -910,7 +963,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -918,12 +971,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_EnableBurstTimings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnableBurstTimings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_EnableBurstTimings",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -931,7 +986,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -939,12 +994,13 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_EnableFastMath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_EnableFastMath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_EnableFastMath", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -952,7 +1008,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -960,12 +1016,14 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_ForceEnableBurstSafetyChecks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ForceEnableBurstSafetyChecks", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_ForceEnableBurstSafetyChecks", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -973,7 +1031,7 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::BurstCompilerOptions as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -981,12 +1039,13 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             >("set_OptionsChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_OptionsChanged", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::BurstCompilerOptions as
+                    quest_hook::libil2cpp::Type > ::class(), "set_OptionsChanged", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -63,12 +63,13 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ObstacleSpawnInfoNetSerializable as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +92,7 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
             crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -114,8 +115,9 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 12usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ObstacleSpawnInfoNetSerializable as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 12usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -138,7 +140,7 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
                         obstacleHeight,
                         rotation,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +156,7 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
             crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -164,20 +166,21 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
             >("Obtain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Obtain", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ObstacleSpawnInfoNetSerializable as
+                    quest_hook::libil2cpp::Type > ::class(), "Obtain", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -185,28 +188,30 @@ impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ObstacleSpawnInfoNetSerializable as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ObstacleSpawnInfoNetSerializable as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

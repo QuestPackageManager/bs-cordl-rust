@@ -52,7 +52,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Guid,
@@ -69,12 +69,14 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             >("Register")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Register", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection
+                    as quest_hook::libil2cpp::Type > ::class(), "Register", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (messageId, callback))
+            method.invoke_unchecked(self, (messageId, callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +86,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             crate::UnityEngine::Events::UnityAction_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Events::UnityAction_1<i32>,
@@ -94,12 +96,15 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             >("RegisterConnection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterConnection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection
+                    as quest_hook::libil2cpp::Type > ::class(), "RegisterConnection",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (callback))
+            method.invoke_unchecked(self, (callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +114,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             crate::UnityEngine::Events::UnityAction_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Events::UnityAction_1<i32>,
@@ -119,12 +124,15 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             >("RegisterDisconnection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterDisconnection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection
+                    as quest_hook::libil2cpp::Type > ::class(), "RegisterDisconnection",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (callback))
+            method.invoke_unchecked(self, (callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +141,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
         messageId: crate::System::Guid,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Guid,
@@ -144,12 +152,14 @@ impl crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
             >("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection
+                    as quest_hook::libil2cpp::Type > ::class(), "Send", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (messageId, data))
+            method.invoke_unchecked(self, (messageId, data))?
         };
         Ok(__cordl_ret.into())
     }

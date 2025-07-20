@@ -49,7 +49,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -63,8 +63,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("Delete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Delete", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "Delete", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -73,7 +74,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDeleteResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteById(
@@ -87,7 +88,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -101,8 +102,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("DeleteById")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteById", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "DeleteById", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -111,7 +113,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDeleteResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteByName(
@@ -125,7 +127,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -139,8 +141,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("DeleteByName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteByName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "DeleteByName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -149,7 +152,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDeleteResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
     pub fn Download(
@@ -163,7 +166,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -177,8 +180,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("Download")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Download", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "Download", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -187,7 +191,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadById(
@@ -201,7 +205,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -215,8 +219,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("DownloadById")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DownloadById", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "DownloadById", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -225,7 +230,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadByName(
@@ -239,7 +244,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -253,8 +258,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("DownloadByName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DownloadByName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "DownloadByName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -263,7 +269,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadCancel(
@@ -277,7 +283,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -291,8 +297,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("DownloadCancel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DownloadCancel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "DownloadCancel", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -301,7 +308,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadCancelById(
@@ -315,7 +322,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -329,8 +336,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("DownloadCancelById")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DownloadCancelById", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "DownloadCancelById", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -339,7 +347,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadCancelByName(
@@ -353,7 +361,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -367,8 +375,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("DownloadCancelByName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DownloadCancelByName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "DownloadCancelByName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -377,7 +386,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetList() -> quest_hook::libil2cpp::Result<
@@ -389,7 +398,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -403,8 +412,9 @@ impl crate::Oculus::Platform::AssetFile {
             >("GetList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetList", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "GetList", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -413,7 +423,7 @@ impl crate::Oculus::Platform::AssetFile {
                     crate::Oculus::Platform::Models::AssetDetailsList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDownloadUpdateNotificationCallback(
@@ -425,7 +435,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Message_1_Callback<
@@ -439,12 +449,13 @@ impl crate::Oculus::Platform::AssetFile {
             >("SetDownloadUpdateNotificationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDownloadUpdateNotificationCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "SetDownloadUpdateNotificationCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))
+            method.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -457,7 +468,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -471,15 +482,16 @@ impl crate::Oculus::Platform::AssetFile {
             >("Status")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Status", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "Status", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn StatusById(
@@ -491,7 +503,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -505,15 +517,16 @@ impl crate::Oculus::Platform::AssetFile {
             >("StatusById")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StatusById", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "StatusById", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileID)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
     pub fn StatusByName(
@@ -525,7 +538,7 @@ impl crate::Oculus::Platform::AssetFile {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -539,15 +552,16 @@ impl crate::Oculus::Platform::AssetFile {
             >("StatusByName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StatusByName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::AssetFile as quest_hook::libil2cpp::Type >
+                    ::class(), "StatusByName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = unsafe { method.invoke_unchecked((), (assetFileName)) };
+        > = unsafe { method.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -45,7 +45,7 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
         reference: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::IReferenceResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -57,12 +57,13 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
             >("AddReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddReference", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::IReferenceResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "AddReference", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (context, reference, value))
+            method.invoke_unchecked(self, (context, reference, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -73,7 +74,7 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::IReferenceResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -84,13 +85,14 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
             >("GetReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetReference", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::IReferenceResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "GetReference", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (context, value)) };
+        > = unsafe { method.invoke_unchecked(self, (context, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsReferenced(
@@ -98,7 +100,7 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::IReferenceResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -109,12 +111,13 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
             >("IsReferenced")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsReferenced", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::IReferenceResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "IsReferenced", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (context, value))
+            method.invoke_unchecked(self, (context, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,7 +128,7 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::IReferenceResolver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -136,13 +139,14 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
             >("ResolveReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResolveReference", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::IReferenceResolver as
+                    quest_hook::libil2cpp::Type > ::class(), "ResolveReference", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (context, reference)) };
+        > = unsafe { method.invoke_unchecked(self, (context, reference))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

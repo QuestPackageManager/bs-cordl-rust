@@ -41,7 +41,7 @@ impl crate::System::Net::Http::HttpUtilities {
     pub fn IsSecureWebSocketScheme(
         scheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::HttpUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -49,17 +49,19 @@ impl crate::System::Net::Http::HttpUtilities {
             >("IsSecureWebSocketScheme")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSecureWebSocketScheme", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::HttpUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSecureWebSocketScheme",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (scheme)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (scheme))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSupportedSecureScheme(
         scheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::HttpUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -67,11 +69,13 @@ impl crate::System::Net::Http::HttpUtilities {
             >("IsSupportedSecureScheme")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSupportedSecureScheme", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::HttpUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSupportedSecureScheme",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (scheme)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (scheme))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -108,7 +108,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         &mut self,
         acceleration: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 bool,
@@ -116,18 +116,21 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGetAcceleration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetAcceleration", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetAcceleration", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (acceleration)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (acceleration))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetAngularAcceleration(
         &mut self,
         angularAcceleration: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 bool,
@@ -135,12 +138,13 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGetAngularAcceleration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetAngularAcceleration", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetAngularAcceleration", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (angularAcceleration))
+            method.invoke_unchecked(self, (angularAcceleration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +152,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         &mut self,
         angularVelocity: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 bool,
@@ -156,12 +160,13 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGetAngularVelocity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetAngularVelocity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetAngularVelocity", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (angularVelocity))
+            method.invoke_unchecked(self, (angularVelocity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +174,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         &mut self,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 bool,
@@ -177,18 +182,19 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGetPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetPosition", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (position)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (position))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetRotation(
         &mut self,
         rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>),
                 bool,
@@ -196,18 +202,19 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGetRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetRotation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetRotation", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rotation)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rotation))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetVelocity(
         &mut self,
         velocity: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 bool,
@@ -215,11 +222,12 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGetVelocity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetVelocity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGetVelocity", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (velocity)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (velocity))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGet_Quaternion1(
@@ -228,7 +236,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         availabilityFlag: crate::UnityEngine::XR::AvailableTrackingData,
         outValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Quaternion,
@@ -240,12 +248,13 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGet", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGet", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (inValue, availabilityFlag, outValue))
+            method.invoke_unchecked(self, (inValue, availabilityFlag, outValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +264,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         availabilityFlag: crate::UnityEngine::XR::AvailableTrackingData,
         outValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -267,28 +276,30 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("TryGet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGet", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "TryGet", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (inValue, availabilityFlag, outValue))
+            method.invoke_unchecked(self, (inValue, availabilityFlag, outValue))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_nodeType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::XRNode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::XR::XRNode, 0usize>("get_nodeType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_nodeType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "get_nodeType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::XR::XRNode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +307,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         &mut self,
         value: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::XR::XRNode),
                 quest_hook::libil2cpp::Void,
@@ -304,12 +315,13 @@ impl crate::UnityEngine::XR::XRNodeState {
             >("set_nodeType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_nodeType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "set_nodeType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -317,16 +329,17 @@ impl crate::UnityEngine::XR::XRNodeState {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_tracked")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_tracked", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "set_tracked", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,16 +347,17 @@ impl crate::UnityEngine::XR::XRNodeState {
         &mut self,
         value: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>("set_uniqueID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_uniqueID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRNodeState as quest_hook::libil2cpp::Type >
+                    ::class(), "set_uniqueID", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

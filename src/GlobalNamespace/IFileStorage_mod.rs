@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::IFileStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -56,13 +56,14 @@ impl crate::GlobalNamespace::IFileStorage {
             >("DeleteFileAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteFileAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type
+                    > ::class(), "DeleteFileAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, (fileName, storageLocation)) };
+        > = unsafe { method.invoke_unchecked(self, (fileName, storageLocation))? };
         Ok(__cordl_ret.into())
     }
     pub fn FileExistsAsync(
@@ -72,7 +73,7 @@ impl crate::GlobalNamespace::IFileStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -83,13 +84,14 @@ impl crate::GlobalNamespace::IFileStorage {
             >("FileExistsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FileExistsAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type
+                    > ::class(), "FileExistsAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { method.invoke_unchecked(self, (fileName, storageLocation)) };
+        > = unsafe { method.invoke_unchecked(self, (fileName, storageLocation))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFileAsync(
@@ -103,7 +105,7 @@ impl crate::GlobalNamespace::IFileStorage {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,15 +120,16 @@ impl crate::GlobalNamespace::IFileStorage {
             >("LoadFileAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadFileAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type
+                    > ::class(), "LoadFileAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (fileName, storageLocation)) };
+        > = unsafe { method.invoke_unchecked(self, (fileName, storageLocation))? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveFileAsync(
@@ -137,7 +140,7 @@ impl crate::GlobalNamespace::IFileStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -149,13 +152,16 @@ impl crate::GlobalNamespace::IFileStorage {
             >("SaveFileAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveFileAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IFileStorage as quest_hook::libil2cpp::Type
+                    > ::class(), "SaveFileAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, (fileName, value, storageLocation)) };
+        > = unsafe {
+            method.invoke_unchecked(self, (fileName, value, storageLocation))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

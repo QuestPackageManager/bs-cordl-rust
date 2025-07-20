@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
         stepType: crate::GlobalNamespace::OVRPlugin_Step,
         retQuat: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRNodeStateProperties as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::XR::XRNode,
@@ -60,8 +60,10 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
             >("GetNodeStatePropertyQuaternion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNodeStatePropertyQuaternion", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRNodeStateProperties as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetNodeStatePropertyQuaternion", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -69,7 +71,7 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
                 .invoke_unchecked(
                     (),
                     (nodeType, propertyType, ovrpNodeType, stepType, retQuat),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +82,7 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
         stepType: crate::GlobalNamespace::OVRPlugin_Step,
         retVec: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRNodeStateProperties as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::XR::XRNode,
@@ -94,8 +96,10 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
             >("GetNodeStatePropertyVector3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNodeStatePropertyVector3", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRNodeStateProperties as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetNodeStatePropertyVector3", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -103,7 +107,7 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
                 .invoke_unchecked(
                     (),
                     (nodeType, propertyType, ovrpNodeType, stepType, retVec),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +116,7 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
         propertyType: crate::GlobalNamespace::NodeStatePropertyType,
         retQuat: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRNodeStateProperties as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::XR::XRNode,
@@ -124,12 +128,14 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
             >("GetUnityXRNodeStateQuaternion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUnityXRNodeStateQuaternion", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRNodeStateProperties as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetUnityXRNodeStateQuaternion", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (nodeType, propertyType, retQuat))
+            method.invoke_unchecked((), (nodeType, propertyType, retQuat))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +144,7 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
         propertyType: crate::GlobalNamespace::NodeStatePropertyType,
         retVec: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRNodeStateProperties as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::XR::XRNode,
@@ -150,25 +156,28 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
             >("GetUnityXRNodeStateVector3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUnityXRNodeStateVector3", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRNodeStateProperties as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetUnityXRNodeStateVector3", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (nodeType, propertyType, retVec))
+            method.invoke_unchecked((), (nodeType, propertyType, retVec))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsHmdPresent() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRNodeStateProperties as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("IsHmdPresent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsHmdPresent", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRNodeStateProperties as
+                    quest_hook::libil2cpp::Type > ::class(), "IsHmdPresent", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateProperty(
@@ -177,7 +186,7 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
             crate::UnityEngine::XR::XRNodeState,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRNodeStateProperties as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::XR::XRNode,
@@ -188,12 +197,13 @@ impl crate::GlobalNamespace::OVRNodeStateProperties {
             >("ValidateProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateProperty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRNodeStateProperties as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateProperty", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (nodeType, requestedNodeState))
+            method.invoke_unchecked((), (nodeType, requestedNodeState))?
         };
         Ok(__cordl_ret.into())
     }

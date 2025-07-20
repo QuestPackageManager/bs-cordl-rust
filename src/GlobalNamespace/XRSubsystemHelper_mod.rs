@@ -39,21 +39,23 @@ impl std::ops::DerefMut for crate::GlobalNamespace::XRSubsystemHelper {
 #[cfg(feature = "XRSubsystemHelper")]
 impl crate::GlobalNamespace::XRSubsystemHelper {
     pub fn GetCurrentDisplaySubsystem() -> quest_hook::libil2cpp::Result<Blacklisted> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::XRSubsystemHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), Blacklisted, 0usize>("GetCurrentDisplaySubsystem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentDisplaySubsystem", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::XRSubsystemHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCurrentDisplaySubsystem", 0usize
                 )
             });
-        let __cordl_ret: Blacklisted = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: Blacklisted = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentDisplaySubsystemDescriptor() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRDisplaySubsystemDescriptor>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::XRSubsystemHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -63,19 +65,21 @@ impl crate::GlobalNamespace::XRSubsystemHelper {
             >("GetCurrentDisplaySubsystemDescriptor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentDisplaySubsystemDescriptor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::XRSubsystemHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCurrentDisplaySubsystemDescriptor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::XR::XRDisplaySubsystemDescriptor,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentInputSubsystem() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::XRSubsystemHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
@@ -83,13 +87,15 @@ impl crate::GlobalNamespace::XRSubsystemHelper {
             >("GetCurrentInputSubsystem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentInputSubsystem", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::XRSubsystemHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurrentInputSubsystem",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::XR::XRInputSubsystem,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -44,15 +44,16 @@ impl crate::UnityEngine::UI::ILayoutIgnorer {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_ignoreLayout(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::ILayoutIgnorer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_ignoreLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ignoreLayout", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::ILayoutIgnorer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ignoreLayout", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

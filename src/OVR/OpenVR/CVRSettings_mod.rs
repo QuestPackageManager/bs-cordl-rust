@@ -45,7 +45,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         pchSettingsKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -57,12 +57,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("GetBool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBool", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBool", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))
+            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +73,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         pchSettingsKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -84,12 +85,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("GetFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFloat", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "GetFloat", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))
+            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -99,7 +101,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         pchSettingsKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -111,12 +113,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("GetInt32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInt32", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "GetInt32", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))
+            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +129,7 @@ impl crate::OVR::OpenVR::CVRSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::OVR::OpenVR::EVRSettingsError),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -134,13 +137,14 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("GetSettingsErrorNameFromEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSettingsErrorNameFromEnum", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSettingsErrorNameFromEnum", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (eError)) };
+        > = unsafe { method.invoke_unchecked(self, (eError))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetString(
@@ -151,7 +155,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         unValueLen: u32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -165,8 +169,9 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("GetString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetString", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "GetString", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -174,7 +179,7 @@ impl crate::OVR::OpenVR::CVRSettings {
                 .invoke_unchecked(
                     self,
                     (pchSection, pchSettingsKey, pchValue, unValueLen, peError),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,7 +198,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         pchSettingsKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -205,12 +210,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("RemoveKeyInSection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveKeyInSection", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoveKeyInSection", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))
+            method.invoke_unchecked(self, (pchSection, pchSettingsKey, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +225,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         pchSection: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -230,12 +236,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("RemoveSection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveSection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoveSection", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pchSection, peError))
+            method.invoke_unchecked(self, (pchSection, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,7 +253,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         bValue: bool,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -259,12 +266,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("SetBool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBool", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBool", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pchSection, pchSettingsKey, bValue, peError))
+            method.invoke_unchecked(self, (pchSection, pchSettingsKey, bValue, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +283,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         flValue: f32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -288,12 +296,14 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("SetFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetFloat", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "SetFloat", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pchSection, pchSettingsKey, flValue, peError))
+            method
+                .invoke_unchecked(self, (pchSection, pchSettingsKey, flValue, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +314,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         nValue: i32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -317,12 +327,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("SetInt32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetInt32", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "SetInt32", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pchSection, pchSettingsKey, nValue, peError))
+            method.invoke_unchecked(self, (pchSection, pchSettingsKey, nValue, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -333,7 +344,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         pchValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -346,13 +357,14 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("SetString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetString", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "SetString", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (pchSection, pchSettingsKey, pchValue, peError))
+                .invoke_unchecked(self, (pchSection, pchSettingsKey, pchValue, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -361,7 +373,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         bForce: bool,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -372,12 +384,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >("Sync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "Sync", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (bForce, peError))
+            method.invoke_unchecked(self, (bForce, peError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -385,7 +398,7 @@ impl crate::OVR::OpenVR::CVRSettings {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -393,12 +406,13 @@ impl crate::OVR::OpenVR::CVRSettings {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSettings as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

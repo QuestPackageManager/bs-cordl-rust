@@ -63,7 +63,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         _cordl_type: crate::Newtonsoft::Json::Schema::JsonSchemaType,
         valueRequired: crate::Newtonsoft::Json::Required,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Schema::JsonSchemaType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Newtonsoft::Json::Schema::JsonSchemaType,
@@ -74,12 +74,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("AddNullType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddNullType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddNullType", 2usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::Schema::JsonSchemaType = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, valueRequired))
+            method.invoke_unchecked(self, (_cordl_type, valueRequired))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +91,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -103,12 +104,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("GenerateISerializableContract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateISerializableContract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateISerializableContract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, contract))
+            method.invoke_unchecked(self, (_cordl_type, contract))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +123,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -132,14 +135,15 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("GenerateInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateInternal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateInternal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchema,
         > = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, valueRequired, required))
+            method.invoke_unchecked(self, (_cordl_type, valueRequired, required))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +154,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             crate::Newtonsoft::Json::Serialization::JsonObjectContract,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -163,12 +167,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("GenerateObjectSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateObjectSchema", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateObjectSchema",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, contract))
+            method.invoke_unchecked(self, (_cordl_type, contract))?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,7 +187,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -194,13 +200,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("Generate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Generate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Generate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchema,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type, resolver)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, resolver))? };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_JsonSchemaResolver__cordl_bool3(
@@ -213,7 +220,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -227,14 +234,15 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("Generate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Generate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Generate", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchema,
         > = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, resolver, rootSchemaNullable))
+            method.invoke_unchecked(self, (_cordl_type, resolver, rootSchemaNullable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +252,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
@@ -252,13 +260,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("Generate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Generate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Generate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchema,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn Generate__cordl_bool2(
@@ -268,7 +277,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
@@ -276,13 +285,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("Generate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Generate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Generate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchema,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type, rootSchemaNullable)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, rootSchemaNullable))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescription(
@@ -291,7 +301,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -299,13 +309,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("GetDescription")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDescription", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDescription", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetJsonSchemaType(
@@ -313,7 +324,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         valueRequired: crate::Newtonsoft::Json::Required,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Schema::JsonSchemaType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -324,12 +335,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("GetJsonSchemaType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetJsonSchemaType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetJsonSchemaType", 2usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::Schema::JsonSchemaType = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, valueRequired))
+            method.invoke_unchecked(self, (_cordl_type, valueRequired))?
         };
         Ok(__cordl_ret.into())
     }
@@ -339,7 +351,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -347,13 +359,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("GetTitle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTitle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTitle", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeId(
@@ -363,7 +376,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -371,13 +384,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("GetTypeId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTypeId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTypeId", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type, explicitOnly)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, explicitOnly))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasFlag_DefaultValueHandling_DefaultValueHandling0(
@@ -385,7 +399,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         value: crate::Newtonsoft::Json::DefaultValueHandling,
         flag: crate::Newtonsoft::Json::DefaultValueHandling,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Newtonsoft::Json::DefaultValueHandling,
@@ -396,11 +410,12 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("HasFlag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasFlag", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "HasFlag", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value, flag)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value, flag))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasFlag_Nullable_1_JsonSchemaType1(
@@ -409,7 +424,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         >,
         flag: crate::Newtonsoft::Json::Schema::JsonSchemaType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Nullable_1<
@@ -422,11 +437,12 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("HasFlag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasFlag", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "HasFlag", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value, flag)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value, flag))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -443,7 +459,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -453,13 +469,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("Pop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Pop", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Pop", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Push(
@@ -468,7 +485,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
@@ -478,28 +495,30 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("Push")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Push", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Push", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (typeSchema))
+            method.invoke_unchecked(self, (typeSchema))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -510,7 +529,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             crate::Newtonsoft::Json::Serialization::IContractResolver,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -520,13 +539,15 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("get_ContractResolver")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ContractResolver", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ContractResolver",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::IContractResolver,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CurrentSchema(
@@ -534,7 +555,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
@@ -542,13 +563,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("get_CurrentSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CurrentSchema", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_CurrentSchema", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchema,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UndefinedSchemaIdHandling(
@@ -556,7 +578,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling,
@@ -564,12 +586,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("get_UndefinedSchemaIdHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UndefinedSchemaIdHandling", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_UndefinedSchemaIdHandling", 0usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -579,7 +603,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             crate::Newtonsoft::Json::Serialization::IContractResolver,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Newtonsoft::Json::Serialization::IContractResolver,
@@ -589,12 +613,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("set_ContractResolver")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ContractResolver", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ContractResolver",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -602,7 +628,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         &mut self,
         value: crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Newtonsoft::Json::Schema::UndefinedSchemaIdHandling),
                 quest_hook::libil2cpp::Void,
@@ -610,12 +636,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             >("set_UndefinedSchemaIdHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_UndefinedSchemaIdHandling", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_UndefinedSchemaIdHandling", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -692,7 +720,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -705,12 +733,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, schema))
+            method.invoke_unchecked(self, (_cordl_type, schema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -719,7 +748,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
@@ -727,19 +756,20 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
             >("get_Schema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Schema", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Schema", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchema,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -747,12 +777,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
             >("get_Type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Type", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

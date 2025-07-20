@@ -87,16 +87,17 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     pub fn ClearContent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearContent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearContent", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearContent", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +107,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         addedToHierarchy: bool,
         screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -114,8 +115,9 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("DidActivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DidActivate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "DidActivate", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -123,7 +125,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
                 .invoke_unchecked(
                     self,
                     (firstActivation, addedToHierarchy, screenSystemEnabling),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         removedFromHierarchy: bool,
         screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -140,19 +142,20 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("DidDeactivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DidDeactivate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "DidDeactivate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))
+            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandleDidPressRefreshButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -160,12 +163,14 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("HandleDidPressRefreshButton")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleDidPressRefreshButton", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleDidPressRefreshButton", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,7 +186,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         >,
         playerScoreIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult,
@@ -199,19 +204,21 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("HandleLeaderboardsResultsReturned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleLeaderboardsResultsReturned", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleLeaderboardsResultsReturned", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result, scores, playerScoreIndex))
+            method.invoke_unchecked(self, (result, scores, playerScoreIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandlePlatformLeaderboardsModelAllScoresDidUpload(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -219,12 +226,14 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("HandlePlatformLeaderboardsModelAllScoresDidUpload")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlatformLeaderboardsModelAllScoresDidUpload", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandlePlatformLeaderboardsModelAllScoresDidUpload", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -233,7 +242,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
         cellNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>, i32),
                 quest_hook::libil2cpp::Void,
@@ -241,12 +250,14 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("HandleScopeSegmentedControlDidSelectCell")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleScopeSegmentedControlDidSelectCell", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleScopeSegmentedControlDidSelectCell", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (segmentedControl, cellNumber))
+            method.invoke_unchecked(self, (segmentedControl, cellNumber))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,16 +271,17 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -278,16 +290,17 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         showLoadingIndicator: bool,
         clear: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool, bool), quest_hook::libil2cpp::Void, 2usize>("Refresh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Refresh", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "Refresh", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (showLoadingIndicator, clear))
+            method.invoke_unchecked(self, (showLoadingIndicator, clear))?
         };
         Ok(__cordl_ret.into())
     }
@@ -298,7 +311,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -306,13 +319,14 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("RefreshAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked(self, (showLoadingIndicator, clear)) };
+        > = unsafe { method.invoke_unchecked(self, (showLoadingIndicator, clear))? };
         Ok(__cordl_ret.into())
     }
     pub fn RefreshDelayed(
@@ -322,7 +336,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -330,28 +344,30 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("RefreshDelayed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshDelayed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshDelayed", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = unsafe { method.invoke_unchecked(self, (showLoadingIndicator, clear)) };
+        > = unsafe { method.invoke_unchecked(self, (showLoadingIndicator, clear))? };
         Ok(__cordl_ret.into())
     }
     pub fn RefreshLevelStats(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RefreshLevelStats")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshLevelStats", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshLevelStats", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -361,7 +377,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
@@ -369,12 +385,14 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("ScopeScopeIndexToScoreScope")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScopeScopeIndexToScoreScope", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScopeScopeIndexToScoreScope", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope = unsafe {
-            method.invoke_unchecked(self, (scoreScopeIndex))
+            method.invoke_unchecked(self, (scoreScopeIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -382,7 +400,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
         &mut self,
         scoresScope: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope),
                 i32,
@@ -390,18 +408,20 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("ScoreScopeToScoreScopeIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScoreScopeToScoreScopeIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScoreScopeToScoreScopeIndex", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (scoresScope)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (scoresScope))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetData(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>),
                 quest_hook::libil2cpp::Void,
@@ -409,28 +429,30 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("SetData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "SetData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beatmapKey))
+            method.invoke_unchecked(self, (beatmapKey))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -439,7 +461,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformLeaderboardsModel>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlatformLeaderboardViewController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -449,13 +471,15 @@ impl crate::GlobalNamespace::PlatformLeaderboardViewController {
             >("get_leaderboardsModel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_leaderboardsModel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlatformLeaderboardViewController as
+                    quest_hook::libil2cpp::Type > ::class(), "get_leaderboardsModel",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

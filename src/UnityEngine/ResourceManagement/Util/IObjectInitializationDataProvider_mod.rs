@@ -46,7 +46,7 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
@@ -54,12 +54,15 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
             >("CreateObjectInitializationData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateObjectInitializationData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "CreateObjectInitializationData", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -73,7 +76,7 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -81,13 +84,15 @@ impl crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProv
             >("get_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Name", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Name", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -100,16 +100,17 @@ impl crate::LufsMetering::FilteringJob {
     pub fn Execute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::FilteringJob as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Execute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Execute", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::FilteringJob as quest_hook::libil2cpp::Type >
+                    ::class(), "Execute", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +120,7 @@ impl crate::LufsMetering::FilteringJob {
         outputData: crate::Unity::Collections::NativeArray_1<f32>,
         coefficients: crate::LufsMetering::FilterCoefficients,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::FilteringJob as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Unity::Collections::NativeArray_1<f32>,
@@ -131,12 +132,13 @@ impl crate::LufsMetering::FilteringJob {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::FilteringJob as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (inputData, outputData, coefficients))
+            method.invoke_unchecked(self, (inputData, outputData, coefficients))?
         };
         Ok(__cordl_ret.into())
     }

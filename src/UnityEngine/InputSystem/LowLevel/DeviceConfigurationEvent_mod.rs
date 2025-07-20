@@ -108,7 +108,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, f64),
                 crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent,
@@ -116,12 +116,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent
+                    as quest_hook::libil2cpp::Type > ::class(), "Create", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent = unsafe {
-            method.invoke_unchecked((), (deviceId, _cordl_time))
+            method.invoke_unchecked((), (deviceId, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +131,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -138,12 +139,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent {
             >("ToEventPtr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToEventPtr", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent
+                    as quest_hook::libil2cpp::Type > ::class(), "ToEventPtr", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,7 +154,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -160,12 +162,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent {
             >("get_typeStatic")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_typeStatic", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::DeviceConfigurationEvent
+                    as quest_hook::libil2cpp::Type > ::class(), "get_typeStatic", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -52,16 +52,17 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonMergeSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonMergeSettings as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Linq::MergeArrayHandling,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonMergeSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Newtonsoft::Json::Linq::MergeArrayHandling,
@@ -78,12 +79,14 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
             >("get_MergeArrayHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_MergeArrayHandling", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonMergeSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_MergeArrayHandling",
+                    0usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::Linq::MergeArrayHandling = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +95,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Linq::MergeNullValueHandling,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonMergeSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Newtonsoft::Json::Linq::MergeNullValueHandling,
@@ -100,19 +103,21 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
             >("get_MergeNullValueHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_MergeNullValueHandling", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonMergeSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_MergeNullValueHandling", 0usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::Linq::MergeNullValueHandling = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_PropertyNameComparison(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::StringComparison> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonMergeSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::StringComparison,
@@ -120,12 +125,14 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
             >("get_PropertyNameComparison")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PropertyNameComparison", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonMergeSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_PropertyNameComparison", 0usize
                 )
             });
         let __cordl_ret: crate::System::StringComparison = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +140,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         &mut self,
         value: crate::Newtonsoft::Json::Linq::MergeArrayHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonMergeSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Newtonsoft::Json::Linq::MergeArrayHandling),
                 quest_hook::libil2cpp::Void,
@@ -141,12 +148,14 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
             >("set_MergeArrayHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_MergeArrayHandling", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonMergeSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "set_MergeArrayHandling",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +163,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         &mut self,
         value: crate::Newtonsoft::Json::Linq::MergeNullValueHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonMergeSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Newtonsoft::Json::Linq::MergeNullValueHandling),
                 quest_hook::libil2cpp::Void,
@@ -162,12 +171,14 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
             >("set_MergeNullValueHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_MergeNullValueHandling", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonMergeSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_MergeNullValueHandling", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +186,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         &mut self,
         value: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonMergeSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::StringComparison),
                 quest_hook::libil2cpp::Void,
@@ -183,12 +194,14 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
             >("set_PropertyNameComparison")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_PropertyNameComparison", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonMergeSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_PropertyNameComparison", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -53,16 +53,17 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
     pub fn AddChoice(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddChoice")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChoice", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChoice", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SyntaxTreeNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SyntaxTreeNode>),
                 quest_hook::libil2cpp::Void,
@@ -78,12 +79,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("AddLeafNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddLeafNode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddLeafNode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (node))
+            method.invoke_unchecked(self, (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +94,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         min: crate::System::Decimal,
         max: crate::System::Decimal,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Decimal, crate::System::Decimal),
                 quest_hook::libil2cpp::Void,
@@ -100,12 +102,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("AddLeafRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddLeafRange", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddLeafRange", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (min, max))
+            method.invoke_unchecked(self, (min, max))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +117,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         particle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -125,12 +128,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("AddName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, particle))
+            method.invoke_unchecked(self, (name, particle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +145,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         >,
         particle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
@@ -152,76 +156,81 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("AddNamespaceList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddNamespaceList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddNamespaceList", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (namespaceList, particle))
+            method.invoke_unchecked(self, (namespaceList, particle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddPlus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddPlus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddPlus", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddPlus", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddQMark(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddQMark")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddQMark", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddQMark", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddSequence(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddSequence")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSequence", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSequence", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddStar(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddStar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddStar", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddStar", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -241,7 +250,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
@@ -263,8 +272,10 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("BuildTransitionTable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildTransitionTable", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildTransitionTable",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -272,7 +283,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (firstpos, followpos, endMarkerPos))
+            method.invoke_unchecked(self, (firstpos, followpos, endMarkerPos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -294,7 +305,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
@@ -316,8 +327,10 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("CalculateTotalFollowposForRangeNodes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateTotalFollowposForRangeNodes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateTotalFollowposForRangeNodes", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -325,7 +338,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (firstpos, followpos, posWithRangeTerminals))
+            method.invoke_unchecked(self, (firstpos, followpos, posWithRangeTerminals))?
         };
         Ok(__cordl_ret.into())
     }
@@ -333,7 +346,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         curpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>),
                 quest_hook::libil2cpp::Void,
@@ -341,12 +354,14 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("CheckCMUPAWithLeafRangeNodes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckCMUPAWithLeafRangeNodes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CheckCMUPAWithLeafRangeNodes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (curpos))
+            method.invoke_unchecked(self, (curpos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -354,7 +369,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         curpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>),
                 quest_hook::libil2cpp::Void,
@@ -362,12 +377,14 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("CheckUniqueParticleAttribution")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUniqueParticleAttribution", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CheckUniqueParticleAttribution", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (curpos))
+            method.invoke_unchecked(self, (curpos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -380,7 +397,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
@@ -395,28 +412,31 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("CheckUniqueParticleAttribution")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUniqueParticleAttribution", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CheckUniqueParticleAttribution", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (firstpos, followpos))
+            method.invoke_unchecked(self, (firstpos, followpos))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CloseGroup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CloseGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloseGroup", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CloseGroup", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -424,7 +444,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::InteriorNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::InteriorNode>),
                 quest_hook::libil2cpp::Void,
@@ -432,12 +452,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("Closure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Closure", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Closure", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (node))
+            method.invoke_unchecked(self, (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -445,7 +466,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>),
                 bool,
@@ -453,18 +474,19 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("CompleteValidation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompleteValidation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CompleteValidation", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (context)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn Exists(
         &mut self,
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
                 bool,
@@ -472,11 +494,12 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("Exists")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Exists", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Exists", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (name)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn Finish(
@@ -485,7 +508,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ContentValidator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ContentValidator>,
@@ -493,13 +516,14 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("Finish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Finish", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Finish", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::ContentValidator,
-        > = unsafe { method.invoke_unchecked(self, (useDFA)) };
+        > = unsafe { method.invoke_unchecked(self, (useDFA))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetApplicableMinMaxFollowPos(
@@ -516,7 +540,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
@@ -532,13 +556,18 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("GetApplicableMinMaxFollowPos")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetApplicableMinMaxFollowPos", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetApplicableMinMaxFollowPos", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet> = unsafe {
             method
-                .invoke_unchecked(self, (curpos, posWithRangeTerminals, minmaxFollowPos))
+                .invoke_unchecked(
+                    self,
+                    (curpos, posWithRangeTerminals, minmaxFollowPos),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -546,7 +575,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>),
                 quest_hook::libil2cpp::Void,
@@ -554,12 +583,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("InitValidation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitValidation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "InitValidation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (context))
+            method.invoke_unchecked(self, (context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -585,32 +615,34 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
     pub fn OpenGroup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OpenGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenGroup", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "OpenGroup", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -622,7 +654,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -636,20 +668,21 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >("ValidateElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateElement", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateElement", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (name, context, errorCode)) };
+        > = unsafe { method.invoke_unchecked(self, (name, context, errorCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlSchemaContentType0(
         &mut self,
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Xml::Schema::XmlSchemaContentType),
                 quest_hook::libil2cpp::Void,
@@ -657,12 +690,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (contentType))
+            method.invoke_unchecked(self, (contentType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -671,7 +705,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         contentType: crate::System::Xml::Schema::XmlSchemaContentType,
         enableUpaCheck: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::ParticleContentValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Xml::Schema::XmlSchemaContentType, bool),
                 quest_hook::libil2cpp::Void,
@@ -679,12 +713,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::ParticleContentValidator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (contentType, enableUpaCheck))
+            method.invoke_unchecked(self, (contentType, enableUpaCheck))?
         };
         Ok(__cordl_ret.into())
     }

@@ -50,7 +50,7 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileAuthenticatedStream>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::MobileTlsProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
@@ -67,8 +67,9 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
             >("CreateSslStream")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSslStream", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Net::Security::MobileTlsProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateSslStream", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -78,7 +79,7 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
                 .invoke_unchecked(
                     self,
                     (sslStream, innerStream, leaveInnerStreamOpen, settings),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +111,7 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
         >,
         status11: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::MobileTlsProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -137,8 +138,10 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
             >("ValidateCertificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateCertificate", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Net::Security::MobileTlsProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateCertificate",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -155,23 +158,24 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
                         errors,
                         status11,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::MobileTlsProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Net::Security::MobileTlsProvider as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
@@ -58,12 +58,15 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
             >("GetPropertiesForNewContext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertiesForNewContext", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Remoting::Activation::RemoteActivationAttribute as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetPropertiesForNewContext", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ctor))
+            method.invoke_unchecked(self, (ctor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +79,7 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -91,11 +94,13 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
             >("IsContextOK")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsContextOK", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Remoting::Activation::RemoteActivationAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "IsContextOK", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ctx, ctor)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ctx, ctor))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -111,7 +116,7 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
         &mut self,
         contextProperties: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
                 quest_hook::libil2cpp::Void,
@@ -119,12 +124,14 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Remoting::Activation::RemoteActivationAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (contextProperties))
+            method.invoke_unchecked(self, (contextProperties))?
         };
         Ok(__cordl_ret.into())
     }

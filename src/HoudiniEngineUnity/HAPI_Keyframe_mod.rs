@@ -109,7 +109,7 @@ impl crate::HoudiniEngineUnity::HAPI_Keyframe {
         in_tangent: f32,
         out_tangent: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HAPI_Keyframe as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -117,12 +117,13 @@ impl crate::HoudiniEngineUnity::HAPI_Keyframe {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HAPI_Keyframe as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (t, v, in_tangent, out_tangent))
+            method.invoke_unchecked(self, (t, v, in_tangent, out_tangent))?
         };
         Ok(__cordl_ret.into())
     }

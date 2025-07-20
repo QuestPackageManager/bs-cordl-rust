@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -61,12 +61,13 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >("SetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleCache as
+                    quest_hook::libil2cpp::Type > ::class(), "SetValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hash, data))
+            method.invoke_unchecked((), (hash, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +77,7 @@ impl crate::UnityEngine::UIElements::StyleCache {
             crate::UnityEngine::UIElements::StyleVariableContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -89,12 +90,13 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >("SetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleCache as
+                    quest_hook::libil2cpp::Type > ::class(), "SetValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hash, data))
+            method.invoke_unchecked((), (hash, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +106,7 @@ impl crate::UnityEngine::UIElements::StyleCache {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i64,
@@ -117,12 +119,13 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >("SetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleCache as
+                    quest_hook::libil2cpp::Type > ::class(), "SetValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hash, data))
+            method.invoke_unchecked((), (hash, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,7 +137,7 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -149,11 +152,12 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >("TryGetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleCache as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (hash, data)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (hash, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_i32_2(
@@ -166,7 +170,7 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -183,11 +187,12 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >("TryGetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleCache as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (hash, data)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (hash, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetValue_i64_0(
@@ -196,7 +201,7 @@ impl crate::UnityEngine::UIElements::StyleCache {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i64,
@@ -209,11 +214,12 @@ impl crate::UnityEngine::UIElements::StyleCache {
             >("TryGetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleCache as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (hash, data)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (hash, data))? };
         Ok(__cordl_ret.into())
     }
 }

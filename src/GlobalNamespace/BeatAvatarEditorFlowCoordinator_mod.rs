@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
         addedToHierarchy: bool,
         screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -79,8 +79,9 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("DidActivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DidActivate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "DidActivate", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
                 .invoke_unchecked(
                     self,
                     (firstActivation, addedToHierarchy, screenSystemEnabling),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +98,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
         removedFromHierarchy: bool,
         screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -105,19 +106,20 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("DidDeactivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DidDeactivate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "DidDeactivate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))
+            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandleBeatAvatarEditorViewCancelButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -125,19 +127,21 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("HandleBeatAvatarEditorViewCancelButtonWasPressed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleBeatAvatarEditorViewCancelButtonWasPressed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleBeatAvatarEditorViewCancelButtonWasPressed", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandleBeatAvatarEditorViewOkButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -145,12 +149,14 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("HandleBeatAvatarEditorViewOkButtonWasPressed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleBeatAvatarEditorViewOkButtonWasPressed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleBeatAvatarEditorViewOkButtonWasPressed", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,7 +164,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
         &mut self,
         avatarPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::BeatAvatarSDK::AvatarPart),
                 quest_hook::libil2cpp::Void,
@@ -166,12 +172,14 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("HandleBeatAvatarViewControllerChangedAvatarPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleBeatAvatarViewControllerChangedAvatarPart", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleBeatAvatarViewControllerChangedAvatarPart", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (avatarPart))
+            method.invoke_unchecked(self, (avatarPart))?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,7 +192,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
         editPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
         uvSegment: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -199,8 +207,10 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("HandleBeatAvatarViewControllerDidRequestColorChange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleBeatAvatarViewControllerDidRequestColorChange", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleBeatAvatarViewControllerDidRequestColorChange", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -208,7 +218,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
                 .invoke_unchecked(
                     self,
                     (colorCallback, currentColor, editPart, uvSegment),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -216,7 +226,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
         &mut self,
         apply: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -224,12 +234,14 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("HandleEditColorViewControllerControllerDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleEditColorViewControllerControllerDidFinish", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleEditColorViewControllerControllerDidFinish", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (apply))
+            method.invoke_unchecked(self, (apply))?
         };
         Ok(__cordl_ret.into())
     }
@@ -237,7 +249,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -245,12 +257,14 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("HandleEditColorViewControllerDidChangedColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleEditColorViewControllerDidChangedColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleEditColorViewControllerDidChangedColor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (color))
+            method.invoke_unchecked(self, (color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,16 +278,17 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
     pub fn OneTimeInitialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OneTimeInitialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OneTimeInitialize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "OneTimeInitialize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +296,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
         &mut self,
         editMode: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode),
                 quest_hook::libil2cpp::Void,
@@ -289,28 +304,30 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
             >("Setup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Setup", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), "Setup", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (editMode))
+            method.invoke_unchecked(self, (editMode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

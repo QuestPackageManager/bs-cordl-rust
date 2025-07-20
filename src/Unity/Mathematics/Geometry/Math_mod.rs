@@ -42,7 +42,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
         transform: crate::Unity::Mathematics::RigidTransform,
         aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::RigidTransform,
@@ -53,12 +53,13 @@ impl crate::Unity::Mathematics::Geometry::Math {
             >("Transform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Transform", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Math as
+                    quest_hook::libil2cpp::Type > ::class(), "Transform", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = unsafe {
-            method.invoke_unchecked((), (transform, aabb))
+            method.invoke_unchecked((), (transform, aabb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +67,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
         transform: crate::Unity::Mathematics::float3x3,
         aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::float3x3,
@@ -77,12 +78,13 @@ impl crate::Unity::Mathematics::Geometry::Math {
             >("Transform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Transform", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Math as
+                    quest_hook::libil2cpp::Type > ::class(), "Transform", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = unsafe {
-            method.invoke_unchecked((), (transform, aabb))
+            method.invoke_unchecked((), (transform, aabb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +92,7 @@ impl crate::Unity::Mathematics::Geometry::Math {
         transform: crate::Unity::Mathematics::float4x4,
         aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Math as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::float4x4,
@@ -101,12 +103,13 @@ impl crate::Unity::Mathematics::Geometry::Math {
             >("Transform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Transform", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Math as
+                    quest_hook::libil2cpp::Type > ::class(), "Transform", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = unsafe {
-            method.invoke_unchecked((), (transform, aabb))
+            method.invoke_unchecked((), (transform, aabb))?
         };
         Ok(__cordl_ret.into())
     }

@@ -46,7 +46,7 @@ impl crate::System::Runtime::Remoting::InternalRemotingServices {
             crate::System::Runtime::Remoting::Metadata::SoapAttribute,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::InternalRemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<
@@ -56,13 +56,15 @@ impl crate::System::Runtime::Remoting::InternalRemotingServices {
             >("GetCachedSoapAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCachedSoapAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::InternalRemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCachedSoapAttribute",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Metadata::SoapAttribute,
-        > = unsafe { method.invoke_unchecked((), (reflectionObject)) };
+        > = unsafe { method.invoke_unchecked((), (reflectionObject))? };
         Ok(__cordl_ret.into())
     }
 }

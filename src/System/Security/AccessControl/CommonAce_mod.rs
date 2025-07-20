@@ -43,7 +43,7 @@ impl crate::System::Security::AccessControl::CommonAce {
         qualifier: crate::System::Security::AccessControl::AceQualifier,
         isCallback: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::Security::AccessControl::AceType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::CommonAce as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::AccessControl::AceQualifier, bool),
                 crate::System::Security::AccessControl::AceType,
@@ -51,12 +51,13 @@ impl crate::System::Security::AccessControl::CommonAce {
             >("ConvertType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::CommonAce as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertType", 2usize
                 )
             });
         let __cordl_ret: crate::System::Security::AccessControl::AceType = unsafe {
-            method.invoke_unchecked((), (qualifier, isCallback))
+            method.invoke_unchecked((), (qualifier, isCallback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,7 +66,7 @@ impl crate::System::Security::AccessControl::CommonAce {
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::CommonAce as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Void,
@@ -73,12 +74,13 @@ impl crate::System::Security::AccessControl::CommonAce {
             >("GetBinaryForm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBinaryForm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::CommonAce as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBinaryForm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (binaryForm, offset))
+            method.invoke_unchecked(self, (binaryForm, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,7 +124,7 @@ impl crate::System::Security::AccessControl::CommonAce {
         isCallback: bool,
         opaque: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::CommonAce as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Security::AccessControl::AceFlags,
@@ -139,8 +141,9 @@ impl crate::System::Security::AccessControl::CommonAce {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::CommonAce as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -148,7 +151,7 @@ impl crate::System::Security::AccessControl::CommonAce {
                 .invoke_unchecked(
                     self,
                     (flags, qualifier, accessMask, sid, isCallback, opaque),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +160,7 @@ impl crate::System::Security::AccessControl::CommonAce {
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::CommonAce as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Void,
@@ -165,25 +168,27 @@ impl crate::System::Security::AccessControl::CommonAce {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::CommonAce as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (binaryForm, offset))
+            method.invoke_unchecked(self, (binaryForm, offset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_BinaryLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::CommonAce as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_BinaryLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_BinaryLength", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::CommonAce as
+                    quest_hook::libil2cpp::Type > ::class(), "get_BinaryLength", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

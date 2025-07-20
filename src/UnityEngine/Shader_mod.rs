@@ -42,7 +42,7 @@ impl crate::UnityEngine::Shader {
         s: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 quest_hook::libil2cpp::Void,
@@ -50,19 +50,20 @@ impl crate::UnityEngine::Shader {
             >("CheckPropertyIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPropertyIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "CheckPropertyIndex", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (s, propertyIndex))
+            method.invoke_unchecked((), (s, propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DisableKeywordFast(
         keyword: crate::UnityEngine::Rendering::GlobalKeyword,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rendering::GlobalKeyword),
                 quest_hook::libil2cpp::Void,
@@ -70,12 +71,13 @@ impl crate::UnityEngine::Shader {
             >("DisableKeywordFast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisableKeywordFast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "DisableKeywordFast", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +86,7 @@ impl crate::UnityEngine::Shader {
             crate::UnityEngine::Rendering::GlobalKeyword,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Rendering::GlobalKeyword,
@@ -94,12 +96,13 @@ impl crate::UnityEngine::Shader {
             >("DisableKeywordFast_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisableKeywordFast_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "DisableKeywordFast_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,7 +111,7 @@ impl crate::UnityEngine::Shader {
             crate::UnityEngine::Rendering::GlobalKeyword,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Rendering::GlobalKeyword,
@@ -118,19 +121,20 @@ impl crate::UnityEngine::Shader {
             >("DisableKeyword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisableKeyword", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "DisableKeyword", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DisableKeyword_Il2CppString0(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -138,19 +142,20 @@ impl crate::UnityEngine::Shader {
             >("DisableKeyword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisableKeyword", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "DisableKeyword", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EnableKeywordFast(
         keyword: crate::UnityEngine::Rendering::GlobalKeyword,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rendering::GlobalKeyword),
                 quest_hook::libil2cpp::Void,
@@ -158,12 +163,13 @@ impl crate::UnityEngine::Shader {
             >("EnableKeywordFast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnableKeywordFast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "EnableKeywordFast", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,7 +178,7 @@ impl crate::UnityEngine::Shader {
             crate::UnityEngine::Rendering::GlobalKeyword,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Rendering::GlobalKeyword,
@@ -182,12 +188,13 @@ impl crate::UnityEngine::Shader {
             >("EnableKeywordFast_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnableKeywordFast_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "EnableKeywordFast_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +203,7 @@ impl crate::UnityEngine::Shader {
             crate::UnityEngine::Rendering::GlobalKeyword,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Rendering::GlobalKeyword,
@@ -206,19 +213,20 @@ impl crate::UnityEngine::Shader {
             >("EnableKeyword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnableKeyword", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "EnableKeyword", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EnableKeyword_Il2CppString0(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -226,12 +234,13 @@ impl crate::UnityEngine::Shader {
             >("EnableKeyword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnableKeyword", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "EnableKeyword", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
@@ -241,7 +250,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -254,12 +263,13 @@ impl crate::UnityEngine::Shader {
             >("ExtractGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractGlobalFloatArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractGlobalFloatArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -269,7 +279,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -284,12 +294,13 @@ impl crate::UnityEngine::Shader {
             >("ExtractGlobalFloatArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractGlobalFloatArrayImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractGlobalFloatArrayImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, val))
+            method.invoke_unchecked((), (name, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +310,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -314,12 +325,13 @@ impl crate::UnityEngine::Shader {
             >("ExtractGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractGlobalMatrixArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractGlobalMatrixArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -331,7 +343,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -348,12 +360,13 @@ impl crate::UnityEngine::Shader {
             >("ExtractGlobalMatrixArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractGlobalMatrixArrayImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractGlobalMatrixArrayImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, val))
+            method.invoke_unchecked((), (name, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -363,7 +376,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -378,12 +391,13 @@ impl crate::UnityEngine::Shader {
             >("ExtractGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractGlobalVectorArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractGlobalVectorArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +409,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -412,12 +426,13 @@ impl crate::UnityEngine::Shader {
             >("ExtractGlobalVectorArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractGlobalVectorArrayImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractGlobalVectorArrayImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, val))
+            method.invoke_unchecked((), (name, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -426,7 +441,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -434,12 +449,13 @@ impl crate::UnityEngine::Shader {
             >("Find")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Find", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "Find", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -448,7 +464,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -456,12 +472,13 @@ impl crate::UnityEngine::Shader {
             >("FindBuiltin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindBuiltin", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "FindBuiltin", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -470,7 +487,7 @@ impl crate::UnityEngine::Shader {
         passIndex: i32,
         tagName: crate::UnityEngine::Rendering::ShaderTagId,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::ShaderTagId> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::Rendering::ShaderTagId),
                 crate::UnityEngine::Rendering::ShaderTagId,
@@ -478,12 +495,13 @@ impl crate::UnityEngine::Shader {
             >("FindPassTagValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindPassTagValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "FindPassTagValue", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderTagId = unsafe {
-            method.invoke_unchecked(self, (passIndex, tagName))
+            method.invoke_unchecked(self, (passIndex, tagName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -493,7 +511,7 @@ impl crate::UnityEngine::Shader {
         passIndex: i32,
         tagName: crate::UnityEngine::Rendering::ShaderTagId,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::ShaderTagId> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, crate::UnityEngine::Rendering::ShaderTagId),
                 crate::UnityEngine::Rendering::ShaderTagId,
@@ -501,12 +519,13 @@ impl crate::UnityEngine::Shader {
             >("FindPassTagValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindPassTagValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "FindPassTagValue", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderTagId = unsafe {
-            method.invoke_unchecked(self, (subshaderIndex, passIndex, tagName))
+            method.invoke_unchecked(self, (subshaderIndex, passIndex, tagName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -514,7 +533,7 @@ impl crate::UnityEngine::Shader {
         &mut self,
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -522,11 +541,12 @@ impl crate::UnityEngine::Shader {
             >("FindPropertyIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindPropertyIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "FindPropertyIndex", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (propertyName)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (propertyName))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindSubshaderTagValue(
@@ -534,7 +554,7 @@ impl crate::UnityEngine::Shader {
         subshaderIndex: i32,
         tagName: crate::UnityEngine::Rendering::ShaderTagId,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::ShaderTagId> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::Rendering::ShaderTagId),
                 crate::UnityEngine::Rendering::ShaderTagId,
@@ -542,12 +562,13 @@ impl crate::UnityEngine::Shader {
             >("FindSubshaderTagValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindSubshaderTagValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "FindSubshaderTagValue", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderTagId = unsafe {
-            method.invoke_unchecked(self, (subshaderIndex, tagName))
+            method.invoke_unchecked(self, (subshaderIndex, tagName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -559,7 +580,7 @@ impl crate::UnityEngine::Shader {
         >,
         layerIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -573,12 +594,13 @@ impl crate::UnityEngine::Shader {
             >("FindTextureStack")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindTextureStack", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "FindTextureStack", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (propertyIndex, stackName, layerIndex))
+            method.invoke_unchecked(self, (propertyIndex, stackName, layerIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -590,7 +612,7 @@ impl crate::UnityEngine::Shader {
         >,
         layerIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -605,12 +627,13 @@ impl crate::UnityEngine::Shader {
             >("FindTextureStackImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindTextureStackImpl", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "FindTextureStackImpl", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (s, propertyIdx, stackName, layerIndex))
+            method.invoke_unchecked((), (s, propertyIdx, stackName, layerIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -621,7 +644,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -633,15 +656,16 @@ impl crate::UnityEngine::Shader {
             >("GetAllGlobalKeywords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllGlobalKeywords", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllGlobalKeywords", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::Rendering::GlobalKeyword,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDependency(
@@ -650,7 +674,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -658,12 +682,13 @@ impl crate::UnityEngine::Shader {
             >("GetDependency")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDependency", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetDependency", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -674,7 +699,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -686,21 +711,22 @@ impl crate::UnityEngine::Shader {
             >("GetEnabledGlobalKeywords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnabledGlobalKeywords", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetEnabledGlobalKeywords", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::Rendering::GlobalKeyword,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalColor_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::UnityEngine::Color,
@@ -708,19 +734,20 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalColor", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalColor_i32_1(
         nameID: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::UnityEngine::Color,
@@ -728,27 +755,29 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalColor", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked((), (nameID))
+            method.invoke_unchecked((), (nameID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloatArrayCountImpl(
         name: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetGlobalFloatArrayCountImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloatArrayCountImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloatArrayCountImpl", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloatArrayImpl(
@@ -756,7 +785,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -764,13 +793,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalFloatArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloatArrayImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloatArrayImpl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloatArray_Il2CppString0(
@@ -778,7 +808,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -786,13 +816,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloatArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloatArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloatArray_Il2CppString_List_1_2(
@@ -801,7 +832,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -814,12 +845,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloatArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloatArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -828,7 +860,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -836,13 +868,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloatArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloatArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = unsafe { method.invoke_unchecked((), (nameID)) };
+        > = unsafe { method.invoke_unchecked((), (nameID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloatArray_i32_List_1_3(
@@ -851,7 +884,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -864,31 +897,33 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloatArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloatArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloatImpl(name: i32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), f32, 1usize>("GetGlobalFloatImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloatImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloatImpl", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloat_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 f32,
@@ -896,41 +931,44 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloat", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalFloat_i32_1(nameID: i32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), f32, 1usize>("GetGlobalFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalFloat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalFloat", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (nameID)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (nameID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalIntImpl(name: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetGlobalIntImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalIntImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalIntImpl", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalInt_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -938,29 +976,31 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalInt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalInt", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalInt_i32_1(nameID: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetGlobalInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalInt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalInt", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (nameID)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (nameID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalInteger_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -968,37 +1008,40 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalInteger")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalInteger", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalInteger", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalInteger_i32_1(nameID: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetGlobalInteger")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalInteger", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalInteger", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (nameID)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (nameID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrixArrayCountImpl(
         name: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetGlobalMatrixArrayCountImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixArrayCountImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixArrayCountImpl", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrixArrayImpl(
@@ -1008,7 +1051,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -1018,13 +1061,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrixArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixArrayImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixArrayImpl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrixArray_Il2CppString0(
@@ -1034,7 +1078,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -1044,13 +1088,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrixArray_Il2CppString_List_1_2(
@@ -1059,7 +1104,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1074,12 +1119,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1090,7 +1136,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -1100,13 +1146,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
-        > = unsafe { method.invoke_unchecked((), (nameID)) };
+        > = unsafe { method.invoke_unchecked((), (nameID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrixArray_i32_List_1_3(
@@ -1115,7 +1162,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -1130,19 +1177,20 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrixImpl(
         name: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::UnityEngine::Matrix4x4,
@@ -1150,12 +1198,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrixImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixImpl", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1163,7 +1212,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>),
                 quest_hook::libil2cpp::Void,
@@ -1171,19 +1220,20 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrixImpl_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrixImpl_Injected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrixImpl_Injected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, ret))
+            method.invoke_unchecked((), (name, ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrix_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::UnityEngine::Matrix4x4,
@@ -1191,19 +1241,20 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrix", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrix", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalMatrix_i32_1(
         nameID: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::UnityEngine::Matrix4x4,
@@ -1211,12 +1262,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalMatrix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalMatrix", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalMatrix", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (nameID))
+            method.invoke_unchecked((), (nameID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1225,7 +1277,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -1233,12 +1285,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalTextureImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalTextureImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalTextureImpl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1247,7 +1300,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -1255,12 +1308,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalTexture", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1269,7 +1323,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -1277,27 +1331,29 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalTexture", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
-            method.invoke_unchecked((), (nameID))
+            method.invoke_unchecked((), (nameID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVectorArrayCountImpl(
         name: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetGlobalVectorArrayCountImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorArrayCountImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorArrayCountImpl", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVectorArrayImpl(
@@ -1307,7 +1363,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -1317,13 +1373,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVectorArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorArrayImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorArrayImpl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVectorArray_Il2CppString0(
@@ -1333,7 +1390,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -1343,13 +1400,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVectorArray_Il2CppString_List_1_2(
@@ -1358,7 +1416,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1373,12 +1431,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1389,7 +1448,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -1399,13 +1458,14 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-        > = unsafe { method.invoke_unchecked((), (nameID)) };
+        > = unsafe { method.invoke_unchecked((), (nameID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVectorArray_i32_List_1_3(
@@ -1414,7 +1474,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -1429,19 +1489,20 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVectorImpl(
         name: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::UnityEngine::Vector4,
@@ -1449,12 +1510,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVectorImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorImpl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorImpl", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1462,7 +1524,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>),
                 quest_hook::libil2cpp::Void,
@@ -1470,19 +1532,20 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVectorImpl_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVectorImpl_Injected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVectorImpl_Injected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, ret))
+            method.invoke_unchecked((), (name, ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVector_Il2CppString0(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::UnityEngine::Vector4,
@@ -1490,19 +1553,20 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (name))
+            method.invoke_unchecked((), (name))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlobalVector_i32_1(
         nameID: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::UnityEngine::Vector4,
@@ -1510,12 +1574,13 @@ impl crate::UnityEngine::Shader {
             >("GetGlobalVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGlobalVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetGlobalVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (nameID))
+            method.invoke_unchecked((), (nameID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1523,16 +1588,17 @@ impl crate::UnityEngine::Shader {
         &mut self,
         subshaderIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetPassCountInSubshader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPassCountInSubshader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPassCountInSubshader", 1usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (subshaderIndex))
+            method.invoke_unchecked(self, (subshaderIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1546,7 +1612,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 quest_hook::libil2cpp::Gc<
@@ -1558,15 +1624,16 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyAttributes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyAttributes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex)) };
+        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyAttributes_i32_1(
@@ -1579,7 +1646,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -1591,49 +1658,54 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyAttributes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyAttributes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (propertyIndex)) };
+        > = unsafe { method.invoke_unchecked(self, (propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetPropertyCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyDefaultFloatValue(
         &mut self,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), f32, 1usize>("GetPropertyDefaultFloatValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDefaultFloatValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDefaultFloatValue", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (propertyIndex)) };
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked(self, (propertyIndex))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyDefaultIntValue_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 i32,
@@ -1641,12 +1713,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyDefaultIntValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDefaultIntValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDefaultIntValue", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (shader, propertyIndex))
+            method.invoke_unchecked((), (shader, propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1654,22 +1727,25 @@ impl crate::UnityEngine::Shader {
         &mut self,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetPropertyDefaultIntValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDefaultIntValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDefaultIntValue", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (propertyIndex)) };
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (propertyIndex))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyDefaultValue(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 crate::UnityEngine::Vector4,
@@ -1677,12 +1753,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyDefaultValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDefaultValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDefaultValue", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (shader, propertyIndex))
+            method.invoke_unchecked((), (shader, propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1691,7 +1768,7 @@ impl crate::UnityEngine::Shader {
         propertyIndex: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -1703,12 +1780,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyDefaultValue_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDefaultValue_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDefaultValue_Injected", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (shader, propertyIndex, ret))
+            method.invoke_unchecked((), (shader, propertyIndex, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1716,7 +1794,7 @@ impl crate::UnityEngine::Shader {
         &mut self,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::UnityEngine::Vector4,
@@ -1724,12 +1802,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyDefaultVectorValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDefaultVectorValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDefaultVectorValue", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked(self, (propertyIndex))
+            method.invoke_unchecked(self, (propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1739,7 +1818,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1747,13 +1826,14 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyDescription")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDescription", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDescription", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex)) };
+        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyDescription_i32_1(
@@ -1762,7 +1842,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1770,13 +1850,14 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyDescription")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyDescription", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyDescription", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (propertyIndex)) };
+        > = unsafe { method.invoke_unchecked(self, (propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyFlags_Shader_i32_0(
@@ -1785,7 +1866,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::ShaderPropertyFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 crate::UnityEngine::Rendering::ShaderPropertyFlags,
@@ -1793,12 +1874,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyFlags", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyFlags", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderPropertyFlags = unsafe {
-            method.invoke_unchecked((), (shader, propertyIndex))
+            method.invoke_unchecked((), (shader, propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1808,7 +1890,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::ShaderPropertyFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::UnityEngine::Rendering::ShaderPropertyFlags,
@@ -1816,12 +1898,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyFlags", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyFlags", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderPropertyFlags = unsafe {
-            method.invoke_unchecked(self, (propertyIndex))
+            method.invoke_unchecked(self, (propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1829,7 +1912,7 @@ impl crate::UnityEngine::Shader {
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 i32,
@@ -1837,12 +1920,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyNameId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyNameId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyNameId", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (shader, propertyIndex))
+            method.invoke_unchecked((), (shader, propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1850,15 +1934,18 @@ impl crate::UnityEngine::Shader {
         &mut self,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetPropertyNameId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyNameId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyNameId", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (propertyIndex)) };
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (propertyIndex))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyName_Shader_i32_0(
@@ -1867,7 +1954,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1875,13 +1962,14 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex)) };
+        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyName_i32_1(
@@ -1890,7 +1978,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1898,20 +1986,21 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (propertyIndex)) };
+        > = unsafe { method.invoke_unchecked(self, (propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyRangeLimits(
         &mut self,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::UnityEngine::Vector2,
@@ -1919,12 +2008,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyRangeLimits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyRangeLimits", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyRangeLimits", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked(self, (propertyIndex))
+            method.invoke_unchecked(self, (propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1934,7 +2024,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1942,13 +2032,14 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyTextureDefaultName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyTextureDefaultName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyTextureDefaultName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex)) };
+        > = unsafe { method.invoke_unchecked((), (shader, propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyTextureDefaultName_i32_1(
@@ -1957,7 +2048,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1965,20 +2056,21 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyTextureDefaultName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyTextureDefaultName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyTextureDefaultName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (propertyIndex)) };
+        > = unsafe { method.invoke_unchecked(self, (propertyIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyTextureDimension_Shader_i32_0(
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::TextureDimension> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 crate::UnityEngine::Rendering::TextureDimension,
@@ -1986,12 +2078,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyTextureDimension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyTextureDimension", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyTextureDimension", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::TextureDimension = unsafe {
-            method.invoke_unchecked((), (shader, propertyIndex))
+            method.invoke_unchecked((), (shader, propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1999,7 +2092,7 @@ impl crate::UnityEngine::Shader {
         &mut self,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::TextureDimension> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::UnityEngine::Rendering::TextureDimension,
@@ -2007,12 +2100,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyTextureDimension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyTextureDimension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyTextureDimension", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::TextureDimension = unsafe {
-            method.invoke_unchecked(self, (propertyIndex))
+            method.invoke_unchecked(self, (propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2022,7 +2116,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::ShaderPropertyType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>, i32),
                 crate::UnityEngine::Rendering::ShaderPropertyType,
@@ -2030,12 +2124,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyType", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderPropertyType = unsafe {
-            method.invoke_unchecked((), (shader, propertyIndex))
+            method.invoke_unchecked((), (shader, propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2045,7 +2140,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::ShaderPropertyType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::UnityEngine::Rendering::ShaderPropertyType,
@@ -2053,12 +2148,13 @@ impl crate::UnityEngine::Shader {
             >("GetPropertyType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPropertyType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPropertyType", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderPropertyType = unsafe {
-            method.invoke_unchecked(self, (propertyIndex))
+            method.invoke_unchecked(self, (propertyIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2067,7 +2163,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2075,13 +2171,14 @@ impl crate::UnityEngine::Shader {
             >("IDToTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IDToTag", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "IDToTag", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_FindPassTagValue(
@@ -2089,16 +2186,17 @@ impl crate::UnityEngine::Shader {
         passIndex: i32,
         tagName: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("Internal_FindPassTagValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Internal_FindPassTagValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "Internal_FindPassTagValue", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (passIndex, tagName))
+            method.invoke_unchecked(self, (passIndex, tagName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2108,7 +2206,7 @@ impl crate::UnityEngine::Shader {
         passIndex: i32,
         tagName: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32),
                 i32,
@@ -2116,12 +2214,13 @@ impl crate::UnityEngine::Shader {
             >("Internal_FindPassTagValueInSubShader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Internal_FindPassTagValueInSubShader", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "Internal_FindPassTagValueInSubShader", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (subShaderIndex, passIndex, tagName))
+            method.invoke_unchecked(self, (subShaderIndex, passIndex, tagName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2130,23 +2229,24 @@ impl crate::UnityEngine::Shader {
         subShaderIndex: i32,
         tagName: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("Internal_FindSubshaderTagValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Internal_FindSubshaderTagValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "Internal_FindSubshaderTagValue", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (subShaderIndex, tagName))
+            method.invoke_unchecked(self, (subShaderIndex, tagName))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeywordEnabledFast(
         keyword: crate::UnityEngine::Rendering::GlobalKeyword,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rendering::GlobalKeyword),
                 bool,
@@ -2154,11 +2254,12 @@ impl crate::UnityEngine::Shader {
             >("IsKeywordEnabledFast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsKeywordEnabledFast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "IsKeywordEnabledFast", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeywordEnabledFast_Injected(
@@ -2166,7 +2267,7 @@ impl crate::UnityEngine::Shader {
             crate::UnityEngine::Rendering::GlobalKeyword,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Rendering::GlobalKeyword,
@@ -2176,11 +2277,12 @@ impl crate::UnityEngine::Shader {
             >("IsKeywordEnabledFast_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsKeywordEnabledFast_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "IsKeywordEnabledFast_Injected", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeywordEnabled_ByRefMut1(
@@ -2188,7 +2290,7 @@ impl crate::UnityEngine::Shader {
             crate::UnityEngine::Rendering::GlobalKeyword,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Rendering::GlobalKeyword,
@@ -2198,17 +2300,18 @@ impl crate::UnityEngine::Shader {
             >("IsKeywordEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsKeywordEnabled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "IsKeywordEnabled", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeywordEnabled_Il2CppString0(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -2216,11 +2319,12 @@ impl crate::UnityEngine::Shader {
             >("IsKeywordEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsKeywordEnabled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "IsKeywordEnabled", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (keyword))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -2233,7 +2337,7 @@ impl crate::UnityEngine::Shader {
     pub fn PropertyToID(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -2241,18 +2345,19 @@ impl crate::UnityEngine::Shader {
             >("PropertyToID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PropertyToID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "PropertyToID", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetGlobalBufferImpl(
         name: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>),
                 quest_hook::libil2cpp::Void,
@@ -2260,12 +2365,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalBufferImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalBufferImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalBufferImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2273,7 +2379,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2284,12 +2390,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalBuffer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalBuffer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2297,7 +2404,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2308,12 +2415,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalBuffer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalBuffer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2321,7 +2429,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>),
                 quest_hook::libil2cpp::Void,
@@ -2329,12 +2437,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalBuffer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalBuffer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2342,7 +2451,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>),
                 quest_hook::libil2cpp::Void,
@@ -2350,12 +2459,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalBuffer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalBuffer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2363,7 +2473,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2374,12 +2484,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalColor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalColor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2387,7 +2498,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -2395,12 +2506,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalColor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalColor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2410,7 +2522,7 @@ impl crate::UnityEngine::Shader {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2423,12 +2535,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalConstantBufferImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalConstantBufferImpl", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalConstantBufferImpl", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value, offset, _cordl_size))
+            method.invoke_unchecked((), (name, value, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2438,7 +2551,7 @@ impl crate::UnityEngine::Shader {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2451,12 +2564,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalConstantBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalConstantBuffer", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalConstantBuffer", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value, offset, _cordl_size))
+            method.invoke_unchecked((), (name, value, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2466,7 +2580,7 @@ impl crate::UnityEngine::Shader {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2479,12 +2593,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalConstantBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalConstantBuffer", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalConstantBuffer", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value, offset, _cordl_size))
+            method.invoke_unchecked((), (name, value, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2494,7 +2609,7 @@ impl crate::UnityEngine::Shader {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2507,12 +2622,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalConstantBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalConstantBuffer", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalConstantBuffer", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value, offset, _cordl_size))
+            method.invoke_unchecked((), (nameID, value, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2522,7 +2638,7 @@ impl crate::UnityEngine::Shader {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2535,12 +2651,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalConstantBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalConstantBuffer", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalConstantBuffer", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value, offset, _cordl_size))
+            method.invoke_unchecked((), (nameID, value, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2550,7 +2667,7 @@ impl crate::UnityEngine::Shader {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2563,12 +2680,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalConstantGraphicsBufferImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalConstantGraphicsBufferImpl", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalConstantGraphicsBufferImpl", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value, offset, _cordl_size))
+            method.invoke_unchecked((), (name, value, offset, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2577,7 +2695,7 @@ impl crate::UnityEngine::Shader {
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2589,12 +2707,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloatArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloatArrayImpl", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloatArrayImpl", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values, count))
+            method.invoke_unchecked((), (name, values, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2602,7 +2721,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2613,12 +2732,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloatArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloatArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2628,7 +2748,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2641,12 +2761,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloatArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloatArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2654,7 +2775,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2665,12 +2786,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloatArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloatArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2679,7 +2801,7 @@ impl crate::UnityEngine::Shader {
         values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2691,12 +2813,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloatArray", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloatArray", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values, count))
+            method.invoke_unchecked((), (name, values, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2706,7 +2829,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2719,12 +2842,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloatArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloatArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloatArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2732,7 +2856,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, f32),
                 quest_hook::libil2cpp::Void,
@@ -2740,12 +2864,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloatImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloatImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloatImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2753,7 +2878,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, f32),
                 quest_hook::libil2cpp::Void,
@@ -2761,12 +2886,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2774,7 +2900,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, f32),
                 quest_hook::libil2cpp::Void,
@@ -2782,12 +2908,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalFloat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalFloat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2795,7 +2922,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>),
                 quest_hook::libil2cpp::Void,
@@ -2803,12 +2930,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalGraphicsBufferImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalGraphicsBufferImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalGraphicsBufferImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2816,7 +2944,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -2824,12 +2952,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalIntImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalIntImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalIntImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2837,7 +2966,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Void,
@@ -2845,12 +2974,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalInt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalInt", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2858,7 +2988,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -2866,12 +2996,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalInt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalInt", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2879,7 +3010,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Void,
@@ -2887,12 +3018,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalInteger")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalInteger", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalInteger", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2900,7 +3032,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -2908,12 +3040,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalInteger")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalInteger", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalInteger", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2924,7 +3057,7 @@ impl crate::UnityEngine::Shader {
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2938,12 +3071,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixArrayImpl", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixArrayImpl", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values, count))
+            method.invoke_unchecked((), (name, values, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2953,7 +3087,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2966,12 +3100,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2981,7 +3116,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2996,12 +3131,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3011,7 +3147,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3024,12 +3160,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3040,7 +3177,7 @@ impl crate::UnityEngine::Shader {
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3054,12 +3191,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixArray", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixArray", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values, count))
+            method.invoke_unchecked((), (name, values, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3069,7 +3207,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3084,12 +3222,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3097,7 +3236,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::UnityEngine::Matrix4x4),
                 quest_hook::libil2cpp::Void,
@@ -3105,12 +3244,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3118,7 +3258,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>),
                 quest_hook::libil2cpp::Void,
@@ -3126,12 +3266,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrixImpl_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrixImpl_Injected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrixImpl_Injected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3139,7 +3280,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3150,12 +3291,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrix", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrix", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3163,7 +3305,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::UnityEngine::Matrix4x4),
                 quest_hook::libil2cpp::Void,
@@ -3171,12 +3313,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalMatrix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalMatrix", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalMatrix", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3185,7 +3328,7 @@ impl crate::UnityEngine::Shader {
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         element: crate::UnityEngine::Rendering::RenderTextureSubElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3197,12 +3340,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalRenderTextureImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalRenderTextureImpl", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalRenderTextureImpl", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value, element))
+            method.invoke_unchecked((), (name, value, element))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3210,7 +3354,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>),
                 quest_hook::libil2cpp::Void,
@@ -3218,12 +3362,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalTextureImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalTextureImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalTextureImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3232,7 +3377,7 @@ impl crate::UnityEngine::Shader {
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         element: crate::UnityEngine::Rendering::RenderTextureSubElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3244,12 +3389,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalTexture", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalTexture", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value, element))
+            method.invoke_unchecked((), (name, value, element))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3257,7 +3403,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3268,12 +3414,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalTexture", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalTexture", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3282,7 +3429,7 @@ impl crate::UnityEngine::Shader {
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         element: crate::UnityEngine::Rendering::RenderTextureSubElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3294,12 +3441,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalTexture", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalTexture", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value, element))
+            method.invoke_unchecked((), (nameID, value, element))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3307,7 +3455,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>),
                 quest_hook::libil2cpp::Void,
@@ -3315,12 +3463,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalTexture", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalTexture", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3331,7 +3480,7 @@ impl crate::UnityEngine::Shader {
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3345,12 +3494,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorArrayImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorArrayImpl", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorArrayImpl", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values, count))
+            method.invoke_unchecked((), (name, values, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3360,7 +3510,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3373,12 +3523,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3388,7 +3539,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3403,12 +3554,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values))
+            method.invoke_unchecked((), (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3418,7 +3570,7 @@ impl crate::UnityEngine::Shader {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3431,12 +3583,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3447,7 +3600,7 @@ impl crate::UnityEngine::Shader {
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3461,12 +3614,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorArray", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorArray", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, values, count))
+            method.invoke_unchecked((), (name, values, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3476,7 +3630,7 @@ impl crate::UnityEngine::Shader {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -3491,12 +3645,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, values))
+            method.invoke_unchecked((), (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3504,7 +3659,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::UnityEngine::Vector4),
                 quest_hook::libil2cpp::Void,
@@ -3512,12 +3667,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3525,7 +3681,7 @@ impl crate::UnityEngine::Shader {
         name: i32,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>),
                 quest_hook::libil2cpp::Void,
@@ -3533,12 +3689,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVectorImpl_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVectorImpl_Injected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVectorImpl_Injected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3546,7 +3703,7 @@ impl crate::UnityEngine::Shader {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3557,12 +3714,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVector", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVector", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (name, value))
+            method.invoke_unchecked((), (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3570,7 +3728,7 @@ impl crate::UnityEngine::Shader {
         nameID: i32,
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::UnityEngine::Vector4),
                 quest_hook::libil2cpp::Void,
@@ -3578,12 +3736,13 @@ impl crate::UnityEngine::Shader {
             >("SetGlobalVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGlobalVector", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetGlobalVector", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nameID, value))
+            method.invoke_unchecked((), (nameID, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3593,7 +3752,7 @@ impl crate::UnityEngine::Shader {
         >,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -3606,12 +3765,13 @@ impl crate::UnityEngine::Shader {
             >("SetKeyword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetKeyword", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetKeyword", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword, value))
+            method.invoke_unchecked((), (keyword, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3619,7 +3779,7 @@ impl crate::UnityEngine::Shader {
         keyword: crate::UnityEngine::Rendering::GlobalKeyword,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rendering::GlobalKeyword, bool),
                 quest_hook::libil2cpp::Void,
@@ -3627,12 +3787,13 @@ impl crate::UnityEngine::Shader {
             >("SetKeywordFast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetKeywordFast", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetKeywordFast", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword, value))
+            method.invoke_unchecked((), (keyword, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3642,7 +3803,7 @@ impl crate::UnityEngine::Shader {
         >,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -3655,19 +3816,20 @@ impl crate::UnityEngine::Shader {
             >("SetKeywordFast_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetKeywordFast_Injected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "SetKeywordFast_Injected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (keyword, value))
+            method.invoke_unchecked((), (keyword, value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn TagToID(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -3675,17 +3837,18 @@ impl crate::UnityEngine::Shader {
             >("TagToID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TagToID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "TagToID", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn WarmupAllShaders() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -3693,35 +3856,37 @@ impl crate::UnityEngine::Shader {
             >("WarmupAllShaders")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WarmupAllShaders", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "WarmupAllShaders", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_disableBatching(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::DisableBatchingType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::DisableBatchingType,
@@ -3729,12 +3894,13 @@ impl crate::UnityEngine::Shader {
             >("get_disableBatching")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_disableBatching", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_disableBatching", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::DisableBatchingType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3745,7 +3911,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3757,15 +3923,16 @@ impl crate::UnityEngine::Shader {
             >("get_enabledGlobalKeywords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_enabledGlobalKeywords", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_enabledGlobalKeywords", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::Rendering::GlobalKeyword,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_globalKeywords() -> quest_hook::libil2cpp::Result<
@@ -3775,7 +3942,7 @@ impl crate::UnityEngine::Shader {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3787,33 +3954,35 @@ impl crate::UnityEngine::Shader {
             >("get_globalKeywords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_globalKeywords", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_globalKeywords", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::Rendering::GlobalKeyword,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_globalMaximumLOD() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_globalMaximumLOD")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_globalMaximumLOD", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_globalMaximumLOD", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_globalRenderPipeline() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3821,19 +3990,20 @@ impl crate::UnityEngine::Shader {
             >("get_globalRenderPipeline")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_globalRenderPipeline", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_globalRenderPipeline", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_globalShaderHardwareTier() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::ShaderHardwareTier,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::Rendering::ShaderHardwareTier,
@@ -3841,25 +4011,27 @@ impl crate::UnityEngine::Shader {
             >("get_globalShaderHardwareTier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_globalShaderHardwareTier", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_globalShaderHardwareTier", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::ShaderHardwareTier = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_isSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isSupported", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_isSupported", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_keywordSpace(
@@ -3867,7 +4039,7 @@ impl crate::UnityEngine::Shader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::LocalKeywordSpace,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Rendering::LocalKeywordSpace,
@@ -3875,12 +4047,13 @@ impl crate::UnityEngine::Shader {
             >("get_keywordSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_keywordSpace", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_keywordSpace", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::LocalKeywordSpace = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3890,7 +4063,7 @@ impl crate::UnityEngine::Shader {
             crate::UnityEngine::Rendering::LocalKeywordSpace,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Rendering::LocalKeywordSpace,
@@ -3900,79 +4073,85 @@ impl crate::UnityEngine::Shader {
             >("get_keywordSpace_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_keywordSpace_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_keywordSpace_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_maximumChunksOverride() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("get_maximumChunksOverride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_maximumChunksOverride", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_maximumChunksOverride", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_maximumLOD(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_maximumLOD")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_maximumLOD", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_maximumLOD", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_passCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_passCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_passCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_passCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_renderQueue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_renderQueue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_renderQueue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_renderQueue", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_subshaderCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_subshaderCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_subshaderCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "get_subshaderCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_globalMaximumLOD(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -3980,19 +4159,20 @@ impl crate::UnityEngine::Shader {
             >("set_globalMaximumLOD")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_globalMaximumLOD", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "set_globalMaximumLOD", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_globalRenderPipeline(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -4000,19 +4180,20 @@ impl crate::UnityEngine::Shader {
             >("set_globalRenderPipeline")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_globalRenderPipeline", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "set_globalRenderPipeline", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_globalShaderHardwareTier(
         value: crate::UnityEngine::Rendering::ShaderHardwareTier,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rendering::ShaderHardwareTier),
                 quest_hook::libil2cpp::Void,
@@ -4020,19 +4201,20 @@ impl crate::UnityEngine::Shader {
             >("set_globalShaderHardwareTier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_globalShaderHardwareTier", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "set_globalShaderHardwareTier", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_maximumChunksOverride(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -4040,12 +4222,13 @@ impl crate::UnityEngine::Shader {
             >("set_maximumChunksOverride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_maximumChunksOverride", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "set_maximumChunksOverride", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4053,16 +4236,17 @@ impl crate::UnityEngine::Shader {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Shader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_maximumLOD")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_maximumLOD", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Shader as quest_hook::libil2cpp::Type >
+                    ::class(), "set_maximumLOD", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

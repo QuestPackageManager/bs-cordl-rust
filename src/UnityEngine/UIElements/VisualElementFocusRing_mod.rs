@@ -64,7 +64,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -84,28 +84,31 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("BuildRingForScopeRecursive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildRingForScopeRecursive", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildRingForScopeRecursive", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ve, scopeIndex, scopeList))
+            method.invoke_unchecked(self, (ve, scopeIndex, scopeList))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DoUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DoUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoUpdate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "DoUpdate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +121,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -133,11 +136,13 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("FocusRingAutoIndexSort")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FocusRingAutoIndexSort", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "FocusRingAutoIndexSort",
+                    2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn FocusRingSort(
@@ -149,7 +154,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -164,11 +169,12 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("FocusRingSort")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FocusRingSort", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "FocusRingSort", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFocusChangeDirection(
@@ -180,7 +186,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
@@ -193,20 +199,22 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("GetFocusChangeDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFocusChangeDirection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFocusChangeDirection",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::FocusChangeDirection,
-        > = unsafe { method.invoke_unchecked(self, (currentFocusable, e)) };
+        > = unsafe { method.invoke_unchecked(self, (currentFocusable, e))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFocusableInternalIndex(
         &mut self,
         f: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>),
                 i32,
@@ -214,11 +222,13 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("GetFocusableInternalIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFocusableInternalIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFocusableInternalIndex",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (f)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (f))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusable(
@@ -232,7 +242,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
@@ -245,13 +255,14 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("GetNextFocusable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextFocusable", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextFocusable", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { method.invoke_unchecked(self, (currentFocusable, direction)) };
+        > = unsafe { method.invoke_unchecked(self, (currentFocusable, direction))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusableInTree(
@@ -261,7 +272,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -271,13 +282,15 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("GetNextFocusableInTree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextFocusableInTree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextFocusableInTree",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { method.invoke_unchecked((), (currentFocusable)) };
+        > = unsafe { method.invoke_unchecked((), (currentFocusable))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousFocusableInTree(
@@ -287,7 +300,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -297,13 +310,15 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("GetPreviousFocusableInTree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreviousFocusableInTree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetPreviousFocusableInTree", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { method.invoke_unchecked((), (currentFocusable)) };
+        > = unsafe { method.invoke_unchecked((), (currentFocusable))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -326,7 +341,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -340,12 +355,14 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("SortAndFlattenScopeLists")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SortAndFlattenScopeLists", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "SortAndFlattenScopeLists",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rootScopeList))
+            method.invoke_unchecked(self, (rootScopeList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -354,7 +371,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         dfo: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -367,12 +384,13 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (root, dfo))
+            method.invoke_unchecked(self, (root, dfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -381,7 +399,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
@@ -389,12 +407,14 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("get_defaultFocusOrder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_defaultFocusOrder", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "get_defaultFocusOrder",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -403,7 +423,7 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusController>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -413,20 +433,22 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("get_focusController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_focusController", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "get_focusController",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::FocusController,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_defaultFocusOrder(
         &mut self,
         value: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder),
                 quest_hook::libil2cpp::Void,
@@ -434,12 +456,14 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
             >("set_defaultFocusOrder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_defaultFocusOrder", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementFocusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "set_defaultFocusOrder",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -626,16 +650,18 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -43,7 +43,7 @@ impl crate::UnityEngine::Cursor {
         hotspot: crate::UnityEngine::Vector2,
         cursorMode: crate::UnityEngine::CursorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cursor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -55,12 +55,13 @@ impl crate::UnityEngine::Cursor {
             >("SetCursor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCursor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cursor as quest_hook::libil2cpp::Type >
+                    ::class(), "SetCursor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (texture, hotspot, cursorMode))
+            method.invoke_unchecked((), (texture, hotspot, cursorMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +70,7 @@ impl crate::UnityEngine::Cursor {
         hotspot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
         cursorMode: crate::UnityEngine::CursorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cursor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -81,19 +82,20 @@ impl crate::UnityEngine::Cursor {
             >("SetCursor_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCursor_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cursor as quest_hook::libil2cpp::Type >
+                    ::class(), "SetCursor_Injected", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (texture, hotspot, cursorMode))
+            method.invoke_unchecked((), (texture, hotspot, cursorMode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_lockState() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::CursorLockMode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cursor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::CursorLockMode,
@@ -101,19 +103,20 @@ impl crate::UnityEngine::Cursor {
             >("get_lockState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lockState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cursor as quest_hook::libil2cpp::Type >
+                    ::class(), "get_lockState", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::CursorLockMode = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_lockState(
         value: crate::UnityEngine::CursorLockMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cursor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::CursorLockMode),
                 quest_hook::libil2cpp::Void,
@@ -121,19 +124,20 @@ impl crate::UnityEngine::Cursor {
             >("set_lockState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_lockState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cursor as quest_hook::libil2cpp::Type >
+                    ::class(), "set_lockState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_visible(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cursor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -141,12 +145,13 @@ impl crate::UnityEngine::Cursor {
             >("set_visible")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_visible", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cursor as quest_hook::libil2cpp::Type >
+                    ::class(), "set_visible", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }

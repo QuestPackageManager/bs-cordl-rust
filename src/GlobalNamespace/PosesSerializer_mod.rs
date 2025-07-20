@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::PosesSerializer {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -70,8 +70,9 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("LoadDataFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadDataFile", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadDataFile", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -80,7 +81,7 @@ impl crate::GlobalNamespace::PosesSerializer {
                     crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (filePath)) };
+        > = unsafe { method.invoke_unchecked(self, (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadInfoFile(
@@ -89,7 +90,7 @@ impl crate::GlobalNamespace::PosesSerializer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingInfoSaveData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -99,13 +100,14 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("LoadInfoFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadInfoFile", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadInfoFile", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PosesRecordingInfoSaveData,
-        > = unsafe { method.invoke_unchecked(self, (filePath)) };
+        > = unsafe { method.invoke_unchecked(self, (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadRecording(
@@ -114,7 +116,7 @@ impl crate::GlobalNamespace::PosesSerializer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
@@ -122,13 +124,14 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("LoadRecording")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadRecording", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadRecording", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PosesRecordingData,
-        > = unsafe { method.invoke_unchecked(self, (path)) };
+        > = unsafe { method.invoke_unchecked(self, (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadRecordingFromDirectory(
@@ -137,7 +140,7 @@ impl crate::GlobalNamespace::PosesSerializer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
@@ -145,13 +148,15 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("LoadRecordingFromDirectory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadRecordingFromDirectory", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadRecordingFromDirectory", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PosesRecordingData,
-        > = unsafe { method.invoke_unchecked(self, (path)) };
+        > = unsafe { method.invoke_unchecked(self, (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -167,7 +172,7 @@ impl crate::GlobalNamespace::PosesSerializer {
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -175,18 +180,20 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("RecordingCanBeCreated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecordingCanBeCreated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "RecordingCanBeCreated",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (path)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn RecordingExists(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -194,18 +201,19 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("RecordingExists")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecordingExists", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "RecordingExists", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (path)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveDataFile(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -216,12 +224,13 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("SaveDataFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveDataFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveDataFile", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (filePath, data))
+            method.invoke_unchecked((), (filePath, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +238,7 @@ impl crate::GlobalNamespace::PosesSerializer {
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -240,12 +249,13 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("SaveInfoFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveInfoFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveInfoFile", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (filePath, data))
+            method.invoke_unchecked((), (filePath, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +265,7 @@ impl crate::GlobalNamespace::PosesSerializer {
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -269,12 +279,13 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("SaveRecording")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveRecording", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveRecording", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (path, data, saveToOldFormat))
+            method.invoke_unchecked(self, (path, data, saveToOldFormat))?
         };
         Ok(__cordl_ret.into())
     }
@@ -283,7 +294,7 @@ impl crate::GlobalNamespace::PosesSerializer {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -294,12 +305,14 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("SaveRecordingIntoDirectory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveRecordingIntoDirectory", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SaveRecordingIntoDirectory", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (path, data))
+            method.invoke_unchecked(self, (path, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -308,7 +321,7 @@ impl crate::GlobalNamespace::PosesSerializer {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -319,12 +332,13 @@ impl crate::GlobalNamespace::PosesSerializer {
             >("SaveToOldFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveToOldFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveToOldFormat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (path, data))
+            method.invoke_unchecked(self, (path, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,7 +346,7 @@ impl crate::GlobalNamespace::PosesSerializer {
         &mut self,
         logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesSerializer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>),
                 quest_hook::libil2cpp::Void,
@@ -340,12 +354,13 @@ impl crate::GlobalNamespace::PosesSerializer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesSerializer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (logger))
+            method.invoke_unchecked(self, (logger))?
         };
         Ok(__cordl_ret.into())
     }

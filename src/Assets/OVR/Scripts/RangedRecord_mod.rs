@@ -64,7 +64,7 @@ impl crate::Assets::OVR::Scripts::RangedRecord {
         minVal: f32,
         maxVal: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Assets::OVR::Scripts::RangedRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -79,12 +79,13 @@ impl crate::Assets::OVR::Scripts::RangedRecord {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Assets::OVR::Scripts::RangedRecord as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (order, cat, msg, val, minVal, maxVal))
+            method.invoke_unchecked(self, (order, cat, msg, val, minVal, maxVal))?
         };
         Ok(__cordl_ret.into())
     }

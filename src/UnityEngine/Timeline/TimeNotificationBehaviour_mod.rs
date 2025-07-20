@@ -55,7 +55,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         payload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::INotification>,
         flags: crate::UnityEngine::Timeline::NotificationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f64,
@@ -69,12 +69,13 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("AddNotification")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddNotification", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "AddNotification", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time, payload, flags))
+            method.invoke_unchecked(self, (_cordl_time, payload, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +85,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         currentTime: f64,
         previousTime: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
@@ -97,12 +98,14 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("CanRestoreNotification")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanRestoreNotification", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "CanRestoreNotification",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (e, info, currentTime, previousTime))
+            method.invoke_unchecked((), (e, info, currentTime, previousTime))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +120,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -133,15 +136,16 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::TimeNotificationBehaviour,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, duration, loopMode)) };
+        > = unsafe { method.invoke_unchecked((), (graph, duration, loopMode))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -156,7 +160,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::Playable,
@@ -167,12 +171,13 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("OnBehaviourPause")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnBehaviourPause", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "OnBehaviourPause", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable, info))
+            method.invoke_unchecked(self, (playable, info))?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +185,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Playables::Playable),
                 quest_hook::libil2cpp::Void,
@@ -188,12 +193,13 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("OnGraphStart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnGraphStart", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "OnGraphStart", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable))
+            method.invoke_unchecked(self, (playable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -202,7 +208,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::Playable,
@@ -213,12 +219,13 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("PrepareFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareFrame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "PrepareFrame", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable, info))
+            method.invoke_unchecked(self, (playable, info))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +234,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
@@ -237,28 +244,30 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("Restore_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Restore_internal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "Restore_internal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (e))
+            method.invoke_unchecked((), (e))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SortNotifications(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SortNotifications")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SortNotifications", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "SortNotifications", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -266,7 +275,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Playables::Playable),
                 quest_hook::libil2cpp::Void,
@@ -274,12 +283,14 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("SyncDurationWithExternalSource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SyncDurationWithExternalSource", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SyncDurationWithExternalSource", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable))
+            method.invoke_unchecked(self, (playable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -291,7 +302,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         playable: crate::UnityEngine::Playables::Playable,
         checkState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f64,
@@ -305,12 +316,14 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("TriggerNotificationsInRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriggerNotificationsInRange", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TriggerNotificationsInRange", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (start, end, info, playable, checkState))
+            method.invoke_unchecked(self, (start, end, info, playable, checkState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -321,7 +334,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::Playable,
@@ -335,28 +348,30 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("Trigger_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Trigger_internal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "Trigger_internal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (playable, output, e))
+            method.invoke_unchecked((), (playable, output, e))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -364,7 +379,7 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
         &mut self,
         value: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Playables::Playable),
                 quest_hook::libil2cpp::Void,
@@ -372,12 +387,13 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             >("set_timeSource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_timeSource", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeNotificationBehaviour as
+                    quest_hook::libil2cpp::Type > ::class(), "set_timeSource", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,39 +515,46 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
 #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
 impl crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     pub fn get_prewarm(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_prewarm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_prewarm", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+                    as quest_hook::libil2cpp::Type > ::class(), "get_prewarm", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_triggerInEditor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_triggerInEditor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_triggerInEditor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+                    as quest_hook::libil2cpp::Type > ::class(), "get_triggerInEditor",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_triggerOnce(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_triggerOnce")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_triggerOnce", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry
+                    as quest_hook::libil2cpp::Type > ::class(), "get_triggerOnce", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
         currentEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::IEventMerger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -55,12 +55,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::IEventMerger {
             >("MergeForward")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MergeForward", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::IEventMerger as
+                    quest_hook::libil2cpp::Type > ::class(), "MergeForward", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (currentEventPtr, nextEventPtr))
+            method.invoke_unchecked(self, (currentEventPtr, nextEventPtr))?
         };
         Ok(__cordl_ret.into())
     }

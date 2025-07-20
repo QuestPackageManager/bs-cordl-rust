@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {
         >,
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandaloneMonobehaviorExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -58,12 +58,13 @@ impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {
             >("Dispatch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispatch", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StandaloneMonobehaviorExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispatch", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (standaloneMonoBehavior, action))
+            method.invoke_unchecked((), (standaloneMonoBehavior, action))?
         };
         Ok(__cordl_ret.into())
     }
@@ -79,7 +80,7 @@ impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StandaloneMonobehaviorExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -98,13 +99,14 @@ impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {
             >("DispatchAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DispatchAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StandaloneMonobehaviorExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DispatchAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (standaloneMonoBehavior, action)) };
+        > = unsafe { method.invoke_unchecked((), (standaloneMonoBehavior, action))? };
         Ok(__cordl_ret.into())
     }
 }

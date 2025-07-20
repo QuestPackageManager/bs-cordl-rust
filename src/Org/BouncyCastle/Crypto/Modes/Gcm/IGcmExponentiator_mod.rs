@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
         pow: i64,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -54,12 +54,13 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
             >("ExponentiateX")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExponentiateX", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator as
+                    quest_hook::libil2cpp::Type > ::class(), "ExponentiateX", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pow, output))
+            method.invoke_unchecked(self, (pow, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -67,7 +68,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
         &mut self,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -75,12 +76,13 @@ impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Modes::Gcm::IGcmExponentiator as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (x))
+            method.invoke_unchecked(self, (x))?
         };
         Ok(__cordl_ret.into())
     }

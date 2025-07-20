@@ -43,7 +43,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
@@ -51,13 +51,14 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("Box")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Box", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "Box", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AndroidJavaObject,
-        > = unsafe { method.invoke_unchecked((), (obj)) };
+        > = unsafe { method.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertFromJNIArray<ArrayType>(
@@ -67,7 +68,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         ArrayType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 ArrayType,
@@ -75,17 +76,18 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("ConvertFromJNIArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertFromJNIArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "ConvertFromJNIArray", 1usize
                 )
             });
-        let __cordl_ret: ArrayType = unsafe { method.invoke_unchecked((), (array)) };
+        let __cordl_ret: ArrayType = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToJNIArray(
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Array>),
                 crate::System::IntPtr,
@@ -93,12 +95,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("ConvertToJNIArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertToJNIArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "ConvertToJNIArray", 1usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (array))
+            method.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +113,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         >,
         ret: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -127,12 +130,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("CreateJNIArgArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateJNIArgArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateJNIArgArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (args, ret))
+            method.invoke_unchecked((), (args, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +145,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         delegateHandle: crate::System::IntPtr,
         proxy: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaProxy>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -153,19 +157,20 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("CreateJavaProxy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateJavaProxy", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateJavaProxy", 3usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (player, delegateHandle, proxy))
+            method.invoke_unchecked((), (player, delegateHandle, proxy))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateJavaRunnable(
         jrunnable: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>),
                 crate::System::IntPtr,
@@ -173,12 +178,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("CreateJavaRunnable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateJavaRunnable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateJavaRunnable", 1usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jrunnable))
+            method.invoke_unchecked((), (jrunnable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +196,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         >,
         jniArgs: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -207,12 +213,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("DeleteJNIArgArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteJNIArgArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "DeleteJNIArgArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (args, jniArgs))
+            method.invoke_unchecked((), (args, jniArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +231,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -241,12 +248,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetConstructorID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConstructorID", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetConstructorID", 2usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, args))
+            method.invoke_unchecked((), (jclass, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -254,7 +262,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         jclass: crate::System::IntPtr,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -265,12 +273,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetConstructorID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConstructorID", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetConstructorID", 2usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, signature))
+            method.invoke_unchecked((), (jclass, signature))?
         };
         Ok(__cordl_ret.into())
     }
@@ -280,7 +289,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -293,12 +302,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetFieldID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFieldID", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetFieldID", 4usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, fieldName, signature, isStatic))
+            method.invoke_unchecked((), (jclass, fieldName, signature, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -311,7 +321,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         ReturnType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -323,12 +333,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetFieldID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFieldID", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetFieldID", 3usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, fieldName, isStatic))
+            method.invoke_unchecked((), (jclass, fieldName, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +349,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -351,12 +362,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetMethodIDFallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethodIDFallback", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMethodIDFallback", 4usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, methodName, signature, isStatic))
+            method.invoke_unchecked((), (jclass, methodName, signature, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -370,7 +382,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         >,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -389,12 +401,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetMethodID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethodID", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMethodID", 4usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, methodName, args, isStatic))
+            method.invoke_unchecked((), (jclass, methodName, args, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -412,7 +425,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         ReturnType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -431,12 +444,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetMethodID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethodID", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMethodID", 4usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, methodName, args, isStatic))
+            method.invoke_unchecked((), (jclass, methodName, args, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -446,7 +460,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -459,12 +473,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetMethodID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethodID", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMethodID", 4usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (jclass, methodName, signature, isStatic))
+            method.invoke_unchecked((), (jclass, methodName, signature, isStatic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -477,7 +492,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -489,13 +504,14 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetSignature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSignature", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetSignature", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (args)) };
+        > = unsafe { method.invoke_unchecked((), (args))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSignature_Il2CppArray2<ReturnType>(
@@ -511,7 +527,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         ReturnType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -523,13 +539,14 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetSignature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSignature", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetSignature", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (args)) };
+        > = unsafe { method.invoke_unchecked((), (args))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSignature_Il2CppObject0(
@@ -537,7 +554,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -545,13 +562,14 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("GetSignature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSignature", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "GetSignature", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (obj)) };
+        > = unsafe { method.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeJavaProxyMethod(
@@ -559,7 +577,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
         jmethodName: crate::System::IntPtr,
         jargs: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaProxy>,
@@ -571,12 +589,13 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("InvokeJavaProxyMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeJavaProxyMethod", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "InvokeJavaProxyMethod", 3usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (proxy, jmethodName, jargs))
+            method.invoke_unchecked((), (proxy, jmethodName, jargs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -592,7 +611,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -600,13 +619,14 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("Unbox")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Unbox", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "Unbox", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (obj)) };
+        > = unsafe { method.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnboxArray(
@@ -614,7 +634,7 @@ impl crate::UnityEngine::_AndroidJNIHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -622,28 +642,30 @@ impl crate::UnityEngine::_AndroidJNIHelper {
             >("UnboxArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnboxArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), "UnboxArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (obj)) };
+        > = unsafe { method.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::_AndroidJNIHelper as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

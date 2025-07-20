@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerceivedLoudnessPerLevelModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 f32,
@@ -60,18 +60,20 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
             >("GetLoudnessByLevelId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLoudnessByLevelId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PerceivedLoudnessPerLevelModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLoudnessByLevelId",
+                    1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (levelId)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (levelId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLoudnessByLevelIdOrNull(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f32>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerceivedLoudnessPerLevelModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::System::Nullable_1<f32>,
@@ -79,12 +81,14 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
             >("GetLoudnessByLevelIdOrNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLoudnessByLevelIdOrNull", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PerceivedLoudnessPerLevelModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetLoudnessByLevelIdOrNull", 1usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<f32> = unsafe {
-            method.invoke_unchecked(self, (levelId))
+            method.invoke_unchecked(self, (levelId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +96,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerceivedLoudnessPerLevelModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 f32,
@@ -100,18 +104,20 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
             >("GetLoudnessCorrectionByLevelId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLoudnessCorrectionByLevelId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PerceivedLoudnessPerLevelModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetLoudnessCorrectionByLevelId", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (levelId)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (levelId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxSfxVolumeByLevelId(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerceivedLoudnessPerLevelModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 f32,
@@ -119,11 +125,13 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
             >("GetMaxSfxVolumeByLevelId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaxSfxVolumeByLevelId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PerceivedLoudnessPerLevelModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaxSfxVolumeByLevelId",
+                    1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (levelId)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (levelId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -147,7 +155,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PerceivedLoudnessPerLevelModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -161,12 +169,13 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PerceivedLoudnessPerLevelModel as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (loudnessPerLeveDataList))
+            method.invoke_unchecked(self, (loudnessPerLeveDataList))?
         };
         Ok(__cordl_ret.into())
     }

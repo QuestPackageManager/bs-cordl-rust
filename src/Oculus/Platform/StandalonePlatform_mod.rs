@@ -53,7 +53,7 @@ impl crate::Oculus::Platform::StandalonePlatform {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -67,8 +67,9 @@ impl crate::Oculus::Platform::StandalonePlatform {
             >("AsyncInitialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsyncInitialize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform as
+                    quest_hook::libil2cpp::Type > ::class(), "AsyncInitialize", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -77,7 +78,7 @@ impl crate::Oculus::Platform::StandalonePlatform {
                     crate::Oculus::Platform::Models::PlatformInitialize,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (appID, accessToken)) };
+        > = unsafe { method.invoke_unchecked(self, (appID, accessToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsyncInitializeWithAccessTokenAndOptions(
@@ -99,7 +100,7 @@ impl crate::Oculus::Platform::StandalonePlatform {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -122,8 +123,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
             >("AsyncInitializeWithAccessTokenAndOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsyncInitializeWithAccessTokenAndOptions", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AsyncInitializeWithAccessTokenAndOptions", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -133,7 +136,7 @@ impl crate::Oculus::Platform::StandalonePlatform {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (appId, accessToken, initConfigOptions))
+            method.invoke_unchecked(self, (appId, accessToken, initConfigOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +151,7 @@ impl crate::Oculus::Platform::StandalonePlatform {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -162,8 +165,9 @@ impl crate::Oculus::Platform::StandalonePlatform {
             >("InitializeInEditor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeInEditor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform as
+                    quest_hook::libil2cpp::Type > ::class(), "InitializeInEditor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -172,7 +176,7 @@ impl crate::Oculus::Platform::StandalonePlatform {
                     crate::Oculus::Platform::Models::PlatformInitialize,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -185,16 +189,17 @@ impl crate::Oculus::Platform::StandalonePlatform {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -259,7 +264,7 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::IntPtr,
@@ -272,12 +277,13 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform_UnityLogDelegate as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (tag, msg, callback, object))
+            method.invoke_unchecked(self, (tag, msg, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -285,7 +291,7 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 quest_hook::libil2cpp::Void,
@@ -293,12 +299,13 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform_UnityLogDelegate as
+                    quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (result))
+            method.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +314,7 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
         tag: crate::System::IntPtr,
         msg: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -315,12 +322,13 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform_UnityLogDelegate as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tag, msg))
+            method.invoke_unchecked(self, (tag, msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -339,7 +347,7 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -350,12 +358,13 @@ impl crate::Oculus::Platform::StandalonePlatform_UnityLogDelegate {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::StandalonePlatform_UnityLogDelegate as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

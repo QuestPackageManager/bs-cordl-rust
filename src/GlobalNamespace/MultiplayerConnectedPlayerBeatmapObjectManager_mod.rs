@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::NoteCutInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
@@ -110,12 +110,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("AreNotesSame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AreNotesSame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AreNotesSame", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (noteController, noteCutInfo))
+            method.invoke_unchecked((), (noteController, noteCutInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +125,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>),
                 quest_hook::libil2cpp::Void,
@@ -131,12 +133,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("DespawnInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DespawnInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "DespawnInternal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteController))
+            method.invoke_unchecked(self, (noteController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +150,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::ObstacleController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>),
                 quest_hook::libil2cpp::Void,
@@ -154,12 +158,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("DespawnInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DespawnInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "DespawnInternal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obstacleController))
+            method.invoke_unchecked(self, (obstacleController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +175,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::SliderController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>),
                 quest_hook::libil2cpp::Void,
@@ -177,28 +183,32 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("DespawnInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DespawnInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "DespawnInternal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sliderNoteController))
+            method.invoke_unchecked(self, (sliderNoteController))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -208,7 +218,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::NoteCutInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::NoteCutInfoNetSerializable,
@@ -218,14 +228,16 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("HandleMultiplayerBeatmapObjectEventManagerBeatmapObjectWasCut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "HandleMultiplayerBeatmapObjectEventManagerBeatmapObjectWasCut",
                     1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteCutInfo))
+            method.invoke_unchecked(self, (noteCutInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,7 +247,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
@@ -245,14 +257,16 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("HandleMultiplayerBeatmapObjectEventManagerBeatmapObjectWasSpawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "HandleMultiplayerBeatmapObjectEventManagerBeatmapObjectWasSpawned",
                     1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteSpawnInfo))
+            method.invoke_unchecked(self, (noteSpawnInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -262,7 +276,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
@@ -272,13 +286,16 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("HandleMultiplayerBeatmapObjectEventManagerObstacleWasSpawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleMultiplayerBeatmapObjectEventManagerObstacleWasSpawned",
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleMultiplayerBeatmapObjectEventManagerObstacleWasSpawned",
                     1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obstacleSpawnInfo))
+            method.invoke_unchecked(self, (obstacleSpawnInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -288,7 +305,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
@@ -298,13 +315,15 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("HandleMultiplayerBeatmapObjectEventManagerSliderWasSpawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleMultiplayerBeatmapObjectEventManagerSliderWasSpawned",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleMultiplayerBeatmapObjectEventManagerSliderWasSpawned", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sliderSpawnInfo))
+            method.invoke_unchecked(self, (sliderSpawnInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -360,7 +379,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         >,
         forceIsFirstNoteBehaviour: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
@@ -374,8 +393,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("ProcessNoteData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessNoteData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessNoteData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -383,7 +404,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
                 .invoke_unchecked(
                     self,
                     (noteData, noteSpawnData, forceIsFirstNoteBehaviour),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -394,7 +415,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::ObstacleSpawnData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
@@ -407,12 +428,15 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("ProcessObstacleData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessObstacleData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessObstacleData",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obstacleData, obstacleSpawnData))
+            method.invoke_unchecked(self, (obstacleData, obstacleSpawnData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -423,7 +447,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::SliderSpawnData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
@@ -436,12 +460,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("ProcessSliderData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessSliderData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessSliderData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sliderData, sliderSpawnData))
+            method.invoke_unchecked(self, (sliderData, sliderSpawnData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -472,7 +498,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             crate::GlobalNamespace::VariableMovementDataProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -505,8 +531,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -523,7 +551,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
                         obstaclePool,
                         variableMovementDataProvider,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -536,7 +564,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -550,15 +578,18 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
             >("get_activeObstacleControllers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_activeObstacleControllers", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_activeObstacleControllers", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -664,7 +695,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_Init
         noteJumpMovementSpeed: f32,
         bpm: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -672,8 +703,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_Init
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -687,7 +720,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_Init
                         noteJumpMovementSpeed,
                         bpm,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

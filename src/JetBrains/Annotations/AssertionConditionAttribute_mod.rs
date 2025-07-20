@@ -53,7 +53,7 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
         &mut self,
         conditionType: crate::JetBrains::Annotations::AssertionConditionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::AssertionConditionAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::AssertionConditionType),
                 quest_hook::libil2cpp::Void,
@@ -61,12 +61,13 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::AssertionConditionAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (conditionType))
+            method.invoke_unchecked(self, (conditionType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +76,7 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
     ) -> quest_hook::libil2cpp::Result<
         crate::JetBrains::Annotations::AssertionConditionType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::AssertionConditionAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::JetBrains::Annotations::AssertionConditionType,
@@ -83,12 +84,13 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
             >("get_ConditionType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ConditionType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::AssertionConditionAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ConditionType", 0usize
                 )
             });
         let __cordl_ret: crate::JetBrains::Annotations::AssertionConditionType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +98,7 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
         &mut self,
         value: crate::JetBrains::Annotations::AssertionConditionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::AssertionConditionAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::AssertionConditionType),
                 quest_hook::libil2cpp::Void,
@@ -104,12 +106,13 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
             >("set_ConditionType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ConditionType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::AssertionConditionAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ConditionType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

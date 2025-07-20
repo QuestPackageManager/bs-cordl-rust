@@ -106,7 +106,7 @@ impl crate::UnityEngine::UIElements::ColorPage {
         >,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ColorPage> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColorPage as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -119,12 +119,13 @@ impl crate::UnityEngine::UIElements::ColorPage {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColorPage as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::ColorPage = unsafe {
-            method.invoke_unchecked((), (renderChain, alloc))
+            method.invoke_unchecked((), (renderChain, alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +134,7 @@ impl crate::UnityEngine::UIElements::ColorPage {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColorPage as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
@@ -141,12 +142,13 @@ impl crate::UnityEngine::UIElements::ColorPage {
             >("ToNativeColorPage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToNativeColorPage", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColorPage as
+                    quest_hook::libil2cpp::Type > ::class(), "ToNativeColorPage", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

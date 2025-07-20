@@ -81,7 +81,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -95,12 +95,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("CheckTypeForwardedFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckTypeForwardedFrom", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "CheckTypeForwardedFrom",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (cache, objectType, binderAssemblyString))
+            method.invoke_unchecked((), (cache, objectType, binderAssemblyString))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +112,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -117,13 +120,16 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("GetAssemblyString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssemblyString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "GetAssemblyString",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMemberInfo(
@@ -150,7 +156,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -184,13 +190,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("GetMemberInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMemberInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "GetMemberInfo", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (outMemberNames, outMemberTypes, outMemberData))
+                .invoke_unchecked(self, (outMemberNames, outMemberTypes, outMemberData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +206,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
         &mut self,
         objMember: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -206,12 +214,14 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("GetMemberType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMemberType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "GetMemberType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked(self, (objMember))
+            method.invoke_unchecked(self, (objMember))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +234,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
@@ -236,13 +246,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("GetObjectInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "GetObjectInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
-        > = unsafe { method.invoke_unchecked((), (serObjectInfoInit)) };
+        > = unsafe { method.invoke_unchecked((), (serObjectInfoInit))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeFullName(
@@ -250,7 +262,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -258,44 +270,50 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("GetTypeFullName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTypeFullName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "GetTypeFullName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InitMemberInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitMemberInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitMemberInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "InitMemberInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitNoMembers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitNoMembers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitNoMembers", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "InitNoMembers", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -319,7 +337,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             crate::System::Runtime::Serialization::SerializationBinder,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -345,8 +363,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("InitSerialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSerialize", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "InitSerialize", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -362,7 +382,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
                         objectWriter,
                         binder,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -383,7 +403,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             crate::System::Runtime::Serialization::SerializationBinder,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -406,8 +426,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("InitSerialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSerialize", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "InitSerialize", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -422,39 +444,43 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
                         converter,
                         binder,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InitSiWrite(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitSiWrite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSiWrite", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "InitSiWrite", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InternalInit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InternalInit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalInit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "InternalInit", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,7 +490,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             crate::System::Runtime::Serialization::SerializationBinder,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Serialization::SerializationBinder,
@@ -474,12 +500,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("InvokeSerializationBinder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeSerializationBinder", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "InvokeSerializationBinder", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (binder))
+            method.invoke_unchecked(self, (binder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -493,16 +522,18 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
     pub fn ObjectEnd(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ObjectEnd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ObjectEnd", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "ObjectEnd", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -514,7 +545,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -529,12 +560,14 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("PutObjectInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PutObjectInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "PutObjectInfo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (serObjectInfoInit, objectInfo))
+            method.invoke_unchecked((), (serObjectInfoInit, objectInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -561,7 +594,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -589,8 +622,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "Serialize", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -608,7 +643,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
                         objectWriter,
                         binder,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -632,7 +667,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -657,8 +692,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), "Serialize", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -675,23 +712,25 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo 
                         converter,
                         binder,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

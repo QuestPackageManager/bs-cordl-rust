@@ -68,16 +68,17 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     pub fn Abort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Abort")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Abort", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "Abort", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +89,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -98,58 +99,62 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("BeginWebRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginWebRequest", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginWebRequest", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Create() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), crate::System::IntPtr, 0usize>("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DisposeHandlers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DisposeHandlers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisposeHandlers", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "DisposeHandlers", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +164,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -170,13 +175,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("EscapeURL")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EscapeURL", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "EscapeURL", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s, e)) };
+        > = unsafe { method.invoke_unchecked((), (s, e))? };
         Ok(__cordl_ret.into())
     }
     pub fn EscapeURL_Il2CppString0(
@@ -184,7 +190,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -192,28 +198,30 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("EscapeURL")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EscapeURL", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "EscapeURL", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s)) };
+        > = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Finalize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "Finalize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -222,7 +230,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -232,13 +240,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("Get")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "Get", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri)) };
+        > = unsafe { method.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomMethod(
@@ -246,7 +255,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -254,13 +263,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("GetCustomMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCustomMethod", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCustomMethod", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetError(
@@ -268,7 +278,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
@@ -276,12 +286,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("GetError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetError", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "GetError", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -290,7 +301,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -298,13 +309,15 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("GetHTTPStatusString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHTTPStatusString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHTTPStatusString",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (responseCode)) };
+        > = unsafe { method.invoke_unchecked((), (responseCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethod(
@@ -312,7 +325,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
@@ -320,12 +333,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("GetMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethod", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMethod", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -335,7 +349,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -343,13 +357,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("GetResponseHeader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResponseHeader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "GetResponseHeader", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (name)) };
+        > = unsafe { method.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUrl(
@@ -357,7 +372,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -365,13 +380,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("GetUrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUrl", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUrl", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWebErrorString(
@@ -379,7 +395,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -387,28 +403,30 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("GetWebErrorString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWebErrorString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "GetWebErrorString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (err)) };
+        > = unsafe { method.invoke_unchecked((), (err))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InternalDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -416,7 +434,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         customMethodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -424,19 +442,21 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("InternalSetCustomMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalSetCustomMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalSetCustomMethod",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (customMethodName))
+            method.invoke_unchecked(self, (customMethodName))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetDefaults(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -444,12 +464,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("InternalSetDefaults")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalSetDefaults", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalSetDefaults",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -457,7 +479,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         methodType: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod),
                 quest_hook::libil2cpp::Void,
@@ -465,12 +487,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("InternalSetMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalSetMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalSetMethod", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (methodType))
+            method.invoke_unchecked(self, (methodType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -478,7 +501,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -486,12 +509,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("InternalSetUrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalSetUrl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalSetUrl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (url))
+            method.invoke_unchecked(self, (url))?
         };
         Ok(__cordl_ret.into())
     }
@@ -540,16 +564,17 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -560,7 +585,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -570,13 +595,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SendWebRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendWebRequest", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SendWebRequest", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetCertificateHandler(
@@ -585,7 +611,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Networking::CertificateHandler,
@@ -595,12 +621,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetCertificateHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCertificateHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCertificateHandler",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, (ch))
+            method.invoke_unchecked(self, (ch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -610,7 +638,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
@@ -618,12 +646,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetCustomMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCustomMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCustomMethod", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, (customMethodName))
+            method.invoke_unchecked(self, (customMethodName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -633,7 +662,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Networking::DownloadHandler,
@@ -643,12 +672,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetDownloadHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDownloadHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDownloadHandler", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, (dh))
+            method.invoke_unchecked(self, (dh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -658,7 +688,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod),
                 crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
@@ -666,12 +696,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMethod", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, (methodType))
+            method.invoke_unchecked(self, (methodType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -679,7 +710,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         limit: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -687,12 +718,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetRedirectLimitFromScripting")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetRedirectLimitFromScripting", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetRedirectLimitFromScripting", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (limit))
+            method.invoke_unchecked(self, (limit))?
         };
         Ok(__cordl_ret.into())
     }
@@ -702,7 +735,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
@@ -710,12 +743,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetTimeoutMsec")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTimeoutMsec", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTimeoutMsec", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, (timeout))
+            method.invoke_unchecked(self, (timeout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -725,7 +759,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Networking::UploadHandler,
@@ -735,12 +769,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetUploadHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetUploadHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SetUploadHandler", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, (uh))
+            method.invoke_unchecked(self, (uh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -750,7 +785,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
@@ -758,12 +793,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("SetUrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetUrl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "SetUrl", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
-            method.invoke_unchecked(self, (url))
+            method.invoke_unchecked(self, (url))?
         };
         Ok(__cordl_ret.into())
     }
@@ -772,7 +808,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -783,12 +819,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (url, method))
+            method.invoke_unchecked(self, (url, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -803,7 +840,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             crate::UnityEngine::Networking::UploadHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -820,12 +857,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (url, method, downloadHandler, uploadHandler))
+            method.invoke_unchecked(self, (url, method, downloadHandler, uploadHandler))?
         };
         Ok(__cordl_ret.into())
     }
@@ -840,7 +878,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             crate::UnityEngine::Networking::UploadHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -857,12 +895,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (uri, method, downloadHandler, uploadHandler))
+            method.invoke_unchecked(self, (uri, method, downloadHandler, uploadHandler))?
         };
         Ok(__cordl_ret.into())
     }
@@ -871,7 +910,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::CertificateHandler>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -881,55 +920,63 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("get_certificateHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_certificateHandler", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_certificateHandler",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::CertificateHandler,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_disposeCertificateHandlerOnDispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_disposeCertificateHandlerOnDispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_disposeCertificateHandlerOnDispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_disposeCertificateHandlerOnDispose", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_disposeDownloadHandlerOnDispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_disposeDownloadHandlerOnDispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_disposeDownloadHandlerOnDispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_disposeDownloadHandlerOnDispose", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_disposeUploadHandlerOnDispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_disposeUploadHandlerOnDispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_disposeUploadHandlerOnDispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_disposeUploadHandlerOnDispose", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_downloadHandler(
@@ -937,7 +984,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandler>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -947,25 +994,29 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("get_downloadHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_downloadHandler", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_downloadHandler",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::DownloadHandler,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_downloadedBytes(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u64, 0usize>("get_downloadedBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_downloadedBytes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_downloadedBytes",
+                    0usize
                 )
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_error(
@@ -973,7 +1024,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -981,37 +1032,40 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("get_error")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_error", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_error", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isDone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isDone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isDone", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isModifiable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isModifiable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isModifiable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isModifiable", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_method(
@@ -1019,7 +1073,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1027,25 +1081,27 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("get_method")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_method", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_method", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_responseCode(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_responseCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_responseCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_responseCode", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_result(
@@ -1053,7 +1109,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Networking::UnityWebRequest_Result,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Networking::UnityWebRequest_Result,
@@ -1061,12 +1117,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("get_result")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_result", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_result", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_Result = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1075,7 +1132,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UploadHandler>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UploadHandler>,
@@ -1083,13 +1140,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("get_uploadHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_uploadHandler", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_uploadHandler", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UploadHandler,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_url(
@@ -1097,7 +1155,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1105,13 +1163,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("get_url")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_url", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "get_url", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_certificateHandler(
@@ -1120,7 +1179,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             crate::UnityEngine::Networking::CertificateHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Networking::CertificateHandler,
@@ -1130,12 +1189,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_certificateHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_certificateHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_certificateHandler",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1143,7 +1204,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1151,12 +1212,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_disposeCertificateHandlerOnDispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_disposeCertificateHandlerOnDispose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_disposeCertificateHandlerOnDispose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1164,7 +1227,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1172,12 +1235,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_disposeDownloadHandlerOnDispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_disposeDownloadHandlerOnDispose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_disposeDownloadHandlerOnDispose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1185,7 +1250,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1193,12 +1258,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_disposeUploadHandlerOnDispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_disposeUploadHandlerOnDispose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_disposeUploadHandlerOnDispose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1206,7 +1273,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Networking::DownloadHandler,
@@ -1216,12 +1283,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_downloadHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_downloadHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_downloadHandler",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1229,7 +1298,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1237,12 +1306,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_method")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_method", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_method", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1250,7 +1320,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -1258,12 +1328,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_redirectLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_redirectLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_redirectLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1271,16 +1342,17 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_timeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_timeout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_timeout", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1288,7 +1360,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UploadHandler>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Networking::UploadHandler,
@@ -1298,12 +1370,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_uploadHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_uploadHandler", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_uploadHandler", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1311,7 +1384,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                 quest_hook::libil2cpp::Void,
@@ -1319,12 +1392,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_uri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_uri", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_uri", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1332,7 +1406,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequest as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1340,12 +1414,13 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             >("set_url")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_url", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequest as
+                    quest_hook::libil2cpp::Type > ::class(), "set_url", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

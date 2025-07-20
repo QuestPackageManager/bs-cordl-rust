@@ -69,7 +69,7 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
         &mut self,
         sourceNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -77,12 +77,13 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Scripting::APIUpdating::MovedFromAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sourceNamespace))
+            method.invoke_unchecked(self, (sourceNamespace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +94,7 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
         sourceAssembly: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sourceClassName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -106,8 +107,9 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Scripting::APIUpdating::MovedFromAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -115,7 +117,7 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
                 .invoke_unchecked(
                     self,
                     (autoUpdateAPI, sourceNamespace, sourceAssembly, sourceClassName),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

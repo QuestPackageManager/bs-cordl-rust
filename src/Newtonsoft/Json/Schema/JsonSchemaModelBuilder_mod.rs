@@ -58,7 +58,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
         >,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -73,12 +73,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("AddAdditionalItems")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAdditionalItems", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddAdditionalItems", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parentNode, schema))
+            method.invoke_unchecked(self, (parentNode, schema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +90,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
         >,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -104,12 +105,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("AddAdditionalProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAdditionalProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddAdditionalProperties",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parentNode, schema))
+            method.invoke_unchecked(self, (parentNode, schema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +124,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
         index: i32,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -137,12 +140,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("AddItem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddItem", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddItem", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parentNode, index, schema))
+            method.invoke_unchecked(self, (parentNode, index, schema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +167,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -192,12 +196,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("AddProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddProperties", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, target))
+            method.invoke_unchecked(self, (source, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +219,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -237,12 +242,13 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("AddProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddProperty", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddProperty", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (target, propertyName, schema))
+            method.invoke_unchecked(self, (target, propertyName, schema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +261,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -272,13 +278,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("AddSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSchema", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSchema", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchemaNode,
-        > = unsafe { method.invoke_unchecked(self, (existingNode, schema)) };
+        > = unsafe { method.invoke_unchecked(self, (existingNode, schema))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build(
@@ -287,7 +294,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>),
                 quest_hook::libil2cpp::Gc<
@@ -297,13 +304,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        > = unsafe { method.invoke_unchecked(self, (schema)) };
+        > = unsafe { method.invoke_unchecked(self, (schema))? };
         Ok(__cordl_ret.into())
     }
     pub fn BuildNodeModel(
@@ -312,7 +320,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Newtonsoft::Json::Schema::JsonSchemaNode,
@@ -324,13 +332,14 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
             >("BuildNodeModel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildNodeModel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildNodeModel", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchemaModel,
-        > = unsafe { method.invoke_unchecked(self, (node)) };
+        > = unsafe { method.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -343,16 +352,17 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Schema::JsonSchemaModelBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

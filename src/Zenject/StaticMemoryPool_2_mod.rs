@@ -96,15 +96,19 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::StaticMemoryPool_2<
+            TParam1,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TParam1), TValue, 1usize>("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::StaticMemoryPool_2 < TParam1, TValue > as
+                    quest_hook::libil2cpp::Type > ::class(), "Spawn", 1usize
                 )
             });
-        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, (param)) };
+        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, (param))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -120,7 +124,10 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::StaticMemoryPool_2<
+            TParam1,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Action_2<TParam1, TValue>>,
@@ -131,12 +138,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::StaticMemoryPool_2 < TParam1, TValue > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (onSpawnMethod, onDespawnedMethod))
+            method.invoke_unchecked(self, (onSpawnMethod, onDespawnedMethod))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +158,10 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::StaticMemoryPool_2<
+            TParam1,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action_2<TParam1, TValue>>),
                 quest_hook::libil2cpp::Void,
@@ -158,12 +169,13 @@ impl<
             >("set_OnSpawnMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_OnSpawnMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::StaticMemoryPool_2 < TParam1, TValue > as
+                    quest_hook::libil2cpp::Type > ::class(), "set_OnSpawnMethod", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

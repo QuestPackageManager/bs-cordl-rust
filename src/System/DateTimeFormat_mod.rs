@@ -42,7 +42,7 @@ impl crate::System::DateTimeFormat {
         result: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>, i32),
                 quest_hook::libil2cpp::Void,
@@ -50,12 +50,13 @@ impl crate::System::DateTimeFormat {
             >("Append2DigitNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Append2DigitNumber", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "Append2DigitNumber", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (result, val))
+            method.invoke_unchecked((), (result, val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +70,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -86,13 +87,14 @@ impl crate::System::DateTimeFormat {
             >("ExpandPredefinedFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandPredefinedFormat", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "ExpandPredefinedFormat", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (format, dateTime, dtfi, offset)) };
+        > = unsafe { method.invoke_unchecked((), (format, dateTime, dtfi, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatCustomized(
@@ -106,7 +108,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -122,12 +124,13 @@ impl crate::System::DateTimeFormat {
             >("FormatCustomized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatCustomized", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatCustomized", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
-            method.invoke_unchecked((), (dateTime, format, dtfi, offset, result))
+            method.invoke_unchecked((), (dateTime, format, dtfi, offset, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,7 +139,7 @@ impl crate::System::DateTimeFormat {
         offset: crate::System::TimeSpan,
         result: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -148,12 +151,13 @@ impl crate::System::DateTimeFormat {
             >("FormatCustomizedRoundripTimeZone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatCustomizedRoundripTimeZone", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatCustomizedRoundripTimeZone", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (dateTime, offset, result))
+            method.invoke_unchecked((), (dateTime, offset, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +169,7 @@ impl crate::System::DateTimeFormat {
         timeOnly: bool,
         result: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -180,8 +184,9 @@ impl crate::System::DateTimeFormat {
             >("FormatCustomizedTimeZone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatCustomizedTimeZone", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatCustomizedTimeZone", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -189,7 +194,7 @@ impl crate::System::DateTimeFormat {
                 .invoke_unchecked(
                     (),
                     (dateTime, offset, format, tokenLen, timeOnly, result),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -200,7 +205,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -214,13 +219,14 @@ impl crate::System::DateTimeFormat {
             >("FormatDayOfWeek")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatDayOfWeek", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatDayOfWeek", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (dayOfWeek, repeat, dtfi)) };
+        > = unsafe { method.invoke_unchecked((), (dayOfWeek, repeat, dtfi))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatDigits_StringBuilder_i32_i32_0(
@@ -228,7 +234,7 @@ impl crate::System::DateTimeFormat {
         value: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -240,12 +246,13 @@ impl crate::System::DateTimeFormat {
             >("FormatDigits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatDigits", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatDigits", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (outputBuffer, value, len))
+            method.invoke_unchecked((), (outputBuffer, value, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +262,7 @@ impl crate::System::DateTimeFormat {
         len: i32,
         overrideLengthLimit: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -268,12 +275,13 @@ impl crate::System::DateTimeFormat {
             >("FormatDigits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatDigits", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatDigits", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (outputBuffer, value, len, overrideLengthLimit))
+            method.invoke_unchecked((), (outputBuffer, value, len, overrideLengthLimit))?
         };
         Ok(__cordl_ret.into())
     }
@@ -285,7 +293,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -300,14 +308,15 @@ impl crate::System::DateTimeFormat {
             >("FormatHebrewMonthName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatHebrewMonthName", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatHebrewMonthName", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (_cordl_time, month, repeatCount, dtfi))
+            method.invoke_unchecked((), (_cordl_time, month, repeatCount, dtfi))?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +327,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -332,13 +341,14 @@ impl crate::System::DateTimeFormat {
             >("FormatMonth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatMonth", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatMonth", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (month, repeatCount, dtfi)) };
+        > = unsafe { method.invoke_unchecked((), (month, repeatCount, dtfi))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatStringBuilder(
@@ -351,7 +361,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -366,12 +376,13 @@ impl crate::System::DateTimeFormat {
             >("FormatStringBuilder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatStringBuilder", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "FormatStringBuilder", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
-            method.invoke_unchecked((), (dateTime, format, dtfi, offset))
+            method.invoke_unchecked((), (dateTime, format, dtfi, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -382,7 +393,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -394,13 +405,14 @@ impl crate::System::DateTimeFormat {
             >("Format")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Format", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "Format", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (dateTime, format, provider)) };
+        > = unsafe { method.invoke_unchecked((), (dateTime, format, provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn Format_TimeSpan1(
@@ -411,7 +423,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -424,13 +436,16 @@ impl crate::System::DateTimeFormat {
             >("Format")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Format", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "Format", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (dateTime, format, provider, offset)) };
+        > = unsafe {
+            method.invoke_unchecked((), (dateTime, format, provider, offset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRealFormat(
@@ -439,7 +454,7 @@ impl crate::System::DateTimeFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -452,20 +467,21 @@ impl crate::System::DateTimeFormat {
             >("GetRealFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRealFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRealFormat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (format, dtfi)) };
+        > = unsafe { method.invoke_unchecked((), (format, dtfi))? };
         Ok(__cordl_ret.into())
     }
     pub fn HebrewFormatDigits(
         outputBuffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         digits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>, i32),
                 quest_hook::libil2cpp::Void,
@@ -473,12 +489,13 @@ impl crate::System::DateTimeFormat {
             >("HebrewFormatDigits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HebrewFormatDigits", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "HebrewFormatDigits", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (outputBuffer, digits))
+            method.invoke_unchecked((), (outputBuffer, digits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -486,7 +503,7 @@ impl crate::System::DateTimeFormat {
         format: crate::System::ReadOnlySpan_1<char>,
         dateTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, crate::System::DateTime),
                 quest_hook::libil2cpp::Void,
@@ -494,12 +511,13 @@ impl crate::System::DateTimeFormat {
             >("InvalidFormatForLocal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvalidFormatForLocal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "InvalidFormatForLocal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (format, dateTime))
+            method.invoke_unchecked((), (format, dateTime))?
         };
         Ok(__cordl_ret.into())
     }
@@ -509,7 +527,7 @@ impl crate::System::DateTimeFormat {
         tokenLen: i32,
         patternToMatch: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, i32, i32, char),
                 bool,
@@ -517,12 +535,13 @@ impl crate::System::DateTimeFormat {
             >("IsUseGenitiveForm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsUseGenitiveForm", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "IsUseGenitiveForm", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (format, index, tokenLen, patternToMatch))
+            method.invoke_unchecked((), (format, index, tokenLen, patternToMatch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -530,7 +549,7 @@ impl crate::System::DateTimeFormat {
         format: crate::System::ReadOnlySpan_1<char>,
         pos: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, i32),
                 i32,
@@ -538,11 +557,12 @@ impl crate::System::DateTimeFormat {
             >("ParseNextChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseNextChar", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseNextChar", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (format, pos)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (format, pos))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseQuoteString(
@@ -550,7 +570,7 @@ impl crate::System::DateTimeFormat {
         pos: i32,
         result: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -562,12 +582,13 @@ impl crate::System::DateTimeFormat {
             >("ParseQuoteString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseQuoteString", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseQuoteString", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (format, pos, result))
+            method.invoke_unchecked((), (format, pos, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -576,7 +597,7 @@ impl crate::System::DateTimeFormat {
         pos: i32,
         patternChar: char,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, i32, char),
                 i32,
@@ -584,12 +605,13 @@ impl crate::System::DateTimeFormat {
             >("ParseRepeatPattern")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseRepeatPattern", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseRepeatPattern", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (format, pos, patternChar))
+            method.invoke_unchecked((), (format, pos, patternChar))?
         };
         Ok(__cordl_ret.into())
     }
@@ -599,7 +621,7 @@ impl crate::System::DateTimeFormat {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -612,12 +634,13 @@ impl crate::System::DateTimeFormat {
             >("TryFormatO")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryFormatO", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "TryFormatO", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (dateTime, offset, destination, charsWritten))
+            method.invoke_unchecked((), (dateTime, offset, destination, charsWritten))?
         };
         Ok(__cordl_ret.into())
     }
@@ -627,7 +650,7 @@ impl crate::System::DateTimeFormat {
         destination: crate::System::Span_1<char>,
         charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -640,12 +663,13 @@ impl crate::System::DateTimeFormat {
             >("TryFormatR")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryFormatR", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "TryFormatR", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (dateTime, offset, destination, charsWritten))
+            method.invoke_unchecked((), (dateTime, offset, destination, charsWritten))?
         };
         Ok(__cordl_ret.into())
     }
@@ -656,7 +680,7 @@ impl crate::System::DateTimeFormat {
         format: crate::System::ReadOnlySpan_1<char>,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -670,8 +694,9 @@ impl crate::System::DateTimeFormat {
             >("TryFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryFormat", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "TryFormat", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -679,7 +704,7 @@ impl crate::System::DateTimeFormat {
                 .invoke_unchecked(
                     (),
                     (dateTime, destination, charsWritten, format, provider),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -691,7 +716,7 @@ impl crate::System::DateTimeFormat {
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
         offset: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -706,8 +731,9 @@ impl crate::System::DateTimeFormat {
             >("TryFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryFormat", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "TryFormat", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -715,7 +741,7 @@ impl crate::System::DateTimeFormat {
                 .invoke_unchecked(
                     (),
                     (dateTime, destination, charsWritten, format, provider, offset),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -723,7 +749,7 @@ impl crate::System::DateTimeFormat {
         value: u64,
         buffer: crate::System::Span_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, crate::System::Span_1<char>),
                 quest_hook::libil2cpp::Void,
@@ -731,12 +757,13 @@ impl crate::System::DateTimeFormat {
             >("WriteDigits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteDigits", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "WriteDigits", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value, buffer))
+            method.invoke_unchecked((), (value, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -745,7 +772,7 @@ impl crate::System::DateTimeFormat {
         buffer: crate::System::Span_1<char>,
         startingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32, crate::System::Span_1<char>, i32),
                 quest_hook::libil2cpp::Void,
@@ -753,12 +780,13 @@ impl crate::System::DateTimeFormat {
             >("WriteFourDecimalDigits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteFourDecimalDigits", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "WriteFourDecimalDigits", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value, buffer, startingIndex))
+            method.invoke_unchecked((), (value, buffer, startingIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -767,7 +795,7 @@ impl crate::System::DateTimeFormat {
         destination: crate::System::Span_1<char>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32, crate::System::Span_1<char>, i32),
                 quest_hook::libil2cpp::Void,
@@ -775,12 +803,13 @@ impl crate::System::DateTimeFormat {
             >("WriteTwoDecimalDigits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteTwoDecimalDigits", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeFormat as quest_hook::libil2cpp::Type >
+                    ::class(), "WriteTwoDecimalDigits", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value, destination, offset))
+            method.invoke_unchecked((), (value, destination, offset))?
         };
         Ok(__cordl_ret.into())
     }

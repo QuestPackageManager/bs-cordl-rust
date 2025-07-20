@@ -43,7 +43,7 @@ impl crate::UnityEngine::GUILayout {
         content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
         style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Rect,
@@ -55,19 +55,20 @@ impl crate::UnityEngine::GUILayout {
             >("BeginArea")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginArea", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginArea", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (screenRect, content, style))
+            method.invoke_unchecked((), (screenRect, content, style))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn BeginArea_Rect0(
         screenRect: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rect),
                 quest_hook::libil2cpp::Void,
@@ -75,12 +76,13 @@ impl crate::UnityEngine::GUILayout {
             >("BeginArea")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginArea", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginArea", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (screenRect))
+            method.invoke_unchecked((), (screenRect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +95,7 @@ impl crate::UnityEngine::GUILayout {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
@@ -111,12 +113,13 @@ impl crate::UnityEngine::GUILayout {
             >("BeginHorizontal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginHorizontal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginHorizontal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, style, options))
+            method.invoke_unchecked((), (content, style, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -127,7 +130,7 @@ impl crate::UnityEngine::GUILayout {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -139,12 +142,13 @@ impl crate::UnityEngine::GUILayout {
             >("BeginHorizontal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginHorizontal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginHorizontal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (options))
+            method.invoke_unchecked((), (options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +161,7 @@ impl crate::UnityEngine::GUILayout {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
@@ -175,12 +179,13 @@ impl crate::UnityEngine::GUILayout {
             >("BeginVertical")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginVertical", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginVertical", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, style, options))
+            method.invoke_unchecked((), (content, style, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +196,7 @@ impl crate::UnityEngine::GUILayout {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -203,12 +208,13 @@ impl crate::UnityEngine::GUILayout {
             >("BeginVertical")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginVertical", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginVertical", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (options))
+            method.invoke_unchecked((), (options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +227,7 @@ impl crate::UnityEngine::GUILayout {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
@@ -239,40 +245,43 @@ impl crate::UnityEngine::GUILayout {
             >("DoLabel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoLabel", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "DoLabel", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, style, options))
+            method.invoke_unchecked((), (content, style, options))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndArea() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("EndArea")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndArea", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "EndArea", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndVertical() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("EndVertical")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndVertical", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "EndVertical", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +290,7 @@ impl crate::UnityEngine::GUILayout {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
@@ -289,13 +298,14 @@ impl crate::UnityEngine::GUILayout {
             >("Height")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Height", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "Height", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::GUILayoutOption,
-        > = unsafe { method.invoke_unchecked((), (height)) };
+        > = unsafe { method.invoke_unchecked((), (height))? };
         Ok(__cordl_ret.into())
     }
     pub fn Label(
@@ -306,7 +316,7 @@ impl crate::UnityEngine::GUILayout {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -323,28 +333,30 @@ impl crate::UnityEngine::GUILayout {
             >("Label")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Label", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "Label", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (text, options))
+            method.invoke_unchecked((), (text, options))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Space(
         pixels: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("Space")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Space", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "Space", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (pixels))
+            method.invoke_unchecked((), (pixels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -353,7 +365,7 @@ impl crate::UnityEngine::GUILayout {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUILayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
@@ -361,13 +373,14 @@ impl crate::UnityEngine::GUILayout {
             >("Width")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Width", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUILayout as quest_hook::libil2cpp::Type >
+                    ::class(), "Width", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::GUILayoutOption,
-        > = unsafe { method.invoke_unchecked((), (width)) };
+        > = unsafe { method.invoke_unchecked((), (width))? };
         Ok(__cordl_ret.into())
     }
 }

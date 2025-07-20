@@ -115,7 +115,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities,
@@ -123,12 +123,14 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
             >("FromJson")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromJson", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities
+                    as quest_hook::libil2cpp::Type > ::class(), "FromJson", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities = unsafe {
-            method.invoke_unchecked((), (json))
+            method.invoke_unchecked((), (json))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +139,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -145,13 +147,15 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
             >("ToJson")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToJson", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities
+                    as quest_hook::libil2cpp::Type > ::class(), "ToJson", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -159,7 +163,7 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -167,13 +171,15 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities
+                    as quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

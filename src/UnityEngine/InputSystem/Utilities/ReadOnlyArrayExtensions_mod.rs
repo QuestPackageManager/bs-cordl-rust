@@ -49,7 +49,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
@@ -60,11 +60,12 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions
+                    as quest_hook::libil2cpp::Type > ::class(), "Contains", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsReference<TValue>(
@@ -75,7 +76,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
@@ -86,11 +87,13 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
             >("ContainsReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsReference", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions
+                    as quest_hook::libil2cpp::Type > ::class(), "ContainsReference",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn HaveEqualReferences<TValue>(
@@ -104,7 +107,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
@@ -118,12 +121,14 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
             >("HaveEqualReferences")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HaveEqualReferences", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions
+                    as quest_hook::libil2cpp::Type > ::class(), "HaveEqualReferences",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (array1, array2, count))
+            method.invoke_unchecked((), (array1, array2, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +140,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
@@ -146,11 +151,13 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
             >("IndexOfReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOfReference", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions
+                    as quest_hook::libil2cpp::Type > ::class(), "IndexOfReference",
+                    2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, value)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, value))? };
         Ok(__cordl_ret.into())
     }
 }

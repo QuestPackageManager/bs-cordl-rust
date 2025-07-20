@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
         certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         certSet: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -55,12 +55,13 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("AddCertsFromSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddCertsFromSet", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "AddCertsFromSet", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (certs, certSet))
+            method.invoke_unchecked(self, (certs, certSet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +70,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
         crls: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         crlSet: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -80,12 +81,13 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("AddCrlsFromSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddCrlsFromSet", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "AddCrlsFromSet", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (crls, crlSet))
+            method.invoke_unchecked(self, (crls, crlSet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +98,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
         digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         encryption: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -110,12 +112,13 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("AddEntries")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddEntries", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "AddEntries", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (oid, digest, encryption))
+            method.invoke_unchecked((), (oid, digest, encryption))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +129,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Store>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -139,13 +142,15 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("CreateAttributeStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateAttributeStore", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateAttributeStore",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::IX509Store,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type, certSet)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, certSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCertificateStore(
@@ -155,7 +160,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Store>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -168,13 +173,15 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("CreateCertificateStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCertificateStore", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateCertificateStore",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::IX509Store,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type, certSet)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, certSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCrlStore(
@@ -184,7 +191,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Store>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -197,13 +204,14 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("CreateCrlStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCrlStore", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateCrlStore", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::Store::IX509Store,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type, crlSet)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, crlSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn FixAlgID(
@@ -216,7 +224,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -228,13 +236,14 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("FixAlgID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FixAlgID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "FixAlgID", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        > = unsafe { method.invoke_unchecked(self, (algId)) };
+        > = unsafe { method.invoke_unchecked(self, (algId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDigestAlgName(
@@ -243,7 +252,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -251,13 +260,14 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("GetDigestAlgName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDigestAlgName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDigestAlgName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (digestAlgOid)) };
+        > = unsafe { method.invoke_unchecked(self, (digestAlgOid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDigestAliases(
@@ -270,7 +280,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -282,15 +292,16 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("GetDigestAliases")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDigestAliases", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDigestAliases", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (algName)) };
+        > = unsafe { method.invoke_unchecked(self, (algName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDigestInstance(
@@ -299,7 +310,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -307,13 +318,14 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("GetDigestInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDigestInstance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDigestInstance", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked(self, (algorithm)) };
+        > = unsafe { method.invoke_unchecked(self, (algorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEncAlgorithmIdentifier(
@@ -329,7 +341,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -346,13 +358,15 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("GetEncAlgorithmIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEncAlgorithmIdentifier", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEncAlgorithmIdentifier",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        > = unsafe { method.invoke_unchecked(self, (encOid, sigX509Parameters)) };
+        > = unsafe { method.invoke_unchecked(self, (encOid, sigX509Parameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEncOid(
@@ -364,7 +378,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -377,13 +391,14 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("GetEncOid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEncOid", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEncOid", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (key, digestOID)) };
+        > = unsafe { method.invoke_unchecked(self, (key, digestOID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEncryptionAlgName(
@@ -392,7 +407,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -400,13 +415,15 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("GetEncryptionAlgName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEncryptionAlgName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEncryptionAlgName",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (encryptionAlgOid)) };
+        > = unsafe { method.invoke_unchecked(self, (encryptionAlgOid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSignatureInstance(
@@ -415,7 +432,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
@@ -423,13 +440,15 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             >("GetSignatureInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSignatureInstance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSignatureInstance",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISigner,
-        > = unsafe { method.invoke_unchecked(self, (algorithm)) };
+        > = unsafe { method.invoke_unchecked(self, (algorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -442,16 +461,17 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsSignedHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsSignedHelper as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

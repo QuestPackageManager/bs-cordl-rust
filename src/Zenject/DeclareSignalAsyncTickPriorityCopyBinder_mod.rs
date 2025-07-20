@@ -55,7 +55,7 @@ impl crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalTickPriorityCopyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::SignalTickPriorityCopyBinder>,
@@ -63,13 +63,14 @@ impl crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder {
             >("RunAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RunAsync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DeclareSignalAsyncTickPriorityCopyBinder as
+                    quest_hook::libil2cpp::Type > ::class(), "RunAsync", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::SignalTickPriorityCopyBinder,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RunSync(
@@ -77,7 +78,7 @@ impl crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
@@ -85,12 +86,13 @@ impl crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder {
             >("RunSync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RunSync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DeclareSignalAsyncTickPriorityCopyBinder as
+                    quest_hook::libil2cpp::Type > ::class(), "RunSync", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +102,7 @@ impl crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder {
             crate::Zenject::SignalDeclarationBindInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>),
                 quest_hook::libil2cpp::Void,
@@ -108,12 +110,13 @@ impl crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DeclareSignalAsyncTickPriorityCopyBinder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (signalBindInfo))
+            method.invoke_unchecked(self, (signalBindInfo))?
         };
         Ok(__cordl_ret.into())
     }

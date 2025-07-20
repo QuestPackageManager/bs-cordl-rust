@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         startColor: crate::UnityEngine::Color,
         endColor: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Color, crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -68,35 +68,37 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("SetColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColors", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColors", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (startColor, endColor))
+            method.invoke_unchecked(self, (startColor, endColor))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetDisabledState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetDisabledState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDisabledState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDisabledState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetHighlightedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -104,51 +106,55 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("SetHighlightedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetHighlightedState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "SetHighlightedState",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormalState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetNormalState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetNormalState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "SetNormalState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetPressedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetPressedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPressedState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPressedState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetSelectedAndHighlightedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -156,28 +162,31 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("SetSelectedAndHighlightedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSelectedAndHighlightedState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetSelectedAndHighlightedState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetSelectedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetSelectedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSelectedState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSelectedState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +205,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Color,
@@ -217,8 +226,9 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("StartTween")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartTween", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "StartTween", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -233,7 +243,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                         transitionTiming,
                         colorTween,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +255,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::GlobalNamespace::TransitionTimingSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Color,
@@ -257,19 +267,20 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("StartTweens")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartTweens", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "StartTweens", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (endColor1, endColor2, transitionTiming))
+            method.invoke_unchecked(self, (endColor1, endColor2, transitionTiming))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StopCurrentTransitionAnimation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -277,12 +288,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("StopCurrentTransitionAnimation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StopCurrentTransitionAnimation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "StopCurrentTransitionAnimation", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -292,7 +305,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::GlobalNamespace::TransitionTimingSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TransitionTimingSO>),
                 quest_hook::libil2cpp::Void,
@@ -300,12 +313,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("TransitionToDisabledState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransitionToDisabledState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "TransitionToDisabledState",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transitionTiming))
+            method.invoke_unchecked(self, (transitionTiming))?
         };
         Ok(__cordl_ret.into())
     }
@@ -315,7 +330,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::GlobalNamespace::TransitionTimingSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TransitionTimingSO>),
                 quest_hook::libil2cpp::Void,
@@ -323,12 +338,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("TransitionToHighlightedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransitionToHighlightedState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TransitionToHighlightedState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transitionTiming))
+            method.invoke_unchecked(self, (transitionTiming))?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +355,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::GlobalNamespace::TransitionTimingSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TransitionTimingSO>),
                 quest_hook::libil2cpp::Void,
@@ -346,12 +363,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("TransitionToNormalState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransitionToNormalState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "TransitionToNormalState",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transitionTiming))
+            method.invoke_unchecked(self, (transitionTiming))?
         };
         Ok(__cordl_ret.into())
     }
@@ -361,7 +380,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::GlobalNamespace::TransitionTimingSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TransitionTimingSO>),
                 quest_hook::libil2cpp::Void,
@@ -369,12 +388,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("TransitionToPressedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransitionToPressedState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "TransitionToPressedState",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transitionTiming))
+            method.invoke_unchecked(self, (transitionTiming))?
         };
         Ok(__cordl_ret.into())
     }
@@ -384,7 +405,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::GlobalNamespace::TransitionTimingSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TransitionTimingSO>),
                 quest_hook::libil2cpp::Void,
@@ -392,12 +413,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("TransitionToSelectedAndHighlightedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransitionToSelectedAndHighlightedState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TransitionToSelectedAndHighlightedState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transitionTiming))
+            method.invoke_unchecked(self, (transitionTiming))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +430,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             crate::GlobalNamespace::TransitionTimingSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TransitionTimingSO>),
                 quest_hook::libil2cpp::Void,
@@ -415,12 +438,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("TransitionToSelectedState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransitionToSelectedState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "TransitionToSelectedState",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (transitionTiming))
+            method.invoke_unchecked(self, (transitionTiming))?
         };
         Ok(__cordl_ret.into())
     }
@@ -428,7 +453,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -436,12 +461,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("<StartTweens>b__18_2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<StartTweens>b__18_2", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "<StartTweens>b__18_2",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (color))
+            method.invoke_unchecked(self, (color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -449,7 +476,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         &mut self,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -457,19 +484,21 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("<StartTweens>b__18_3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<StartTweens>b__18_3", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "<StartTweens>b__18_3",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (color))
+            method.invoke_unchecked(self, (color))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _StartTweens_g__Color1CompleteAction_18_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -477,19 +506,21 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("<StartTweens>g__Color1CompleteAction|18_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<StartTweens>g__Color1CompleteAction|18_0", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<StartTweens>g__Color1CompleteAction|18_0", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _StartTweens_g__Color2CompleteAction_18_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -497,28 +528,31 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("<StartTweens>g__Color2CompleteAction|18_1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<StartTweens>g__Color2CompleteAction|18_1", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<StartTweens>g__Color2CompleteAction|18_1", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -527,7 +561,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BaseTransitionSO>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GradientImageViewStateTransition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BaseTransitionSO>,
@@ -535,13 +569,14 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
             >("get_transition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_transition", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GradientImageViewStateTransition as
+                    quest_hook::libil2cpp::Type > ::class(), "get_transition", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BaseTransitionSO,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -58,7 +58,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         >,
         keyIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -72,12 +72,13 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddKekRecipient")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddKekRecipient", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddKekRecipient", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (keyAlgorithm, key, keyIdentifier))
+            method.invoke_unchecked(self, (keyAlgorithm, key, keyIdentifier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +92,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -107,12 +108,13 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddKekRecipient")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddKekRecipient", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddKekRecipient", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (keyAlgorithm, key, kekIdentifier))
+            method.invoke_unchecked(self, (keyAlgorithm, key, kekIdentifier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +134,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         >,
         cekWrapAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -152,8 +154,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddKeyAgreementRecipient")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddKeyAgreementRecipient", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddKeyAgreementRecipient",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -167,7 +171,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                         recipientCert,
                         cekWrapAlgorithm,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +191,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         >,
         cekWrapAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -205,8 +209,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddKeyAgreementRecipients")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddKeyAgreementRecipients", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddKeyAgreementRecipients",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -220,7 +226,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                         recipientCerts,
                         cekWrapAlgorithm,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +237,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         >,
         subKeyId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -244,12 +250,14 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddKeyTransRecipient")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddKeyTransRecipient", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddKeyTransRecipient",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pubKey, subKeyId))
+            method.invoke_unchecked(self, (pubKey, subKeyId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +265,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         &mut self,
         cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::X509::X509Certificate,
@@ -267,12 +275,14 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddKeyTransRecipient")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddKeyTransRecipient", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddKeyTransRecipient",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cert))
+            method.invoke_unchecked(self, (cert))?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +291,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         pbeKey: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsPbeKey>,
         kekAlgorithmOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsPbeKey>,
@@ -292,12 +302,14 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddPasswordRecipient")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddPasswordRecipient", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddPasswordRecipient",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pbeKey, kekAlgorithmOid))
+            method.invoke_unchecked(self, (pbeKey, kekAlgorithmOid))?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +319,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
@@ -317,12 +329,14 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("AddRecipientInfoGenerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddRecipientInfoGenerator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddRecipientInfoGenerator",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (recipientInfoGenerator))
+            method.invoke_unchecked(self, (recipientInfoGenerator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -333,7 +347,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -344,13 +358,15 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("GenerateAsn1Parameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateAsn1Parameters", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateAsn1Parameters",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = unsafe { method.invoke_unchecked(self, (encryptionOid, encKeyBytes)) };
+        > = unsafe { method.invoke_unchecked(self, (encryptionOid, encKeyBytes))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAlgorithmIdentifier(
@@ -372,7 +388,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -395,8 +411,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("GetAlgorithmIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAlgorithmIdentifier", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAlgorithmIdentifier",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -406,7 +424,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                 .invoke_unchecked(
                     self,
                     (encryptionOid, encKey, asn1Params, cipherParameters),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -431,16 +449,17 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -450,7 +469,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Security::SecureRandom,
@@ -460,12 +479,13 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_rand))
+            method.invoke_unchecked(self, (_cordl_rand))?
         };
         Ok(__cordl_ret.into())
     }
@@ -476,7 +496,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -486,13 +506,15 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("get_UnprotectedAttributeGenerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UnprotectedAttributeGenerator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_UnprotectedAttributeGenerator", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_UnprotectedAttributeGenerator(
@@ -501,7 +523,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
@@ -511,12 +533,14 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
             >("set_UnprotectedAttributeGenerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_UnprotectedAttributeGenerator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::CmsEnvelopedGenerator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_UnprotectedAttributeGenerator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

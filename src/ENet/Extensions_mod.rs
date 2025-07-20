@@ -41,7 +41,7 @@ impl crate::ENet::Extensions {
     pub fn StringLength(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 i32,
@@ -49,11 +49,12 @@ impl crate::ENet::Extensions {
             >("StringLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::Extensions as quest_hook::libil2cpp::Type > ::class(),
+                    "StringLength", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data))? };
         Ok(__cordl_ret.into())
     }
 }

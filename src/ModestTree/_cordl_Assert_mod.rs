@@ -41,7 +41,7 @@ impl crate::ModestTree::_cordl_Assert {
     pub fn CreateException_0() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException>,
@@ -49,12 +49,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("CreateException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +70,7 @@ impl crate::ModestTree::_cordl_Assert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -87,12 +88,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("CreateException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateException", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateException", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException> = unsafe {
-            method.invoke_unchecked((), (innerException, message, parameters))
+            method.invoke_unchecked((), (innerException, message, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +103,7 @@ impl crate::ModestTree::_cordl_Assert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException>,
@@ -109,12 +111,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("CreateException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException> = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +131,7 @@ impl crate::ModestTree::_cordl_Assert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -145,12 +148,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("CreateException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectException> = unsafe {
-            method.invoke_unchecked((), (message, parameters))
+            method.invoke_unchecked((), (message, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -161,7 +165,7 @@ impl crate::ModestTree::_cordl_Assert {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Void,
@@ -169,12 +173,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("DerivesFromOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DerivesFromOrEqual", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "DerivesFromOrEqual", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +187,7 @@ impl crate::ModestTree::_cordl_Assert {
         childType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         parentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -193,12 +198,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("DerivesFromOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DerivesFromOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "DerivesFromOrEqual", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (childType, parentType))
+            method.invoke_unchecked((), (childType, parentType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +215,7 @@ impl crate::ModestTree::_cordl_Assert {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Void,
@@ -217,12 +223,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("DerivesFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DerivesFrom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "DerivesFrom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -230,7 +237,7 @@ impl crate::ModestTree::_cordl_Assert {
         childType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         parentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -241,12 +248,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("DerivesFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DerivesFrom", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "DerivesFrom", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (childType, parentType))
+            method.invoke_unchecked((), (childType, parentType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +263,7 @@ impl crate::ModestTree::_cordl_Assert {
         right: f32,
         epsilon: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -263,12 +271,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsApproximately")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsApproximately", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsApproximately", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (left, right, epsilon))
+            method.invoke_unchecked((), (left, right, epsilon))?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +290,7 @@ impl crate::ModestTree::_cordl_Assert {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<T>,
@@ -291,12 +300,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEmpty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsEmpty", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sequence))
+            method.invoke_unchecked((), (sequence))?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +317,7 @@ impl crate::ModestTree::_cordl_Assert {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IList_1<T>,
@@ -317,12 +327,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEmpty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsEmpty", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list))
+            method.invoke_unchecked((), (list))?
         };
         Ok(__cordl_ret.into())
     }
@@ -335,7 +346,7 @@ impl crate::ModestTree::_cordl_Assert {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -353,12 +364,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEqual", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsEqual", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (left, right, messageGenerator))
+            method.invoke_unchecked((), (left, right, messageGenerator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +378,7 @@ impl crate::ModestTree::_cordl_Assert {
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -377,12 +389,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsEqual", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (left, right))
+            method.invoke_unchecked((), (left, right))?
         };
         Ok(__cordl_ret.into())
     }
@@ -391,7 +404,7 @@ impl crate::ModestTree::_cordl_Assert {
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -403,12 +416,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEqual", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsEqual", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (left, right, message))
+            method.invoke_unchecked((), (left, right, message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -422,7 +436,7 @@ impl crate::ModestTree::_cordl_Assert {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -435,19 +449,20 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotEmpty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotEmpty", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, message))
+            method.invoke_unchecked((), (val, message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsNotEmpty_Il2CppString0(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -455,12 +470,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotEmpty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotEmpty", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (str))
+            method.invoke_unchecked((), (str))?
         };
         Ok(__cordl_ret.into())
     }
@@ -473,7 +489,7 @@ impl crate::ModestTree::_cordl_Assert {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -491,12 +507,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotEqual", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotEqual", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (left, right, messageGenerator))
+            method.invoke_unchecked((), (left, right, messageGenerator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -504,7 +521,7 @@ impl crate::ModestTree::_cordl_Assert {
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -515,12 +532,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotEqual", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (left, right))
+            method.invoke_unchecked((), (left, right))?
         };
         Ok(__cordl_ret.into())
     }
@@ -529,7 +547,7 @@ impl crate::ModestTree::_cordl_Assert {
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -541,19 +559,20 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotEqual", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotEqual", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (left, right, message))
+            method.invoke_unchecked((), (left, right, message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsNotNull_Il2CppObject0(
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -561,12 +580,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotNull", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotNull", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val))
+            method.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -574,7 +594,7 @@ impl crate::ModestTree::_cordl_Assert {
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -585,12 +605,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotNull", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotNull", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, message))
+            method.invoke_unchecked((), (val, message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -599,7 +620,7 @@ impl crate::ModestTree::_cordl_Assert {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -611,12 +632,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotNull", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotNull", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, message, p1))
+            method.invoke_unchecked((), (val, message, p1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -626,7 +648,7 @@ impl crate::ModestTree::_cordl_Assert {
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -639,19 +661,20 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNotNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNotNull", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNotNull", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, message, p1, p2))
+            method.invoke_unchecked((), (val, message, p1, p2))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsNull_Il2CppObject0(
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -659,12 +682,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNull", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNull", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val))
+            method.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -672,7 +696,7 @@ impl crate::ModestTree::_cordl_Assert {
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -683,12 +707,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNull", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNull", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, message))
+            method.invoke_unchecked((), (val, message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -697,7 +722,7 @@ impl crate::ModestTree::_cordl_Assert {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -709,12 +734,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNull", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNull", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (val, message, p1))
+            method.invoke_unchecked((), (val, message, p1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -725,7 +751,7 @@ impl crate::ModestTree::_cordl_Assert {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -733,12 +759,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj))
+            method.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -750,7 +777,7 @@ impl crate::ModestTree::_cordl_Assert {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -761,12 +788,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("IsType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "IsType", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, message))
+            method.invoke_unchecked((), (obj, message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -774,7 +802,7 @@ impl crate::ModestTree::_cordl_Assert {
         condition: bool,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -782,12 +810,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("That")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "That", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "That", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition, message))
+            method.invoke_unchecked((), (condition, message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -796,7 +825,7 @@ impl crate::ModestTree::_cordl_Assert {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     bool,
@@ -808,12 +837,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("That")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "That", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "That", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition, message, p1))
+            method.invoke_unchecked((), (condition, message, p1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -823,7 +853,7 @@ impl crate::ModestTree::_cordl_Assert {
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     bool,
@@ -836,12 +866,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("That")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "That", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "That", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition, message, p1, p2))
+            method.invoke_unchecked((), (condition, message, p1, p2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -852,7 +883,7 @@ impl crate::ModestTree::_cordl_Assert {
         p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         p3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     bool,
@@ -866,35 +897,37 @@ impl crate::ModestTree::_cordl_Assert {
             >("That")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "That", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "That", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition, message, p1, p2, p3))
+            method.invoke_unchecked((), (condition, message, p1, p2, p3))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn That__cordl_bool0(
         condition: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("That")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "That", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "That", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition))
+            method.invoke_unchecked((), (condition))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Throws_Action0(
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -902,12 +935,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("Throws")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Throws", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "Throws", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (action))
+            method.invoke_unchecked((), (action))?
         };
         Ok(__cordl_ret.into())
     }
@@ -918,7 +952,7 @@ impl crate::ModestTree::_cordl_Assert {
         TException: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -926,12 +960,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("Throws")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Throws", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "Throws", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (action))
+            method.invoke_unchecked((), (action))?
         };
         Ok(__cordl_ret.into())
     }
@@ -943,7 +978,7 @@ impl crate::ModestTree::_cordl_Assert {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     bool,
@@ -960,12 +995,13 @@ impl crate::ModestTree::_cordl_Assert {
             >("Warn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Warn", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "Warn", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition, messageGenerator))
+            method.invoke_unchecked((), (condition, messageGenerator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -973,7 +1009,7 @@ impl crate::ModestTree::_cordl_Assert {
         condition: bool,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -981,28 +1017,30 @@ impl crate::ModestTree::_cordl_Assert {
             >("Warn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Warn", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "Warn", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition, message))
+            method.invoke_unchecked((), (condition, message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Warn__cordl_bool0(
         condition: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Warn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Warn", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::_cordl_Assert as quest_hook::libil2cpp::Type >
+                    ::class(), "Warn", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (condition))
+            method.invoke_unchecked((), (condition))?
         };
         Ok(__cordl_ret.into())
     }

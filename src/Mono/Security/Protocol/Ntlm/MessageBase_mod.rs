@@ -45,7 +45,7 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 bool,
@@ -53,18 +53,19 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
             >("CheckHeader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckHeader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckHeader", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (message)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (message))? };
         Ok(__cordl_ret.into())
     }
     pub fn Decode(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -72,12 +73,13 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
             >("Decode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Decode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message))
+            method.invoke_unchecked(self, (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +88,7 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -94,13 +96,14 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBytes", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -118,7 +121,7 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -126,29 +129,31 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
             >("PrepareMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "PrepareMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (messageSize)) };
+        > = unsafe { method.invoke_unchecked(self, (messageSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         messageType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (messageType))
+            method.invoke_unchecked(self, (messageType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +162,7 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
     ) -> quest_hook::libil2cpp::Result<
         crate::Mono::Security::Protocol::Ntlm::NtlmFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Mono::Security::Protocol::Ntlm::NtlmFlags,
@@ -165,32 +170,34 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
             >("get_Flags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Flags", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Flags", 0usize
                 )
             });
         let __cordl_ret: crate::Mono::Security::Protocol::Ntlm::NtlmFlags = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Type", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Flags(
         &mut self,
         value: crate::Mono::Security::Protocol::Ntlm::NtlmFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::MessageBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Mono::Security::Protocol::Ntlm::NtlmFlags),
                 quest_hook::libil2cpp::Void,
@@ -198,12 +205,13 @@ impl crate::Mono::Security::Protocol::Ntlm::MessageBase {
             >("set_Flags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Flags", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::MessageBase as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Flags", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

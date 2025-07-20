@@ -48,7 +48,7 @@ impl crate::System::TermInfoReader {
         &mut self,
         magic: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i16),
                 quest_hook::libil2cpp::Void,
@@ -56,12 +56,13 @@ impl crate::System::TermInfoReader {
             >("DetermineVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DetermineVersion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "DetermineVersion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (magic))
+            method.invoke_unchecked(self, (magic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::System::TermInfoReader {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i16,
@@ -78,12 +79,13 @@ impl crate::System::TermInfoReader {
             >("GetInt16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInt16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetInt16", 2usize
                 )
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked(self, (buffer, offset))
+            method.invoke_unchecked(self, (buffer, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +96,7 @@ impl crate::System::TermInfoReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -102,13 +104,14 @@ impl crate::System::TermInfoReader {
             >("GetString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (buffer, offset)) };
+        > = unsafe { method.invoke_unchecked(self, (buffer, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringBytes_Il2CppArray_i32_1(
@@ -118,7 +121,7 @@ impl crate::System::TermInfoReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -126,13 +129,14 @@ impl crate::System::TermInfoReader {
             >("GetStringBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStringBytes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetStringBytes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (buffer, offset)) };
+        > = unsafe { method.invoke_unchecked(self, (buffer, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringBytes_TermInfoStrings0(
@@ -141,7 +145,7 @@ impl crate::System::TermInfoReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::TermInfoStrings),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -149,28 +153,30 @@ impl crate::System::TermInfoReader {
             >("GetStringBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStringBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "GetStringBytes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (tstr)) };
+        > = unsafe { method.invoke_unchecked(self, (tstr))? };
         Ok(__cordl_ret.into())
     }
     pub fn Get_TermInfoNumbers0(
         &mut self,
         number: crate::System::TermInfoNumbers,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(crate::System::TermInfoNumbers), i32, 1usize>("Get")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "Get", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (number)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (number))? };
         Ok(__cordl_ret.into())
     }
     pub fn Get_TermInfoStrings1(
@@ -179,7 +185,7 @@ impl crate::System::TermInfoReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::TermInfoStrings),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -187,13 +193,14 @@ impl crate::System::TermInfoReader {
             >("Get")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "Get", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (tstr)) };
+        > = unsafe { method.invoke_unchecked(self, (tstr))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray1(
@@ -221,7 +228,7 @@ impl crate::System::TermInfoReader {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         position: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -232,12 +239,13 @@ impl crate::System::TermInfoReader {
             >("ReadHeader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadHeader", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "ReadHeader", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, position))
+            method.invoke_unchecked(self, (buffer, position))?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,7 +254,7 @@ impl crate::System::TermInfoReader {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         position: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -257,12 +265,13 @@ impl crate::System::TermInfoReader {
             >("ReadNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadNames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), "ReadNames", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buffer, position))
+            method.invoke_unchecked(self, (buffer, position))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,7 +280,7 @@ impl crate::System::TermInfoReader {
         term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -282,12 +291,13 @@ impl crate::System::TermInfoReader {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (term, buffer))
+            method.invoke_unchecked(self, (term, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +306,7 @@ impl crate::System::TermInfoReader {
         term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::TermInfoReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -307,12 +317,13 @@ impl crate::System::TermInfoReader {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::TermInfoReader as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (term, filename))
+            method.invoke_unchecked(self, (term, filename))?
         };
         Ok(__cordl_ret.into())
     }

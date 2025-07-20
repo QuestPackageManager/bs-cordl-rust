@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
@@ -179,12 +179,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("AddPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddPlayer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddPlayer", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (player))
+            method.invoke_unchecked(self, (player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +193,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Void,
@@ -200,51 +201,54 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("Disconnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Disconnect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Disconnect", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disconnectedReason))
+            method.invoke_unchecked(self, (disconnectedReason))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FlushReliableQueue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FlushReliableQueue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FlushReliableQueue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "FlushReliableQueue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FlushUnreliableQueue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -252,12 +256,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("FlushUnreliableQueue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FlushUnreliableQueue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "FlushUnreliableQueue",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -267,7 +273,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
@@ -275,13 +281,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("GetConnectedPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConnectedPlayer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetConnectedPlayer", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnectedPlayer,
-        > = unsafe { method.invoke_unchecked(self, (index)) };
+        > = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetConnectionManager<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
@@ -289,27 +296,31 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), T, 0usize>("GetConnectionManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConnectionManager", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetConnectionManager",
+                    0usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextConnectionId(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u8, 0usize>("GetNextConnectionId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextConnectionId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextConnectionId",
+                    0usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayer_IConnection_u8_1(
@@ -321,7 +332,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>, u8),
                 quest_hook::libil2cpp::Gc<
@@ -331,13 +342,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("GetPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
-        > = unsafe { method.invoke_unchecked(self, (connection, remoteConnectionId)) };
+        > = unsafe { method.invoke_unchecked(self, (connection, remoteConnectionId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayer_Il2CppString2(
@@ -348,7 +360,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -358,13 +370,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("GetPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayer", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
-        > = unsafe { method.invoke_unchecked(self, (userId)) };
+        > = unsafe { method.invoke_unchecked(self, (userId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayer_u8_0(
@@ -375,7 +388,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u8),
                 quest_hook::libil2cpp::Gc<
@@ -385,28 +398,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("GetPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayer", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
-        > = unsafe { method.invoke_unchecked(self, (connectionId)) };
+        > = unsafe { method.invoke_unchecked(self, (connectionId))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleConnected(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("HandleConnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleConnected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleConnected", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,7 +429,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         connection: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>),
                 quest_hook::libil2cpp::Void,
@@ -422,12 +437,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleConnectionConnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleConnectionConnected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleConnectionConnected",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (connection))
+            method.invoke_unchecked(self, (connection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -436,7 +453,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         connection: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
@@ -447,12 +464,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleConnectionDisconnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleConnectionDisconnected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleConnectionDisconnected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (connection, disconnectedReason))
+            method.invoke_unchecked(self, (connection, disconnectedReason))?
         };
         Ok(__cordl_ret.into())
     }
@@ -460,7 +479,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::ConnectionFailedReason),
                 quest_hook::libil2cpp::Void,
@@ -468,12 +487,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleConnectionFailed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleConnectionFailed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleConnectionFailed",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reason))
+            method.invoke_unchecked(self, (reason))?
         };
         Ok(__cordl_ret.into())
     }
@@ -481,7 +502,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Void,
@@ -489,28 +510,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleDisconnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleDisconnected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleDisconnected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disconnectedReason))
+            method.invoke_unchecked(self, (disconnectedReason))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HandleInitialized(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("HandleInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleInitialized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleInitialized", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -521,7 +544,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         iPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -534,12 +557,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleKickPlayerPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleKickPlayerPacket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleKickPlayerPacket",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, iPlayer))
+            method.invoke_unchecked(self, (packet, iPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -549,7 +574,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
@@ -561,12 +586,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleNetworkReceive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleNetworkReceive", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleNetworkReceive",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (connection, reader, deliveryMethod))
+            method.invoke_unchecked(self, (connection, reader, deliveryMethod))?
         };
         Ok(__cordl_ret.into())
     }
@@ -577,7 +604,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -590,12 +617,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandlePing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePing", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandlePing", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, player))
+            method.invoke_unchecked(self, (packet, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -606,7 +634,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         iPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -619,12 +647,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandlePlayerAvatarUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlayerAvatarUpdate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandlePlayerAvatarUpdate",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, iPlayer))
+            method.invoke_unchecked(self, (packet, iPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -635,7 +665,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         iPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -648,12 +678,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandlePlayerIdentityUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlayerIdentityUpdate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandlePlayerIdentityUpdate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, iPlayer))
+            method.invoke_unchecked(self, (packet, iPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -664,7 +696,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         iPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -677,12 +709,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandlePlayerSortOrderUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlayerSortOrderUpdate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandlePlayerSortOrderUpdate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, iPlayer))
+            method.invoke_unchecked(self, (packet, iPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -693,7 +727,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         iPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -706,12 +740,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandlePlayerStateUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlayerStateUpdate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandlePlayerStateUpdate",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, iPlayer))
+            method.invoke_unchecked(self, (packet, iPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -722,7 +758,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -735,12 +771,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandlePong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePong", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandlePong", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, player))
+            method.invoke_unchecked(self, (packet, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -751,7 +788,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         iPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -764,12 +801,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleServerPlayerConnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleServerPlayerConnected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleServerPlayerConnected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, iPlayer))
+            method.invoke_unchecked(self, (packet, iPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -780,7 +819,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         iPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -793,12 +832,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleServerPlayerDisconnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleServerPlayerDisconnected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleServerPlayerDisconnected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, iPlayer))
+            method.invoke_unchecked(self, (packet, iPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -809,7 +850,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -822,12 +863,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("HandleSyncTimePacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleSyncTimePacket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleSyncTimePacket",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, player))
+            method.invoke_unchecked(self, (packet, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -837,7 +880,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
@@ -847,12 +890,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("InitializePlayerEncryption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializePlayerEncryption", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InitializePlayerEncryption", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (player))
+            method.invoke_unchecked(self, (player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -861,7 +906,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -872,12 +917,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("KickPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "KickPlayer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "KickPlayer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (userId, disconnectedReason))
+            method.invoke_unchecked(self, (userId, disconnectedReason))?
         };
         Ok(__cordl_ret.into())
     }
@@ -885,7 +931,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -893,12 +939,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("Log")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Log", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Log", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message))
+            method.invoke_unchecked(self, (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -929,7 +976,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     pub fn PollLateUpdateOptional(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -937,12 +984,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("PollLateUpdateOptional")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PollLateUpdateOptional", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "PollLateUpdateOptional",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -950,16 +999,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         frameCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("PollUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PollUpdate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "PollUpdate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (frameCount))
+            method.invoke_unchecked(self, (frameCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -972,7 +1022,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::ConnectedPlayerManager_MessageType,
@@ -989,12 +1039,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("RegisterSerializer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterSerializer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterSerializer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (serializerType, subSerializer))
+            method.invoke_unchecked(self, (serializerType, subSerializer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1002,7 +1053,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         reason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Void,
@@ -1010,12 +1061,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("RemoveAllPlayers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveAllPlayers", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveAllPlayers", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reason))
+            method.invoke_unchecked(self, (reason))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1026,7 +1078,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         reason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1039,28 +1091,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("RemovePlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemovePlayer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "RemovePlayer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (player, reason))
+            method.invoke_unchecked(self, (player, reason))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ResetLocalState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ResetLocalState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResetLocalState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "ResetLocalState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1072,16 +1126,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Send")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Send", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Send", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message))
+            method.invoke_unchecked(self, (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1090,7 +1145,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         message: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>,
         onlyFirstDegree: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1103,12 +1158,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendImmediately")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendImmediately", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SendImmediately", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, onlyFirstDegree))
+            method.invoke_unchecked(self, (message, onlyFirstDegree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1120,7 +1176,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         onlyFirstDegree: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1136,12 +1192,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendImmediatelyExcludingPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendImmediatelyExcludingPlayer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SendImmediatelyExcludingPlayer", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, excludingPlayer, onlyFirstDegree))
+            method.invoke_unchecked(self, (message, excludingPlayer, onlyFirstDegree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1153,7 +1211,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         >,
         onlyFirstDegree: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1169,12 +1227,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendImmediatelyFromPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendImmediatelyFromPlayer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SendImmediatelyFromPlayer",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, fromPlayer, onlyFirstDegree))
+            method.invoke_unchecked(self, (message, fromPlayer, onlyFirstDegree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1188,7 +1248,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1206,12 +1266,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendImmediatelyFromPlayerToPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendImmediatelyFromPlayerToPlayer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SendImmediatelyFromPlayerToPlayer", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, fromPlayer, toPlayer))
+            method.invoke_unchecked(self, (message, fromPlayer, toPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1229,7 +1291,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     T,
@@ -1245,12 +1307,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendImmediatelyFromPlayerToPlayerUnreliable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendImmediatelyFromPlayerToPlayerUnreliable", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SendImmediatelyFromPlayerToPlayerUnreliable", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, fromPlayer, toPlayer))
+            method.invoke_unchecked(self, (message, fromPlayer, toPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1261,7 +1325,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1276,12 +1340,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendImmediatelyToPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendImmediatelyToPlayer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SendImmediatelyToPlayer",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, toPlayer))
+            method.invoke_unchecked(self, (message, toPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1294,7 +1360,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (T, quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
                 quest_hook::libil2cpp::Void,
@@ -1302,12 +1368,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendToPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendToPlayer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SendToPlayer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, player))
+            method.invoke_unchecked(self, (message, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1319,16 +1386,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("SendUnreliable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendUnreliable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SendUnreliable", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message))
+            method.invoke_unchecked(self, (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1341,7 +1409,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (T, quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
                 quest_hook::libil2cpp::Void,
@@ -1349,12 +1417,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendUnreliableEncryptedToPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendUnreliableEncryptedToPlayer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SendUnreliableEncryptedToPlayer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, player))
+            method.invoke_unchecked(self, (message, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1368,7 +1438,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     T,
@@ -1380,12 +1450,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendUnreliableFromPlayerToPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendUnreliableFromPlayerToPlayer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SendUnreliableFromPlayerToPlayer", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message, fromPlayer, toPlayer))
+            method.invoke_unchecked(self, (message, fromPlayer, toPlayer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1397,7 +1469,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (T),
                 quest_hook::libil2cpp::Void,
@@ -1405,12 +1477,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SendUnreliableOnlyToFirstDegreeConnections")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendUnreliableOnlyToFirstDegreeConnections", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SendUnreliableOnlyToFirstDegreeConnections", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (message))
+            method.invoke_unchecked(self, (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1418,7 +1492,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         multiplayerAvatarsData: crate::GlobalNamespace::MultiplayerAvatarsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::MultiplayerAvatarsData),
                 quest_hook::libil2cpp::Void,
@@ -1426,12 +1500,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SetLocalPlayerAvatar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLocalPlayerAvatar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetLocalPlayerAvatar",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (multiplayerAvatarsData))
+            method.invoke_unchecked(self, (multiplayerAvatarsData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1439,7 +1515,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         sortIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -1447,12 +1523,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SetLocalPlayerSortIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLocalPlayerSortIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetLocalPlayerSortIndex",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sortIndex))
+            method.invoke_unchecked(self, (sortIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1461,7 +1539,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         setState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
                 quest_hook::libil2cpp::Void,
@@ -1469,12 +1547,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SetLocalPlayerState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLocalPlayerState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetLocalPlayerState",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (state, setState))
+            method.invoke_unchecked(self, (state, setState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1483,7 +1563,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         sortIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
@@ -1494,12 +1574,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("SetPlayerSortIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPlayerSortIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPlayerSortIndex", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (player, sortIndex))
+            method.invoke_unchecked(self, (player, sortIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1512,7 +1593,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::ConnectedPlayerManager_MessageType,
@@ -1529,12 +1610,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("UnregisterSerializer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnregisterSerializer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "UnregisterSerializer",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (serializerType, subSerializer))
+            method.invoke_unchecked(self, (serializerType, subSerializer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1543,7 +1626,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::INetSerializable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -1554,12 +1637,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("Write")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Write", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Write", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer, packet))
+            method.invoke_unchecked(self, (writer, packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1571,7 +1655,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u8,
@@ -1583,13 +1667,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("WriteOne")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteOne", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteOne", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::Utils::NetDataWriter,
-        > = unsafe { method.invoke_unchecked(self, (senderId, receiverId, message)) };
+        > = unsafe { method.invoke_unchecked(self, (senderId, receiverId, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteOneEncrypted(
@@ -1603,7 +1688,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1618,15 +1703,19 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("WriteOneEncrypted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteOneEncrypted", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteOneEncrypted", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::Utils::NetDataWriter,
         > = unsafe {
             method
-                .invoke_unchecked(self, (encryptionState, senderId, receiverId, message))
+                .invoke_unchecked(
+                    self,
+                    (encryptionState, senderId, receiverId, message),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1637,7 +1726,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u8,
@@ -1648,13 +1737,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("WriteOneOnlyToFirstDegreeConnections")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteOneOnlyToFirstDegreeConnections", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteOneOnlyToFirstDegreeConnections", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::Utils::NetDataWriter,
-        > = unsafe { method.invoke_unchecked(self, (senderId, message)) };
+        > = unsafe { method.invoke_unchecked(self, (senderId, message))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IConnectionManager0(
@@ -1663,7 +1754,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::IConnectionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectionManager>),
                 quest_hook::libil2cpp::Void,
@@ -1671,12 +1762,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (connectionManager))
+            method.invoke_unchecked(self, (connectionManager))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1688,7 +1780,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::GlobalNamespace::IConnectionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
@@ -1700,12 +1792,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (timeProvider, taskUtility, connectionManager))
+            method
+                .invoke_unchecked(self, (timeProvider, taskUtility, connectionManager))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1713,7 +1807,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -1721,12 +1815,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_connectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_connectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "add_connectedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1736,7 +1831,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1748,12 +1843,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_connectionFailedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_connectionFailedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "add_connectionFailedEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1763,7 +1860,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
@@ -1773,12 +1870,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_disconnectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_disconnectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "add_disconnectedEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1786,7 +1885,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -1794,12 +1893,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_initializedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_initializedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "add_initializedEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1811,7 +1912,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1825,12 +1926,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_playerAvatarChangedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_playerAvatarChangedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_playerAvatarChangedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1842,7 +1945,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1856,12 +1959,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_playerConnectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_playerConnectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "add_playerConnectedEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1873,7 +1978,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1887,12 +1992,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_playerDisconnectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_playerDisconnectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_playerDisconnectedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1904,7 +2011,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1918,12 +2025,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_playerLatencyInitializedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_playerLatencyInitializedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_playerLatencyInitializedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1935,7 +2044,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1949,12 +2058,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_playerOrderChangedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_playerOrderChangedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_playerOrderChangedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1966,7 +2077,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -1980,12 +2091,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_playerStateChangedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_playerStateChangedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_playerStateChangedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1993,7 +2106,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -2001,87 +2114,99 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("add_syncTimeInitializedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_syncTimeInitializedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_syncTimeInitializedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_connectedPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_connectedPlayerCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_connectedPlayerCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_connectedPlayerCount",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isConnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isConnected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isConnected", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnectedOrConnecting(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isConnectedOrConnecting")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isConnectedOrConnecting", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_isConnectedOrConnecting", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isConnecting")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isConnecting", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isConnecting", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isConnectionOwner")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isConnectionOwner", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isConnectionOwner",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isDisconnecting(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isDisconnecting")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isDisconnecting", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isDisconnecting",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_localPlayer(
@@ -2089,7 +2214,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
@@ -2097,56 +2222,61 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("get_localPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_localPlayer", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_localPlayer", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnectedPlayer,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_runTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_runTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_runTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_runTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_syncTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_syncTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_syncTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_syncTimeInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_syncTimeInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_syncTimeInitialized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_syncTimeInitialized",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_connectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -2154,12 +2284,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_connectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_connectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_connectedEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2169,7 +2301,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -2181,12 +2313,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_connectionFailedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_connectionFailedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_connectionFailedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2196,7 +2330,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
@@ -2206,12 +2340,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_disconnectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_disconnectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_disconnectedEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2219,7 +2355,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -2227,12 +2363,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_initializedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_initializedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_initializedEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2244,7 +2382,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -2258,12 +2396,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_playerAvatarChangedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_playerAvatarChangedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_playerAvatarChangedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2275,7 +2415,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -2289,12 +2429,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_playerConnectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_playerConnectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_playerConnectedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2306,7 +2448,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -2320,12 +2462,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_playerDisconnectedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_playerDisconnectedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_playerDisconnectedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2337,7 +2481,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -2351,12 +2495,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_playerLatencyInitializedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_playerLatencyInitializedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_playerLatencyInitializedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2368,7 +2514,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -2382,12 +2528,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_playerOrderChangedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_playerOrderChangedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_playerOrderChangedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2399,7 +2547,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -2413,12 +2561,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_playerStateChangedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_playerStateChangedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_playerStateChangedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2426,7 +2576,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -2434,12 +2584,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             >("remove_syncTimeInitializedEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_syncTimeInitializedEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_syncTimeInitializedEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2549,7 +2701,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2565,13 +2717,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("CreateDirectlyConnectedPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateDirectlyConnectedPlayer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateDirectlyConnectedPlayer", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
-        > = unsafe { method.invoke_unchecked((), (manager, connectionId, connection)) };
+        > = unsafe { method.invoke_unchecked((), (manager, connectionId, connection))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateLocalPlayer(
@@ -2590,7 +2744,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2609,8 +2763,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("CreateLocalPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateLocalPlayer", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateLocalPlayer", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -2627,7 +2782,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
                         publicEncryptionKey,
                         random,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2647,7 +2802,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2668,14 +2823,16 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("CreateRemoteConnectedPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateRemoteConnectedPlayer", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateRemoteConnectedPlayer", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
         > = unsafe {
-            method.invoke_unchecked((), (manager, connectionId, packet, parent))
+            method.invoke_unchecked((), (manager, connectionId, packet, parent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2683,7 +2840,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         &mut self,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Void,
@@ -2691,12 +2848,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("Disconnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Disconnect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "Disconnect", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disconnectedReason))
+            method.invoke_unchecked(self, (disconnectedReason))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2707,7 +2865,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -2717,13 +2875,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("GetPlayerAvatarPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayerAvatarPacket", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayerAvatarPacket",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayerConnectedPacket(
@@ -2733,7 +2893,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -2743,13 +2903,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("GetPlayerConnectedPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayerConnectedPacket", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayerConnectedPacket",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayerIdentityPacket(
@@ -2759,7 +2921,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -2769,13 +2931,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("GetPlayerIdentityPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayerIdentityPacket", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayerIdentityPacket",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayerSortOrderPacket(
@@ -2785,7 +2949,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -2795,13 +2959,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("GetPlayerSortOrderPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayerSortOrderPacket", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayerSortOrderPacket",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayerStatePacket(
@@ -2811,7 +2977,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -2821,20 +2987,22 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("GetPlayerStatePacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayerStatePacket", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPlayerStatePacket",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HasState(
         &mut self,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -2842,11 +3010,12 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("HasState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "HasState", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (state)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2895,7 +3064,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
@@ -2905,28 +3074,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("SetEncryptionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetEncryptionState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "SetEncryptionState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (encryptionState))
+            method.invoke_unchecked(self, (encryptionState))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetKicked(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetKicked")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetKicked", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "SetKicked", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2934,7 +3105,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         &mut self,
         playerState: crate::GlobalNamespace::PlayerStateHash,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::PlayerStateHash),
                 quest_hook::libil2cpp::Void,
@@ -2942,12 +3113,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("SetPlayerState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPlayerState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPlayerState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playerState))
+            method.invoke_unchecked(self, (playerState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2956,7 +3128,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2964,13 +3136,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateAvatar(
@@ -2979,7 +3152,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
@@ -2989,12 +3162,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("UpdateAvatar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateAvatar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateAvatar", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet))
+            method.invoke_unchecked(self, (packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3004,7 +3178,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
@@ -3014,12 +3188,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("UpdateIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateIdentity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateIdentity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet))
+            method.invoke_unchecked(self, (packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3027,16 +3202,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         &mut self,
         latency: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("UpdateLatency")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateLatency", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateLatency", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (latency))
+            method.invoke_unchecked(self, (latency))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3044,15 +3220,16 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("UpdateSortIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateSortIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateSortIndex", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (index)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateState(
@@ -3061,7 +3238,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
@@ -3071,12 +3248,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("UpdateState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet))
+            method.invoke_unchecked(self, (packet))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3100,7 +3278,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         >,
         random: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3124,8 +3302,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -3145,7 +3324,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
                         publicEncryptionKey,
                         random,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -3154,7 +3333,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
@@ -3162,43 +3341,46 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_connection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_connection", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_connection", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnection,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_connectionId(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u8, 0usize>("get_connectionId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_connectionId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_connectionId", 0usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentLatency(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_currentLatency")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_currentLatency", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_currentLatency", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_disconnectedReason(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::DisconnectedReason> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::DisconnectedReason,
@@ -3206,12 +3388,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_disconnectedReason")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_disconnectedReason", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_disconnectedReason",
+                    0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::DisconnectedReason = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3222,7 +3406,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3232,91 +3416,102 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_encryptionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_encryptionState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_encryptionState",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasValidLatency(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_hasValidLatency")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_hasValidLatency", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_hasValidLatency",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnected(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isConnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isConnected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isConnected", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isConnectionOwner")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isConnectionOwner", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isConnectionOwner",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isDirectConnection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isDirectConnection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isDirectConnection", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isDirectConnection",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isKicked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isKicked")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isKicked", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isKicked", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isMe(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isMe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isMe", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isMe", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_multiplayerAvatarsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::MultiplayerAvatarsData,
@@ -3324,25 +3519,28 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_multiplayerAvatarsData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_multiplayerAvatarsData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_multiplayerAvatarsData", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_offsetSyncTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_offsetSyncTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_offsetSyncTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_offsetSyncTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_publicEncryptionKey(
@@ -3350,7 +3548,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -3358,13 +3556,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_publicEncryptionKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_publicEncryptionKey", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_publicEncryptionKey",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_random(
@@ -3372,7 +3572,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -3380,37 +3580,41 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_random")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_random", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_random", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_remoteConnectionId(&mut self) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u8, 0usize>("get_remoteConnectionId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_remoteConnectionId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_remoteConnectionId",
+                    0usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_sortIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_sortIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_sortIndex", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_sortIndex", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_userId(
@@ -3418,7 +3622,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3426,13 +3630,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_userId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_userId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_userId", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_userName(
@@ -3440,7 +3645,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3448,20 +3653,21 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("get_userName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_userName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_userName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_multiplayerAvatarsData(
         &mut self,
         value: crate::GlobalNamespace::MultiplayerAvatarsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::MultiplayerAvatarsData),
                 quest_hook::libil2cpp::Void,
@@ -3469,12 +3675,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
             >("set_multiplayerAvatarsData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_multiplayerAvatarsData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_multiplayerAvatarsData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3654,7 +3862,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -3662,12 +3870,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3679,7 +3888,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Gc<
@@ -3689,13 +3898,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket,
-        > = unsafe { method.invoke_unchecked(self, (disconnectedReason)) };
+        > = unsafe { method.invoke_unchecked(self, (disconnectedReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -3708,16 +3918,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3725,7 +3936,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -3733,28 +3944,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3767,7 +3980,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3781,8 +3994,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -3791,7 +4005,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -3971,7 +4185,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PingPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -3979,12 +4193,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PingPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3996,7 +4211,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PingPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PingPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64),
                 quest_hook::libil2cpp::Gc<
@@ -4006,13 +4221,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PingPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PingPacket,
-        > = unsafe { method.invoke_unchecked(self, (pingTime)) };
+        > = unsafe { method.invoke_unchecked(self, (pingTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -4025,16 +4241,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PingPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PingPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4042,7 +4259,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PingPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -4050,28 +4267,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PingPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PingPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PingPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4084,7 +4303,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PingPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -4098,8 +4317,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PingPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -4108,7 +4328,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PingPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4198,7 +4418,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -4206,12 +4426,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4223,7 +4444,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::MultiplayerAvatarsData),
                 quest_hook::libil2cpp::Gc<
@@ -4233,13 +4454,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
-        > = unsafe { method.invoke_unchecked(self, (avatar)) };
+        > = unsafe { method.invoke_unchecked(self, (avatar))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -4252,16 +4474,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4269,7 +4492,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -4277,28 +4500,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4311,7 +4536,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -4325,8 +4550,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -4335,7 +4561,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4428,7 +4654,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -4436,12 +4662,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4456,7 +4683,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u8,
@@ -4471,8 +4698,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Init", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -4482,7 +4710,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
                 .invoke_unchecked(
                     self,
                     (connectionId, userId, userName, isConnectionOwner),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4496,16 +4724,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4513,7 +4742,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -4521,28 +4750,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4555,7 +4786,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -4569,8 +4800,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -4579,7 +4811,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4669,7 +4901,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -4677,12 +4909,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4694,7 +4928,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Gc<
@@ -4704,13 +4938,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket,
-        > = unsafe { method.invoke_unchecked(self, (disconnectedReason)) };
+        > = unsafe { method.invoke_unchecked(self, (disconnectedReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -4723,16 +4959,18 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4740,7 +4978,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -4748,28 +4986,32 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4782,7 +5024,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -4796,8 +5038,10 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -4806,7 +5050,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4903,7 +5147,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -4911,12 +5155,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4933,7 +5178,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::PlayerStateHash,
@@ -4948,14 +5193,15 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Init", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
         > = unsafe {
-            method.invoke_unchecked(self, (states, avatar, random, publicEncryptionKey))
+            method.invoke_unchecked(self, (states, avatar, random, publicEncryptionKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4969,16 +5215,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4986,7 +5233,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -4994,28 +5241,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5028,7 +5277,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -5042,8 +5291,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -5052,7 +5302,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -5143,7 +5393,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -5151,12 +5401,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5169,7 +5420,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Gc<
@@ -5179,13 +5430,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Init", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
-        > = unsafe { method.invoke_unchecked(self, (userId, sortIndex)) };
+        > = unsafe { method.invoke_unchecked(self, (userId, sortIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -5198,16 +5450,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5215,7 +5468,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -5223,28 +5476,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5257,7 +5512,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -5271,8 +5526,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket
+                    as quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -5281,7 +5537,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -5371,7 +5627,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -5379,12 +5635,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5396,7 +5653,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::PlayerStateHash),
                 quest_hook::libil2cpp::Gc<
@@ -5406,13 +5663,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
-        > = unsafe { method.invoke_unchecked(self, (states)) };
+        > = unsafe { method.invoke_unchecked(self, (states))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -5425,16 +5683,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5442,7 +5701,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -5450,28 +5709,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5484,7 +5745,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -5498,8 +5759,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -5508,7 +5770,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -5596,7 +5858,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PongPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -5604,12 +5866,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PongPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5621,7 +5884,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
             crate::GlobalNamespace::ConnectedPlayerManager_PongPacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PongPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64),
                 quest_hook::libil2cpp::Gc<
@@ -5631,13 +5894,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PongPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_PongPacket,
-        > = unsafe { method.invoke_unchecked(self, (pingTime)) };
+        > = unsafe { method.invoke_unchecked(self, (pingTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -5650,16 +5914,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PongPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PongPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5667,7 +5932,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PongPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -5675,28 +5940,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PongPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PongPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PongPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5709,7 +5976,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_PongPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -5723,8 +5990,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_PongPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -5733,7 +6001,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_PongPacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -5822,7 +6090,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 quest_hook::libil2cpp::Void,
@@ -5830,12 +6098,13 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5847,7 +6116,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
             crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64),
                 quest_hook::libil2cpp::Gc<
@@ -5857,13 +6126,14 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket,
-        > = unsafe { method.invoke_unchecked(self, (syncTime)) };
+        > = unsafe { method.invoke_unchecked(self, (syncTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -5876,16 +6146,17 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5893,7 +6164,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -5901,28 +6172,30 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5935,7 +6208,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -5949,8 +6222,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
             >("get_pool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pool", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -5959,7 +6233,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
                     crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

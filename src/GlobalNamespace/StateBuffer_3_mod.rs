@@ -127,16 +127,21 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3 < TStateTable, TType, TState >
+                    as quest_hook::libil2cpp::Type > ::class(), "Clear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,16 +157,21 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TType), TState, 1usize>("GetLatestState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLatestState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3 < TStateTable, TType, TState >
+                    as quest_hook::libil2cpp::Type > ::class(), "GetLatestState", 1usize
                 )
             });
         let __cordl_ret: TState = unsafe {
-            method.invoke_unchecked(self, (_cordl_type))
+            method.invoke_unchecked(self, (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -174,15 +184,20 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("GetLatestTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLatestTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3 < TStateTable, TType, TState >
+                    as quest_hook::libil2cpp::Type > ::class(), "GetLatestTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousIndex(&mut self, offset: i32) -> quest_hook::libil2cpp::Result<i32>
@@ -194,15 +209,21 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetPreviousIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreviousIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3 < TStateTable, TType, TState >
+                    as quest_hook::libil2cpp::Type > ::class(), "GetPreviousIndex",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (offset)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetState(
@@ -218,16 +239,21 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TType, i64), TState, 2usize>("GetState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3 < TStateTable, TType, TState >
+                    as quest_hook::libil2cpp::Type > ::class(), "GetState", 2usize
                 )
             });
         let __cordl_ret: TState = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, _cordl_time))
+            method.invoke_unchecked(self, (_cordl_type, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +270,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<TStateTable>, i64),
                 quest_hook::libil2cpp::Void,
@@ -252,12 +282,13 @@ impl<
             >("InsertState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3 < TStateTable, TType, TState >
+                    as quest_hook::libil2cpp::Type > ::class(), "InsertState", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (state, _cordl_time))
+            method.invoke_unchecked(self, (state, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +349,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -342,12 +377,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3 < TStateTable, TType, TState >
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_size, interpolator, smoother))
+            method.invoke_unchecked(self, (_cordl_size, interpolator, smoother))?
         };
         Ok(__cordl_ret.into())
     }
@@ -484,7 +520,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     TState,
@@ -500,8 +540,10 @@ impl<
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_InterpolationDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginInvoke", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -509,7 +551,7 @@ impl<
                 .invoke_unchecked(
                     self,
                     (a, timeA, b, timeB, _cordl_time, callback, object),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -525,7 +567,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 TState,
@@ -533,11 +579,13 @@ impl<
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_InterpolationDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), "EndInvoke", 1usize
                 )
             });
-        let __cordl_ret: TState = unsafe { method.invoke_unchecked(self, (result)) };
+        let __cordl_ret: TState = unsafe { method.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -556,16 +604,22 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TState, i64, TState, i64, i64), TState, 5usize>("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_InterpolationDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), "Invoke", 5usize
                 )
             });
         let __cordl_ret: TState = unsafe {
-            method.invoke_unchecked(self, (a, timeA, b, timeB, _cordl_time))
+            method.invoke_unchecked(self, (a, timeA, b, timeB, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -600,7 +654,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -611,12 +669,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_InterpolationDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -739,7 +799,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     TState,
@@ -753,12 +817,14 @@ impl<
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_SmoothingDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), "BeginInvoke", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (a, b, smooth, callback, object))
+            method.invoke_unchecked(self, (a, b, smooth, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -774,7 +840,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 TState,
@@ -782,11 +852,13 @@ impl<
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_SmoothingDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), "EndInvoke", 1usize
                 )
             });
-        let __cordl_ret: TState = unsafe { method.invoke_unchecked(self, (result)) };
+        let __cordl_ret: TState = unsafe { method.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -803,16 +875,22 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TState, TState, f32), TState, 3usize>("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_SmoothingDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), "Invoke", 3usize
                 )
             });
         let __cordl_ret: TState = unsafe {
-            method.invoke_unchecked(self, (a, b, smooth))
+            method.invoke_unchecked(self, (a, b, smooth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -847,7 +925,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -858,12 +940,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_SmoothingDelegate <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1085,7 +1169,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
@@ -1099,11 +1187,13 @@ impl<
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_TimestampedStateTable <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn IEquatableByReference_StateBuffer_TStateTable_TType_TState__TimestampedStateTable__Equals(
@@ -1124,7 +1214,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
@@ -1140,13 +1234,15 @@ impl<
             )
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_TimestampedStateTable <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(),
                     "IEquatableByReference<StateBuffer<TStateTable,TType,TState>.TimestampedStateTable>.Equals",
                     1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_SyncStateId_i64_TStateTable0(
@@ -1163,7 +1259,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::SyncStateId, i64, TStateTable),
                 quest_hook::libil2cpp::Void,
@@ -1171,12 +1271,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_TimestampedStateTable <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id, _cordl_time, state))
+            method.invoke_unchecked(self, (id, _cordl_time, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1193,7 +1295,11 @@ impl<
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
+            TStateTable,
+            TType,
+            TState,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64, TStateTable),
                 quest_hook::libil2cpp::Void,
@@ -1201,12 +1307,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StateBuffer_3_TimestampedStateTable <
+                    TStateTable, TType, TState > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time, state))
+            method.invoke_unchecked(self, (_cordl_time, state))?
         };
         Ok(__cordl_ret.into())
     }

@@ -46,7 +46,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -59,19 +59,20 @@ impl crate::UnityEngine::NoAllocHelpers {
             >("EnsureListElemCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureListElemCount", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "EnsureListElemCount", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, count))
+            method.invoke_unchecked((), (list, count))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractArrayFromList(
         list: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -79,12 +80,13 @@ impl crate::UnityEngine::NoAllocHelpers {
             >("ExtractArrayFromList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractArrayFromList", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractArrayFromList", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = unsafe {
-            method.invoke_unchecked((), (list))
+            method.invoke_unchecked((), (list))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +99,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<T>,
@@ -107,20 +109,21 @@ impl crate::UnityEngine::NoAllocHelpers {
             >("ExtractArrayFromListT")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractArrayFromListT", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "ExtractArrayFromListT", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { method.invoke_unchecked((), (list)) };
+        > = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_ResizeList(
         list: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 quest_hook::libil2cpp::Void,
@@ -128,12 +131,13 @@ impl crate::UnityEngine::NoAllocHelpers {
             >("Internal_ResizeList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Internal_ResizeList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "Internal_ResizeList", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, _cordl_size))
+            method.invoke_unchecked((), (list, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +149,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -158,19 +162,20 @@ impl crate::UnityEngine::NoAllocHelpers {
             >("ResizeList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResizeList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "ResizeList", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, _cordl_size))
+            method.invoke_unchecked((), (list, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SafeLength_Array0(
         values: quest_hook::libil2cpp::Gc<crate::System::Array>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Array>),
                 i32,
@@ -178,11 +183,12 @@ impl crate::UnityEngine::NoAllocHelpers {
             >("SafeLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SafeLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "SafeLength", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (values)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (values))? };
         Ok(__cordl_ret.into())
     }
     pub fn SafeLength_List_1_1<T>(
@@ -192,7 +198,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<T>,
@@ -202,11 +208,12 @@ impl crate::UnityEngine::NoAllocHelpers {
             >("SafeLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SafeLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NoAllocHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "SafeLength", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (values)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (values))? };
         Ok(__cordl_ret.into())
     }
 }

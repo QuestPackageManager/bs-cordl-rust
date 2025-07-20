@@ -68,7 +68,7 @@ impl crate::System::Data::Index {
         record: i32,
         filter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>),
                 bool,
@@ -76,12 +76,13 @@ impl crate::System::Data::Index {
             >("AcceptRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AcceptRecord", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "AcceptRecord", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (record, filter))
+            method.invoke_unchecked(self, (record, filter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,30 +90,32 @@ impl crate::System::Data::Index {
         &mut self,
         record: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("AcceptRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AcceptRecord", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "AcceptRecord", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (record)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (record))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddRef(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddRef", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "AddRef", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,7 +125,7 @@ impl crate::System::Data::Index {
         action: i32,
         changeRecord: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -130,25 +133,27 @@ impl crate::System::Data::Index {
             >("ApplyChangeAction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyChangeAction", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "ApplyChangeAction", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (record, action, changeRecord))
+            method.invoke_unchecked(self, (record, action, changeRecord))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUnique(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("CheckUnique")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUnique", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "CheckUnique", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareDataRows(
@@ -156,16 +161,17 @@ impl crate::System::Data::Index {
         record1: i32,
         record2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("CompareDataRows")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareDataRows", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "CompareDataRows", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record1, record2))
+            method.invoke_unchecked(self, (record1, record2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -174,16 +180,17 @@ impl crate::System::Data::Index {
         record1: i32,
         record2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("CompareDuplicateRecords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareDuplicateRecords", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "CompareDuplicateRecords", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record1, record2))
+            method.invoke_unchecked(self, (record1, record2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +203,7 @@ impl crate::System::Data::Index {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -213,11 +220,14 @@ impl crate::System::Data::Index {
             >("CompareRecordToKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareRecordToKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "CompareRecordToKey", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (record1, vals)) };
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (record1, vals))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareRecords(
@@ -225,16 +235,17 @@ impl crate::System::Data::Index {
         record1: i32,
         record2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("CompareRecords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareRecords", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "CompareRecords", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record1, record2))
+            method.invoke_unchecked(self, (record1, record2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -242,7 +253,7 @@ impl crate::System::Data::Index {
         &mut self,
         recordIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -250,12 +261,13 @@ impl crate::System::Data::Index {
             >("DeleteRecordFromIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteRecordFromIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "DeleteRecordFromIndex", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (recordIndex))
+            method.invoke_unchecked(self, (recordIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +276,7 @@ impl crate::System::Data::Index {
         recordIndex: i32,
         fireEvent: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, bool),
                 quest_hook::libil2cpp::Void,
@@ -272,12 +284,13 @@ impl crate::System::Data::Index {
             >("DeleteRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteRecord", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "DeleteRecord", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (recordIndex, fireEvent))
+            method.invoke_unchecked(self, (recordIndex, fireEvent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -285,16 +298,17 @@ impl crate::System::Data::Index {
         &mut self,
         recordIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("DeleteRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteRecord", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "DeleteRecord", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (recordIndex))
+            method.invoke_unchecked(self, (recordIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -306,7 +320,7 @@ impl crate::System::Data::Index {
         recordStates: crate::System::Data::DataViewRowState,
         rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -322,12 +336,13 @@ impl crate::System::Data::Index {
             >("Equal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "Equal", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (indexDesc, recordStates, rowFilter))
+            method.invoke_unchecked(self, (indexDesc, recordStates, rowFilter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -335,7 +350,7 @@ impl crate::System::Data::Index {
         &mut self,
         originalKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 i32,
@@ -343,26 +358,28 @@ impl crate::System::Data::Index {
             >("FindNodeByKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindNodeByKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "FindNodeByKey", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalKey)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindNodeByKeyRecord(
         &mut self,
         record: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("FindNodeByKeyRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindNodeByKeyRecord", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "FindNodeByKeyRecord", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (record)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (record))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindNodeByKeys(
@@ -373,7 +390,7 @@ impl crate::System::Data::Index {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -385,11 +402,12 @@ impl crate::System::Data::Index {
             >("FindNodeByKeys")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindNodeByKeys", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "FindNodeByKeys", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalKey)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindRecords_Il2CppArray1(
@@ -400,7 +418,7 @@ impl crate::System::Data::Index {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Range> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -412,12 +430,13 @@ impl crate::System::Data::Index {
             >("FindRecords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindRecords", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "FindRecords", 1usize
                 )
             });
         let __cordl_ret: crate::System::Data::Range = unsafe {
-            method.invoke_unchecked(self, (key))
+            method.invoke_unchecked(self, (key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -425,7 +444,7 @@ impl crate::System::Data::Index {
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Range> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 crate::System::Data::Range,
@@ -433,28 +452,30 @@ impl crate::System::Data::Index {
             >("FindRecords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindRecords", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "FindRecords", 1usize
                 )
             });
         let __cordl_ret: crate::System::Data::Range = unsafe {
-            method.invoke_unchecked(self, (key))
+            method.invoke_unchecked(self, (key))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FireResetEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FireResetEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FireResetEvent", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "FireResetEvent", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -465,7 +486,7 @@ impl crate::System::Data::Index {
             quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumnCollection>),
                 quest_hook::libil2cpp::Gc<
@@ -475,13 +496,14 @@ impl crate::System::Data::Index {
             >("GetAllFields")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllFields", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAllFields", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
-        > = unsafe { method.invoke_unchecked((), (columns)) };
+        > = unsafe { method.invoke_unchecked((), (columns))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetChangeAction(
@@ -489,7 +511,7 @@ impl crate::System::Data::Index {
         oldState: crate::System::Data::DataViewRowState,
         newState: crate::System::Data::DataViewRowState,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Data::DataViewRowState,
@@ -500,12 +522,13 @@ impl crate::System::Data::Index {
             >("GetChangeAction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetChangeAction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetChangeAction", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (oldState, newState))
+            method.invoke_unchecked(self, (oldState, newState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -515,7 +538,7 @@ impl crate::System::Data::Index {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Data::RBTree_1_RBTreeEnumerator<i32>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::System::Data::RBTree_1_RBTreeEnumerator<i32>,
@@ -523,25 +546,27 @@ impl crate::System::Data::Index {
             >("GetEnumerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnumerator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetEnumerator", 1usize
                 )
             });
         let __cordl_ret: crate::System::Data::RBTree_1_RBTreeEnumerator<i32> = unsafe {
-            method.invoke_unchecked(self, (startIndex))
+            method.invoke_unchecked(self, (startIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndex_i32_0(&mut self, record: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetIndex", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (record)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (record))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndex_i32_1(
@@ -549,16 +574,17 @@ impl crate::System::Data::Index {
         record: i32,
         changeRecord: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("GetIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetIndex", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record, changeRecord))
+            method.invoke_unchecked(self, (record, changeRecord))?
         };
         Ok(__cordl_ret.into())
     }
@@ -566,35 +592,37 @@ impl crate::System::Data::Index {
         &mut self,
         nodeId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Range> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), crate::System::Data::Range, 1usize>("GetRangeFromNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRangeFromNode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRangeFromNode", 1usize
                 )
             });
         let __cordl_ret: crate::System::Data::Range = unsafe {
-            method.invoke_unchecked(self, (nodeId))
+            method.invoke_unchecked(self, (nodeId))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetRecord(&mut self, recordIndex: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRecord", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRecord", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (recordIndex)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (recordIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetReplaceAction(
         oldState: crate::System::Data::DataViewRowState,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Data::DataViewRowState),
                 i32,
@@ -602,11 +630,12 @@ impl crate::System::Data::Index {
             >("GetReplaceAction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetReplaceAction", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetReplaceAction", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (oldState)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (oldState))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRow(
@@ -615,7 +644,7 @@ impl crate::System::Data::Index {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -623,12 +652,13 @@ impl crate::System::Data::Index {
             >("GetRow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRow", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRow", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow> = unsafe {
-            method.invoke_unchecked(self, (i))
+            method.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -646,7 +676,7 @@ impl crate::System::Data::Index {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -662,15 +692,16 @@ impl crate::System::Data::Index {
             >("GetRows")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRows", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRows", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (values)) };
+        > = unsafe { method.invoke_unchecked(self, (values))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRows_Range1(
@@ -683,7 +714,7 @@ impl crate::System::Data::Index {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Data::Range),
                 quest_hook::libil2cpp::Gc<
@@ -695,15 +726,16 @@ impl crate::System::Data::Index {
             >("GetRows")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRows", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRows", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (range)) };
+        > = unsafe { method.invoke_unchecked(self, (range))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUniqueKeyValues_0(
@@ -715,7 +747,7 @@ impl crate::System::Data::Index {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -727,15 +759,16 @@ impl crate::System::Data::Index {
             >("GetUniqueKeyValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUniqueKeyValues", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetUniqueKeyValues", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUniqueKeyValues_List_1_i32_1(
@@ -751,7 +784,7 @@ impl crate::System::Data::Index {
         >,
         curNodeId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -772,12 +805,13 @@ impl crate::System::Data::Index {
             >("GetUniqueKeyValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUniqueKeyValues", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "GetUniqueKeyValues", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (list, curNodeId))
+            method.invoke_unchecked(self, (list, curNodeId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -789,7 +823,7 @@ impl crate::System::Data::Index {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -802,18 +836,19 @@ impl crate::System::Data::Index {
             >("IndexOfReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOfReference", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOfReference", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, item)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, item))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitRecords(
         &mut self,
         filter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>),
                 quest_hook::libil2cpp::Void,
@@ -821,12 +856,13 @@ impl crate::System::Data::Index {
             >("InitRecords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitRecords", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "InitRecords", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (filter))
+            method.invoke_unchecked(self, (filter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -835,16 +871,17 @@ impl crate::System::Data::Index {
         record: i32,
         fireEvent: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, bool), i32, 2usize>("InsertRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertRecord", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "InsertRecord", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record, fireEvent))
+            method.invoke_unchecked(self, (record, fireEvent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -852,15 +889,16 @@ impl crate::System::Data::Index {
         &mut self,
         record: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("InsertRecordToIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertRecordToIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "InsertRecordToIndex", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (record)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (record))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeyInIndex_Il2CppArray1(
@@ -871,7 +909,7 @@ impl crate::System::Data::Index {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -883,18 +921,19 @@ impl crate::System::Data::Index {
             >("IsKeyInIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsKeyInIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "IsKeyInIndex", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeyInIndex_Il2CppObject0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -902,33 +941,35 @@ impl crate::System::Data::Index {
             >("IsKeyInIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsKeyInIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "IsKeyInIndex", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeyRecordInIndex(
         &mut self,
         record: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("IsKeyRecordInIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsKeyRecordInIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "IsKeyRecordInIndex", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (record)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (record))? };
         Ok(__cordl_ret.into())
     }
     pub fn ListChangedAdd(
         &mut self,
         listener: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>),
                 quest_hook::libil2cpp::Void,
@@ -936,12 +977,13 @@ impl crate::System::Data::Index {
             >("ListChangedAdd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ListChangedAdd", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "ListChangedAdd", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listener))
+            method.invoke_unchecked(self, (listener))?
         };
         Ok(__cordl_ret.into())
     }
@@ -949,7 +991,7 @@ impl crate::System::Data::Index {
         &mut self,
         listener: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>),
                 quest_hook::libil2cpp::Void,
@@ -957,12 +999,13 @@ impl crate::System::Data::Index {
             >("ListChangedRemove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ListChangedRemove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "ListChangedRemove", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listener))
+            method.invoke_unchecked(self, (listener))?
         };
         Ok(__cordl_ret.into())
     }
@@ -972,7 +1015,7 @@ impl crate::System::Data::Index {
         record: i32,
         trackAddRemove: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ComponentModel::ListChangedType, i32, bool),
                 quest_hook::libil2cpp::Void,
@@ -980,12 +1023,13 @@ impl crate::System::Data::Index {
             >("MaintainDataView")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MaintainDataView", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "MaintainDataView", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (changedType, record, trackAddRemove))
+            method.invoke_unchecked(self, (changedType, record, trackAddRemove))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1045,7 +1089,7 @@ impl crate::System::Data::Index {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ListChangedEventArgs>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::ComponentModel::ListChangedEventArgs,
@@ -1055,12 +1099,13 @@ impl crate::System::Data::Index {
             >("OnListChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnListChanged", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "OnListChanged", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e))
+            method.invoke_unchecked(self, (e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1069,7 +1114,7 @@ impl crate::System::Data::Index {
         changedType: crate::System::ComponentModel::ListChangedType,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ComponentModel::ListChangedType, i32),
                 quest_hook::libil2cpp::Void,
@@ -1077,12 +1122,13 @@ impl crate::System::Data::Index {
             >("OnListChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnListChanged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "OnListChanged", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (changedType, index))
+            method.invoke_unchecked(self, (changedType, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1092,7 +1138,7 @@ impl crate::System::Data::Index {
         newIndex: i32,
         oldIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ComponentModel::ListChangedType, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -1100,12 +1146,13 @@ impl crate::System::Data::Index {
             >("OnListChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnListChanged", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "OnListChanged", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (changedType, newIndex, oldIndex))
+            method.invoke_unchecked(self, (changedType, newIndex, oldIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1113,16 +1160,17 @@ impl crate::System::Data::Index {
         &mut self,
         record: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("RecordChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecordChanged", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "RecordChanged", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (record))
+            method.invoke_unchecked(self, (record))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1131,7 +1179,7 @@ impl crate::System::Data::Index {
         oldIndex: i32,
         newIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -1139,12 +1187,13 @@ impl crate::System::Data::Index {
             >("RecordChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecordChanged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "RecordChanged", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (oldIndex, newIndex))
+            method.invoke_unchecked(self, (oldIndex, newIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1154,7 +1203,7 @@ impl crate::System::Data::Index {
         oldState: crate::System::Data::DataViewRowState,
         newState: crate::System::Data::DataViewRowState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1166,12 +1215,13 @@ impl crate::System::Data::Index {
             >("RecordStateChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecordStateChanged", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "RecordStateChanged", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (record, oldState, newState))
+            method.invoke_unchecked(self, (record, oldState, newState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1184,7 +1234,7 @@ impl crate::System::Data::Index {
         newOldState: crate::System::Data::DataViewRowState,
         newNewState: crate::System::Data::DataViewRowState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1199,8 +1249,9 @@ impl crate::System::Data::Index {
             >("RecordStateChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecordStateChanged", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "RecordStateChanged", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1215,35 +1266,37 @@ impl crate::System::Data::Index {
                         newOldState,
                         newNewState,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveRef(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("RemoveRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveRef", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "RemoveRef", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1258,7 +1311,7 @@ impl crate::System::Data::Index {
         recordStates: crate::System::Data::DataViewRowState,
         rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -1275,12 +1328,13 @@ impl crate::System::Data::Index {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (table, comparison, recordStates, rowFilter))
+            method.invoke_unchecked(self, (table, comparison, recordStates, rowFilter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1298,7 +1352,7 @@ impl crate::System::Data::Index {
         recordStates: crate::System::Data::DataViewRowState,
         rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -1320,8 +1374,9 @@ impl crate::System::Data::Index {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1329,7 +1384,7 @@ impl crate::System::Data::Index {
                 .invoke_unchecked(
                     self,
                     (table, indexFields, comparison, recordStates, rowFilter),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1342,7 +1397,7 @@ impl crate::System::Data::Index {
         recordStates: crate::System::Data::DataViewRowState,
         rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -1359,79 +1414,85 @@ impl crate::System::Data::Index {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (table, indexFields, recordStates, rowFilter))
+            method.invoke_unchecked(self, (table, indexFields, recordStates, rowFilter))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_DoListChanged(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_DoListChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DoListChanged", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_DoListChanged", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_HasDuplicates(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_HasDuplicates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_HasDuplicates", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_HasDuplicates", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_HasRemoteAggregate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_HasRemoteAggregate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_HasRemoteAggregate", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ObjectID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_ObjectID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ObjectID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_ObjectID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RecordCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_RecordCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RecordCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_RecordCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RecordStates(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::DataViewRowState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Data::DataViewRowState,
@@ -1439,25 +1500,27 @@ impl crate::System::Data::Index {
             >("get_RecordStates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RecordStates", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_RecordStates", 0usize
                 )
             });
         let __cordl_ret: crate::System::Data::DataViewRowState = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_RefCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_RefCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RefCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_RefCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_RowFilter(
@@ -1465,7 +1528,7 @@ impl crate::System::Data::Index {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
@@ -1473,12 +1536,13 @@ impl crate::System::Data::Index {
             >("get_RowFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RowFilter", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_RowFilter", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1487,7 +1551,7 @@ impl crate::System::Data::Index {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -1495,12 +1559,13 @@ impl crate::System::Data::Index {
             >("get_Table")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Table", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Table", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1560,16 +1625,17 @@ impl crate::System::Data::Index_IndexTree {
         record1: i32,
         record2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index_IndexTree as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("CompareNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareNode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index_IndexTree as quest_hook::libil2cpp::Type
+                    > ::class(), "CompareNode", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record1, record2))
+            method.invoke_unchecked(self, (record1, record2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1578,16 +1644,17 @@ impl crate::System::Data::Index_IndexTree {
         record1: i32,
         record2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index_IndexTree as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("CompareSateliteTreeNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareSateliteTreeNode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index_IndexTree as quest_hook::libil2cpp::Type
+                    > ::class(), "CompareSateliteTreeNode", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (record1, record2))
+            method.invoke_unchecked(self, (record1, record2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1604,7 +1671,7 @@ impl crate::System::Data::Index_IndexTree {
         &mut self,
         index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::Index_IndexTree as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::Index>),
                 quest_hook::libil2cpp::Void,
@@ -1612,12 +1679,13 @@ impl crate::System::Data::Index_IndexTree {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::Index_IndexTree as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }

@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
         &mut self,
         compositionString: crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::LowLevel::IMECompositionString),
                 quest_hook::libil2cpp::Void,
@@ -52,12 +52,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
             >("OnIMECompositionChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnIMECompositionChanged", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::ITextInputReceiver as
+                    quest_hook::libil2cpp::Type > ::class(), "OnIMECompositionChanged",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (compositionString))
+            method.invoke_unchecked(self, (compositionString))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,16 +67,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver {
         &mut self,
         character: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::ITextInputReceiver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(char), quest_hook::libil2cpp::Void, 1usize>("OnTextInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnTextInput", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::ITextInputReceiver as
+                    quest_hook::libil2cpp::Type > ::class(), "OnTextInput", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (character))
+            method.invoke_unchecked(self, (character))?
         };
         Ok(__cordl_ret.into())
     }

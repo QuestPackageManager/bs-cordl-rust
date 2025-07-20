@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
         &mut self,
         commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult),
                 quest_hook::libil2cpp::Void,
@@ -57,12 +57,14 @@ impl crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
             >("InstallDependencies")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallDependencies", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "InstallDependencies",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (commandLineParserResult))
+            method.invoke_unchecked(self, (commandLineParserResult))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,38 +78,41 @@ impl crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_flyingControllerEnabled(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_flyingControllerEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_flyingControllerEnabled", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_flyingControllerEnabled", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_flyingControllerEnabled(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -115,12 +120,14 @@ impl crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
             >("set_flyingControllerEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_flyingControllerEnabled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FirstPersonFlyingControllerEnableHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_flyingControllerEnabled", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

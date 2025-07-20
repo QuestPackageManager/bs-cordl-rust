@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier {
             crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
@@ -55,11 +55,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier {
             >("Accept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Accept", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsSrpGroupVerifier as
+                    quest_hook::libil2cpp::Type > ::class(), "Accept", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (group)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (group))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

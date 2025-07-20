@@ -45,7 +45,7 @@ impl crate::BGLib::Polyglot::LocalizedText {
     pub fn IsAlignmentLeft(
         alignment: crate::UnityEngine::TextAnchor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextAnchor),
                 bool,
@@ -53,17 +53,18 @@ impl crate::BGLib::Polyglot::LocalizedText {
             >("IsAlignmentLeft")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAlignmentLeft", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type
+                    > ::class(), "IsAlignmentLeft", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alignment)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alignment))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsAlignmentRight(
         alignment: crate::UnityEngine::TextAnchor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextAnchor),
                 bool,
@@ -71,11 +72,12 @@ impl crate::BGLib::Polyglot::LocalizedText {
             >("IsAlignmentRight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAlignmentRight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type
+                    > ::class(), "IsAlignmentRight", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alignment)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alignment))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOppositeDirection(
@@ -83,7 +85,7 @@ impl crate::BGLib::Polyglot::LocalizedText {
         alignment: crate::UnityEngine::TextAnchor,
         direction: crate::BGLib::Polyglot::LanguageDirection,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::TextAnchor,
@@ -94,12 +96,13 @@ impl crate::BGLib::Polyglot::LocalizedText {
             >("IsOppositeDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsOppositeDirection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type
+                    > ::class(), "IsOppositeDirection", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (alignment, direction))
+            method.invoke_unchecked(self, (alignment, direction))?
         };
         Ok(__cordl_ret.into())
     }
@@ -115,7 +118,7 @@ impl crate::BGLib::Polyglot::LocalizedText {
         text: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
@@ -126,12 +129,13 @@ impl crate::BGLib::Polyglot::LocalizedText {
             >("SetText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetText", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type
+                    > ::class(), "SetText", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (text, value))
+            method.invoke_unchecked(self, (text, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +144,7 @@ impl crate::BGLib::Polyglot::LocalizedText {
         text: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
         direction: crate::BGLib::Polyglot::LanguageDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
@@ -151,28 +155,30 @@ impl crate::BGLib::Polyglot::LocalizedText {
             >("UpdateAlignment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateAlignment", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type
+                    > ::class(), "UpdateAlignment", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (text, direction))
+            method.invoke_unchecked(self, (text, direction))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LocalizedText as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -59,7 +59,7 @@ impl crate::System::Resources::FileBasedResourceGroveler {
             crate::System::Resources::ResourceManager_ResourceManagerMediator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Resources::FileBasedResourceGroveler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Resources::ResourceManager_ResourceManagerMediator,
@@ -69,12 +69,13 @@ impl crate::System::Resources::FileBasedResourceGroveler {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Resources::FileBasedResourceGroveler as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (mediator))
+            method.invoke_unchecked(self, (mediator))?
         };
         Ok(__cordl_ret.into())
     }

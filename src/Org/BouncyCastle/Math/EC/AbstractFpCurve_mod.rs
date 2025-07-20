@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::AbstractFpCurve as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -57,13 +57,14 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
             >("DecompressPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecompressPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::AbstractFpCurve as
+                    quest_hook::libil2cpp::Type > ::class(), "DecompressPoint", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { method.invoke_unchecked(self, (yTilde, X1)) };
+        > = unsafe { method.invoke_unchecked(self, (yTilde, X1))? };
         Ok(__cordl_ret.into())
     }
     pub fn ImplRandomFieldElement(
@@ -72,7 +73,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::AbstractFpCurve as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -85,13 +86,15 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
             >("ImplRandomFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImplRandomFieldElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::AbstractFpCurve as
+                    quest_hook::libil2cpp::Type > ::class(), "ImplRandomFieldElement",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (r, p)) };
+        > = unsafe { method.invoke_unchecked((), (r, p))? };
         Ok(__cordl_ret.into())
     }
     pub fn ImplRandomFieldElementMult(
@@ -100,7 +103,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::AbstractFpCurve as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -113,20 +116,22 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
             >("ImplRandomFieldElementMult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImplRandomFieldElementMult", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::AbstractFpCurve as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ImplRandomFieldElementMult", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (r, p)) };
+        > = unsafe { method.invoke_unchecked((), (r, p))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidFieldElement(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::AbstractFpCurve as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 bool,
@@ -134,11 +139,13 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
             >("IsValidFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidFieldElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::AbstractFpCurve as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidFieldElement",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -156,7 +163,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::AbstractFpCurve as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Security::SecureRandom,
@@ -168,13 +175,14 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
             >("RandomFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RandomFieldElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::AbstractFpCurve as
+                    quest_hook::libil2cpp::Type > ::class(), "RandomFieldElement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        > = unsafe { method.invoke_unchecked(self, (r)) };
+        > = unsafe { method.invoke_unchecked(self, (r))? };
         Ok(__cordl_ret.into())
     }
     pub fn RandomFieldElementMult(
@@ -183,7 +191,7 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::AbstractFpCurve as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Security::SecureRandom,
@@ -195,20 +203,22 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
             >("RandomFieldElementMult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RandomFieldElementMult", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::AbstractFpCurve as
+                    quest_hook::libil2cpp::Type > ::class(), "RandomFieldElementMult",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECFieldElement,
-        > = unsafe { method.invoke_unchecked(self, (r)) };
+        > = unsafe { method.invoke_unchecked(self, (r))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::AbstractFpCurve as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Void,
@@ -216,12 +226,13 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractFpCurve {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::AbstractFpCurve as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (q))
+            method.invoke_unchecked(self, (q))?
         };
         Ok(__cordl_ret.into())
     }

@@ -41,7 +41,7 @@ impl crate::UnityEngine::AttributeHelperEngine {
     pub fn CheckIsEditorScript(
         klass: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AttributeHelperEngine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 i32,
@@ -49,11 +49,13 @@ impl crate::UnityEngine::AttributeHelperEngine {
             >("CheckIsEditorScript")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckIsEditorScript", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AttributeHelperEngine as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckIsEditorScript",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (klass)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (klass))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributeOfType<T>(
@@ -63,7 +65,7 @@ impl crate::UnityEngine::AttributeHelperEngine {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AttributeHelperEngine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 T,
@@ -71,17 +73,19 @@ impl crate::UnityEngine::AttributeHelperEngine {
             >("GetCustomAttributeOfType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCustomAttributeOfType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AttributeHelperEngine as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCustomAttributeOfType",
+                    1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (klass)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (klass))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultExecutionOrderFor(
         klass: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AttributeHelperEngine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 i32,
@@ -89,17 +93,19 @@ impl crate::UnityEngine::AttributeHelperEngine {
             >("GetDefaultExecutionOrderFor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultExecutionOrderFor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AttributeHelperEngine as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultExecutionOrderFor", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (klass)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (klass))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetExecuteMode(
         klass: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AttributeHelperEngine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 i32,
@@ -107,17 +113,18 @@ impl crate::UnityEngine::AttributeHelperEngine {
             >("GetExecuteMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetExecuteMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AttributeHelperEngine as
+                    quest_hook::libil2cpp::Type > ::class(), "GetExecuteMode", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (klass)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (klass))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetParentTypeDisallowingMultipleInclusion(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AttributeHelperEngine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -125,12 +132,14 @@ impl crate::UnityEngine::AttributeHelperEngine {
             >("GetParentTypeDisallowingMultipleInclusion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParentTypeDisallowingMultipleInclusion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AttributeHelperEngine as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetParentTypeDisallowingMultipleInclusion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +152,7 @@ impl crate::UnityEngine::AttributeHelperEngine {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AttributeHelperEngine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<
@@ -155,15 +164,17 @@ impl crate::UnityEngine::AttributeHelperEngine {
             >("GetRequiredComponents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRequiredComponents", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::AttributeHelperEngine as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRequiredComponents",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
             >,
-        > = unsafe { method.invoke_unchecked((), (klass)) };
+        > = unsafe { method.invoke_unchecked((), (klass))? };
         Ok(__cordl_ret.into())
     }
 }

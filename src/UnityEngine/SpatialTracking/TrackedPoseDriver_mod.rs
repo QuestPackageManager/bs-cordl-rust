@@ -59,48 +59,51 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Awake", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "Awake", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CacheLocalPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CacheLocalPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CacheLocalPosition", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "CacheLocalPosition", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FixedUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FixedUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FixedUpdate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "FixedUpdate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +115,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::SpatialTracking::PoseDataFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
@@ -124,25 +127,27 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("GetPoseData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPoseData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPoseData", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SpatialTracking::PoseDataFlags = unsafe {
-            method.invoke_unchecked(self, (device, poseSource, resultPose))
+            method.invoke_unchecked(self, (device, poseSource, resultPose))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasStereoCamera(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("HasStereoCamera")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasStereoCamera", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "HasStereoCamera", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -155,87 +160,92 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     pub fn OnBeforeRender(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnBeforeRender")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnBeforeRender", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "OnBeforeRender", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnDisable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDisable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDisable", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnEnable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "OnEnable", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn PerformUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PerformUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PerformUpdate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "PerformUpdate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ResetToCachedLocalPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -243,12 +253,14 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("ResetToCachedLocalPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResetToCachedLocalPosition", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ResetToCachedLocalPosition", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +270,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         newRotation: crate::UnityEngine::Quaternion,
         poseFlags: crate::UnityEngine::SpatialTracking::PoseDataFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -270,12 +282,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("SetLocalTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLocalTransform", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "SetLocalTransform", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (newPosition, newRotation, poseFlags))
+            method.invoke_unchecked(self, (newPosition, newRotation, poseFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +297,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         deviceType: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
         pose: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
@@ -295,12 +308,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("SetPoseSource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPoseSource", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPoseSource", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (deviceType, pose))
+            method.invoke_unchecked(self, (deviceType, pose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -308,7 +322,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         &mut self,
         pose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Pose),
                 crate::UnityEngine::Pose,
@@ -316,57 +330,63 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("TransformPoseByOriginIfNeeded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransformPoseByOriginIfNeeded", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TransformPoseByOriginIfNeeded", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked(self, (pose))
+            method.invoke_unchecked(self, (pose))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Update", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "Update", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_UseRelativeTransform(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_UseRelativeTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UseRelativeTransform", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_UseRelativeTransform",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deviceType(
@@ -374,7 +394,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
@@ -382,28 +402,30 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("get_deviceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deviceType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_deviceType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_originPose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Pose, 0usize>("get_originPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_originPose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_originPose", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,7 +436,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -424,13 +446,15 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("get_poseProviderComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_poseProviderComponent", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_poseProviderComponent",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_poseSource(
@@ -438,7 +462,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
@@ -446,12 +470,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("get_poseSource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_poseSource", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_poseSource", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -460,7 +485,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType,
@@ -468,12 +493,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("get_trackingType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_trackingType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_trackingType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -482,7 +508,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType,
@@ -490,12 +516,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("get_updateType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_updateType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "get_updateType", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -503,7 +530,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -511,12 +538,14 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("set_UseRelativeTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_UseRelativeTransform", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "set_UseRelativeTransform",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -524,7 +553,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         &mut self,
         value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType),
                 quest_hook::libil2cpp::Void,
@@ -532,12 +561,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("set_deviceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_deviceType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "set_deviceType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -545,7 +575,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         &mut self,
         value: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Pose),
                 quest_hook::libil2cpp::Void,
@@ -553,12 +583,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("set_originPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_originPose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "set_originPose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -568,7 +599,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider,
@@ -578,12 +609,14 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("set_poseProviderComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_poseProviderComponent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "set_poseProviderComponent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -591,7 +624,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         &mut self,
         value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose),
                 quest_hook::libil2cpp::Void,
@@ -599,12 +632,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("set_poseSource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_poseSource", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "set_poseSource", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -612,7 +646,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         &mut self,
         value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType),
                 quest_hook::libil2cpp::Void,
@@ -620,12 +654,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("set_trackingType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_trackingType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "set_trackingType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -633,7 +668,7 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         &mut self,
         value: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SpatialTracking::TrackedPoseDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType),
                 quest_hook::libil2cpp::Void,
@@ -641,12 +676,13 @@ impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
             >("set_updateType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_updateType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SpatialTracking::TrackedPoseDriver as
+                    quest_hook::libil2cpp::Type > ::class(), "set_updateType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

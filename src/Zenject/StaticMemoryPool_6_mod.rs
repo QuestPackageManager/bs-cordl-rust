@@ -176,7 +176,14 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::StaticMemoryPool_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (TParam1, TParam2, TParam3, TParam4, TParam5),
                 TValue,
@@ -184,12 +191,14 @@ impl<
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::StaticMemoryPool_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TValue > as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 5usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (p1, p2, p3, p4, p5))
+            method.invoke_unchecked(self, (p1, p2, p3, p4, p5))?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +223,14 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::StaticMemoryPool_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -234,12 +250,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::StaticMemoryPool_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TValue > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (onSpawnMethod, onDespawnedMethod))
+            method.invoke_unchecked(self, (onSpawnMethod, onDespawnedMethod))?
         };
         Ok(__cordl_ret.into())
     }
@@ -263,7 +281,14 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::StaticMemoryPool_6<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_6<
@@ -280,12 +305,14 @@ impl<
             >("set_OnSpawnMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_OnSpawnMethod", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::StaticMemoryPool_6 < TParam1, TParam2, TParam3,
+                    TParam4, TParam5, TValue > as quest_hook::libil2cpp::Type >
+                    ::class(), "set_OnSpawnMethod", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

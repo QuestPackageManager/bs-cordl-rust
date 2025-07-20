@@ -49,7 +49,7 @@ impl crate::System::Diagnostics::Contracts::Contract {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Contracts::Contract as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -62,12 +62,13 @@ impl crate::System::Diagnostics::Contracts::Contract {
             >("ForAll")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ForAll", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Contracts::Contract as
+                    quest_hook::libil2cpp::Type > ::class(), "ForAll", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (collection, predicate))
+            method.invoke_unchecked((), (collection, predicate))?
         };
         Ok(__cordl_ret.into())
     }

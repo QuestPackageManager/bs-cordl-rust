@@ -51,35 +51,37 @@ impl crate::UnityEngine::CharacterJoint {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_enableProjection(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_enableProjection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_enableProjection", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_enableProjection", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_highTwistLimit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -87,12 +89,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_highTwistLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_highTwistLimit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_highTwistLimit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +103,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -108,19 +111,20 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_highTwistLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_highTwistLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_highTwistLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_lowTwistLimit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -128,12 +132,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_lowTwistLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lowTwistLimit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_lowTwistLimit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +146,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -149,43 +154,46 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_lowTwistLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lowTwistLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_lowTwistLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_projectionAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_projectionAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_projectionAngle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_projectionAngle", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_projectionDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_projectionDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_projectionDistance", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_projectionDistance", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_swing1Limit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -193,12 +201,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_swing1Limit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swing1Limit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swing1Limit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -206,7 +215,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -214,19 +223,20 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_swing1Limit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swing1Limit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swing1Limit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_swing2Limit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -234,12 +244,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_swing2Limit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swing2Limit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swing2Limit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -247,7 +258,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -255,28 +266,30 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_swing2Limit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swing2Limit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swing2Limit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_swingAxis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_swingAxis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swingAxis", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swingAxis", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +297,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -292,19 +305,20 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_swingAxis_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swingAxis_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swingAxis_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_swingLimitSpring(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimitSpring> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimitSpring,
@@ -312,12 +326,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_swingLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swingLimitSpring", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swingLimitSpring", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimitSpring = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -325,7 +340,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -335,19 +350,20 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_swingLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swingLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_swingLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_twistLimitSpring(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimitSpring> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimitSpring,
@@ -355,12 +371,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_twistLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_twistLimitSpring", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_twistLimitSpring", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimitSpring = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -368,7 +385,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -378,12 +395,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("get_twistLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_twistLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "get_twistLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -391,7 +409,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -399,12 +417,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_enableProjection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_enableProjection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_enableProjection", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -412,7 +431,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -420,12 +439,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_highTwistLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_highTwistLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_highTwistLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -433,7 +453,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -441,12 +461,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_highTwistLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_highTwistLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_highTwistLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +475,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -462,12 +483,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_lowTwistLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_lowTwistLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_lowTwistLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -475,7 +497,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -483,12 +505,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_lowTwistLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_lowTwistLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_lowTwistLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -496,7 +519,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -504,12 +527,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_projectionAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_projectionAngle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_projectionAngle", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -517,7 +541,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -525,12 +549,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_projectionDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_projectionDistance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_projectionDistance", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -538,7 +563,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -546,12 +571,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swing1Limit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swing1Limit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swing1Limit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -559,7 +585,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -567,12 +593,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swing1Limit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swing1Limit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swing1Limit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -580,7 +607,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -588,12 +615,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swing2Limit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swing2Limit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swing2Limit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -601,7 +629,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -609,12 +637,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swing2Limit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swing2Limit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swing2Limit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -622,7 +651,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -630,12 +659,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swingAxis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swingAxis", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swingAxis", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -643,7 +673,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -651,12 +681,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swingAxis_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swingAxis_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swingAxis_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -664,7 +695,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimitSpring,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimitSpring),
                 quest_hook::libil2cpp::Void,
@@ -672,12 +703,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swingLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swingLimitSpring", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swingLimitSpring", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -685,7 +717,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -695,12 +727,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_swingLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swingLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_swingLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -708,7 +741,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimitSpring,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimitSpring),
                 quest_hook::libil2cpp::Void,
@@ -716,12 +749,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_twistLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_twistLimitSpring", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_twistLimitSpring", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -729,7 +763,7 @@ impl crate::UnityEngine::CharacterJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -739,12 +773,13 @@ impl crate::UnityEngine::CharacterJoint {
             >("set_twistLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_twistLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CharacterJoint as quest_hook::libil2cpp::Type >
+                    ::class(), "set_twistLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

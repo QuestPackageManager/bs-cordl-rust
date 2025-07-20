@@ -57,7 +57,7 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -84,15 +84,17 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >("CreateNotificationsPlayable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNotificationsPlayable", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::NotificationUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateNotificationsPlayable", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::TimeNotificationBehaviour,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, markers, asset, director)) };
+        > = unsafe { method.invoke_unchecked((), (graph, markers, asset, director))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNotificationsPlayable_PlayableDirector0(
@@ -112,7 +114,7 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -136,15 +138,17 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >("CreateNotificationsPlayable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNotificationsPlayable", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::NotificationUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateNotificationsPlayable", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::TimeNotificationBehaviour,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, markers, director)) };
+        > = unsafe { method.invoke_unchecked((), (graph, markers, director))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNotificationsPlayable_TimelineAsset1(
@@ -164,7 +168,7 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -188,21 +192,23 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >("CreateNotificationsPlayable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNotificationsPlayable", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::NotificationUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateNotificationsPlayable", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::TimeNotificationBehaviour,
             >,
-        > = unsafe { method.invoke_unchecked((), (graph, markers, timelineAsset)) };
+        > = unsafe { method.invoke_unchecked((), (graph, markers, timelineAsset))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrackTypeSupportsNotifications(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::NotificationUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 bool,
@@ -210,11 +216,13 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
             >("TrackTypeSupportsNotifications")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrackTypeSupportsNotifications", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::NotificationUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TrackTypeSupportsNotifications", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
 }

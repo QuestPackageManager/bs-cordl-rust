@@ -42,21 +42,22 @@ for crate::System::Collections::Generic::IntrospectiveSortUtilities {
 #[cfg(feature = "System+Collections+Generic+IntrospectiveSortUtilities")]
 impl crate::System::Collections::Generic::IntrospectiveSortUtilities {
     pub fn FloorLog2PlusOne(n: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::IntrospectiveSortUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("FloorLog2PlusOne")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FloorLog2PlusOne", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::IntrospectiveSortUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FloorLog2PlusOne", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (n)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowOrIgnoreBadComparer(
         comparer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::IntrospectiveSortUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -64,12 +65,14 @@ impl crate::System::Collections::Generic::IntrospectiveSortUtilities {
             >("ThrowOrIgnoreBadComparer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowOrIgnoreBadComparer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::IntrospectiveSortUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ThrowOrIgnoreBadComparer",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (comparer))
+            method.invoke_unchecked((), (comparer))?
         };
         Ok(__cordl_ret.into())
     }

@@ -41,7 +41,7 @@ impl crate::System::ThrowHelper {
     pub fn CreateArgumentException_DestinationTooShort() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -49,12 +49,13 @@ impl crate::System::ThrowHelper {
             >("CreateArgumentException_DestinationTooShort")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArgumentException_DestinationTooShort", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateArgumentException_DestinationTooShort", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -63,7 +64,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -71,19 +72,20 @@ impl crate::System::ThrowHelper {
             >("CreateArgumentNullException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArgumentNullException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateArgumentNullException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (argument))
+            method.invoke_unchecked((), (argument))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgumentOutOfRangeException_0() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -91,12 +93,13 @@ impl crate::System::ThrowHelper {
             >("CreateArgumentOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArgumentOutOfRangeException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateArgumentOutOfRangeException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +108,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -113,19 +116,20 @@ impl crate::System::ThrowHelper {
             >("CreateArgumentOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArgumentOutOfRangeException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateArgumentOutOfRangeException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (argument))
+            method.invoke_unchecked((), (argument))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArrayTypeMismatchException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -133,19 +137,20 @@ impl crate::System::ThrowHelper {
             >("CreateArrayTypeMismatchException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArrayTypeMismatchException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateArrayTypeMismatchException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateIndexOutOfRangeException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -153,19 +158,20 @@ impl crate::System::ThrowHelper {
             >("CreateIndexOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateIndexOutOfRangeException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateIndexOutOfRangeException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateThrowNotSupportedException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -173,12 +179,13 @@ impl crate::System::ThrowHelper {
             >("CreateThrowNotSupportedException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateThrowNotSupportedException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateThrowNotSupportedException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +194,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
@@ -195,12 +202,13 @@ impl crate::System::ThrowHelper {
             >("GetAddingDuplicateWithKeyArgumentException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAddingDuplicateWithKeyArgumentException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAddingDuplicateWithKeyArgumentException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::ArgumentException> = unsafe {
-            method.invoke_unchecked((), (key))
+            method.invoke_unchecked((), (key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +217,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
@@ -217,12 +225,13 @@ impl crate::System::ThrowHelper {
             >("GetArgumentException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArgumentException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetArgumentException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::ArgumentException> = unsafe {
-            method.invoke_unchecked((), (resource))
+            method.invoke_unchecked((), (resource))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +240,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -239,13 +248,14 @@ impl crate::System::ThrowHelper {
             >("GetArgumentName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArgumentName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetArgumentName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (argument)) };
+        > = unsafe { method.invoke_unchecked((), (argument))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetArgumentNullException(
@@ -253,7 +263,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ArgumentNullException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument),
                 quest_hook::libil2cpp::Gc<crate::System::ArgumentNullException>,
@@ -261,13 +271,14 @@ impl crate::System::ThrowHelper {
             >("GetArgumentNullException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArgumentNullException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetArgumentNullException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ArgumentNullException,
-        > = unsafe { method.invoke_unchecked((), (argument)) };
+        > = unsafe { method.invoke_unchecked((), (argument))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetArgumentOutOfRangeException_ExceptionResource1(
@@ -276,7 +287,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ArgumentOutOfRangeException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument, crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Gc<crate::System::ArgumentOutOfRangeException>,
@@ -284,13 +295,14 @@ impl crate::System::ThrowHelper {
             >("GetArgumentOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArgumentOutOfRangeException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetArgumentOutOfRangeException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ArgumentOutOfRangeException,
-        > = unsafe { method.invoke_unchecked((), (argument, resource)) };
+        > = unsafe { method.invoke_unchecked((), (argument, resource))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetArgumentOutOfRangeException_Il2CppString0(
@@ -299,7 +311,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ArgumentOutOfRangeException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ExceptionArgument,
@@ -310,13 +322,14 @@ impl crate::System::ThrowHelper {
             >("GetArgumentOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArgumentOutOfRangeException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetArgumentOutOfRangeException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ArgumentOutOfRangeException,
-        > = unsafe { method.invoke_unchecked((), (argument, resource)) };
+        > = unsafe { method.invoke_unchecked((), (argument, resource))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetArraySegmentCtorValidationFailedException(
@@ -326,7 +339,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Array>, i32, i32),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -334,12 +347,13 @@ impl crate::System::ThrowHelper {
             >("GetArraySegmentCtorValidationFailedException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArraySegmentCtorValidationFailedException", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetArraySegmentCtorValidationFailedException", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (array, offset, count))
+            method.invoke_unchecked((), (array, offset, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -348,7 +362,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::InvalidOperationException>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::InvalidOperationException>,
@@ -356,13 +370,14 @@ impl crate::System::ThrowHelper {
             >("GetInvalidOperationException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInvalidOperationException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetInvalidOperationException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::InvalidOperationException,
-        > = unsafe { method.invoke_unchecked((), (str)) };
+        > = unsafe { method.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyNotFoundException(
@@ -372,7 +387,7 @@ impl crate::System::ThrowHelper {
             crate::System::Collections::Generic::KeyNotFoundException,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<
@@ -382,13 +397,14 @@ impl crate::System::ThrowHelper {
             >("GetKeyNotFoundException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetKeyNotFoundException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetKeyNotFoundException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::KeyNotFoundException,
-        > = unsafe { method.invoke_unchecked((), (key)) };
+        > = unsafe { method.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetResourceName(
@@ -396,7 +412,7 @@ impl crate::System::ThrowHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -404,13 +420,14 @@ impl crate::System::ThrowHelper {
             >("GetResourceName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResourceName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "GetResourceName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (resource)) };
+        > = unsafe { method.invoke_unchecked((), (resource))? };
         Ok(__cordl_ret.into())
     }
     pub fn IfNullAndNullsAreIllegalThenThrow<T>(
@@ -421,7 +438,7 @@ impl crate::System::ThrowHelper {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -432,19 +449,20 @@ impl crate::System::ThrowHelper {
             >("IfNullAndNullsAreIllegalThenThrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IfNullAndNullsAreIllegalThenThrow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IfNullAndNullsAreIllegalThenThrow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value, argName))
+            method.invoke_unchecked((), (value, argName))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowAddingDuplicateWithKeyArgumentException(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -452,19 +470,20 @@ impl crate::System::ThrowHelper {
             >("ThrowAddingDuplicateWithKeyArgumentException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowAddingDuplicateWithKeyArgumentException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowAddingDuplicateWithKeyArgumentException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (key))
+            method.invoke_unchecked((), (key))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArgumentException_Argument_InvalidArrayType() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -472,19 +491,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentException_Argument_InvalidArrayType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentException_Argument_InvalidArrayType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentException_Argument_InvalidArrayType", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArgumentException_DestinationTooShort() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -492,12 +512,13 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentException_DestinationTooShort")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentException_DestinationTooShort", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentException_DestinationTooShort", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -505,7 +526,7 @@ impl crate::System::ThrowHelper {
         resource: crate::System::ExceptionResource,
         argument: crate::System::ExceptionArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionResource, crate::System::ExceptionArgument),
                 quest_hook::libil2cpp::Void,
@@ -513,19 +534,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (resource, argument))
+            method.invoke_unchecked((), (resource, argument))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArgumentException_ExceptionResource0(
         resource: crate::System::ExceptionResource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Void,
@@ -533,19 +555,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (resource))
+            method.invoke_unchecked((), (resource))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArgumentNullException(
         argument: crate::System::ExceptionArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument),
                 quest_hook::libil2cpp::Void,
@@ -553,19 +576,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentNullException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentNullException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentNullException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (argument))
+            method.invoke_unchecked((), (argument))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArgumentOutOfRangeException_0() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -573,19 +597,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentOutOfRangeException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentOutOfRangeException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArgumentOutOfRangeException_ExceptionArgument1(
         argument: crate::System::ExceptionArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument),
                 quest_hook::libil2cpp::Void,
@@ -593,12 +618,13 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentOutOfRangeException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentOutOfRangeException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (argument))
+            method.invoke_unchecked((), (argument))?
         };
         Ok(__cordl_ret.into())
     }
@@ -606,7 +632,7 @@ impl crate::System::ThrowHelper {
         argument: crate::System::ExceptionArgument,
         resource: crate::System::ExceptionResource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionArgument, crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Void,
@@ -614,19 +640,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentOutOfRangeException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentOutOfRangeException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (argument, resource))
+            method.invoke_unchecked((), (argument, resource))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArgumentOutOfRange_IndexException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -634,12 +661,13 @@ impl crate::System::ThrowHelper {
             >("ThrowArgumentOutOfRange_IndexException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArgumentOutOfRange_IndexException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArgumentOutOfRange_IndexException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -648,7 +676,7 @@ impl crate::System::ThrowHelper {
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Array>, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -656,19 +684,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArraySegmentCtorValidationFailedExceptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArraySegmentCtorValidationFailedExceptions", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArraySegmentCtorValidationFailedExceptions", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (array, offset, count))
+            method.invoke_unchecked((), (array, offset, count))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowArrayTypeMismatchException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -676,19 +705,20 @@ impl crate::System::ThrowHelper {
             >("ThrowArrayTypeMismatchException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowArrayTypeMismatchException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowArrayTypeMismatchException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -696,19 +726,21 @@ impl crate::System::ThrowHelper {
             >("ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIndexArgumentOutOfRange_NeedNonNegNumException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -716,19 +748,21 @@ impl crate::System::ThrowHelper {
             >("ThrowIndexArgumentOutOfRange_NeedNonNegNumException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIndexArgumentOutOfRange_NeedNonNegNumException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowIndexArgumentOutOfRange_NeedNonNegNumException",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIndexOutOfRangeException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -736,19 +770,20 @@ impl crate::System::ThrowHelper {
             >("ThrowIndexOutOfRangeException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowIndexOutOfRangeException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowIndexOutOfRangeException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidOperationException(
         resource: crate::System::ExceptionResource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Void,
@@ -756,19 +791,20 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidOperationException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowInvalidOperationException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowInvalidOperationException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (resource))
+            method.invoke_unchecked((), (resource))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidOperationException_ConcurrentOperationsNotSupported() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -776,21 +812,22 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidOperationException_ConcurrentOperationsNotSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(),
                     "ThrowInvalidOperationException_ConcurrentOperationsNotSupported",
                     0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidOperationException_InvalidOperation_EnumEnded() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -798,20 +835,21 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidOperationException_InvalidOperation_EnumEnded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowInvalidOperationException_InvalidOperation_EnumEnded",
-                    0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(),
+                    "ThrowInvalidOperationException_InvalidOperation_EnumEnded", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -819,21 +857,22 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(),
                     "ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion",
                     0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidOperationException_InvalidOperation_EnumNotStarted() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -841,21 +880,22 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidOperationException_InvalidOperation_EnumNotStarted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(),
                     "ThrowInvalidOperationException_InvalidOperation_EnumNotStarted",
                     0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -863,21 +903,22 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(),
                     "ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen",
                     0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidOperationException_InvalidOperation_NoValue() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -885,20 +926,21 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidOperationException_InvalidOperation_NoValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowInvalidOperationException_InvalidOperation_NoValue",
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowInvalidOperationException_InvalidOperation_NoValue",
                     0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowInvalidTypeWithPointersNotSupported(
         targetType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Void,
@@ -906,19 +948,20 @@ impl crate::System::ThrowHelper {
             >("ThrowInvalidTypeWithPointersNotSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowInvalidTypeWithPointersNotSupported", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowInvalidTypeWithPointersNotSupported", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (targetType))
+            method.invoke_unchecked((), (targetType))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowKeyNotFoundException(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -926,19 +969,20 @@ impl crate::System::ThrowHelper {
             >("ThrowKeyNotFoundException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowKeyNotFoundException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowKeyNotFoundException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (key))
+            method.invoke_unchecked((), (key))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowNotSupportedException_0() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -946,19 +990,20 @@ impl crate::System::ThrowHelper {
             >("ThrowNotSupportedException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowNotSupportedException", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowNotSupportedException", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowNotSupportedException_ExceptionResource1(
         resource: crate::System::ExceptionResource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Void,
@@ -966,19 +1011,20 @@ impl crate::System::ThrowHelper {
             >("ThrowNotSupportedException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowNotSupportedException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowNotSupportedException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (resource))
+            method.invoke_unchecked((), (resource))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowSerializationException(
         resource: crate::System::ExceptionResource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ExceptionResource),
                 quest_hook::libil2cpp::Void,
@@ -986,19 +1032,20 @@ impl crate::System::ThrowHelper {
             >("ThrowSerializationException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowSerializationException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowSerializationException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (resource))
+            method.invoke_unchecked((), (resource))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_Index() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -1006,13 +1053,14 @@ impl crate::System::ThrowHelper {
             >("ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_Index")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_Index",
-                    0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(),
+                    "ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_Index", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1020,7 +1068,7 @@ impl crate::System::ThrowHelper {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1031,12 +1079,13 @@ impl crate::System::ThrowHelper {
             >("ThrowWrongKeyTypeArgumentException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowWrongKeyTypeArgumentException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowWrongKeyTypeArgumentException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (key, targetType))
+            method.invoke_unchecked((), (key, targetType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1044,7 +1093,7 @@ impl crate::System::ThrowHelper {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ThrowHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1055,12 +1104,13 @@ impl crate::System::ThrowHelper {
             >("ThrowWrongValueTypeArgumentException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThrowWrongValueTypeArgumentException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ThrowHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ThrowWrongValueTypeArgumentException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value, targetType))
+            method.invoke_unchecked((), (value, targetType))?
         };
         Ok(__cordl_ret.into())
     }

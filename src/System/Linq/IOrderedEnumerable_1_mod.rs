@@ -76,7 +76,9 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::IOrderedEnumerable_1<
+            TElement,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
@@ -92,14 +94,16 @@ impl<
             >("CreateOrderedEnumerable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateOrderedEnumerable", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::IOrderedEnumerable_1 < TElement > as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateOrderedEnumerable",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::IOrderedEnumerable_1<TElement>,
         > = unsafe {
-            method.invoke_unchecked(self, (keySelector, comparer, descending))
+            method.invoke_unchecked(self, (keySelector, comparer, descending))?
         };
         Ok(__cordl_ret.into())
     }

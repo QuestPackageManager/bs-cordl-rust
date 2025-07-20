@@ -48,7 +48,7 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Numeric2FacetsChecker as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -61,12 +61,13 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             >("CheckValueFacets")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckValueFacets", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Numeric2FacetsChecker as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckValueFacets", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked(self, (value, datatype))
+            method.invoke_unchecked(self, (value, datatype))?
         };
         Ok(__cordl_ret.into())
     }
@@ -79,7 +80,7 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Numeric2FacetsChecker as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -92,12 +93,13 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             >("CheckValueFacets")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckValueFacets", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Numeric2FacetsChecker as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckValueFacets", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked(self, (value, datatype))
+            method.invoke_unchecked(self, (value, datatype))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +112,7 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Numeric2FacetsChecker as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f64,
@@ -123,12 +125,13 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             >("CheckValueFacets")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckValueFacets", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Numeric2FacetsChecker as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckValueFacets", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked(self, (value, datatype))
+            method.invoke_unchecked(self, (value, datatype))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +143,7 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Numeric2FacetsChecker as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -154,12 +157,13 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             >("MatchEnumeration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchEnumeration", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Numeric2FacetsChecker as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchEnumeration", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (value, enumeration, datatype))
+            method.invoke_unchecked(self, (value, enumeration, datatype))?
         };
         Ok(__cordl_ret.into())
     }
@@ -171,7 +175,7 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             crate::System::Xml::Schema::XmlValueConverter,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Numeric2FacetsChecker as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f64,
@@ -185,12 +189,13 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
             >("MatchEnumeration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchEnumeration", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Numeric2FacetsChecker as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchEnumeration", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (value, enumeration, valueConverter))
+            method.invoke_unchecked(self, (value, enumeration, valueConverter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -204,16 +209,17 @@ impl crate::System::Xml::Schema::Numeric2FacetsChecker {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Numeric2FacetsChecker as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Numeric2FacetsChecker as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -42,7 +42,7 @@ impl crate::System::Xml::Ref {
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Ref as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -53,11 +53,12 @@ impl crate::System::Xml::Ref {
             >("Equal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Ref as quest_hook::libil2cpp::Type > ::class(),
+                    "Equal", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (strA, strB)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (strA, strB))? };
         Ok(__cordl_ret.into())
     }
 }

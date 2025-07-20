@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
     pub fn GetMaxSecurityStrength_IDigest0(
         d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>),
                 i32,
@@ -50,17 +50,19 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
             >("GetMaxSecurityStrength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaxSecurityStrength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaxSecurityStrength",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (d)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (d))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxSecurityStrength_IMac1(
         m: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>),
                 i32,
@@ -68,11 +70,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
             >("GetMaxSecurityStrength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaxSecurityStrength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaxSecurityStrength",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (m)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (m))? };
         Ok(__cordl_ret.into())
     }
     pub fn HashDF(
@@ -82,7 +86,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -94,20 +98,21 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
             >("HashDF")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashDF", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HashDF", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (digest, seedMaterial, seedLength)) };
+        > = unsafe { method.invoke_unchecked((), (digest, seedMaterial, seedLength))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTooLarge(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         maxBytes: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 bool,
@@ -115,12 +120,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
             >("IsTooLarge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTooLarge", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTooLarge", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (bytes, maxBytes))
+            method.invoke_unchecked((), (bytes, maxBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,16 +140,17 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

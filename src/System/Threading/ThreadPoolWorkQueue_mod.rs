@@ -64,7 +64,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         >,
         missedSteal: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -82,25 +82,27 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             >("Dequeue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dequeue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "Dequeue", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tl, callback, missedSteal))
+            method.invoke_unchecked(self, (tl, callback, missedSteal))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispatch() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("Dispatch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispatch", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispatch", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Enqueue(
@@ -110,7 +112,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
         >,
         forceGlobal: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -123,12 +125,13 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             >("Enqueue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Enqueue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "Enqueue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (callback, forceGlobal))
+            method.invoke_unchecked(self, (callback, forceGlobal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +142,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -149,19 +152,21 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             >("EnsureCurrentThreadHasQueue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureCurrentThreadHasQueue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EnsureCurrentThreadHasQueue", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::ThreadPoolWorkQueueThreadLocals,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureThreadRequested(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -169,12 +174,14 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             >("EnsureThreadRequested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureThreadRequested", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureThreadRequested",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,7 +191,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             crate::System::Threading::IThreadPoolWorkItem,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Threading::IThreadPoolWorkItem,
@@ -194,17 +201,18 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             >("LocalFindAndPop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalFindAndPop", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalFindAndPop", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (callback)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn MarkThreadRequestSatisfied(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -212,12 +220,14 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
             >("MarkThreadRequestSatisfied")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MarkThreadRequestSatisfied", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MarkThreadRequestSatisfied", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,16 +241,17 @@ impl crate::System::Threading::ThreadPoolWorkQueue {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -312,7 +323,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
         prevLower: quest_hook::libil2cpp::ByRefMut<i32>,
         newLower: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_QueueSegment as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<i32>,
@@ -325,12 +336,14 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
             >("CompareExchangeIndexes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareExchangeIndexes", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_QueueSegment as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareExchangeIndexes",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (prevUpper, newUpper, prevLower, newLower))
+            method.invoke_unchecked(self, (prevUpper, newUpper, prevLower, newLower))?
         };
         Ok(__cordl_ret.into())
     }
@@ -339,7 +352,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
         upper: quest_hook::libil2cpp::ByRefMut<i32>,
         lower: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_QueueSegment as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<i32>,
@@ -350,25 +363,27 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
             >("GetIndexes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetIndexes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_QueueSegment as
+                    quest_hook::libil2cpp::Type > ::class(), "GetIndexes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (upper, lower))
+            method.invoke_unchecked(self, (upper, lower))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsUsedUp(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_QueueSegment as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsUsedUp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsUsedUp", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_QueueSegment as
+                    quest_hook::libil2cpp::Type > ::class(), "IsUsedUp", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -384,7 +399,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
             quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_QueueSegment as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<
@@ -396,18 +411,19 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
             >("TryDequeue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryDequeue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_QueueSegment as
+                    quest_hook::libil2cpp::Type > ::class(), "TryDequeue", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (node)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryEnqueue(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_QueueSegment as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Threading::IThreadPoolWorkItem,
@@ -417,26 +433,28 @@ impl crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
             >("TryEnqueue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryEnqueue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_QueueSegment as
+                    quest_hook::libil2cpp::Type > ::class(), "TryEnqueue", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (node)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_QueueSegment as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_QueueSegment as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -519,15 +537,18 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(T), i32, 1usize>("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_SparseArray_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "Add", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (e)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -551,16 +572,19 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_SparseArray_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "Remove", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e))
+            method.invoke_unchecked(self, (e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -572,16 +596,19 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_SparseArray_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialSize))
+            method.invoke_unchecked(self, (initialSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -594,7 +621,9 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -602,13 +631,14 @@ impl<
             >("get_Current")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Current", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_SparseArray_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Current", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -678,7 +708,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Threading::IThreadPoolWorkItem,
@@ -688,11 +718,12 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             >("LocalFindAndPop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalFindAndPop", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalFindAndPop", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalPop(
@@ -701,7 +732,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<
@@ -713,18 +744,19 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             >("LocalPop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalPop", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalPop", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalPush(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::System::Threading::IThreadPoolWorkItem>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Threading::IThreadPoolWorkItem,
@@ -734,12 +766,13 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             >("LocalPush")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalPush", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalPush", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obj))
+            method.invoke_unchecked(self, (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -757,7 +790,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         >,
         missedSteal: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -772,12 +805,13 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             >("TrySteal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrySteal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "TrySteal", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (obj, missedSteal))
+            method.invoke_unchecked(self, (obj, missedSteal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -789,7 +823,7 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
         missedSteal: quest_hook::libil2cpp::ByRefMut<bool>,
         millisecondsTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -805,28 +839,30 @@ impl crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
             >("TrySteal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrySteal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as
+                    quest_hook::libil2cpp::Type > ::class(), "TrySteal", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (obj, missedSteal, millisecondsTimeout))
+            method.invoke_unchecked(self, (obj, missedSteal, millisecondsTimeout))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

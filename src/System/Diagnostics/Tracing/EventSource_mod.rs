@@ -47,16 +47,17 @@ impl crate::System::Diagnostics::Tracing::EventSource {
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -64,45 +65,48 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disposing))
+            method.invoke_unchecked(self, (disposing))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Finalize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "Finalize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsEnabled_0(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEnabled", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEnabled", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsEnabled_EventLevel_EventKeywords1(
@@ -110,7 +114,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         level: crate::System::Diagnostics::Tracing::EventLevel,
         keywords: crate::System::Diagnostics::Tracing::EventKeywords,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Diagnostics::Tracing::EventLevel,
@@ -121,12 +125,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("IsEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEnabled", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEnabled", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (level, keywords))
+            method.invoke_unchecked(self, (level, keywords))?
         };
         Ok(__cordl_ret.into())
     }
@@ -162,7 +167,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         eventDataCount: i32,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -174,12 +179,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("WriteEventCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEventCore", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEventCore", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, eventDataCount, data))
+            method.invoke_unchecked(self, (eventId, eventDataCount, data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +198,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -209,12 +215,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, args))
+            method.invoke_unchecked(self, (eventId, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +230,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         eventId: i32,
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -231,12 +238,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, arg1))
+            method.invoke_unchecked(self, (eventId, arg1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -247,7 +255,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -260,12 +268,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, arg1, arg2, arg3))
+            method.invoke_unchecked(self, (eventId, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,16 +282,17 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         &mut self,
         eventId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId))
+            method.invoke_unchecked(self, (eventId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -291,16 +301,17 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         eventId: i32,
         arg1: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, arg1))
+            method.invoke_unchecked(self, (eventId, arg1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -310,7 +321,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         arg1: i32,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -318,12 +329,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, arg1, arg2))
+            method.invoke_unchecked(self, (eventId, arg1, arg2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +346,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         arg2: i32,
         arg3: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -342,12 +354,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, arg1, arg2, arg3))
+            method.invoke_unchecked(self, (eventId, arg1, arg2, arg3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -356,16 +369,17 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         eventId: i32,
         arg1: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i64), quest_hook::libil2cpp::Void, 2usize>("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, arg1))
+            method.invoke_unchecked(self, (eventId, arg1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -375,7 +389,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         arg1: i64,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -387,28 +401,30 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("WriteEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteEvent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventId, arg1, arg2))
+            method.invoke_unchecked(self, (eventId, arg1, arg2))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -417,7 +433,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         eventSourceGuid: crate::System::Guid,
         eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Guid,
@@ -428,12 +444,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventSourceGuid, eventSourceName))
+            method.invoke_unchecked(self, (eventSourceGuid, eventSourceName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -441,7 +458,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         &mut self,
         eventSourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -449,12 +466,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventSourceName))
+            method.invoke_unchecked(self, (eventSourceName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -462,7 +480,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -470,12 +488,13 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             >("set_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Name", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Name", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -613,7 +632,7 @@ impl crate::System::Diagnostics::Tracing::EventSource_EventData {
         &mut self,
         value: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource_EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -621,12 +640,13 @@ impl crate::System::Diagnostics::Tracing::EventSource_EventData {
             >("set_DataPointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_DataPointer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource_EventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_DataPointer", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -634,16 +654,17 @@ impl crate::System::Diagnostics::Tracing::EventSource_EventData {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource_EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_Reserved")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Reserved", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource_EventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Reserved", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -651,16 +672,17 @@ impl crate::System::Diagnostics::Tracing::EventSource_EventData {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::Tracing::EventSource_EventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_Size")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Size", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::Tracing::EventSource_EventData as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Size", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

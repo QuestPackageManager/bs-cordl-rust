@@ -50,7 +50,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -64,8 +64,10 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PrivateDeleteEntryByKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrivateDeleteEntryByKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PrivateDeleteEntryByKey",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -74,7 +76,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key)) };
+        > = unsafe { method.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrivateGetEntries(
@@ -91,7 +93,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -112,8 +114,9 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PrivateGetEntries")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrivateGetEntries", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PrivateGetEntries", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -125,7 +128,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID)) };
+        > = unsafe { method.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrivateGetEntryByKey(
@@ -143,7 +146,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -164,8 +167,10 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PrivateGetEntryByKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrivateGetEntryByKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PrivateGetEntryByKey",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -177,7 +182,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key)) };
+        > = unsafe { method.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrivateWriteEntry(
@@ -193,7 +198,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -211,8 +216,9 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PrivateWriteEntry")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrivateWriteEntry", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PrivateWriteEntry", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -221,7 +227,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key, value)) };
+        > = unsafe { method.invoke_unchecked((), (userID, key, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicDeleteEntryByKey(
@@ -236,7 +242,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -250,8 +256,10 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PublicDeleteEntryByKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PublicDeleteEntryByKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PublicDeleteEntryByKey",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -260,7 +268,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key)) };
+        > = unsafe { method.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicGetEntries(
@@ -277,7 +285,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -298,8 +306,9 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PublicGetEntries")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PublicGetEntries", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PublicGetEntries", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -311,7 +320,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID)) };
+        > = unsafe { method.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicGetEntryByKey(
@@ -329,7 +338,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -350,8 +359,10 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PublicGetEntryByKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PublicGetEntryByKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PublicGetEntryByKey",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -363,7 +374,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key)) };
+        > = unsafe { method.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicWriteEntry(
@@ -379,7 +390,7 @@ impl crate::Oculus::Platform::UserDataStore {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserDataStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -397,8 +408,9 @@ impl crate::Oculus::Platform::UserDataStore {
             >("PublicWriteEntry")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PublicWriteEntry", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserDataStore as
+                    quest_hook::libil2cpp::Type > ::class(), "PublicWriteEntry", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -407,7 +419,7 @@ impl crate::Oculus::Platform::UserDataStore {
                     crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userID, key, value)) };
+        > = unsafe { method.invoke_unchecked((), (userID, key, value))? };
         Ok(__cordl_ret.into())
     }
 }

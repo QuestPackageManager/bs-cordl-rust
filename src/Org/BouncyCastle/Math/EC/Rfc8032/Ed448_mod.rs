@@ -80,7 +80,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -92,19 +92,20 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CalculateS")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateS", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateS", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (r, k, s)) };
+        > = unsafe { method.invoke_unchecked((), (r, k, s))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckContextVar(
         ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 bool,
@@ -112,17 +113,18 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CheckContextVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckContextVar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckContextVar", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ctx)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ctx))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckPointVar(
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 bool,
@@ -130,11 +132,12 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CheckPointVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPointVar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPointVar", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (p)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (p))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckPoint_Il2CppArray1(
@@ -142,7 +145,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         z: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -154,18 +157,19 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CheckPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPoint", 3usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, y, z)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, y, z))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckPoint_Il2CppArray_Il2CppArray0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -176,17 +180,18 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CheckPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPoint", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, y)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckScalarVar(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 bool,
@@ -194,17 +199,18 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CheckScalarVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckScalarVar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckScalarVar", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePrehash() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>,
@@ -212,19 +218,20 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CreatePrehash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreatePrehash", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CreatePrehash", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IXof,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateXof() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>,
@@ -232,20 +239,21 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("CreateXof")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateXof", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateXof", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IXof,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Decode16(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u32,
@@ -253,18 +261,19 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Decode16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Decode16", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bs, off)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bs, off))? };
         Ok(__cordl_ret.into())
     }
     pub fn Decode24(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u32,
@@ -272,18 +281,19 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Decode24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode24", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Decode24", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bs, off)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bs, off))? };
         Ok(__cordl_ret.into())
     }
     pub fn Decode32_Il2CppArray_i32_0(
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u32,
@@ -291,11 +301,12 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Decode32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Decode32", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bs, off)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bs, off))? };
         Ok(__cordl_ret.into())
     }
     pub fn Decode32_Il2CppArray_i32_i32_1(
@@ -305,7 +316,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         nOff: i32,
         nLen: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -319,12 +330,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Decode32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode32", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Decode32", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bs, bsOff, n, nOff, nLen))
+            method.invoke_unchecked((), (bs, bsOff, n, nOff, nLen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,7 +348,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -351,12 +363,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("DecodePointVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecodePointVar", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "DecodePointVar", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (p, pOff, negate, r))
+            method.invoke_unchecked((), (p, pOff, negate, r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -365,7 +378,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         kOff: i32,
         n: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -377,12 +390,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("DecodeScalar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecodeScalar", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "DecodeScalar", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (k, kOff, n))
+            method.invoke_unchecked((), (k, kOff, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -391,7 +405,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         x: u8,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>,
@@ -403,12 +417,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Dom4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dom4", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Dom4", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (d, x, y))
+            method.invoke_unchecked((), (d, x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -417,7 +432,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u32,
@@ -429,12 +444,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Encode24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode24", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Encode24", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (n, bs, off))
+            method.invoke_unchecked((), (n, bs, off))?
         };
         Ok(__cordl_ret.into())
     }
@@ -443,7 +459,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u32,
@@ -455,12 +471,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Encode32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode32", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Encode32", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (n, bs, off))
+            method.invoke_unchecked((), (n, bs, off))?
         };
         Ok(__cordl_ret.into())
     }
@@ -469,7 +486,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         off: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -481,12 +498,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Encode56")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode56", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Encode56", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (n, bs, off))
+            method.invoke_unchecked((), (n, bs, off))?
         };
         Ok(__cordl_ret.into())
     }
@@ -497,7 +515,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         r: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         rOff: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -511,11 +529,12 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("EncodePoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodePoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "EncodePoint", 3usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (p, r, rOff)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (p, r, rOff))? };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePrivateKey(
@@ -524,7 +543,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         >,
         k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -537,12 +556,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("GeneratePrivateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GeneratePrivateKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "GeneratePrivateKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (random, k))
+            method.invoke_unchecked((), (random, k))?
         };
         Ok(__cordl_ret.into())
     }
@@ -552,7 +572,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         pk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         pkOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -565,12 +585,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("GeneratePublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GeneratePublicKey", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "GeneratePublicKey", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sk, skOff, pk, pkOff))
+            method.invoke_unchecked((), (sk, skOff, pk, pkOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -580,7 +601,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -591,13 +612,14 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("GetWnafVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWnafVar", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "GetWnafVar", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i8>,
-        > = unsafe { method.invoke_unchecked((), (n, width)) };
+        > = unsafe { method.invoke_unchecked((), (n, width))? };
         Ok(__cordl_ret.into())
     }
     pub fn ImplSign_IXof_Il2CppArray_Il2CppArray_i32_Il2CppArray_u8_Il2CppArray_i32_Il2CppArray_i32_0(
@@ -614,7 +636,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>,
@@ -635,8 +657,9 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ImplSign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImplSign", 12usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ImplSign", 12usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -644,7 +667,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
                 .invoke_unchecked(
                     (),
                     (d, h, s, pk, pkOff, ctx, phflag, m, mOff, mLen, sig, sigOff),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -661,7 +684,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -681,8 +704,9 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ImplSign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImplSign", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ImplSign", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -690,7 +714,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
                 .invoke_unchecked(
                     (),
                     (sk, skOff, pk, pkOff, ctx, phflag, m, mOff, mLen, sig, sigOff),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -705,7 +729,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -723,8 +747,9 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ImplSign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImplSign", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ImplSign", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -732,7 +757,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
                 .invoke_unchecked(
                     (),
                     (sk, skOff, ctx, phflag, m, mOff, mLen, sig, sigOff),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -747,7 +772,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         mOff: i32,
         mLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -765,8 +790,9 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ImplVerify")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImplVerify", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ImplVerify", 9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -774,7 +800,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
                 .invoke_unchecked(
                     (),
                     (sig, sigOff, pk, pkOff, ctx, phflag, m, mOff, mLen),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -793,7 +819,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -808,12 +834,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointAddPrecomp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointAddPrecomp", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointAddPrecomp", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (p, r))
+            method.invoke_unchecked((), (p, r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -826,7 +853,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     bool,
@@ -842,12 +869,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointAddVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointAddVar", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointAddVar", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (negate, p, r))
+            method.invoke_unchecked((), (negate, p, r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -860,7 +888,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
@@ -872,13 +900,14 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointCopy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointCopy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointCopy", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
-        > = unsafe { method.invoke_unchecked((), (p)) };
+        > = unsafe { method.invoke_unchecked((), (p))? };
         Ok(__cordl_ret.into())
     }
     pub fn PointDouble(
@@ -886,7 +915,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
@@ -896,12 +925,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointDouble")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointDouble", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointDouble", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (r))
+            method.invoke_unchecked((), (r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -910,7 +940,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
@@ -920,12 +950,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointExtendXY")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointExtendXY", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointExtendXY", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (p))
+            method.invoke_unchecked((), (p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -936,7 +967,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -950,12 +981,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointLookup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointLookup", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointLookup", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (block, index, p))
+            method.invoke_unchecked((), (block, index, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -973,7 +1005,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -992,8 +1024,9 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointPrecompVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointPrecompVar", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointPrecompVar", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1002,7 +1035,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
                     crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (p, count)) };
+        > = unsafe { method.invoke_unchecked((), (p, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn PointSetNeutral(
@@ -1010,7 +1043,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
@@ -1020,26 +1053,28 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PointSetNeutral")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointSetNeutral", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PointSetNeutral", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (p))
+            method.invoke_unchecked((), (p))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Precompute() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Precompute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Precompute", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Precompute", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1048,7 +1083,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         nOff: i32,
         r: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1060,12 +1095,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("PruneScalar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PruneScalar", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "PruneScalar", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (n, nOff, r))
+            method.invoke_unchecked((), (n, nOff, r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1074,7 +1110,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1082,13 +1118,14 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ReduceScalar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReduceScalar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ReduceScalar", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (n)) };
+        > = unsafe { method.invoke_unchecked((), (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn ScalarMultBase(
@@ -1097,7 +1134,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1110,12 +1147,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ScalarMultBase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScalarMultBase", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ScalarMultBase", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (k, r))
+            method.invoke_unchecked((), (k, r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1124,7 +1162,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         r: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         rOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1136,12 +1174,14 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ScalarMultBaseEncoded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScalarMultBaseEncoded", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ScalarMultBaseEncoded",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (k, r, rOff))
+            method.invoke_unchecked((), (k, r, rOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1151,7 +1191,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1164,12 +1204,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ScalarMultBaseXY")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScalarMultBaseXY", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ScalarMultBaseXY", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (k, kOff, x, y))
+            method.invoke_unchecked((), (k, kOff, x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1183,7 +1224,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1200,12 +1241,14 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("ScalarMultStrausVar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScalarMultStrausVar", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "ScalarMultStrausVar",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (nb, np, p, r))
+            method.invoke_unchecked((), (nb, np, p, r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1217,7 +1260,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1232,12 +1275,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("SignPrehash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignPrehash", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "SignPrehash", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sk, skOff, ctx, ph, sig, sigOff))
+            method.invoke_unchecked((), (sk, skOff, ctx, ph, sig, sigOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1250,7 +1294,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1266,12 +1310,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("SignPrehash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignPrehash", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "SignPrehash", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sk, skOff, ctx, ph, phOff, sig, sigOff))
+            method.invoke_unchecked((), (sk, skOff, ctx, ph, phOff, sig, sigOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1285,7 +1330,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1302,12 +1347,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("SignPrehash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignPrehash", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "SignPrehash", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sk, skOff, pk, pkOff, ctx, ph, sig, sigOff))
+            method.invoke_unchecked((), (sk, skOff, pk, pkOff, ctx, ph, sig, sigOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1322,7 +1368,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1340,8 +1386,9 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("SignPrehash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignPrehash", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "SignPrehash", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1349,7 +1396,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
                 .invoke_unchecked(
                     (),
                     (sk, skOff, pk, pkOff, ctx, ph, phOff, sig, sigOff),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1363,7 +1410,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1380,12 +1427,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Sign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sign", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Sign", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sk, skOff, ctx, m, mOff, mLen, sig, sigOff))
+            method.invoke_unchecked((), (sk, skOff, ctx, m, mOff, mLen, sig, sigOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1401,7 +1449,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         sigOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1420,8 +1468,9 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Sign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sign", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Sign", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1429,7 +1478,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
                 .invoke_unchecked(
                     (),
                     (sk, skOff, pk, pkOff, ctx, m, mOff, mLen, sig, sigOff),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1443,7 +1492,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         mOff: i32,
         mLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1460,12 +1509,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("Verify")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Verify", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "Verify", 8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (sig, sigOff, pk, pkOff, ctx, m, mOff, mLen))
+            method.invoke_unchecked((), (sig, sigOff, pk, pkOff, ctx, m, mOff, mLen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1477,7 +1527,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         ph: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IXof>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1492,12 +1542,13 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("VerifyPrehash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "VerifyPrehash", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "VerifyPrehash", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (sig, sigOff, pk, pkOff, ctx, ph))
+            method.invoke_unchecked((), (sig, sigOff, pk, pkOff, ctx, ph))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1510,7 +1561,7 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         ph: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         phOff: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1526,28 +1577,30 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
             >("VerifyPrehash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "VerifyPrehash", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), "VerifyPrehash", 7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (sig, sigOff, pk, pkOff, ctx, ph, phOff))
+            method.invoke_unchecked((), (sig, sigOff, pk, pkOff, ctx, ph, phOff))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1708,16 +1761,17 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointExt as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1787,16 +1841,17 @@ impl crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_PointPrecomp as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

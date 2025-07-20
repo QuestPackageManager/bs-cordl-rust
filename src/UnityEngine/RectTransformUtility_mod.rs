@@ -43,7 +43,7 @@ impl crate::UnityEngine::RectTransformUtility {
         keepPositioning: bool,
         recursive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -55,12 +55,13 @@ impl crate::UnityEngine::RectTransformUtility {
             >("FlipLayoutAxes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FlipLayoutAxes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "FlipLayoutAxes", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rect, keepPositioning, recursive))
+            method.invoke_unchecked((), (rect, keepPositioning, recursive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::UnityEngine::RectTransformUtility {
         keepPositioning: bool,
         recursive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -83,19 +84,20 @@ impl crate::UnityEngine::RectTransformUtility {
             >("FlipLayoutOnAxis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FlipLayoutOnAxis", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "FlipLayoutOnAxis", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rect, axis, keepPositioning, recursive))
+            method.invoke_unchecked((), (rect, axis, keepPositioning, recursive))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransposed(
         input: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2),
                 crate::UnityEngine::Vector2,
@@ -103,12 +105,13 @@ impl crate::UnityEngine::RectTransformUtility {
             >("GetTransposed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTransposed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTransposed", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (input))
+            method.invoke_unchecked((), (input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +120,7 @@ impl crate::UnityEngine::RectTransformUtility {
         elementTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -129,12 +132,13 @@ impl crate::UnityEngine::RectTransformUtility {
             >("PixelAdjustPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PixelAdjustPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PixelAdjustPoint", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (point, elementTransform, canvas))
+            method.invoke_unchecked((), (point, elementTransform, canvas))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +148,7 @@ impl crate::UnityEngine::RectTransformUtility {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
@@ -157,12 +161,14 @@ impl crate::UnityEngine::RectTransformUtility {
             >("PixelAdjustPoint_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PixelAdjustPoint_Injected", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PixelAdjustPoint_Injected",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (point, elementTransform, canvas, ret))
+            method.invoke_unchecked((), (point, elementTransform, canvas, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +176,7 @@ impl crate::UnityEngine::RectTransformUtility {
         rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -181,12 +187,13 @@ impl crate::UnityEngine::RectTransformUtility {
             >("PixelAdjustRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PixelAdjustRect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PixelAdjustRect", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (rectTransform, canvas))
+            method.invoke_unchecked((), (rectTransform, canvas))?
         };
         Ok(__cordl_ret.into())
     }
@@ -195,7 +202,7 @@ impl crate::UnityEngine::RectTransformUtility {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -207,12 +214,14 @@ impl crate::UnityEngine::RectTransformUtility {
             >("PixelAdjustRect_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PixelAdjustRect_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PixelAdjustRect_Injected",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rectTransform, canvas, ret))
+            method.invoke_unchecked((), (rectTransform, canvas, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -222,7 +231,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         offset: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -235,12 +244,13 @@ impl crate::UnityEngine::RectTransformUtility {
             >("PointInRectangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInRectangle", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PointInRectangle", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (screenPoint, rect, cam, offset))
+            method.invoke_unchecked((), (screenPoint, rect, cam, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +260,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         offset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
@@ -263,12 +273,14 @@ impl crate::UnityEngine::RectTransformUtility {
             >("PointInRectangle_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointInRectangle_Injected", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PointInRectangle_Injected",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (screenPoint, rect, cam, offset))
+            method.invoke_unchecked((), (screenPoint, rect, cam, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,7 +289,7 @@ impl crate::UnityEngine::RectTransformUtility {
         screenPoint: crate::UnityEngine::Vector2,
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -289,12 +301,14 @@ impl crate::UnityEngine::RectTransformUtility {
             >("RectangleContainsScreenPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RectangleContainsScreenPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RectangleContainsScreenPoint", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam))
+            method.invoke_unchecked((), (rect, screenPoint, cam))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +318,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         offset: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -317,12 +331,14 @@ impl crate::UnityEngine::RectTransformUtility {
             >("RectangleContainsScreenPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RectangleContainsScreenPoint", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RectangleContainsScreenPoint", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam, offset))
+            method.invoke_unchecked((), (rect, screenPoint, cam, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,7 +348,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         localPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -345,12 +361,14 @@ impl crate::UnityEngine::RectTransformUtility {
             >("ScreenPointToLocalPointInRectangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScreenPointToLocalPointInRectangle", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScreenPointToLocalPointInRectangle", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam, localPoint))
+            method.invoke_unchecked((), (rect, screenPoint, cam, localPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -358,7 +376,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         screenPos: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Ray> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -369,12 +387,13 @@ impl crate::UnityEngine::RectTransformUtility {
             >("ScreenPointToRay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScreenPointToRay", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ScreenPointToRay", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Ray = unsafe {
-            method.invoke_unchecked((), (cam, screenPos))
+            method.invoke_unchecked((), (cam, screenPos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -384,7 +403,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         worldPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -397,12 +416,14 @@ impl crate::UnityEngine::RectTransformUtility {
             >("ScreenPointToWorldPointInRectangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScreenPointToWorldPointInRectangle", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScreenPointToWorldPointInRectangle", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, screenPoint, cam, worldPoint))
+            method.invoke_unchecked((), (rect, screenPoint, cam, worldPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -410,7 +431,7 @@ impl crate::UnityEngine::RectTransformUtility {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         worldPoint: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::RectTransformUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -421,12 +442,13 @@ impl crate::UnityEngine::RectTransformUtility {
             >("WorldToScreenPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WorldToScreenPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::RectTransformUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "WorldToScreenPoint", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (cam, worldPoint))
+            method.invoke_unchecked((), (cam, worldPoint))?
         };
         Ok(__cordl_ret.into())
     }

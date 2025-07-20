@@ -81,16 +81,17 @@ impl crate::Zenject::ZenjectSettings {
     pub fn _ctor_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +105,7 @@ impl crate::Zenject::ZenjectSettings {
             crate::Zenject::ZenjectSettings_SignalSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Zenject::ValidationErrorResponses,
@@ -120,8 +121,9 @@ impl crate::Zenject::ZenjectSettings {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -135,14 +137,14 @@ impl crate::Zenject::ZenjectSettings {
                         ensureDeterministicDestructionOrderOnApplicationQuit,
                         signalSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_DisplayWarningWhenResolvingDuringInstall(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 bool,
@@ -150,17 +152,18 @@ impl crate::Zenject::ZenjectSettings {
             >("get_DisplayWarningWhenResolvingDuringInstall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DisplayWarningWhenResolvingDuringInstall", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "get_DisplayWarningWhenResolvingDuringInstall", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnsureDeterministicDestructionOrderOnApplicationQuit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 bool,
@@ -168,12 +171,13 @@ impl crate::Zenject::ZenjectSettings {
             >("get_EnsureDeterministicDestructionOrderOnApplicationQuit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_EnsureDeterministicDestructionOrderOnApplicationQuit",
-                    0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type >
+                    ::class(),
+                    "get_EnsureDeterministicDestructionOrderOnApplicationQuit", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Signals(
@@ -181,7 +185,7 @@ impl crate::Zenject::ZenjectSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings_SignalSettings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -191,19 +195,20 @@ impl crate::Zenject::ZenjectSettings {
             >("get_Signals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Signals", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Signals", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ZenjectSettings_SignalSettings,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationErrorResponse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::ValidationErrorResponses> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Zenject::ValidationErrorResponses,
@@ -211,19 +216,20 @@ impl crate::Zenject::ZenjectSettings {
             >("get_ValidationErrorResponse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ValidationErrorResponse", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "get_ValidationErrorResponse", 0usize
                 )
             });
         let __cordl_ret: crate::Zenject::ValidationErrorResponses = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationRootResolveMethod(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::RootResolveMethods> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Zenject::RootResolveMethods,
@@ -231,12 +237,13 @@ impl crate::Zenject::ZenjectSettings {
             >("get_ValidationRootResolveMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ValidationRootResolveMethod", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings as quest_hook::libil2cpp::Type >
+                    ::class(), "get_ValidationRootResolveMethod", 0usize
                 )
             });
         let __cordl_ret: crate::Zenject::RootResolveMethods = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -331,7 +338,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -343,19 +350,20 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
             >("__zenCreate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "__zenCreate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "__zenCreate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (P_0)) };
+        > = unsafe { method.invoke_unchecked((), (P_0))? };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -363,28 +371,31 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
             >("__zenCreateInjectTypeInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "__zenCreateInjectTypeInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "__zenCreateInjectTypeInfo",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +406,7 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         requireStrictUnsubscribe: bool,
         defaultAsyncTickPriority: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Zenject::SignalDefaultSyncModes,
@@ -408,8 +419,9 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -422,28 +434,30 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
                         requireStrictUnsubscribe,
                         defaultAsyncTickPriority,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_DefaultAsyncTickPriority(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_DefaultAsyncTickPriority")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DefaultAsyncTickPriority", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_DefaultAsyncTickPriority", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DefaultSyncMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::SignalDefaultSyncModes> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Zenject::SignalDefaultSyncModes,
@@ -451,19 +465,21 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
             >("get_DefaultSyncMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DefaultSyncMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DefaultSyncMode",
+                    0usize
                 )
             });
         let __cordl_ret: crate::Zenject::SignalDefaultSyncModes = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_MissingHandlerDefaultResponse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::SignalMissingHandlerResponses> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Zenject::SignalMissingHandlerResponses,
@@ -471,27 +487,31 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
             >("get_MissingHandlerDefaultResponse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_MissingHandlerDefaultResponse", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_MissingHandlerDefaultResponse", 0usize
                 )
             });
         let __cordl_ret: crate::Zenject::SignalMissingHandlerResponses = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_RequireStrictUnsubscribe(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSettings_SignalSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_RequireStrictUnsubscribe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RequireStrictUnsubscribe", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSettings_SignalSettings as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_RequireStrictUnsubscribe", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

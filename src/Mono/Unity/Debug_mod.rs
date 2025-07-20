@@ -43,7 +43,7 @@ impl crate::Mono::Unity::Debug {
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultAlert: crate::Mono::Security::Interface::AlertDescription,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Mono::Unity::UnityTls_unitytls_errorstate,
@@ -55,12 +55,13 @@ impl crate::Mono::Unity::Debug {
             >("CheckAndThrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckAndThrow", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Unity::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "CheckAndThrow", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (errorState, context, defaultAlert))
+            method.invoke_unchecked((), (errorState, context, defaultAlert))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::Mono::Unity::Debug {
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultAlert: crate::Mono::Security::Interface::AlertDescription,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::Debug as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Mono::Unity::UnityTls_unitytls_errorstate,
@@ -83,13 +84,14 @@ impl crate::Mono::Unity::Debug {
             >("CheckAndThrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckAndThrow", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Unity::Debug as quest_hook::libil2cpp::Type >
+                    ::class(), "CheckAndThrow", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (errorState, verifyResult, context, defaultAlert))
+                .invoke_unchecked((), (errorState, verifyResult, context, defaultAlert))?
         };
         Ok(__cordl_ret.into())
     }

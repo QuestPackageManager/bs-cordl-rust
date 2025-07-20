@@ -44,7 +44,7 @@ impl crate::UnityEngine::Timeline::TrackAssetExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::GroupTrack>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TrackAssetExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::GroupTrack>,
@@ -52,20 +52,21 @@ impl crate::UnityEngine::Timeline::TrackAssetExtensions {
             >("GetGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGroup", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TrackAssetExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetGroup", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Timeline::GroupTrack,
-        > = unsafe { method.invoke_unchecked((), (asset)) };
+        > = unsafe { method.invoke_unchecked((), (asset))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetGroup(
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         group: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::GroupTrack>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TrackAssetExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
@@ -76,12 +77,13 @@ impl crate::UnityEngine::Timeline::TrackAssetExtensions {
             >("SetGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGroup", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TrackAssetExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SetGroup", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asset, group))
+            method.invoke_unchecked((), (asset, group))?
         };
         Ok(__cordl_ret.into())
     }

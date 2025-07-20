@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Crypto::ICipherBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipher>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::ICipherBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipher>,
@@ -53,28 +53,30 @@ impl crate::Org::BouncyCastle::Crypto::ICipherBuilder {
             >("BuildCipher")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildCipher", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::ICipherBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildCipher", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipher,
-        > = unsafe { method.invoke_unchecked(self, (stream)) };
+        > = unsafe { method.invoke_unchecked(self, (stream))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxOutputSize(
         &mut self,
         inputLen: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::ICipherBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetMaxOutputSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaxOutputSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::ICipherBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaxOutputSize", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (inputLen)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (inputLen))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -87,7 +89,7 @@ impl crate::Org::BouncyCastle::Crypto::ICipherBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::ICipherBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -95,13 +97,15 @@ impl crate::Org::BouncyCastle::Crypto::ICipherBuilder {
             >("get_AlgorithmDetails")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AlgorithmDetails", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::ICipherBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "get_AlgorithmDetails",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

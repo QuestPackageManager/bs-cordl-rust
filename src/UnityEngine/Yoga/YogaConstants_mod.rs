@@ -39,15 +39,16 @@ impl std::ops::DerefMut for crate::UnityEngine::Yoga::YogaConstants {
 #[cfg(feature = "UnityEngine+Yoga+YogaConstants")]
 impl crate::UnityEngine::Yoga::YogaConstants {
     pub fn IsUndefined(value: f32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::YogaConstants as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), bool, 1usize>("IsUndefined")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsUndefined", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::YogaConstants as
+                    quest_hook::libil2cpp::Type > ::class(), "IsUndefined", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
 }

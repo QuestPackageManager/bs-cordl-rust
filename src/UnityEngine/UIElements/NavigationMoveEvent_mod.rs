@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32),
                 crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
@@ -62,12 +62,14 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("DetermineMoveDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DetermineMoveDirection", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "DetermineMoveDirection",
+                    3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction = unsafe {
-            method.invoke_unchecked((), (x, y, deadZone))
+            method.invoke_unchecked((), (x, y, deadZone))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +79,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
@@ -90,13 +92,14 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("GetPooled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPooled", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPooled", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::NavigationMoveEvent,
-        > = unsafe { method.invoke_unchecked((), (direction, modifiers)) };
+        > = unsafe { method.invoke_unchecked((), (direction, modifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPooled_NavigationMoveEvent_Direction_NavigationDeviceType_EventModifiers3(
@@ -106,7 +109,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
@@ -120,13 +123,14 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("GetPooled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPooled", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPooled", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::NavigationMoveEvent,
-        > = unsafe { method.invoke_unchecked((), (direction, deviceType, modifiers)) };
+        > = unsafe { method.invoke_unchecked((), (direction, deviceType, modifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPooled_Vector2_EventModifiers0(
@@ -135,7 +139,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2, crate::UnityEngine::EventModifiers),
                 quest_hook::libil2cpp::Gc<
@@ -145,13 +149,14 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("GetPooled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPooled", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPooled", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::NavigationMoveEvent,
-        > = unsafe { method.invoke_unchecked((), (moveVector, modifiers)) };
+        > = unsafe { method.invoke_unchecked((), (moveVector, modifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPooled_Vector2_NavigationDeviceType_EventModifiers1(
@@ -161,7 +166,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -175,44 +180,47 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("GetPooled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPooled", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPooled", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::NavigationMoveEvent,
-        > = unsafe { method.invoke_unchecked((), (moveVector, deviceType, modifiers)) };
+        > = unsafe { method.invoke_unchecked((), (moveVector, deviceType, modifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LocalInit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LocalInit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalInit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalInit", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,16 +234,17 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +253,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
@@ -252,12 +261,13 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("get_direction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_direction", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "get_direction", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -265,7 +275,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
         &mut self,
         value: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::NavigationMoveEvent_Direction),
                 quest_hook::libil2cpp::Void,
@@ -273,12 +283,13 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("set_direction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_direction", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "set_direction", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,7 +297,7 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
         &mut self,
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::NavigationMoveEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector2),
                 quest_hook::libil2cpp::Void,
@@ -294,12 +305,13 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
             >("set_move")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_move", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::NavigationMoveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "set_move", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

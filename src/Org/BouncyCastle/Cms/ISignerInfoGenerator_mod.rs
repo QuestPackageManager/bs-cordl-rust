@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::ISignerInfoGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -71,15 +71,19 @@ impl crate::Org::BouncyCastle::Cms::ISignerInfoGenerator {
             >("Generate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Generate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::ISignerInfoGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Generate", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::SignerInfo,
         > = unsafe {
             method
-                .invoke_unchecked(self, (contentType, digestAlgorithm, calculatedDigest))
+                .invoke_unchecked(
+                    self,
+                    (contentType, digestAlgorithm, calculatedDigest),
+                )?
         };
         Ok(__cordl_ret.into())
     }

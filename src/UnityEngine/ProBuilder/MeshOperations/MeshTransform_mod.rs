@@ -44,7 +44,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -57,19 +57,20 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
             >("CenterPivot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CenterPivot", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "CenterPivot", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, indexes))
+            method.invoke_unchecked((), (mesh, indexes))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FreezeScaleTransform(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -79,12 +80,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
             >("FreezeScaleTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreezeScaleTransform", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "FreezeScaleTransform",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh))
+            method.invoke_unchecked((), (mesh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +95,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         pivotLocation: crate::UnityEngine::ProBuilder::PivotLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -105,12 +108,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
             >("SetPivot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPivot", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPivot", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, pivotLocation))
+            method.invoke_unchecked((), (mesh, pivotLocation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +122,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         worldPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -131,12 +135,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
             >("SetPivot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPivot", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshTransform as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPivot", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, worldPosition))
+            method.invoke_unchecked((), (mesh, worldPosition))?
         };
         Ok(__cordl_ret.into())
     }

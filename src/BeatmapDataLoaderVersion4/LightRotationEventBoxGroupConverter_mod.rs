@@ -48,7 +48,7 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::BeatmapSaveDataVersion4::EventBox,
@@ -59,13 +59,15 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
             >("ConvertEvents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertEvents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertEvents", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapEventDataBox,
-        > = unsafe { method.invoke_unchecked(self, (eventBox, indexFilter)) };
+        > = unsafe { method.invoke_unchecked(self, (eventBox, indexFilter))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -91,7 +93,7 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
             crate::GlobalNamespace::IEnvironmentLightGroups,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -106,12 +108,14 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lightshowSaveData, lightGroups))
+            method.invoke_unchecked(self, (lightshowSaveData, lightGroups))?
         };
         Ok(__cordl_ret.into())
     }

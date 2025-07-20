@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::DrawIfAttribute {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DrawIfAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -85,12 +85,13 @@ impl crate::GlobalNamespace::DrawIfAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DrawIfAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (propertyName, value, disablingType))
+            method.invoke_unchecked(self, (propertyName, value, disablingType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +102,7 @@ impl crate::GlobalNamespace::DrawIfAttribute {
         orValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DrawIfAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -114,12 +115,13 @@ impl crate::GlobalNamespace::DrawIfAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DrawIfAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (propertyName, value, orValue, disablingType))
+            method.invoke_unchecked(self, (propertyName, value, orValue, disablingType))?
         };
         Ok(__cordl_ret.into())
     }

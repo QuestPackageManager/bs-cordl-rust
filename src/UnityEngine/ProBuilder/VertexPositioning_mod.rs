@@ -44,7 +44,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         sharedVertexHandle: i32,
         position: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -58,12 +58,14 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("SetSharedVertexPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSharedVertexPosition", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSharedVertexPosition",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, sharedVertexHandle, position))
+            method.invoke_unchecked((), (mesh, sharedVertexHandle, position))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +74,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         sharedVertexHandle: i32,
         vertex: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -86,12 +88,14 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("SetSharedVertexValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSharedVertexValues", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSharedVertexValues",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, sharedVertexHandle, vertex))
+            method.invoke_unchecked((), (mesh, sharedVertexHandle, vertex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +104,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -114,12 +118,14 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("TranslateVerticesInWorldSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateVerticesInWorldSpace", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TranslateVerticesInWorldSpace", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, indexes, offset))
+            method.invoke_unchecked((), (mesh, indexes, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +136,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         snapValue: f32,
         snapAxisOnly: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -146,12 +152,15 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("TranslateVerticesInWorldSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateVerticesInWorldSpace", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TranslateVerticesInWorldSpace", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, indexes, offset, snapValue, snapAxisOnly))
+            method
+                .invoke_unchecked((), (mesh, indexes, offset, snapValue, snapAxisOnly))?
         };
         Ok(__cordl_ret.into())
     }
@@ -162,7 +171,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         >,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -178,12 +187,14 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("TranslateVerticesInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateVerticesInternal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(), "TranslateVerticesInternal",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, indices, offset))
+            method.invoke_unchecked((), (mesh, indices, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +205,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         >,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -210,12 +221,13 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("TranslateVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateVertices", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(), "TranslateVertices", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, indexes, offset))
+            method.invoke_unchecked((), (mesh, indexes, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +240,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         >,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -246,12 +258,13 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("TranslateVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateVertices", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(), "TranslateVertices", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, edges, offset))
+            method.invoke_unchecked((), (mesh, edges, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +277,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         >,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -284,12 +297,13 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("TranslateVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateVertices", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(), "TranslateVertices", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces, offset))
+            method.invoke_unchecked((), (mesh, faces, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -300,7 +314,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VertexPositioning as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -312,13 +326,15 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
             >("VerticesInWorldSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "VerticesInWorldSpace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VertexPositioning as
+                    quest_hook::libil2cpp::Type > ::class(), "VerticesInWorldSpace",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        > = unsafe { method.invoke_unchecked((), (mesh)) };
+        > = unsafe { method.invoke_unchecked((), (mesh))? };
         Ok(__cordl_ret.into())
     }
 }

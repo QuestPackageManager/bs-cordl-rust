@@ -137,7 +137,7 @@ impl crate::TMPro::FontAssetCreationSettings {
         characterSet: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         renderMode: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::FontAssetCreationSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -156,8 +156,9 @@ impl crate::TMPro::FontAssetCreationSettings {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::FontAssetCreationSettings as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -176,7 +177,7 @@ impl crate::TMPro::FontAssetCreationSettings {
                         characterSet,
                         renderMode,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

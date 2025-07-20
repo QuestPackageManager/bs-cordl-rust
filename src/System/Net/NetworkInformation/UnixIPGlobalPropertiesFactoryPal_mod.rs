@@ -46,7 +46,7 @@ impl crate::System::Net::NetworkInformation::UnixIPGlobalPropertiesFactoryPal {
             crate::System::Net::NetworkInformation::IPGlobalProperties,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::NetworkInformation::UnixIPGlobalPropertiesFactoryPal as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -56,25 +56,30 @@ impl crate::System::Net::NetworkInformation::UnixIPGlobalPropertiesFactoryPal {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Net::NetworkInformation::UnixIPGlobalPropertiesFactoryPal
+                    as quest_hook::libil2cpp::Type > ::class(), "Create", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::NetworkInformation::IPGlobalProperties,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PlatformNeedsLibCWorkaround() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::NetworkInformation::UnixIPGlobalPropertiesFactoryPal as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_PlatformNeedsLibCWorkaround")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PlatformNeedsLibCWorkaround", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Net::NetworkInformation::UnixIPGlobalPropertiesFactoryPal
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_PlatformNeedsLibCWorkaround", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

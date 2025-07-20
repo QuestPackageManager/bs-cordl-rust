@@ -42,7 +42,7 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
     pub fn GetLaunchDetails() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchDetails>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::ApplicationLifecycle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -52,20 +52,21 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
             >("GetLaunchDetails")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLaunchDetails", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::ApplicationLifecycle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLaunchDetails", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::LaunchDetails,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LogDeeplinkResult(
         trackingID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: crate::Oculus::Platform::LaunchResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::ApplicationLifecycle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -76,12 +77,13 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
             >("LogDeeplinkResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogDeeplinkResult", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::ApplicationLifecycle as
+                    quest_hook::libil2cpp::Type > ::class(), "LogDeeplinkResult", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (trackingID, result))
+            method.invoke_unchecked((), (trackingID, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +94,7 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::ApplicationLifecycle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Message_1_Callback<
@@ -104,12 +106,14 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
             >("SetLaunchIntentChangedNotificationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLaunchIntentChangedNotificationCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::ApplicationLifecycle as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetLaunchIntentChangedNotificationCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))
+            method.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }

@@ -57,7 +57,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
             crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Nullable_1<f32>, crate::System::Nullable_1<i32>),
                 quest_hook::libil2cpp::Gc<
@@ -67,13 +67,14 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
             >("CopyWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyWith", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
-        > = unsafe { method.invoke_unchecked(self, (newBeat, newGroupId)) };
+        > = unsafe { method.invoke_unchecked(self, (newBeat, newGroupId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -105,7 +106,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -123,12 +124,13 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beat, groupId, eventBoxes))
+            method.invoke_unchecked(self, (beat, groupId, eventBoxes))?
         };
         Ok(__cordl_ret.into())
     }

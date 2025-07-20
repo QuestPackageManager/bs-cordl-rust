@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         channel: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         samplers: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -84,12 +84,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("AddChannel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChannel", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChannel", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (channel, samplers))
+            method.invoke_unchecked(self, (channel, samplers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +98,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         &mut self,
         q: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Quaternion),
                 crate::UnityEngine::Quaternion,
@@ -105,12 +106,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("CloneQuaternion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloneQuaternion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "CloneQuaternion", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked(self, (q))
+            method.invoke_unchecked(self, (q))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +120,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         &mut self,
         v: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -126,12 +128,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("CloneVector3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloneVector3", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "CloneVector3", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +149,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -161,12 +164,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("CopyData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dest, src))
+            method.invoke_unchecked(self, (dest, src))?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,7 +185,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector2),
                 quest_hook::libil2cpp::Gc<
@@ -194,8 +198,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("GetCardinalThumbsticks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCardinalThumbsticks", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCardinalThumbsticks",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -203,7 +209,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                 crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
                 crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
             >,
-        > = unsafe { method.invoke_unchecked(self, (joystick)) };
+        > = unsafe { method.invoke_unchecked(self, (joystick))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCardinalWeights(
@@ -216,7 +222,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -232,12 +238,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("GetCardinalWeights")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCardinalWeights", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCardinalWeights", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked(self, (joystick, cardinals))
+            method.invoke_unchecked(self, (joystick, cardinals))?
         };
         Ok(__cordl_ret.into())
     }
@@ -247,7 +254,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
@@ -255,12 +262,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("GetTransformType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTransformType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTransformType", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType = unsafe {
-            method.invoke_unchecked(self, (transform))
+            method.invoke_unchecked(self, (transform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -289,7 +297,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         transformType: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
         extras: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -302,12 +310,14 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("ProcessAnimationSampler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessAnimationSampler", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessAnimationSampler",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (samplerNode, nodeId, transformType, extras))
+            method.invoke_unchecked(self, (samplerNode, nodeId, transformType, extras))?
         };
         Ok(__cordl_ret.into())
     }
@@ -317,7 +327,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType,
@@ -325,12 +335,14 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("ToOVRInterpolationType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToOVRInterpolationType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "ToOVRInterpolationType",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType = unsafe {
-            method.invoke_unchecked(self, (interpolationType))
+            method.invoke_unchecked(self, (interpolationType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +350,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         &mut self,
         joystick: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector2),
                 quest_hook::libil2cpp::Void,
@@ -346,12 +358,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("UpdatePose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdatePose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdatePose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (joystick))
+            method.invoke_unchecked(self, (joystick))?
         };
         Ok(__cordl_ret.into())
     }
@@ -359,16 +372,17 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         &mut self,
         down: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("UpdatePose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdatePose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdatePose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (down))
+            method.invoke_unchecked(self, (down))?
         };
         Ok(__cordl_ret.into())
     }
@@ -377,7 +391,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         t: f32,
         applyDeadZone: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, bool),
                 quest_hook::libil2cpp::Void,
@@ -385,12 +399,13 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >("UpdatePose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdatePose", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdatePose", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (t, applyDeadZone))
+            method.invoke_unchecked(self, (t, applyDeadZone))?
         };
         Ok(__cordl_ret.into())
     }
@@ -404,7 +419,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFAnimatinonNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -420,8 +435,9 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFAnimatinonNode as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -429,7 +445,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                 .invoke_unchecked(
                     self,
                     (jsonData, binaryChunk, inputNodeType, gameObj, morphTargetHandler),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

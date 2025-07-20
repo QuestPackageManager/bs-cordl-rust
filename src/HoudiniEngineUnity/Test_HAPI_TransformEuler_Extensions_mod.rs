@@ -45,7 +45,7 @@ impl crate::HoudiniEngineUnity::Test_HAPI_TransformEuler_Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_TransformEuler>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::Test_HAPI_TransformEuler_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::HoudiniEngineUnity::HAPI_TransformEuler),
                 quest_hook::libil2cpp::Gc<
@@ -55,13 +55,14 @@ impl crate::HoudiniEngineUnity::Test_HAPI_TransformEuler_Extensions {
             >("ToTestObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToTestObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::Test_HAPI_TransformEuler_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToTestObject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::Test_HAPI_TransformEuler,
-        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_self))? };
         Ok(__cordl_ret.into())
     }
 }

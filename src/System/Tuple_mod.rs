@@ -43,30 +43,32 @@ impl crate::System::Tuple {
         h2: i32,
         h3: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Tuple as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32, i32), i32, 3usize>("CombineHashCodes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombineHashCodes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Tuple as quest_hook::libil2cpp::Type > ::class(),
+                    "CombineHashCodes", 3usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_0(
         h1: i32,
         h2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Tuple as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32), i32, 2usize>("CombineHashCodes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombineHashCodes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Tuple as quest_hook::libil2cpp::Type > ::class(),
+                    "CombineHashCodes", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHashCodes_i32_i32_2(
@@ -75,15 +77,16 @@ impl crate::System::Tuple {
         h3: i32,
         h4: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Tuple as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32, i32, i32), i32, 4usize>("CombineHashCodes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombineHashCodes", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Tuple as quest_hook::libil2cpp::Type > ::class(),
+                    "CombineHashCodes", 4usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3, h4)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2, h3, h4))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create_T1_T2_0<T1, T2>(
@@ -98,7 +101,7 @@ impl crate::System::Tuple {
         T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Tuple as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T1, T2),
                 quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>>,
@@ -106,12 +109,13 @@ impl crate::System::Tuple {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Tuple as quest_hook::libil2cpp::Type > ::class(),
+                    "Create", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>> = unsafe {
-            method.invoke_unchecked((), (item1, item2))
+            method.invoke_unchecked((), (item1, item2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +134,7 @@ impl crate::System::Tuple {
         T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Tuple as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T1, T2, T3),
                 quest_hook::libil2cpp::Gc<crate::System::Tuple_3<T1, T2, T3>>,
@@ -138,12 +142,13 @@ impl crate::System::Tuple {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Tuple as quest_hook::libil2cpp::Type > ::class(),
+                    "Create", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_3<T1, T2, T3>> = unsafe {
-            method.invoke_unchecked((), (item1, item2, item3))
+            method.invoke_unchecked((), (item1, item2, item3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +170,7 @@ impl crate::System::Tuple {
         T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Tuple as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T1, T2, T3, T4),
                 quest_hook::libil2cpp::Gc<crate::System::Tuple_4<T1, T2, T3, T4>>,
@@ -173,13 +178,14 @@ impl crate::System::Tuple {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Tuple as quest_hook::libil2cpp::Type > ::class(),
+                    "Create", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Tuple_4<T1, T2, T3, T4>,
-        > = unsafe { method.invoke_unchecked((), (item1, item2, item3, item4)) };
+        > = unsafe { method.invoke_unchecked((), (item1, item2, item3, item4))? };
         Ok(__cordl_ret.into())
     }
 }

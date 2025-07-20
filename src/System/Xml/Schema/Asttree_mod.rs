@@ -48,7 +48,7 @@ impl crate::System::Xml::Schema::Asttree {
         isField: bool,
         nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -60,19 +60,20 @@ impl crate::System::Xml::Schema::Asttree {
             >("CompileXPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompileXPath", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), "CompileXPath", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (xPath, isField, nsmgr))
+            method.invoke_unchecked(self, (xPath, isField, nsmgr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsAttribute(
         ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>),
                 bool,
@@ -80,17 +81,18 @@ impl crate::System::Xml::Schema::Asttree {
             >("IsAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), "IsAttribute", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDescendantOrSelf(
         ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>),
                 bool,
@@ -98,17 +100,18 @@ impl crate::System::Xml::Schema::Asttree {
             >("IsDescendantOrSelf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDescendantOrSelf", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), "IsDescendantOrSelf", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNameTest(
         ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>),
                 bool,
@@ -116,17 +119,18 @@ impl crate::System::Xml::Schema::Asttree {
             >("IsNameTest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNameTest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), "IsNameTest", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSelf(
         ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>),
                 bool,
@@ -134,11 +138,12 @@ impl crate::System::Xml::Schema::Asttree {
             >("IsSelf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSelf", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), "IsSelf", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ast))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -157,7 +162,7 @@ impl crate::System::Xml::Schema::Asttree {
         axis: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
         nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
@@ -168,12 +173,13 @@ impl crate::System::Xml::Schema::Asttree {
             >("SetURN")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetURN", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), "SetURN", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (axis, nsmgr))
+            method.invoke_unchecked(self, (axis, nsmgr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -183,7 +189,7 @@ impl crate::System::Xml::Schema::Asttree {
         isField: bool,
         nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -195,12 +201,13 @@ impl crate::System::Xml::Schema::Asttree {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (xPath, isField, nsmgr))
+            method.invoke_unchecked(self, (xPath, isField, nsmgr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +216,7 @@ impl crate::System::Xml::Schema::Asttree {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -217,13 +224,14 @@ impl crate::System::Xml::Schema::Asttree {
             >("get_SubtreeArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SubtreeArray", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::Asttree as quest_hook::libil2cpp::Type >
+                    ::class(), "get_SubtreeArray", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ArrayList,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -49,7 +49,7 @@ impl crate::LufsMetering::LufsMeter {
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::LoudnessData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>),
                 crate::LufsMetering::LoudnessData,
@@ -57,12 +57,13 @@ impl crate::LufsMetering::LufsMeter {
             >("AnalyzeClipLoudness")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AnalyzeClipLoudness", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type >
+                    ::class(), "AnalyzeClipLoudness", 1usize
                 )
             });
         let __cordl_ret: crate::LufsMetering::LoudnessData = unsafe {
-            method.invoke_unchecked(self, (clip))
+            method.invoke_unchecked(self, (clip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +75,7 @@ impl crate::LufsMetering::LufsMeter {
         numChannels: i32,
         rate: i32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::LoudnessData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -86,12 +87,13 @@ impl crate::LufsMetering::LufsMeter {
             >("IntegratedLoudness")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntegratedLoudness", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type >
+                    ::class(), "IntegratedLoudness", 3usize
                 )
             });
         let __cordl_ret: crate::LufsMetering::LoudnessData = unsafe {
-            method.invoke_unchecked(self, (interleavedData, numChannels, rate))
+            method.invoke_unchecked(self, (interleavedData, numChannels, rate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +105,7 @@ impl crate::LufsMetering::LufsMeter {
         numChannels: i32,
         rate: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -115,12 +117,13 @@ impl crate::LufsMetering::LufsMeter {
             >("MomentaryLoudness")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MomentaryLoudness", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type >
+                    ::class(), "MomentaryLoudness", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked(self, (interleavedData, numChannels, rate))
+            method.invoke_unchecked(self, (interleavedData, numChannels, rate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,32 +137,34 @@ impl crate::LufsMetering::LufsMeter {
     pub fn SwapData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SwapData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SwapData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type >
+                    ::class(), "SwapData", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LufsMetering::LufsMeter as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

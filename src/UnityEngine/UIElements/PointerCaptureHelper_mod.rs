@@ -43,7 +43,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
                 quest_hook::libil2cpp::Void,
@@ -51,12 +51,14 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("ActivateCompatibilityMouseEvents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ActivateCompatibilityMouseEvents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ActivateCompatibilityMouseEvents", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (panel, pointerId))
+            method.invoke_unchecked((), (panel, pointerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +68,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         >,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -79,12 +81,13 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("CapturePointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CapturePointer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "CapturePointer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handler, pointerId))
+            method.invoke_unchecked((), (handler, pointerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +97,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
@@ -102,13 +105,15 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("GetCapturingElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCapturingElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCapturingElement",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IEventHandler,
-        > = unsafe { method.invoke_unchecked((), (panel, pointerId)) };
+        > = unsafe { method.invoke_unchecked((), (panel, pointerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStateFor(
@@ -116,7 +121,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerDispatchState>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IEventHandler,
@@ -128,13 +133,14 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("GetStateFor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStateFor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStateFor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerDispatchState,
-        > = unsafe { method.invoke_unchecked((), (handler)) };
+        > = unsafe { method.invoke_unchecked((), (handler))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasPointerCapture(
@@ -143,7 +149,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         >,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -156,12 +162,13 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("HasPointerCapture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasPointerCapture", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "HasPointerCapture", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handler, pointerId))
+            method.invoke_unchecked((), (handler, pointerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +176,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
                 quest_hook::libil2cpp::Void,
@@ -177,12 +184,14 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("PreventCompatibilityMouseEvents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PreventCompatibilityMouseEvents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "PreventCompatibilityMouseEvents", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (panel, pointerId))
+            method.invoke_unchecked((), (panel, pointerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +199,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
                 quest_hook::libil2cpp::Void,
@@ -198,12 +207,14 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("ProcessPointerCapture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessPointerCapture", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessPointerCapture",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (panel, pointerId))
+            method.invoke_unchecked((), (panel, pointerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -213,7 +224,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         >,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -226,12 +237,13 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("ReleasePointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReleasePointer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ReleasePointer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handler, pointerId))
+            method.invoke_unchecked((), (handler, pointerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +251,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
                 quest_hook::libil2cpp::Void,
@@ -247,12 +259,13 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("ReleasePointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReleasePointer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ReleasePointer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (panel, pointerId))
+            method.invoke_unchecked((), (panel, pointerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,7 +273,7 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerCaptureHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
@@ -273,11 +286,13 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
             >("ShouldSendCompatibilityMouseEvents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldSendCompatibilityMouseEvents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerCaptureHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ShouldSendCompatibilityMouseEvents", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (panel, evt)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (panel, evt))? };
         Ok(__cordl_ret.into())
     }
 }

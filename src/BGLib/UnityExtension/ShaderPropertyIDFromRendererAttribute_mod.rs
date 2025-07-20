@@ -47,7 +47,7 @@ impl crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -55,13 +55,14 @@ impl crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute {
             >("GetTargetName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTargetName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute
+                    as quest_hook::libil2cpp::Type > ::class(), "GetTargetName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -81,7 +82,7 @@ impl crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute {
         nameFilter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         filterPropType: crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -93,12 +94,13 @@ impl crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (propertyName, nameFilter, filterPropType))
+            method.invoke_unchecked(self, (propertyName, nameFilter, filterPropType))?
         };
         Ok(__cordl_ret.into())
     }

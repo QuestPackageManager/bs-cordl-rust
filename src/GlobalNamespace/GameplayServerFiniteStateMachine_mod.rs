@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         initParams: crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams),
                 quest_hook::libil2cpp::Void,
@@ -84,12 +84,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initParams))
+            method.invoke_unchecked(self, (initParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +99,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IServerBeatmapProvider>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -108,13 +109,15 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_beatmapProvider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_beatmapProvider", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "get_beatmapProvider",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IServerBeatmapProvider,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_configuration(
@@ -122,7 +125,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::GameplayServerConfiguration,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::GameplayServerConfiguration,
@@ -130,12 +133,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_configuration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_configuration", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "get_configuration", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +148,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayRpcManager>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayRpcManager>,
@@ -152,13 +156,15 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_gameplayRpcManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_gameplayRpcManager", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "get_gameplayRpcManager",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayRpcManager,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_menuRpcManager(
@@ -166,7 +172,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuRpcManager>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuRpcManager>,
@@ -174,13 +180,14 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_menuRpcManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_menuRpcManager", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "get_menuRpcManager", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MenuRpcManager,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_multiplayerSessionManager(
@@ -188,7 +195,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSessionManager>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -198,13 +205,15 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_multiplayerSessionManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_multiplayerSessionManager", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_multiplayerSessionManager", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IMultiplayerSessionManager,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ownerUserId(
@@ -212,7 +221,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,13 +229,14 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_ownerUserId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ownerUserId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ownerUserId", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectionMask(
@@ -234,7 +244,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BeatmapLevelSelectionMask,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -242,12 +252,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_selectionMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_selectionMask", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "get_selectionMask", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapLevelSelectionMask = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -256,7 +267,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
@@ -264,12 +275,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("get_taskUtility")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_taskUtility", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "get_taskUtility", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,7 +289,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IServerBeatmapProvider>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::IServerBeatmapProvider,
@@ -287,12 +299,14 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_beatmapProvider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_beatmapProvider", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "set_beatmapProvider",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -300,7 +314,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         value: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::GameplayServerConfiguration),
                 quest_hook::libil2cpp::Void,
@@ -308,12 +322,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_configuration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_configuration", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "set_configuration", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -321,7 +336,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayRpcManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayRpcManager>),
                 quest_hook::libil2cpp::Void,
@@ -329,12 +344,14 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_gameplayRpcManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_gameplayRpcManager", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "set_gameplayRpcManager",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -342,7 +359,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuRpcManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuRpcManager>),
                 quest_hook::libil2cpp::Void,
@@ -350,12 +367,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_menuRpcManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_menuRpcManager", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "set_menuRpcManager", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -365,7 +383,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             crate::GlobalNamespace::IMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::IMultiplayerSessionManager,
@@ -375,12 +393,14 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_multiplayerSessionManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_multiplayerSessionManager", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_multiplayerSessionManager", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -388,7 +408,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -396,12 +416,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_ownerUserId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ownerUserId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ownerUserId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -409,7 +430,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         value: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::BeatmapLevelSelectionMask),
                 quest_hook::libil2cpp::Void,
@@ -417,12 +438,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_selectionMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_selectionMask", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "set_selectionMask", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -430,7 +452,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>),
                 quest_hook::libil2cpp::Void,
@@ -438,12 +460,13 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
             >("set_taskUtility")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_taskUtility", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine as
+                    quest_hook::libil2cpp::Type > ::class(), "set_taskUtility", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -583,7 +606,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
             crate::GlobalNamespace::IServerBeatmapProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
@@ -602,8 +625,9 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -618,7 +642,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
                         configuration,
                         beatmapProvider,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

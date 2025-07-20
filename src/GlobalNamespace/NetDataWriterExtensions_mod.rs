@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::NetDataWriterExtensions {
         receiverId: u8,
         packetOptions: crate::GlobalNamespace::PacketOption,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NetDataWriterExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -60,8 +60,9 @@ impl crate::GlobalNamespace::NetDataWriterExtensions {
             >("SetUpPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetUpPacket", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NetDataWriterExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SetUpPacket", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -69,7 +70,7 @@ impl crate::GlobalNamespace::NetDataWriterExtensions {
                 .invoke_unchecked(
                     (),
                     (netDataWriter, senderId, receiverId, packetOptions),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +82,7 @@ impl crate::GlobalNamespace::NetDataWriterExtensions {
         receiverId: u8,
         packetOptions: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::NetDataWriterExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -94,8 +95,9 @@ impl crate::GlobalNamespace::NetDataWriterExtensions {
             >("SetUpPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetUpPacket", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::NetDataWriterExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SetUpPacket", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -103,7 +105,7 @@ impl crate::GlobalNamespace::NetDataWriterExtensions {
                 .invoke_unchecked(
                     (),
                     (netDataWriter, senderId, receiverId, packetOptions),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

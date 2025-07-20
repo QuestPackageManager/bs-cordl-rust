@@ -45,7 +45,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         _cordl_time: f32,
         nearest: i32,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::FrameSample> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseSampler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -61,12 +61,13 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
             >("FindPoseSample")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindPoseSample", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::RecPlay::PoseSampler as
+                    quest_hook::libil2cpp::Type > ::class(), "FindPoseSample", 3usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::RecPlay::FrameSample = unsafe {
-            method.invoke_unchecked((), (frames, _cordl_time, nearest))
+            method.invoke_unchecked((), (frames, _cordl_time, nearest))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +77,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         >,
         sample: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::RecPlay::FrameSample>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseSampler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -93,12 +94,14 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
             >("InterpolatePoseSample")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InterpolatePoseSample", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::RecPlay::PoseSampler as
+                    quest_hook::libil2cpp::Type > ::class(), "InterpolatePoseSample",
+                    2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked((), (frames, sample))
+            method.invoke_unchecked((), (frames, sample))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +112,7 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         _cordl_time: f32,
         nearest: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseSampler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -125,12 +128,13 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
             >("SamplePose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SamplePose", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::RecPlay::PoseSampler as
+                    quest_hook::libil2cpp::Type > ::class(), "SamplePose", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked((), (frames, _cordl_time, nearest))
+            method.invoke_unchecked((), (frames, _cordl_time, nearest))?
         };
         Ok(__cordl_ret.into())
     }

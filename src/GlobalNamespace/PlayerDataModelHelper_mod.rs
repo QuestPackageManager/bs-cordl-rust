@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerDataModelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerAllOverallStatsData,
@@ -60,13 +60,15 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             >("ToPlayerAllOverallStatsData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToPlayerAllOverallStatsData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerDataModelHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ToPlayerAllOverallStatsData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData)) };
+        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerAllOverallStatsData_PlayerSaveDataV1_0_1_PlayerAllOverallStatsData1(
@@ -76,7 +78,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerAllOverallStatsData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerDataModelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData,
@@ -88,13 +90,15 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             >("ToPlayerAllOverallStatsData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToPlayerAllOverallStatsData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerDataModelHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ToPlayerAllOverallStatsData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData)) };
+        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerAllOverallStatsData_PlayerSaveData_PlayerAllOverallStatsData0(
@@ -104,7 +108,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerAllOverallStatsData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerDataModelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
@@ -116,13 +120,15 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             >("ToPlayerAllOverallStatsData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToPlayerAllOverallStatsData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerDataModelHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ToPlayerAllOverallStatsData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData)) };
+        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerOverallStatsData(
@@ -134,7 +140,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerDataModelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
@@ -146,13 +152,15 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             >("ToPlayerOverallStatsData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToPlayerOverallStatsData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerDataModelHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ToPlayerOverallStatsData",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerOverallStatsData)) };
+        > = unsafe { method.invoke_unchecked((), (playerOverallStatsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerOverallStats_PlayerSaveDataV1_0_1_PlayerOverallStatsData1(
@@ -164,7 +172,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerDataModelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
@@ -176,13 +184,15 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             >("ToPlayerOverallStats")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToPlayerOverallStats", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerDataModelHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ToPlayerOverallStats",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData)) };
+        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToPlayerOverallStats_PlayerSaveData_PlayerOverallStatsData0(
@@ -194,7 +204,7 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerDataModelHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData,
@@ -206,13 +216,15 @@ impl crate::GlobalNamespace::PlayerDataModelHelper {
             >("ToPlayerOverallStats")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToPlayerOverallStats", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerDataModelHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ToPlayerOverallStats",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData)) };
+        > = unsafe { method.invoke_unchecked((), (playerAllOverallStatsData))? };
         Ok(__cordl_ret.into())
     }
 }

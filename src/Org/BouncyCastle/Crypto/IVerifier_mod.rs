@@ -42,7 +42,7 @@ impl crate::Org::BouncyCastle::Crypto::IVerifier {
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::IVerifier as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 bool,
@@ -50,11 +50,12 @@ impl crate::Org::BouncyCastle::Crypto::IVerifier {
             >("IsVerified")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsVerified", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::IVerifier as
+                    quest_hook::libil2cpp::Type > ::class(), "IsVerified", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (data)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsVerified_i32_i32_1(
@@ -63,7 +64,7 @@ impl crate::Org::BouncyCastle::Crypto::IVerifier {
         off: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::IVerifier as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -75,12 +76,13 @@ impl crate::Org::BouncyCastle::Crypto::IVerifier {
             >("IsVerified")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsVerified", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::IVerifier as
+                    quest_hook::libil2cpp::Type > ::class(), "IsVerified", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (source, off, length))
+            method.invoke_unchecked(self, (source, off, length))?
         };
         Ok(__cordl_ret.into())
     }

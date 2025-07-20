@@ -73,7 +73,7 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -87,12 +87,14 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (keywords))
+            method.invoke_unchecked(self, (keywords))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +109,7 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -121,8 +123,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
             >("get_keywords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_keywords", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData
+                    as quest_hook::libil2cpp::Type > ::class(), "get_keywords", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -131,7 +135,7 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
                     crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

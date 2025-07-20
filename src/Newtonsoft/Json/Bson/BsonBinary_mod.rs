@@ -54,7 +54,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBinary {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         binaryType: crate::Newtonsoft::Json::Bson::BsonBinaryType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Bson::BsonBinary as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -65,19 +65,20 @@ impl crate::Newtonsoft::Json::Bson::BsonBinary {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Bson::BsonBinary as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value, binaryType))
+            method.invoke_unchecked(self, (value, binaryType))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_BinaryType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Bson::BsonBinaryType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Bson::BsonBinary as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Newtonsoft::Json::Bson::BsonBinaryType,
@@ -85,12 +86,13 @@ impl crate::Newtonsoft::Json::Bson::BsonBinary {
             >("get_BinaryType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_BinaryType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Bson::BsonBinary as
+                    quest_hook::libil2cpp::Type > ::class(), "get_BinaryType", 0usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::Bson::BsonBinaryType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +100,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBinary {
         &mut self,
         value: crate::Newtonsoft::Json::Bson::BsonBinaryType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Bson::BsonBinary as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Newtonsoft::Json::Bson::BsonBinaryType),
                 quest_hook::libil2cpp::Void,
@@ -106,12 +108,13 @@ impl crate::Newtonsoft::Json::Bson::BsonBinary {
             >("set_BinaryType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_BinaryType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Bson::BsonBinary as
+                    quest_hook::libil2cpp::Type > ::class(), "set_BinaryType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

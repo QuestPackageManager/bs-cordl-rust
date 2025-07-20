@@ -76,16 +76,17 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         &mut self,
         assetId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>("CancelDownload")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CancelDownload", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(), "CancelDownload", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (assetId))
+            method.invoke_unchecked(self, (assetId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +102,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -117,8 +118,10 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("GetAssetBundleFileForBeatmapLevelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetBundleFileForBeatmapLevelAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetAssetBundleFileForBeatmapLevelAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -130,7 +133,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
                 .invoke_unchecked(
                     self,
                     (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +151,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -166,8 +169,10 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("GetDownloadAssetBundleFileAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDownloadAssetBundleFileAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDownloadAssetBundleFileAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -175,7 +180,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
                 crate::GlobalNamespace::GetAssetBundleFileResult,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (levelId, assetDetails, cancellationToken))
+            method.invoke_unchecked(self, (levelId, assetDetails, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +194,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Message_1<
@@ -203,12 +208,14 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("HandleAssetFileDownloadUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleAssetFileDownloadUpdate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleAssetFileDownloadUpdate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))
+            method.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -218,7 +225,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         isError: bool,
         downloadingData: crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -230,12 +237,14 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("MarkDownloadCompleted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MarkDownloadCompleted", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(), "MarkDownloadCompleted",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (assetId, isError, downloadingData))
+            method.invoke_unchecked(self, (assetId, isError, downloadingData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -256,7 +265,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
@@ -264,43 +273,48 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("ReloadAssetDetailsForAllLevelsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReloadAssetDetailsForAllLevelsAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReloadAssetDetailsForAllLevelsAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { method.invoke_unchecked(self, (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveFromDownloadingDataStructures(
         &mut self,
         assetId: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), bool, 1usize>("RemoveFromDownloadingDataStructures")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveFromDownloadingDataStructures", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RemoveFromDownloadingDataStructures", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (assetId)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (assetId))? };
         Ok(__cordl_ret.into())
     }
     pub fn Tick(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Tick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Tick", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(), "Tick", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -312,7 +326,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -324,8 +338,10 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("TryDeleteAssetBundleFileForBeatmapLevelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryDeleteAssetBundleFileForBeatmapLevelAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryDeleteAssetBundleFileForBeatmapLevelAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -335,7 +351,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
                 .invoke_unchecked(
                     self,
                     (beatmapLevel, beatmapLevelDataVersion, cancellationToken),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -343,15 +359,17 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
         &mut self,
         id: u64,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), f32, 1usize>("<Tick>g__GetAssetTime|12_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<Tick>g__GetAssetTime|12_0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<Tick>g__GetAssetTime|12_0", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (id)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -360,7 +378,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
@@ -370,12 +388,13 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (oculusPlatformAdditionalContentModel))
+            method.invoke_unchecked(self, (oculusPlatformAdditionalContentModel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -385,7 +404,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -397,12 +416,14 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("add_levelDataAssetDownloadUpdateEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_levelDataAssetDownloadUpdateEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_levelDataAssetDownloadUpdateEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -412,7 +433,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -424,12 +445,14 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
             >("remove_levelDataAssetDownloadUpdateEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_levelDataAssetDownloadUpdateEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusBeatmapDataAssetFileModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_levelDataAssetDownloadUpdateEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -587,7 +610,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownload
         assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -599,12 +622,14 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownload
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (levelId, assetBundlePath, cancellationToken))
+            method.invoke_unchecked(self, (levelId, assetBundlePath, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }

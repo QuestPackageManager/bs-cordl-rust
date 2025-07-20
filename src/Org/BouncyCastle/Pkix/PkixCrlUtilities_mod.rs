@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCrlUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -61,13 +61,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
             >("FindCrls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindCrls", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCrlUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FindCrls", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = unsafe { method.invoke_unchecked(self, (crlSelect, crlStores)) };
+        > = unsafe { method.invoke_unchecked(self, (crlSelect, crlStores))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindCrls_PkixParameters1(
@@ -81,7 +82,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCrlUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -98,13 +99,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
             >("FindCrls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindCrls", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCrlUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FindCrls", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (crlselect, paramsPkix)) };
+        > = unsafe { method.invoke_unchecked(self, (crlselect, paramsPkix))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindCrls_PkixParameters_DateTime0(
@@ -119,7 +121,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCrlUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -137,14 +139,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
             >("FindCrls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindCrls", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCrlUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FindCrls", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         > = unsafe {
-            method.invoke_unchecked(self, (crlselect, paramsPkix, currentDate))
+            method.invoke_unchecked(self, (crlselect, paramsPkix, currentDate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -158,16 +161,17 @@ impl crate::Org::BouncyCastle::Pkix::PkixCrlUtilities {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCrlUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCrlUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

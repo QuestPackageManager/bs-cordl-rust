@@ -112,7 +112,7 @@ impl crate::HoudiniEngineUnity::HAPI_GeoInfo {
         &mut self,
         _cordl_type: crate::HoudiniEngineUnity::HAPI_GroupType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HAPI_GeoInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::HoudiniEngineUnity::HAPI_GroupType),
                 i32,
@@ -120,11 +120,13 @@ impl crate::HoudiniEngineUnity::HAPI_GeoInfo {
             >("getGroupCountByType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "getGroupCountByType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HAPI_GeoInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "getGroupCountByType",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
 }

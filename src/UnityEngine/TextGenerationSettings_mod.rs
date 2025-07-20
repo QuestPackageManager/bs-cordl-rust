@@ -122,7 +122,7 @@ impl crate::UnityEngine::TextGenerationSettings {
         left: crate::UnityEngine::Color,
         right: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextGenerationSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Color, crate::UnityEngine::Color),
                 bool,
@@ -130,11 +130,12 @@ impl crate::UnityEngine::TextGenerationSettings {
             >("CompareColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareColors", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextGenerationSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareColors", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareVector2(
@@ -142,7 +143,7 @@ impl crate::UnityEngine::TextGenerationSettings {
         left: crate::UnityEngine::Vector2,
         right: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextGenerationSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
                 bool,
@@ -150,18 +151,19 @@ impl crate::UnityEngine::TextGenerationSettings {
             >("CompareVector2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareVector2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextGenerationSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareVector2", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::TextGenerationSettings,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextGenerationSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::TextGenerationSettings),
                 bool,
@@ -169,11 +171,12 @@ impl crate::UnityEngine::TextGenerationSettings {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextGenerationSettings as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
 }

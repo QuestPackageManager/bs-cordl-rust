@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::TransformExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TransformExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -55,12 +55,14 @@ impl crate::GlobalNamespace::TransformExtensions {
             >("FindChildRecursively")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindChildRecursively", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TransformExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FindChildRecursively",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = unsafe {
-            method.invoke_unchecked((), (parent, name))
+            method.invoke_unchecked((), (parent, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,7 +70,7 @@ impl crate::GlobalNamespace::TransformExtensions {
         trans: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         worldRotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TransformExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -79,12 +81,14 @@ impl crate::GlobalNamespace::TransformExtensions {
             >("InverseTransformRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InverseTransformRotation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TransformExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "InverseTransformRotation",
+                    2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked((), (trans, worldRotation))
+            method.invoke_unchecked((), (trans, worldRotation))?
         };
         Ok(__cordl_ret.into())
     }

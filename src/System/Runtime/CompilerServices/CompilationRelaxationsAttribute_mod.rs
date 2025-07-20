@@ -64,7 +64,7 @@ impl crate::System::Runtime::CompilerServices::CompilationRelaxationsAttribute {
         &mut self,
         relaxations: crate::System::Runtime::CompilerServices::CompilationRelaxations,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CompilationRelaxationsAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Runtime::CompilerServices::CompilationRelaxations),
                 quest_hook::libil2cpp::Void,
@@ -72,12 +72,14 @@ impl crate::System::Runtime::CompilerServices::CompilationRelaxationsAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::CompilerServices::CompilationRelaxationsAttribute
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (relaxations))
+            method.invoke_unchecked(self, (relaxations))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,29 +87,34 @@ impl crate::System::Runtime::CompilerServices::CompilationRelaxationsAttribute {
         &mut self,
         relaxations: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CompilationRelaxationsAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::CompilerServices::CompilationRelaxationsAttribute
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (relaxations))
+            method.invoke_unchecked(self, (relaxations))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_CompilationRelaxations(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::CompilationRelaxationsAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_CompilationRelaxations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CompilationRelaxations", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::CompilerServices::CompilationRelaxationsAttribute
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_CompilationRelaxations", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -44,7 +44,7 @@ impl crate::System::Runtime::Serialization::ISafeSerializationData {
         &mut self,
         deserialized: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::ISafeSerializationData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -52,12 +52,14 @@ impl crate::System::Runtime::Serialization::ISafeSerializationData {
             >("CompleteDeserialization")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompleteDeserialization", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::ISafeSerializationData as
+                    quest_hook::libil2cpp::Type > ::class(), "CompleteDeserialization",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (deserialized))
+            method.invoke_unchecked(self, (deserialized))?
         };
         Ok(__cordl_ret.into())
     }

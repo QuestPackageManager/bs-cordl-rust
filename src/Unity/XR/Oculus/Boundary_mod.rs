@@ -41,22 +41,23 @@ impl crate::Unity::XR::Oculus::Boundary {
     #[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
     pub type BoundaryType = crate::Unity::XR::Oculus::Boundary_BoundaryType;
     pub fn GetBoundaryConfigured() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("GetBoundaryConfigured")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBoundaryConfigured", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBoundaryConfigured", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoundaryDimensions(
         boundaryType: crate::Unity::XR::Oculus::Boundary_BoundaryType,
         dimensions: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::XR::Oculus::Boundary_BoundaryType,
@@ -67,31 +68,33 @@ impl crate::Unity::XR::Oculus::Boundary {
             >("GetBoundaryDimensions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBoundaryDimensions", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBoundaryDimensions", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (boundaryType, dimensions))
+            method.invoke_unchecked((), (boundaryType, dimensions))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoundaryVisible() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("GetBoundaryVisible")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBoundaryVisible", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBoundaryVisible", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetBoundaryVisible(
         boundaryVisible: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -99,12 +102,13 @@ impl crate::Unity::XR::Oculus::Boundary {
             >("SetBoundaryVisible")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBoundaryVisible", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Boundary as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBoundaryVisible", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (boundaryVisible))
+            method.invoke_unchecked((), (boundaryVisible))?
         };
         Ok(__cordl_ret.into())
     }

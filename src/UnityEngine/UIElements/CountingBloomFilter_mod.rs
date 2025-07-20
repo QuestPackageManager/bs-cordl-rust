@@ -110,7 +110,7 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
         index: u32,
         increment: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::CountingBloomFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, bool),
                 quest_hook::libil2cpp::Void,
@@ -118,94 +118,101 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
             >("AdjustSlot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AdjustSlot", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::CountingBloomFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "AdjustSlot", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index, increment))
+            method.invoke_unchecked(self, (index, increment))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsHash(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::CountingBloomFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), bool, 1usize>("ContainsHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsHash", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::CountingBloomFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "ContainsHash", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (hash)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn Hash1(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::CountingBloomFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), u32, 1usize>("Hash1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Hash1", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::CountingBloomFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "Hash1", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (hash)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn Hash2(&mut self, hash: u32) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::CountingBloomFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), u32, 1usize>("Hash2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Hash2", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::CountingBloomFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "Hash2", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (hash)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertHash(
         &mut self,
         hash: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::CountingBloomFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("InsertHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertHash", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::CountingBloomFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertHash", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hash))
+            method.invoke_unchecked(self, (hash))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsSlotEmpty(&mut self, index: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::CountingBloomFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), bool, 1usize>("IsSlotEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSlotEmpty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::CountingBloomFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSlotEmpty", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (index)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveHash(
         &mut self,
         hash: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::CountingBloomFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("RemoveHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveHash", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::CountingBloomFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveHash", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hash))
+            method.invoke_unchecked(self, (hash))?
         };
         Ok(__cordl_ret.into())
     }

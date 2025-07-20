@@ -62,15 +62,16 @@ impl crate::Mono::Globalization::Unicode::CodePointIndexer {
         Ok(__cordl_object.into())
     }
     pub fn ToIndex(&mut self, cp: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::CodePointIndexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("ToIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::CodePointIndexer as
+                    quest_hook::libil2cpp::Type > ::class(), "ToIndex", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (cp)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (cp))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -80,7 +81,7 @@ impl crate::Mono::Globalization::Unicode::CodePointIndexer {
         defaultIndex: i32,
         defaultCP: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::CodePointIndexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -93,12 +94,13 @@ impl crate::Mono::Globalization::Unicode::CodePointIndexer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::CodePointIndexer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (starts, ends, defaultIndex, defaultCP))
+            method.invoke_unchecked(self, (starts, ends, defaultIndex, defaultCP))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,16 +228,17 @@ impl crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange {
         end: i32,
         indexStart: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::CodePointIndexer_TableRange as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::CodePointIndexer_TableRange as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (start, end, indexStart))
+            method.invoke_unchecked(self, (start, end, indexStart))?
         };
         Ok(__cordl_ret.into())
     }

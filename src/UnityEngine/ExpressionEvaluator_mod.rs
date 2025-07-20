@@ -59,7 +59,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -75,12 +75,13 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("Evaluate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Evaluate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "Evaluate", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, value, delayed))
+            method.invoke_unchecked((), (expression, value, delayed))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +95,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -113,12 +114,13 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("EvaluateDouble")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluateDouble", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "EvaluateDouble", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (tokens, value, index, count))
+            method.invoke_unchecked((), (tokens, value, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +130,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         index: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
@@ -141,12 +143,13 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("EvaluateOp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluateOp", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "EvaluateOp", 4usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (values, op, index, count))
+            method.invoke_unchecked((), (values, op, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +167,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -183,12 +186,13 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("EvaluateTokens")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluateTokens", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "EvaluateTokens", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (tokens, value, index, count))
+            method.invoke_unchecked((), (tokens, value, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -202,7 +206,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -217,15 +221,16 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("ExpressionToTokens")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpressionToTokens", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpressionToTokens", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (expression, hasVariables)) };
+        > = unsafe { method.invoke_unchecked((), (expression, hasVariables))? };
         Ok(__cordl_ret.into())
     }
     pub fn FixUnaryOperators(
@@ -241,7 +246,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -257,15 +262,16 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("FixUnaryOperators")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FixUnaryOperators", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "FixUnaryOperators", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (tokens)) };
+        > = unsafe { method.invoke_unchecked((), (tokens))? };
         Ok(__cordl_ret.into())
     }
     pub fn InfixToRPN(
@@ -281,7 +287,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -297,21 +303,22 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("InfixToRPN")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InfixToRPN", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "InfixToRPN", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (tokens)) };
+        > = unsafe { method.invoke_unchecked((), (tokens))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCommand(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -319,17 +326,18 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("IsCommand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCommand", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCommand", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDelayedFunction(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -337,17 +345,18 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("IsDelayedFunction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDelayedFunction", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDelayedFunction", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOperator(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -355,17 +364,18 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("IsOperator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsOperator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsOperator", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsVariable(
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -373,11 +383,12 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("IsVariable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsVariable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsVariable", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn NeedToPop(
@@ -390,7 +401,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
             crate::UnityEngine::ExpressionEvaluator_Operator,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -409,12 +420,13 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("NeedToPop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NeedToPop", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "NeedToPop", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (operatorStack, newOperator))
+            method.invoke_unchecked((), (operatorStack, newOperator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -423,7 +435,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -431,13 +443,15 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("PreFormatExpression")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PreFormatExpression", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "PreFormatExpression",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (expression)) };
+        > = unsafe { method.invoke_unchecked((), (expression))? };
         Ok(__cordl_ret.into())
     }
     pub fn TokenToOperator(
@@ -445,7 +459,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ExpressionEvaluator_Operator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -455,13 +469,14 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("TokenToOperator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TokenToOperator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "TokenToOperator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ExpressionEvaluator_Operator,
-        > = unsafe { method.invoke_unchecked((), (token)) };
+        > = unsafe { method.invoke_unchecked((), (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryParse<T>(
@@ -472,7 +487,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -483,12 +498,13 @@ impl crate::UnityEngine::ExpressionEvaluator {
             >("TryParse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryParse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "TryParse", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, result))
+            method.invoke_unchecked((), (expression, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -651,7 +667,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_Expression as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<T>, i32, i32),
                 bool,
@@ -659,12 +675,13 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
             >("Evaluate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Evaluate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_Expression as
+                    quest_hook::libil2cpp::Type > ::class(), "Evaluate", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (value, index, count))
+            method.invoke_unchecked(self, (value, index, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -681,7 +698,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
         &mut self,
         expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_Expression as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -689,12 +706,13 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_Expression as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (expression))
+            method.invoke_unchecked(self, (expression))?
         };
         Ok(__cordl_ret.into())
     }
@@ -878,7 +896,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Operator {
         inputs: i32,
         associativity: crate::UnityEngine::ExpressionEvaluator_Associativity,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_Operator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::ExpressionEvaluator_Op,
@@ -891,12 +909,13 @@ impl crate::UnityEngine::ExpressionEvaluator_Operator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_Operator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op, precedence, inputs, associativity))
+            method.invoke_unchecked(self, (op, precedence, inputs, associativity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1016,55 +1035,59 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     pub fn GetUInt(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_PcgRandom as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u32, 0usize>("GetUInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUInt", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_PcgRandom as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUInt", 0usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RotateRight(v: u32, rot: i32) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_PcgRandom as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32, i32), u32, 2usize>("RotateRight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotateRight", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_PcgRandom as
+                    quest_hook::libil2cpp::Type > ::class(), "RotateRight", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (v, rot)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (v, rot))? };
         Ok(__cordl_ret.into())
     }
     pub fn Step(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_PcgRandom as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Step")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Step", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_PcgRandom as
+                    quest_hook::libil2cpp::Type > ::class(), "Step", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn XshRr(s: u64) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_PcgRandom as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), u32, 1usize>("XshRr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "XshRr", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_PcgRandom as
+                    quest_hook::libil2cpp::Type > ::class(), "XshRr", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (s)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1072,16 +1095,17 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         state: u64,
         sequence: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ExpressionEvaluator_PcgRandom as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64, u64), quest_hook::libil2cpp::Void, 2usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ExpressionEvaluator_PcgRandom as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (state, sequence))
+            method.invoke_unchecked(self, (state, sequence))?
         };
         Ok(__cordl_ret.into())
     }

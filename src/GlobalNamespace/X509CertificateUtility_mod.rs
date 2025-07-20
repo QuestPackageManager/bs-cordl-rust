@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICertificateEncryptionProvider>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -62,13 +62,15 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("GetCertificateEncryptionProvider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCertificateEncryptionProvider", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCertificateEncryptionProvider", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ICertificateEncryptionProvider,
-        > = unsafe { method.invoke_unchecked((), (privateKeyPem, password)) };
+        > = unsafe { method.invoke_unchecked((), (privateKeyPem, password))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCertificateList(
@@ -85,7 +87,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -102,8 +104,9 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("GetCertificateList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCertificateList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCertificateList", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -113,7 +116,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (certificatePem, certificateChainPem))
+            method.invoke_unchecked((), (certificatePem, certificateChainPem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -127,7 +130,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -142,13 +145,15 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("GetRSACertificateEncryptionProvider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRSACertificateEncryptionProvider", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetRSACertificateEncryptionProvider", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider,
-        > = unsafe { method.invoke_unchecked((), (privateKeyPem, passwordFinder)) };
+        > = unsafe { method.invoke_unchecked((), (privateKeyPem, passwordFinder))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRootCertificates() -> quest_hook::libil2cpp::Result<
@@ -160,7 +165,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -174,8 +179,10 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("GetRootCertificates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRootCertificates", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRootCertificates",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -184,13 +191,13 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRootCertificatesRaw() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -198,13 +205,15 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("GetRootCertificatesRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRootCertificatesRaw", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRootCertificatesRaw",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateCertificateChain(
@@ -217,7 +226,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -236,12 +245,14 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("ValidateCertificateChain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateCertificateChain", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateCertificateChain",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (certificate, certificateChain))
+            method.invoke_unchecked((), (certificate, certificateChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +266,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -274,12 +285,14 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("ValidateCertificateChainDotNet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateCertificateChainDotNet", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ValidateCertificateChainDotNet", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (certificate, certificateChain))
+            method.invoke_unchecked((), (certificate, certificateChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -293,7 +306,7 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -312,12 +325,14 @@ impl crate::GlobalNamespace::X509CertificateUtility {
             >("ValidateCertificateChainUnity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateCertificateChainUnity", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ValidateCertificateChainUnity", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (certificate, certificateChain))
+            method.invoke_unchecked((), (certificate, certificateChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -380,7 +395,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility_PasswordFinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -388,13 +403,14 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
             >("GetPassword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPassword", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility_PasswordFinder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPassword", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray0(
@@ -419,7 +435,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility_PasswordFinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -427,12 +443,13 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility_PasswordFinder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (password))
+            method.invoke_unchecked(self, (password))?
         };
         Ok(__cordl_ret.into())
     }
@@ -440,7 +457,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         &mut self,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility_PasswordFinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -448,12 +465,13 @@ impl crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::X509CertificateUtility_PasswordFinder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (password))
+            method.invoke_unchecked(self, (password))?
         };
         Ok(__cordl_ret.into())
     }
@@ -529,16 +547,18 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+                    as quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -561,7 +581,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -573,13 +593,15 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
             >("SignData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+                    as quest_hook::libil2cpp::Type > ::class(), "SignData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (data, offset, length)) };
+        > = unsafe { method.invoke_unchecked(self, (data, offset, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -588,7 +610,7 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
             crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
@@ -598,12 +620,14 @@ impl crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProv
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (privateKey))
+            method.invoke_unchecked(self, (privateKey))?
         };
         Ok(__cordl_ret.into())
     }

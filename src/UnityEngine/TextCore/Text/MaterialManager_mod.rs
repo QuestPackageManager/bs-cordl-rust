@@ -43,7 +43,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         destination: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::MaterialManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -54,12 +54,14 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
             >("CopyMaterialPresetProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyMaterialPresetProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::MaterialManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CopyMaterialPresetProperties", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (source, destination))
+            method.invoke_unchecked((), (source, destination))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +74,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::MaterialManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -86,12 +88,14 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
             >("GetFallbackMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFallbackMaterial", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::MaterialManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFallbackMaterial",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (fontAsset, sourceMaterial, atlasIndex))
+            method.invoke_unchecked((), (fontAsset, sourceMaterial, atlasIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +105,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::MaterialManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -112,12 +116,14 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
             >("GetFallbackMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFallbackMaterial", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::MaterialManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFallbackMaterial",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (sourceMaterial, targetMaterial))
+            method.invoke_unchecked((), (sourceMaterial, targetMaterial))?
         };
         Ok(__cordl_ret.into())
     }

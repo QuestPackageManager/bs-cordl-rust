@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -68,12 +68,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("DecryptBlock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecryptBlock", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "DecryptBlock", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (input, inOff, output, outOff))
+            method.invoke_unchecked(self, (input, inOff, output, outOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +85,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -97,25 +98,27 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("EncryptBlock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncryptBlock", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "EncryptBlock", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (input, inOff, output, outOff))
+            method.invoke_unchecked(self, (input, inOff, output, outOff))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetBlockSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBlockSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBlockSize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Ib0(
@@ -125,7 +128,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -133,12 +136,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib0", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib0", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,7 +153,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -157,12 +161,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib1", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib1", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -173,7 +178,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -181,12 +186,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib2", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib2", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,7 +203,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -205,12 +211,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib3", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib3", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +228,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -229,12 +236,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib4", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib4", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +253,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -253,12 +261,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib5")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib5", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib5", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -269,7 +278,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -277,12 +286,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib6", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib6", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -293,7 +303,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -301,12 +311,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Ib7")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ib7", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Ib7", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -317,7 +328,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -330,42 +341,45 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (encrypting, parameters))
+            method.invoke_unchecked(self, (encrypting, parameters))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InverseLT(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InverseLT")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InverseLT", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "InverseLT", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LT(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LT")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LT", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "LT", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -375,7 +389,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -383,13 +397,14 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("MakeWorkingKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeWorkingKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeWorkingKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked(self, (key)) };
+        > = unsafe { method.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -406,7 +421,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -419,53 +434,57 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("ProcessBlock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessBlock", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessBlock", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (input, inOff, output, outOff))
+            method.invoke_unchecked(self, (input, inOff, output, outOff))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RotateLeft(x: i32, bits: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32), i32, 2usize>("RotateLeft")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotateLeft", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RotateLeft", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, bits)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, bits))? };
         Ok(__cordl_ret.into())
     }
     pub fn RotateRight(x: i32, bits: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32), i32, 2usize>("RotateRight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotateRight", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RotateRight", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, bits)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (x, bits))? };
         Ok(__cordl_ret.into())
     }
     pub fn Sb0(
@@ -475,7 +494,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -483,12 +502,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb0", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb0", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,7 +519,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -507,12 +527,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb1", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb1", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -523,7 +544,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -531,12 +552,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb2", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb2", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -547,7 +569,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -555,12 +577,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb3", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb3", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -571,7 +594,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -579,12 +602,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb4", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb4", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -595,7 +619,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -603,12 +627,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb5")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb5", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb5", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -619,7 +644,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -627,12 +652,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb6", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb6", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -643,7 +669,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
         c: i32,
         d: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -651,28 +677,30 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("Sb7")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sb7", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "Sb7", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -681,7 +709,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -689,25 +717,28 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             >("get_AlgorithmName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AlgorithmName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_AlgorithmName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsPartialBlockOkay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsPartialBlockOkay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsPartialBlockOkay", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsPartialBlockOkay",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

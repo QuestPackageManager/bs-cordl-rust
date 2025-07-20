@@ -109,7 +109,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
         _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
         payloadSize: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::InputSystem::Utilities::FourCC, i32),
                 crate::Unity::Collections::NativeArray_1<u8>,
@@ -117,12 +117,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
             >("AllocateNative")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocateNative", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as
+                    quest_hook::libil2cpp::Type > ::class(), "AllocateNative", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = unsafe {
-            method.invoke_unchecked((), (_cordl_type, payloadSize))
+            method.invoke_unchecked((), (_cordl_type, payloadSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,7 +132,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
         _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
         sizeInBytes: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::Utilities::FourCC, i32),
                 quest_hook::libil2cpp::Void,
@@ -139,12 +140,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_type, sizeInBytes))
+            method.invoke_unchecked(self, (_cordl_type, sizeInBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +155,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -161,25 +163,28 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
             >("get_payloadPtr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_payloadPtr", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as
+                    quest_hook::libil2cpp::Type > ::class(), "get_payloadPtr", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_payloadSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_payloadSizeInBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_payloadSizeInBytes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as
+                    quest_hook::libil2cpp::Type > ::class(), "get_payloadSizeInBytes",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_typeStatic(
@@ -187,7 +192,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -195,12 +200,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
             >("get_typeStatic")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_typeStatic", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputDeviceCommand as
+                    quest_hook::libil2cpp::Type > ::class(), "get_typeStatic", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

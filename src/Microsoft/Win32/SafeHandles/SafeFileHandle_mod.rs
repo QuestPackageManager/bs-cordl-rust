@@ -50,15 +50,16 @@ impl crate::Microsoft::Win32::SafeHandles::SafeFileHandle {
         Ok(__cordl_object.into())
     }
     pub fn ReleaseHandle(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::SafeHandles::SafeFileHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("ReleaseHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReleaseHandle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::SafeHandles::SafeFileHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "ReleaseHandle", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -66,7 +67,7 @@ impl crate::Microsoft::Win32::SafeHandles::SafeFileHandle {
         preexistingHandle: crate::System::IntPtr,
         ownsHandle: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::SafeHandles::SafeFileHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr, bool),
                 quest_hook::libil2cpp::Void,
@@ -74,12 +75,13 @@ impl crate::Microsoft::Win32::SafeHandles::SafeFileHandle {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::SafeHandles::SafeFileHandle as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (preexistingHandle, ownsHandle))
+            method.invoke_unchecked(self, (preexistingHandle, ownsHandle))?
         };
         Ok(__cordl_ret.into())
     }

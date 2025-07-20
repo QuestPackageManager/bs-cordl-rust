@@ -79,7 +79,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::IControl>),
                 quest_hook::libil2cpp::Gc<
@@ -89,13 +89,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("AddControl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddControl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddControl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (control)) };
+        > = unsafe { method.invoke_unchecked(self, (control))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Asn1Encodable0(
@@ -110,7 +111,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -128,13 +129,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("AddExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddExtension", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddExtension", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (oid, critical, value)) };
+        > = unsafe { method.invoke_unchecked(self, (oid, critical, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Il2CppArray1(
@@ -149,7 +151,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -165,13 +167,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("AddExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddExtension", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddExtension", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (oid, critical, value)) };
+        > = unsafe { method.invoke_unchecked(self, (oid, critical, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build(
@@ -181,7 +184,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessage,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -191,13 +194,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessage,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -220,7 +224,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -235,13 +239,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetAuthInfoPKMAC")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAuthInfoPKMAC", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAuthInfoPKMAC", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (pkmacFactory, password)) };
+        > = unsafe { method.invoke_unchecked(self, (pkmacFactory, password))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetAuthInfoSender_GeneralName1(
@@ -254,7 +259,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -266,13 +271,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetAuthInfoSender")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAuthInfoSender", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAuthInfoSender", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (sender)) };
+        > = unsafe { method.invoke_unchecked(self, (sender))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetAuthInfoSender_X509Name0(
@@ -283,7 +289,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::X509Name,
@@ -295,13 +301,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetAuthInfoSender")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAuthInfoSender", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAuthInfoSender", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (sender)) };
+        > = unsafe { method.invoke_unchecked(self, (sender))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetIssuer(
@@ -312,7 +319,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::X509Name,
@@ -324,13 +331,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetIssuer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetIssuer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetIssuer", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (issuer)) };
+        > = unsafe { method.invoke_unchecked(self, (issuer))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetProofOfPossessionAgreeMac(
@@ -343,7 +351,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Crmf::PKMacValue,
@@ -355,13 +363,15 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetProofOfPossessionAgreeMac")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetProofOfPossessionAgreeMac", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetProofOfPossessionAgreeMac", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (macValue)) };
+        > = unsafe { method.invoke_unchecked(self, (macValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetProofOfPossessionRaVerified(
@@ -371,7 +381,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -381,13 +391,15 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetProofOfPossessionRaVerified")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetProofOfPossessionRaVerified", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetProofOfPossessionRaVerified", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetProofOfPossessionSignKeySigner(
@@ -400,7 +412,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::ISignatureFactory,
@@ -412,13 +424,15 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetProofOfPossessionSignKeySigner")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetProofOfPossessionSignKeySigner", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetProofOfPossessionSignKeySigner", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (popoSignatureFactory)) };
+        > = unsafe { method.invoke_unchecked(self, (popoSignatureFactory))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetProofOfPossessionSubsequentMessage_SubsequentMessage0(
@@ -431,7 +445,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
@@ -443,13 +457,15 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetProofOfPossessionSubsequentMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetProofOfPossessionSubsequentMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetProofOfPossessionSubsequentMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (msg)) };
+        > = unsafe { method.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetProofOfPossessionSubsequentMessage_i32_SubsequentMessage1(
@@ -463,7 +479,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -478,13 +494,15 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetProofOfPossessionSubsequentMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetProofOfPossessionSubsequentMessage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetProofOfPossessionSubsequentMessage", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (_cordl_type, msg)) };
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetPublicKey(
@@ -497,7 +515,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
@@ -509,13 +527,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPublicKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (publicKeyInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (publicKeyInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSerialNumber(
@@ -528,7 +547,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<
@@ -538,13 +557,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetSerialNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSerialNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSerialNumber", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (serialNumber)) };
+        > = unsafe { method.invoke_unchecked(self, (serialNumber))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubject(
@@ -557,7 +577,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::X509Name,
@@ -569,13 +589,14 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetSubject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSubject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSubject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (subject)) };
+        > = unsafe { method.invoke_unchecked(self, (subject))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetValidity(
@@ -587,7 +608,7 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -602,20 +623,21 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >("SetValidity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetValidity", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetValidity", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (notBefore, notAfter)) };
+        > = unsafe { method.invoke_unchecked(self, (notBefore, notAfter))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         certReqId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Void,
@@ -623,12 +645,13 @@ impl crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (certReqId))
+            method.invoke_unchecked(self, (certReqId))?
         };
         Ok(__cordl_ret.into())
     }

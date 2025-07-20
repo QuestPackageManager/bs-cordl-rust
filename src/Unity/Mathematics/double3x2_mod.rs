@@ -101,7 +101,7 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -109,18 +109,19 @@ impl crate::Unity::Mathematics::double3x2 {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_double3x2_0(
         &mut self,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::double3x2),
                 bool,
@@ -128,23 +129,25 @@ impl crate::Unity::Mathematics::double3x2 {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rhs)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rhs))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -152,7 +155,7 @@ impl crate::Unity::Mathematics::double3x2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -160,13 +163,14 @@ impl crate::Unity::Mathematics::double3x2 {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
@@ -176,7 +180,7 @@ impl crate::Unity::Mathematics::double3x2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -187,29 +191,31 @@ impl crate::Unity::Mathematics::double3x2 {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "ToString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (format, formatProvider)) };
+        > = unsafe { method.invoke_unchecked(self, (format, formatProvider))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool3(
         &mut self,
         v: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -217,7 +223,7 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: crate::Unity::Mathematics::bool3x2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::bool3x2),
                 quest_hook::libil2cpp::Void,
@@ -225,12 +231,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +246,7 @@ impl crate::Unity::Mathematics::double3x2 {
         c0: crate::Unity::Mathematics::double3,
         c1: crate::Unity::Mathematics::double3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::double3, crate::Unity::Mathematics::double3),
                 quest_hook::libil2cpp::Void,
@@ -247,12 +254,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (c0, c1))
+            method.invoke_unchecked(self, (c0, c1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,16 +268,17 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,16 +286,17 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +309,7 @@ impl crate::Unity::Mathematics::double3x2 {
         m20: f64,
         m21: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f64, f64, f64, f64, f64, f64),
                 quest_hook::libil2cpp::Void,
@@ -307,12 +317,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (m00, m01, m10, m11, m20, m21))
+            method.invoke_unchecked(self, (m00, m01, m10, m11, m20, m21))?
         };
         Ok(__cordl_ret.into())
     }
@@ -320,7 +331,7 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: crate::Unity::Mathematics::float3x2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::float3x2),
                 quest_hook::libil2cpp::Void,
@@ -328,12 +339,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -341,16 +353,17 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -358,7 +371,7 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: crate::Unity::Mathematics::int3x2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::int3x2),
                 quest_hook::libil2cpp::Void,
@@ -366,12 +379,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -379,16 +393,17 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -396,7 +411,7 @@ impl crate::Unity::Mathematics::double3x2 {
         &mut self,
         v: crate::Unity::Mathematics::uint3x2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::uint3x2),
                 quest_hook::libil2cpp::Void,
@@ -404,12 +419,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -419,7 +435,7 @@ impl crate::Unity::Mathematics::double3x2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::double3>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::ByRefMut<crate::Unity::Mathematics::double3>,
@@ -427,20 +443,21 @@ impl crate::Unity::Mathematics::double3x2 {
             >("get_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Item", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "get_Item", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::Unity::Mathematics::double3,
-        > = unsafe { method.invoke_unchecked(self, (index)) };
+        > = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition_double3x2_double3x2_0(
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -451,12 +468,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Addition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Addition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Addition", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,7 +482,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::double3x2,
@@ -472,12 +490,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Addition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Addition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Addition", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -485,7 +504,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -493,19 +512,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Addition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Addition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Addition", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Decrement(
         val: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -513,12 +533,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Decrement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Decrement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Decrement", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (val))
+            method.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -526,7 +547,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -537,12 +558,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Division")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Division", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Division", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -550,7 +572,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::double3x2,
@@ -558,12 +580,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Division")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Division", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Division", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -571,7 +594,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -579,12 +602,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Division")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Division", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Division", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -592,7 +616,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -603,12 +627,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Equality", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -616,7 +641,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::bool3x2,
@@ -624,12 +649,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Equality", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -637,7 +663,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::bool3x2,
@@ -645,19 +671,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Equality", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit__cordl_bool0(
         v: bool,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 crate::Unity::Mathematics::double3x2,
@@ -665,19 +692,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Explicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_bool3x2_1(
         v: crate::Unity::Mathematics::bool3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::bool3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -685,12 +713,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Explicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Explicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Explicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -698,7 +727,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -709,12 +738,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_GreaterThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_GreaterThanOrEqual", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -722,7 +752,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::bool3x2,
@@ -730,12 +760,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_GreaterThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_GreaterThanOrEqual", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -743,7 +774,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::bool3x2,
@@ -751,12 +782,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_GreaterThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_GreaterThanOrEqual", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -764,7 +796,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -775,12 +807,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_GreaterThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_GreaterThan", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -788,7 +821,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::bool3x2,
@@ -796,12 +829,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_GreaterThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_GreaterThan", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -809,7 +843,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::bool3x2,
@@ -817,19 +851,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_GreaterThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_GreaterThan", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_f32_5(
         v: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 crate::Unity::Mathematics::double3x2,
@@ -837,19 +872,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_f64_0(
         v: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64),
                 crate::Unity::Mathematics::double3x2,
@@ -857,19 +893,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_float3x2_6(
         v: crate::Unity::Mathematics::float3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::float3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -877,19 +914,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_i32_1(
         v: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::Unity::Mathematics::double3x2,
@@ -897,19 +935,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_int3x2_2(
         v: crate::Unity::Mathematics::int3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::int3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -917,19 +956,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_u32_3(
         v: u32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32),
                 crate::Unity::Mathematics::double3x2,
@@ -937,19 +977,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_uint3x2_4(
         v: crate::Unity::Mathematics::uint3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::uint3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -957,19 +998,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (v))
+            method.invoke_unchecked((), (v))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Increment(
         val: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -977,12 +1019,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Increment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Increment", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Increment", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (val))
+            method.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
@@ -990,7 +1033,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -1001,12 +1044,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Inequality", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1014,7 +1058,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::bool3x2,
@@ -1022,12 +1066,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Inequality", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1035,7 +1080,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::bool3x2,
@@ -1043,12 +1088,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Inequality", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1056,7 +1102,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -1067,12 +1113,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_LessThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_LessThanOrEqual", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1080,7 +1127,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::bool3x2,
@@ -1088,12 +1135,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_LessThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_LessThanOrEqual", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1101,7 +1149,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::bool3x2,
@@ -1109,12 +1157,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_LessThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_LessThanOrEqual", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1122,7 +1171,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -1133,12 +1182,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_LessThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_LessThan", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1146,7 +1196,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::bool3x2,
@@ -1154,12 +1204,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_LessThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_LessThan", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1167,7 +1218,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::bool3x2,
@@ -1175,12 +1226,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_LessThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_LessThan", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::bool3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1188,7 +1240,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -1199,12 +1251,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Modulus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Modulus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Modulus", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1212,7 +1265,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::double3x2,
@@ -1220,12 +1273,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Modulus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Modulus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Modulus", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1233,7 +1287,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -1241,12 +1295,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Modulus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Modulus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Modulus", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1254,7 +1309,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -1265,12 +1320,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Multiply", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1278,7 +1334,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::double3x2,
@@ -1286,12 +1342,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Multiply", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1299,7 +1356,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -1307,12 +1364,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Multiply", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1320,7 +1378,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Unity::Mathematics::double3x2,
@@ -1331,12 +1389,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Subtraction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Subtraction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Subtraction", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1344,7 +1403,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: crate::Unity::Mathematics::double3x2,
         rhs: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2, f64),
                 crate::Unity::Mathematics::double3x2,
@@ -1352,12 +1411,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Subtraction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Subtraction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Subtraction", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1365,7 +1425,7 @@ impl crate::Unity::Mathematics::double3x2 {
         lhs: f64,
         rhs: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -1373,19 +1433,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_Subtraction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Subtraction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Subtraction", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (lhs, rhs))
+            method.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_UnaryNegation(
         val: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -1393,19 +1454,20 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_UnaryNegation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_UnaryNegation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_UnaryNegation", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (val))
+            method.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_UnaryPlus(
         val: crate::Unity::Mathematics::double3x2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::double3x2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::double3x2),
                 crate::Unity::Mathematics::double3x2,
@@ -1413,12 +1475,13 @@ impl crate::Unity::Mathematics::double3x2 {
             >("op_UnaryPlus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_UnaryPlus", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::double3x2 as quest_hook::libil2cpp::Type
+                    > ::class(), "op_UnaryPlus", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::double3x2 = unsafe {
-            method.invoke_unchecked((), (val))
+            method.invoke_unchecked((), (val))?
         };
         Ok(__cordl_ret.into())
     }

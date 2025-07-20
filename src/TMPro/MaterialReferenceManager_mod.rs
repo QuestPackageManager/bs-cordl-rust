@@ -66,7 +66,7 @@ impl crate::TMPro::MaterialReferenceManager {
         hashCode: i32,
         spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>),
                 quest_hook::libil2cpp::Void,
@@ -74,12 +74,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddColorGradientPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddColorGradientPreset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddColorGradientPreset",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hashCode, spriteAsset))
+            method.invoke_unchecked((), (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +90,7 @@ impl crate::TMPro::MaterialReferenceManager {
         hashCode: i32,
         spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>),
                 quest_hook::libil2cpp::Void,
@@ -96,19 +98,21 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddColorGradientPreset_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddColorGradientPreset_Internal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddColorGradientPreset_Internal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hashCode, spriteAsset))
+            method.invoke_unchecked(self, (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddFontAsset(
         fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>),
                 quest_hook::libil2cpp::Void,
@@ -116,12 +120,13 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddFontAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddFontAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddFontAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (fontAsset))
+            method.invoke_unchecked((), (fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +134,7 @@ impl crate::TMPro::MaterialReferenceManager {
         &mut self,
         fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>),
                 quest_hook::libil2cpp::Void,
@@ -137,12 +142,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddFontAssetInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddFontAssetInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddFontAssetInternal",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fontAsset))
+            method.invoke_unchecked(self, (fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +157,7 @@ impl crate::TMPro::MaterialReferenceManager {
         hashCode: i32,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                 quest_hook::libil2cpp::Void,
@@ -158,12 +165,13 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddFontMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddFontMaterial", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddFontMaterial", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hashCode, material))
+            method.invoke_unchecked((), (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,7 +180,7 @@ impl crate::TMPro::MaterialReferenceManager {
         hashCode: i32,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                 quest_hook::libil2cpp::Void,
@@ -180,12 +188,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddFontMaterialInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddFontMaterialInternal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddFontMaterialInternal",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hashCode, material))
+            method.invoke_unchecked(self, (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,7 +203,7 @@ impl crate::TMPro::MaterialReferenceManager {
         &mut self,
         spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>),
                 quest_hook::libil2cpp::Void,
@@ -201,12 +211,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddSpriteAssetInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSpriteAssetInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSpriteAssetInternal",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (spriteAsset))
+            method.invoke_unchecked(self, (spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,7 +227,7 @@ impl crate::TMPro::MaterialReferenceManager {
         hashCode: i32,
         spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>),
                 quest_hook::libil2cpp::Void,
@@ -223,19 +235,21 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddSpriteAssetInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSpriteAssetInternal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSpriteAssetInternal",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (hashCode, spriteAsset))
+            method.invoke_unchecked(self, (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddSpriteAsset_TMP_SpriteAsset0(
         spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>),
                 quest_hook::libil2cpp::Void,
@@ -243,12 +257,13 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddSpriteAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSpriteAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSpriteAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (spriteAsset))
+            method.invoke_unchecked((), (spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -256,7 +271,7 @@ impl crate::TMPro::MaterialReferenceManager {
         hashCode: i32,
         spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>),
                 quest_hook::libil2cpp::Void,
@@ -264,12 +279,13 @@ impl crate::TMPro::MaterialReferenceManager {
             >("AddSpriteAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSpriteAsset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddSpriteAsset", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hashCode, spriteAsset))
+            method.invoke_unchecked((), (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -277,7 +293,7 @@ impl crate::TMPro::MaterialReferenceManager {
         &mut self,
         font: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>),
                 bool,
@@ -285,18 +301,19 @@ impl crate::TMPro::MaterialReferenceManager {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (font)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (font))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains_TMP_SpriteAsset1(
         &mut self,
         sprite: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>),
                 bool,
@@ -304,11 +321,12 @@ impl crate::TMPro::MaterialReferenceManager {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (sprite)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (sprite))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -324,7 +342,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -337,12 +355,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetColorGradientPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetColorGradientPreset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetColorGradientPreset",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, gradientPreset))
+            method.invoke_unchecked((), (hashCode, gradientPreset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -353,7 +373,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_ColorGradient>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -366,12 +386,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetColorGradientPresetInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetColorGradientPresetInternal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetColorGradientPresetInternal", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, gradientPreset))
+            method.invoke_unchecked(self, (hashCode, gradientPreset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -381,7 +403,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -394,12 +416,13 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetFontAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetFontAsset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetFontAsset", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, fontAsset))
+            method.invoke_unchecked((), (hashCode, fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -410,7 +433,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -423,12 +446,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetFontAssetInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetFontAssetInternal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetFontAssetInternal",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, fontAsset))
+            method.invoke_unchecked(self, (hashCode, fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -438,7 +463,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -451,12 +476,13 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetMaterial", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetMaterial", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, material))
+            method.invoke_unchecked((), (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -467,7 +493,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -480,12 +506,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetMaterialInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetMaterialInternal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetMaterialInternal",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, material))
+            method.invoke_unchecked(self, (hashCode, material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -495,7 +523,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -508,12 +536,13 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetSpriteAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetSpriteAsset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetSpriteAsset", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (hashCode, spriteAsset))
+            method.invoke_unchecked((), (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -524,7 +553,7 @@ impl crate::TMPro::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -537,35 +566,38 @@ impl crate::TMPro::MaterialReferenceManager {
             >("TryGetSpriteAssetInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetSpriteAssetInternal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetSpriteAssetInternal",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (hashCode, spriteAsset))
+            method.invoke_unchecked(self, (hashCode, spriteAsset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_instance() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::MaterialReferenceManager>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::MaterialReferenceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::TMPro::MaterialReferenceManager>,
@@ -573,13 +605,14 @@ impl crate::TMPro::MaterialReferenceManager {
             >("get_instance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_instance", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::MaterialReferenceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_instance", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::TMPro::MaterialReferenceManager,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

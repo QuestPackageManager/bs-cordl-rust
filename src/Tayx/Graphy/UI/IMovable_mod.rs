@@ -42,7 +42,7 @@ impl crate::Tayx::Graphy::UI::IMovable {
         &mut self,
         newModulePosition: crate::Tayx::Graphy::GraphyManager_ModulePosition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Tayx::Graphy::UI::IMovable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Tayx::Graphy::GraphyManager_ModulePosition),
                 quest_hook::libil2cpp::Void,
@@ -50,12 +50,13 @@ impl crate::Tayx::Graphy::UI::IMovable {
             >("SetPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Tayx::Graphy::UI::IMovable as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPosition", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (newModulePosition))
+            method.invoke_unchecked(self, (newModulePosition))?
         };
         Ok(__cordl_ret.into())
     }

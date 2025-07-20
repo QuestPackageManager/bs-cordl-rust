@@ -92,16 +92,20 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::EnumerableSorter_2<
+            TElement,
+            TKey,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("CompareKeys")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareKeys", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::EnumerableSorter_2 < TElement, TKey > as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareKeys", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (index1, index2))
+            method.invoke_unchecked(self, (index1, index2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +122,10 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::EnumerableSorter_2<
+            TElement,
+            TKey,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -131,12 +138,13 @@ impl<
             >("ComputeKeys")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeKeys", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::EnumerableSorter_2 < TElement, TKey > as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeKeys", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (elements, count))
+            method.invoke_unchecked(self, (elements, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +187,10 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::EnumerableSorter_2<
+            TElement,
+            TKey,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
@@ -196,12 +207,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::EnumerableSorter_2 < TElement, TKey > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (keySelector, comparer, descending, next))
+            method.invoke_unchecked(self, (keySelector, comparer, descending, next))?
         };
         Ok(__cordl_ret.into())
     }

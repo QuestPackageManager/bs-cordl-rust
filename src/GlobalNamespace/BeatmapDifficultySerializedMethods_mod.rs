@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
             crate::GlobalNamespace::BeatmapDifficulty,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultySerializedMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -65,12 +65,14 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
             >("BeatmapDifficultyFromSerializedName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeatmapDifficultyFromSerializedName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultySerializedMethods as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BeatmapDifficultyFromSerializedName", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, difficulty))
+            method.invoke_unchecked((), (name, difficulty))?
         };
         Ok(__cordl_ret.into())
     }
@@ -79,7 +81,7 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultySerializedMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::BeatmapDifficulty),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -87,13 +89,14 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
             >("SerializedName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializedName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultySerializedMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializedName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (difficulty)) };
+        > = unsafe { method.invoke_unchecked((), (difficulty))? };
         Ok(__cordl_ret.into())
     }
 }

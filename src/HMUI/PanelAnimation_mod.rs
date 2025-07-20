@@ -59,7 +59,7 @@ impl crate::HMUI::PanelAnimation {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimation as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -76,8 +76,9 @@ impl crate::HMUI::PanelAnimation {
             >("AnimationCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AnimationCoroutine", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::PanelAnimation as quest_hook::libil2cpp::Type >
+                    ::class(), "AnimationCoroutine", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -96,7 +97,7 @@ impl crate::HMUI::PanelAnimation {
                         parentAlphaAnimationCurve,
                         finishedCallback,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +127,7 @@ impl crate::HMUI::PanelAnimation {
         >,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimation as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
@@ -143,8 +144,9 @@ impl crate::HMUI::PanelAnimation {
             >("StartAnimation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartAnimation", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::PanelAnimation as quest_hook::libil2cpp::Type >
+                    ::class(), "StartAnimation", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -161,23 +163,24 @@ impl crate::HMUI::PanelAnimation {
                         parentAlphaAnimationCurve,
                         finishedCallback,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::PanelAnimation as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::PanelAnimation as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

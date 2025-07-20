@@ -100,16 +100,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         f: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (f))
+            method.invoke_unchecked(self, (f))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +125,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         g: f32,
         h: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32, f32, f32, f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -132,12 +133,13 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))
+            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,16 +147,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         f: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (f))
+            method.invoke_unchecked(self, (f))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +168,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         c: f64,
         d: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f64, f64, f64, f64),
                 quest_hook::libil2cpp::Void,
@@ -173,12 +176,13 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,16 +190,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         v: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i16), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -218,7 +223,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         o: i16,
         p: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i16,
@@ -243,13 +248,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 16usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 16usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p))
+                .invoke_unchecked(
+                    self,
+                    (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,16 +266,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         v: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +291,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         g: i32,
         h: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32, i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -289,12 +299,13 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))
+            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,16 +313,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         f: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (f))
+            method.invoke_unchecked(self, (f))?
         };
         Ok(__cordl_ret.into())
     }
@@ -322,7 +334,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         c: i64,
         d: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64, i64, i64, i64),
                 quest_hook::libil2cpp::Void,
@@ -330,12 +342,13 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -343,16 +356,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         b: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i8), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (b))
+            method.invoke_unchecked(self, (b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -391,7 +405,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         E: i8,
         F: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i8,
@@ -432,8 +446,9 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 32usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 32usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -474,7 +489,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
                         E,
                         F,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -482,16 +497,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         v: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u16), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -514,7 +530,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         o: u16,
         p: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u16,
@@ -539,13 +555,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 16usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 16usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p))
+                .invoke_unchecked(
+                    self,
+                    (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -553,16 +573,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         v: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (v))
+            method.invoke_unchecked(self, (v))?
         };
         Ok(__cordl_ret.into())
     }
@@ -577,7 +598,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         g: u32,
         h: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, u32, u32, u32, u32, u32, u32, u32),
                 quest_hook::libil2cpp::Void,
@@ -585,12 +606,13 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))
+            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))?
         };
         Ok(__cordl_ret.into())
     }
@@ -598,16 +620,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         f: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (f))
+            method.invoke_unchecked(self, (f))?
         };
         Ok(__cordl_ret.into())
     }
@@ -618,7 +641,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         c: u64,
         d: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u64, u64, u64, u64),
                 quest_hook::libil2cpp::Void,
@@ -626,12 +649,13 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, b, c, d))
+            method.invoke_unchecked(self, (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -639,16 +663,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         b: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u8), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (b))
+            method.invoke_unchecked(self, (b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -687,7 +712,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         E: u8,
         F: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u8,
@@ -728,8 +753,9 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 32usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 32usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -770,7 +796,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
                         E,
                         F,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -779,7 +805,7 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         lo: crate::Unity::Burst::Intrinsics::v128,
         hi: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Unity::Burst::Intrinsics::v128,
@@ -790,12 +816,13 @@ impl crate::Unity::Burst::Intrinsics::v256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::v256 as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lo, hi))
+            method.invoke_unchecked(self, (lo, hi))?
         };
         Ok(__cordl_ret.into())
     }

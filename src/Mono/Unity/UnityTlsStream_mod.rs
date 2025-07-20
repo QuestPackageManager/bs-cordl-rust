@@ -46,7 +46,7 @@ impl crate::Mono::Unity::UnityTlsStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsContext>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Mono::Net::Security::MonoSslAuthenticationOptions,
@@ -56,13 +56,14 @@ impl crate::Mono::Unity::UnityTlsStream {
             >("CreateContext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateContext", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateContext", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::MobileTlsContext,
-        > = unsafe { method.invoke_unchecked(self, (options)) };
+        > = unsafe { method.invoke_unchecked(self, (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -97,7 +98,7 @@ impl crate::Mono::Unity::UnityTlsStream {
             crate::Mono::Net::Security::MobileTlsProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -115,8 +116,9 @@ impl crate::Mono::Unity::UnityTlsStream {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Unity::UnityTlsStream as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -124,7 +126,7 @@ impl crate::Mono::Unity::UnityTlsStream {
                 .invoke_unchecked(
                     self,
                     (innerStream, leaveInnerStreamOpen, owner, settings, provider),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

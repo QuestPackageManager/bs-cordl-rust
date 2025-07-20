@@ -48,7 +48,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::BufferUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -62,13 +62,14 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
             >("EnsureBufferSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureBufferSize", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::BufferUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureBufferSize", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { method.invoke_unchecked((), (bufferPool, _cordl_size, buffer)) };
+        > = unsafe { method.invoke_unchecked((), (bufferPool, _cordl_size, buffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn RentBuffer(
@@ -79,7 +80,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::BufferUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -92,13 +93,14 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
             >("RentBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RentBuffer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::BufferUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "RentBuffer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = unsafe { method.invoke_unchecked((), (bufferPool, minSize)) };
+        > = unsafe { method.invoke_unchecked((), (bufferPool, minSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReturnBuffer(
@@ -107,7 +109,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
         >,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::BufferUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -120,12 +122,13 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
             >("ReturnBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReturnBuffer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::BufferUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ReturnBuffer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bufferPool, buffer))
+            method.invoke_unchecked((), (bufferPool, buffer))?
         };
         Ok(__cordl_ret.into())
     }

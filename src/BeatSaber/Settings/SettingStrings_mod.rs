@@ -47,7 +47,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -59,12 +59,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("AppendProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendProperty", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendProperty", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, name, value))
+            method.invoke_unchecked((), (sb, name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +76,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -91,12 +92,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("Decode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "Decode", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, text, log))
+            method.invoke_unchecked((), (settings, text, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +106,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         stream: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -117,19 +119,20 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("Encode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "Encode", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (settings, stream))
+            method.invoke_unchecked((), (settings, stream))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsPureWhiteSpace(
         property: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>),
                 bool,
@@ -137,11 +140,12 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("IsPureWhiteSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPureWhiteSpace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "IsPureWhiteSpace", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (property)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (property))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBool(
@@ -152,7 +156,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -167,12 +171,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadBool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadBool", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadBool", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))
+            method.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -188,7 +193,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -203,12 +208,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadEnum", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadEnum", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))
+            method.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +226,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -235,12 +241,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFloat", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadFloat", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))
+            method.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,7 +259,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -267,12 +274,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadInt", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadInt", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, text, value, err))
+            method.invoke_unchecked((), (name, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -283,7 +291,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -299,12 +307,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadProperties", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadProperties", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, text, log))
+            method.invoke_unchecked((), (settings, text, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -316,7 +325,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -333,12 +342,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadProperty", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadProperty", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, name, value, log))
+            method.invoke_unchecked((), (settings, name, value, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -349,7 +359,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -365,12 +375,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadPropertyLine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadPropertyLine", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadPropertyLine", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (settings, property, log))
+            method.invoke_unchecked((), (settings, property, log))?
         };
         Ok(__cordl_ret.into())
     }
@@ -384,7 +395,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -401,12 +412,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("ReadString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadString", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadString", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl__, text, value, err))
+            method.invoke_unchecked((), (_cordl__, text, value, err))?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,7 +426,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         text: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Settings::SettingStrings as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -427,12 +439,13 @@ impl crate::BeatSaber::Settings::SettingStrings {
             >("WriteProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Settings::SettingStrings as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteProperties", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (settings, text))
+            method.invoke_unchecked((), (settings, text))?
         };
         Ok(__cordl_ret.into())
     }

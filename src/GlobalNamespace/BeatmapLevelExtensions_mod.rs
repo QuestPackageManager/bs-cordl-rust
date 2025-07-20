@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapLevelExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -68,13 +68,14 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
             >("CreateColorScheme")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateColorScheme", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapLevelExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateColorScheme", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
-        > = unsafe { method.invoke_unchecked((), (idx, colorSchemes)) };
+        > = unsafe { method.invoke_unchecked((), (idx, colorSchemes))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToCensoredRuntime(
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapLevelExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
@@ -100,8 +101,9 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
             >("ToCensoredRuntime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToCensoredRuntime", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapLevelExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToCensoredRuntime", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -111,7 +113,7 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
                 .invoke_unchecked(
                     (),
                     (beatmapLevelSo, coverSprite, censoredLocalizedSongName),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +122,7 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapLevelExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -128,13 +130,14 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
             >("ToRuntime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRuntime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapLevelExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRuntime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevel,
-        > = unsafe { method.invoke_unchecked((), (beatmapLevelSo)) };
+        > = unsafe { method.invoke_unchecked((), (beatmapLevelSo))? };
         Ok(__cordl_ret.into())
     }
 }

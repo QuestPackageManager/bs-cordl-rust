@@ -48,31 +48,33 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
     #[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
     pub type CubicSolveResult = crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult;
     pub fn CubeRoot(x: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), f32, 1usize>("CubeRoot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CubeRoot", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "CubeRoot", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (x)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (x))? };
         Ok(__cordl_ret.into())
     }
     pub fn Evaluate(
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), crate::UnityEngine::Vector3, 1usize>("Evaluate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Evaluate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "Evaluate", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (t))
+            method.invoke_unchecked(self, (t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +82,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 crate::UnityEngine::Vector3,
@@ -88,12 +90,14 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
             >("EvaluateFirstDerivation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluateFirstDerivation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "EvaluateFirstDerivation",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (t))
+            method.invoke_unchecked(self, (t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +105,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         &mut self,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 crate::UnityEngine::Vector3,
@@ -109,12 +113,13 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
             >("EvaluatePosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluatePosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "EvaluatePosition", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -122,7 +127,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 crate::UnityEngine::Vector3,
@@ -130,12 +135,14 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
             >("EvaluateSecondDerivation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluateSecondDerivation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "EvaluateSecondDerivation",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (t))
+            method.invoke_unchecked(self, (t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,16 +151,17 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         segmentIndex: i32,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, f32), f32, 2usize>("GetTForSegment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTForSegment", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTForSegment", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked(self, (segmentIndex, _cordl_time))
+            method.invoke_unchecked(self, (segmentIndex, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +171,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         t0Value: quest_hook::libil2cpp::ByRefMut<f32>,
         t1Value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -175,12 +183,14 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
             >("GetTimeValuesForSegment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTimeValuesForSegment", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTimeValuesForSegment",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (segmentIndex, t0Value, t1Value))
+            method.invoke_unchecked(self, (segmentIndex, t0Value, t1Value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,22 +207,24 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         &mut self,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), f32, 1usize>("OffsetSegmentAndGetT")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OffsetSegmentAndGetT", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "OffsetSegmentAndGetT",
+                    1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (_cordl_time)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn OffsetStartIndexToDistance(
         &mut self,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -220,12 +232,14 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
             >("OffsetStartIndexToDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OffsetStartIndexToDistance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "OffsetStartIndexToDistance", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -237,7 +251,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32, f32),
                 crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult,
@@ -245,12 +259,13 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
             >("SolveCubic")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SolveCubic", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), "SolveCubic", 4usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult = unsafe {
-            method.invoke_unchecked((), (a, b, c, d))
+            method.invoke_unchecked((), (a, b, c, d))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +273,7 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         &mut self,
         spline: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierSpline>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierSpline>),
                 quest_hook::libil2cpp::Void,
@@ -266,12 +281,13 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (spline))
+            method.invoke_unchecked(self, (spline))?
         };
         Ok(__cordl_ret.into())
     }
@@ -396,16 +412,17 @@ impl crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         &mut self,
         solution1: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (solution1))
+            method.invoke_unchecked(self, (solution1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,16 +431,17 @@ impl crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         solution1: f32,
         solution2: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32, f32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (solution1, solution2))
+            method.invoke_unchecked(self, (solution1, solution2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -433,16 +451,17 @@ impl crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         solution2: f32,
         solution3: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32, f32, f32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (solution1, solution2, solution3))
+            method.invoke_unchecked(self, (solution1, solution2, solution3))?
         };
         Ok(__cordl_ret.into())
     }

@@ -44,7 +44,7 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Cryptography::CryptoConvert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
@@ -52,13 +52,15 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
             >("FromCapiPrivateKeyBlob")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromCapiPrivateKeyBlob", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Cryptography::CryptoConvert as
+                    quest_hook::libil2cpp::Type > ::class(), "FromCapiPrivateKeyBlob",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (blob)) };
+        > = unsafe { method.invoke_unchecked((), (blob))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromCapiPrivateKeyBlob_i32_1(
@@ -67,7 +69,7 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Cryptography::CryptoConvert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
@@ -75,13 +77,15 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
             >("FromCapiPrivateKeyBlob")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromCapiPrivateKeyBlob", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Cryptography::CryptoConvert as
+                    quest_hook::libil2cpp::Type > ::class(), "FromCapiPrivateKeyBlob",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (blob, offset)) };
+        > = unsafe { method.invoke_unchecked((), (blob, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetParametersFromCapiPrivateKeyBlob(
@@ -90,7 +94,7 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::RSAParameters,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Cryptography::CryptoConvert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 crate::System::Security::Cryptography::RSAParameters,
@@ -98,12 +102,14 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
             >("GetParametersFromCapiPrivateKeyBlob")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParametersFromCapiPrivateKeyBlob", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Cryptography::CryptoConvert as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetParametersFromCapiPrivateKeyBlob", 2usize
                 )
             });
         let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
-            method.invoke_unchecked((), (blob, offset))
+            method.invoke_unchecked((), (blob, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +118,7 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Cryptography::CryptoConvert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -120,20 +126,21 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
             >("ToHex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToHex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Cryptography::CryptoConvert as
+                    quest_hook::libil2cpp::Type > ::class(), "ToHex", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToInt32LE(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Cryptography::CryptoConvert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i32,
@@ -141,18 +148,19 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
             >("ToInt32LE")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToInt32LE", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Cryptography::CryptoConvert as
+                    quest_hook::libil2cpp::Type > ::class(), "ToInt32LE", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bytes, offset)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bytes, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToUInt32LE(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Cryptography::CryptoConvert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u32,
@@ -160,11 +168,12 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
             >("ToUInt32LE")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUInt32LE", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Cryptography::CryptoConvert as
+                    quest_hook::libil2cpp::Type > ::class(), "ToUInt32LE", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bytes, offset)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bytes, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn Trim(
@@ -172,7 +181,7 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Cryptography::CryptoConvert as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -180,13 +189,14 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
             >("Trim")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Trim", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Cryptography::CryptoConvert as
+                    quest_hook::libil2cpp::Type > ::class(), "Trim", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (array)) };
+        > = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,7 +50,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeDat
             crate::UnityEngine::ResourceManagement::ResourceManager,
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -65,12 +65,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeDat
             >("ComputeSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeSize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData
+                    as quest_hook::libil2cpp::Type > ::class(), "ComputeSize", 2usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked(self, (location, resourceManager))
+            method.invoke_unchecked(self, (location, resourceManager))?
         };
         Ok(__cordl_ret.into())
     }

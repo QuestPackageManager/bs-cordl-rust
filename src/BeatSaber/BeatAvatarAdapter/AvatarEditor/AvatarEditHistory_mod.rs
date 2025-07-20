@@ -51,16 +51,17 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "Clear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,32 +75,34 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
     pub fn Redo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Redo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Redo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "Redo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Undo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Undo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Undo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "Undo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +113,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         >,
         avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -123,28 +126,31 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
             >("UpdateEditHistory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateEditHistory", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "UpdateEditHistory",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (avatarData, avatarEditPart))
+            method.invoke_unchecked(self, (avatarData, avatarEditPart))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +159,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot,
@@ -161,19 +167,21 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
             >("get_currentSnapShot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_currentSnapShot", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "get_currentSnapShot",
+                    0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_lastEditedPart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::BeatAvatarSDK::AvatarPart> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatSaber::BeatAvatarSDK::AvatarPart,
@@ -181,37 +189,43 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
             >("get_lastEditedPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lastEditedPart", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "get_lastEditedPart",
+                    0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::BeatAvatarSDK::AvatarPart = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_redoAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_redoAvailable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_redoAvailable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "get_redoAvailable",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_undoAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_undoAvailable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_undoAvailable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory
+                    as quest_hook::libil2cpp::Type > ::class(), "get_undoAvailable",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

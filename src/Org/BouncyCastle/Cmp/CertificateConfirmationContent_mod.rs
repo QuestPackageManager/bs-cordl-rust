@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -71,8 +71,9 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             >("GetStatusMessages")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStatusMessages", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::CertificateConfirmationContent as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStatusMessages", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -81,7 +82,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
                     crate::Org::BouncyCastle::Cmp::CertificateStatus,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_CertConfirmContent0(
@@ -116,7 +117,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -126,13 +127,14 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             >("ToAsn1Structure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToAsn1Structure", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::CertificateConfirmationContent as
+                    quest_hook::libil2cpp::Type > ::class(), "ToAsn1Structure", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_CertConfirmContent0(
@@ -141,7 +143,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Cmp::CertConfirmContent,
@@ -151,12 +153,13 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::CertificateConfirmationContent as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (content))
+            method.invoke_unchecked(self, (content))?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +172,7 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             crate::Org::BouncyCastle::Cms::DefaultDigestAlgorithmIdentifierFinder,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -184,12 +187,13 @@ impl crate::Org::BouncyCastle::Cmp::CertificateConfirmationContent {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::CertificateConfirmationContent as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (content, digestAlgFinder))
+            method.invoke_unchecked(self, (content, digestAlgFinder))?
         };
         Ok(__cordl_ret.into())
     }

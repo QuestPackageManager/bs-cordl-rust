@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipher>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipher>,
@@ -61,28 +61,32 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             >("BuildCipher")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildCipher", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildCipher", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipher,
-        > = unsafe { method.invoke_unchecked(self, (stream)) };
+        > = unsafe { method.invoke_unchecked(self, (stream))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaxOutputSize(
         &mut self,
         inputLen: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetMaxOutputSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaxOutputSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaxOutputSize", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (inputLen)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (inputLen))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -110,7 +114,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -126,12 +130,14 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (encryptionOID, keySize, random))
+            method.invoke_unchecked(self, (encryptionOID, keySize, random))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +146,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -148,13 +154,16 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             >("get_AlgorithmDetails")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AlgorithmDetails", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_AlgorithmDetails",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Key(
@@ -162,7 +171,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -172,13 +181,15 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey {
             >("get_Key")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Key", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Operators::Asn1CipherBuilderWithKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Key", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

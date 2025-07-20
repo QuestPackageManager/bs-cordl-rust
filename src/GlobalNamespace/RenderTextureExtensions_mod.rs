@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::RenderTextureExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RenderTextureExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -52,12 +52,13 @@ impl crate::GlobalNamespace::RenderTextureExtensions {
             >("GetTexture2D")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTexture2D", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RenderTextureExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTexture2D", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked((), (rt))
+            method.invoke_unchecked((), (rt))?
         };
         Ok(__cordl_ret.into())
     }

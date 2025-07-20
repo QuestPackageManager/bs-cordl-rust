@@ -60,16 +60,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -79,7 +80,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
@@ -87,20 +88,21 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("EnsureDataValidity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureDataValidity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureDataValidity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { method.invoke_unchecked(self, (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelDataVersion(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::GlobalNamespace::BeatmapLevelDataVersion,
@@ -108,12 +110,14 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("GetLevelDataVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLevelDataVersion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLevelDataVersion",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapLevelDataVersion = unsafe {
-            method.invoke_unchecked(self, (levelId))
+            method.invoke_unchecked(self, (levelId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +132,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -143,15 +147,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("GetLevelDataVersionInternalAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLevelDataVersionInternalAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetLevelDataVersionInternalAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::BeatmapLevelDataVersion,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelId, token)) };
+        > = unsafe { method.invoke_unchecked(self, (levelId, token))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelEntitlementStatusInternalAsync(
@@ -165,7 +171,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -180,15 +186,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("GetLevelEntitlementStatusInternalAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLevelEntitlementStatusInternalAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetLevelEntitlementStatusInternalAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelId, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (levelId, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPackEntitlementStatusInternalAsync(
@@ -202,7 +210,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -217,15 +225,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("GetPackEntitlementStatusInternalAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPackEntitlementStatusInternalAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetPackEntitlementStatusInternalAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRedirectedLevelPackProductData(
@@ -239,7 +249,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -254,22 +264,24 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("GetRedirectedLevelPackProductData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRedirectedLevelPackProductData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetRedirectedLevelPackProductData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (packId, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (packId, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasLevelEntitlement(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -277,18 +289,20 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("HasLevelEntitlement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasLevelEntitlement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "HasLevelEntitlement",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelId)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelId))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasLevelPackEntitlement(
         &mut self,
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -296,11 +310,13 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("HasLevelPackEntitlement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasLevelPackEntitlement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "HasLevelPackEntitlement",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelPackId)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelPackId))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -309,7 +325,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::GlobalNamespace::IVRPlatformHelper,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>),
                 quest_hook::libil2cpp::Void,
@@ -317,19 +333,20 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (vrPlatformHelper))
+            method.invoke_unchecked(self, (vrPlatformHelper))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InvalidateDataInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -337,12 +354,14 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("InvalidateDataInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvalidateDataInternal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "InvalidateDataInternal",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -357,7 +376,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -372,15 +391,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("IsPackBetterBuyThanLevelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPackBetterBuyThanLevelAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsPackBetterBuyThanLevelAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -411,7 +432,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -426,15 +447,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("OpenLevelPackProductStoreAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenLevelPackProductStoreAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "OpenLevelPackProductStoreAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::OpenProductStoreResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (levelPackId, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn OpenLevelProductStoreAsync(
@@ -448,7 +471,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -463,22 +486,24 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("OpenLevelProductStoreAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenLevelProductStoreAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "OpenLevelProductStoreAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::OpenProductStoreResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (levelId, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (levelId, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn OpenStore(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -486,12 +511,13 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("OpenStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenStore", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "OpenStore", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (uri))
+            method.invoke_unchecked(self, (uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -505,7 +531,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<
@@ -517,15 +543,17 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("UpdateEntitlementsAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateEntitlementsAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateEntitlementsAsync",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn _GetRedirectedLevelPackProductData_g__GetProductLabel_17_0(
@@ -535,7 +563,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
@@ -545,14 +573,15 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("<GetRedirectedLevelPackProductData>g__GetProductLabel|17_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<GetRedirectedLevelPackProductData>g__GetProductLabel|17_0",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<GetRedirectedLevelPackProductData>g__GetProductLabel|17_0", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (levelPackProductData)) };
+        > = unsafe { method.invoke_unchecked((), (levelPackProductData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _HasLevelPackEntitlement_b__19_0(
@@ -561,7 +590,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
@@ -571,12 +600,14 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >("<HasLevelPackEntitlement>b__19_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<HasLevelPackEntitlement>b__19_0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<HasLevelPackEntitlement>b__19_0", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (levelProductData))
+            method.invoke_unchecked(self, (levelProductData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -587,7 +618,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
@@ -599,15 +630,16 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             )
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "<OpenLevelProductStoreAsync>g__GetProductLabelForProductBrowseDialog|13_0",
                     1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (levelProductData)) };
+        > = unsafe { method.invoke_unchecked((), (levelProductData))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -619,7 +651,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             crate::GlobalNamespace::SonyLevelProductCollectionModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPlatformAdditionalContentModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -634,8 +666,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPlatformAdditionalContentModel as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -643,7 +676,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                 .invoke_unchecked(
                     self,
                     (sonyCommerceHelper, sonyLevelProductCollectionModel),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

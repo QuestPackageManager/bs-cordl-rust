@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers {
         >,
         noteJumpValue: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -66,8 +66,9 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers {
             >("GetNoteJumpValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNoteJumpValues", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapObjectSpawnControllerHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNoteJumpValues", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -80,7 +81,7 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers {
                         noteJumpValueType,
                         noteJumpValue,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

@@ -40,46 +40,49 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::MathUtils {
 #[cfg(feature = "Newtonsoft+Json+Utilities+MathUtils")]
 impl crate::Newtonsoft::Json::Utilities::MathUtils {
     pub fn ApproxEquals(d1: f64, d2: f64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::MathUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), bool, 2usize>("ApproxEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApproxEquals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::MathUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ApproxEquals", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (d1, d2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (d1, d2))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntLength(i: u64) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::MathUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), i32, 1usize>("IntLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::MathUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IntLength", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntToHex(n: i32) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::MathUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), char, 1usize>("IntToHex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntToHex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::MathUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IntToHex", 1usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (n)) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (n))? };
         Ok(__cordl_ret.into())
     }
     pub fn Max_Nullable_1_Nullable_1_0(
         val1: crate::System::Nullable_1<i32>,
         val2: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::MathUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Nullable_1<i32>, crate::System::Nullable_1<i32>),
                 crate::System::Nullable_1<i32>,
@@ -87,12 +90,13 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::MathUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Max", 2usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
-            method.invoke_unchecked((), (val1, val2))
+            method.invoke_unchecked((), (val1, val2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +104,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
         val1: crate::System::Nullable_1<f64>,
         val2: crate::System::Nullable_1<f64>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f64>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::MathUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Nullable_1<f64>, crate::System::Nullable_1<f64>),
                 crate::System::Nullable_1<f64>,
@@ -108,12 +112,13 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::MathUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Max", 2usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<f64> = unsafe {
-            method.invoke_unchecked((), (val1, val2))
+            method.invoke_unchecked((), (val1, val2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +126,7 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
         val1: crate::System::Nullable_1<i32>,
         val2: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::MathUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Nullable_1<i32>, crate::System::Nullable_1<i32>),
                 crate::System::Nullable_1<i32>,
@@ -129,12 +134,13 @@ impl crate::Newtonsoft::Json::Utilities::MathUtils {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::MathUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Min", 2usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
-            method.invoke_unchecked((), (val1, val2))
+            method.invoke_unchecked((), (val1, val2))?
         };
         Ok(__cordl_ret.into())
     }

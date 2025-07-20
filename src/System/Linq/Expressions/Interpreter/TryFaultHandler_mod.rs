@@ -63,7 +63,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
         finallyStart: i32,
         finallyEnd: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryFaultHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -71,12 +71,13 @@ impl crate::System::Linq::Expressions::Interpreter::TryFaultHandler {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::TryFaultHandler as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tryStart, tryEnd, finallyStart, finallyEnd))
+            method.invoke_unchecked(self, (tryStart, tryEnd, finallyStart, finallyEnd))?
         };
         Ok(__cordl_ret.into())
     }

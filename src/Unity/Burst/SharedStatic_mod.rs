@@ -43,7 +43,7 @@ impl crate::Unity::Burst::SharedStatic {
     pub fn CheckResult(
         result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::SharedStatic as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -51,19 +51,20 @@ impl crate::Unity::Burst::SharedStatic {
             >("CheckResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckResult", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::SharedStatic as quest_hook::libil2cpp::Type >
+                    ::class(), "CheckResult", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (result))
+            method.invoke_unchecked((), (result))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckSizeOf(
         sizeOf: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::SharedStatic as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32),
                 quest_hook::libil2cpp::Void,
@@ -71,12 +72,13 @@ impl crate::Unity::Burst::SharedStatic {
             >("CheckSizeOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckSizeOf", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::SharedStatic as quest_hook::libil2cpp::Type >
+                    ::class(), "CheckSizeOf", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sizeOf))
+            method.invoke_unchecked((), (sizeOf))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +90,7 @@ impl crate::Unity::Burst::SharedStatic {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::SharedStatic as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, i64, u32, u32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -96,8 +98,9 @@ impl crate::Unity::Burst::SharedStatic {
             >("GetOrCreateSharedStaticInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOrCreateSharedStaticInternal", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::SharedStatic as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOrCreateSharedStaticInternal", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -107,7 +110,7 @@ impl crate::Unity::Burst::SharedStatic {
                 .invoke_unchecked(
                     (),
                     (getHashCode64, getSubHashCode64, sizeOf, alignment),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,16 +175,17 @@ impl crate::Unity::Burst::SharedStatic_PreserveAttribute {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::SharedStatic_PreserveAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::SharedStatic_PreserveAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

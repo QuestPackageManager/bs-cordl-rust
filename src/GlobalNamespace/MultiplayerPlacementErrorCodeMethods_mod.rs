@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
     pub fn ToConnectionFailedReason(
         errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ConnectionFailedReason> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::MultiplayerPlacementErrorCode),
                 crate::GlobalNamespace::ConnectionFailedReason,
@@ -51,12 +51,14 @@ impl crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
             >("ToConnectionFailedReason")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToConnectionFailedReason", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerPlacementErrorCodeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "ToConnectionFailedReason",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::ConnectionFailedReason = unsafe {
-            method.invoke_unchecked((), (errorCode))
+            method.invoke_unchecked((), (errorCode))?
         };
         Ok(__cordl_ret.into())
     }

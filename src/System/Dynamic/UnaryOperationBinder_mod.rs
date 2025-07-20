@@ -50,7 +50,7 @@ impl crate::System::Dynamic::UnaryOperationBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::UnaryOperationBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
@@ -67,13 +67,14 @@ impl crate::System::Dynamic::UnaryOperationBinder {
             >("Bind")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Bind", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::UnaryOperationBinder as
+                    quest_hook::libil2cpp::Type > ::class(), "Bind", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { method.invoke_unchecked(self, (target, args)) };
+        > = unsafe { method.invoke_unchecked(self, (target, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn FallbackUnaryOperation_DynamicMetaObject0(
@@ -82,7 +83,7 @@ impl crate::System::Dynamic::UnaryOperationBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::UnaryOperationBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>),
                 quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
@@ -90,13 +91,15 @@ impl crate::System::Dynamic::UnaryOperationBinder {
             >("FallbackUnaryOperation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FallbackUnaryOperation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::UnaryOperationBinder as
+                    quest_hook::libil2cpp::Type > ::class(), "FallbackUnaryOperation",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { method.invoke_unchecked(self, (target)) };
+        > = unsafe { method.invoke_unchecked(self, (target))? };
         Ok(__cordl_ret.into())
     }
     pub fn FallbackUnaryOperation_DynamicMetaObject1(
@@ -108,7 +111,7 @@ impl crate::System::Dynamic::UnaryOperationBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::UnaryOperationBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
@@ -119,13 +122,15 @@ impl crate::System::Dynamic::UnaryOperationBinder {
             >("FallbackUnaryOperation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FallbackUnaryOperation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::UnaryOperationBinder as
+                    quest_hook::libil2cpp::Type > ::class(), "FallbackUnaryOperation",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { method.invoke_unchecked(self, (target, errorSuggestion)) };
+        > = unsafe { method.invoke_unchecked(self, (target, errorSuggestion))? };
         Ok(__cordl_ret.into())
     }
 }

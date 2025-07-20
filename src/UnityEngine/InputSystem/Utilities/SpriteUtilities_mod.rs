@@ -45,7 +45,7 @@ impl crate::UnityEngine::InputSystem::Utilities::SpriteUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::SpriteUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::UnityEngine::Color32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -53,12 +53,13 @@ impl crate::UnityEngine::InputSystem::Utilities::SpriteUtilities {
             >("CreateCircleSprite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCircleSprite", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::SpriteUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateCircleSprite", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = unsafe {
-            method.invoke_unchecked((), (radius, colour))
+            method.invoke_unchecked((), (radius, colour))?
         };
         Ok(__cordl_ret.into())
     }

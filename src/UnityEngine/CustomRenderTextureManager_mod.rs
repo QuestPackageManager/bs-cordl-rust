@@ -42,7 +42,7 @@ impl crate::UnityEngine::CustomRenderTextureManager {
     pub fn InvokeOnTextureLoaded_Internal(
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomRenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CustomRenderTextureManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomRenderTexture>),
                 quest_hook::libil2cpp::Void,
@@ -50,19 +50,21 @@ impl crate::UnityEngine::CustomRenderTextureManager {
             >("InvokeOnTextureLoaded_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeOnTextureLoaded_Internal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CustomRenderTextureManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InvokeOnTextureLoaded_Internal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (source))
+            method.invoke_unchecked((), (source))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeOnTextureUnloaded_Internal(
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomRenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::CustomRenderTextureManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomRenderTexture>),
                 quest_hook::libil2cpp::Void,
@@ -70,12 +72,14 @@ impl crate::UnityEngine::CustomRenderTextureManager {
             >("InvokeOnTextureUnloaded_Internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeOnTextureUnloaded_Internal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::CustomRenderTextureManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InvokeOnTextureUnloaded_Internal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (source))
+            method.invoke_unchecked((), (source))?
         };
         Ok(__cordl_ret.into())
     }

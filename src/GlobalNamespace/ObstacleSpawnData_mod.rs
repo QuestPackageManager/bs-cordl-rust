@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::ObstacleSpawnData {
         obstacleWidth: f32,
         obstacleHeight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ObstacleSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -115,12 +115,13 @@ impl crate::GlobalNamespace::ObstacleSpawnData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ObstacleSpawnData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (moveOffset, obstacleWidth, obstacleHeight))
+            method.invoke_unchecked(self, (moveOffset, obstacleWidth, obstacleHeight))?
         };
         Ok(__cordl_ret.into())
     }

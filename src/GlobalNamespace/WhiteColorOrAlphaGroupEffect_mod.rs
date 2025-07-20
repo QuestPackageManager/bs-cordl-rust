@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         colorBoost: bool,
         brightness: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::EnvironmentColorType, bool, f32),
                 crate::UnityEngine::Color,
@@ -54,12 +54,13 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
             >("GetColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetColor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::WhiteColorOrAlphaGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(), "GetColor", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, (colorType, colorBoost, brightness))
+            method.invoke_unchecked(self, (colorType, colorBoost, brightness))?
         };
         Ok(__cordl_ret.into())
     }
@@ -115,7 +116,7 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         >,
         bpmController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -137,8 +138,9 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::WhiteColorOrAlphaGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -154,7 +156,7 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
                         beatmapCallbacksController,
                         bpmController,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

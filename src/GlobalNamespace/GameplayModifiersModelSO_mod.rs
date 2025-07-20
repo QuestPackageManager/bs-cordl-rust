@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Func_2<
@@ -126,13 +126,15 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("CreateGameplayModifiers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateGameplayModifiers", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateGameplayModifiers",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
-        > = unsafe { method.invoke_unchecked(self, (valueGetter)) };
+        > = unsafe { method.invoke_unchecked(self, (valueGetter))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateModifierParamsList(
@@ -149,7 +151,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>),
                 quest_hook::libil2cpp::Gc<
@@ -163,8 +165,10 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("CreateModifierParamsList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateModifierParamsList", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateModifierParamsList",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -173,7 +177,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                     crate::GlobalNamespace::GameplayModifierParamsSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (gameplayModifiers)) };
+        > = unsafe { method.invoke_unchecked(self, (gameplayModifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetGameplayModifierParams(
@@ -182,7 +186,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::GameplayModifierMask),
                 quest_hook::libil2cpp::Gc<
@@ -192,13 +196,15 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("GetGameplayModifierParams")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGameplayModifierParams", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "GetGameplayModifierParams",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifierParamsSO,
-        > = unsafe { method.invoke_unchecked(self, (modifier)) };
+        > = unsafe { method.invoke_unchecked(self, (modifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetModifiedScoreForGameplayModifiers(
@@ -213,7 +219,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -231,12 +237,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("GetModifiedScoreForGameplayModifiers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetModifiedScoreForGameplayModifiers", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetModifiedScoreForGameplayModifiers", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (multipliedScore, modifierParams, energy))
+            method.invoke_unchecked(self, (multipliedScore, modifierParams, energy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +257,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -262,12 +270,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("GetModifierBoolValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetModifierBoolValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "GetModifierBoolValue",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (gameplayModifiers, gameplayModifierParams))
+            method.invoke_unchecked(self, (gameplayModifiers, gameplayModifierParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +294,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::GameplayModifiers_SongSpeed,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Func_2<
@@ -299,12 +309,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("GetSongSpeedFromValueGetter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSongSpeedFromValueGetter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSongSpeedFromValueGetter", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::GameplayModifiers_SongSpeed = unsafe {
-            method.invoke_unchecked(self, (valueGetter))
+            method.invoke_unchecked(self, (valueGetter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -319,7 +331,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -336,12 +348,13 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("GetTotalMultiplier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTotalMultiplier", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTotalMultiplier", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked(self, (modifierParams, energy))
+            method.invoke_unchecked(self, (modifierParams, energy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -360,7 +373,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -381,8 +394,10 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("MaxModifiedScoreForMaxMultipliedScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MaxModifiedScoreForMaxMultipliedScore", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MaxModifiedScoreForMaxMultipliedScore", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -390,7 +405,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                 .invoke_unchecked(
                     self,
                     (maxMultipliedScore, modifierParams, gameplayModifiersModel, energy),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -406,7 +421,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -424,12 +439,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("MaxModifiedScoreForMaxMultipliedScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MaxModifiedScoreForMaxMultipliedScore", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MaxModifiedScoreForMaxMultipliedScore", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (maxMultipliedScore, modifierParams, energy))
+            method.invoke_unchecked(self, (maxMultipliedScore, modifierParams, energy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -443,32 +460,34 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnEnable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "OnEnable", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -486,7 +505,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -503,8 +522,10 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
             >("get_gameplayModifierGetters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_gameplayModifierGetters", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameplayModifiersModelSO as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_gameplayModifierGetters", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -516,7 +537,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                     crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -583,7 +604,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -595,12 +616,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
+                    as quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (gameplayModifiers, callback, object))
+            method.invoke_unchecked(self, (gameplayModifiers, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -608,7 +631,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 bool,
@@ -616,11 +639,13 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
+                    as quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -629,7 +654,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
             crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>),
                 bool,
@@ -637,12 +662,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
+                    as quest_hook::libil2cpp::Type > ::class(), "Invoke", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (gameplayModifiers))
+            method.invoke_unchecked(self, (gameplayModifiers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -661,7 +688,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -672,12 +699,14 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

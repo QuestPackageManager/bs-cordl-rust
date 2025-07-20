@@ -50,7 +50,7 @@ impl crate::UnityEngine::UIElements::EnumFieldHelpers {
         >,
         resIncludeObsoleteValues: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EnumFieldHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -70,8 +70,9 @@ impl crate::UnityEngine::UIElements::EnumFieldHelpers {
             >("ExtractValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractValue", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EnumFieldHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractValue", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -79,7 +80,7 @@ impl crate::UnityEngine::UIElements::EnumFieldHelpers {
                 .invoke_unchecked(
                     (),
                     (bag, cc, resEnumType, resEnumValue, resIncludeObsoleteValues),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

@@ -47,7 +47,7 @@ impl crate::UnityEngine::ProBuilder::Clipping {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::Clipping_OutCode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Clipping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rect, f32, f32),
                 crate::UnityEngine::ProBuilder::Clipping_OutCode,
@@ -55,12 +55,13 @@ impl crate::UnityEngine::ProBuilder::Clipping {
             >("ComputeOutCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeOutCode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Clipping as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeOutCode", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Clipping_OutCode = unsafe {
-            method.invoke_unchecked((), (rect, x, y))
+            method.invoke_unchecked((), (rect, x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +72,7 @@ impl crate::UnityEngine::ProBuilder::Clipping {
         x1: f32,
         y1: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Clipping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Rect, f32, f32, f32, f32),
                 bool,
@@ -79,12 +80,14 @@ impl crate::UnityEngine::ProBuilder::Clipping {
             >("RectContainsLineSegment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RectContainsLineSegment", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Clipping as
+                    quest_hook::libil2cpp::Type > ::class(), "RectContainsLineSegment",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (rect, x0, y0, x1, y1))
+            method.invoke_unchecked((), (rect, x0, y0, x1, y1))?
         };
         Ok(__cordl_ret.into())
     }

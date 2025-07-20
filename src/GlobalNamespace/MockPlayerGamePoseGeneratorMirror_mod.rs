@@ -49,32 +49,34 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FindPlayerToMirror(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FindPlayerToMirror")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindPlayerToMirror", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "FindPlayerToMirror", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +87,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -98,12 +100,14 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleLevelFinished")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleLevelFinished", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleLevelFinished",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (userId, results))
+            method.invoke_unchecked(self, (userId, results))?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +120,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             crate::GlobalNamespace::NoteCutInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -131,12 +135,13 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleNoteWasCut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleNoteWasCut", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleNoteWasCut", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (userId, syncTime, songTime, noteCutInfo))
+            method.invoke_unchecked(self, (userId, syncTime, songTime, noteCutInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,7 +154,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             crate::GlobalNamespace::NoteMissInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -164,12 +169,14 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleNoteWasMissed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleNoteWasMissed", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleNoteWasMissed",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (userId, syncTime, songTime, noteMissInfo))
+            method.invoke_unchecked(self, (userId, syncTime, songTime, noteMissInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +189,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -197,8 +204,10 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleNoteWasSpawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleNoteWasSpawned", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleNoteWasSpawned",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -206,7 +215,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
                 .invoke_unchecked(
                     self,
                     (userId, syncTime, songTime, noteSpawnInfoNetSerializable),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +228,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -234,8 +243,10 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleObstacleWasSpawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleObstacleWasSpawned", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleObstacleWasSpawned",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -243,7 +254,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
                 .invoke_unchecked(
                     self,
                     (userId, syncTime, songTime, obstacleSpawnInfoNetSerializable),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -254,7 +265,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
         >,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -267,12 +278,14 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleOptionalAvatarDataReceived")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleOptionalAvatarDataReceived", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleOptionalAvatarDataReceived", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (optionalAvatarDataPacket, player))
+            method.invoke_unchecked(self, (optionalAvatarDataPacket, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -283,7 +296,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
         >,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -296,12 +309,14 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleScoreSyncStateUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleScoreSyncStateUpdate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleScoreSyncStateUpdate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodePose, player))
+            method.invoke_unchecked(self, (nodePose, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,7 +329,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -329,8 +344,10 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("HandleSliderWasSpawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleSliderWasSpawned", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleSliderWasSpawned",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -338,7 +355,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
                 .invoke_unchecked(
                     self,
                     (userId, syncTime, songTime, sliderSpawnInfoNetSerializable),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +368,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
         >,
         onSongFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i64,
@@ -364,8 +381,9 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -373,7 +391,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
                 .invoke_unchecked(
                     self,
                     (introStartTime, beatmapData, gameplayModifiers, onSongFinished),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -406,16 +424,17 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     pub fn Tick(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Tick")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Tick", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), "Tick", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -432,7 +451,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             crate::GlobalNamespace::NodePoseSyncStateManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -451,8 +470,9 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -465,7 +485,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
                         leftHanded,
                         nodePoseSyncStateManager,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

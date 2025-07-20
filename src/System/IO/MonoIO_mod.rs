@@ -44,7 +44,7 @@ impl crate::System::IO::MonoIO {
         >,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -57,12 +57,13 @@ impl crate::System::IO::MonoIO {
             >("Cancel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Cancel", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Cancel", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (safeHandle, error))
+            method.invoke_unchecked((), (safeHandle, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::System::IO::MonoIO {
         handle: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -81,18 +82,19 @@ impl crate::System::IO::MonoIO {
             >("Cancel_internal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Cancel_internal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Cancel_internal", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle, error)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn Close(
         handle: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -103,11 +105,12 @@ impl crate::System::IO::MonoIO {
             >("Close")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Close", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Close", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle, error)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePipe(
@@ -115,7 +118,7 @@ impl crate::System::IO::MonoIO {
         write_handle: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
@@ -127,26 +130,28 @@ impl crate::System::IO::MonoIO {
             >("CreatePipe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreatePipe", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "CreatePipe", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (read_handle, write_handle, error))
+            method.invoke_unchecked((), (read_handle, write_handle, error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DumpHandles() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("DumpHandles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DumpHandles", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "DumpHandles", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +165,7 @@ impl crate::System::IO::MonoIO {
         options: i32,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -177,8 +182,9 @@ impl crate::System::IO::MonoIO {
             >("DuplicateHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DuplicateHandle", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "DuplicateHandle", 8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -195,7 +201,7 @@ impl crate::System::IO::MonoIO {
                         options,
                         error,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -204,7 +210,7 @@ impl crate::System::IO::MonoIO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -212,13 +218,14 @@ impl crate::System::IO::MonoIO {
             >("GetCurrentDirectory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentDirectory", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "GetCurrentDirectory", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (error)) };
+        > = unsafe { method.invoke_unchecked((), (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetException_Il2CppString_MonoIOError1(
@@ -227,7 +234,7 @@ impl crate::System::IO::MonoIO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -238,12 +245,13 @@ impl crate::System::IO::MonoIO {
             >("GetException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetException", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "GetException", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (path, error))
+            method.invoke_unchecked((), (path, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,7 +260,7 @@ impl crate::System::IO::MonoIO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IO::MonoIOError),
                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -260,12 +268,13 @@ impl crate::System::IO::MonoIO {
             >("GetException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "GetException", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
-            method.invoke_unchecked((), (error))
+            method.invoke_unchecked((), (error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,7 +282,7 @@ impl crate::System::IO::MonoIO {
         handle: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::MonoFileType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -284,12 +293,13 @@ impl crate::System::IO::MonoIO {
             >("GetFileType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFileType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "GetFileType", 2usize
                 )
             });
         let __cordl_ret: crate::System::IO::MonoFileType = unsafe {
-            method.invoke_unchecked((), (handle, error))
+            method.invoke_unchecked((), (handle, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +309,7 @@ impl crate::System::IO::MonoIO {
         >,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::MonoFileType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -312,12 +322,13 @@ impl crate::System::IO::MonoIO {
             >("GetFileType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFileType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "GetFileType", 2usize
                 )
             });
         let __cordl_ret: crate::System::IO::MonoFileType = unsafe {
-            method.invoke_unchecked((), (safeHandle, error))
+            method.invoke_unchecked((), (safeHandle, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -325,7 +336,7 @@ impl crate::System::IO::MonoIO {
         handle: crate::System::IntPtr,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -336,11 +347,12 @@ impl crate::System::IO::MonoIO {
             >("GetLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLength", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "GetLength", 2usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (handle, error)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (handle, error))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLength_SafeHandle1(
@@ -349,7 +361,7 @@ impl crate::System::IO::MonoIO {
         >,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -362,12 +374,13 @@ impl crate::System::IO::MonoIO {
             >("GetLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLength", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "GetLength", 2usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (safeHandle, error))
+            method.invoke_unchecked((), (safeHandle, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -379,7 +392,7 @@ impl crate::System::IO::MonoIO {
         options: crate::System::IO::FileOptions,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -394,12 +407,13 @@ impl crate::System::IO::MonoIO {
             >("Open")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Open", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Open", 6usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (filename, mode, access, share, options, error))
+            method.invoke_unchecked((), (filename, mode, access, share, options, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +425,7 @@ impl crate::System::IO::MonoIO {
         options: crate::System::IO::FileOptions,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -426,12 +440,13 @@ impl crate::System::IO::MonoIO {
             >("Open")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Open", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Open", 6usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (filename, mode, access, share, options, error))
+            method.invoke_unchecked((), (filename, mode, access, share, options, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -442,7 +457,7 @@ impl crate::System::IO::MonoIO {
         count: i32,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -456,12 +471,13 @@ impl crate::System::IO::MonoIO {
             >("Read")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Read", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Read", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (handle, dest, dest_offset, count, error))
+            method.invoke_unchecked((), (handle, dest, dest_offset, count, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -474,7 +490,7 @@ impl crate::System::IO::MonoIO {
         count: i32,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -490,12 +506,13 @@ impl crate::System::IO::MonoIO {
             >("Read")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Read", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Read", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (safeHandle, dest, dest_offset, count, error))
+            method.invoke_unchecked((), (safeHandle, dest, dest_offset, count, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -505,7 +522,7 @@ impl crate::System::IO::MonoIO {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -518,11 +535,12 @@ impl crate::System::IO::MonoIO {
             >("RemapPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemapPath", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "RemapPath", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (path, newPath)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (path, newPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn Seek_IntPtr0(
@@ -531,7 +549,7 @@ impl crate::System::IO::MonoIO {
         origin: crate::System::IO::SeekOrigin,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -544,12 +562,13 @@ impl crate::System::IO::MonoIO {
             >("Seek")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Seek", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Seek", 4usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (handle, offset, origin, error))
+            method.invoke_unchecked((), (handle, offset, origin, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -561,7 +580,7 @@ impl crate::System::IO::MonoIO {
         origin: crate::System::IO::SeekOrigin,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -576,12 +595,13 @@ impl crate::System::IO::MonoIO {
             >("Seek")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Seek", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Seek", 4usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (safeHandle, offset, origin, error))
+            method.invoke_unchecked((), (safeHandle, offset, origin, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -590,7 +610,7 @@ impl crate::System::IO::MonoIO {
         length: i64,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -602,12 +622,13 @@ impl crate::System::IO::MonoIO {
             >("SetLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLength", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "SetLength", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handle, length, error))
+            method.invoke_unchecked((), (handle, length, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -618,7 +639,7 @@ impl crate::System::IO::MonoIO {
         length: i64,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -632,12 +653,13 @@ impl crate::System::IO::MonoIO {
             >("SetLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLength", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "SetLength", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (safeHandle, length, error))
+            method.invoke_unchecked((), (safeHandle, length, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -650,7 +672,7 @@ impl crate::System::IO::MonoIO {
         count: i32,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -666,12 +688,13 @@ impl crate::System::IO::MonoIO {
             >("Write")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Write", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Write", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (handle, src, src_offset, count, error))
+            method.invoke_unchecked((), (handle, src, src_offset, count, error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -684,7 +707,7 @@ impl crate::System::IO::MonoIO {
         count: i32,
         error: quest_hook::libil2cpp::ByRefMut<crate::System::IO::MonoIOError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -700,103 +723,111 @@ impl crate::System::IO::MonoIO {
             >("Write")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Write", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Write", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (safeHandle, src, src_offset, count, error))
+            method.invoke_unchecked((), (safeHandle, src, src_offset, count, error))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_AltDirectorySeparatorChar() -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), char, 0usize>("get_AltDirectorySeparatorChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AltDirectorySeparatorChar", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "get_AltDirectorySeparatorChar", 0usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ConsoleError() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), crate::System::IntPtr, 0usize>("get_ConsoleError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ConsoleError", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "get_ConsoleError", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ConsoleInput() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), crate::System::IntPtr, 0usize>("get_ConsoleInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ConsoleInput", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "get_ConsoleInput", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ConsoleOutput() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), crate::System::IntPtr, 0usize>("get_ConsoleOutput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ConsoleOutput", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "get_ConsoleOutput", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_DirectorySeparatorChar() -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), char, 0usize>("get_DirectorySeparatorChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DirectorySeparatorChar", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "get_DirectorySeparatorChar", 0usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PathSeparator() -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), char, 0usize>("get_PathSeparator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PathSeparator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "get_PathSeparator", 0usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_VolumeSeparatorChar() -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::MonoIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), char, 0usize>("get_VolumeSeparatorChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_VolumeSeparatorChar", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::MonoIO as quest_hook::libil2cpp::Type >
+                    ::class(), "get_VolumeSeparatorChar", 0usize
                 )
             });
-        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

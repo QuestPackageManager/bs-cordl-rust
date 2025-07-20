@@ -57,7 +57,7 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::StackBuilderSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -74,13 +74,15 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             >("AsyncProcessMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsyncProcessMessage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::StackBuilderSink as
+                    quest_hook::libil2cpp::Type > ::class(), "AsyncProcessMessage",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-        > = unsafe { method.invoke_unchecked(self, (msg, replySink)) };
+        > = unsafe { method.invoke_unchecked(self, (msg, replySink))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckParameters(
@@ -89,7 +91,7 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             crate::System::Runtime::Remoting::Messaging::IMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::StackBuilderSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -99,12 +101,13 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             >("CheckParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::StackBuilderSink as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckParameters", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg))
+            method.invoke_unchecked(self, (msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +115,7 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
         &mut self,
         ob: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::StackBuilderSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -120,12 +123,14 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             >("ExecuteAsyncMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExecuteAsyncMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::StackBuilderSink as
+                    quest_hook::libil2cpp::Type > ::class(), "ExecuteAsyncMessage",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ob))
+            method.invoke_unchecked(self, (ob))?
         };
         Ok(__cordl_ret.into())
     }
@@ -147,7 +152,7 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::StackBuilderSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -159,20 +164,21 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             >("SyncProcessMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SyncProcessMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::StackBuilderSink as
+                    quest_hook::libil2cpp::Type > ::class(), "SyncProcessMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked(self, (msg)) };
+        > = unsafe { method.invoke_unchecked(self, (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn _AsyncProcessMessage_b__4_0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::StackBuilderSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -180,12 +186,14 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             >("<AsyncProcessMessage>b__4_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<AsyncProcessMessage>b__4_0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::StackBuilderSink as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<AsyncProcessMessage>b__4_0", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))
+            method.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +202,7 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
         obj: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
         forceInternalExecute: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Messaging::StackBuilderSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>, bool),
                 quest_hook::libil2cpp::Void,
@@ -202,12 +210,13 @@ impl crate::System::Runtime::Remoting::Messaging::StackBuilderSink {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Messaging::StackBuilderSink as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obj, forceInternalExecute))
+            method.invoke_unchecked(self, (obj, forceInternalExecute))?
         };
         Ok(__cordl_ret.into())
     }

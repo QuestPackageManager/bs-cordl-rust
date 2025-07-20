@@ -44,7 +44,7 @@ impl crate::Unity::Properties::Internal::ReflectionUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Properties::Internal::ReflectionUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -52,13 +52,14 @@ impl crate::Unity::Properties::Internal::ReflectionUtilities {
             >("SanitizeMemberName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SanitizeMemberName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Properties::Internal::ReflectionUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "SanitizeMemberName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (info)) };
+        > = unsafe { method.invoke_unchecked((), (info))? };
         Ok(__cordl_ret.into())
     }
 }

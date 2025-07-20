@@ -43,7 +43,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetPresetUtility {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_AssetPresetUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -56,12 +56,14 @@ impl crate::HoudiniEngineUnity::HEU_AssetPresetUtility {
             >("LoadPresetFileIntoAssetAndCook")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadPresetFileIntoAssetAndCook", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_AssetPresetUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadPresetFileIntoAssetAndCook", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asset, filePath))
+            method.invoke_unchecked((), (asset, filePath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -69,7 +71,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetPresetUtility {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_AssetPresetUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -82,12 +84,14 @@ impl crate::HoudiniEngineUnity::HEU_AssetPresetUtility {
             >("SaveAssetPresetToFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveAssetPresetToFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_AssetPresetUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveAssetPresetToFile",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asset, filePath))
+            method.invoke_unchecked((), (asset, filePath))?
         };
         Ok(__cordl_ret.into())
     }

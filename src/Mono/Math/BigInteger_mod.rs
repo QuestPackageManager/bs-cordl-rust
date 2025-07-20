@@ -47,30 +47,32 @@ impl crate::Mono::Math::BigInteger {
     #[cfg(feature = "Mono+Math+BigInteger+Sign")]
     pub type Sign = crate::Mono::Math::BigInteger_Sign;
     pub fn BitCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("BitCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BitCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "BitCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clear", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "Clear", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +80,7 @@ impl crate::Mono::Math::BigInteger {
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -86,11 +88,12 @@ impl crate::Mono::Math::BigInteger {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePseudoPrime(
@@ -98,7 +101,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -106,12 +109,13 @@ impl crate::Mono::Math::BigInteger {
             >("GeneratePseudoPrime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GeneratePseudoPrime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "GeneratePseudoPrime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bits))
+            method.invoke_unchecked((), (bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +127,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -136,12 +140,13 @@ impl crate::Mono::Math::BigInteger {
             >("GenerateRandom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateRandom", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateRandom", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bits, rng))
+            method.invoke_unchecked((), (bits, rng))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +155,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -158,12 +163,13 @@ impl crate::Mono::Math::BigInteger {
             >("GenerateRandom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateRandom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateRandom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bits))
+            method.invoke_unchecked((), (bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,7 +178,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -180,65 +186,70 @@ impl crate::Mono::Math::BigInteger {
             >("GetBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBytes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBytes", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Incr2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Incr2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Incr2", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "Incr2", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsProbablePrime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsProbablePrime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsProbablePrime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "IsProbablePrime", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LowestSetBit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("LowestSetBit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LowestSetBit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "LowestSetBit", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ModInverse(
@@ -247,7 +258,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -255,12 +266,13 @@ impl crate::Mono::Math::BigInteger {
             >("ModInverse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ModInverse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "ModInverse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (modulus))
+            method.invoke_unchecked(self, (modulus))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,7 +283,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -282,12 +294,13 @@ impl crate::Mono::Math::BigInteger {
             >("ModPow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ModPow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "ModPow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (exp, n))
+            method.invoke_unchecked(self, (exp, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -341,32 +354,34 @@ impl crate::Mono::Math::BigInteger {
     pub fn Normalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Normalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Normalize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "Normalize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Randomize_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Randomize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Randomize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "Randomize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -376,7 +391,7 @@ impl crate::Mono::Math::BigInteger {
             crate::System::Security::Cryptography::RandomNumberGenerator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::RandomNumberGenerator,
@@ -386,12 +401,13 @@ impl crate::Mono::Math::BigInteger {
             >("Randomize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Randomize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "Randomize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rng))
+            method.invoke_unchecked(self, (rng))?
         };
         Ok(__cordl_ret.into())
     }
@@ -400,16 +416,17 @@ impl crate::Mono::Math::BigInteger {
         bitNum: u32,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32, bool), quest_hook::libil2cpp::Void, 2usize>("SetBit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBit", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBit", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitNum, value))
+            method.invoke_unchecked(self, (bitNum, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -417,41 +434,44 @@ impl crate::Mono::Math::BigInteger {
         &mut self,
         bitNum: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("SetBit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitNum))
+            method.invoke_unchecked(self, (bitNum))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn TestBit_i32_1(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("TestBit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TestBit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "TestBit", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitNum)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitNum))? };
         Ok(__cordl_ret.into())
     }
     pub fn TestBit_u32_0(&mut self, bitNum: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), bool, 1usize>("TestBit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TestBit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "TestBit", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitNum)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitNum))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_2(
@@ -459,7 +479,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -467,13 +487,14 @@ impl crate::Mono::Math::BigInteger {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_u32_0(
@@ -482,7 +503,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -490,13 +511,14 @@ impl crate::Mono::Math::BigInteger {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "ToString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (radix)) };
+        > = unsafe { method.invoke_unchecked(self, (radix))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_u32_Il2CppString1(
@@ -506,7 +528,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -514,20 +536,21 @@ impl crate::Mono::Math::BigInteger {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "ToString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (radix, characterSet)) };
+        > = unsafe { method.invoke_unchecked(self, (radix, characterSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_BigInteger1(
         &mut self,
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>),
                 quest_hook::libil2cpp::Void,
@@ -535,12 +558,13 @@ impl crate::Mono::Math::BigInteger {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bi))
+            method.invoke_unchecked(self, (bi))?
         };
         Ok(__cordl_ret.into())
     }
@@ -549,7 +573,7 @@ impl crate::Mono::Math::BigInteger {
         sign: crate::Mono::Math::BigInteger_Sign,
         len: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Mono::Math::BigInteger_Sign, u32),
                 quest_hook::libil2cpp::Void,
@@ -557,12 +581,13 @@ impl crate::Mono::Math::BigInteger {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sign, len))
+            method.invoke_unchecked(self, (sign, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -571,7 +596,7 @@ impl crate::Mono::Math::BigInteger {
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         len: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 quest_hook::libil2cpp::Void,
@@ -579,12 +604,13 @@ impl crate::Mono::Math::BigInteger {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bi, len))
+            method.invoke_unchecked(self, (bi, len))?
         };
         Ok(__cordl_ret.into())
     }
@@ -592,7 +618,7 @@ impl crate::Mono::Math::BigInteger {
         &mut self,
         inData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -600,12 +626,13 @@ impl crate::Mono::Math::BigInteger {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (inData))
+            method.invoke_unchecked(self, (inData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -613,16 +640,17 @@ impl crate::Mono::Math::BigInteger {
         &mut self,
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ui))
+            method.invoke_unchecked(self, (ui))?
         };
         Ok(__cordl_ret.into())
     }
@@ -631,7 +659,7 @@ impl crate::Mono::Math::BigInteger {
             crate::System::Security::Cryptography::RandomNumberGenerator,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -641,13 +669,14 @@ impl crate::Mono::Math::BigInteger {
             >("get_Rng")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Rng", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Rng", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RandomNumberGenerator,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Division(
@@ -656,7 +685,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -667,12 +696,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_Division")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Division", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Division", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))
+            method.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -680,7 +710,7 @@ impl crate::Mono::Math::BigInteger {
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -691,18 +721,19 @@ impl crate::Mono::Math::BigInteger {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Equality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality_u32_0(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 bool,
@@ -710,18 +741,19 @@ impl crate::Mono::Math::BigInteger {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Equality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, ui)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, ui))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThan(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -732,18 +764,19 @@ impl crate::Mono::Math::BigInteger {
             >("op_GreaterThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_GreaterThan", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_GreaterThanOrEqual(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -754,11 +787,12 @@ impl crate::Mono::Math::BigInteger {
             >("op_GreaterThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_GreaterThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_GreaterThanOrEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_i32_1(
@@ -766,7 +800,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -774,12 +808,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -788,7 +823,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -796,12 +831,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -809,7 +845,7 @@ impl crate::Mono::Math::BigInteger {
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -820,18 +856,19 @@ impl crate::Mono::Math::BigInteger {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Inequality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality_u32_0(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 bool,
@@ -839,11 +876,12 @@ impl crate::Mono::Math::BigInteger {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Inequality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, ui)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, ui))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_LeftShift(
@@ -852,7 +890,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -860,12 +898,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_LeftShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LeftShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_LeftShift", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, shiftVal))
+            method.invoke_unchecked((), (bi1, shiftVal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -873,7 +912,7 @@ impl crate::Mono::Math::BigInteger {
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -884,18 +923,19 @@ impl crate::Mono::Math::BigInteger {
             >("op_LessThan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_LessThan", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_LessThanOrEqual(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -906,11 +946,12 @@ impl crate::Mono::Math::BigInteger {
             >("op_LessThanOrEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LessThanOrEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_LessThanOrEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Modulus_BigInteger1(
@@ -919,7 +960,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -930,12 +971,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_Modulus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Modulus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Modulus", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))
+            method.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -943,7 +985,7 @@ impl crate::Mono::Math::BigInteger {
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         ui: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 u32,
@@ -951,11 +993,12 @@ impl crate::Mono::Math::BigInteger {
             >("op_Modulus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Modulus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Modulus", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bi, ui)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bi, ui))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_Multiply_BigInteger0(
@@ -964,7 +1007,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -975,12 +1018,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Multiply", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))
+            method.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -990,7 +1034,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -998,12 +1042,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Multiply", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, i))
+            method.invoke_unchecked((), (bi, i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1013,7 +1058,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1021,12 +1066,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_RightShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_RightShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_RightShift", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, shiftVal))
+            method.invoke_unchecked((), (bi1, shiftVal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1036,7 +1082,7 @@ impl crate::Mono::Math::BigInteger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1047,12 +1093,13 @@ impl crate::Mono::Math::BigInteger {
             >("op_Subtraction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Subtraction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Subtraction", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))
+            method.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1110,7 +1157,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::Math::BigInteger_Sign> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1121,12 +1168,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "Compare", 2usize
                 )
             });
         let __cordl_ret: crate::Mono::Math::BigInteger_Sign = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))
+            method.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1140,7 +1188,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 quest_hook::libil2cpp::Gc<
@@ -1152,22 +1200,23 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("DwordDivMod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DwordDivMod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "DwordDivMod", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked((), (n, d)) };
+        > = unsafe { method.invoke_unchecked((), (n, d))? };
         Ok(__cordl_ret.into())
     }
     pub fn DwordMod(
         n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         d: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 u32,
@@ -1175,11 +1224,12 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("DwordMod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DwordMod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "DwordMod", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (n, d)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (n, d))? };
         Ok(__cordl_ret.into())
     }
     pub fn LeftShift(
@@ -1188,7 +1238,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1196,12 +1246,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("LeftShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LeftShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "LeftShift", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, n))
+            method.invoke_unchecked((), (bi, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1209,7 +1260,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         big: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         small: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1220,12 +1271,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("MinusEq")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MinusEq", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "MinusEq", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (big, small))
+            method.invoke_unchecked((), (big, small))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1239,7 +1291,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         d: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         dOffset: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1256,12 +1308,14 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Multiply", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "Multiply", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x, xOffset, xLen, y, yOffset, yLen, d, dOffset))
+            method
+                .invoke_unchecked((), (x, xOffset, xLen, y, yOffset, yLen, d, dOffset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1271,7 +1325,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1279,12 +1333,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("MultiplyByDword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MultiplyByDword", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "MultiplyByDword", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (n, f))
+            method.invoke_unchecked((), (n, f))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1299,7 +1354,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         dOffset: i32,
         _cordl_mod: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1317,8 +1372,9 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("MultiplyMod2p32pmod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MultiplyMod2p32pmod", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "MultiplyMod2p32pmod", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1326,7 +1382,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
                 .invoke_unchecked(
                     (),
                     (x, xOffset, xLen, y, yOffest, yLen, d, dOffset, _cordl_mod),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1334,7 +1390,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1345,12 +1401,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("PlusEq")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PlusEq", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "PlusEq", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bi1, bi2))
+            method.invoke_unchecked((), (bi1, bi2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1360,7 +1417,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1368,12 +1425,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("RightShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RightShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "RightShift", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, n))
+            method.invoke_unchecked((), (bi, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1381,7 +1439,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         d: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 u32,
@@ -1389,11 +1447,12 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("SingleByteDivideInPlace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SingleByteDivideInPlace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "SingleByteDivideInPlace", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (n, d)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (n, d))? };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract(
@@ -1402,7 +1461,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1413,12 +1472,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("Subtract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subtract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "Subtract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (big, small))
+            method.invoke_unchecked((), (big, small))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1428,7 +1488,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1439,12 +1499,13 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("modInverse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "modInverse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "modInverse", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked((), (bi, modulus))
+            method.invoke_unchecked((), (bi, modulus))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1452,7 +1513,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         modulus: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
                 u32,
@@ -1460,11 +1521,12 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("modInverse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "modInverse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "modInverse", 2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bi, modulus)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bi, modulus))? };
         Ok(__cordl_ret.into())
     }
     pub fn multiByteDivide(
@@ -1477,7 +1539,7 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1492,15 +1554,16 @@ impl crate::Mono::Math::BigInteger_Kernel {
             >("multiByteDivide")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "multiByteDivide", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_Kernel as quest_hook::libil2cpp::Type
+                    > ::class(), "multiByteDivide", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked((), (bi1, bi2)) };
+        > = unsafe { method.invoke_unchecked((), (bi1, bi2))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1559,7 +1622,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_ModulusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>),
                 quest_hook::libil2cpp::Void,
@@ -1567,12 +1630,13 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
             >("BarrettReduction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BarrettReduction", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_ModulusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "BarrettReduction", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (x))
+            method.invoke_unchecked(self, (x))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1583,7 +1647,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_ModulusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1594,12 +1658,13 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
             >("Difference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Difference", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_ModulusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "Difference", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (a, b))
+            method.invoke_unchecked(self, (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1610,7 +1675,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_ModulusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1621,12 +1686,13 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
             >("Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_ModulusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "Multiply", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (a, b))
+            method.invoke_unchecked(self, (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1646,7 +1712,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_ModulusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1657,12 +1723,13 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
             >("Pow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Pow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_ModulusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "Pow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (a, k))
+            method.invoke_unchecked(self, (a, k))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1673,7 +1740,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_ModulusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1681,12 +1748,13 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
             >("Pow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Pow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_ModulusRing as
+                    quest_hook::libil2cpp::Type > ::class(), "Pow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (b, exp))
+            method.invoke_unchecked(self, (b, exp))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1694,7 +1762,7 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
         &mut self,
         modulus: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::BigInteger_ModulusRing as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>),
                 quest_hook::libil2cpp::Void,
@@ -1702,12 +1770,13 @@ impl crate::Mono::Math::BigInteger_ModulusRing {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::BigInteger_ModulusRing as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (modulus))
+            method.invoke_unchecked(self, (modulus))?
         };
         Ok(__cordl_ret.into())
     }

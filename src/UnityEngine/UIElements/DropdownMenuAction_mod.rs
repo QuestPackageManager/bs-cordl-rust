@@ -69,7 +69,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::DropdownMenuAction as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::DropdownMenuAction,
@@ -79,12 +79,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             >("AlwaysDisabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AlwaysDisabled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::DropdownMenuAction as
+                    quest_hook::libil2cpp::Type > ::class(), "AlwaysDisabled", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::DropdownMenuAction_Status = unsafe {
-            method.invoke_unchecked((), (a))
+            method.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +94,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::DropdownMenuAction as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::DropdownMenuAction,
@@ -103,12 +104,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             >("AlwaysEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AlwaysEnabled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::DropdownMenuAction as
+                    quest_hook::libil2cpp::Type > ::class(), "AlwaysEnabled", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::DropdownMenuAction_Status = unsafe {
-            method.invoke_unchecked((), (a))
+            method.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +148,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             crate::UnityEngine::UIElements::DropdownMenuEventInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::DropdownMenuAction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::DropdownMenuEventInfo,
@@ -156,12 +158,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             >("UpdateActionStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateActionStatus", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::DropdownMenuAction as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateActionStatus", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventInfo))
+            method.invoke_unchecked(self, (eventInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -185,7 +188,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
         >,
         userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::DropdownMenuAction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -211,8 +214,9 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::DropdownMenuAction as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -220,7 +224,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
                 .invoke_unchecked(
                     self,
                     (actionName, actionCallback, actionStatusCallback, userData),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -230,7 +234,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             crate::UnityEngine::UIElements::DropdownMenuEventInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::DropdownMenuAction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::DropdownMenuEventInfo,
@@ -240,12 +244,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             >("set_eventInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_eventInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::DropdownMenuAction as
+                    quest_hook::libil2cpp::Type > ::class(), "set_eventInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -253,7 +258,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
         &mut self,
         value: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::DropdownMenuAction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::DropdownMenuAction_Status),
                 quest_hook::libil2cpp::Void,
@@ -261,12 +266,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             >("set_status")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_status", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::DropdownMenuAction as
+                    quest_hook::libil2cpp::Type > ::class(), "set_status", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -274,7 +280,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::DropdownMenuAction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Void,
@@ -282,12 +288,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             >("set_userData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_userData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::DropdownMenuAction as
+                    quest_hook::libil2cpp::Type > ::class(), "set_userData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

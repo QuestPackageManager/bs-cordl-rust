@@ -48,23 +48,24 @@ impl crate::UnityEngine::ConfigurableJoint {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularXDrive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::JointDrive> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::JointDrive,
@@ -72,12 +73,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularXDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularXDrive", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularXDrive", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::JointDrive = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +87,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -93,19 +95,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularXDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularXDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularXDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularXLimitSpring(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimitSpring> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimitSpring,
@@ -113,12 +116,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularXLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularXLimitSpring", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularXLimitSpring", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimitSpring = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +130,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -136,19 +140,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularXLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularXLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularXLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularXMotion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ConfigurableJointMotion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ConfigurableJointMotion,
@@ -156,19 +161,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularXMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularXMotion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularXMotion", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ConfigurableJointMotion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularYLimit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -176,12 +182,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularYLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularYLimit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularYLimit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +196,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -197,19 +204,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularYLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularYLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularYLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularYMotion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ConfigurableJointMotion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ConfigurableJointMotion,
@@ -217,19 +225,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularYMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularYMotion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularYMotion", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ConfigurableJointMotion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularYZDrive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::JointDrive> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::JointDrive,
@@ -237,12 +246,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularYZDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularYZDrive", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularYZDrive", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::JointDrive = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +260,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -258,19 +268,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularYZDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularYZDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularYZDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularYZLimitSpring(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimitSpring> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimitSpring,
@@ -278,12 +289,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularYZLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularYZLimitSpring", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularYZLimitSpring", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimitSpring = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -291,7 +303,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -301,19 +313,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularYZLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularYZLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularYZLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularZLimit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -321,12 +334,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularZLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularZLimit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularZLimit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +348,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -342,19 +356,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularZLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularZLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularZLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_angularZMotion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ConfigurableJointMotion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ConfigurableJointMotion,
@@ -362,31 +377,33 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_angularZMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_angularZMotion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_angularZMotion", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ConfigurableJointMotion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_configuredInWorldSpace(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_configuredInWorldSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_configuredInWorldSpace", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_configuredInWorldSpace", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_highAngularXLimit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -394,12 +411,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_highAngularXLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_highAngularXLimit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_highAngularXLimit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +425,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -415,19 +433,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_highAngularXLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_highAngularXLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_highAngularXLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_linearLimit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -435,19 +454,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_linearLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_linearLimit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_linearLimit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_linearLimitSpring(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimitSpring> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimitSpring,
@@ -455,12 +475,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_linearLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_linearLimitSpring", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_linearLimitSpring", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimitSpring = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -468,7 +489,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -478,12 +499,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_linearLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_linearLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_linearLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -491,7 +513,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -499,19 +521,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_linearLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_linearLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_linearLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_lowAngularXLimit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SoftJointLimit> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::SoftJointLimit,
@@ -519,12 +542,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_lowAngularXLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lowAngularXLimit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_lowAngularXLimit", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::SoftJointLimit = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -532,7 +556,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -540,43 +564,46 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_lowAngularXLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lowAngularXLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_lowAngularXLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_projectionAngle(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_projectionAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_projectionAngle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_projectionAngle", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_projectionDistance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_projectionDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_projectionDistance", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_projectionDistance", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_projectionMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::JointProjectionMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::JointProjectionMode,
@@ -584,19 +611,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_projectionMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_projectionMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_projectionMode", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::JointProjectionMode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_rotationDriveMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RotationDriveMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::RotationDriveMode,
@@ -604,28 +632,30 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_rotationDriveMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_rotationDriveMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_rotationDriveMode", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::RotationDriveMode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_secondaryAxis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_secondaryAxis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_secondaryAxis", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_secondaryAxis", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -633,7 +663,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -641,28 +671,30 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_secondaryAxis_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_secondaryAxis_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_secondaryAxis_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_slerpDrive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::JointDrive> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::JointDrive, 0usize>("get_slerpDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_slerpDrive", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_slerpDrive", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::JointDrive = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -670,7 +702,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -678,31 +710,33 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_slerpDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_slerpDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_slerpDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_swapBodies(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_swapBodies")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_swapBodies", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_swapBodies", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetAngularVelocity(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Vector3,
@@ -710,12 +744,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_targetAngularVelocity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetAngularVelocity", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetAngularVelocity", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -723,7 +758,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -731,28 +766,30 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_targetAngularVelocity_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetAngularVelocity_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetAngularVelocity_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_targetPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetPosition", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetPosition", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -760,7 +797,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -768,19 +805,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_targetPosition_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetPosition_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetPosition_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Quaternion,
@@ -788,12 +826,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_targetRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetRotation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetRotation", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -801,7 +840,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>),
                 quest_hook::libil2cpp::Void,
@@ -809,28 +848,30 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_targetRotation_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetRotation_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetRotation_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetVelocity(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_targetVelocity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetVelocity", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetVelocity", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -838,7 +879,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -846,28 +887,30 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_targetVelocity_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_targetVelocity_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_targetVelocity_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_xDrive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::JointDrive> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::JointDrive, 0usize>("get_xDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_xDrive", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_xDrive", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::JointDrive = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -875,7 +918,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -883,19 +926,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_xDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_xDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_xDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_xMotion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ConfigurableJointMotion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ConfigurableJointMotion,
@@ -903,28 +947,30 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_xMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_xMotion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_xMotion", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ConfigurableJointMotion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_yDrive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::JointDrive> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::JointDrive, 0usize>("get_yDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_yDrive", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_yDrive", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::JointDrive = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -932,7 +978,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -940,19 +986,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_yDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_yDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_yDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_yMotion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ConfigurableJointMotion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ConfigurableJointMotion,
@@ -960,28 +1007,30 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_yMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_yMotion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_yMotion", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ConfigurableJointMotion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_zDrive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::JointDrive> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::JointDrive, 0usize>("get_zDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_zDrive", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_zDrive", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::JointDrive = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -989,7 +1038,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -997,19 +1046,20 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_zDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_zDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_zDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ret))
+            method.invoke_unchecked(self, (ret))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_zMotion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ConfigurableJointMotion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::ConfigurableJointMotion,
@@ -1017,12 +1067,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("get_zMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_zMotion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "get_zMotion", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ConfigurableJointMotion = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1030,7 +1081,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::JointDrive,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::JointDrive),
                 quest_hook::libil2cpp::Void,
@@ -1038,12 +1089,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularXDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularXDrive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularXDrive", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1051,7 +1103,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -1059,12 +1111,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularXDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularXDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularXDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1072,7 +1125,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimitSpring,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimitSpring),
                 quest_hook::libil2cpp::Void,
@@ -1080,12 +1133,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularXLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularXLimitSpring", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularXLimitSpring", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1093,7 +1147,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -1103,12 +1157,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularXLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularXLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularXLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1116,7 +1171,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::ConfigurableJointMotion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ConfigurableJointMotion),
                 quest_hook::libil2cpp::Void,
@@ -1124,12 +1179,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularXMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularXMotion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularXMotion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1137,7 +1193,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -1145,12 +1201,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularYLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularYLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularYLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1158,7 +1215,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -1166,12 +1223,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularYLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularYLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularYLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1179,7 +1237,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::ConfigurableJointMotion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ConfigurableJointMotion),
                 quest_hook::libil2cpp::Void,
@@ -1187,12 +1245,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularYMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularYMotion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularYMotion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1200,7 +1259,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::JointDrive,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::JointDrive),
                 quest_hook::libil2cpp::Void,
@@ -1208,12 +1267,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularYZDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularYZDrive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularYZDrive", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1221,7 +1281,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -1229,12 +1289,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularYZDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularYZDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularYZDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1242,7 +1303,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimitSpring,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimitSpring),
                 quest_hook::libil2cpp::Void,
@@ -1250,12 +1311,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularYZLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularYZLimitSpring", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularYZLimitSpring", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1263,7 +1325,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -1273,12 +1335,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularYZLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularYZLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularYZLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1286,7 +1349,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -1294,12 +1357,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularZLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularZLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularZLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1307,7 +1371,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -1315,12 +1379,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularZLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularZLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularZLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1328,7 +1393,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::ConfigurableJointMotion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ConfigurableJointMotion),
                 quest_hook::libil2cpp::Void,
@@ -1336,12 +1401,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_angularZMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_angularZMotion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_angularZMotion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1349,7 +1415,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1357,12 +1423,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_configuredInWorldSpace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_configuredInWorldSpace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_configuredInWorldSpace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1370,7 +1437,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -1378,12 +1445,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_highAngularXLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_highAngularXLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_highAngularXLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1391,7 +1459,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -1399,12 +1467,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_highAngularXLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_highAngularXLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_highAngularXLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1412,7 +1481,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -1420,12 +1489,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_linearLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_linearLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_linearLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1433,7 +1503,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimitSpring,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimitSpring),
                 quest_hook::libil2cpp::Void,
@@ -1441,12 +1511,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_linearLimitSpring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_linearLimitSpring", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_linearLimitSpring", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1454,7 +1525,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimitSpring>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::SoftJointLimitSpring,
@@ -1464,12 +1535,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_linearLimitSpring_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_linearLimitSpring_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_linearLimitSpring_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1477,7 +1549,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -1485,12 +1557,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_linearLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_linearLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_linearLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1498,7 +1571,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::SoftJointLimit,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::SoftJointLimit),
                 quest_hook::libil2cpp::Void,
@@ -1506,12 +1579,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_lowAngularXLimit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_lowAngularXLimit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_lowAngularXLimit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1519,7 +1593,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SoftJointLimit>),
                 quest_hook::libil2cpp::Void,
@@ -1527,12 +1601,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_lowAngularXLimit_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_lowAngularXLimit_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_lowAngularXLimit_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1540,7 +1615,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -1548,12 +1623,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_projectionAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_projectionAngle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_projectionAngle", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1561,7 +1637,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32),
                 quest_hook::libil2cpp::Void,
@@ -1569,12 +1645,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_projectionDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_projectionDistance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_projectionDistance", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1582,7 +1659,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::JointProjectionMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::JointProjectionMode),
                 quest_hook::libil2cpp::Void,
@@ -1590,12 +1667,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_projectionMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_projectionMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_projectionMode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1603,7 +1681,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::RotationDriveMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::RotationDriveMode),
                 quest_hook::libil2cpp::Void,
@@ -1611,12 +1689,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_rotationDriveMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_rotationDriveMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_rotationDriveMode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1624,7 +1703,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -1632,12 +1711,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_secondaryAxis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_secondaryAxis", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_secondaryAxis", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1645,7 +1725,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -1653,12 +1733,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_secondaryAxis_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_secondaryAxis_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_secondaryAxis_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1666,7 +1747,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::JointDrive,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::JointDrive),
                 quest_hook::libil2cpp::Void,
@@ -1674,12 +1755,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_slerpDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_slerpDrive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_slerpDrive", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1687,7 +1769,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -1695,12 +1777,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_slerpDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_slerpDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_slerpDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1708,16 +1791,17 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_swapBodies")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_swapBodies", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_swapBodies", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1725,7 +1809,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -1733,12 +1817,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetAngularVelocity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetAngularVelocity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetAngularVelocity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1746,7 +1831,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -1754,12 +1839,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetAngularVelocity_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetAngularVelocity_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetAngularVelocity_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1767,7 +1853,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -1775,12 +1861,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetPosition", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1788,7 +1875,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -1796,12 +1883,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetPosition_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetPosition_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetPosition_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1809,7 +1897,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Quaternion),
                 quest_hook::libil2cpp::Void,
@@ -1817,12 +1905,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetRotation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetRotation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1830,7 +1919,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>),
                 quest_hook::libil2cpp::Void,
@@ -1838,12 +1927,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetRotation_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetRotation_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetRotation_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1851,7 +1941,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -1859,12 +1949,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetVelocity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetVelocity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetVelocity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1872,7 +1963,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 quest_hook::libil2cpp::Void,
@@ -1880,12 +1971,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_targetVelocity_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_targetVelocity_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_targetVelocity_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1893,7 +1985,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::JointDrive,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::JointDrive),
                 quest_hook::libil2cpp::Void,
@@ -1901,12 +1993,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_xDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_xDrive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_xDrive", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1914,7 +2007,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -1922,12 +2015,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_xDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_xDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_xDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1935,7 +2029,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::ConfigurableJointMotion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ConfigurableJointMotion),
                 quest_hook::libil2cpp::Void,
@@ -1943,12 +2037,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_xMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_xMotion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_xMotion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1956,7 +2051,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::JointDrive,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::JointDrive),
                 quest_hook::libil2cpp::Void,
@@ -1964,12 +2059,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_yDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_yDrive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_yDrive", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1977,7 +2073,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -1985,12 +2081,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_yDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_yDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_yDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1998,7 +2095,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::ConfigurableJointMotion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ConfigurableJointMotion),
                 quest_hook::libil2cpp::Void,
@@ -2006,12 +2103,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_yMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_yMotion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_yMotion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2019,7 +2117,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::JointDrive,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::JointDrive),
                 quest_hook::libil2cpp::Void,
@@ -2027,12 +2125,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_zDrive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_zDrive", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_zDrive", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2040,7 +2139,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::JointDrive>),
                 quest_hook::libil2cpp::Void,
@@ -2048,12 +2147,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_zDrive_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_zDrive_Injected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_zDrive_Injected", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2061,7 +2161,7 @@ impl crate::UnityEngine::ConfigurableJoint {
         &mut self,
         value: crate::UnityEngine::ConfigurableJointMotion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ConfigurableJointMotion),
                 quest_hook::libil2cpp::Void,
@@ -2069,12 +2169,13 @@ impl crate::UnityEngine::ConfigurableJoint {
             >("set_zMotion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_zMotion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ConfigurableJoint as quest_hook::libil2cpp::Type
+                    > ::class(), "set_zMotion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

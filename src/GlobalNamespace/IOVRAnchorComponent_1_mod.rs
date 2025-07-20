@@ -63,15 +63,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IOVRAnchorComponent_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(crate::GlobalNamespace::OVRAnchor), T, 1usize>("FromAnchor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromAnchor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IOVRAnchorComponent_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "FromAnchor", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (anchor)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (anchor))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetEnabledAsync(
@@ -83,7 +86,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IOVRAnchorComponent_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, f64),
                 crate::GlobalNamespace::OVRTask_1<bool>,
@@ -91,12 +96,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
             >("SetEnabledAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetEnabledAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IOVRAnchorComponent_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "SetEnabledAsync", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
-            method.invoke_unchecked(self, (enable, timeout))
+            method.invoke_unchecked(self, (enable, timeout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,15 +116,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IOVRAnchorComponent_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u64, 0usize>("get_Handle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Handle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IOVRAnchorComponent_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Handle", 0usize
                 )
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -126,15 +135,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IOVRAnchorComponent_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsEnabled", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IOVRAnchorComponent_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsEnabled", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -142,15 +154,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IOVRAnchorComponent_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsNull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsNull", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IOVRAnchorComponent_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsNull", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(
@@ -162,7 +177,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IOVRAnchorComponent_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
@@ -170,12 +187,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent
             >("get_Type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IOVRAnchorComponent_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Type", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_SpaceComponentType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

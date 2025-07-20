@@ -45,7 +45,7 @@ impl crate::System::ComponentModel::Design::IDesignerHost {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::Design::IDesigner>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::Design::IDesignerHost as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>),
                 quest_hook::libil2cpp::Gc<
@@ -55,13 +55,14 @@ impl crate::System::ComponentModel::Design::IDesignerHost {
             >("GetDesigner")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDesigner", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::Design::IDesignerHost as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDesigner", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::Design::IDesigner,
-        > = unsafe { method.invoke_unchecked(self, (component)) };
+        > = unsafe { method.invoke_unchecked(self, (component))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -74,7 +75,7 @@ impl crate::System::ComponentModel::Design::IDesignerHost {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::Design::IDesignerHost as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::ComponentModel::IComponent>,
@@ -82,13 +83,14 @@ impl crate::System::ComponentModel::Design::IDesignerHost {
             >("get_RootComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RootComponent", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::Design::IDesignerHost as
+                    quest_hook::libil2cpp::Type > ::class(), "get_RootComponent", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::IComponent,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -62,12 +62,13 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("CopyFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyFrom", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyFrom", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, other))
+            method.invoke_unchecked((), (list, other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +83,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IStyleValue_1<T>,
@@ -92,19 +93,20 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("DebugString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DebugString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DebugString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (styleValue)) };
+        > = unsafe { method.invoke_unchecked((), (styleValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToLength_StyleKeyword0(
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::StyleKeyword),
                 crate::UnityEngine::UIElements::Length,
@@ -112,19 +114,20 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("ToLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToLength", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Length = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToLength_StyleLength1(
         styleLength: crate::UnityEngine::UIElements::StyleLength,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::StyleLength),
                 crate::UnityEngine::UIElements::Length,
@@ -132,19 +135,20 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("ToLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToLength", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Length = unsafe {
-            method.invoke_unchecked((), (styleLength))
+            method.invoke_unchecked((), (styleLength))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToRotate(
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::StyleKeyword),
                 crate::UnityEngine::UIElements::Rotate,
@@ -152,19 +156,20 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("ToRotate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRotate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRotate", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Rotate = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToScale(
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::StyleKeyword),
                 crate::UnityEngine::UIElements::Scale,
@@ -172,19 +177,20 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("ToScale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToScale", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToScale", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Scale = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToTranslate(
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::StyleKeyword),
                 crate::UnityEngine::UIElements::Translate,
@@ -192,19 +198,20 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("ToTranslate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToTranslate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToTranslate", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Translate = unsafe {
-            method.invoke_unchecked((), (keyword))
+            method.invoke_unchecked((), (keyword))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToYogaValue(
         length: crate::UnityEngine::UIElements::Length,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleValueExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::Length),
                 crate::UnityEngine::Yoga::YogaValue,
@@ -212,12 +219,13 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             >("ToYogaValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToYogaValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleValueExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToYogaValue", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = unsafe {
-            method.invoke_unchecked((), (length))
+            method.invoke_unchecked((), (length))?
         };
         Ok(__cordl_ret.into())
     }

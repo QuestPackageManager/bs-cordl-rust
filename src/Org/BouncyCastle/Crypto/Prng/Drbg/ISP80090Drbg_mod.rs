@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
         >,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -59,12 +59,14 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
             >("Generate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Generate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg as
+                    quest_hook::libil2cpp::Type > ::class(), "Generate", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (output, additionalInput, predictionResistant))
+            method
+                .invoke_unchecked(self, (output, additionalInput, predictionResistant))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +76,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -82,12 +84,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
             >("Reseed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reseed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg as
+                    quest_hook::libil2cpp::Type > ::class(), "Reseed", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (additionalInput))
+            method.invoke_unchecked(self, (additionalInput))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,15 +100,16 @@ impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_BlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_BlockSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_BlockSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg as
+                    quest_hook::libil2cpp::Type > ::class(), "get_BlockSize", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

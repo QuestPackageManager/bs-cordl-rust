@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::UnityScenesHelper {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::UnityScenesHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::SceneManagement::Scene,
@@ -63,12 +63,14 @@ impl crate::GlobalNamespace::UnityScenesHelper {
             >("GetComponentsInScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComponentsInScene", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::UnityScenesHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetComponentsInScene",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (scene, components, includeInactive))
+            method.invoke_unchecked((), (scene, components, includeInactive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +78,7 @@ impl crate::GlobalNamespace::UnityScenesHelper {
         scene: crate::UnityEngine::SceneManagement::Scene,
         active: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::UnityScenesHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::SceneManagement::Scene, bool),
                 quest_hook::libil2cpp::Void,
@@ -84,12 +86,14 @@ impl crate::GlobalNamespace::UnityScenesHelper {
             >("SetActiveRootObjectsInScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetActiveRootObjectsInScene", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::UnityScenesHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetActiveRootObjectsInScene", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (scene, active))
+            method.invoke_unchecked((), (scene, active))?
         };
         Ok(__cordl_ret.into())
     }

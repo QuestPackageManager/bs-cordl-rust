@@ -117,7 +117,7 @@ impl crate::System::Threading::CancellationCallbackCoreWorkArguments {
         >,
         currArrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::CancellationCallbackCoreWorkArguments as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -134,12 +134,13 @@ impl crate::System::Threading::CancellationCallbackCoreWorkArguments {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::CancellationCallbackCoreWorkArguments as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (currArrayFragment, currArrayIndex))
+            method.invoke_unchecked(self, (currArrayFragment, currArrayIndex))?
         };
         Ok(__cordl_ret.into())
     }

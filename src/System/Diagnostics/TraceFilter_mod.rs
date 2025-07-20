@@ -57,7 +57,7 @@ impl crate::System::Diagnostics::TraceFilter {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::TraceFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -88,8 +88,9 @@ impl crate::System::Diagnostics::TraceFilter {
             >("ShouldTrace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldTrace", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::TraceFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldTrace", 8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -97,7 +98,7 @@ impl crate::System::Diagnostics::TraceFilter {
                 .invoke_unchecked(
                     self,
                     (cache, source, eventType, id, formatOrMessage, args, data1, data),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +110,7 @@ impl crate::System::Diagnostics::TraceFilter {
         id: i32,
         formatOrMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Diagnostics::TraceFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -125,13 +126,14 @@ impl crate::System::Diagnostics::TraceFilter {
             >("ShouldTrace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldTrace", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Diagnostics::TraceFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldTrace", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (cache, source, eventType, id, formatOrMessage))
+                .invoke_unchecked(self, (cache, source, eventType, id, formatOrMessage))?
         };
         Ok(__cordl_ret.into())
     }

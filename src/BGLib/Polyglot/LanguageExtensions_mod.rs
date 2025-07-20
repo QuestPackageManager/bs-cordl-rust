@@ -43,7 +43,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LanguageExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::BGLib::Polyglot::Language),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -51,19 +51,20 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
             >("ToCultureInfoName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToCultureInfoName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LanguageExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToCultureInfoName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (lang)) };
+        > = unsafe { method.invoke_unchecked((), (lang))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToLanguage_Il2CppString0(
         serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LanguageExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::BGLib::Polyglot::Language,
@@ -71,12 +72,13 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
             >("ToLanguage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToLanguage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LanguageExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToLanguage", 1usize
                 )
             });
         let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
-            method.invoke_unchecked((), (serializedName))
+            method.invoke_unchecked((), (serializedName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +86,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
         systemLanguage: crate::UnityEngine::SystemLanguage,
         useFallbackLanguage: bool,
     ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LanguageExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::SystemLanguage, bool),
                 crate::BGLib::Polyglot::Language,
@@ -92,12 +94,13 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
             >("ToLanguage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToLanguage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LanguageExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToLanguage", 2usize
                 )
             });
         let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
-            method.invoke_unchecked((), (systemLanguage, useFallbackLanguage))
+            method.invoke_unchecked((), (systemLanguage, useFallbackLanguage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +109,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::Polyglot::LanguageExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::BGLib::Polyglot::Language),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -114,13 +117,14 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
             >("ToSerializedName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToSerializedName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::Polyglot::LanguageExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToSerializedName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (lang)) };
+        > = unsafe { method.invoke_unchecked((), (lang))? };
         Ok(__cordl_ret.into())
     }
 }

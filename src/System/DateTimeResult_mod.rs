@@ -120,7 +120,7 @@ impl crate::System::DateTimeResult {
         &mut self,
         originalDateTimeString: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ReadOnlySpan_1<char>),
                 quest_hook::libil2cpp::Void,
@@ -128,19 +128,20 @@ impl crate::System::DateTimeResult {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "Init", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (originalDateTimeString))
+            method.invoke_unchecked(self, (originalDateTimeString))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetBadDateTimeFailure(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -148,19 +149,20 @@ impl crate::System::DateTimeResult {
             >("SetBadDateTimeFailure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBadDateTimeFailure", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBadDateTimeFailure", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetBadFormatSpecifierFailure_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -168,12 +170,13 @@ impl crate::System::DateTimeResult {
             >("SetBadFormatSpecifierFailure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBadFormatSpecifierFailure", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBadFormatSpecifierFailure", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,7 +184,7 @@ impl crate::System::DateTimeResult {
         &mut self,
         failedFormatSpecifier: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ReadOnlySpan_1<char>),
                 quest_hook::libil2cpp::Void,
@@ -189,12 +192,13 @@ impl crate::System::DateTimeResult {
             >("SetBadFormatSpecifierFailure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBadFormatSpecifierFailure", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBadFormatSpecifierFailure", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (failedFormatSpecifier))
+            method.invoke_unchecked(self, (failedFormatSpecifier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -204,7 +208,7 @@ impl crate::System::DateTimeResult {
         month: i32,
         day: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -212,12 +216,13 @@ impl crate::System::DateTimeResult {
             >("SetDate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "SetDate", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (year, month, day))
+            method.invoke_unchecked(self, (year, month, day))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +234,7 @@ impl crate::System::DateTimeResult {
             quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ParseFailureKind,
@@ -241,8 +246,9 @@ impl crate::System::DateTimeResult {
             >("SetFailure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetFailure", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "SetFailure", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -250,7 +256,7 @@ impl crate::System::DateTimeResult {
                 .invoke_unchecked(
                     self,
                     (failure, failureMessageID, failureMessageFormatArgument),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -265,7 +271,7 @@ impl crate::System::DateTimeResult {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ParseFailureKind,
@@ -278,8 +284,9 @@ impl crate::System::DateTimeResult {
             >("SetFailure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetFailure", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "SetFailure", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -292,7 +299,7 @@ impl crate::System::DateTimeResult {
                         failureMessageFormatArgument,
                         failureArgumentName,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -301,7 +308,7 @@ impl crate::System::DateTimeResult {
         failure: crate::System::ParseFailureKind,
         failureMessageID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DateTimeResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ParseFailureKind,
@@ -312,12 +319,13 @@ impl crate::System::DateTimeResult {
             >("SetFailure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetFailure", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DateTimeResult as quest_hook::libil2cpp::Type >
+                    ::class(), "SetFailure", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (failure, failureMessageID))
+            method.invoke_unchecked(self, (failure, failureMessageID))?
         };
         Ok(__cordl_ret.into())
     }

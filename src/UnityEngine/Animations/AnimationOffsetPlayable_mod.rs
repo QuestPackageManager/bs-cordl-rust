@@ -109,7 +109,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Animations::AnimationOffsetPlayable,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -122,12 +122,13 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Animations::AnimationOffsetPlayable = unsafe {
-            method.invoke_unchecked((), (graph, position, rotation, inputCount))
+            method.invoke_unchecked((), (graph, position, rotation, inputCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +138,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
         rotation: crate::UnityEngine::Quaternion,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -150,12 +151,13 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >("CreateHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHandle", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateHandle", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            method.invoke_unchecked((), (graph, position, rotation, inputCount))
+            method.invoke_unchecked((), (graph, position, rotation, inputCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -167,7 +169,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             crate::UnityEngine::Playables::PlayableHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -182,12 +184,14 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >("CreateHandleInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHandleInternal", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateHandleInternal",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (graph, position, rotation, handle))
+            method.invoke_unchecked((), (graph, position, rotation, handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,7 +205,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             crate::UnityEngine::Playables::PlayableHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -218,12 +222,14 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >("CreateHandleInternal_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHandleInternal_Injected", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateHandleInternal_Injected", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (graph, position, rotation, handle))
+            method.invoke_unchecked((), (graph, position, rotation, handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +237,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
         &mut self,
         other: crate::UnityEngine::Animations::AnimationOffsetPlayable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Animations::AnimationOffsetPlayable),
                 bool,
@@ -239,17 +245,18 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Playables::PlayableHandle,
@@ -257,12 +264,13 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >("GetHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHandle", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHandle", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +278,7 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Playables::PlayableHandle),
                 quest_hook::libil2cpp::Void,
@@ -278,19 +286,20 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (handle))
+            method.invoke_unchecked(self, (handle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         playable: crate::UnityEngine::Animations::AnimationOffsetPlayable,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Animations::AnimationOffsetPlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Animations::AnimationOffsetPlayable),
                 crate::UnityEngine::Playables::Playable,
@@ -298,12 +307,13 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Animations::AnimationOffsetPlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            method.invoke_unchecked((), (playable))
+            method.invoke_unchecked((), (playable))?
         };
         Ok(__cordl_ret.into())
     }

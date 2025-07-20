@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlFloatAttributeDescription as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, f32),
                 f32,
@@ -52,11 +52,15 @@ impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
             >("ConvertValueToFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertValueToFloat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlFloatAttributeDescription as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertValueToFloat",
+                    2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (v, defaultValue)) };
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (v, defaultValue))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueFromBag(
@@ -64,7 +68,7 @@ impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlFloatAttributeDescription as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -77,11 +81,12 @@ impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
             >("GetValueFromBag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValueFromBag", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlFloatAttributeDescription as
+                    quest_hook::libil2cpp::Type > ::class(), "GetValueFromBag", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (bag, cc)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (bag, cc))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -94,16 +99,17 @@ impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlFloatAttributeDescription as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlFloatAttributeDescription as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

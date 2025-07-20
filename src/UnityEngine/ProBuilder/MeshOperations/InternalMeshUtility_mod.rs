@@ -48,7 +48,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -66,12 +66,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
             >("AverageNormalWithIndexes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AverageNormalWithIndexes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "AverageNormalWithIndexes", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (shared, all, norm))
+            method.invoke_unchecked((), (shared, all, norm))?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +83,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>, bool),
                 quest_hook::libil2cpp::Gc<
@@ -91,19 +93,21 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
             >("CreateMeshWithTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMeshWithTransform", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "CreateMeshWithTransform", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { method.invoke_unchecked((), (t, preserveFaces)) };
+        > = unsafe { method.invoke_unchecked((), (t, preserveFaces))? };
         Ok(__cordl_ret.into())
     }
     pub fn FilterUnusedSubmeshIndexes(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -113,12 +117,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
             >("FilterUnusedSubmeshIndexes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FilterUnusedSubmeshIndexes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "FilterUnusedSubmeshIndexes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh))
+            method.invoke_unchecked((), (mesh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +132,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         preserveFaces: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -139,12 +145,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
             >("ResetPbObjectWithMeshFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResetPbObjectWithMeshFilter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "ResetPbObjectWithMeshFilter", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (pb, preserveFaces))
+            method.invoke_unchecked((), (pb, preserveFaces))?
         };
         Ok(__cordl_ret.into())
     }

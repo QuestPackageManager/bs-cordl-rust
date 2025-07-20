@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
             crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
@@ -63,13 +63,14 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback {
             >("Precompute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Precompute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback as
+                    quest_hook::libil2cpp::Type > ::class(), "Precompute", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
-        > = unsafe { method.invoke_unchecked(self, (existing)) };
+        > = unsafe { method.invoke_unchecked(self, (existing))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

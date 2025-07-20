@@ -51,7 +51,7 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -68,13 +68,14 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("Activate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Activate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(), "Activate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked((), (proxy, ctorCall)) };
+        > = unsafe { method.invoke_unchecked((), (proxy, ctorCall))? };
         Ok(__cordl_ret.into())
     }
     pub fn AllocateUninitializedClassInstance(
@@ -82,7 +83,7 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -90,13 +91,15 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("AllocateUninitializedClassInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AllocateUninitializedClassInstance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AllocateUninitializedClassInstance", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateConstructionCall(
@@ -112,7 +115,7 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             crate::System::Runtime::Remoting::Messaging::ConstructionCall,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -132,15 +135,20 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("CreateConstructionCall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateConstructionCall", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateConstructionCall",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::ConstructionCall,
         > = unsafe {
             method
-                .invoke_unchecked((), (_cordl_type, activationUrl, activationAttributes))
+                .invoke_unchecked(
+                    (),
+                    (_cordl_type, activationUrl, activationAttributes),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,7 +159,7 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
@@ -163,13 +171,15 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("CreateInstanceFromMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateInstanceFromMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateInstanceFromMessage",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked((), (ctorCall)) };
+        > = unsafe { method.invoke_unchecked((), (ctorCall))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateProxyForType(
@@ -177,7 +187,7 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -185,20 +195,21 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("CreateProxyForType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateProxyForType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateProxyForType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnableProxyActivation(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         enable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                 quest_hook::libil2cpp::Void,
@@ -206,12 +217,14 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("EnableProxyActivation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnableProxyActivation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(), "EnableProxyActivation",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl_type, enable))
+            method.invoke_unchecked((), (_cordl_type, enable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -222,7 +235,7 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
@@ -234,13 +247,14 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("RemoteActivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoteActivate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoteActivate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = unsafe { method.invoke_unchecked((), (ctorCall)) };
+        > = unsafe { method.invoke_unchecked((), (ctorCall))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ConstructionActivator() -> quest_hook::libil2cpp::Result<
@@ -248,7 +262,7 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             crate::System::Runtime::Remoting::Activation::IActivator,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Activation::ActivationServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -258,13 +272,15 @@ impl crate::System::Runtime::Remoting::Activation::ActivationServices {
             >("get_ConstructionActivator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ConstructionActivator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Activation::ActivationServices as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ConstructionActivator",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Activation::IActivator,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

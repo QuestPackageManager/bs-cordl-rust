@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::ICoroutineStarter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ICoroutineStarter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
@@ -52,12 +52,13 @@ impl crate::GlobalNamespace::ICoroutineStarter {
             >("StartCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartCoroutine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ICoroutineStarter as
+                    quest_hook::libil2cpp::Type > ::class(), "StartCoroutine", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine> = unsafe {
-            method.invoke_unchecked(self, (routine))
+            method.invoke_unchecked(self, (routine))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,7 +66,7 @@ impl crate::GlobalNamespace::ICoroutineStarter {
         &mut self,
         routine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ICoroutineStarter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>),
                 quest_hook::libil2cpp::Void,
@@ -73,12 +74,13 @@ impl crate::GlobalNamespace::ICoroutineStarter {
             >("StopCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StopCoroutine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ICoroutineStarter as
+                    quest_hook::libil2cpp::Type > ::class(), "StopCoroutine", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (routine))
+            method.invoke_unchecked(self, (routine))?
         };
         Ok(__cordl_ret.into())
     }

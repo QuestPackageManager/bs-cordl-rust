@@ -41,7 +41,7 @@ impl crate::UnityEngine::Yoga::Native {
     pub fn YGConfigFree(
         config: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -49,19 +49,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGConfigFree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGConfigFree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGConfigFree", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (config))
+            method.invoke_unchecked((), (config))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGConfigFreeInternal(
         config: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -69,17 +70,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGConfigFreeInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGConfigFreeInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGConfigFreeInternal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (config))
+            method.invoke_unchecked((), (config))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGConfigGetDefault() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::System::IntPtr,
@@ -87,19 +89,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGConfigGetDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGConfigGetDefault", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGConfigGetDefault", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGConfigGetUseWebDefaults(
         config: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 bool,
@@ -107,24 +110,26 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGConfigGetUseWebDefaults")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGConfigGetUseWebDefaults", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGConfigGetUseWebDefaults", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (config)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (config))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGConfigNew() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), crate::System::IntPtr, 0usize>("YGConfigNew")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGConfigNew", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGConfigNew", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +137,7 @@ impl crate::UnityEngine::Yoga::Native {
         config: crate::System::IntPtr,
         pixelsInPoint: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -140,12 +145,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGConfigSetPointScaleFactor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGConfigSetPointScaleFactor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGConfigSetPointScaleFactor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (config, pixelsInPoint))
+            method.invoke_unchecked((), (config, pixelsInPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +159,7 @@ impl crate::UnityEngine::Yoga::Native {
         config: crate::System::IntPtr,
         useWebDefaults: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, bool),
                 quest_hook::libil2cpp::Void,
@@ -161,12 +167,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGConfigSetUseWebDefaults")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGConfigSetUseWebDefaults", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGConfigSetUseWebDefaults", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (config, useWebDefaults))
+            method.invoke_unchecked((), (config, useWebDefaults))?
         };
         Ok(__cordl_ret.into())
     }
@@ -176,7 +183,7 @@ impl crate::UnityEngine::Yoga::Native {
         height: f32,
         returnValueAddress: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
@@ -189,12 +196,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeBaselineInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeBaselineInvoke", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeBaselineInvoke", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, width, height, returnValueAddress))
+            method.invoke_unchecked((), (node, width, height, returnValueAddress))?
         };
         Ok(__cordl_ret.into())
     }
@@ -204,7 +212,7 @@ impl crate::UnityEngine::Yoga::Native {
         availableHeight: f32,
         parentDirection: crate::UnityEngine::Yoga::YogaDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -217,8 +225,9 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeCalculateLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeCalculateLayout", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeCalculateLayout", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -226,7 +235,7 @@ impl crate::UnityEngine::Yoga::Native {
                 .invoke_unchecked(
                     (),
                     (node, availableWidth, availableHeight, parentDirection),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -234,7 +243,7 @@ impl crate::UnityEngine::Yoga::Native {
         dstNode: crate::System::IntPtr,
         srcNode: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -242,19 +251,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeCopyStyle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeCopyStyle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeCopyStyle", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (dstNode, srcNode))
+            method.invoke_unchecked((), (dstNode, srcNode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeFree(
         ygNode: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -262,19 +272,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeFree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeFree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeFree", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ygNode))
+            method.invoke_unchecked((), (ygNode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeFreeInternal(
         ygNode: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -282,19 +293,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeFreeInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeFreeInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeFreeInternal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ygNode))
+            method.invoke_unchecked((), (ygNode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeGetHasNewLayout(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 bool,
@@ -302,11 +314,12 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeGetHasNewLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeGetHasNewLayout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeGetHasNewLayout", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeInsertChild(
@@ -314,7 +327,7 @@ impl crate::UnityEngine::Yoga::Native {
         child: crate::System::IntPtr,
         index: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::System::IntPtr, u32),
                 quest_hook::libil2cpp::Void,
@@ -322,34 +335,36 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeInsertChild")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeInsertChild", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeInsertChild", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, child, index))
+            method.invoke_unchecked((), (node, child, index))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeIsDirty(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(crate::System::IntPtr), bool, 1usize>("YGNodeIsDirty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeIsDirty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeIsDirty", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetBorder(
         node: crate::System::IntPtr,
         edge: crate::UnityEngine::Yoga::YogaEdge,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                 f32,
@@ -357,17 +372,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetBorder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetBorder", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetBorder", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node, edge)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node, edge))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetBottom(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 f32,
@@ -375,17 +391,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetBottom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetBottom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetBottom", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetHeight(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 f32,
@@ -393,17 +410,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetHeight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetHeight", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetLeft(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 f32,
@@ -411,18 +429,19 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetLeft")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetLeft", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetLeft", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetMargin(
         node: crate::System::IntPtr,
         edge: crate::UnityEngine::Yoga::YogaEdge,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                 f32,
@@ -430,18 +449,19 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetMargin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetMargin", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetMargin", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node, edge)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node, edge))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetPadding(
         node: crate::System::IntPtr,
         edge: crate::UnityEngine::Yoga::YogaEdge,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                 f32,
@@ -449,17 +469,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetPadding")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetPadding", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetPadding", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node, edge)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node, edge))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetRight(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 f32,
@@ -467,17 +488,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetRight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetRight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetRight", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetTop(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 f32,
@@ -485,17 +507,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetTop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetTop", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetTop", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeLayoutGetWidth(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 f32,
@@ -503,17 +526,18 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeLayoutGetWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeLayoutGetWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeLayoutGetWidth", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeMarkDirty(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -521,12 +545,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeMarkDirty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeMarkDirty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeMarkDirty", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node))
+            method.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -538,7 +563,7 @@ impl crate::UnityEngine::Yoga::Native {
         heightMode: crate::UnityEngine::Yoga::YogaMeasureMode,
         returnValueAddress: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
@@ -553,8 +578,9 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeMeasureInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeMeasureInvoke", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeMeasureInvoke", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -562,14 +588,14 @@ impl crate::UnityEngine::Yoga::Native {
                 .invoke_unchecked(
                     (),
                     (node, width, widthMode, height, heightMode, returnValueAddress),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeNewWithConfig(
         config: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 crate::System::IntPtr,
@@ -577,12 +603,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeNewWithConfig")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeNewWithConfig", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeNewWithConfig", 1usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (config))
+            method.invoke_unchecked((), (config))?
         };
         Ok(__cordl_ret.into())
     }
@@ -590,7 +617,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         child: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -598,19 +625,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeRemoveChild")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeRemoveChild", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeRemoveChild", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, child))
+            method.invoke_unchecked((), (node, child))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeRemoveMeasureFunc(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -618,12 +646,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeRemoveMeasureFunc")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeRemoveMeasureFunc", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeRemoveMeasureFunc", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node))
+            method.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -631,7 +660,7 @@ impl crate::UnityEngine::Yoga::Native {
         ygNode: crate::System::IntPtr,
         config: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -639,12 +668,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeSetConfig")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeSetConfig", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeSetConfig", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ygNode, config))
+            method.invoke_unchecked((), (ygNode, config))?
         };
         Ok(__cordl_ret.into())
     }
@@ -652,7 +682,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         hasNewLayout: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, bool),
                 quest_hook::libil2cpp::Void,
@@ -660,19 +690,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeSetHasNewLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeSetHasNewLayout", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeSetHasNewLayout", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, hasNewLayout))
+            method.invoke_unchecked((), (node, hasNewLayout))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeSetMeasureFunc(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -680,19 +711,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeSetMeasureFunc")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeSetMeasureFunc", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeSetMeasureFunc", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node))
+            method.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeStyleGetDirection(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 crate::UnityEngine::Yoga::YogaDirection,
@@ -700,12 +732,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleGetDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleGetDirection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleGetDirection", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Yoga::YogaDirection = unsafe {
-            method.invoke_unchecked((), (node))
+            method.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -713,7 +746,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         alignContent: crate::UnityEngine::Yoga::YogaAlign,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaAlign),
                 quest_hook::libil2cpp::Void,
@@ -721,12 +754,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetAlignContent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetAlignContent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetAlignContent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, alignContent))
+            method.invoke_unchecked((), (node, alignContent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -734,7 +768,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         alignItems: crate::UnityEngine::Yoga::YogaAlign,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaAlign),
                 quest_hook::libil2cpp::Void,
@@ -742,12 +776,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetAlignItems")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetAlignItems", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetAlignItems", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, alignItems))
+            method.invoke_unchecked((), (node, alignItems))?
         };
         Ok(__cordl_ret.into())
     }
@@ -755,7 +790,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         alignSelf: crate::UnityEngine::Yoga::YogaAlign,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaAlign),
                 quest_hook::libil2cpp::Void,
@@ -763,12 +798,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetAlignSelf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetAlignSelf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetAlignSelf", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, alignSelf))
+            method.invoke_unchecked((), (node, alignSelf))?
         };
         Ok(__cordl_ret.into())
     }
@@ -777,7 +813,7 @@ impl crate::UnityEngine::Yoga::Native {
         edge: crate::UnityEngine::Yoga::YogaEdge,
         border: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                 quest_hook::libil2cpp::Void,
@@ -785,12 +821,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetBorder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetBorder", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetBorder", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge, border))
+            method.invoke_unchecked((), (node, edge, border))?
         };
         Ok(__cordl_ret.into())
     }
@@ -798,7 +835,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         display: crate::UnityEngine::Yoga::YogaDisplay,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaDisplay),
                 quest_hook::libil2cpp::Void,
@@ -806,12 +843,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetDisplay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetDisplay", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetDisplay", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, display))
+            method.invoke_unchecked((), (node, display))?
         };
         Ok(__cordl_ret.into())
     }
@@ -819,7 +857,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flex: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -827,12 +865,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlex", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flex))
+            method.invoke_unchecked((), (node, flex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -840,7 +879,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flexBasis: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -848,19 +887,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlexBasis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlexBasis", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlexBasis", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flexBasis))
+            method.invoke_unchecked((), (node, flexBasis))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeStyleSetFlexBasisAuto(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -868,12 +908,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlexBasisAuto")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlexBasisAuto", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlexBasisAuto", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node))
+            method.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -881,7 +922,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flexBasis: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -889,12 +930,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlexBasisPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlexBasisPercent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlexBasisPercent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flexBasis))
+            method.invoke_unchecked((), (node, flexBasis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -902,7 +944,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flexDirection: crate::UnityEngine::Yoga::YogaFlexDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaFlexDirection),
                 quest_hook::libil2cpp::Void,
@@ -910,12 +952,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlexDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlexDirection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlexDirection", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flexDirection))
+            method.invoke_unchecked((), (node, flexDirection))?
         };
         Ok(__cordl_ret.into())
     }
@@ -923,7 +966,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flexGrow: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -931,12 +974,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlexGrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlexGrow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlexGrow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flexGrow))
+            method.invoke_unchecked((), (node, flexGrow))?
         };
         Ok(__cordl_ret.into())
     }
@@ -944,7 +988,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flexShrink: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -952,12 +996,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlexShrink")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlexShrink", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlexShrink", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flexShrink))
+            method.invoke_unchecked((), (node, flexShrink))?
         };
         Ok(__cordl_ret.into())
     }
@@ -965,7 +1010,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flexWrap: crate::UnityEngine::Yoga::YogaWrap,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaWrap),
                 quest_hook::libil2cpp::Void,
@@ -973,12 +1018,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetFlexWrap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetFlexWrap", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetFlexWrap", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flexWrap))
+            method.invoke_unchecked((), (node, flexWrap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -986,7 +1032,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         height: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -994,19 +1040,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetHeight", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetHeight", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, height))
+            method.invoke_unchecked((), (node, height))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeStyleSetHeightAuto(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -1014,12 +1061,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetHeightAuto")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetHeightAuto", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetHeightAuto", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node))
+            method.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1027,7 +1075,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         height: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1035,12 +1083,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetHeightPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetHeightPercent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetHeightPercent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, height))
+            method.invoke_unchecked((), (node, height))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1048,7 +1097,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         justifyContent: crate::UnityEngine::Yoga::YogaJustify,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaJustify),
                 quest_hook::libil2cpp::Void,
@@ -1056,12 +1105,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetJustifyContent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetJustifyContent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetJustifyContent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, justifyContent))
+            method.invoke_unchecked((), (node, justifyContent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1070,7 +1120,7 @@ impl crate::UnityEngine::Yoga::Native {
         edge: crate::UnityEngine::Yoga::YogaEdge,
         margin: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                 quest_hook::libil2cpp::Void,
@@ -1078,12 +1128,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMargin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMargin", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMargin", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge, margin))
+            method.invoke_unchecked((), (node, edge, margin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1091,7 +1142,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         edge: crate::UnityEngine::Yoga::YogaEdge,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                 quest_hook::libil2cpp::Void,
@@ -1099,12 +1150,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMarginAuto")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMarginAuto", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMarginAuto", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge))
+            method.invoke_unchecked((), (node, edge))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1113,7 +1165,7 @@ impl crate::UnityEngine::Yoga::Native {
         edge: crate::UnityEngine::Yoga::YogaEdge,
         margin: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                 quest_hook::libil2cpp::Void,
@@ -1121,12 +1173,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMarginPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMarginPercent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMarginPercent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge, margin))
+            method.invoke_unchecked((), (node, edge, margin))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1134,7 +1187,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         maxHeight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1142,12 +1195,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMaxHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMaxHeight", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMaxHeight", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, maxHeight))
+            method.invoke_unchecked((), (node, maxHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1155,7 +1209,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         maxHeight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1163,12 +1217,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMaxHeightPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMaxHeightPercent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMaxHeightPercent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, maxHeight))
+            method.invoke_unchecked((), (node, maxHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1176,7 +1231,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         maxWidth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1184,12 +1239,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMaxWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMaxWidth", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMaxWidth", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, maxWidth))
+            method.invoke_unchecked((), (node, maxWidth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1197,7 +1253,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         maxWidth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1205,12 +1261,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMaxWidthPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMaxWidthPercent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMaxWidthPercent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, maxWidth))
+            method.invoke_unchecked((), (node, maxWidth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1218,7 +1275,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         minHeight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1226,12 +1283,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMinHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMinHeight", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMinHeight", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, minHeight))
+            method.invoke_unchecked((), (node, minHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1239,7 +1297,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         minHeight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1247,12 +1305,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMinHeightPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMinHeightPercent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMinHeightPercent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, minHeight))
+            method.invoke_unchecked((), (node, minHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1260,7 +1319,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         minWidth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1268,12 +1327,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMinWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMinWidth", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMinWidth", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, minWidth))
+            method.invoke_unchecked((), (node, minWidth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1281,7 +1341,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         minWidth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1289,12 +1349,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetMinWidthPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetMinWidthPercent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetMinWidthPercent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, minWidth))
+            method.invoke_unchecked((), (node, minWidth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1302,7 +1363,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         flexWrap: crate::UnityEngine::Yoga::YogaOverflow,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaOverflow),
                 quest_hook::libil2cpp::Void,
@@ -1310,12 +1371,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetOverflow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetOverflow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetOverflow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, flexWrap))
+            method.invoke_unchecked((), (node, flexWrap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1324,7 +1386,7 @@ impl crate::UnityEngine::Yoga::Native {
         edge: crate::UnityEngine::Yoga::YogaEdge,
         padding: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                 quest_hook::libil2cpp::Void,
@@ -1332,12 +1394,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetPadding")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetPadding", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetPadding", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge, padding))
+            method.invoke_unchecked((), (node, edge, padding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1346,7 +1409,7 @@ impl crate::UnityEngine::Yoga::Native {
         edge: crate::UnityEngine::Yoga::YogaEdge,
         padding: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                 quest_hook::libil2cpp::Void,
@@ -1354,12 +1417,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetPaddingPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetPaddingPercent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetPaddingPercent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge, padding))
+            method.invoke_unchecked((), (node, edge, padding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1368,7 +1432,7 @@ impl crate::UnityEngine::Yoga::Native {
         edge: crate::UnityEngine::Yoga::YogaEdge,
         position: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                 quest_hook::libil2cpp::Void,
@@ -1376,12 +1440,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetPosition", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetPosition", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge, position))
+            method.invoke_unchecked((), (node, edge, position))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1390,7 +1455,7 @@ impl crate::UnityEngine::Yoga::Native {
         edge: crate::UnityEngine::Yoga::YogaEdge,
         position: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                 quest_hook::libil2cpp::Void,
@@ -1398,12 +1463,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetPositionPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetPositionPercent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetPositionPercent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, edge, position))
+            method.invoke_unchecked((), (node, edge, position))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1411,7 +1477,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         positionType: crate::UnityEngine::Yoga::YogaPositionType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaPositionType),
                 quest_hook::libil2cpp::Void,
@@ -1419,12 +1485,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetPositionType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetPositionType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetPositionType", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, positionType))
+            method.invoke_unchecked((), (node, positionType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1432,7 +1499,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         width: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1440,19 +1507,20 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetWidth", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetWidth", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, width))
+            method.invoke_unchecked((), (node, width))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn YGNodeStyleSetWidthAuto(
         node: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -1460,12 +1528,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetWidthAuto")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetWidthAuto", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetWidthAuto", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node))
+            method.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1473,7 +1542,7 @@ impl crate::UnityEngine::Yoga::Native {
         node: crate::System::IntPtr,
         width: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, f32),
                 quest_hook::libil2cpp::Void,
@@ -1481,12 +1550,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGNodeStyleSetWidthPercent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGNodeStyleSetWidthPercent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGNodeStyleSetWidthPercent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (node, width))
+            method.invoke_unchecked((), (node, width))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1494,7 +1564,7 @@ impl crate::UnityEngine::Yoga::Native {
         ygNode: crate::System::IntPtr,
         node: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -1505,12 +1575,13 @@ impl crate::UnityEngine::Yoga::Native {
             >("YGSetManagedObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "YGSetManagedObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::Native as quest_hook::libil2cpp::Type >
+                    ::class(), "YGSetManagedObject", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ygNode, node))
+            method.invoke_unchecked((), (ygNode, node))?
         };
         Ok(__cordl_ret.into())
     }

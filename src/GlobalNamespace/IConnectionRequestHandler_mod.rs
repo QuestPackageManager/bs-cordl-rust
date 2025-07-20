@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::IConnectionRequestHandler {
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IConnectionRequestHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -59,12 +59,14 @@ impl crate::GlobalNamespace::IConnectionRequestHandler {
             >("GetConnectionMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConnectionMessage", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IConnectionRequestHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "GetConnectionMessage",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer, userId, userName, isConnectionOwner))
+            method.invoke_unchecked(self, (writer, userId, userName, isConnectionOwner))?
         };
         Ok(__cordl_ret.into())
     }
@@ -79,7 +81,7 @@ impl crate::GlobalNamespace::IConnectionRequestHandler {
         >,
         isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IConnectionRequestHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
@@ -96,12 +98,14 @@ impl crate::GlobalNamespace::IConnectionRequestHandler {
             >("ValidateConnectionMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateConnectionMessage", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IConnectionRequestHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateConnectionMessage",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (reader, userId, userName, isConnectionOwner))
+            method.invoke_unchecked(self, (reader, userId, userName, isConnectionOwner))?
         };
         Ok(__cordl_ret.into())
     }

@@ -47,7 +47,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
     pub fn get_avatarsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::MultiplayerAvatarsData,
@@ -55,12 +55,13 @@ impl crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
             >("get_avatarsData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_avatarsData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::IAvatarVisualDataProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "get_avatarsData", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::TMPro::TMP_DefaultControls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::TMPro::TMP_DefaultControls_Resources),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -56,12 +56,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("CreateButton")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateButton", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateButton", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (resources))
+            method.invoke_unchecked((), (resources))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::TMPro::TMP_DefaultControls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::TMPro::TMP_DefaultControls_Resources),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -78,12 +79,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("CreateDropdown")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateDropdown", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateDropdown", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (resources))
+            method.invoke_unchecked((), (resources))?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +94,7 @@ impl crate::TMPro::TMP_DefaultControls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::TMPro::TMP_DefaultControls_Resources),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -100,12 +102,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("CreateInputField")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateInputField", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateInputField", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (resources))
+            method.invoke_unchecked((), (resources))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +117,7 @@ impl crate::TMPro::TMP_DefaultControls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::TMPro::TMP_DefaultControls_Resources),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -122,12 +125,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("CreateScrollbar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateScrollbar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateScrollbar", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (resources))
+            method.invoke_unchecked((), (resources))?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,7 +140,7 @@ impl crate::TMPro::TMP_DefaultControls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::TMPro::TMP_DefaultControls_Resources),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -144,12 +148,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("CreateText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateText", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateText", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (resources))
+            method.invoke_unchecked((), (resources))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +164,7 @@ impl crate::TMPro::TMP_DefaultControls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -170,12 +175,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("CreateUIElementRoot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateUIElementRoot", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateUIElementRoot", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (name, _cordl_size))
+            method.invoke_unchecked((), (name, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -185,7 +191,7 @@ impl crate::TMPro::TMP_DefaultControls {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -196,19 +202,20 @@ impl crate::TMPro::TMP_DefaultControls {
             >("CreateUIObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateUIObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateUIObject", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (name, parent))
+            method.invoke_unchecked((), (name, parent))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetDefaultColorTransitionValues(
         slider: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>),
                 quest_hook::libil2cpp::Void,
@@ -216,19 +223,20 @@ impl crate::TMPro::TMP_DefaultControls {
             >("SetDefaultColorTransitionValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDefaultColorTransitionValues", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "SetDefaultColorTransitionValues", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (slider))
+            method.invoke_unchecked((), (slider))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetDefaultTextValues(
         lbl: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                 quest_hook::libil2cpp::Void,
@@ -236,12 +244,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("SetDefaultTextValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDefaultTextValues", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "SetDefaultTextValues", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (lbl))
+            method.invoke_unchecked((), (lbl))?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +258,7 @@ impl crate::TMPro::TMP_DefaultControls {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         layer: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>, i32),
                 quest_hook::libil2cpp::Void,
@@ -257,12 +266,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("SetLayerRecursively")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLayerRecursively", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "SetLayerRecursively", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (go, layer))
+            method.invoke_unchecked((), (go, layer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +280,7 @@ impl crate::TMPro::TMP_DefaultControls {
         child: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -281,12 +291,13 @@ impl crate::TMPro::TMP_DefaultControls {
             >("SetParentAndAlign")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParentAndAlign", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_DefaultControls as quest_hook::libil2cpp::Type >
+                    ::class(), "SetParentAndAlign", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (child, parent))
+            method.invoke_unchecked((), (child, parent))?
         };
         Ok(__cordl_ret.into())
     }

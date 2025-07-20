@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -68,13 +68,15 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >("GetPlayerSpecificSettingsForUserId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPlayerSpecificSettingsForUserId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetPlayerSpecificSettingsForUserId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
-        > = unsafe { method.invoke_unchecked(self, (userId)) };
+        > = unsafe { method.invoke_unchecked(self, (userId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -100,7 +102,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
@@ -110,12 +112,14 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >("SaveFromNetSerializable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveFromNetSerializable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveFromNetSerializable",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playersAtGameStartNetSerializable))
+            method.invoke_unchecked(self, (playersAtGameStartNetSerializable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +132,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -143,8 +147,9 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -152,7 +157,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                 .invoke_unchecked(
                     self,
                     (multiplayerSessionManager, localPlayerSpecificSettings),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +168,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -173,13 +178,15 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >("get_localPlayerSpecificSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_localPlayerSpecificSettings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_localPlayerSpecificSettings", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_playersAtGameStart(
@@ -191,7 +198,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -205,15 +212,17 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >("get_playersAtGameStart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_playersAtGameStart", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(), "get_playersAtGameStart",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_playersAtGameStartNetSerializable(
@@ -223,7 +232,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -233,13 +242,15 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >("get_playersAtGameStartNetSerializable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_playersAtGameStartNetSerializable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_playersAtGameStartNetSerializable", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_localPlayerSpecificSettings(
@@ -248,7 +259,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
@@ -258,12 +269,14 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >("set_localPlayerSpecificSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_localPlayerSpecificSettings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_localPlayerSpecificSettings", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,7 +286,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
@@ -283,12 +296,14 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             >("set_playersAtGameStartNetSerializable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_playersAtGameStartNetSerializable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_playersAtGameStartNetSerializable", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -42,7 +42,7 @@ impl crate::BeatmapSaveDataCommon::IBeat {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataCommon::IBeat as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>),
                 i32,
@@ -50,12 +50,13 @@ impl crate::BeatmapSaveDataCommon::IBeat {
             >("System.IComparable<BeatmapSaveDataCommon.IBeat>.CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.IComparable<BeatmapSaveDataCommon.IBeat>.CompareTo",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataCommon::IBeat as quest_hook::libil2cpp::Type >
+                    ::class(),
+                    "System.IComparable<BeatmapSaveDataCommon.IBeat>.CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -64,15 +65,16 @@ impl crate::BeatmapSaveDataCommon::IBeat {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_beat(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataCommon::IBeat as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_beat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_beat", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataCommon::IBeat as quest_hook::libil2cpp::Type >
+                    ::class(), "get_beat", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

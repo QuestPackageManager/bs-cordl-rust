@@ -54,7 +54,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             crate::GlobalNamespace::IVRPlatformHelper,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>),
                 quest_hook::libil2cpp::Void,
@@ -62,19 +62,20 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("Activate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Activate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "Activate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (vrPlatformHelper))
+            method.invoke_unchecked(self, (vrPlatformHelper))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CopyFromLeftToRight(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -82,12 +83,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("CopyFromLeftToRight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyFromLeftToRight", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyFromLeftToRight",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +100,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             crate::BeatSaber::GameSettings::ControllerProfile,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::BeatSaber::GameSettings::ControllerProfile,
@@ -107,19 +110,21 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("CopyFromOtherControllerProfile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyFromOtherControllerProfile", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CopyFromOtherControllerProfile", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (other))
+            method.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CopyFromRightToLeft(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -127,28 +132,31 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("CopyFromRightToLeft")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyFromRightToLeft", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyFromRightToLeft",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Deactivate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Deactivate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deactivate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "Deactivate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +168,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -175,25 +183,27 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("FromSaveData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromSaveData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "FromSaveData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::GameSettings::ControllerProfile,
-        > = unsafe { method.invoke_unchecked((), (controllerProfileSaveData, index)) };
+        > = unsafe { method.invoke_unchecked((), (controllerProfileSaveData, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasDefaultValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("HasDefaultValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasDefaultValues", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "HasDefaultValues", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -223,16 +233,17 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
     pub fn RefreshControllers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RefreshControllers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RefreshControllers", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "RefreshControllers", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,7 +251,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -248,12 +259,13 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("SetRotateThanMove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetRotateThanMove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "SetRotateThanMove", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +276,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             crate::BeatSaber::GameSettings::ControllerProfileSaveData,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -274,13 +286,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("ToSaveData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToSaveData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "ToSaveData", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::GameSettings::ControllerProfileSaveData,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateControllerPosition(
@@ -288,7 +301,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         isLeft: bool,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -296,12 +309,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("UpdateControllerPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateControllerPosition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateControllerPosition",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isLeft, value))
+            method.invoke_unchecked(self, (isLeft, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -310,7 +325,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         isLeft: bool,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, crate::UnityEngine::Vector3),
                 quest_hook::libil2cpp::Void,
@@ -318,12 +333,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("UpdateControllerRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateControllerRotation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateControllerRotation",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isLeft, value))
+            method.invoke_unchecked(self, (isLeft, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,7 +353,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         leftController: crate::BeatSaber::GameSettings::Controller,
         rightController: crate::BeatSaber::GameSettings::Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -351,8 +368,9 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -367,26 +385,28 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                         leftController,
                         rightController,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_alternativeHandling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_alternativeHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_alternativeHandling", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "get_alternativeHandling",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_leftController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::GameSettings::Controller> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatSaber::GameSettings::Controller,
@@ -394,19 +414,20 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("get_leftController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_leftController", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "get_leftController", 0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::GameSettings::Controller = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_rightController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::GameSettings::Controller> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatSaber::GameSettings::Controller,
@@ -414,12 +435,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("get_rightController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_rightController", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "get_rightController",
+                    0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::GameSettings::Controller = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -427,7 +450,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -435,12 +458,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("set_alternativeHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_alternativeHandling", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "set_alternativeHandling",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -448,7 +473,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         &mut self,
         value: crate::BeatSaber::GameSettings::Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::GameSettings::Controller),
                 quest_hook::libil2cpp::Void,
@@ -456,12 +481,13 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("set_leftController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_leftController", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "set_leftController", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -469,7 +495,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         &mut self,
         value: crate::BeatSaber::GameSettings::Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::ControllerProfile as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::GameSettings::Controller),
                 quest_hook::libil2cpp::Void,
@@ -477,12 +503,14 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             >("set_rightController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_rightController", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::ControllerProfile as
+                    quest_hook::libil2cpp::Type > ::class(), "set_rightController",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

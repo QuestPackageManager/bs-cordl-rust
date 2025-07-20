@@ -64,7 +64,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         &mut self,
         glyphPairAdjustmentRecord: crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord),
                 quest_hook::libil2cpp::Void,
@@ -72,12 +72,13 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (glyphPairAdjustmentRecord))
+            method.invoke_unchecked(self, (glyphPairAdjustmentRecord))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +87,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         firstAdjustmentRecord: crate::TMPro::TMP_GlyphAdjustmentRecord,
         secondAdjustmentRecord: crate::TMPro::TMP_GlyphAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::TMPro::TMP_GlyphAdjustmentRecord,
@@ -97,20 +98,21 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (firstAdjustmentRecord, secondAdjustmentRecord))
+                .invoke_unchecked(self, (firstAdjustmentRecord, secondAdjustmentRecord))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_featureLookupFlags(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::FontFeatureLookupFlags> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::TMPro::FontFeatureLookupFlags,
@@ -118,19 +120,21 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >("get_featureLookupFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_featureLookupFlags", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(), "get_featureLookupFlags",
+                    0usize
                 )
             });
         let __cordl_ret: crate::TMPro::FontFeatureLookupFlags = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_firstAdjustmentRecord(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_GlyphAdjustmentRecord> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::TMPro::TMP_GlyphAdjustmentRecord,
@@ -138,19 +142,21 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >("get_firstAdjustmentRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_firstAdjustmentRecord", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(), "get_firstAdjustmentRecord",
+                    0usize
                 )
             });
         let __cordl_ret: crate::TMPro::TMP_GlyphAdjustmentRecord = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_secondAdjustmentRecord(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_GlyphAdjustmentRecord> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::TMPro::TMP_GlyphAdjustmentRecord,
@@ -158,12 +164,14 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >("get_secondAdjustmentRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_secondAdjustmentRecord", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_secondAdjustmentRecord", 0usize
                 )
             });
         let __cordl_ret: crate::TMPro::TMP_GlyphAdjustmentRecord = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -171,7 +179,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         &mut self,
         value: crate::TMPro::FontFeatureLookupFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::TMPro::FontFeatureLookupFlags),
                 quest_hook::libil2cpp::Void,
@@ -179,12 +187,14 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >("set_featureLookupFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_featureLookupFlags", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(), "set_featureLookupFlags",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +202,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         &mut self,
         value: crate::TMPro::TMP_GlyphAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::TMPro::TMP_GlyphAdjustmentRecord),
                 quest_hook::libil2cpp::Void,
@@ -200,12 +210,14 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >("set_firstAdjustmentRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_firstAdjustmentRecord", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(), "set_firstAdjustmentRecord",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -213,7 +225,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         &mut self,
         value: crate::TMPro::TMP_GlyphAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMP_GlyphPairAdjustmentRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::TMPro::TMP_GlyphAdjustmentRecord),
                 quest_hook::libil2cpp::Void,
@@ -221,12 +233,14 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
             >("set_secondAdjustmentRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_secondAdjustmentRecord", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMP_GlyphPairAdjustmentRecord as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_secondAdjustmentRecord", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

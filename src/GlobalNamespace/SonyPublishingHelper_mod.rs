@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -58,14 +58,16 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetContentIdFromNpTitleId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetContentIdFromNpTitleId", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetContentIdFromNpTitleId",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (serviceIdPrefix, npTitleId, productLabel))
+            method.invoke_unchecked((), (serviceIdPrefix, npTitleId, productLabel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +78,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -88,14 +90,16 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetContentIdFromTitleId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetContentIdFromTitleId", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetContentIdFromTitleId",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (serviceIdPrefix, titleId, productLabel))
+            method.invoke_unchecked((), (serviceIdPrefix, titleId, productLabel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +109,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -116,13 +120,14 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetContentId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetContentId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetContentId", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (serviceId, productLabel)) };
+        > = unsafe { method.invoke_unchecked((), (serviceId, productLabel))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetContentId_SonyPublisherSKUSettingsSO0(
@@ -132,7 +137,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
@@ -142,13 +147,14 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetContentId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetContentId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetContentId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (sonyPublisherSKUSettings)) };
+        > = unsafe { method.invoke_unchecked((), (sonyPublisherSKUSettings))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNpTitleId(
@@ -156,7 +162,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -164,13 +170,14 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetNpTitleId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNpTitleId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNpTitleId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (titleId)) };
+        > = unsafe { method.invoke_unchecked((), (titleId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServiceId(
@@ -180,7 +187,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
@@ -190,13 +197,14 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetServiceId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetServiceId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetServiceId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (sonyPublisherSKUSettings)) };
+        > = unsafe { method.invoke_unchecked((), (sonyPublisherSKUSettings))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServiceIdFromNpTitleId(
@@ -205,7 +213,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -216,13 +224,15 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetServiceIdFromNpTitleId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetServiceIdFromNpTitleId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetServiceIdFromNpTitleId",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (serviceIdPrefix, npTitleId)) };
+        > = unsafe { method.invoke_unchecked((), (serviceIdPrefix, npTitleId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServiceIdFromTitleId(
@@ -231,7 +241,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SonyPublishingHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -242,13 +252,15 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
             >("GetServiceIdFromTitleId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetServiceIdFromTitleId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SonyPublishingHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetServiceIdFromTitleId",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (serviceIdPrefix, titleId)) };
+        > = unsafe { method.invoke_unchecked((), (serviceIdPrefix, titleId))? };
         Ok(__cordl_ret.into())
     }
 }

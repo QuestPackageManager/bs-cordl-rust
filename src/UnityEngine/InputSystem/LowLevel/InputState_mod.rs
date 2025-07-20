@@ -54,7 +54,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         monitorIndex: i64,
         timerIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -72,8 +72,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("AddChangeMonitorTimeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChangeMonitorTimeout", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChangeMonitorTimeout",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -81,7 +83,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
                 .invoke_unchecked(
                     (),
                     (control, monitor, _cordl_time, monitorIndex, timerIndex),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -111,7 +113,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -146,8 +148,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("AddChangeMonitor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChangeMonitor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChangeMonitor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -157,7 +160,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
                 .invoke_unchecked(
                     (),
                     (control, valueChangeCallback, monitorIndex, timerExpiredCallback),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -171,7 +174,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         monitorIndex: i64,
         groupIndex: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -188,12 +191,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("AddChangeMonitor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChangeMonitor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChangeMonitor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control, monitor, monitorIndex, groupIndex))
+            method.invoke_unchecked((), (control, monitor, monitorIndex, groupIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -209,7 +213,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -224,12 +228,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("Change")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Change", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "Change", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control, state, updateType, eventPtr))
+            method.invoke_unchecked((), (control, state, updateType, eventPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +250,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -260,12 +265,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("Change")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Change", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "Change", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control, state, updateType, eventPtr))
+            method.invoke_unchecked((), (control, state, updateType, eventPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -274,7 +280,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -288,19 +294,20 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("Change")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Change", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "Change", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (device, eventPtr, updateType))
+            method.invoke_unchecked((), (device, eventPtr, updateType))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsIntegerFormat(
         format: crate::UnityEngine::InputSystem::Utilities::FourCC,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::InputSystem::Utilities::FourCC),
                 bool,
@@ -308,11 +315,12 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("IsIntegerFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsIntegerFormat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "IsIntegerFormat", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (format))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveChangeMonitor(
@@ -324,7 +332,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         >,
         monitorIndex: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -340,12 +348,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("RemoveChangeMonitor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveChangeMonitor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveChangeMonitor",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control, monitor, monitorIndex))
+            method.invoke_unchecked((), (control, monitor, monitorIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -356,7 +366,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         monitorIndex: i64,
         timerIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -370,12 +380,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("RemoveChangeMonitorTimeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveChangeMonitorTimeout", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RemoveChangeMonitorTimeout", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (monitor, monitorIndex, timerIndex))
+            method.invoke_unchecked((), (monitor, monitorIndex, timerIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -387,7 +399,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
@@ -402,31 +414,33 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("add_onChange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_onChange", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "add_onChange", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentTime() -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), f64, 0usize>("get_currentTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_currentTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "get_currentTime", 0usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentUpdateType() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
@@ -434,25 +448,28 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("get_currentUpdateType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_currentUpdateType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "get_currentUpdateType",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_updateCount() -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), u32, 0usize>("get_updateCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_updateCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "get_updateCount", 0usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_onChange(
@@ -463,7 +480,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_2<
@@ -478,12 +495,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
             >("remove_onChange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_onChange", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputState as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_onChange", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -583,7 +601,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDel
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         monitorIndex: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -598,12 +616,16 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDel
             >("NotifyControlStateChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NotifyControlStateChanged", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "NotifyControlStateChanged", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (control, _cordl_time, eventPtr, monitorIndex))
+            method
+                .invoke_unchecked(self, (control, _cordl_time, eventPtr, monitorIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -616,7 +638,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDel
         monitorIndex: i64,
         timerIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -631,29 +653,37 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDel
             >("NotifyTimerExpired")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NotifyTimerExpired", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate
+                    as quest_hook::libil2cpp::Type > ::class(), "NotifyTimerExpired",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (control, _cordl_time, monitorIndex, timerIndex))
+                .invoke_unchecked(
+                    self,
+                    (control, _cordl_time, monitorIndex, timerIndex),
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

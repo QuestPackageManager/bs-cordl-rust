@@ -48,7 +48,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -60,14 +60,15 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateAttribute", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateAttribute", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
         > = unsafe {
-            method.invoke_unchecked(self, (qualifiedName, namespaceUri, value))
+            method.invoke_unchecked(self, (qualifiedName, namespaceUri, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +79,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -89,13 +90,14 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateAttribute", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateAttribute", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (name, value)) };
+        > = unsafe { method.invoke_unchecked(self, (name, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCDataSection(
@@ -104,7 +106,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
@@ -112,13 +114,14 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateCDataSection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCDataSection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateCDataSection", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (data)) };
+        > = unsafe { method.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateComment(
@@ -127,7 +130,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
@@ -135,13 +138,14 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateComment")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateComment", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateComment", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (data)) };
+        > = unsafe { method.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateElement_Il2CppString0(
@@ -150,7 +154,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -160,13 +164,14 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateElement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlElement,
-        > = unsafe { method.invoke_unchecked(self, (elementName)) };
+        > = unsafe { method.invoke_unchecked(self, (elementName))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateElement_Il2CppString1(
@@ -176,7 +181,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -189,13 +194,14 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateElement", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlElement,
-        > = unsafe { method.invoke_unchecked(self, (qualifiedName, namespaceUri)) };
+        > = unsafe { method.invoke_unchecked(self, (qualifiedName, namespaceUri))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateProcessingInstruction(
@@ -205,7 +211,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -216,13 +222,15 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateProcessingInstruction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateProcessingInstruction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateProcessingInstruction", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (target, data)) };
+        > = unsafe { method.invoke_unchecked(self, (target, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSignificantWhitespace(
@@ -231,7 +239,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
@@ -239,13 +247,15 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateSignificantWhitespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSignificantWhitespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateSignificantWhitespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (text)) };
+        > = unsafe { method.invoke_unchecked(self, (text))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTextNode(
@@ -254,7 +264,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
@@ -262,13 +272,14 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateTextNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTextNode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateTextNode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (text)) };
+        > = unsafe { method.invoke_unchecked(self, (text))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateWhitespace(
@@ -277,7 +288,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
@@ -285,13 +296,14 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateWhitespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateWhitespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateWhitespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (text)) };
+        > = unsafe { method.invoke_unchecked(self, (text))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateXmlDeclaration(
@@ -302,7 +314,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -314,13 +326,15 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateXmlDeclaration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateXmlDeclaration", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateXmlDeclaration",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
-        > = unsafe { method.invoke_unchecked(self, (version, encoding, standalone)) };
+        > = unsafe { method.invoke_unchecked(self, (version, encoding, standalone))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateXmlDocumentType(
@@ -332,7 +346,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -345,14 +359,16 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("CreateXmlDocumentType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateXmlDocumentType", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateXmlDocumentType",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlNode,
         > = unsafe {
-            method.invoke_unchecked(self, (name, publicId, systemId, internalSubset))
+            method.invoke_unchecked(self, (name, publicId, systemId, internalSubset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -369,7 +385,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
         &mut self,
         document: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>),
                 quest_hook::libil2cpp::Void,
@@ -377,12 +393,13 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (document))
+            method.invoke_unchecked(self, (document))?
         };
         Ok(__cordl_ret.into())
     }
@@ -391,7 +408,7 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Converters::XmlDocumentWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -401,13 +418,15 @@ impl crate::Newtonsoft::Json::Converters::XmlDocumentWrapper {
             >("get_DocumentElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DocumentElement", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Converters::XmlDocumentWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DocumentElement",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Converters::IXmlElement,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::ColorTypeExtensions {
     pub fn Opposite(
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorTypeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::ColorType),
                 crate::GlobalNamespace::ColorType,
@@ -49,12 +49,13 @@ impl crate::GlobalNamespace::ColorTypeExtensions {
             >("Opposite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Opposite", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ColorTypeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Opposite", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
-            method.invoke_unchecked((), (colorType))
+            method.invoke_unchecked((), (colorType))?
         };
         Ok(__cordl_ret.into())
     }

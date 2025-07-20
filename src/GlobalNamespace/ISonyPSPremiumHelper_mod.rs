@@ -53,7 +53,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ISonyPSPremiumHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<
@@ -65,15 +65,17 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
             >("DisplayJoinPremiumDialogAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisplayJoinPremiumDialogAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ISonyPSPremiumHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DisplayJoinPremiumDialogAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (token)) };
+        > = unsafe { method.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPremiumStatusAsync(
@@ -86,7 +88,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ISonyPSPremiumHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<
@@ -98,22 +100,24 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
             >("GetPremiumStatusAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPremiumStatusAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ISonyPSPremiumHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPremiumStatusAsync",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
             >,
-        > = unsafe { method.invoke_unchecked(self, (token)) };
+        > = unsafe { method.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn NotifyPremiumFeature(
         &mut self,
         isSpectator: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ISonyPSPremiumHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -121,12 +125,14 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
             >("NotifyPremiumFeature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NotifyPremiumFeature", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ISonyPSPremiumHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "NotifyPremiumFeature",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isSpectator))
+            method.invoke_unchecked(self, (isSpectator))?
         };
         Ok(__cordl_ret.into())
     }

@@ -49,7 +49,7 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
         inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
         propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::DiscretionaryAcl as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Security::AccessControl::AccessControlType,
@@ -65,8 +65,9 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             >("AddAccess")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAccess", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::DiscretionaryAcl as
+                    quest_hook::libil2cpp::Type > ::class(), "AddAccess", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -74,14 +75,14 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
                 .invoke_unchecked(
                     self,
                     (accessType, sid, accessMask, inheritanceFlags, propagationFlags),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyCanonicalSortToExplicitAces(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::DiscretionaryAcl as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -89,12 +90,14 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             >("ApplyCanonicalSortToExplicitAces")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyCanonicalSortToExplicitAces", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::DiscretionaryAcl as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ApplyCanonicalSortToExplicitAces", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +105,7 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
         &mut self,
         aceQualifier: crate::System::Security::AccessControl::AceQualifier,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::DiscretionaryAcl as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Security::AccessControl::AceQualifier),
                 i32,
@@ -110,11 +113,13 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             >("GetAceInsertPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAceInsertPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::DiscretionaryAcl as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAceInsertPosition",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (aceQualifier)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (aceQualifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAceQualifier(
@@ -122,7 +127,7 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::AccessControl::AceQualifier,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::DiscretionaryAcl as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::AccessControl::AccessControlType),
                 crate::System::Security::AccessControl::AceQualifier,
@@ -130,12 +135,13 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             >("GetAceQualifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAceQualifier", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::DiscretionaryAcl as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAceQualifier", 1usize
                 )
             });
         let __cordl_ret: crate::System::Security::AccessControl::AceQualifier = unsafe {
-            method.invoke_unchecked((), (accessType))
+            method.invoke_unchecked((), (accessType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +151,7 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             crate::System::Security::AccessControl::GenericAce,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::DiscretionaryAcl as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::AccessControl::GenericAce,
@@ -155,11 +161,12 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             >("IsAceMeaningless")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAceMeaningless", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::DiscretionaryAcl as
+                    quest_hook::libil2cpp::Type > ::class(), "IsAceMeaningless", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ace)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ace))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -179,7 +186,7 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
         isDS: bool,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::AccessControl::DiscretionaryAcl as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool, i32),
                 quest_hook::libil2cpp::Void,
@@ -187,12 +194,13 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Security::AccessControl::DiscretionaryAcl as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (isContainer, isDS, capacity))
+            method.invoke_unchecked(self, (isContainer, isDS, capacity))?
         };
         Ok(__cordl_ret.into())
     }

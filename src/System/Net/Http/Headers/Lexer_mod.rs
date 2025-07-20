@@ -43,16 +43,17 @@ impl crate::System::Net::Http::Headers::Lexer {
     pub fn EatChar(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EatChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EatChar", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "EatChar", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -62,7 +63,7 @@ impl crate::System::Net::Http::Headers::Lexer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Http::Headers::Token),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -70,13 +71,15 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("GetQuotedStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetQuotedStringValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetQuotedStringValue",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (start)) };
+        > = unsafe { method.invoke_unchecked(self, (start))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRemainingStringValue(
@@ -85,7 +88,7 @@ impl crate::System::Net::Http::Headers::Lexer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -93,13 +96,15 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("GetRemainingStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRemainingStringValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRemainingStringValue",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (position)) };
+        > = unsafe { method.invoke_unchecked(self, (position))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringValue_Token0(
@@ -108,7 +113,7 @@ impl crate::System::Net::Http::Headers::Lexer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Http::Headers::Token),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -116,13 +121,14 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("GetStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStringValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStringValue", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (token)) };
+        > = unsafe { method.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringValue_Token1(
@@ -132,7 +138,7 @@ impl crate::System::Net::Http::Headers::Lexer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Http::Headers::Token,
@@ -143,20 +149,21 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("GetStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStringValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStringValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (start, end)) };
+        > = unsafe { method.invoke_unchecked(self, (start, end))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsStarStringValue(
         &mut self,
         token: crate::System::Net::Http::Headers::Token,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Http::Headers::Token),
                 bool,
@@ -164,29 +171,31 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("IsStarStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsStarStringValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "IsStarStringValue", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (token)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidCharacter(input: char) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(char), bool, 1usize>("IsValidCharacter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidCharacter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidCharacter", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidToken(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -194,11 +203,12 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("IsValidToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidToken", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidToken", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -211,22 +221,23 @@ impl crate::System::Net::Http::Headers::Lexer {
         Ok(__cordl_object.into())
     }
     pub fn PeekChar(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("PeekChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PeekChar", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "PeekChar", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Scan(
         &mut self,
         recognizeDash: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Http::Headers::Token> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 crate::System::Net::Http::Headers::Token,
@@ -234,12 +245,13 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("Scan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Scan", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "Scan", 1usize
                 )
             });
         let __cordl_ret: crate::System::Net::Http::Headers::Token = unsafe {
-            method.invoke_unchecked(self, (recognizeDash))
+            method.invoke_unchecked(self, (recognizeDash))?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,7 +264,7 @@ impl crate::System::Net::Http::Headers::Lexer {
             crate::System::Net::Http::Headers::Token,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -267,12 +279,14 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("ScanCommentOptional")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScanCommentOptional", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "ScanCommentOptional",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (value, readToken))
+            method.invoke_unchecked(self, (value, readToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -280,7 +294,7 @@ impl crate::System::Net::Http::Headers::Lexer {
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -291,11 +305,12 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("TryGetDateValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetDateValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetDateValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDateValue_Token0(
@@ -303,7 +318,7 @@ impl crate::System::Net::Http::Headers::Lexer {
         token: crate::System::Net::Http::Headers::Token,
         value: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Http::Headers::Token,
@@ -314,11 +329,14 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("TryGetDateValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetDateValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetDateValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (token, value)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (token, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDoubleValue(
@@ -326,7 +344,7 @@ impl crate::System::Net::Http::Headers::Lexer {
         token: crate::System::Net::Http::Headers::Token,
         value: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Http::Headers::Token,
@@ -337,11 +355,14 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("TryGetDoubleValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetDoubleValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetDoubleValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (token, value)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (token, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetNumericValue_Token_ByRefMut0(
@@ -349,7 +370,7 @@ impl crate::System::Net::Http::Headers::Lexer {
         token: crate::System::Net::Http::Headers::Token,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Http::Headers::Token,
@@ -360,11 +381,14 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("TryGetNumericValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetNumericValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetNumericValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (token, value)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (token, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetNumericValue_Token_ByRefMut1(
@@ -372,7 +396,7 @@ impl crate::System::Net::Http::Headers::Lexer {
         token: crate::System::Net::Http::Headers::Token,
         value: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Net::Http::Headers::Token,
@@ -383,11 +407,14 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("TryGetNumericValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetNumericValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetNumericValue", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (token, value)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (token, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetTimeSpanValue(
@@ -396,7 +423,7 @@ impl crate::System::Net::Http::Headers::Lexer {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::TimeSpan>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Net::Http::Headers::Token),
                 crate::System::Nullable_1<crate::System::TimeSpan>,
@@ -404,12 +431,14 @@ impl crate::System::Net::Http::Headers::Lexer {
             >("TryGetTimeSpanValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetTimeSpanValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetTimeSpanValue",
+                    1usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<crate::System::TimeSpan> = unsafe {
-            method.invoke_unchecked(self, (token))
+            method.invoke_unchecked(self, (token))?
         };
         Ok(__cordl_ret.into())
     }
@@ -417,7 +446,7 @@ impl crate::System::Net::Http::Headers::Lexer {
         &mut self,
         stream: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -425,41 +454,44 @@ impl crate::System::Net::Http::Headers::Lexer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (stream))
+            method.invoke_unchecked(self, (stream))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Position")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Position", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Position", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Position(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Http::Headers::Lexer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_Position")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Position", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Http::Headers::Lexer as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Position", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

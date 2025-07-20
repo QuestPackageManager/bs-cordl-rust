@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     pub fn GetLightColorTypeFromEventDataValue(
         beatmapEventValue: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataLightsExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 crate::GlobalNamespace::EnvironmentColorType,
@@ -52,12 +52,14 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             >("GetLightColorTypeFromEventDataValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLightColorTypeFromEventDataValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataLightsExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetLightColorTypeFromEventDataValue", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = unsafe {
-            method.invoke_unchecked((), (beatmapEventValue))
+            method.invoke_unchecked((), (beatmapEventValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +68,7 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataLightsExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::BasicBeatmapEventData,
@@ -76,19 +78,21 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             >("HasFixedDurationLightSwitchEventDataValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasFixedDurationLightSwitchEventDataValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataLightsExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HasFixedDurationLightSwitchEventDataValue", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (basicBeatmapEventData))
+            method.invoke_unchecked((), (basicBeatmapEventData))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasFixedDurationLightSwitchEventDataValue_i32_1(
         beatmapEventValue: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataLightsExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 bool,
@@ -96,12 +100,14 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             >("HasFixedDurationLightSwitchEventDataValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasFixedDurationLightSwitchEventDataValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataLightsExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HasFixedDurationLightSwitchEventDataValue", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (beatmapEventValue))
+            method.invoke_unchecked((), (beatmapEventValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +116,7 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataLightsExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::BasicBeatmapEventData,
@@ -120,12 +126,14 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             >("HasLightFadeEventDataValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasLightFadeEventDataValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataLightsExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HasLightFadeEventDataValue", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (basicBeatmapEventData))
+            method.invoke_unchecked((), (basicBeatmapEventData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,7 +142,7 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             crate::GlobalNamespace::BasicBeatmapEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapEventDataLightsExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::BasicBeatmapEventData,
@@ -144,12 +152,14 @@ impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
             >("LightColorTypeFromEventDataValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LightColorTypeFromEventDataValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapEventDataLightsExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LightColorTypeFromEventDataValue", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = unsafe {
-            method.invoke_unchecked((), (basicBeatmapEventData))
+            method.invoke_unchecked((), (basicBeatmapEventData))?
         };
         Ok(__cordl_ret.into())
     }

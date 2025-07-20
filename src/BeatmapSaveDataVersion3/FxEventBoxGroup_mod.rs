@@ -71,7 +71,7 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::FxEventBoxGroup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -90,19 +90,20 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::FxEventBoxGroup as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beat, groupId, _cordl_type, eventBoxes))
+            method.invoke_unchecked(self, (beat, groupId, _cordl_type, eventBoxes))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataVersion3::FxEventType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::FxEventBoxGroup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatmapSaveDataVersion3::FxEventType,
@@ -110,12 +111,13 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
             >("get_type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::FxEventBoxGroup as
+                    quest_hook::libil2cpp::Type > ::class(), "get_type", 0usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataVersion3::FxEventType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

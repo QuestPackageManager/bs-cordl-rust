@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -151,8 +151,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleBeatmapEditorGameSceneDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleBeatmapEditorGameSceneDidFinish", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleBeatmapEditorGameSceneDidFinish", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -163,7 +165,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         beatmapEditorStandardLevelScenesTransitionSetupData,
                         levelCompletionResults,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -173,7 +175,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
@@ -183,12 +185,14 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleBeatmapEditorSceneDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleBeatmapEditorSceneDidFinish", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleBeatmapEditorSceneDidFinish", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beatmapEditorScenesTransitionSetupData))
+            method.invoke_unchecked(self, (beatmapEditorScenesTransitionSetupData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +202,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
@@ -208,12 +212,14 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleCreditsSceneDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleCreditsSceneDidFinish", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleCreditsSceneDidFinish", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (creditsSceneTransitionSetupData))
+            method.invoke_unchecked(self, (creditsSceneTransitionSetupData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +232,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -241,8 +247,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleMainGameSceneDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleMainGameSceneDidFinish", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleMainGameSceneDidFinish", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -250,7 +258,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                 .invoke_unchecked(
                     self,
                     (standardLevelScenesTransitionSetupData, levelCompletionResults),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -263,7 +271,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::MissionCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -278,8 +286,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleMissionLevelSceneDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleMissionLevelSceneDidFinish", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleMissionLevelSceneDidFinish", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -287,7 +297,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                 .invoke_unchecked(
                     self,
                     (missionLevelScenesTransitionSetupData, missionCompletionResults),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -298,7 +308,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         >,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -311,8 +321,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleMultiplayerLevelDidDisconnect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleMultiplayerLevelDidDisconnect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleMultiplayerLevelDidDisconnect", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -320,7 +332,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                 .invoke_unchecked(
                     self,
                     (multiplayerLevelScenesTransitionSetupData, disconnectedReason),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -333,7 +345,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::MultiplayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -348,8 +360,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleMultiplayerLevelDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleMultiplayerLevelDidFinish", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleMultiplayerLevelDidFinish", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -357,7 +371,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                 .invoke_unchecked(
                     self,
                     (multiplayerLevelScenesTransitionSetupData, multiplayerResultsData),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -368,7 +382,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         >,
         endState: crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -381,12 +395,14 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("HandleTutorialSceneDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleTutorialSceneDidFinish", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleTutorialSceneDidFinish", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tutorialSceneTransitionSetupData, endState))
+            method.invoke_unchecked(self, (tutorialSceneTransitionSetupData, endState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -400,16 +416,17 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -421,7 +438,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -433,28 +450,30 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("RestartGame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RestartGame", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "RestartGame", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (finishCallback))
+            method.invoke_unchecked(self, (finishCallback))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ShowCredits(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ShowCredits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShowCredits", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ShowCredits", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -462,7 +481,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         &mut self,
         beatmapEditorFinishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -470,12 +489,13 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartBeatmapEditor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartBeatmapEditor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StartBeatmapEditor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beatmapEditorFinishedCallback))
+            method.invoke_unchecked(self, (beatmapEditorFinishedCallback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -512,7 +532,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
@@ -547,8 +567,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartBeatmapEditorStandardLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartBeatmapEditorStandardLevel", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "StartBeatmapEditorStandardLevel", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -568,7 +590,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         beforeSceneSwitchCallback,
                         levelFinishedCallback,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -616,7 +638,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -664,8 +686,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartMissionLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartMissionLevel", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StartMissionLevel", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -685,7 +708,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         levelFinishedCallback,
                         levelRestartedCallback,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -729,7 +752,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -771,8 +794,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartMultiplayerLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartMultiplayerLevel", 14usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StartMultiplayerLevel",
+                    14usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -795,7 +820,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         levelFinishedCallback,
                         didDisconnectCallback,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -834,7 +859,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -871,8 +896,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartMultiplayerLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartMultiplayerLevel", 13usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StartMultiplayerLevel",
+                    13usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -894,7 +921,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         levelFinishedCallback,
                         didDisconnectCallback,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -957,7 +984,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1016,8 +1043,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartStandardLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartStandardLevel", 20usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StartStandardLevel",
+                    20usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1046,7 +1075,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         levelRestartedCallback,
                         recordingToolData,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1108,7 +1137,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1166,8 +1195,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartStandardLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartStandardLevel", 19usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StartStandardLevel",
+                    19usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1195,7 +1226,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         levelRestartedCallback,
                         recordingToolData,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1206,7 +1237,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         >,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1219,8 +1250,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("StartTutorial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartTutorial", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StartTutorial", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1228,23 +1260,24 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                 .invoke_unchecked(
                     self,
                     (playerSpecificSettings, beforeSceneSwitchCallback),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StopStandardLevel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StopStandardLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StopStandardLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "StopStandardLevel", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1252,7 +1285,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                 quest_hook::libil2cpp::Void,
@@ -1260,28 +1293,31 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             >("<HandleBeatmapEditorSceneDidFinish>b__38_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<HandleBeatmapEditorSceneDidFinish>b__38_0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<HandleBeatmapEditorSceneDidFinish>b__38_0", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (container))
+            method.invoke_unchecked(self, (container))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MenuTransitionsHelper as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MenuTransitionsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             crate::UnityEngine::UIElements::IMGUIContainer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -64,12 +64,13 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("BeginContainerGUI")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginContainerGUI", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginContainerGUI", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (cache, evt, container))
+            method.invoke_unchecked((), (cache, evt, container))?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +79,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -86,13 +87,14 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("CreateEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventBase,
-        > = unsafe { method.invoke_unchecked((), (systemEvent)) };
+        > = unsafe { method.invoke_unchecked((), (systemEvent))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateEvent_EventType1(
@@ -101,7 +103,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
@@ -112,13 +114,14 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("CreateEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateEvent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventBase,
-        > = unsafe { method.invoke_unchecked((), (systemEvent, eventType)) };
+        > = unsafe { method.invoke_unchecked((), (systemEvent, eventType))? };
         Ok(__cordl_ret.into())
     }
     pub fn DoDispatch(
@@ -126,7 +129,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             crate::UnityEngine::UIElements::BaseVisualElementPanel,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::BaseVisualElementPanel,
@@ -136,18 +139,19 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("DoDispatch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoDispatch", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "DoDispatch", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (panel)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (panel))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndContainerGUI(
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
         layoutSize: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
@@ -158,12 +162,13 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("EndContainerGUI")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndContainerGUI", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "EndContainerGUI", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (evt, layoutSize))
+            method.invoke_unchecked((), (evt, layoutSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,7 +180,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
         >,
         contextType: crate::UnityEngine::UIElements::ContextType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -192,12 +197,13 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("GetAllPanels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllPanels", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAllPanels", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (panels, contextType))
+            method.invoke_unchecked((), (panels, contextType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +213,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::System::Collections::Generic::Dictionary_2_Enumerator<
@@ -218,14 +224,15 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("GetPanelsIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPanelsIterator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPanelsIterator", 0usize
                 )
             });
         let __cordl_ret: crate::System::Collections::Generic::Dictionary_2_Enumerator<
             i32,
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -240,7 +247,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -248,20 +255,21 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("ParseMenuName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseMenuName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseMenuName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (menuName)) };
+        > = unsafe { method.invoke_unchecked((), (menuName))? };
         Ok(__cordl_ret.into())
     }
     pub fn PixelsPerUnitScaleForElement(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -274,18 +282,20 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("PixelsPerUnitScaleForElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PixelsPerUnitScaleForElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "PixelsPerUnitScaleForElement", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (ve, sprite)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (ve, sprite))? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterCachedPanel(
         instanceID: i32,
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>),
                 quest_hook::libil2cpp::Void,
@@ -293,19 +303,21 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("RegisterCachedPanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterCachedPanel", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterCachedPanel",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (instanceID, panel))
+            method.invoke_unchecked((), (instanceID, panel))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveCachedPanel(
         instanceID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -313,12 +325,13 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("RemoveCachedPanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveCachedPanel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveCachedPanel", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (instanceID))
+            method.invoke_unchecked((), (instanceID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -328,7 +341,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -341,19 +354,20 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("TryGetPanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetPanel", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetPanel", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (instanceID, panel))
+            method.invoke_unchecked((), (instanceID, panel))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_CleanupRoots(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 bool,
@@ -361,19 +375,20 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("UnityEngine.UIElements.IUIElementsUtility.CleanupRoots")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IUIElementsUtility.CleanupRoots",
-                    0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IUIElementsUtility.CleanupRoots", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_EndContainerGUIFromException(
         &mut self,
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Exception>),
                 bool,
@@ -381,19 +396,20 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("UnityEngine.UIElements.IUIElementsUtility.EndContainerGUIFromException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "UnityEngine.UIElements.IUIElementsUtility.EndContainerGUIFromException",
                     1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (exception)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (exception))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_MakeCurrentIMGUIContainerDirty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 bool,
@@ -401,13 +417,14 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("UnityEngine.UIElements.IUIElementsUtility.MakeCurrentIMGUIContainerDirty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self,
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
                     "UnityEngine.UIElements.IUIElementsUtility.MakeCurrentIMGUIContainerDirty",
                     0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_ProcessEvent(
@@ -416,7 +433,7 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
         nativeEventPtr: crate::System::IntPtr,
         eventHandled: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<bool>),
                 bool,
@@ -424,20 +441,21 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("UnityEngine.UIElements.IUIElementsUtility.ProcessEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IUIElementsUtility.ProcessEvent",
-                    3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IUIElementsUtility.ProcessEvent", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (instanceID, nativeEventPtr, eventHandled))
+            method.invoke_unchecked(self, (instanceID, nativeEventPtr, eventHandled))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_ReleaseCapture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 bool,
@@ -445,18 +463,19 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("UnityEngine.UIElements.IUIElementsUtility.ReleaseCapture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IUIElementsUtility.ReleaseCapture",
-                    0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IUIElementsUtility.ReleaseCapture", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_TakeCapture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 bool,
@@ -464,26 +483,29 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
             >("UnityEngine.UIElements.IUIElementsUtility.TakeCapture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnityEngine.UIElements.IUIElementsUtility.TakeCapture", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnityEngine.UIElements.IUIElementsUtility.TakeCapture", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIElementsUtility as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIElementsUtility as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

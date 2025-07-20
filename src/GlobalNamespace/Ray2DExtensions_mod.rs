@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::Ray2DExtensions {
         radius: f32,
         distances: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::Ray2DExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Ray2D,
@@ -57,12 +57,14 @@ impl crate::GlobalNamespace::Ray2DExtensions {
             >("CircleIntersections")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CircleIntersections", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::Ray2DExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "CircleIntersections",
+                    4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (ray, circleCenter, radius, distances))
+            method.invoke_unchecked((), (ray, circleCenter, radius, distances))?
         };
         Ok(__cordl_ret.into())
     }

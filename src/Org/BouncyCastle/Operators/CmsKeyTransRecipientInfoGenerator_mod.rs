@@ -52,7 +52,7 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
@@ -62,13 +62,15 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
             >("GenerateWrappedKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateWrappedKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateWrappedKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (contentKey)) };
+        > = unsafe { method.invoke_unchecked(self, (contentKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray1(
@@ -104,7 +106,7 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
             crate::Org::BouncyCastle::Crypto::IKeyWrapper,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -117,12 +119,14 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (subjectKeyID, keyWrapper))
+            method.invoke_unchecked(self, (subjectKeyID, keyWrapper))?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +139,7 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
             crate::Org::BouncyCastle::Crypto::IKeyWrapper,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -150,12 +154,14 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (recipCert, keyWrapper))
+            method.invoke_unchecked(self, (recipCert, keyWrapper))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +172,7 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -176,13 +182,16 @@ impl crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
             >("get_AlgorithmDetails")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AlgorithmDetails", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_AlgorithmDetails",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

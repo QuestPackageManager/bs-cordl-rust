@@ -45,7 +45,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<T>),
                 T,
@@ -53,11 +53,13 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitializedCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitializedCore", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitializedCore",
+                    1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (target)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (target))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureInitializedCore_ByRefMut_ByRefMut_Func_1_2<T>(
@@ -72,7 +74,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -87,12 +89,14 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitializedCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitializedCore", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitializedCore",
+                    4usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, initialized, syncLock, valueFactory))
+            method.invoke_unchecked((), (target, initialized, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +111,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -121,12 +125,14 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitializedCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitializedCore", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitializedCore",
+                    3usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, syncLock, valueFactory))
+            method.invoke_unchecked((), (target, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +144,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -149,12 +155,14 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitializedCore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitializedCore", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitializedCore",
+                    2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, valueFactory))
+            method.invoke_unchecked((), (target, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +173,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<T>),
                 T,
@@ -173,11 +181,12 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitialized", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitialized", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (target)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (target))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureInitialized_ByRefMut_ByRefMut_Func_1_2<T>(
@@ -192,7 +201,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -207,12 +216,13 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitialized", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitialized", 4usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, initialized, syncLock, valueFactory))
+            method.invoke_unchecked((), (target, initialized, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +237,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -241,12 +251,13 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitialized", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitialized", 3usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, syncLock, valueFactory))
+            method.invoke_unchecked((), (target, syncLock, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +269,7 @@ impl crate::System::Threading::LazyInitializer {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -269,12 +280,13 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureInitialized", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureInitialized", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (target, valueFactory))
+            method.invoke_unchecked((), (target, valueFactory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -285,7 +297,7 @@ impl crate::System::Threading::LazyInitializer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LazyInitializer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -295,13 +307,15 @@ impl crate::System::Threading::LazyInitializer {
             >("EnsureLockInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureLockInitialized", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LazyInitializer as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureLockInitialized",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (syncLock)) };
+        > = unsafe { method.invoke_unchecked((), (syncLock))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::EmbeddedSignature {
         isLongLength: bool,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::Sig::EmbeddedSignature as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -68,12 +68,13 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::EmbeddedSignature {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::Sig::EmbeddedSignature as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (critical, isLongLength, data))
+            method.invoke_unchecked(self, (critical, isLongLength, data))?
         };
         Ok(__cordl_ret.into())
     }

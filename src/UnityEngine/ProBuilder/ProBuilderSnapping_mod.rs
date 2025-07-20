@@ -43,7 +43,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
     pub fn GetSnappingMaskBasedOnNormalVector(
         normal: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ProBuilderSnapping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -51,19 +51,21 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
             >("GetSnappingMaskBasedOnNormalVector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSnappingMaskBasedOnNormalVector", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ProBuilderSnapping as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSnappingMaskBasedOnNormalVector", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (normal))
+            method.invoke_unchecked((), (normal))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsCardinalDirection(
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ProBuilderSnapping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 bool,
@@ -71,11 +73,13 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
             >("IsCardinalDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCardinalDirection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ProBuilderSnapping as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCardinalDirection",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (direction)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (direction))? };
         Ok(__cordl_ret.into())
     }
     pub fn SnapValueOnRay(
@@ -84,7 +88,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         snap: f32,
         mask: crate::UnityEngine::ProBuilder::Vector3Mask,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ProBuilderSnapping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Ray,
@@ -97,12 +101,13 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
             >("SnapValueOnRay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SnapValueOnRay", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ProBuilderSnapping as
+                    quest_hook::libil2cpp::Type > ::class(), "SnapValueOnRay", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (ray, distance, snap, mask))
+            method.invoke_unchecked((), (ray, distance, snap, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -113,7 +118,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         >,
         snap: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ProBuilderSnapping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -129,12 +134,13 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
             >("SnapVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SnapVertices", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ProBuilderSnapping as
+                    quest_hook::libil2cpp::Type > ::class(), "SnapVertices", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, indexes, snap))
+            method.invoke_unchecked((), (mesh, indexes, snap))?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,7 +148,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         val: crate::UnityEngine::Vector3,
         snap: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ProBuilderSnapping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -150,25 +156,27 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
             >("Snap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Snap", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ProBuilderSnapping as
+                    quest_hook::libil2cpp::Type > ::class(), "Snap", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (val, snap))
+            method.invoke_unchecked((), (val, snap))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Snap_f32_f32_0(val: f32, snap: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ProBuilderSnapping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32), f32, 2usize>("Snap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Snap", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ProBuilderSnapping as
+                    quest_hook::libil2cpp::Type > ::class(), "Snap", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (val, snap)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (val, snap))? };
         Ok(__cordl_ret.into())
     }
 }

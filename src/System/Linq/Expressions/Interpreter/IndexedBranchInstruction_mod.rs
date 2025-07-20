@@ -50,7 +50,7 @@ impl crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
@@ -60,12 +60,14 @@ impl crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction {
             >("GetLabel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLabel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLabel", 1usize
                 )
             });
         let __cordl_ret: crate::System::Linq::Expressions::Interpreter::RuntimeLabel = unsafe {
-            method.invoke_unchecked(self, (frame))
+            method.invoke_unchecked(self, (frame))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +93,7 @@ impl crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -110,8 +112,10 @@ impl crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction {
             >("ToDebugString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToDebugString", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as
+                    quest_hook::libil2cpp::Type > ::class(), "ToDebugString", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -121,7 +125,7 @@ impl crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction {
                 .invoke_unchecked(
                     self,
                     (instructionIndex, cookie, labelIndexer, objects),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +134,7 @@ impl crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -138,29 +142,33 @@ impl crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         labelIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::IndexedBranchInstruction as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (labelIndex))
+            method.invoke_unchecked(self, (labelIndex))?
         };
         Ok(__cordl_ret.into())
     }

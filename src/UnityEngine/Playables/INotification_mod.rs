@@ -47,16 +47,17 @@ impl crate::UnityEngine::Playables::INotification {
     pub fn get_id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PropertyName> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Playables::INotification as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::PropertyName, 0usize>("get_id")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_id", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Playables::INotification as
+                    quest_hook::libil2cpp::Type > ::class(), "get_id", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::PropertyName = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

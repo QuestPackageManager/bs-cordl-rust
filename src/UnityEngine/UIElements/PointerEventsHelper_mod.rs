@@ -58,7 +58,7 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
         TEnterEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerEventsHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -78,8 +78,9 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
             >("SendEnterLeave")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendEnterLeave", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerEventsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SendEnterLeave", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -93,7 +94,7 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
                         position,
                         pointerId,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +111,7 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
         position: crate::UnityEngine::Vector2,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::PointerEventsHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -130,8 +131,9 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
             >("SendOverOut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendOverOut", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::PointerEventsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SendOverOut", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -145,7 +147,7 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
                         position,
                         pointerId,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

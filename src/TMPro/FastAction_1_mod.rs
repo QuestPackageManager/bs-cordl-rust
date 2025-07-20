@@ -77,7 +77,9 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::FastAction_1<
+            A,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>),
                 quest_hook::libil2cpp::Void,
@@ -85,12 +87,13 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::FastAction_1 < A > as quest_hook::libil2cpp::Type >
+                    ::class(), "Add", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rhs))
+            method.invoke_unchecked(self, (rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,16 +105,19 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::FastAction_1<
+            A,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(A), quest_hook::libil2cpp::Void, 1usize>("Call")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Call", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::FastAction_1 < A > as quest_hook::libil2cpp::Type >
+                    ::class(), "Call", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a))
+            method.invoke_unchecked(self, (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,7 +140,9 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::FastAction_1<
+            A,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>),
                 quest_hook::libil2cpp::Void,
@@ -142,12 +150,13 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
             >("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::FastAction_1 < A > as quest_hook::libil2cpp::Type >
+                    ::class(), "Remove", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rhs))
+            method.invoke_unchecked(self, (rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,16 +165,19 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::FastAction_1<
+            A,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::FastAction_1 < A > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -105,7 +105,7 @@ impl crate::UnityEngine::QueryParameters {
         hitTriggers: crate::UnityEngine::QueryTriggerInteraction,
         hitBackfaces: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::QueryParameters as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, bool, crate::UnityEngine::QueryTriggerInteraction, bool),
                 quest_hook::libil2cpp::Void,
@@ -113,8 +113,9 @@ impl crate::UnityEngine::QueryParameters {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::QueryParameters as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -122,14 +123,14 @@ impl crate::UnityEngine::QueryParameters {
                 .invoke_unchecked(
                     self,
                     (layerMask, hitMultipleFaces, hitTriggers, hitBackfaces),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Default() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::QueryParameters,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::QueryParameters as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::QueryParameters,
@@ -137,12 +138,13 @@ impl crate::UnityEngine::QueryParameters {
             >("get_Default")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Default", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::QueryParameters as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Default", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::QueryParameters = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }

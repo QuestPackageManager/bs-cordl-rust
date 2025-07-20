@@ -52,7 +52,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
         TCommand: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -66,12 +66,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
             >("DeviceCommand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeviceCommand", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DeviceCommand", 3usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (runtime, deviceId, command))
+            method.invoke_unchecked((), (runtime, deviceId, command))?
         };
         Ok(__cordl_ret.into())
     }

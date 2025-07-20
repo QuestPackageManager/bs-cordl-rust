@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         >,
         enableSaberAttraction: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -55,12 +55,14 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("EnableSaberAttraction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnableSaberAttraction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "EnableSaberAttraction",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (materialPropertyBlock, enableSaberAttraction))
+            method.invoke_unchecked((), (materialPropertyBlock, enableSaberAttraction))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +72,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         >,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -81,12 +83,13 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (materialPropertyBlock, color))
+            method.invoke_unchecked((), (materialPropertyBlock, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +100,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         halfJumpDuration: f32,
         headNoteGravity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -109,8 +112,9 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetHeadNoteJump")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetHeadNoteJump", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetHeadNoteJump", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -118,7 +122,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                 .invoke_unchecked(
                     (),
                     (materialPropertyBlock, halfJumpDuration, headNoteGravity),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +137,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         hasTailNote: bool,
         randomValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -149,8 +153,10 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetInitialProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetInitialProperties", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetInitialProperties",
+                    7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -166,7 +172,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                         hasTailNote,
                         randomValue,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -178,7 +184,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             crate::GlobalNamespace::SliderController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -189,12 +195,14 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetInitialProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetInitialProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetInitialProperties",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (materialPropertyBlock, sliderController))
+            method.invoke_unchecked((), (materialPropertyBlock, sliderController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +213,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         noteJumpSpeed: f32,
         noteJumpDistance: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -217,8 +225,10 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetJumpSpeedAndDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetJumpSpeedAndDistance", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetJumpSpeedAndDistance",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -226,7 +236,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                 .invoke_unchecked(
                     (),
                     (materialPropertyBlock, noteJumpSpeed, noteJumpDistance),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -238,7 +248,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         halfJumpDuration: f32,
         noteGravity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -251,8 +261,9 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetNoteJump")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetNoteJump", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetNoteJump", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -260,7 +271,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                 .invoke_unchecked(
                     (),
                     (materialPropertyBlock, propertyId, halfJumpDuration, noteGravity),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +281,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         >,
         attractPoint: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -281,12 +292,14 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetSaberAttractionPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSaberAttractionPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSaberAttractionPoint",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (materialPropertyBlock, attractPoint))
+            method.invoke_unchecked((), (materialPropertyBlock, attractPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +309,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         >,
         tailHeadNoteJumpOffsetDifference: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -307,8 +320,10 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetTailHeadNoteJumpOffsetDifference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTailHeadNoteJumpOffsetDifference", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetTailHeadNoteJumpOffsetDifference", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -316,7 +331,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                 .invoke_unchecked(
                     (),
                     (materialPropertyBlock, tailHeadNoteJumpOffsetDifference),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -327,7 +342,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         halfJumpDuration: f32,
         headNoteGravity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -339,8 +354,9 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetTailNoteJump")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTailNoteJump", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTailNoteJump", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -348,7 +364,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                 .invoke_unchecked(
                     (),
                     (materialPropertyBlock, halfJumpDuration, headNoteGravity),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -358,7 +374,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         >,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -369,12 +385,14 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("SetTimeSinceHeadNoteJump")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTimeSinceHeadNoteJump", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTimeSinceHeadNoteJump",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (materialPropertyBlock, _cordl_time))
+            method.invoke_unchecked((), (materialPropertyBlock, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -393,7 +411,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         >,
         timeSinceHeadNoteJump: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderShaderHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
@@ -411,8 +429,10 @@ impl crate::GlobalNamespace::SliderShaderHelper {
             >("UpdateMaterialPropertyBlock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateMaterialPropertyBlock", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderShaderHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UpdateMaterialPropertyBlock", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -426,7 +446,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                         jumpOffsetYProvider,
                         timeSinceHeadNoteJump,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

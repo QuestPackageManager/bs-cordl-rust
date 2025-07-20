@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -62,13 +62,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("CalculateK")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateK", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateK", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, g)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, g))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateKey(
@@ -78,7 +79,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -92,13 +93,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("CalculateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateKey", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateKey", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, S)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, S))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateM1(
@@ -110,7 +112,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -130,13 +132,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("CalculateM1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateM1", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateM1", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, A, B, S)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, A, B, S))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateM2(
@@ -148,7 +151,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -168,13 +171,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("CalculateM2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateM2", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateM2", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, A, M1, S)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, A, M1, S))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateU(
@@ -185,7 +189,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -202,13 +206,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("CalculateU")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateU", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateU", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, A, B)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, A, B))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateX(
@@ -220,7 +225,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -236,14 +241,15 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("CalculateX")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateX", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateX", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
         > = unsafe {
-            method.invoke_unchecked((), (digest, N, salt, identity, password))
+            method.invoke_unchecked((), (digest, N, salt, identity, password))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +263,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -276,13 +282,15 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("GeneratePrivateValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GeneratePrivateValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GeneratePrivateValue",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, g, random)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, g, random))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPadded(
@@ -291,7 +299,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -304,13 +312,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("GetPadded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPadded", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPadded", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (n, length)) };
+        > = unsafe { method.invoke_unchecked((), (n, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn HashPaddedPair(
@@ -321,7 +330,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -338,13 +347,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("HashPaddedPair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashPaddedPair", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HashPaddedPair", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, n1, n2)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, n1, n2))? };
         Ok(__cordl_ret.into())
     }
     pub fn HashPaddedTriplet(
@@ -356,7 +366,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -376,13 +386,14 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("HashPaddedTriplet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashPaddedTriplet", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HashPaddedTriplet", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (digest, N, n1, n2, n3)) };
+        > = unsafe { method.invoke_unchecked((), (digest, N, n1, n2, n3))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -398,7 +409,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -411,28 +422,31 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities {
             >("ValidatePublicValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidatePublicValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidatePublicValue",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (N, val)) };
+        > = unsafe { method.invoke_unchecked((), (N, val))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Agreement::Srp::Srp6Utilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

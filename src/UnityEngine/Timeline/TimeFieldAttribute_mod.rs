@@ -55,7 +55,7 @@ impl crate::UnityEngine::Timeline::TimeFieldAttribute {
         &mut self,
         useEditMode: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeFieldAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode),
                 quest_hook::libil2cpp::Void,
@@ -63,12 +63,13 @@ impl crate::UnityEngine::Timeline::TimeFieldAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeFieldAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (useEditMode))
+            method.invoke_unchecked(self, (useEditMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +78,7 @@ impl crate::UnityEngine::Timeline::TimeFieldAttribute {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeFieldAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
@@ -85,12 +86,13 @@ impl crate::UnityEngine::Timeline::TimeFieldAttribute {
             >("get_useEditMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_useEditMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeFieldAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "get_useEditMode", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

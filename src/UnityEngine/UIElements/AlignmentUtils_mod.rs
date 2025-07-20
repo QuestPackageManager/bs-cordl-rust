@@ -44,16 +44,17 @@ impl crate::UnityEngine::UIElements::AlignmentUtils {
         pixelsPerPoint: f32,
         offset: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::AlignmentUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32, f32), f32, 3usize>("CeilToPixelGrid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CeilToPixelGrid", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::AlignmentUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "CeilToPixelGrid", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (v, pixelsPerPoint, offset))
+            method.invoke_unchecked((), (v, pixelsPerPoint, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -62,16 +63,17 @@ impl crate::UnityEngine::UIElements::AlignmentUtils {
         pixelsPerPoint: f32,
         offset: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::AlignmentUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32, f32), f32, 3usize>("RoundToPixelGrid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RoundToPixelGrid", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::AlignmentUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "RoundToPixelGrid", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (v, pixelsPerPoint, offset))
+            method.invoke_unchecked((), (v, pixelsPerPoint, offset))?
         };
         Ok(__cordl_ret.into())
     }

@@ -54,7 +54,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32),
                 crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
@@ -62,12 +62,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("FindTouch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindTouch", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "FindTouch", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = unsafe {
-            method.invoke_unchecked(self, (uniqueId))
+            method.invoke_unchecked(self, (uniqueId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +78,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::EnhancedTouch::Touch),
                 crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
@@ -85,12 +86,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("GetTouchHistory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTouchHistory", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTouchHistory", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory = unsafe {
-            method.invoke_unchecked(self, (touch))
+            method.invoke_unchecked(self, (touch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +111,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         &mut self,
         record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record),
                 quest_hook::libil2cpp::Void,
@@ -117,12 +119,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("OnTouchRecorded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnTouchRecorded", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "OnTouchRecorded", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (record))
+            method.invoke_unchecked(self, (record))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +136,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         _cordl_time: f64,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -147,12 +150,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("ShouldRecordTouch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldRecordTouch", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldRecordTouch", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (control, _cordl_time, eventPtr))
+            method.invoke_unchecked((), (control, _cordl_time, eventPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -162,7 +166,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         index: i32,
         updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -176,12 +180,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (screen, index, updateMask))
+            method.invoke_unchecked(self, (screen, index, updateMask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +195,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
@@ -198,37 +203,40 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("get_currentTouch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_currentTouch", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "get_currentTouch", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_index(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_index")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_index", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "get_index", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isActive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isActive", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isActive", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_lastTouch(
@@ -236,7 +244,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
@@ -244,12 +252,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("get_lastTouch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lastTouch", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "get_lastTouch", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,7 +267,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
@@ -266,28 +275,30 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("get_screen")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_screen", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "get_screen", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Touchscreen,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_screenPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_screenPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_screenPosition", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "get_screenPosition", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +307,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::EnhancedTouch::Finger as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
@@ -304,12 +315,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             >("get_touchHistory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_touchHistory", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::EnhancedTouch::Finger as
+                    quest_hook::libil2cpp::Type > ::class(), "get_touchHistory", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -54,7 +54,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -76,15 +76,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >("BevelEdges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BevelEdges", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
+                    quest_hook::libil2cpp::Type > ::class(), "BevelEdges", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, edges, amount)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, edges, amount))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBridgeFaces(
@@ -121,7 +122,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -166,8 +167,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >("GetBridgeFaces")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBridgeFaces", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBridgeFaces", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -176,14 +178,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     crate::UnityEngine::ProBuilder::FaceRebuildData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (vertices, left, right, holes)) };
+        > = unsafe { method.invoke_unchecked((), (vertices, left, right, holes))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLeadingEdge(
         wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         common: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -196,12 +198,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >("GetLeadingEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLeadingEdge", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLeadingEdge", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = unsafe {
-            method.invoke_unchecked((), (wing, common))
+            method.invoke_unchecked((), (wing, common))?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +217,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
         we: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         amount: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Bevel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -234,12 +237,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
             >("SlideEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SlideEdge", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Bevel as
+                    quest_hook::libil2cpp::Type > ::class(), "SlideEdge", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (vertices, we, amount))
+            method.invoke_unchecked((), (vertices, we, amount))?
         };
         Ok(__cordl_ret.into())
     }

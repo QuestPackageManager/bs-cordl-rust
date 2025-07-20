@@ -64,7 +64,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             crate::System::Linq::Expressions::Interpreter::ExceptionFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -82,12 +82,14 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >("FilterPasses")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FilterPasses", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "FilterPasses", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (frame, exception, filter))
+            method.invoke_unchecked((), (frame, exception, filter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +108,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -127,13 +129,15 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >("HasHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasHandler", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "HasHandler", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (frame, exception, handler, unwrappedException))
+                .invoke_unchecked(self, (frame, exception, handler, unwrappedException))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +195,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -210,13 +214,18 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (tryStart, tryEnd, gotoEndTargetIndex, handlers))
+                .invoke_unchecked(
+                    self,
+                    (tryStart, tryEnd, gotoEndTargetIndex, handlers),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,7 +244,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -256,8 +265,10 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -272,7 +283,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
                         finallyEnd,
                         handlers,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -287,7 +298,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -301,8 +312,10 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
             >("get_Handlers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Handlers", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Handlers", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -311,31 +324,37 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
                     crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsCatchBlockExist(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsCatchBlockExist")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsCatchBlockExist", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsCatchBlockExist",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsFinallyBlockExist(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsFinallyBlockExist")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsFinallyBlockExist", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsFinallyBlockExist",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

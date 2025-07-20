@@ -54,7 +54,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, bool),
                 quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
@@ -62,21 +62,23 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >("CreateDivisionIndexFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateDivisionIndexFilter", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateDivisionIndexFilter",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatmapSaveDataVersion3::IndexFilter,
         > = unsafe {
-            method.invoke_unchecked((), (numberOfSections, divisionIdx, reversed))
+            method.invoke_unchecked((), (numberOfSections, divisionIdx, reversed))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CreateForExtension() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
@@ -84,13 +86,14 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >("CreateForExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateForExtension", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateForExtension", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatmapSaveDataVersion3::IndexFilter,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateStepFilter(
@@ -100,7 +103,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, bool),
                 quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
@@ -108,13 +111,14 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >("CreateStepFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateStepFilter", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateStepFilter", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatmapSaveDataVersion3::IndexFilter,
-        > = unsafe { method.invoke_unchecked((), (offset, step, reversed)) };
+        > = unsafe { method.invoke_unchecked((), (offset, step, reversed))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_IndexFilter1(
@@ -160,7 +164,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>),
                 quest_hook::libil2cpp::Void,
@@ -168,12 +172,13 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (other))
+            method.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +194,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
         limit: f32,
         limitAlsoAffectsType: crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::BeatmapSaveDataCommon::IndexFilterType,
@@ -207,8 +212,9 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -226,32 +232,34 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
                         limit,
                         limitAlsoAffectsType,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_chunks(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_chunks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_chunks", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_chunks", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_limit(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_limit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_limit", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_limit", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_limitAlsoAffectsType(
@@ -259,7 +267,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType,
@@ -267,37 +275,41 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >("get_limitAlsoAffectsType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_limitAlsoAffectsType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_limitAlsoAffectsType",
+                    0usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::IndexFilterLimitAlsoAffectsType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_param0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_param0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_param0", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_param0", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_param1(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_param1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_param1", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_param1", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_random(
@@ -305,7 +317,7 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatmapSaveDataCommon::IndexFilterRandomType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatmapSaveDataCommon::IndexFilterRandomType,
@@ -313,43 +325,46 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >("get_random")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_random", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_random", 0usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::IndexFilterRandomType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_reversed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_reversed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_reversed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_reversed", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_seed(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_seed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_seed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_seed", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::IndexFilterType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::IndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatmapSaveDataCommon::IndexFilterType,
@@ -357,12 +372,13 @@ impl crate::BeatmapSaveDataVersion3::IndexFilter {
             >("get_type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::IndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "get_type", 0usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::IndexFilterType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

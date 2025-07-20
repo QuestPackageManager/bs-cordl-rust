@@ -50,7 +50,7 @@ impl crate::UnityEngine::UIElements::UIR::GPUBufferAllocator {
         _cordl_size: u32,
         shortLived: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::Alloc> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::GPUBufferAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, bool),
                 crate::UnityEngine::UIElements::UIR::Alloc,
@@ -58,12 +58,13 @@ impl crate::UnityEngine::UIElements::UIR::GPUBufferAllocator {
             >("Allocate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Allocate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::GPUBufferAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "Allocate", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::Alloc = unsafe {
-            method.invoke_unchecked(self, (_cordl_size, shortLived))
+            method.invoke_unchecked(self, (_cordl_size, shortLived))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +72,7 @@ impl crate::UnityEngine::UIElements::UIR::GPUBufferAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::Alloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::GPUBufferAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::Alloc),
                 quest_hook::libil2cpp::Void,
@@ -79,25 +80,27 @@ impl crate::UnityEngine::UIElements::UIR::GPUBufferAllocator {
             >("Free")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Free", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::GPUBufferAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "Free", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HighLowCollide(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::GPUBufferAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("HighLowCollide")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HighLowCollide", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::GPUBufferAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "HighLowCollide", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -113,29 +116,31 @@ impl crate::UnityEngine::UIElements::UIR::GPUBufferAllocator {
         &mut self,
         maxSize: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::GPUBufferAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::GPUBufferAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (maxSize))
+            method.invoke_unchecked(self, (maxSize))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::GPUBufferAllocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isEmpty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::GPUBufferAllocator as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isEmpty", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

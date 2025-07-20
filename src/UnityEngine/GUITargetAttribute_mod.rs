@@ -43,7 +43,7 @@ impl crate::UnityEngine::GUITargetAttribute {
         klass: quest_hook::libil2cpp::Gc<crate::System::Type>,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::GUITargetAttribute as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -54,12 +54,14 @@ impl crate::UnityEngine::GUITargetAttribute {
             >("GetGUITargetAttrValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGUITargetAttrValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::GUITargetAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "GetGUITargetAttrValue",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (klass, methodName))
+            method.invoke_unchecked((), (klass, methodName))?
         };
         Ok(__cordl_ret.into())
     }

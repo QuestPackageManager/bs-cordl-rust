@@ -44,7 +44,7 @@ impl crate::UnityEngine::Timeline::ILayerable {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::ILayerable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -56,12 +56,13 @@ impl crate::UnityEngine::Timeline::ILayerable {
             >("CreateLayerMixer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateLayerMixer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::ILayerable as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateLayerMixer", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
-            method.invoke_unchecked(self, (graph, go, inputCount))
+            method.invoke_unchecked(self, (graph, go, inputCount))?
         };
         Ok(__cordl_ret.into())
     }

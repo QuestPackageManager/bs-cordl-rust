@@ -51,7 +51,7 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -65,14 +65,16 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator
+                    as quest_hook::libil2cpp::Type > ::class(), "Invoke", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
         > = unsafe {
-            method.invoke_unchecked(self, (vertexCount, indexCount, allocatorData))
+            method.invoke_unchecked(self, (vertexCount, indexCount, allocatorData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +93,7 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -102,12 +104,14 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,7 +176,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         flags: crate::UnityEngine::UIElements::UIR::VertexFlags,
         isDynamicColor: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Vertex> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::MeshBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::TextCore::Text::MeshInfo,
@@ -186,12 +190,14 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
             >("ConvertTextVertexToUIRVertex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertTextVertexToUIRVertex", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::MeshBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ConvertTextVertexToUIRVertex", 5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Vertex = unsafe {
-            method.invoke_unchecked((), (info, index, offset, flags, isDynamicColor))
+            method.invoke_unchecked((), (info, index, offset, flags, isDynamicColor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,16 +205,17 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         vertexCount: i32,
         logTruncation: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::MeshBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, bool), i32, 2usize>("LimitTextVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LimitTextVertices", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::MeshBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "LimitTextVertices", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (vertexCount, logTruncation))
+            method.invoke_unchecked((), (vertexCount, logTruncation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +226,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         flags: crate::UnityEngine::UIElements::UIR::VertexFlags,
         isDynamicColor: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::MeshBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::TextCore::Text::MeshInfo,
@@ -233,8 +240,9 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
             >("MakeText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeText", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::MeshBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeText", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -242,7 +250,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
                 .invoke_unchecked(
                     (),
                     (meshInfo, offset, meshAlloc, flags, isDynamicColor),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -376,7 +384,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, u32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
@@ -384,13 +392,14 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData {
             >("Allocate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Allocate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData as
+                    quest_hook::libil2cpp::Type > ::class(), "Allocate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
-        > = unsafe { method.invoke_unchecked(self, (vertexCount, indexCount)) };
+        > = unsafe { method.invoke_unchecked(self, (vertexCount, indexCount))? };
         Ok(__cordl_ret.into())
     }
 }

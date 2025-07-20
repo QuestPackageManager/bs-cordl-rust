@@ -62,7 +62,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -70,13 +70,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             >("GenerateCertificateSignature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateCertificateSignature", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateCertificateSignature", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (hash)) };
+        > = unsafe { method.invoke_unchecked(self, (hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_SignatureAndHashAlgorithm1(
@@ -134,7 +136,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -155,8 +157,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -164,7 +167,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
                 .invoke_unchecked(
                     self,
                     (context, certificate, privateKey, signatureAndHashAlgorithm),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +183,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -198,12 +201,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (context, certificate, privateKey))
+            method.invoke_unchecked(self, (context, certificate, privateKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -212,7 +216,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::Certificate>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -222,13 +226,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             >("get_Certificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Certificate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Certificate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::Certificate,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SignatureAndHashAlgorithm(
@@ -238,7 +243,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -248,13 +253,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials {
             >("get_SignatureAndHashAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SignatureAndHashAlgorithm", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::DefaultTlsSignerCredentials
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_SignatureAndHashAlgorithm", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

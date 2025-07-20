@@ -43,7 +43,7 @@ impl crate::Tayx::Graphy::UI::IModifiableState {
         newState: crate::Tayx::Graphy::GraphyManager_ModuleState,
         silentUpdate: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Tayx::Graphy::UI::IModifiableState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Tayx::Graphy::GraphyManager_ModuleState, bool),
                 quest_hook::libil2cpp::Void,
@@ -51,12 +51,13 @@ impl crate::Tayx::Graphy::UI::IModifiableState {
             >("SetState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Tayx::Graphy::UI::IModifiableState as
+                    quest_hook::libil2cpp::Type > ::class(), "SetState", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (newState, silentUpdate))
+            method.invoke_unchecked(self, (newState, silentUpdate))?
         };
         Ok(__cordl_ret.into())
     }

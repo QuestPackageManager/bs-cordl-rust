@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::System::Collections::IList,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -56,12 +56,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("AddSignatureAlgorithmsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSignatureAlgorithmsExtension", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddSignatureAlgorithmsExtension", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (extensions, supportedSignatureAlgorithms))
+            method.invoke_unchecked((), (extensions, supportedSignatureAlgorithms))?
         };
         Ok(__cordl_ret.into())
     }
@@ -73,7 +75,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -86,13 +88,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CalculateKeyBlock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateKeyBlock", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateKeyBlock", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (context, _cordl_size)) };
+        > = unsafe { method.invoke_unchecked((), (context, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateKeyBlock_Ssl(
@@ -102,7 +105,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -114,13 +117,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CalculateKeyBlock_Ssl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateKeyBlock_Ssl", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateKeyBlock_Ssl",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (master_secret, random, _cordl_size)) };
+        > = unsafe {
+            method.invoke_unchecked((), (master_secret, random, _cordl_size))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateMasterSecret(
@@ -133,7 +140,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -146,13 +153,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CalculateMasterSecret")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateMasterSecret", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateMasterSecret",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (context, pre_master_secret)) };
+        > = unsafe { method.invoke_unchecked((), (context, pre_master_secret))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateMasterSecret_Ssl(
@@ -163,7 +172,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -174,13 +183,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CalculateMasterSecret_Ssl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateMasterSecret_Ssl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateMasterSecret_Ssl",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (pre_master_secret, random)) };
+        > = unsafe { method.invoke_unchecked((), (pre_master_secret, random))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateVerifyData(
@@ -192,7 +203,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -206,19 +217,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CalculateVerifyData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateVerifyData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateVerifyData",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (context, asciiLabel, handshakeHash)) };
+        > = unsafe {
+            method.invoke_unchecked((), (context, asciiLabel, handshakeHash))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint16_i32_0(
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -226,19 +241,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint16", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint16", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint16_i64_1(
         i: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -246,19 +262,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint16", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint16", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint24_i32_0(
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -266,19 +283,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint24", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint24", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint24_i64_1(
         i: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -286,19 +304,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint24", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint24", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint32(
         i: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -306,19 +325,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint32", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint32", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint48(
         i: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -326,19 +346,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint48")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint48", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint48", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint64(
         i: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -346,19 +367,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint64", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint64", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint8_i32_0(
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -366,19 +388,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint8", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckUint8_i64_1(
         i: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -386,12 +409,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CheckUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckUint8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckUint8", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i))
+            method.invoke_unchecked((), (i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -401,7 +425,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u8,
@@ -412,13 +436,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CloneHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloneHash", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CloneHash", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked((), (hashAlgorithm, hash)) };
+        > = unsafe { method.invoke_unchecked((), (hashAlgorithm, hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn ClonePrfHash(
@@ -427,7 +452,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -438,13 +463,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ClonePrfHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClonePrfHash", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ClonePrfHash", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked((), (prfAlgorithm, hash)) };
+        > = unsafe { method.invoke_unchecked((), (prfAlgorithm, hash))? };
         Ok(__cordl_ret.into())
     }
     pub fn Concat(
@@ -453,7 +479,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -464,13 +490,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("Concat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Concat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "Concat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (a, b)) };
+        > = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHash_SignatureAndHashAlgorithm1(
@@ -480,7 +507,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
@@ -490,13 +517,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CreateHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHash", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateHash", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked((), (signatureAndHashAlgorithm)) };
+        > = unsafe { method.invoke_unchecked((), (signatureAndHashAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHash_u8_0(
@@ -504,7 +532,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u8),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -512,13 +540,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CreateHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHash", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateHash", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked((), (hashAlgorithm)) };
+        > = unsafe { method.invoke_unchecked((), (hashAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePrfHash(
@@ -526,7 +555,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -534,13 +563,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CreatePrfHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreatePrfHash", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CreatePrfHash", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = unsafe { method.invoke_unchecked((), (prfAlgorithm)) };
+        > = unsafe { method.invoke_unchecked((), (prfAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSignatureAlgorithmsExtension(
@@ -550,7 +580,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -558,13 +588,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CreateSignatureAlgorithmsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSignatureAlgorithmsExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateSignatureAlgorithmsExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (supportedSignatureAlgorithms)) };
+        > = unsafe { method.invoke_unchecked((), (supportedSignatureAlgorithms))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTlsSigner(
@@ -572,7 +604,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsSigner>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u8),
                 quest_hook::libil2cpp::Gc<
@@ -582,19 +614,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("CreateTlsSigner")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTlsSigner", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateTlsSigner", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
-        > = unsafe { method.invoke_unchecked((), (clientCertificateType)) };
+        > = unsafe { method.invoke_unchecked((), (clientCertificateType))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecodeUint8(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 u8,
@@ -602,11 +635,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("DecodeUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecodeUint8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "DecodeUint8", 1usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (buf)) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (buf))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecodeUint8ArrayWithUint8Length(
@@ -614,7 +648,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -622,13 +656,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("DecodeUint8ArrayWithUint8Length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecodeUint8ArrayWithUint8Length", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DecodeUint8ArrayWithUint8Length", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (buf)) };
+        > = unsafe { method.invoke_unchecked((), (buf))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeOpaque8(
@@ -636,7 +672,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -644,13 +680,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("EncodeOpaque8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeOpaque8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "EncodeOpaque8", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (buf)) };
+        > = unsafe { method.invoke_unchecked((), (buf))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeSupportedSignatureAlgorithms(
@@ -660,7 +697,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         allowAnonymous: bool,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -672,8 +709,10 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("EncodeSupportedSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeSupportedSignatureAlgorithms", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EncodeSupportedSignatureAlgorithms", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -681,7 +720,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
                 .invoke_unchecked(
                     (),
                     (supportedSignatureAlgorithms, allowAnonymous, output),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -690,7 +729,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -698,13 +737,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("EncodeUint16ArrayWithUint16Length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeUint16ArrayWithUint16Length", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EncodeUint16ArrayWithUint16Length", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (uints)) };
+        > = unsafe { method.invoke_unchecked((), (uints))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeUint8(
@@ -712,7 +753,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u8),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -720,13 +761,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("EncodeUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeUint8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "EncodeUint8", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (val)) };
+        > = unsafe { method.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeUint8ArrayWithUint8Length(
@@ -734,7 +776,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -742,13 +784,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("EncodeUint8ArrayWithUint8Length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeUint8ArrayWithUint8Length", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EncodeUint8ArrayWithUint8Length", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (uints)) };
+        > = unsafe { method.invoke_unchecked((), (uints))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenSsl3Const() -> quest_hook::libil2cpp::Result<
@@ -758,7 +802,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -770,21 +814,22 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GenSsl3Const")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenSsl3Const", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GenSsl3Const", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllSignatureAlgorithms() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -792,25 +837,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetAllSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllSignatureAlgorithms", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAllSignatureAlgorithms",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCipherType(ciphersuite: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetCipherType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCipherType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCipherType", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetClientCertificateType(
@@ -821,7 +869,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::Certificate,
         >,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -836,19 +884,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetClientCertificateType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetClientCertificateType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetClientCertificateType",
+                    2usize
                 )
             });
         let __cordl_ret: i16 = unsafe {
-            method.invoke_unchecked((), (clientCertificate, serverCertificate))
+            method.invoke_unchecked((), (clientCertificate, serverCertificate))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultDssSignatureAlgorithms() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -856,19 +906,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetDefaultDssSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultDssSignatureAlgorithms", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultDssSignatureAlgorithms", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultECDsaSignatureAlgorithms() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -876,19 +928,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetDefaultECDsaSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultECDsaSignatureAlgorithms", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultECDsaSignatureAlgorithms", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultRsaSignatureAlgorithms() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -896,19 +950,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetDefaultRsaSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultRsaSignatureAlgorithms", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultRsaSignatureAlgorithms", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultSupportedSignatureAlgorithms() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -916,27 +972,31 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetDefaultSupportedSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultSupportedSignatureAlgorithms", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultSupportedSignatureAlgorithms", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetEncryptionAlgorithm(
         ciphersuite: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetEncryptionAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEncryptionAlgorithm", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEncryptionAlgorithm",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtensionData(
@@ -945,7 +1005,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -956,53 +1016,59 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetExtensionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetExtensionData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetExtensionData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (extensions, extensionType)) };
+        > = unsafe { method.invoke_unchecked((), (extensions, extensionType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashAlgorithmForPrfAlgorithm(
         prfAlgorithm: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), u8, 1usize>("GetHashAlgorithmForPrfAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashAlgorithmForPrfAlgorithm", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetHashAlgorithmForPrfAlgorithm", 1usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (prfAlgorithm)) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (prfAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyExchangeAlgorithm(
         ciphersuite: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetKeyExchangeAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetKeyExchangeAlgorithm", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetKeyExchangeAlgorithm",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMacAlgorithm(ciphersuite: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetMacAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMacAlgorithm", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMacAlgorithm", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinimumVersion(
@@ -1010,7 +1076,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -1020,13 +1086,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetMinimumVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMinimumVersion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMinimumVersion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-        > = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        > = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOidForHashAlgorithm(
@@ -1034,7 +1101,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u8),
                 quest_hook::libil2cpp::Gc<
@@ -1044,13 +1111,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetOidForHashAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOidForHashAlgorithm", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOidForHashAlgorithm",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        > = unsafe { method.invoke_unchecked((), (hashAlgorithm)) };
+        > = unsafe { method.invoke_unchecked((), (hashAlgorithm))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSignatureAlgorithmsExtension(
@@ -1058,7 +1127,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -1066,12 +1135,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetSignatureAlgorithmsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSignatureAlgorithmsExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSignatureAlgorithmsExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), (extensions))
+            method.invoke_unchecked((), (extensions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1087,7 +1158,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1104,13 +1175,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetSignatureAndHashAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSignatureAndHashAlgorithm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSignatureAndHashAlgorithm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
-        > = unsafe { method.invoke_unchecked((), (context, signerCredentials)) };
+        > = unsafe { method.invoke_unchecked((), (context, signerCredentials))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUsableSignatureAlgorithms(
@@ -1118,7 +1191,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -1126,12 +1199,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("GetUsableSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUsableSignatureAlgorithms", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetUsableSignatureAlgorithms", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), (sigHashAlgs))
+            method.invoke_unchecked((), (sigHashAlgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1141,7 +1216,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
@@ -1154,12 +1229,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("HMacHash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HMacHash", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HMacHash", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (digest, secret, seed, output))
+            method.invoke_unchecked((), (digest, secret, seed, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1168,7 +1244,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         extensionType: i32,
         alertDescription: u8,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -1180,28 +1256,32 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("HasExpectedEmptyExtensionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasExpectedEmptyExtensionData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HasExpectedEmptyExtensionData", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (extensions, extensionType, alertDescription))
+            method.invoke_unchecked((), (extensions, extensionType, alertDescription))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasSigningCapability(
         clientCertificateType: u8,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u8), bool, 1usize>("HasSigningCapability")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasSigningCapability", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "HasSigningCapability",
+                    1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (clientCertificateType))
+            method.invoke_unchecked((), (clientCertificateType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1213,7 +1293,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsSession>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1228,37 +1308,40 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ImportSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImportSession", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ImportSession", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
-        > = unsafe { method.invoke_unchecked((), (sessionID, sessionParameters)) };
+        > = unsafe { method.invoke_unchecked((), (sessionID, sessionParameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsAeadCipherSuite(ciphersuite: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsAeadCipherSuite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAeadCipherSuite", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsAeadCipherSuite", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsBlockCipherSuite(ciphersuite: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsBlockCipherSuite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsBlockCipherSuite", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsBlockCipherSuite", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSignatureAlgorithmsExtensionAllowed(
@@ -1266,7 +1349,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
@@ -1276,11 +1359,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsSignatureAlgorithmsExtensionAllowed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSignatureAlgorithmsExtensionAllowed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsSignatureAlgorithmsExtensionAllowed", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clientVersion)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clientVersion))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSsl(
@@ -1288,7 +1373,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
@@ -1298,29 +1383,32 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsSsl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSsl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSsl", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (context)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsStreamCipherSuite(ciphersuite: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsStreamCipherSuite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsStreamCipherSuite", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsStreamCipherSuite",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ciphersuite)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ciphersuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTimeout(
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketException>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Sockets::SocketException,
@@ -1330,11 +1418,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsTimeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTimeout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTimeout", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (e)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (e))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTlsV11_ProtocolVersion0(
@@ -1342,7 +1431,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
@@ -1352,11 +1441,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsTlsV11")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTlsV11", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTlsV11", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (version)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (version))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTlsV11_TlsContext1(
@@ -1364,7 +1454,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
@@ -1374,11 +1464,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsTlsV11")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTlsV11", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTlsV11", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (context)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTlsV12_ProtocolVersion0(
@@ -1386,7 +1477,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
@@ -1396,11 +1487,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsTlsV12")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTlsV12", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTlsV12", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (version)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (version))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTlsV12_TlsContext1(
@@ -1408,7 +1500,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
@@ -1418,18 +1510,19 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsTlsV12")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTlsV12", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTlsV12", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (context)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (context))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidCipherSuiteForSignatureAlgorithms(
         cipherSuite: i32,
         sigAlgs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
                 bool,
@@ -1437,12 +1530,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsValidCipherSuiteForSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidCipherSuiteForSignatureAlgorithms", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsValidCipherSuiteForSignatureAlgorithms", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (cipherSuite, sigAlgs))
+            method.invoke_unchecked((), (cipherSuite, sigAlgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1452,7 +1547,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -1465,121 +1560,132 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("IsValidCipherSuiteForVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidCipherSuiteForVersion", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsValidCipherSuiteForVersion", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (cipherSuite, serverVersion))
+            method.invoke_unchecked((), (cipherSuite, serverVersion))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint16_i32_0(i: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsValidUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint16", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint16", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint16_i64_1(i: i64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), bool, 1usize>("IsValidUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint16", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint16", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint24_i32_0(i: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsValidUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint24", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint24", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint24_i64_1(i: i64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), bool, 1usize>("IsValidUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint24", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint24", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint32(i: i64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), bool, 1usize>("IsValidUint32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint32", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint32", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint48(i: i64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), bool, 1usize>("IsValidUint48")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint48", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint48", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint64(i: i64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), bool, 1usize>("IsValidUint64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint64", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint64", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint8_i32_0(i: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsValidUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint8", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidUint8_i64_1(i: i64) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), bool, 1usize>("IsValidUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUint8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUint8", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1600,7 +1706,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1616,14 +1722,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("PRF")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PRF", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "PRF", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
-            method.invoke_unchecked((), (context, secret, asciiLabel, seed, _cordl_size))
+            method
+                .invoke_unchecked((), (context, secret, asciiLabel, seed, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1635,7 +1743,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1648,14 +1756,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("PRF_legacy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PRF_legacy", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "PRF_legacy", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
-            method.invoke_unchecked((), (secret, label, labelSeed, _cordl_size))
+            method.invoke_unchecked((), (secret, label, labelSeed, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1667,7 +1776,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1680,14 +1789,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("PRF_legacy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PRF_legacy", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "PRF_legacy", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
-            method.invoke_unchecked((), (secret, asciiLabel, seed, _cordl_size))
+            method.invoke_unchecked((), (secret, asciiLabel, seed, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1697,7 +1807,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -1705,12 +1815,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ParseSupportedSignatureAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseSupportedSignatureAlgorithms", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ParseSupportedSignatureAlgorithms", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), (allowAnonymous, input))
+            method.invoke_unchecked((), (allowAnonymous, input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1720,7 +1832,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1728,13 +1840,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadAllOrNothing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadAllOrNothing", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadAllOrNothing", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (length, input)) };
+        > = unsafe { method.invoke_unchecked((), (length, input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsn1Object(
@@ -1742,7 +1855,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
@@ -1750,13 +1863,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadAsn1Object")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadAsn1Object", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadAsn1Object", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Object,
-        > = unsafe { method.invoke_unchecked((), (encoding)) };
+        > = unsafe { method.invoke_unchecked((), (encoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadDerObject(
@@ -1764,7 +1878,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
@@ -1772,20 +1886,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadDerObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadDerObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadDerObject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Object,
-        > = unsafe { method.invoke_unchecked((), (encoding)) };
+        > = unsafe { method.invoke_unchecked((), (encoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFully_Il2CppArray1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1796,12 +1911,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadFully")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFully", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadFully", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buf, input))
+            method.invoke_unchecked((), (buf, input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1811,7 +1927,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1819,13 +1935,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadFully")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFully", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadFully", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (length, input)) };
+        > = unsafe { method.invoke_unchecked((), (length, input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadOpaque16(
@@ -1833,7 +1950,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1841,13 +1958,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadOpaque16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadOpaque16", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadOpaque16", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadOpaque24(
@@ -1855,7 +1973,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1863,13 +1981,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadOpaque24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadOpaque24", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadOpaque24", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadOpaque8(
@@ -1877,7 +1996,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1885,13 +2004,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadOpaque8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadOpaque8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadOpaque8", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadSignatureAlgorithmsExtension(
@@ -1899,7 +2019,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -1907,12 +2027,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadSignatureAlgorithmsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadSignatureAlgorithmsExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadSignatureAlgorithmsExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), (extensionData))
+            method.invoke_unchecked((), (extensionData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1922,7 +2044,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -1930,20 +2052,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint16Array")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint16Array", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint16Array", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked((), (count, input)) };
+        > = unsafe { method.invoke_unchecked((), (count, input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint16_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i32,
@@ -1951,17 +2074,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint16", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (buf, offset)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (buf, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint16_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 i32,
@@ -1969,18 +2093,19 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint16", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint16", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint24_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i32,
@@ -1988,17 +2113,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint24", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint24", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (buf, offset)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (buf, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint24_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 i32,
@@ -2006,18 +2132,19 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint24", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint24", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint32_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i64,
@@ -2025,17 +2152,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint32", 2usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (buf, offset)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (buf, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint32_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 i64,
@@ -2043,18 +2171,19 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint32", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint32", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint48_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i64,
@@ -2062,17 +2191,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint48")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint48", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint48", 2usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (buf, offset)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (buf, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint48_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 i64,
@@ -2080,11 +2210,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint48")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint48", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint48", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint8Array(
@@ -2093,7 +2224,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2101,20 +2232,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint8Array")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint8Array", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint8Array", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (count, input)) };
+        > = unsafe { method.invoke_unchecked((), (count, input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint8_Il2CppArray_i32_1(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 u8,
@@ -2122,17 +2254,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint8", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint8", 2usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (buf, offset)) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (buf, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUint8_Stream0(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 u8,
@@ -2140,18 +2273,19 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadUint8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadUint8", 1usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadVersionRaw_Il2CppArray_i32_0(
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 i32,
@@ -2159,17 +2293,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadVersionRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadVersionRaw", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadVersionRaw", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (buf, offset)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (buf, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadVersionRaw_Stream1(
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 i32,
@@ -2177,11 +2312,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadVersionRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadVersionRaw", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadVersionRaw", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (input)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadVersion_Il2CppArray_i32_0(
@@ -2190,7 +2326,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Gc<
@@ -2200,13 +2336,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadVersion", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadVersion", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-        > = unsafe { method.invoke_unchecked((), (buf, offset)) };
+        > = unsafe { method.invoke_unchecked((), (buf, offset))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadVersion_Stream1(
@@ -2214,7 +2351,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<
@@ -2224,13 +2361,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ReadVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadVersion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadVersion", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrackHashAlgorithms(
@@ -2241,7 +2379,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::System::Collections::IList,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2254,12 +2392,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("TrackHashAlgorithms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrackHashAlgorithms", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "TrackHashAlgorithms",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (handshakeHash, supportedSignatureAlgorithms))
+            method.invoke_unchecked((), (handshakeHash, supportedSignatureAlgorithms))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2269,7 +2409,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         >,
         keyUsageBits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2282,12 +2422,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("ValidateKeyUsage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateKeyUsage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateKeyUsage", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (c, keyUsageBits))
+            method.invoke_unchecked((), (c, keyUsageBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2296,7 +2437,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -2304,12 +2445,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("VectorOfOne")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "VectorOfOne", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "VectorOfOne", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), (obj))
+            method.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2321,7 +2463,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -2334,13 +2476,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("VerifySupportedSignatureAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "VerifySupportedSignatureAlgorithm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "VerifySupportedSignatureAlgorithm", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (supportedSignatureAlgorithms, signatureAlgorithm))
+                .invoke_unchecked(
+                    (),
+                    (supportedSignatureAlgorithms, signatureAlgorithm),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2348,7 +2495,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Void,
@@ -2356,12 +2503,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteGmtUnixTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteGmtUnixTime", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteGmtUnixTime", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buf, offset))
+            method.invoke_unchecked((), (buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2369,7 +2517,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2380,12 +2528,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteOpaque16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteOpaque16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteOpaque16", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buf, output))
+            method.invoke_unchecked((), (buf, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2393,7 +2542,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2404,12 +2553,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteOpaque24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteOpaque24", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteOpaque24", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buf, output))
+            method.invoke_unchecked((), (buf, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2417,7 +2567,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2428,12 +2578,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteOpaque8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteOpaque8", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteOpaque8", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buf, output))
+            method.invoke_unchecked((), (buf, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2442,7 +2593,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -2454,12 +2605,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint16ArrayWithUint16Length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint16ArrayWithUint16Length", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteUint16ArrayWithUint16Length", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, buf, offset))
+            method.invoke_unchecked((), (uints, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2467,7 +2620,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -2478,12 +2631,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint16ArrayWithUint16Length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint16ArrayWithUint16Length", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteUint16ArrayWithUint16Length", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, output))
+            method.invoke_unchecked((), (uints, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2492,7 +2647,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -2504,12 +2659,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint16Array")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint16Array", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint16Array", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, buf, offset))
+            method.invoke_unchecked((), (uints, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2517,7 +2673,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -2528,12 +2684,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint16Array")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint16Array", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint16Array", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, output))
+            method.invoke_unchecked((), (uints, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2542,7 +2699,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2554,12 +2711,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint16", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint16", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, buf, offset))
+            method.invoke_unchecked((), (i, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2567,7 +2725,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         i: i32,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -2575,12 +2733,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint16")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint16", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint16", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, output))
+            method.invoke_unchecked((), (i, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2589,7 +2748,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -2601,12 +2760,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint24", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint24", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, buf, offset))
+            method.invoke_unchecked((), (i, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2614,7 +2774,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         i: i32,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -2622,12 +2782,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint24")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint24", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint24", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, output))
+            method.invoke_unchecked((), (i, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2636,7 +2797,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i64,
@@ -2648,12 +2809,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint32", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint32", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, buf, offset))
+            method.invoke_unchecked((), (i, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2661,7 +2823,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         i: i64,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -2669,12 +2831,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint32", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint32", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, output))
+            method.invoke_unchecked((), (i, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2683,7 +2846,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i64,
@@ -2695,12 +2858,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint48")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint48", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint48", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, buf, offset))
+            method.invoke_unchecked((), (i, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2708,7 +2872,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         i: i64,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -2716,12 +2880,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint48")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint48", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint48", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, output))
+            method.invoke_unchecked((), (i, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2730,7 +2895,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i64,
@@ -2742,12 +2907,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint64", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint64", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, buf, offset))
+            method.invoke_unchecked((), (i, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2755,7 +2921,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         i: i64,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -2763,12 +2929,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint64", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint64", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, output))
+            method.invoke_unchecked((), (i, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2777,7 +2944,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2789,12 +2956,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint8ArrayWithUint8Length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint8ArrayWithUint8Length", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteUint8ArrayWithUint8Length", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, buf, offset))
+            method.invoke_unchecked((), (uints, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2802,7 +2971,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2813,12 +2982,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint8ArrayWithUint8Length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint8ArrayWithUint8Length", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteUint8ArrayWithUint8Length", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, output))
+            method.invoke_unchecked((), (uints, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2827,7 +2998,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2839,12 +3010,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint8Array")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint8Array", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint8Array", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, buf, offset))
+            method.invoke_unchecked((), (uints, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2852,7 +3024,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         uints: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2863,12 +3035,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint8Array")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint8Array", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint8Array", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (uints, output))
+            method.invoke_unchecked((), (uints, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2877,7 +3050,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u8,
@@ -2889,12 +3062,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint8", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint8", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, buf, offset))
+            method.invoke_unchecked((), (i, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2902,7 +3076,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         i: u8,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u8, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -2910,12 +3084,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteUint8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUint8", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUint8", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, output))
+            method.invoke_unchecked((), (i, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2926,7 +3101,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2940,12 +3115,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteVersion", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteVersion", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (version, buf, offset))
+            method.invoke_unchecked((), (version, buf, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2955,7 +3131,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
         >,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2968,28 +3144,30 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities {
             >("WriteVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteVersion", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteVersion", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (version, output))
+            method.invoke_unchecked((), (version, output))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

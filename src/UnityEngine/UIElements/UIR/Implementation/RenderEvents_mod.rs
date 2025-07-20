@@ -50,7 +50,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         index: i32,
         resetState: bool,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -70,12 +70,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("DepthFirstOnChildAdded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DepthFirstOnChildAdded", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "DepthFirstOnChildAdded",
+                    5usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (renderChain, parent, ve, index, resetState))
+            method.invoke_unchecked((), (renderChain, parent, ve, index, resetState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +87,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         >,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -100,11 +102,15 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("DepthFirstOnChildRemoving")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DepthFirstOnChildRemoving", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "DepthFirstOnChildRemoving",
+                    2usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (renderChain, ve)) };
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked((), (renderChain, ve))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DepthFirstOnClippingChanged(
@@ -126,7 +132,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -156,8 +162,10 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("DepthFirstOnClippingChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DepthFirstOnClippingChanged", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DepthFirstOnClippingChanged", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -177,7 +185,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
                         device,
                         stats,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +202,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         >,
         isDoingFullVertexRegeneration: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -216,8 +224,10 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("DepthFirstOnOpacityChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DepthFirstOnOpacityChanged", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DepthFirstOnOpacityChanged", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -233,7 +243,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
                         stats,
                         isDoingFullVertexRegeneration,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -253,7 +263,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -280,8 +290,10 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("DepthFirstOnTransformOrSizeChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DepthFirstOnTransformOrSizeChanged", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DepthFirstOnTransformOrSizeChanged", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -298,7 +310,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
                         transformChanged,
                         stats,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -314,7 +326,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -335,8 +347,10 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("DepthFirstOnVisualsChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DepthFirstOnVisualsChanged", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DepthFirstOnVisualsChanged", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -351,7 +365,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
                         hierarchical,
                         stats,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -363,7 +377,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -378,19 +392,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("DetermineSelfClipMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DetermineSelfClipMethod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "DetermineSelfClipMethod",
+                    2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod = unsafe {
-            method.invoke_unchecked((), (renderChain, ve))
+            method.invoke_unchecked((), (renderChain, ve))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetClipRectIDClipInfo(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -400,12 +416,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("GetClipRectIDClipInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetClipRectIDClipInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "GetClipRectIDClipInfo",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (ve))
+            method.invoke_unchecked((), (ve))?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,7 +432,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -424,19 +442,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("GetLastDeepestChild")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLastDeepestChild", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLastDeepestChild",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
-        > = unsafe { method.invoke_unchecked((), (ve)) };
+        > = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransformIDTransformInfo(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -446,12 +466,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("GetTransformIDTransformInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTransformIDTransformInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetTransformIDTransformInfo", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (ve))
+            method.invoke_unchecked((), (ve))?
         };
         Ok(__cordl_ret.into())
     }
@@ -461,7 +483,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         >,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -476,19 +498,20 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("InitColorIDs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitColorIDs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "InitColorIDs", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (renderChain, ve))
+            method.invoke_unchecked((), (renderChain, ve))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsElementHierarchyHidden(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -498,17 +521,19 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("IsElementHierarchyHidden")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsElementHierarchyHidden", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "IsElementHierarchyHidden",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn NeedsColorID(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -518,17 +543,18 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("NeedsColorID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NeedsColorID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "NeedsColorID", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn NeedsTextCoreSettings(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -538,17 +564,19 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("NeedsTextCoreSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NeedsTextCoreSettings", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "NeedsTextCoreSettings",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn NeedsTransformID(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -558,11 +586,12 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("NeedsTransformID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NeedsTransformID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "NeedsTransformID", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn OnColorChanged(
@@ -575,7 +604,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -594,12 +623,13 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("OnColorChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnColorChanged", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "OnColorChanged", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))
+            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -613,7 +643,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -632,12 +662,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("ProcessOnClippingChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessOnClippingChanged", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessOnClippingChanged",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))
+            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -651,7 +683,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -670,12 +702,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("ProcessOnColorChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessOnColorChanged", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessOnColorChanged",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))
+            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -689,7 +723,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -708,12 +742,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("ProcessOnOpacityChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessOnOpacityChanged", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessOnOpacityChanged",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))
+            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -727,7 +763,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -746,12 +782,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("ProcessOnTransformOrSizeChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessOnTransformOrSizeChanged", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ProcessOnTransformOrSizeChanged", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))
+            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -765,7 +803,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -784,12 +822,14 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("ProcessOnVisualsChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessOnVisualsChanged", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessOnVisualsChanged",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))
+            method.invoke_unchecked((), (renderChain, ve, dirtyID, stats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -799,7 +839,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         >,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -814,19 +854,20 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("SetColorValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColorValues", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColorValues", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (renderChain, ve))
+            method.invoke_unchecked((), (renderChain, ve))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateLocalFlipsWinding(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -836,11 +877,13 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("UpdateLocalFlipsWinding")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateLocalFlipsWinding", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateLocalFlipsWinding",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateTextCoreSettings(
@@ -849,7 +892,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
         >,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -864,19 +907,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("UpdateTextCoreSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateTextCoreSettings", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateTextCoreSettings",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (renderChain, ve))
+            method.invoke_unchecked((), (renderChain, ve))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateWorldFlipsWinding(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -886,19 +931,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("UpdateWorldFlipsWinding")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateWorldFlipsWinding", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateWorldFlipsWinding",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve))
+            method.invoke_unchecked((), (ve))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateZeroScaling(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -908,12 +955,13 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::RenderEvents {
             >("UpdateZeroScaling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateZeroScaling", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Implementation::RenderEvents as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateZeroScaling", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ve))
+            method.invoke_unchecked((), (ve))?
         };
         Ok(__cordl_ret.into())
     }

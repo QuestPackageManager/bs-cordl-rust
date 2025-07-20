@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -58,13 +58,14 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("CreateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked((), (privateKeyInfoData)) };
+        > = unsafe { method.invoke_unchecked((), (privateKeyInfoData))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateKey_PrivateKeyInfo2(
@@ -76,7 +77,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
@@ -88,13 +89,14 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("CreateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked((), (keyInfo)) };
+        > = unsafe { method.invoke_unchecked((), (keyInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateKey_Stream1(
@@ -104,7 +106,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<
@@ -114,13 +116,14 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("CreateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked((), (inStr)) };
+        > = unsafe { method.invoke_unchecked((), (inStr))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecryptKey_Asn1Object3(
@@ -131,7 +134,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -144,13 +147,14 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("DecryptKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecryptKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "DecryptKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked((), (passPhrase, asn1Object)) };
+        > = unsafe { method.invoke_unchecked((), (passPhrase, asn1Object))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecryptKey_EncryptedPrivateKeyInfo0(
@@ -163,7 +167,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -178,13 +182,14 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("DecryptKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecryptKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "DecryptKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked((), (passPhrase, encInfo)) };
+        > = unsafe { method.invoke_unchecked((), (passPhrase, encInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecryptKey_Il2CppArray1(
@@ -197,7 +202,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -210,14 +215,15 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("DecryptKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecryptKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "DecryptKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         > = unsafe {
-            method.invoke_unchecked((), (passPhrase, encryptedPrivateKeyInfoData))
+            method.invoke_unchecked((), (passPhrase, encryptedPrivateKeyInfoData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +237,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -244,14 +250,15 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("DecryptKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecryptKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "DecryptKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         > = unsafe {
-            method.invoke_unchecked((), (passPhrase, encryptedPrivateKeyInfoStream))
+            method.invoke_unchecked((), (passPhrase, encryptedPrivateKeyInfoStream))?
         };
         Ok(__cordl_ret.into())
     }
@@ -268,7 +275,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -286,15 +293,19 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("EncryptKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncryptKey", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "EncryptKey", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
             method
-                .invoke_unchecked((), (algorithm, passPhrase, salt, iterationCount, key))
+                .invoke_unchecked(
+                    (),
+                    (algorithm, passPhrase, salt, iterationCount, key),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -309,7 +320,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -325,15 +336,19 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("EncryptKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncryptKey", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "EncryptKey", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe {
             method
-                .invoke_unchecked((), (algorithm, passPhrase, salt, iterationCount, key))
+                .invoke_unchecked(
+                    (),
+                    (algorithm, passPhrase, salt, iterationCount, key),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -345,7 +360,7 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -358,13 +373,14 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
             >("GetRawKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRawKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRawKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (keyInfo, expectedSize)) };
+        > = unsafe { method.invoke_unchecked((), (keyInfo, expectedSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -377,16 +393,17 @@ impl crate::Org::BouncyCastle::Security::PrivateKeyFactory {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::PrivateKeyFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::PrivateKeyFactory as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

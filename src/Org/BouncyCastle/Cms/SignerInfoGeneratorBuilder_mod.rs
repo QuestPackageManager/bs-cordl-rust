@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -72,14 +72,15 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
         > = unsafe {
-            method.invoke_unchecked(self, (signerFactory, subjectKeyIdentifier))
+            method.invoke_unchecked(self, (signerFactory, subjectKeyIdentifier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +95,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -111,13 +112,14 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
-        > = unsafe { method.invoke_unchecked(self, (contentSigner, certificate)) };
+        > = unsafe { method.invoke_unchecked(self, (contentSigner, certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateGenerator(
@@ -131,7 +133,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInfoGenerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -148,13 +150,14 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             >("CreateGenerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateGenerator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateGenerator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGenerator,
-        > = unsafe { method.invoke_unchecked(self, (contentSigner, sigId)) };
+        > = unsafe { method.invoke_unchecked(self, (contentSigner, sigId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -172,7 +175,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -182,13 +185,14 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             >("SetDirectSignature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDirectSignature", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDirectSignature", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
-        > = unsafe { method.invoke_unchecked(self, (hasNoSignedAttributes)) };
+        > = unsafe { method.invoke_unchecked(self, (hasNoSignedAttributes))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithSignedAttributeGenerator(
@@ -201,7 +205,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
@@ -213,13 +217,15 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             >("WithSignedAttributeGenerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithSignedAttributeGenerator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WithSignedAttributeGenerator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
-        > = unsafe { method.invoke_unchecked(self, (signedGen)) };
+        > = unsafe { method.invoke_unchecked(self, (signedGen))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithUnsignedAttributeGenerator(
@@ -232,7 +238,7 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
@@ -244,28 +250,31 @@ impl crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder {
             >("WithUnsignedAttributeGenerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithUnsignedAttributeGenerator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WithUnsignedAttributeGenerator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder,
-        > = unsafe { method.invoke_unchecked(self, (unsignedGen)) };
+        > = unsafe { method.invoke_unchecked(self, (unsignedGen))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cms::SignerInfoGeneratorBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

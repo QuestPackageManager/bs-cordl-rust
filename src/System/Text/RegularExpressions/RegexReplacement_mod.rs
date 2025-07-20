@@ -73,7 +73,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             crate::System::Text::RegularExpressions::RegexReplacement,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexReplacement as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -96,8 +96,9 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             >("GetOrCreate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOrCreate", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Text::RegularExpressions::RegexReplacement as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOrCreate", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -107,7 +108,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
                 .invoke_unchecked(
                     (),
                     (replRef, replacement, caps, capsize, capnames, roptions),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +134,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexReplacement as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -148,13 +149,14 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             >("Replace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Replace", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Text::RegularExpressions::RegexReplacement as
+                    quest_hook::libil2cpp::Type > ::class(), "Replace", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (regex, input, count, startat)) };
+        > = unsafe { method.invoke_unchecked(self, (regex, input, count, startat))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReplacementImpl(
@@ -164,7 +166,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             crate::System::Text::RegularExpressions::Match,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexReplacement as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -177,12 +179,13 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             >("ReplacementImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReplacementImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Text::RegularExpressions::RegexReplacement as
+                    quest_hook::libil2cpp::Type > ::class(), "ReplacementImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sb, _cordl_match))
+            method.invoke_unchecked(self, (sb, _cordl_match))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,7 +200,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             crate::System::Text::RegularExpressions::Match,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexReplacement as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -216,12 +219,13 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             >("ReplacementImplRTL")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReplacementImplRTL", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Text::RegularExpressions::RegexReplacement as
+                    quest_hook::libil2cpp::Type > ::class(), "ReplacementImplRTL", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (al, _cordl_match))
+            method.invoke_unchecked(self, (al, _cordl_match))?
         };
         Ok(__cordl_ret.into())
     }
@@ -233,7 +237,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
         >,
         _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexReplacement as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -247,12 +251,13 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Text::RegularExpressions::RegexReplacement as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rep, concat, _caps))
+            method.invoke_unchecked(self, (rep, concat, _caps))?
         };
         Ok(__cordl_ret.into())
     }
@@ -261,7 +266,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Text::RegularExpressions::RegexReplacement as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -269,13 +274,14 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
             >("get_Pattern")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Pattern", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Text::RegularExpressions::RegexReplacement as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Pattern", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

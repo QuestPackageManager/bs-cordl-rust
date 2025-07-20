@@ -88,7 +88,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
         &mut self,
         error: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags),
                 quest_hook::libil2cpp::Void,
@@ -96,12 +96,14 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("AddStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddStatus", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "AddStatus", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (error))
+            method.invoke_unchecked(self, (error))?
         };
         Ok(__cordl_ret.into())
     }
@@ -111,7 +113,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -121,11 +123,13 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "Build", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (certificate)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn BuildChainFrom(
@@ -136,7 +140,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -146,12 +150,14 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("BuildChainFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildChainFrom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "BuildChainFrom", 1usize
                 )
             });
         let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags = unsafe {
-            method.invoke_unchecked(self, (certificate))
+            method.invoke_unchecked(self, (certificate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -162,7 +168,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -174,20 +180,22 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("CheckCrls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckCrls", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "CheckCrls", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::X509::X509Crl,
-        > = unsafe { method.invoke_unchecked((), (subject, ski, store)) };
+        > = unsafe { method.invoke_unchecked((), (subject, ski, store))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckRevocationOnChain(
         &mut self,
         flag: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags),
                 quest_hook::libil2cpp::Void,
@@ -195,12 +203,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("CheckRevocationOnChain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckRevocationOnChain", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "CheckRevocationOnChain",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (flag))
+            method.invoke_unchecked(self, (flag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -216,7 +227,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -232,12 +243,14 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("CheckRevocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckRevocation", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "CheckRevocation", 3usize
                 )
             });
         let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags = unsafe {
-            method.invoke_unchecked(self, (certificate, ca_cert, online))
+            method.invoke_unchecked(self, (certificate, ca_cert, online))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,7 +264,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -265,12 +278,14 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("CheckRevocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckRevocation", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "CheckRevocation", 3usize
                 )
             });
         let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags = unsafe {
-            method.invoke_unchecked(self, (certificate, ca, online))
+            method.invoke_unchecked(self, (certificate, ca, online))?
         };
         Ok(__cordl_ret.into())
     }
@@ -282,7 +297,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -292,13 +307,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("FindCrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindCrl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "FindCrl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::X509::X509Crl,
-        > = unsafe { method.invoke_unchecked(self, (caCertificate)) };
+        > = unsafe { method.invoke_unchecked(self, (caCertificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindParent(
@@ -311,7 +328,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -323,13 +340,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("FindParent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindParent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "FindParent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-        > = unsafe { method.invoke_unchecked(self, (certificate)) };
+        > = unsafe { method.invoke_unchecked(self, (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAuthorityKeyIdentifier_X509Certificate2_0(
@@ -339,7 +358,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -349,13 +368,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("GetAuthorityKeyIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAuthorityKeyIdentifier", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "GetAuthorityKeyIdentifier", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (certificate)) };
+        > = unsafe { method.invoke_unchecked((), (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAuthorityKeyIdentifier_X509Crl1(
@@ -363,7 +385,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -371,13 +393,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("GetAuthorityKeyIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAuthorityKeyIdentifier", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "GetAuthorityKeyIdentifier", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (crl)) };
+        > = unsafe { method.invoke_unchecked((), (crl))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAuthorityKeyIdentifier_X509Extension2(
@@ -385,7 +410,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Extension>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -393,13 +418,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("GetAuthorityKeyIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAuthorityKeyIdentifier", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "GetAuthorityKeyIdentifier", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (ext)) };
+        > = unsafe { method.invoke_unchecked((), (ext))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSubjectKeyIdentifier(
@@ -410,7 +438,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -420,13 +448,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("GetSubjectKeyIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSubjectKeyIdentifier", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "GetSubjectKeyIdentifier", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (certificate)) };
+        > = unsafe { method.invoke_unchecked(self, (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsChainComplete(
@@ -435,7 +466,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -445,11 +476,13 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("IsChainComplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsChainComplete", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "IsChainComplete", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (certificate)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSelfIssued(
@@ -458,7 +491,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
@@ -468,11 +501,13 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("IsSelfIssued")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSelfIssued", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "IsSelfIssued", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (certificate)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSignedWith(
@@ -484,7 +519,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::AsymmetricAlgorithm,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -499,12 +534,14 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("IsSignedWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSignedWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "IsSignedWith", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (_cordl_signed, pubkey))
+            method.invoke_unchecked(self, (_cordl_signed, pubkey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -521,7 +558,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
         &mut self,
         n: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -529,12 +566,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("PrepareForNextCertificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareForNextCertificate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "PrepareForNextCertificate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (n))
+            method.invoke_unchecked(self, (n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -542,16 +582,18 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
         &mut self,
         n: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Process")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Process", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "Process", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (n))
+            method.invoke_unchecked(self, (n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -561,7 +603,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509ChainElement,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509ChainElement,
@@ -571,12 +613,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("ProcessCertificateExtensions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessCertificateExtensions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "ProcessCertificateExtensions", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (element))
+            method.invoke_unchecked(self, (element))?
         };
         Ok(__cordl_ret.into())
     }
@@ -586,7 +631,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::Mono::Security::X509::X509Crl_X509CrlEntry,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Mono::Security::X509::X509Crl_X509CrlEntry,
@@ -596,18 +641,21 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("ProcessCrlEntryExtensions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessCrlEntryExtensions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "ProcessCrlEntryExtensions", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (entry)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (entry))? };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessCrlExtensions(
         &mut self,
         crl: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>),
                 bool,
@@ -615,26 +663,31 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("ProcessCrlExtensions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessCrlExtensions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "ProcessCrlExtensions",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (crl)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (crl))? };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -651,7 +704,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -668,20 +721,23 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("SelectBestFromCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectBestFromCollection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "SelectBestFromCollection", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-        > = unsafe { method.invoke_unchecked(self, (child, c)) };
+        > = unsafe { method.invoke_unchecked(self, (child, c))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateChain(
         &mut self,
         flag: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags),
                 quest_hook::libil2cpp::Void,
@@ -689,28 +745,32 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("ValidateChain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateChain", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "ValidateChain", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (flag))
+            method.invoke_unchecked(self, (flag))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WrapUp(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("WrapUp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WrapUp", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "WrapUp", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -718,16 +778,18 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
         &mut self,
         useMachineContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (useMachineContext))
+            method.invoke_unchecked(self, (useMachineContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -738,7 +800,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -748,13 +810,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_CertificateAuthorities")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CertificateAuthorities", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_CertificateAuthorities", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_CertificateCollection(
@@ -764,7 +829,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -774,13 +839,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_CertificateCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CertificateCollection", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_CertificateCollection", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ChainElements(
@@ -790,7 +858,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -800,13 +868,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_ChainElements")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ChainElements", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_ChainElements",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ChainPolicy(
@@ -816,7 +887,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -826,13 +897,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_ChainPolicy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ChainPolicy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_ChainPolicy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ChainStatus(
@@ -844,7 +917,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -856,27 +929,31 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_ChainStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ChainStatus", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_ChainStatus", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsValid", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_IsValid", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_LMCAStore(
@@ -886,7 +963,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Store,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -896,13 +973,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_LMCAStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LMCAStore", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_LMCAStore", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Store,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_LMRootStore(
@@ -912,7 +991,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Store,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -922,13 +1001,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_LMRootStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LMRootStore", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_LMRootStore", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Store,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Roots(
@@ -938,7 +1019,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -948,13 +1029,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_Roots")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Roots", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Roots", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UserCAStore(
@@ -964,7 +1047,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Store,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -974,13 +1057,15 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_UserCAStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UserCAStore", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_UserCAStore", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Store,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UserRootStore(
@@ -990,7 +1075,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             crate::System::Security::Cryptography::X509Certificates::X509Store,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -1000,13 +1085,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             >("get_UserRootStore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UserRootStore", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Security::Cryptography::X509Certificates::X509ChainImplMono
+                    as quest_hook::libil2cpp::Type > ::class(), "get_UserRootStore",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Store,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

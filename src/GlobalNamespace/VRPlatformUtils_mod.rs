@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::VRPlatformUtils {
             crate::GlobalNamespace::IVRPlatformHelper,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VRPlatformUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>),
                 crate::UnityEngine::Vector2,
@@ -56,31 +56,35 @@ impl crate::GlobalNamespace::VRPlatformUtils {
             >("GetAnyJoystickMaxAxisDefaultImplementation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAnyJoystickMaxAxisDefaultImplementation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VRPlatformUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetAnyJoystickMaxAxisDefaultImplementation", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (vrPlatformHelper))
+            method.invoke_unchecked((), (vrPlatformHelper))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetMenuButtonDefaultImplementation() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VRPlatformUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("GetMenuButtonDefaultImplementation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMenuButtonDefaultImplementation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VRPlatformUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetMenuButtonDefaultImplementation", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMenuButtonDownDefaultImplementation() -> quest_hook::libil2cpp::Result<
         bool,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VRPlatformUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 bool,
@@ -88,17 +92,19 @@ impl crate::GlobalNamespace::VRPlatformUtils {
             >("GetMenuButtonDownDefaultImplementation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMenuButtonDownDefaultImplementation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VRPlatformUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetMenuButtonDownDefaultImplementation", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn StopXR(
         logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VRPlatformUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>),
                 quest_hook::libil2cpp::Void,
@@ -106,19 +112,20 @@ impl crate::GlobalNamespace::VRPlatformUtils {
             >("StopXR")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StopXR", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VRPlatformUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "StopXR", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (logger))
+            method.invoke_unchecked((), (logger))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn TriggerValueDefaultImplementation(
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VRPlatformUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::XR::XRNode),
                 f32,
@@ -126,11 +133,13 @@ impl crate::GlobalNamespace::VRPlatformUtils {
             >("TriggerValueDefaultImplementation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriggerValueDefaultImplementation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VRPlatformUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TriggerValueDefaultImplementation", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
 }

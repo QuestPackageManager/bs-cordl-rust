@@ -119,7 +119,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
@@ -129,12 +129,13 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             >("Allocate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Allocate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "Allocate", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
-            method.invoke_unchecked(self, (storage))
+            method.invoke_unchecked(self, (storage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -144,7 +145,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         entryWidth: i32,
         entryHeight: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -152,25 +153,28 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             >("Construct")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Construct", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "Construct", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pageHeight, entryWidth, entryHeight))
+            method.invoke_unchecked(self, (pageHeight, entryWidth, entryHeight))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CountTrailingZeroes(val: u32) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), u8, 1usize>("CountTrailingZeroes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CountTrailingZeroes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "CountTrailingZeroes",
+                    1usize
                 )
             });
-        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (val)) };
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn ForceFirstAlloc(
@@ -178,7 +182,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         firstPageX: u16,
         firstPageY: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u16, u16),
                 quest_hook::libil2cpp::Void,
@@ -186,12 +190,13 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             >("ForceFirstAlloc")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ForceFirstAlloc", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "ForceFirstAlloc", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (firstPageX, firstPageY))
+            method.invoke_unchecked(self, (firstPageX, firstPageY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +204,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                 quest_hook::libil2cpp::Void,
@@ -207,12 +212,13 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             >("Free")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Free", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "Free", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc))
+            method.invoke_unchecked(self, (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -222,7 +228,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         x: quest_hook::libil2cpp::ByRefMut<u16>,
         y: quest_hook::libil2cpp::ByRefMut<u16>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -234,37 +240,41 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
             >("GetAllocPageAtlasLocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllocPageAtlasLocation", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAllocPageAtlasLocation",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (page, x, y))
+            method.invoke_unchecked(self, (page, x, y))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_entryHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_entryHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_entryHeight", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "get_entryHeight", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_entryWidth(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::BitmapAllocator32 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_entryWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_entryWidth", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::BitmapAllocator32 as
+                    quest_hook::libil2cpp::Type > ::class(), "get_entryWidth", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

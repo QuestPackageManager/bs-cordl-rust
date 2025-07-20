@@ -85,7 +85,10 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventDataBox_2<
+            TIn,
+            TOut,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (TIn, f32, i32, i32, f32),
                 TOut,
@@ -93,8 +96,10 @@ impl<
             >("CreateVfxBeatmapEventData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateVfxBeatmapEventData", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn, TOut > as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateVfxBeatmapEventData",
+                    5usize
                 )
             });
         let __cordl_ret: TOut = unsafe {
@@ -102,7 +107,7 @@ impl<
                 .invoke_unchecked(
                     self,
                     (data, _cordl_time, groupId, elementId, distributionOffset),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +173,10 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventDataBox_2<
+            TIn,
+            TOut,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -196,8 +204,9 @@ impl<
             >("Unpack")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Unpack", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn, TOut > as
+                    quest_hook::libil2cpp::Type > ::class(), "Unpack", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -215,7 +224,7 @@ impl<
                         lightEventConverter,
                         output,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -238,7 +247,10 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventDataBox_2<
+            TIn,
+            TOut,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
@@ -257,8 +269,9 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn, TOut > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -275,7 +288,7 @@ impl<
                         eventDistributionEaseType,
                         fxBaseDataList,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

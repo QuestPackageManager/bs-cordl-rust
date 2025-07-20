@@ -43,7 +43,7 @@ impl crate::UnityEngine::ImageConversion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -51,13 +51,14 @@ impl crate::UnityEngine::ImageConversion {
             >("EncodeToEXR")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeToEXR", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "EncodeToEXR", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (tex)) };
+        > = unsafe { method.invoke_unchecked((), (tex))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeToEXR_Texture2D_EXRFlags0(
@@ -66,7 +67,7 @@ impl crate::UnityEngine::ImageConversion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -77,13 +78,14 @@ impl crate::UnityEngine::ImageConversion {
             >("EncodeToEXR")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeToEXR", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "EncodeToEXR", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (tex, flags)) };
+        > = unsafe { method.invoke_unchecked((), (tex, flags))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeToJPG_Texture2D1(
@@ -91,7 +93,7 @@ impl crate::UnityEngine::ImageConversion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -99,13 +101,14 @@ impl crate::UnityEngine::ImageConversion {
             >("EncodeToJPG")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeToJPG", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "EncodeToJPG", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (tex)) };
+        > = unsafe { method.invoke_unchecked((), (tex))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeToJPG_i32_0(
@@ -114,7 +117,7 @@ impl crate::UnityEngine::ImageConversion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -122,13 +125,14 @@ impl crate::UnityEngine::ImageConversion {
             >("EncodeToJPG")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeToJPG", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "EncodeToJPG", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (tex, quality)) };
+        > = unsafe { method.invoke_unchecked((), (tex, quality))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeToPNG(
@@ -136,7 +140,7 @@ impl crate::UnityEngine::ImageConversion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -144,13 +148,14 @@ impl crate::UnityEngine::ImageConversion {
             >("EncodeToPNG")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeToPNG", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "EncodeToPNG", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (tex)) };
+        > = unsafe { method.invoke_unchecked((), (tex))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeToTGA(
@@ -158,7 +163,7 @@ impl crate::UnityEngine::ImageConversion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -166,20 +171,21 @@ impl crate::UnityEngine::ImageConversion {
             >("EncodeToTGA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeToTGA", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "EncodeToTGA", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (tex)) };
+        > = unsafe { method.invoke_unchecked((), (tex))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadImage_Texture2D_Il2CppArray1(
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -190,11 +196,12 @@ impl crate::UnityEngine::ImageConversion {
             >("LoadImage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadImage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadImage", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tex, data)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tex, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadImage__cordl_bool0(
@@ -202,7 +209,7 @@ impl crate::UnityEngine::ImageConversion {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         markNonReadable: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -214,12 +221,13 @@ impl crate::UnityEngine::ImageConversion {
             >("LoadImage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadImage", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ImageConversion as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadImage", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (tex, data, markNonReadable))
+            method.invoke_unchecked((), (tex, data, markNonReadable))?
         };
         Ok(__cordl_ret.into())
     }

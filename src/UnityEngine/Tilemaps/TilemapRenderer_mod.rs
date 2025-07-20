@@ -43,7 +43,7 @@ impl crate::UnityEngine::Tilemaps::TilemapRenderer {
         &mut self,
         atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TilemapRenderer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>),
                 quest_hook::libil2cpp::Void,
@@ -51,19 +51,21 @@ impl crate::UnityEngine::Tilemaps::TilemapRenderer {
             >("OnSpriteAtlasRegistered")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpriteAtlasRegistered", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TilemapRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "OnSpriteAtlasRegistered",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (atlas))
+            method.invoke_unchecked(self, (atlas))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterSpriteAtlasRegistered(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TilemapRenderer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -71,19 +73,21 @@ impl crate::UnityEngine::Tilemaps::TilemapRenderer {
             >("RegisterSpriteAtlasRegistered")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterSpriteAtlasRegistered", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TilemapRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RegisterSpriteAtlasRegistered", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterSpriteAtlasRegistered(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Tilemaps::TilemapRenderer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -91,12 +95,14 @@ impl crate::UnityEngine::Tilemaps::TilemapRenderer {
             >("UnregisterSpriteAtlasRegistered")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnregisterSpriteAtlasRegistered", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Tilemaps::TilemapRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UnregisterSpriteAtlasRegistered", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

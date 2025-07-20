@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::OVRTextureQualityFiltering,
@@ -102,12 +102,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ApplyTextureQuality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyTextureQuality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ApplyTextureQuality", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (qualityLevel, destTexture))
+            method.invoke_unchecked((), (qualityLevel, destTexture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +119,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRMaterialData, bool),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -126,12 +127,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("CreateUnityMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateUnityMaterial", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateUnityMaterial", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked(self, (matData, loadMips))
+            method.invoke_unchecked(self, (matData, loadMips))?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,7 +144,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRTextureQualityFiltering,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -152,12 +154,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("DetectTextureQuality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DetectTextureQuality", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "DetectTextureQuality", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTextureQualityFiltering = unsafe {
-            method.invoke_unchecked((), (srcTexture))
+            method.invoke_unchecked((), (srcTexture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +169,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -176,12 +179,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("FlipTraingleIndices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FlipTraingleIndices", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "FlipTraingleIndices", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (indices))
+            method.invoke_unchecked((), (indices))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +193,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFInputNode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::GlobalNamespace::OVRGLTFInputNode,
@@ -197,12 +201,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("GetInputNodeType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInputNodeType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "GetInputNodeType", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRGLTFInputNode = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -211,7 +216,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         supportAnimation: bool,
         loadMips: bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFScene> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 crate::GlobalNamespace::OVRGLTFScene,
@@ -219,12 +224,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("LoadGLB")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadGLB", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "LoadGLB", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRGLTFScene = unsafe {
-            method.invoke_unchecked(self, (supportAnimation, loadMips))
+            method.invoke_unchecked(self, (supportAnimation, loadMips))?
         };
         Ok(__cordl_ret.into())
     }
@@ -233,16 +239,17 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         supportAnimation: bool,
         loadMips: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool, bool), i32, 2usize>("LoadGLTF")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadGLTF", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "LoadGLTF", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (supportAnimation, loadMips))
+            method.invoke_unchecked(self, (supportAnimation, loadMips))?
         };
         Ok(__cordl_ret.into())
     }
@@ -267,16 +274,17 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     pub fn ProcessAnimations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ProcessAnimations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessAnimations", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ProcessAnimations", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +292,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         matId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMaterialData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::GlobalNamespace::OVRMaterialData,
@@ -292,12 +300,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ProcessMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessMaterial", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ProcessMaterial", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRMaterialData = unsafe {
-            method.invoke_unchecked(self, (matId))
+            method.invoke_unchecked(self, (matId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -306,7 +315,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         meshNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         loadMips: bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMeshData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>, bool),
                 crate::GlobalNamespace::OVRMeshData,
@@ -314,12 +323,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ProcessMesh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessMesh", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ProcessMesh", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRMeshData = unsafe {
-            method.invoke_unchecked(self, (meshNode, loadMips))
+            method.invoke_unchecked(self, (meshNode, loadMips))?
         };
         Ok(__cordl_ret.into())
     }
@@ -329,7 +339,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         nodeId: i32,
         loadMips: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>, i32, bool),
                 quest_hook::libil2cpp::Void,
@@ -337,12 +347,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ProcessNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessNode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ProcessNode", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (node, nodeId, loadMips))
+            method.invoke_unchecked(self, (node, nodeId, loadMips))?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +362,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         skinNode: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SkinnedMeshRenderer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -362,12 +373,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ProcessSkin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessSkin", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ProcessSkin", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (skinNode, renderer))
+            method.invoke_unchecked(self, (skinNode, renderer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -375,7 +387,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         textureId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTextureData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 crate::GlobalNamespace::OVRTextureData,
@@ -383,12 +395,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ProcessTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ProcessTexture", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRTextureData = unsafe {
-            method.invoke_unchecked(self, (textureId))
+            method.invoke_unchecked(self, (textureId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -399,7 +412,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -410,13 +423,14 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ReadChunk")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadChunk", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ReadChunk", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (glbStream, _cordl_type)) };
+        > = unsafe { method.invoke_unchecked(self, (glbStream, _cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadMeshAttributes(
@@ -425,7 +439,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         totalVertexCount: i32,
         vertexOffset: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMeshAttributes> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>, i32, i32),
                 crate::GlobalNamespace::OVRMeshAttributes,
@@ -433,13 +447,17 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ReadMeshAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadMeshAttributes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ReadMeshAttributes", 3usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRMeshAttributes = unsafe {
             method
-                .invoke_unchecked(self, (jsonAttributes, totalVertexCount, vertexOffset))
+                .invoke_unchecked(
+                    self,
+                    (jsonAttributes, totalVertexCount, vertexOffset),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -447,16 +465,17 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         loadedTexturesMipmapBiasing: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetMipMapBias")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMipMapBias", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "SetMipMapBias", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (loadedTexturesMipmapBiasing))
+            method.invoke_unchecked(self, (loadedTexturesMipmapBiasing))?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,7 +483,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>),
                 quest_hook::libil2cpp::Void,
@@ -472,12 +491,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("SetModelAlphaBlendShader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetModelAlphaBlendShader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "SetModelAlphaBlendShader", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (shader))
+            method.invoke_unchecked(self, (shader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -485,7 +505,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>),
                 quest_hook::libil2cpp::Void,
@@ -493,12 +513,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("SetModelShader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetModelShader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "SetModelShader", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (shader))
+            method.invoke_unchecked(self, (shader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -506,7 +527,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         loadedTexturesQuality: crate::GlobalNamespace::OVRTextureQualityFiltering,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRTextureQualityFiltering),
                 quest_hook::libil2cpp::Void,
@@ -514,12 +535,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("SetTextureQualityFiltering")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTextureQualityFiltering", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "SetTextureQualityFiltering", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (loadedTexturesQuality))
+            method.invoke_unchecked(self, (loadedTexturesQuality))?
         };
         Ok(__cordl_ret.into())
     }
@@ -529,7 +551,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             crate::GlobalNamespace::OVRTextureData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::GlobalNamespace::OVRTextureData,
@@ -539,12 +561,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("TranscodeTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranscodeTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "TranscodeTexture", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (textureData))
+            method.invoke_unchecked(self, (textureData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -554,7 +577,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         _cordl_type: crate::GlobalNamespace::OVRChunkType,
         chunkLength: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -566,12 +589,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ValidateChunk")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateChunk", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ValidateChunk", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (glbStream, _cordl_type, chunkLength))
+            method.invoke_unchecked(self, (glbStream, _cordl_type, chunkLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -579,7 +603,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         glbStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 bool,
@@ -587,18 +611,19 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >("ValidateGLB")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateGLB", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), "ValidateGLB", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (glbStream)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (glbStream))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -606,12 +631,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data))
+            method.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -619,7 +645,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -627,12 +653,13 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRGLTFLoader as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fileName))
+            method.invoke_unchecked(self, (fileName))?
         };
         Ok(__cordl_ret.into())
     }

@@ -46,7 +46,7 @@ impl crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, crate::BeatmapSaveDataVersion4::LightColorEvent),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
@@ -54,13 +54,14 @@ impl crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
             >("Convert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Convert", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::LightColorBaseDataConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "Convert", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightColorBaseData,
-        > = unsafe { method.invoke_unchecked((), (beat, lightColorEvent)) };
+        > = unsafe { method.invoke_unchecked((), (beat, lightColorEvent))? };
         Ok(__cordl_ret.into())
     }
 }

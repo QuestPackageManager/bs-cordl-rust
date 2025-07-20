@@ -51,7 +51,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::XmlCustomFormatter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i64,
@@ -70,13 +70,14 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
             >("FromEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromEnum", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::XmlCustomFormatter as
+                    quest_hook::libil2cpp::Type > ::class(), "FromEnum", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value, values, ids, typeName)) };
+        > = unsafe { method.invoke_unchecked((), (value, values, ids, typeName))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromXmlNCName(
@@ -84,7 +85,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::XmlCustomFormatter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -92,13 +93,14 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
             >("FromXmlNCName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromXmlNCName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::XmlCustomFormatter as
+                    quest_hook::libil2cpp::Type > ::class(), "FromXmlNCName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (ncName)) };
+        > = unsafe { method.invoke_unchecked((), (ncName))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromXmlName(
@@ -106,7 +108,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::XmlCustomFormatter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -114,13 +116,14 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
             >("FromXmlName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromXmlName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::XmlCustomFormatter as
+                    quest_hook::libil2cpp::Type > ::class(), "FromXmlName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromXmlString(
@@ -131,7 +134,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::XmlCustomFormatter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -144,13 +147,14 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
             >("FromXmlString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromXmlString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::XmlCustomFormatter as
+                    quest_hook::libil2cpp::Type > ::class(), "FromXmlString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, value)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToXmlString(
@@ -161,7 +165,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::XmlCustomFormatter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -174,13 +178,14 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
             >("ToXmlString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToXmlString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::XmlCustomFormatter as
+                    quest_hook::libil2cpp::Type > ::class(), "ToXmlString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, value)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, value))? };
         Ok(__cordl_ret.into())
     }
 }

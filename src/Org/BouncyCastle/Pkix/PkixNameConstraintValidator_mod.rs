@@ -81,7 +81,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::X509::GeneralSubtree,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::GeneralSubtree,
@@ -91,12 +91,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("AddExcludedSubtree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddExcludedSubtree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "AddExcludedSubtree", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (subtree))
+            method.invoke_unchecked(self, (subtree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +105,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         &mut self,
         dn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -114,12 +115,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckExcludedDN")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckExcludedDN", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckExcludedDN", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dn))
+            method.invoke_unchecked(self, (dn))?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +134,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -147,12 +149,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckExcludedDirectory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckExcludedDirectory", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckExcludedDirectory",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, directory))
+            method.invoke_unchecked(self, (excluded, directory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +167,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -176,12 +180,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckExcludedDns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckExcludedDns", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckExcludedDns", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, dns))
+            method.invoke_unchecked(self, (excluded, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +197,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -205,12 +210,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckExcludedEmail")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckExcludedEmail", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckExcludedEmail", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, email))
+            method.invoke_unchecked(self, (excluded, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +227,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -234,12 +240,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckExcludedIP")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckExcludedIP", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckExcludedIP", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, ip))
+            method.invoke_unchecked(self, (excluded, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +257,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::OtherName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -265,12 +272,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckExcludedOtherName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckExcludedOtherName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckExcludedOtherName",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, name))
+            method.invoke_unchecked(self, (excluded, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +290,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -294,12 +303,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckExcludedUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckExcludedUri", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckExcludedUri", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (excluded, uri))
+            method.invoke_unchecked(self, (excluded, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +317,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         &mut self,
         dn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -317,12 +327,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckPermittedDN")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPermittedDN", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPermittedDN", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dn))
+            method.invoke_unchecked(self, (dn))?
         };
         Ok(__cordl_ret.into())
     }
@@ -335,7 +346,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -350,12 +361,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckPermittedDirectory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPermittedDirectory", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPermittedDirectory",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, directory))
+            method.invoke_unchecked(self, (permitted, directory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +379,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -379,12 +392,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckPermittedDns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPermittedDns", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPermittedDns", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, dns))
+            method.invoke_unchecked(self, (permitted, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +409,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -408,12 +422,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckPermittedEmail")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPermittedEmail", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPermittedEmail",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, email))
+            method.invoke_unchecked(self, (permitted, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -424,7 +440,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -437,12 +453,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckPermittedIP")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPermittedIP", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPermittedIP", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, ip))
+            method.invoke_unchecked(self, (permitted, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -453,7 +470,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::OtherName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -468,12 +485,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckPermittedOtherName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPermittedOtherName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPermittedOtherName",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, name))
+            method.invoke_unchecked(self, (permitted, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -484,7 +503,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -497,12 +516,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CheckPermittedUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPermittedUri", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPermittedUri", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted, uri))
+            method.invoke_unchecked(self, (permitted, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -511,7 +531,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         coll1: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
         coll2: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
@@ -522,18 +542,22 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CollectionsAreEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CollectionsAreEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CollectionsAreEqual",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (coll1, coll2)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (coll1, coll2))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo(
         ip1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         ip2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -544,18 +568,19 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ip1, ip2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -563,11 +588,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractHostFromURL(
@@ -575,7 +601,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -583,13 +609,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("ExtractHostFromURL")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractHostFromURL", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractHostFromURL", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (url)) };
+        > = unsafe { method.invoke_unchecked((), (url))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractIPsAndSubnetMasks(
@@ -605,7 +632,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -620,15 +647,17 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("ExtractIPsAndSubnetMasks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractIPsAndSubnetMasks", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractIPsAndSubnetMasks",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2)) };
+        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractNameAsString(
@@ -639,7 +668,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -649,44 +678,48 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("ExtractNameAsString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractNameAsString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractNameAsString",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (name)) };
+        > = unsafe { method.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("HashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "HashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HashCollection(
         &mut self,
         c: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>),
                 i32,
@@ -694,11 +727,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("HashCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashCollection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "HashCollection", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectDN(
@@ -712,7 +746,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -729,13 +763,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectDN")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectDN", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectDN", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, dns)) };
+        > = unsafe { method.invoke_unchecked(self, (permitted, dns))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectDns(
@@ -749,7 +784,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -766,13 +801,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectDns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectDns", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectDns", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, dnss)) };
+        > = unsafe { method.invoke_unchecked(self, (permitted, dnss))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectEmail_ISet_ISet0(
@@ -786,7 +822,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -803,13 +839,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectEmail")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectEmail", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectEmail", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, emails)) };
+        > = unsafe { method.invoke_unchecked(self, (permitted, emails))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectEmail_Il2CppString_Il2CppString_ISet1(
@@ -820,7 +857,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -834,12 +871,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectEmail")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectEmail", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectEmail", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, intersect))
+            method.invoke_unchecked(self, (email1, email2, intersect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -847,7 +885,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         &mut self,
         nameType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -855,12 +893,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectEmptyPermittedSubtree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectEmptyPermittedSubtree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IntersectEmptyPermittedSubtree", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nameType))
+            method.invoke_unchecked(self, (nameType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -875,7 +915,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -892,13 +932,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectIP")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectIP", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectIP", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, ips)) };
+        > = unsafe { method.invoke_unchecked(self, (permitted, ips))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectIPRange(
@@ -910,7 +951,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -923,13 +964,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectIPRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectIPRange", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectIPRange", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2)) };
+        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectOtherName_ISet_ISet0(
@@ -943,7 +985,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -960,13 +1002,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectOtherName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectOtherName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectOtherName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, otherNames)) };
+        > = unsafe { method.invoke_unchecked(self, (permitted, otherNames))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectOtherName_OtherName_OtherName_ISet1(
@@ -981,7 +1024,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -999,12 +1042,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectOtherName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectOtherName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectOtherName", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (otherName1, otherName2, intersect))
+            method.invoke_unchecked(self, (otherName1, otherName2, intersect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1014,7 +1058,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -1024,12 +1068,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectPermittedSubtree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectPermittedSubtree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectPermittedSubtree",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (permitted))
+            method.invoke_unchecked(self, (permitted))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1044,7 +1090,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1061,13 +1107,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectUri", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectUri", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, uris)) };
+        > = unsafe { method.invoke_unchecked(self, (permitted, uris))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectUri_Il2CppString_Il2CppString_ISet1(
@@ -1078,7 +1125,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1092,12 +1139,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IntersectUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectUri", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IntersectUri", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, intersect))
+            method.invoke_unchecked(self, (email1, email2, intersect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1108,7 +1156,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1119,13 +1167,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IpWithSubnetMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IpWithSubnetMask", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IpWithSubnetMask", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (ip, subnetMask)) };
+        > = unsafe { method.invoke_unchecked(self, (ip, subnetMask))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDirectoryConstrained(
@@ -1137,7 +1186,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1152,12 +1201,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsDirectoryConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDirectoryConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDirectoryConstrained",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, directory))
+            method.invoke_unchecked(self, (constraints, directory))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1168,7 +1219,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1181,12 +1232,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsDnsConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDnsConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDnsConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, dns))
+            method.invoke_unchecked(self, (constraints, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1195,7 +1247,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         dns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1206,12 +1258,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsDnsConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDnsConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDnsConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, dns))
+            method.invoke_unchecked(self, (constraint, dns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1222,7 +1275,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1235,12 +1288,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsEmailConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEmailConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEmailConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, email))
+            method.invoke_unchecked(self, (constraints, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1249,7 +1303,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         email: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1260,12 +1314,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsEmailConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEmailConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEmailConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, email))
+            method.invoke_unchecked(self, (constraint, email))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1276,7 +1331,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1289,12 +1344,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsIPConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsIPConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsIPConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, ip))
+            method.invoke_unchecked(self, (constraints, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1303,7 +1359,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         ip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1314,12 +1370,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsIPConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsIPConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsIPConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, ip))
+            method.invoke_unchecked(self, (constraint, ip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1332,7 +1389,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::X509::OtherName,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1347,12 +1404,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsOtherNameConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsOtherNameConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsOtherNameConstrained",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, otherName))
+            method.invoke_unchecked(self, (constraints, otherName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1365,7 +1424,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::X509::OtherName,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1380,12 +1439,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsOtherNameConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsOtherNameConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsOtherNameConstrained",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, otherName))
+            method.invoke_unchecked(self, (constraint, otherName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1396,7 +1457,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         >,
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1409,12 +1470,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsUriConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsUriConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsUriConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraints, uri))
+            method.invoke_unchecked(self, (constraints, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1423,7 +1485,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         constraint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1434,12 +1496,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("IsUriConstrained")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsUriConstrained", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsUriConstrained", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (constraint, uri))
+            method.invoke_unchecked(self, (constraint, uri))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1449,7 +1512,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1460,13 +1523,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Max", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ip1, ip2)) };
+        > = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Min(
@@ -1475,7 +1539,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1486,13 +1550,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Min", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ip1, ip2)) };
+        > = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
         Ok(__cordl_ret.into())
     }
     pub fn MinMaxIPs(
@@ -1508,7 +1573,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1525,8 +1590,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("MinMaxIPs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MinMaxIPs", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "MinMaxIPs", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1534,7 +1600,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (ip1, subnetmask1, ip2, subnetmask2))
+            method.invoke_unchecked(self, (ip1, subnetmask1, ip2, subnetmask2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1551,7 +1617,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1562,13 +1628,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("Or")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Or", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "Or", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ip1, ip2)) };
+        > = unsafe { method.invoke_unchecked((), (ip1, ip2))? };
         Ok(__cordl_ret.into())
     }
     pub fn SpecialEquals(
@@ -1576,7 +1643,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         o1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         o2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1587,11 +1654,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("SpecialEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SpecialEquals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "SpecialEquals", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o1, o2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o1, o2))? };
         Ok(__cordl_ret.into())
     }
     pub fn StringifyIP(
@@ -1600,7 +1668,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1608,13 +1676,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("StringifyIP")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringifyIP", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "StringifyIP", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (ip)) };
+        > = unsafe { method.invoke_unchecked(self, (ip))? };
         Ok(__cordl_ret.into())
     }
     pub fn StringifyIPCollection(
@@ -1625,7 +1694,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::Collections::ISet,
@@ -1635,13 +1704,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("StringifyIPCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringifyIPCollection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "StringifyIPCollection",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (ips)) };
+        > = unsafe { method.invoke_unchecked(self, (ips))? };
         Ok(__cordl_ret.into())
     }
     pub fn StringifyOtherNameCollection(
@@ -1652,7 +1723,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::Collections::ISet,
@@ -1662,13 +1733,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("StringifyOtherNameCollection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StringifyOtherNameCollection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "StringifyOtherNameCollection", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (otherNames)) };
+        > = unsafe { method.invoke_unchecked(self, (otherNames))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -1676,7 +1749,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1684,13 +1757,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionDN(
@@ -1702,7 +1776,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1719,13 +1793,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionDN")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionDN", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionDN", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, dn)) };
+        > = unsafe { method.invoke_unchecked(self, (excluded, dn))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionDns(
@@ -1737,7 +1812,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1752,13 +1827,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionDns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionDns", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionDns", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, dns)) };
+        > = unsafe { method.invoke_unchecked(self, (excluded, dns))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionEmail_ISet0(
@@ -1770,7 +1846,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1785,13 +1861,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionEmail")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionEmail", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionEmail", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, email)) };
+        > = unsafe { method.invoke_unchecked(self, (excluded, email))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionEmail_Il2CppString_ISet1(
@@ -1802,7 +1879,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1816,12 +1893,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionEmail")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionEmail", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionEmail", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, _cordl_union))
+            method.invoke_unchecked(self, (email1, email2, _cordl_union))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1834,7 +1912,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1849,13 +1927,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionIP")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionIP", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionIP", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, ip)) };
+        > = unsafe { method.invoke_unchecked(self, (excluded, ip))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionIPRange(
@@ -1867,7 +1946,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1880,13 +1959,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionIPRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionIPRange", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionIPRange", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2)) };
+        > = unsafe { method.invoke_unchecked(self, (ipWithSubmask1, ipWithSubmask2))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionOtherName(
@@ -1900,7 +1980,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1917,13 +1997,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionOtherName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionOtherName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionOtherName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (permitted, otherName)) };
+        > = unsafe { method.invoke_unchecked(self, (permitted, otherName))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionUri(
@@ -1935,7 +2016,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1950,20 +2031,21 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("UnionUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionUri", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "UnionUri", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked(self, (excluded, uri)) };
+        > = unsafe { method.invoke_unchecked(self, (excluded, uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithinDNSubtree(
         dns: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
         subtree: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1978,11 +2060,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("WithinDNSubtree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithinDNSubtree", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "WithinDNSubtree", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (dns, subtree)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (dns, subtree))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithinDomain(
@@ -1990,7 +2073,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         testDomain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2001,28 +2084,30 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("WithinDomain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithinDomain", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "WithinDomain", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (testDomain, domain))
+            method.invoke_unchecked(self, (testDomain, domain))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2032,7 +2117,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -2042,12 +2127,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("checkExcluded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "checkExcluded", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "checkExcluded", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2057,7 +2143,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -2067,12 +2153,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("checkPermitted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "checkPermitted", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "checkPermitted", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2084,7 +2171,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2098,12 +2185,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             >("unionURI")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "unionURI", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixNameConstraintValidator as
+                    quest_hook::libil2cpp::Type > ::class(), "unionURI", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (email1, email2, _cordl_union))
+            method.invoke_unchecked(self, (email1, email2, _cordl_union))?
         };
         Ok(__cordl_ret.into())
     }

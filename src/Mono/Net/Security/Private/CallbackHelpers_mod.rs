@@ -48,7 +48,7 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             crate::System::Net::Security::LocalCertSelectionCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::Private::CallbackHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
@@ -60,13 +60,14 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             >("MonoToInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MonoToInternal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Net::Security::Private::CallbackHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "MonoToInternal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Security::LocalCertSelectionCallback,
-        > = unsafe { method.invoke_unchecked((), (callback)) };
+        > = unsafe { method.invoke_unchecked((), (callback))? };
         Ok(__cordl_ret.into())
     }
     pub fn PublicToMono(
@@ -78,7 +79,7 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Net::Security::Private::CallbackHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Net::Security::RemoteCertificateValidationCallback,
@@ -90,13 +91,14 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             >("PublicToMono")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PublicToMono", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Net::Security::Private::CallbackHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "PublicToMono", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
-        > = unsafe { method.invoke_unchecked((), (callback)) };
+        > = unsafe { method.invoke_unchecked((), (callback))? };
         Ok(__cordl_ret.into())
     }
 }

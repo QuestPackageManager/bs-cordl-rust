@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::ISliderDidDissolveEvent {
             crate::GlobalNamespace::SliderController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ISliderDidDissolveEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>),
                 quest_hook::libil2cpp::Void,
@@ -53,12 +53,14 @@ impl crate::GlobalNamespace::ISliderDidDissolveEvent {
             >("HandleSliderDidDissolve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleSliderDidDissolve", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ISliderDidDissolveEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleSliderDidDissolve",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sliderController))
+            method.invoke_unchecked(self, (sliderController))?
         };
         Ok(__cordl_ret.into())
     }

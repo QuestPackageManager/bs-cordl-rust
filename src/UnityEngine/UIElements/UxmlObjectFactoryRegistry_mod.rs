@@ -42,7 +42,7 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     pub fn RegisterEngineFactories() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -50,12 +50,14 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             >("RegisterEngineFactories")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterEngineFactories", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlObjectFactoryRegistry as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterEngineFactories",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -64,7 +66,7 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
@@ -74,19 +76,20 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             >("RegisterFactory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterFactory", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlObjectFactoryRegistry as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterFactory", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (factory))
+            method.invoke_unchecked((), (factory))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterUserFactories() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -94,12 +97,14 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             >("RegisterUserFactories")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterUserFactories", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlObjectFactoryRegistry as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterUserFactories",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -115,7 +120,7 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -134,12 +139,13 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             >("TryGetFactories")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetFactories", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlObjectFactoryRegistry as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetFactories", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (fullTypeName, factoryList))
+            method.invoke_unchecked((), (fullTypeName, factoryList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +163,7 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -176,8 +182,9 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
             >("get_factories")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_factories", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UxmlObjectFactoryRegistry as
+                    quest_hook::libil2cpp::Type > ::class(), "get_factories", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -191,7 +198,7 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

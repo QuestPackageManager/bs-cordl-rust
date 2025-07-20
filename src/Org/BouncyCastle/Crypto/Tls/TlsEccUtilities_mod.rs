@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         namedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -54,12 +54,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("AddSupportedEllipticCurvesExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSupportedEllipticCurvesExtension", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddSupportedEllipticCurvesExtension", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (extensions, namedCurves))
+            method.invoke_unchecked((), (extensions, namedCurves))?
         };
         Ok(__cordl_ret.into())
     }
@@ -67,7 +69,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         ecPointFormats: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -78,12 +80,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("AddSupportedPointFormatsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSupportedPointFormatsExtension", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddSupportedPointFormatsExtension", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (extensions, ecPointFormats))
+            method.invoke_unchecked((), (extensions, ecPointFormats))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +99,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -110,11 +114,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("AreOnSameCurve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AreOnSameCurve", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "AreOnSameCurve", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateECDHBasicAgreement(
@@ -127,7 +132,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -142,20 +147,22 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("CalculateECDHBasicAgreement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateECDHBasicAgreement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateECDHBasicAgreement", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (publicKey, privateKey)) };
+        > = unsafe { method.invoke_unchecked((), (publicKey, privateKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckNamedCurve(
         namedCurves: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         namedCurve: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -166,19 +173,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("CheckNamedCurve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckNamedCurve", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckNamedCurve", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (namedCurves, namedCurve))
+            method.invoke_unchecked((), (namedCurves, namedCurve))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsEccCipherSuites(
         cipherSuites: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
                 bool,
@@ -186,11 +194,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ContainsEccCipherSuites")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsEccCipherSuites", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ContainsEccCipherSuites",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cipherSuites)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cipherSuites))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSupportedEllipticCurvesExtension(
@@ -198,7 +208,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -206,13 +216,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("CreateSupportedEllipticCurvesExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSupportedEllipticCurvesExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateSupportedEllipticCurvesExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (namedCurves)) };
+        > = unsafe { method.invoke_unchecked((), (namedCurves))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSupportedPointFormatsExtension(
@@ -220,7 +232,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -228,13 +240,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("CreateSupportedPointFormatsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSupportedPointFormatsExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateSupportedPointFormatsExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ecPointFormats)) };
+        > = unsafe { method.invoke_unchecked((), (ecPointFormats))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeECFieldElement(
@@ -243,7 +257,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -251,13 +265,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("DeserializeECFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeserializeECFieldElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "DeserializeECFieldElement",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (fieldSize, encoding)) };
+        > = unsafe { method.invoke_unchecked((), (fieldSize, encoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeECPoint(
@@ -269,7 +285,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -283,13 +299,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("DeserializeECPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeserializeECPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "DeserializeECPoint", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { method.invoke_unchecked((), (ecPointFormats, curve, encoding)) };
+        > = unsafe { method.invoke_unchecked((), (ecPointFormats, curve, encoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeECPublicKey(
@@ -305,7 +322,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -321,14 +338,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("DeserializeECPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeserializeECPublicKey", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "DeserializeECPublicKey",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
         > = unsafe {
-            method.invoke_unchecked((), (ecPointFormats, curve_params, encoding))
+            method.invoke_unchecked((), (ecPointFormats, curve_params, encoding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -344,7 +363,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -361,13 +380,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("GenerateECKeyPair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateECKeyPair", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateECKeyPair", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (random, ecParams)) };
+        > = unsafe { method.invoke_unchecked((), (random, ecParams))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateEphemeralClientKeyExchange(
@@ -386,7 +406,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -405,14 +425,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("GenerateEphemeralClientKeyExchange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateEphemeralClientKeyExchange", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateEphemeralClientKeyExchange", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         > = unsafe {
-            method.invoke_unchecked((), (random, ecPointFormats, ecParams, output))
+            method.invoke_unchecked((), (random, ecPointFormats, ecParams, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -430,7 +452,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -447,14 +469,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("GenerateEphemeralServerKeyExchange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateEphemeralServerKeyExchange", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateEphemeralServerKeyExchange", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         > = unsafe {
-            method.invoke_unchecked((), (random, namedCurves, ecPointFormats, output))
+            method.invoke_unchecked((), (random, namedCurves, ecPointFormats, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -463,7 +487,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -471,13 +495,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("GetNameOfNamedCurve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNameOfNamedCurve", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNameOfNamedCurve",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (namedCurve)) };
+        > = unsafe { method.invoke_unchecked((), (namedCurve))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetParametersForNamedCurve(
@@ -487,7 +513,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -497,13 +523,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("GetParametersForNamedCurve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParametersForNamedCurve", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetParametersForNamedCurve", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-        > = unsafe { method.invoke_unchecked((), (namedCurve)) };
+        > = unsafe { method.invoke_unchecked((), (namedCurve))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSupportedEllipticCurvesExtension(
@@ -511,7 +539,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -519,13 +547,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("GetSupportedEllipticCurvesExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSupportedEllipticCurvesExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSupportedEllipticCurvesExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked((), (extensions)) };
+        > = unsafe { method.invoke_unchecked((), (extensions))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSupportedPointFormatsExtension(
@@ -533,7 +563,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -541,25 +571,29 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("GetSupportedPointFormatsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSupportedPointFormatsExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetSupportedPointFormatsExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (extensions)) };
+        > = unsafe { method.invoke_unchecked((), (extensions))? };
         Ok(__cordl_ret.into())
     }
     pub fn HasAnySupportedNamedCurves() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("HasAnySupportedNamedCurves")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasAnySupportedNamedCurves", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HasAnySupportedNamedCurves", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCompressionPreferred(
@@ -568,7 +602,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         >,
         compressionFormat: u8,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, u8),
                 bool,
@@ -576,39 +610,44 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("IsCompressionPreferred")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCompressionPreferred", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCompressionPreferred",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (ecPointFormats, compressionFormat))
+            method.invoke_unchecked((), (ecPointFormats, compressionFormat))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsEccCipherSuite(cipherSuite: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsEccCipherSuite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEccCipherSuite", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEccCipherSuite", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cipherSuite)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cipherSuite))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSupportedNamedCurve(
         namedCurve: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsSupportedNamedCurve")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSupportedNamedCurve", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSupportedNamedCurve",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (namedCurve)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (namedCurve))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -622,7 +661,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         fieldSize: i32,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 i32,
@@ -630,12 +669,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ReadECExponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadECExponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadECExponent", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (fieldSize, input))
+            method.invoke_unchecked((), (fieldSize, input))?
         };
         Ok(__cordl_ret.into())
     }
@@ -645,7 +685,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -653,13 +693,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ReadECFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadECFieldElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadECFieldElement", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (fieldSize, input)) };
+        > = unsafe { method.invoke_unchecked((), (fieldSize, input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadECParameter(
@@ -667,7 +708,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -675,13 +716,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ReadECParameter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadECParameter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadECParameter", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadECParameters(
@@ -695,7 +737,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -709,13 +751,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ReadECParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadECParameters", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadECParameters", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
-        > = unsafe { method.invoke_unchecked((), (namedCurves, ecPointFormats, input)) };
+        > = unsafe {
+            method.invoke_unchecked((), (namedCurves, ecPointFormats, input))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadSupportedEllipticCurvesExtension(
@@ -723,7 +768,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -731,13 +776,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ReadSupportedEllipticCurvesExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadSupportedEllipticCurvesExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadSupportedEllipticCurvesExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked((), (extensionData)) };
+        > = unsafe { method.invoke_unchecked((), (extensionData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadSupportedPointFormatsExtension(
@@ -745,7 +792,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -753,13 +800,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ReadSupportedPointFormatsExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadSupportedPointFormatsExtension", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadSupportedPointFormatsExtension", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (extensionData)) };
+        > = unsafe { method.invoke_unchecked((), (extensionData))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeECFieldElement(
@@ -768,7 +817,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -779,13 +828,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("SerializeECFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializeECFieldElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializeECFieldElement",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (fieldSize, x)) };
+        > = unsafe { method.invoke_unchecked((), (fieldSize, x))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeECPoint(
@@ -796,7 +847,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -809,13 +860,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("SerializeECPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializeECPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializeECPoint", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ecPointFormats, point)) };
+        > = unsafe { method.invoke_unchecked((), (ecPointFormats, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeECPublicKey(
@@ -828,7 +880,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -841,13 +893,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("SerializeECPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializeECPublicKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializeECPublicKey",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ecPointFormats, keyParameters)) };
+        > = unsafe { method.invoke_unchecked((), (ecPointFormats, keyParameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateECPublicKey(
@@ -859,7 +913,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
@@ -871,20 +925,22 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("ValidateECPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateECPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateECPublicKey",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (key)) };
+        > = unsafe { method.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteECExponent(
         k: i32,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -892,12 +948,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("WriteECExponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteECExponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteECExponent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (k, output))
+            method.invoke_unchecked((), (k, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -905,7 +962,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -918,12 +975,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("WriteECFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteECFieldElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteECFieldElement",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x, output))
+            method.invoke_unchecked((), (x, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -932,7 +991,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -946,12 +1005,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("WriteECFieldElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteECFieldElement", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteECFieldElement",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (fieldSize, x, output))
+            method.invoke_unchecked((), (fieldSize, x, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -959,7 +1020,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -972,12 +1033,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("WriteECParameter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteECParameter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteECParameter", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x, output))
+            method.invoke_unchecked((), (x, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -988,7 +1050,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1002,12 +1064,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("WriteECPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteECPoint", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteECPoint", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ecPointFormats, point, output))
+            method.invoke_unchecked((), (ecPointFormats, point, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1020,7 +1083,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         >,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1034,12 +1097,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("WriteExplicitECParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteExplicitECParameters", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteExplicitECParameters",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ecPointFormats, ecParameters, output))
+            method.invoke_unchecked((), (ecPointFormats, ecParameters, output))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1047,7 +1112,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
         namedCurve: i32,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -1055,28 +1120,31 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities {
             >("WriteNamedECParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteNamedECParameters", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteNamedECParameters",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (namedCurve, output))
+            method.invoke_unchecked((), (namedCurve, output))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::TlsEccUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

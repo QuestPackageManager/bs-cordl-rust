@@ -42,7 +42,7 @@ impl crate::Mono::Math::Prime::PrimalityTests {
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::PrimalityTests as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -53,18 +53,19 @@ impl crate::Mono::Math::Prime::PrimalityTests {
             >("GetSPPRounds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSPPRounds", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::Prime::PrimalityTests as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSPPRounds", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bi, confidence)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bi, confidence))? };
         Ok(__cordl_ret.into())
     }
     pub fn RabinMillerTest(
         n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::PrimalityTests as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -75,18 +76,19 @@ impl crate::Mono::Math::Prime::PrimalityTests {
             >("RabinMillerTest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RabinMillerTest", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::Prime::PrimalityTests as
+                    quest_hook::libil2cpp::Type > ::class(), "RabinMillerTest", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (n, confidence)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (n, confidence))? };
         Ok(__cordl_ret.into())
     }
     pub fn SmallPrimeSppTest(
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::PrimalityTests as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -97,18 +99,21 @@ impl crate::Mono::Math::Prime::PrimalityTests {
             >("SmallPrimeSppTest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SmallPrimeSppTest", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::Prime::PrimalityTests as
+                    quest_hook::libil2cpp::Type > ::class(), "SmallPrimeSppTest", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bi, confidence)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (bi, confidence))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Test(
         n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         confidence: crate::Mono::Math::Prime::ConfidenceFactor,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::PrimalityTests as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -119,11 +124,12 @@ impl crate::Mono::Math::Prime::PrimalityTests {
             >("Test")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Test", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Math::Prime::PrimalityTests as
+                    quest_hook::libil2cpp::Type > ::class(), "Test", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (n, confidence)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (n, confidence))? };
         Ok(__cordl_ret.into())
     }
 }

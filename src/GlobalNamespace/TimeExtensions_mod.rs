@@ -41,29 +41,31 @@ impl crate::GlobalNamespace::TimeExtensions {
     pub fn AsUnixTime(
         unixTime: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), crate::System::DateTime, 1usize>("AsUnixTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsUnixTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AsUnixTime", 1usize
                 )
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (unixTime))
+            method.invoke_unchecked((), (unixTime))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DaysToSeconds(days: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("DaysToSeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DaysToSeconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DaysToSeconds", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (days)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (days))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFormattedRemainingTimeTwoOfDaysHoursMinutes(
@@ -71,7 +73,7 @@ impl crate::GlobalNamespace::TimeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -79,49 +81,54 @@ impl crate::GlobalNamespace::TimeExtensions {
             >("GetFormattedRemainingTimeTwoOfDaysHoursMinutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFormattedRemainingTimeTwoOfDaysHoursMinutes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetFormattedRemainingTimeTwoOfDaysHoursMinutes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (timeSpan)) };
+        > = unsafe { method.invoke_unchecked((), (timeSpan))? };
         Ok(__cordl_ret.into())
     }
     pub fn Hours(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("Hours")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Hours", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Hours", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn HoursToSeconds(hours: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("HoursToSeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HoursToSeconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "HoursToSeconds", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (hours)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (hours))? };
         Ok(__cordl_ret.into())
     }
     pub fn Milliseconds(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("Milliseconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Milliseconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Milliseconds", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn MinSecDurationText(
@@ -129,7 +136,7 @@ impl crate::GlobalNamespace::TimeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -137,13 +144,14 @@ impl crate::GlobalNamespace::TimeExtensions {
             >("MinSecDurationText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MinSecDurationText", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "MinSecDurationText", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (duration)) };
+        > = unsafe { method.invoke_unchecked((), (duration))? };
         Ok(__cordl_ret.into())
     }
     pub fn MinSecMillisecDurationText(
@@ -151,7 +159,7 @@ impl crate::GlobalNamespace::TimeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -159,187 +167,203 @@ impl crate::GlobalNamespace::TimeExtensions {
             >("MinSecMillisecDurationText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MinSecMillisecDurationText", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MinSecMillisecDurationText", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (duration)) };
+        > = unsafe { method.invoke_unchecked((), (duration))? };
         Ok(__cordl_ret.into())
     }
     pub fn Minutes(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("Minutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Minutes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Minutes", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn MinutesToSeconds(minutes: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("MinutesToSeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MinutesToSeconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "MinutesToSeconds", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (minutes)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (minutes))? };
         Ok(__cordl_ret.into())
     }
     pub fn OneBeatDuration(bpm: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), f32, 1usize>("OneBeatDuration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OneBeatDuration", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "OneBeatDuration", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (bpm)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (bpm))? };
         Ok(__cordl_ret.into())
     }
     pub fn Seconds(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("Seconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Seconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Seconds", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn SecondsToDays(_cordl_time: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("SecondsToDays")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SecondsToDays", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SecondsToDays", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn SecondsToHours(_cordl_time: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("SecondsToHours")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SecondsToHours", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SecondsToHours", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn SecondsToMinutes_f32_0(seconds: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), f32, 1usize>("SecondsToMinutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SecondsToMinutes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SecondsToMinutes", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (seconds)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (seconds))? };
         Ok(__cordl_ret.into())
     }
     pub fn SecondsToMinutes_i32_1(
         _cordl_time: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("SecondsToMinutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SecondsToMinutes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SecondsToMinutes", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn TimeToBeat(_cordl_time: f32, bpm: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32), f32, 2usize>("TimeToBeat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TimeToBeat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TimeToBeat", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, bpm))
+            method.invoke_unchecked((), (_cordl_time, bpm))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToUnixTime(
         dateTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(crate::System::DateTime), i64, 1usize>("ToUnixTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUnixTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToUnixTime", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (dateTime)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (dateTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn TotalDays(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("TotalDays")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TotalDays", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TotalDays", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn TotalHours(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("TotalHours")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TotalHours", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TotalHours", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn TotalMinutes(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("TotalMinutes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TotalMinutes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TotalMinutes", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn TotalSeconds(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TimeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("TotalSeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TotalSeconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TimeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TotalSeconds", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
 }

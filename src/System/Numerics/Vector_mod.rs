@@ -45,7 +45,7 @@ impl crate::System::Numerics::Vector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Numerics::Vector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Numerics::Vector_1<T>),
                 crate::System::Numerics::Vector_1<u64>,
@@ -53,12 +53,13 @@ impl crate::System::Numerics::Vector {
             >("AsVectorUInt64")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsVectorUInt64", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Numerics::Vector as quest_hook::libil2cpp::Type >
+                    ::class(), "AsVectorUInt64", 1usize
                 )
             });
         let __cordl_ret: crate::System::Numerics::Vector_1<u64> = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::System::Numerics::Vector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Numerics::Vector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Numerics::Vector_1<T>,
@@ -81,25 +82,27 @@ impl crate::System::Numerics::Vector {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Numerics::Vector as quest_hook::libil2cpp::Type >
+                    ::class(), "Equals", 2usize
                 )
             });
         let __cordl_ret: crate::System::Numerics::Vector_1<T> = unsafe {
-            method.invoke_unchecked((), (left, right))
+            method.invoke_unchecked((), (left, right))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsHardwareAccelerated() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Numerics::Vector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_IsHardwareAccelerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsHardwareAccelerated", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Numerics::Vector as quest_hook::libil2cpp::Type >
+                    ::class(), "get_IsHardwareAccelerated", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

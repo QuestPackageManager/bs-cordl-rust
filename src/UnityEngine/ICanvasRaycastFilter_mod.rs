@@ -43,7 +43,7 @@ impl crate::UnityEngine::ICanvasRaycastFilter {
         sp: crate::UnityEngine::Vector2,
         eventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ICanvasRaycastFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector2,
@@ -54,12 +54,14 @@ impl crate::UnityEngine::ICanvasRaycastFilter {
             >("IsRaycastLocationValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsRaycastLocationValid", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ICanvasRaycastFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "IsRaycastLocationValid",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (sp, eventCamera))
+            method.invoke_unchecked(self, (sp, eventCamera))?
         };
         Ok(__cordl_ret.into())
     }

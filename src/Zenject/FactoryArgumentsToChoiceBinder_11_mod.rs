@@ -297,7 +297,19 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -323,8 +335,11 @@ impl<
             >("WithFactoryArgumentsExplicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArgumentsExplicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArgumentsExplicit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -341,7 +356,7 @@ impl<
                 TParam10,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, (extraArgs)) };
+        > = unsafe { method.invoke_unchecked(self, (extraArgs))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_Il2CppArray6(
@@ -392,7 +407,19 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -418,8 +445,11 @@ impl<
             >("WithFactoryArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArguments", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArguments", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -436,7 +466,7 @@ impl<
                 TParam10,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, (args)) };
+        > = unsafe { method.invoke_unchecked(self, (args))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_T0<T>(
@@ -485,7 +515,19 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (T),
                 quest_hook::libil2cpp::Gc<
@@ -507,8 +549,11 @@ impl<
             >("WithFactoryArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArguments", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArguments", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -525,7 +570,7 @@ impl<
                 TParam10,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, (param)) };
+        > = unsafe { method.invoke_unchecked(self, (param))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_1<
@@ -580,7 +625,19 @@ impl<
         TFactoryParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (TFactoryParam1, TFactoryParam2),
                 quest_hook::libil2cpp::Gc<
@@ -602,8 +659,11 @@ impl<
             >("WithFactoryArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArguments", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArguments", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -620,7 +680,7 @@ impl<
                 TParam10,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, (param1, param2)) };
+        > = unsafe { method.invoke_unchecked(self, (param1, param2))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_TFactoryParam3_2<
@@ -679,7 +739,19 @@ impl<
         TFactoryParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (TFactoryParam1, TFactoryParam2, TFactoryParam3),
                 quest_hook::libil2cpp::Gc<
@@ -701,8 +773,11 @@ impl<
             >("WithFactoryArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArguments", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArguments", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -719,7 +794,7 @@ impl<
                 TParam10,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, (param1, param2, param3)) };
+        > = unsafe { method.invoke_unchecked(self, (param1, param2, param3))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_TFactoryParam3_TFactoryParam4_3<
@@ -782,7 +857,19 @@ impl<
         TFactoryParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (TFactoryParam1, TFactoryParam2, TFactoryParam3, TFactoryParam4),
                 quest_hook::libil2cpp::Gc<
@@ -804,8 +891,11 @@ impl<
             >("WithFactoryArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArguments", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArguments", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -822,7 +912,7 @@ impl<
                 TParam10,
                 TContract,
             >,
-        > = unsafe { method.invoke_unchecked(self, (param1, param2, param3, param4)) };
+        > = unsafe { method.invoke_unchecked(self, (param1, param2, param3, param4))? };
         Ok(__cordl_ret.into())
     }
     pub fn WithFactoryArguments_TFactoryParam1_TFactoryParam2_TFactoryParam3_TFactoryParam4_TFactoryParam5_4<
@@ -889,7 +979,19 @@ impl<
         TFactoryParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     TFactoryParam1,
@@ -917,8 +1019,11 @@ impl<
             >("WithFactoryArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArguments", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArguments", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -936,7 +1041,7 @@ impl<
                 TContract,
             >,
         > = unsafe {
-            method.invoke_unchecked(self, (param1, param2, param3, param4, param5))
+            method.invoke_unchecked(self, (param1, param2, param3, param4, param5))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1008,7 +1113,19 @@ impl<
         TFactoryParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     TFactoryParam1,
@@ -1037,8 +1154,11 @@ impl<
             >("WithFactoryArguments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithFactoryArguments", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), "WithFactoryArguments", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1057,7 +1177,10 @@ impl<
             >,
         > = unsafe {
             method
-                .invoke_unchecked(self, (param1, param2, param3, param4, param5, param6))
+                .invoke_unchecked(
+                    self,
+                    (param1, param2, param3, param4, param5, param6),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1091,7 +1214,19 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryArgumentsToChoiceBinder_11<
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -1103,12 +1238,15 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryArgumentsToChoiceBinder_11 < TParam1,
+                    TParam2, TParam3, TParam4, TParam5, TParam6, TParam7, TParam8,
+                    TParam9, TParam10, TContract > as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bindContainer, bindInfo, factoryBindInfo))
+            method.invoke_unchecked(self, (bindContainer, bindInfo, factoryBindInfo))?
         };
         Ok(__cordl_ret.into())
     }

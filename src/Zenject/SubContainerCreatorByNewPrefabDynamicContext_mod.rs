@@ -50,7 +50,7 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<bool>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -58,12 +58,13 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
             >("CreateGameObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateGameObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::SubContainerCreatorByNewPrefabDynamicContext as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateGameObject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked(self, (shouldMakeActive))
+            method.invoke_unchecked(self, (shouldMakeActive))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +89,7 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
             crate::Zenject::GameObjectCreationParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -102,13 +103,14 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::SubContainerCreatorByNewPrefabDynamicContext as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (container, prefabProvider, gameObjectBindInfo))
+                .invoke_unchecked(self, (container, prefabProvider, gameObjectBindInfo))?
         };
         Ok(__cordl_ret.into())
     }

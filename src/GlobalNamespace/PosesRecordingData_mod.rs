@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::PosesRecordingData {
             crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
@@ -73,12 +73,13 @@ impl crate::GlobalNamespace::PosesRecordingData {
             >("AddKeyframe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddKeyframe", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData as
+                    quest_hook::libil2cpp::Type > ::class(), "AddKeyframe", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (keyframe))
+            method.invoke_unchecked(self, (keyframe))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +87,7 @@ impl crate::GlobalNamespace::PosesRecordingData {
         &mut self,
         objectId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -94,11 +95,12 @@ impl crate::GlobalNamespace::PosesRecordingData {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (objectId)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (objectId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_List_1_PosesRecordingData_ExternalCameraCalibration1(
@@ -144,7 +146,7 @@ impl crate::GlobalNamespace::PosesRecordingData {
         &mut self,
         objectId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -152,11 +154,12 @@ impl crate::GlobalNamespace::PosesRecordingData {
             >("ObjectIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ObjectIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData as
+                    quest_hook::libil2cpp::Type > ::class(), "ObjectIndex", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (objectId)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (objectId))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_List_1_PosesRecordingData_ExternalCameraCalibration1(
@@ -177,7 +180,7 @@ impl crate::GlobalNamespace::PosesRecordingData {
             crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -203,8 +206,9 @@ impl crate::GlobalNamespace::PosesRecordingData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -212,7 +216,7 @@ impl crate::GlobalNamespace::PosesRecordingData {
                 .invoke_unchecked(
                     self,
                     (objectIds, keyframes, externalCameraCalibration),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +231,7 @@ impl crate::GlobalNamespace::PosesRecordingData {
             crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -246,12 +250,13 @@ impl crate::GlobalNamespace::PosesRecordingData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (objectIds, externalCameraCalibration))
+            method.invoke_unchecked(self, (objectIds, externalCameraCalibration))?
         };
         Ok(__cordl_ret.into())
     }
@@ -342,7 +347,7 @@ impl crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
         &mut self,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
                 quest_hook::libil2cpp::Void,
@@ -350,12 +355,13 @@ impl crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (camera))
+            method.invoke_unchecked(self, (camera))?
         };
         Ok(__cordl_ret.into())
     }
@@ -367,7 +373,7 @@ impl crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
         hmdOffset: f32,
         nearOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -375,8 +381,9 @@ impl crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -384,7 +391,7 @@ impl crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
                 .invoke_unchecked(
                     self,
                     (fieldOfVision, nearClip, farClip, hmdOffset, nearOffset),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,7 +471,7 @@ impl crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe {
         >,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -477,12 +484,13 @@ impl crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PosesRecordingData_TransformsKeyframe as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (poses, _cordl_time))
+            method.invoke_unchecked(self, (poses, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }

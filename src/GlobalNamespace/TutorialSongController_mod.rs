@@ -224,16 +224,17 @@ impl crate::GlobalNamespace::TutorialSongController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Awake", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "Awake", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +245,7 @@ impl crate::GlobalNamespace::TutorialSongController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
@@ -255,12 +256,13 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("CreateArcData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArcData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateArcData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData> = unsafe {
-            method.invoke_unchecked(self, (headData, tailData))
+            method.invoke_unchecked(self, (headData, tailData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -274,7 +276,7 @@ impl crate::GlobalNamespace::TutorialSongController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -288,13 +290,15 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("CreateBasicNoteData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateBasicNoteData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateBasicNoteData",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
             method
-                .invoke_unchecked(self, (_cordl_time, beat, tutorialBasicNoteSpawnData))
+                .invoke_unchecked(self, (_cordl_time, beat, tutorialBasicNoteSpawnData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -308,7 +312,7 @@ impl crate::GlobalNamespace::TutorialSongController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -322,12 +326,14 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("CreateBombNoteData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateBombNoteData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateBombNoteData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = unsafe {
-            method.invoke_unchecked(self, (_cordl_time, beat, tutorialBombNoteSpawnData))
+            method
+                .invoke_unchecked(self, (_cordl_time, beat, tutorialBombNoteSpawnData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -345,7 +351,7 @@ impl crate::GlobalNamespace::TutorialSongController {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -363,8 +369,9 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("CreateChainData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateChainData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateChainData", 4usize
                 )
             });
         let __cordl_ret: crate::System::ValueTuple_2<
@@ -375,7 +382,7 @@ impl crate::GlobalNamespace::TutorialSongController {
                 .invoke_unchecked(
                     self,
                     (_cordl_time, tailTime, beat, tutorialChainSpawnData),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -389,7 +396,7 @@ impl crate::GlobalNamespace::TutorialSongController {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -403,14 +410,16 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("CreateObstacleData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateObstacleData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateObstacleData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ObstacleData,
         > = unsafe {
-            method.invoke_unchecked(self, (_cordl_time, beat, tutorialObstacleSpawnData))
+            method
+                .invoke_unchecked(self, (_cordl_time, beat, tutorialObstacleSpawnData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -418,30 +427,33 @@ impl crate::GlobalNamespace::TutorialSongController {
         &mut self,
         beatOffset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetNextBeatmapObjectBeat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextBeatmapObjectBeat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextBeatmapObjectBeat",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (beatOffset)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (beatOffset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTimeFromBeat(
         &mut self,
         beatNumber: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), f32, 1usize>("GetTimeFromBeat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTimeFromBeat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTimeFromBeat", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (beatNumber)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (beatNumber))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasCut(
@@ -451,7 +463,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         >,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
@@ -462,12 +474,13 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("HandleNoteWasCut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleNoteWasCut", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleNoteWasCut", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteController, noteCutInfo))
+            method.invoke_unchecked(self, (noteController, noteCutInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -475,7 +488,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>),
                 quest_hook::libil2cpp::Void,
@@ -483,12 +496,14 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("HandleNoteWasMissed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleNoteWasMissed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleNoteWasMissed",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteController))
+            method.invoke_unchecked(self, (noteController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -498,7 +513,7 @@ impl crate::GlobalNamespace::TutorialSongController {
             crate::GlobalNamespace::ObstacleController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>),
                 quest_hook::libil2cpp::Void,
@@ -506,12 +521,14 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("HandleObstacleDidPassThreeQuartersOfMove2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleObstacleDidPassThreeQuartersOfMove2", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleObstacleDidPassThreeQuartersOfMove2", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obstacleController))
+            method.invoke_unchecked(self, (obstacleController))?
         };
         Ok(__cordl_ret.into())
     }
@@ -525,39 +542,41 @@ impl crate::GlobalNamespace::TutorialSongController {
     pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn PauseSong(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PauseSong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PauseSong", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "PauseSong", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RaiseSignalForIncorrectCutSequence(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -565,12 +584,14 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("RaiseSignalForIncorrectCutSequence")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RaiseSignalForIncorrectCutSequence", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RaiseSignalForIncorrectCutSequence", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -578,7 +599,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         &mut self,
         noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::NoteCutInfo),
                 quest_hook::libil2cpp::Void,
@@ -586,44 +607,48 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("RaiseSignalsForIndividualCut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RaiseSignalsForIndividualCut", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RaiseSignalsForIndividualCut", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteCutInfo))
+            method.invoke_unchecked(self, (noteCutInfo))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ResumeSong(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ResumeSong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResumeSong", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "ResumeSong", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -631,32 +656,34 @@ impl crate::GlobalNamespace::TutorialSongController {
         &mut self,
         startTimeOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("StartSong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartSong", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "StartSong", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (startTimeOffset))
+            method.invoke_unchecked(self, (startTimeOffset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StopSong(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StopSong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StopSong", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "StopSong", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -665,7 +692,7 @@ impl crate::GlobalNamespace::TutorialSongController {
         noteTime: f32,
         noteBeat: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, i32),
                 quest_hook::libil2cpp::Void,
@@ -673,28 +700,30 @@ impl crate::GlobalNamespace::TutorialSongController {
             >("UpdateBeatmapData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateBeatmapData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateBeatmapData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteTime, noteBeat))
+            method.invoke_unchecked(self, (noteTime, noteBeat))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -767,7 +796,7 @@ impl crate::GlobalNamespace::TutorialSongController_InitData {
         songBpm: f32,
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_InitData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>),
                 quest_hook::libil2cpp::Void,
@@ -775,12 +804,13 @@ impl crate::GlobalNamespace::TutorialSongController_InitData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_InitData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (songBpm, beatmapData))
+            method.invoke_unchecked(self, (songBpm, beatmapData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -851,7 +881,7 @@ impl crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
         &mut self,
         noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_SequenceCutInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>),
                 quest_hook::libil2cpp::Void,
@@ -859,28 +889,30 @@ impl crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
             >("MarkCut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MarkCut", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_SequenceCutInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "MarkCut", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (noteCutInfo))
+            method.invoke_unchecked(self, (noteCutInfo))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MarkMiss(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_SequenceCutInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MarkMiss")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MarkMiss", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_SequenceCutInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "MarkMiss", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -899,7 +931,7 @@ impl crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
         cuttableObjectsCount: i32,
         noteType: crate::GlobalNamespace::SequenceCutInfo_TutorialSongController_NoteType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_SequenceCutInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -910,49 +942,53 @@ impl crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_SequenceCutInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cuttableObjectsCount, noteType))
+            method.invoke_unchecked(self, (cuttableObjectsCount, noteType))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_allIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_SequenceCutInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_allIsOK")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_allIsOK", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_SequenceCutInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "get_allIsOK", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isFinished(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_SequenceCutInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isFinished")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isFinished", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_SequenceCutInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "get_isFinished", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_missedAny(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_SequenceCutInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_missedAny")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_missedAny", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_SequenceCutInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "get_missedAny", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1040,7 +1076,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
             crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1056,12 +1092,13 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TutorialSongController_TutorialArcSpawnData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (signal, headNote, tailNote))
+            method.invoke_unchecked(self, (signal, headNote, tailNote))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1157,7 +1194,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
         cutDirection: crate::GlobalNamespace::NoteCutDirection,
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1173,8 +1210,10 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1190,7 +1229,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
                         cutDirection,
                         colorType,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1272,7 +1311,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1286,8 +1325,10 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1295,7 +1336,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
                 .invoke_unchecked(
                     self,
                     (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1412,7 +1453,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
         squishAmount: f32,
         tailTimeOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1433,8 +1474,10 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 12usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::TutorialSongController_TutorialChainSpawnData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 12usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1455,20 +1498,22 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
                         squishAmount,
                         tailTimeOffset,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_headLineIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_headLineIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_headLineIndex", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::TutorialSongController_TutorialChainSpawnData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_headLineIndex", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1550,7 +1595,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData
         lineIndex: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1564,8 +1609,10 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1573,7 +1620,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData
                 .invoke_unchecked(
                     self,
                     (signal, firstTimeBeatOffset, beatOffset, lineIndex, noteLineLayer),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1654,7 +1701,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
         beatOffset: i32,
         lineIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1667,8 +1714,10 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1676,7 +1725,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
                 .invoke_unchecked(
                     self,
                     (signal, firstTimeBeatOffset, beatOffset, lineIndex),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1773,7 +1822,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
         height: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1789,8 +1838,10 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1806,7 +1857,7 @@ impl crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
                         height,
                         noteLineLayer,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

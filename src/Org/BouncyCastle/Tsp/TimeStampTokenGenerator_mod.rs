@@ -76,7 +76,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Tsp::TimeStampToken>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -92,13 +92,14 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >("Generate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Generate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "Generate", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Tsp::TimeStampToken,
-        > = unsafe { method.invoke_unchecked(self, (request, serialNumber, genTime)) };
+        > = unsafe { method.invoke_unchecked(self, (request, serialNumber, genTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_AsymmetricKeyParameter_X509Certificate_Il2CppString_Il2CppString0(
@@ -142,7 +143,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         &mut self,
         accuracyMicros: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -150,12 +151,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >("SetAccuracyMicros")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAccuracyMicros", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAccuracyMicros", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (accuracyMicros))
+            method.invoke_unchecked(self, (accuracyMicros))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +165,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         &mut self,
         accuracyMillis: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -171,12 +173,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >("SetAccuracyMillis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAccuracyMillis", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAccuracyMillis", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (accuracyMillis))
+            method.invoke_unchecked(self, (accuracyMillis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -184,7 +187,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         &mut self,
         accuracySeconds: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -192,12 +195,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >("SetAccuracySeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAccuracySeconds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAccuracySeconds", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (accuracySeconds))
+            method.invoke_unchecked(self, (accuracySeconds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +211,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             crate::Org::BouncyCastle::X509::Store::IX509Store,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::X509::Store::IX509Store,
@@ -217,12 +221,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >("SetCertificates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCertificates", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCertificates", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (certificates))
+            method.invoke_unchecked(self, (certificates))?
         };
         Ok(__cordl_ret.into())
     }
@@ -232,7 +237,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             crate::Org::BouncyCastle::X509::Store::IX509Store,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::X509::Store::IX509Store,
@@ -242,12 +247,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >("SetCrls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCrls", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCrls", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (crls))
+            method.invoke_unchecked(self, (crls))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,16 +261,17 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         &mut self,
         ordering: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("SetOrdering")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetOrdering", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetOrdering", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ordering))
+            method.invoke_unchecked(self, (ordering))?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,7 +279,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         &mut self,
         tsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -282,12 +289,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >("SetTsa")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTsa", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTsa", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tsa))
+            method.invoke_unchecked(self, (tsa))?
         };
         Ok(__cordl_ret.into())
     }
@@ -300,7 +308,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
         digestOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tsaPolicyOID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -317,12 +325,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (key, cert, digestOID, tsaPolicyOID))
+            method.invoke_unchecked(self, (key, cert, digestOID, tsaPolicyOID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -341,7 +350,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -364,8 +373,9 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Tsp::TimeStampTokenGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -373,7 +383,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampTokenGenerator {
                 .invoke_unchecked(
                     self,
                     (key, cert, digestOID, tsaPolicyOID, signedAttr, unsignedAttr),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

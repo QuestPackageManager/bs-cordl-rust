@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -53,13 +53,14 @@ impl crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder {
             >("GetPaddedData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPaddedData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::IEncryptedValuePadder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPaddedData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (data)) };
+        > = unsafe { method.invoke_unchecked(self, (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnpaddedData(
@@ -68,7 +69,7 @@ impl crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -76,13 +77,14 @@ impl crate::Org::BouncyCastle::Crmf::IEncryptedValuePadder {
             >("GetUnpaddedData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUnpaddedData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::IEncryptedValuePadder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUnpaddedData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (paddedData)) };
+        > = unsafe { method.invoke_unchecked(self, (paddedData))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

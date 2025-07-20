@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -64,13 +64,14 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
             >("MultiplyPositive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MultiplyPositive", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier as
+                    quest_hook::libil2cpp::Type > ::class(), "MultiplyPositive", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::EC::ECPoint,
-        > = unsafe { method.invoke_unchecked(self, (p, k)) };
+        > = unsafe { method.invoke_unchecked(self, (p, k))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -92,7 +93,7 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
             crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -107,12 +108,13 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (curve, glvEndomorphism))
+            method.invoke_unchecked(self, (curve, glvEndomorphism))?
         };
         Ok(__cordl_ret.into())
     }

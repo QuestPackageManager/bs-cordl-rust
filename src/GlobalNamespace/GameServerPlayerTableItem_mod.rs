@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableItem {
         >,
         isReady: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GameServerPlayerTableItem as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -84,8 +84,9 @@ impl crate::GlobalNamespace::GameServerPlayerTableItem {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GameServerPlayerTableItem as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -93,7 +94,7 @@ impl crate::GlobalNamespace::GameServerPlayerTableItem {
                 .invoke_unchecked(
                     self,
                     (playerName, suggestedLevel, suggestedModifiers, isReady),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

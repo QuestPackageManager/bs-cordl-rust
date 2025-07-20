@@ -62,7 +62,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -91,8 +91,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("AppendFace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendFace", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendFace", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -102,7 +103,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
                 .invoke_unchecked(
                     (),
                     (mesh, positions, colors, uv0s, uv2s, uv3s, face, common),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +147,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -203,8 +204,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("AppendFaces")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendFaces", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendFaces", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -212,7 +214,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (mesh, positions, colors, uvs, faces, shared))
+            method.invoke_unchecked((), (mesh, positions, colors, uvs, faces, shared))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +229,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -245,15 +247,17 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("AppendVerticesToEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendVerticesToEdge", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendVerticesToEdge",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, edge, count)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, edge, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn AppendVerticesToEdge_IList_1_1(
@@ -271,7 +275,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -293,15 +297,17 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("AppendVerticesToEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendVerticesToEdge", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendVerticesToEdge",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, edges, count)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, edges, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn AppendVerticesToFace_ProBuilderMesh_Face_Il2CppArray0(
@@ -313,7 +319,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -329,13 +335,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("AppendVerticesToFace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendVerticesToFace", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendVerticesToFace",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (mesh, face, points)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, face, points))? };
         Ok(__cordl_ret.into())
     }
     pub fn AppendVerticesToFace__cordl_bool1(
@@ -348,7 +356,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -365,13 +373,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("AppendVerticesToFace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendVerticesToFace", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendVerticesToFace",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (mesh, face, points, insertOnEdge)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, face, points, insertOnEdge))? };
         Ok(__cordl_ret.into())
     }
     pub fn Bridge(
@@ -382,7 +392,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -397,21 +407,22 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("Bridge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Bridge", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "Bridge", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
         > = unsafe {
-            method.invoke_unchecked((), (mesh, a, b, allowNonManifoldGeometry))
+            method.invoke_unchecked((), (mesh, a, b, allowNonManifoldGeometry))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearAndRefreshMesh(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -421,12 +432,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("ClearAndRefreshMesh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearAndRefreshMesh", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearAndRefreshMesh",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh))
+            method.invoke_unchecked((), (mesh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -439,7 +452,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -455,13 +468,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("CreatePolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreatePolygon", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "CreatePolygon", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (mesh, indexes, unordered)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, indexes, unordered))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePolygonWithHole(
@@ -479,7 +493,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -501,13 +515,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("CreatePolygonWithHole")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreatePolygonWithHole", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "CreatePolygonWithHole",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (mesh, indexes, holes)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, indexes, holes))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateShapeFromPolygon_PolyShape0(
@@ -515,7 +531,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::PolyShape>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
@@ -523,13 +539,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("CreateShapeFromPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateShapeFromPolygon", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateShapeFromPolygon",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
-        > = unsafe { method.invoke_unchecked((), (poly)) };
+        > = unsafe { method.invoke_unchecked((), (poly))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateShapeFromPolygon_ProBuilderMesh_IList_1_f32__cordl_bool1(
@@ -542,7 +560,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -561,13 +579,17 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("CreateShapeFromPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateShapeFromPolygon", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateShapeFromPolygon",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
-        > = unsafe { method.invoke_unchecked((), (mesh, points, extrude, flipNormals)) };
+        > = unsafe {
+            method.invoke_unchecked((), (mesh, points, extrude, flipNormals))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateShapeFromPolygon_ProBuilderMesh_IList_1_f32__cordl_bool_IList_1_3(
@@ -589,7 +611,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -617,14 +639,17 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("CreateShapeFromPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateShapeFromPolygon", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateShapeFromPolygon",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
         > = unsafe {
-            method.invoke_unchecked((), (mesh, points, extrude, flipNormals, holePoints))
+            method
+                .invoke_unchecked((), (mesh, points, extrude, flipNormals, holePoints))?
         };
         Ok(__cordl_ret.into())
     }
@@ -648,7 +673,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -677,8 +702,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("CreateShapeFromPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateShapeFromPolygon", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateShapeFromPolygon",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -688,7 +715,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
                 .invoke_unchecked(
                     (),
                     (mesh, points, extrude, flipNormals, cameraLookAt, holePoints),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -700,7 +727,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -719,12 +746,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("DuplicateAndFlip")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DuplicateAndFlip", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "DuplicateAndFlip", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces))
+            method.invoke_unchecked((), (mesh, faces))?
         };
         Ok(__cordl_ret.into())
     }
@@ -738,7 +766,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -757,13 +785,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("FaceWithVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FaceWithVertices", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "FaceWithVertices", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::FaceRebuildData,
-        > = unsafe { method.invoke_unchecked((), (vertices, unordered)) };
+        > = unsafe { method.invoke_unchecked((), (vertices, unordered))? };
         Ok(__cordl_ret.into())
     }
     pub fn FaceWithVerticesAndHole(
@@ -784,7 +813,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -813,13 +842,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("FaceWithVerticesAndHole")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FaceWithVerticesAndHole", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "FaceWithVerticesAndHole",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::FaceRebuildData,
-        > = unsafe { method.invoke_unchecked((), (borderVertices, holes)) };
+        > = unsafe { method.invoke_unchecked((), (borderVertices, holes))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertVertexInFace(
@@ -833,7 +864,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -851,15 +882,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("InsertVertexInFace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertVertexInFace", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertVertexInFace", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, face, point)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, face, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertVertexInMesh(
@@ -869,7 +901,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -883,13 +915,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("InsertVertexInMesh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertVertexInMesh", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertVertexInMesh", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Vertex,
-        > = unsafe { method.invoke_unchecked((), (mesh, point, normal)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, point, normal))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertVertexOnEdge(
@@ -899,7 +932,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -913,13 +946,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("InsertVertexOnEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertVertexOnEdge", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertVertexOnEdge", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Vertex,
-        > = unsafe { method.invoke_unchecked((), (mesh, originalEdge, point)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, originalEdge, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn TentCapWithVertices(
@@ -937,7 +971,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::AppendElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -955,8 +989,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
             >("TentCapWithVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TentCapWithVertices", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::AppendElements as
+                    quest_hook::libil2cpp::Type > ::class(), "TentCapWithVertices",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -965,7 +1001,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::AppendElements {
                     crate::UnityEngine::ProBuilder::FaceRebuildData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (path)) };
+        > = unsafe { method.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
 }

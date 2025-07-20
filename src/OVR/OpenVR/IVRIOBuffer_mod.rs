@@ -160,7 +160,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Close as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -172,12 +172,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Close as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (ulBuffer, callback, object))
+            method.invoke_unchecked(self, (ulBuffer, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -185,7 +186,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Close as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 crate::OVR::OpenVR::EIOBufferError,
@@ -193,12 +194,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Close as
+                    quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 1usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (result))
+            method.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -206,16 +208,17 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
         &mut self,
         ulBuffer: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Close as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), crate::OVR::OpenVR::EIOBufferError, 1usize>("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Close as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 1usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (ulBuffer))
+            method.invoke_unchecked(self, (ulBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -234,7 +237,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Close as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -245,12 +248,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Close {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Close as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -316,7 +320,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -332,8 +336,9 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type
+                    > ::class(), "BeginInvoke", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -349,7 +354,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
                         callback,
                         object,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -358,7 +363,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
         pulBuffer: quest_hook::libil2cpp::ByRefMut<u64>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<u64>,
@@ -369,12 +374,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type
+                    > ::class(), "EndInvoke", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (pulBuffer, result))
+            method.invoke_unchecked(self, (pulBuffer, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -386,7 +392,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
         unElements: u32,
         pulBuffer: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -400,8 +406,9 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type
+                    > ::class(), "Invoke", 5usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
@@ -409,7 +416,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
                 .invoke_unchecked(
                     self,
                     (pchPath, mode, unElementSize, unElements, pulBuffer),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -428,7 +435,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -439,12 +446,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Open {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Open as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -507,7 +515,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -519,12 +527,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__PropertyContainer as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (ulBuffer, callback, object))
+            method.invoke_unchecked(self, (ulBuffer, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -532,7 +541,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 u64,
@@ -540,23 +549,25 @@ impl crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__PropertyContainer as
+                    quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 1usize
                 )
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (result)) };
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(&mut self, ulBuffer: u64) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), u64, 1usize>("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__PropertyContainer as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 1usize
                 )
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (ulBuffer)) };
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (ulBuffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -574,7 +585,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -585,12 +596,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__PropertyContainer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -656,7 +668,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -671,8 +683,9 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type
+                    > ::class(), "BeginInvoke", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -680,7 +693,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
                 .invoke_unchecked(
                     self,
                     (ulBuffer, pDst, unBytes, punRead, callback, object),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -689,7 +702,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
         punRead: quest_hook::libil2cpp::ByRefMut<u32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<u32>,
@@ -700,12 +713,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type
+                    > ::class(), "EndInvoke", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (punRead, result))
+            method.invoke_unchecked(self, (punRead, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -716,7 +730,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
         unBytes: u32,
         punRead: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u64, crate::System::IntPtr, u32, quest_hook::libil2cpp::ByRefMut<u32>),
                 crate::OVR::OpenVR::EIOBufferError,
@@ -724,12 +738,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type
+                    > ::class(), "Invoke", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (ulBuffer, pDst, unBytes, punRead))
+            method.invoke_unchecked(self, (ulBuffer, pDst, unBytes, punRead))?
         };
         Ok(__cordl_ret.into())
     }
@@ -748,7 +763,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -759,12 +774,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Read {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Read as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -828,7 +844,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Write as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -842,12 +858,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Write as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
-            method.invoke_unchecked(self, (ulBuffer, pSrc, unBytes, callback, object))
+            method.invoke_unchecked(self, (ulBuffer, pSrc, unBytes, callback, object))?
         };
         Ok(__cordl_ret.into())
     }
@@ -855,7 +872,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Write as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                 crate::OVR::OpenVR::EIOBufferError,
@@ -863,12 +880,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Write as
+                    quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 1usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (result))
+            method.invoke_unchecked(self, (result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -878,7 +896,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
         pSrc: crate::System::IntPtr,
         unBytes: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EIOBufferError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Write as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u64, crate::System::IntPtr, u32),
                 crate::OVR::OpenVR::EIOBufferError,
@@ -886,12 +904,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Write as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EIOBufferError = unsafe {
-            method.invoke_unchecked(self, (ulBuffer, pSrc, unBytes))
+            method.invoke_unchecked(self, (ulBuffer, pSrc, unBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -910,7 +929,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::IVRIOBuffer__Write as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -921,12 +940,13 @@ impl crate::OVR::OpenVR::IVRIOBuffer__Write {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::IVRIOBuffer__Write as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

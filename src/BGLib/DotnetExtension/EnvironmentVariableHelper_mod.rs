@@ -44,7 +44,7 @@ impl crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::EnvironmentVariableHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -52,20 +52,21 @@ impl crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
             >("GetDirectoryPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDirectoryPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::EnvironmentVariableHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDirectoryPath", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (variableName)) };
+        > = unsafe { method.invoke_unchecked((), (variableName))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDirectoryPath(
         variableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::EnvironmentVariableHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -76,12 +77,13 @@ impl crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
             >("SetDirectoryPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDirectoryPath", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::EnvironmentVariableHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDirectoryPath", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (variableName, path))
+            method.invoke_unchecked((), (variableName, path))?
         };
         Ok(__cordl_ret.into())
     }

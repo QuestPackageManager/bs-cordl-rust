@@ -82,7 +82,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -97,12 +97,13 @@ impl crate::System::Linq::Enumerable {
             >("Aggregate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Aggregate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Aggregate", 2usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, func))
+            method.invoke_unchecked((), (source, func))?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +122,7 @@ impl crate::System::Linq::Enumerable {
         TAccumulate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -137,12 +138,13 @@ impl crate::System::Linq::Enumerable {
             >("Aggregate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Aggregate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Aggregate", 3usize
                 )
             });
         let __cordl_ret: TAccumulate = unsafe {
-            method.invoke_unchecked((), (source, seed, func))
+            method.invoke_unchecked((), (source, seed, func))?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +158,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -169,12 +171,13 @@ impl crate::System::Linq::Enumerable {
             >("All")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "All", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "All", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -188,7 +191,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -201,12 +204,13 @@ impl crate::System::Linq::Enumerable {
             >("Any")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Any", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Any", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +223,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -229,11 +233,12 @@ impl crate::System::Linq::Enumerable {
             >("Any")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Any", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Any", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Average(
@@ -241,7 +246,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<i32>,
@@ -251,11 +256,12 @@ impl crate::System::Linq::Enumerable {
             >("Average")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Average", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Average", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Cast<TResult>(
@@ -269,7 +275,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>),
                 quest_hook::libil2cpp::Gc<
@@ -279,13 +285,14 @@ impl crate::System::Linq::Enumerable {
             >("Cast")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Cast", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Cast", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn CastIterator<TResult>(
@@ -299,7 +306,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>),
                 quest_hook::libil2cpp::Gc<
@@ -309,13 +316,14 @@ impl crate::System::Linq::Enumerable {
             >("CastIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CastIterator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "CastIterator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombinePredicates<TSource>(
@@ -328,7 +336,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>,
@@ -339,13 +347,14 @@ impl crate::System::Linq::Enumerable {
             >("CombinePredicates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombinePredicates", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "CombinePredicates", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Func_2<TSource, bool>,
-        > = unsafe { method.invoke_unchecked((), (predicate1, predicate2)) };
+        > = unsafe { method.invoke_unchecked((), (predicate1, predicate2))? };
         Ok(__cordl_ret.into())
     }
     pub fn CombineSelectors<TSource, TMiddle, TResult>(
@@ -362,7 +371,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TMiddle>>,
@@ -373,13 +382,14 @@ impl crate::System::Linq::Enumerable {
             >("CombineSelectors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombineSelectors", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "CombineSelectors", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Func_2<TSource, TResult>,
-        > = unsafe { method.invoke_unchecked((), (selector1, selector2)) };
+        > = unsafe { method.invoke_unchecked((), (selector1, selector2))? };
         Ok(__cordl_ret.into())
     }
     pub fn Concat<TSource>(
@@ -398,7 +408,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -415,13 +425,14 @@ impl crate::System::Linq::Enumerable {
             >("Concat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Concat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Concat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second)) };
+        > = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConcatIterator<TSource>(
@@ -440,7 +451,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -457,13 +468,14 @@ impl crate::System::Linq::Enumerable {
             >("ConcatIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConcatIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ConcatIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second)) };
+        > = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains_IEnumerable_1_TSource0<TSource>(
@@ -476,7 +488,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -489,11 +501,12 @@ impl crate::System::Linq::Enumerable {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Contains", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Contains_IEqualityComparer_1_1<TSource>(
@@ -509,7 +522,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -525,12 +538,13 @@ impl crate::System::Linq::Enumerable {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Contains", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (source, value, comparer))
+            method.invoke_unchecked((), (source, value, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -544,7 +558,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -557,12 +571,13 @@ impl crate::System::Linq::Enumerable {
             >("Count")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Count", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Count", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -575,7 +590,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -585,11 +600,12 @@ impl crate::System::Linq::Enumerable {
             >("Count")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Count", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Count", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn DefaultIfEmpty<TSource>(
@@ -606,7 +622,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -621,13 +637,14 @@ impl crate::System::Linq::Enumerable {
             >("DefaultIfEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DefaultIfEmpty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "DefaultIfEmpty", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, defaultValue)) };
+        > = unsafe { method.invoke_unchecked((), (source, defaultValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn DefaultIfEmptyIterator<TSource>(
@@ -644,7 +661,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -659,13 +676,14 @@ impl crate::System::Linq::Enumerable {
             >("DefaultIfEmptyIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DefaultIfEmptyIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "DefaultIfEmptyIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, defaultValue)) };
+        > = unsafe { method.invoke_unchecked((), (source, defaultValue))? };
         Ok(__cordl_ret.into())
     }
     pub fn Distinct<TSource>(
@@ -681,7 +699,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -693,13 +711,14 @@ impl crate::System::Linq::Enumerable {
             >("Distinct")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Distinct", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Distinct", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn DistinctIterator<TSource>(
@@ -718,7 +737,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -735,13 +754,14 @@ impl crate::System::Linq::Enumerable {
             >("DistinctIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DistinctIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "DistinctIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, comparer)) };
+        > = unsafe { method.invoke_unchecked((), (source, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn ElementAt<TSource>(
@@ -754,7 +774,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -767,12 +787,13 @@ impl crate::System::Linq::Enumerable {
             >("ElementAt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ElementAt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ElementAt", 2usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, index))
+            method.invoke_unchecked((), (source, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -785,7 +806,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -795,13 +816,14 @@ impl crate::System::Linq::Enumerable {
             >("Empty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Empty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Empty", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Except<TSource>(
@@ -820,7 +842,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -837,13 +859,14 @@ impl crate::System::Linq::Enumerable {
             >("Except")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Except", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Except", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second)) };
+        > = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptIterator<TSource>(
@@ -865,7 +888,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -885,13 +908,14 @@ impl crate::System::Linq::Enumerable {
             >("ExceptIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExceptIterator", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ExceptIterator", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second, comparer)) };
+        > = unsafe { method.invoke_unchecked((), (first, second, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn FirstOrDefault_Func_2_1<TSource>(
@@ -904,7 +928,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -917,12 +941,13 @@ impl crate::System::Linq::Enumerable {
             >("FirstOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FirstOrDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "FirstOrDefault", 2usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -935,7 +960,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -945,11 +970,12 @@ impl crate::System::Linq::Enumerable {
             >("FirstOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FirstOrDefault", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "FirstOrDefault", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn First_Func_2_1<TSource>(
@@ -962,7 +988,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -975,12 +1001,13 @@ impl crate::System::Linq::Enumerable {
             >("First")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "First", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "First", 2usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -993,7 +1020,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -1003,11 +1030,12 @@ impl crate::System::Linq::Enumerable {
             >("First")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "First", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "First", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn GroupBy<TSource, TKey>(
@@ -1030,7 +1058,7 @@ impl crate::System::Linq::Enumerable {
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1049,8 +1077,9 @@ impl crate::System::Linq::Enumerable {
             >("GroupBy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GroupBy", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "GroupBy", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1059,7 +1088,7 @@ impl crate::System::Linq::Enumerable {
                     crate::System::Linq::IGrouping_2<TKey, TSource>,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (source, keySelector)) };
+        > = unsafe { method.invoke_unchecked((), (source, keySelector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Intersect<TSource>(
@@ -1078,7 +1107,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1095,13 +1124,14 @@ impl crate::System::Linq::Enumerable {
             >("Intersect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Intersect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Intersect", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second)) };
+        > = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectIterator<TSource>(
@@ -1123,7 +1153,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1143,13 +1173,14 @@ impl crate::System::Linq::Enumerable {
             >("IntersectIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntersectIterator", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "IntersectIterator", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second, comparer)) };
+        > = unsafe { method.invoke_unchecked((), (first, second, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn Last<TSource>(
@@ -1161,7 +1192,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -1171,11 +1202,12 @@ impl crate::System::Linq::Enumerable {
             >("Last")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Last", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Last", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn LastOrDefault_Func_2_1<TSource>(
@@ -1188,7 +1220,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1201,12 +1233,13 @@ impl crate::System::Linq::Enumerable {
             >("LastOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LastOrDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "LastOrDefault", 2usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1219,7 +1252,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -1229,11 +1262,12 @@ impl crate::System::Linq::Enumerable {
             >("LastOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LastOrDefault", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "LastOrDefault", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Max_Func_2_3<TSource>(
@@ -1246,7 +1280,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1259,12 +1293,13 @@ impl crate::System::Linq::Enumerable {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Max", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (source, selector))
+            method.invoke_unchecked((), (source, selector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1280,7 +1315,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1293,12 +1328,13 @@ impl crate::System::Linq::Enumerable {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Max", 2usize
                 )
             });
         let __cordl_ret: TResult = unsafe {
-            method.invoke_unchecked((), (source, selector))
+            method.invoke_unchecked((), (source, selector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1307,7 +1343,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<i32>,
@@ -1317,11 +1353,12 @@ impl crate::System::Linq::Enumerable {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Max", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Max_IEnumerable_1_1(
@@ -1329,7 +1366,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<f32>,
@@ -1339,11 +1376,12 @@ impl crate::System::Linq::Enumerable {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Max", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Max_IEnumerable_1_2<TSource>(
@@ -1355,7 +1393,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -1365,11 +1403,12 @@ impl crate::System::Linq::Enumerable {
             >("Max")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Max", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Max", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Min_Func_2_3<TSource, TResult>(
@@ -1384,7 +1423,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1397,12 +1436,13 @@ impl crate::System::Linq::Enumerable {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Min", 2usize
                 )
             });
         let __cordl_ret: TResult = unsafe {
-            method.invoke_unchecked((), (source, selector))
+            method.invoke_unchecked((), (source, selector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1411,7 +1451,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<i32>,
@@ -1421,11 +1461,12 @@ impl crate::System::Linq::Enumerable {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Min", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Min_IEnumerable_1_1(
@@ -1433,7 +1474,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<f32>,
@@ -1443,11 +1484,12 @@ impl crate::System::Linq::Enumerable {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Min", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Min_IEnumerable_1_2<TSource>(
@@ -1459,7 +1501,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -1469,11 +1511,12 @@ impl crate::System::Linq::Enumerable {
             >("Min")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Min", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Min", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn OfType<TResult>(
@@ -1487,7 +1530,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>),
                 quest_hook::libil2cpp::Gc<
@@ -1497,13 +1540,14 @@ impl crate::System::Linq::Enumerable {
             >("OfType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OfType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "OfType", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn OfTypeIterator<TResult>(
@@ -1517,7 +1561,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>),
                 quest_hook::libil2cpp::Gc<
@@ -1527,13 +1571,14 @@ impl crate::System::Linq::Enumerable {
             >("OfTypeIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OfTypeIterator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "OfTypeIterator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn OrderByDescending<TSource, TKey>(
@@ -1550,7 +1595,7 @@ impl crate::System::Linq::Enumerable {
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1565,13 +1610,14 @@ impl crate::System::Linq::Enumerable {
             >("OrderByDescending")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OrderByDescending", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "OrderByDescending", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::IOrderedEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, keySelector)) };
+        > = unsafe { method.invoke_unchecked((), (source, keySelector))? };
         Ok(__cordl_ret.into())
     }
     pub fn OrderBy_IComparer_1_1<TSource, TKey>(
@@ -1591,7 +1637,7 @@ impl crate::System::Linq::Enumerable {
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1609,13 +1655,14 @@ impl crate::System::Linq::Enumerable {
             >("OrderBy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OrderBy", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "OrderBy", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::IOrderedEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, keySelector, comparer)) };
+        > = unsafe { method.invoke_unchecked((), (source, keySelector, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn OrderBy_IEnumerable_1_Func_2_0<TSource, TKey>(
@@ -1632,7 +1679,7 @@ impl crate::System::Linq::Enumerable {
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1647,13 +1694,14 @@ impl crate::System::Linq::Enumerable {
             >("OrderBy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OrderBy", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "OrderBy", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::IOrderedEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, keySelector)) };
+        > = unsafe { method.invoke_unchecked((), (source, keySelector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Range(
@@ -1664,7 +1712,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Gc<
@@ -1674,13 +1722,14 @@ impl crate::System::Linq::Enumerable {
             >("Range")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Range", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Range", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { method.invoke_unchecked((), (start, count)) };
+        > = unsafe { method.invoke_unchecked((), (start, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn RangeIterator(
@@ -1691,7 +1740,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Gc<
@@ -1701,13 +1750,14 @@ impl crate::System::Linq::Enumerable {
             >("RangeIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RangeIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "RangeIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { method.invoke_unchecked((), (start, count)) };
+        > = unsafe { method.invoke_unchecked((), (start, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn Reverse<TSource>(
@@ -1723,7 +1773,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -1735,13 +1785,14 @@ impl crate::System::Linq::Enumerable {
             >("Reverse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reverse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Reverse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReverseIterator<TSource>(
@@ -1757,7 +1808,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -1769,13 +1820,14 @@ impl crate::System::Linq::Enumerable {
             >("ReverseIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReverseIterator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ReverseIterator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn SelectIterator<TSource, TResult>(
@@ -1794,7 +1846,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1811,13 +1863,14 @@ impl crate::System::Linq::Enumerable {
             >("SelectIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SelectIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source, selector)) };
+        > = unsafe { method.invoke_unchecked((), (source, selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn SelectMany<TSource, TResult>(
@@ -1843,7 +1896,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1865,13 +1918,14 @@ impl crate::System::Linq::Enumerable {
             >("SelectMany")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectMany", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SelectMany", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source, selector)) };
+        > = unsafe { method.invoke_unchecked((), (source, selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn SelectManyIterator<TSource, TResult>(
@@ -1897,7 +1951,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1919,13 +1973,14 @@ impl crate::System::Linq::Enumerable {
             >("SelectManyIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectManyIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SelectManyIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source, selector)) };
+        > = unsafe { method.invoke_unchecked((), (source, selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Select_Func_2_0<TSource, TResult>(
@@ -1944,7 +1999,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1959,13 +2014,14 @@ impl crate::System::Linq::Enumerable {
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Select", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source, selector)) };
+        > = unsafe { method.invoke_unchecked((), (source, selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Select_Func_3_1<TSource, TResult>(
@@ -1984,7 +2040,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2001,13 +2057,14 @@ impl crate::System::Linq::Enumerable {
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Select", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (source, selector)) };
+        > = unsafe { method.invoke_unchecked((), (source, selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn SequenceEqual_IEnumerable_1_IEnumerable_1_0<TSource>(
@@ -2022,7 +2079,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2037,11 +2094,12 @@ impl crate::System::Linq::Enumerable {
             >("SequenceEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SequenceEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SequenceEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (first, second)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn SequenceEqual_IEqualityComparer_1_1<TSource>(
@@ -2059,7 +2117,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2077,12 +2135,13 @@ impl crate::System::Linq::Enumerable {
             >("SequenceEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SequenceEqual", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SequenceEqual", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (first, second, comparer))
+            method.invoke_unchecked((), (first, second, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2096,7 +2155,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2109,12 +2168,13 @@ impl crate::System::Linq::Enumerable {
             >("SingleOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SingleOrDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SingleOrDefault", 2usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2127,7 +2187,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -2137,11 +2197,12 @@ impl crate::System::Linq::Enumerable {
             >("SingleOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SingleOrDefault", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SingleOrDefault", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Single_Func_2_1<TSource>(
@@ -2154,7 +2215,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2167,12 +2228,13 @@ impl crate::System::Linq::Enumerable {
             >("Single")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Single", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Single", 2usize
                 )
             });
         let __cordl_ret: TSource = unsafe {
-            method.invoke_unchecked((), (source, predicate))
+            method.invoke_unchecked((), (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2185,7 +2247,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -2195,11 +2257,12 @@ impl crate::System::Linq::Enumerable {
             >("Single")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Single", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Single", 1usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Skip<TSource>(
@@ -2216,7 +2279,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2231,13 +2294,14 @@ impl crate::System::Linq::Enumerable {
             >("Skip")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Skip", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Skip", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, count)) };
+        > = unsafe { method.invoke_unchecked((), (source, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn SkipIterator<TSource>(
@@ -2254,7 +2318,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2269,13 +2333,14 @@ impl crate::System::Linq::Enumerable {
             >("SkipIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SkipIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "SkipIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, count)) };
+        > = unsafe { method.invoke_unchecked((), (source, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn Sum_Func_2_2<TSource>(
@@ -2288,7 +2353,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2301,12 +2366,13 @@ impl crate::System::Linq::Enumerable {
             >("Sum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sum", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Sum", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (source, selector))
+            method.invoke_unchecked((), (source, selector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2315,7 +2381,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<i32>,
@@ -2325,11 +2391,12 @@ impl crate::System::Linq::Enumerable {
             >("Sum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sum", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Sum", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Sum_IEnumerable_1_1(
@@ -2337,7 +2404,7 @@ impl crate::System::Linq::Enumerable {
             crate::System::Collections::Generic::IEnumerable_1<f32>,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<f32>,
@@ -2347,11 +2414,12 @@ impl crate::System::Linq::Enumerable {
             >("Sum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sum", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Sum", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (source)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Take<TSource>(
@@ -2368,7 +2436,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2383,13 +2451,14 @@ impl crate::System::Linq::Enumerable {
             >("Take")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Take", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Take", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, count)) };
+        > = unsafe { method.invoke_unchecked((), (source, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn TakeIterator<TSource>(
@@ -2406,7 +2475,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2421,13 +2490,14 @@ impl crate::System::Linq::Enumerable {
             >("TakeIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TakeIterator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "TakeIterator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, count)) };
+        > = unsafe { method.invoke_unchecked((), (source, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn ThenBy<TSource, TKey>(
@@ -2444,7 +2514,7 @@ impl crate::System::Linq::Enumerable {
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2459,13 +2529,14 @@ impl crate::System::Linq::Enumerable {
             >("ThenBy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ThenBy", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ThenBy", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::IOrderedEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, keySelector)) };
+        > = unsafe { method.invoke_unchecked((), (source, keySelector))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToArray<TSource>(
@@ -2479,7 +2550,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -2489,13 +2560,14 @@ impl crate::System::Linq::Enumerable {
             >("ToArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ToArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToDictionary_Func_2_1<TSource, TKey, TElement>(
@@ -2519,7 +2591,7 @@ impl crate::System::Linq::Enumerable {
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2535,14 +2607,15 @@ impl crate::System::Linq::Enumerable {
             >("ToDictionary")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToDictionary", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ToDictionary", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<TKey, TElement>,
         > = unsafe {
-            method.invoke_unchecked((), (source, keySelector, elementSelector))
+            method.invoke_unchecked((), (source, keySelector, elementSelector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2570,7 +2643,7 @@ impl crate::System::Linq::Enumerable {
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2589,14 +2662,16 @@ impl crate::System::Linq::Enumerable {
             >("ToDictionary")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToDictionary", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ToDictionary", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<TKey, TElement>,
         > = unsafe {
-            method.invoke_unchecked((), (source, keySelector, elementSelector, comparer))
+            method
+                .invoke_unchecked((), (source, keySelector, elementSelector, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2616,7 +2691,7 @@ impl crate::System::Linq::Enumerable {
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2631,13 +2706,14 @@ impl crate::System::Linq::Enumerable {
             >("ToDictionary")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToDictionary", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ToDictionary", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<TKey, TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, keySelector)) };
+        > = unsafe { method.invoke_unchecked((), (source, keySelector))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToHashSet_IEnumerable_1_0<TSource>(
@@ -2653,7 +2729,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -2665,13 +2741,14 @@ impl crate::System::Linq::Enumerable {
             >("ToHashSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToHashSet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ToHashSet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToHashSet_IEqualityComparer_1_1<TSource>(
@@ -2690,7 +2767,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2707,13 +2784,14 @@ impl crate::System::Linq::Enumerable {
             >("ToHashSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToHashSet", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ToHashSet", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, comparer)) };
+        > = unsafe { method.invoke_unchecked((), (source, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToList<TSource>(
@@ -2727,7 +2805,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -2739,13 +2817,14 @@ impl crate::System::Linq::Enumerable {
             >("ToList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToList", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ToList", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source)) };
+        > = unsafe { method.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn Union<TSource>(
@@ -2764,7 +2843,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2781,13 +2860,14 @@ impl crate::System::Linq::Enumerable {
             >("Union")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Union", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Union", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second)) };
+        > = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnionIterator<TSource>(
@@ -2809,7 +2889,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2829,13 +2909,14 @@ impl crate::System::Linq::Enumerable {
             >("UnionIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnionIterator", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "UnionIterator", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (first, second, comparer)) };
+        > = unsafe { method.invoke_unchecked((), (first, second, comparer))? };
         Ok(__cordl_ret.into())
     }
     pub fn Where<TSource>(
@@ -2852,7 +2933,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2867,13 +2948,14 @@ impl crate::System::Linq::Enumerable {
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Where", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked((), (source, predicate)) };
+        > = unsafe { method.invoke_unchecked((), (source, predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn Zip<TFirst, TSecond, TResult>(
@@ -2899,7 +2981,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2919,13 +3001,14 @@ impl crate::System::Linq::Enumerable {
             >("Zip")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Zip", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "Zip", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (first, second, resultSelector)) };
+        > = unsafe { method.invoke_unchecked((), (first, second, resultSelector))? };
         Ok(__cordl_ret.into())
     }
     pub fn ZipIterator<TFirst, TSecond, TResult>(
@@ -2951,7 +3034,7 @@ impl crate::System::Linq::Enumerable {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -2971,13 +3054,14 @@ impl crate::System::Linq::Enumerable {
             >("ZipIterator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ZipIterator", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable as quest_hook::libil2cpp::Type >
+                    ::class(), "ZipIterator", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (first, second, resultSelector)) };
+        > = unsafe { method.invoke_unchecked((), (first, second, resultSelector))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -3064,7 +3148,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3074,13 +3160,14 @@ impl<
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Enumerable_Iterator_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -3090,16 +3177,19 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3114,7 +3204,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3124,13 +3216,14 @@ impl<
             >("GetEnumerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnumerator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEnumerator", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerator_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -3138,15 +3231,18 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "MoveNext", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -3174,7 +3270,9 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>),
                 quest_hook::libil2cpp::Gc<
@@ -3184,13 +3282,14 @@ impl<
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Select", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -3202,7 +3301,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -3210,13 +3311,15 @@ impl<
             >("System.Collections.IEnumerable.GetEnumerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.Collections.IEnumerable.GetEnumerator", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "System.Collections.IEnumerable.GetEnumerator", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_Reset(
@@ -3226,7 +3329,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -3234,12 +3339,14 @@ impl<
             >("System.Collections.IEnumerator.Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.Collections.IEnumerator.Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "System.Collections.IEnumerator.Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3252,7 +3359,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -3260,13 +3369,15 @@ impl<
             >("System.Collections.IEnumerator.get_Current")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "System.Collections.IEnumerator.get_Current", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "System.Collections.IEnumerator.get_Current", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Where(
@@ -3281,7 +3392,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>),
                 quest_hook::libil2cpp::Gc<
@@ -3291,13 +3404,14 @@ impl<
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Where", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, (predicate)) };
+        > = unsafe { method.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -3305,16 +3419,19 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3323,15 +3440,18 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_Iterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), TSource, 0usize>("get_Current")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Current", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_Iterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Current", 0usize
                 )
             });
-        let __cordl_ret: TSource = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: TSource = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -3501,7 +3621,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereArrayIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3511,13 +3633,14 @@ impl<
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereArrayIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Enumerable_Iterator_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -3525,15 +3648,18 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereArrayIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereArrayIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "MoveNext", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3564,7 +3690,9 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereArrayIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>),
                 quest_hook::libil2cpp::Gc<
@@ -3574,13 +3702,14 @@ impl<
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereArrayIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Select", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Where(
@@ -3595,7 +3724,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereArrayIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>),
                 quest_hook::libil2cpp::Gc<
@@ -3605,13 +3736,14 @@ impl<
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereArrayIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Where", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, (predicate)) };
+        > = unsafe { method.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -3623,7 +3755,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereArrayIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3636,12 +3770,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereArrayIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, predicate))
+            method.invoke_unchecked(self, (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3734,7 +3869,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereEnumerableIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3744,13 +3881,14 @@ impl<
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereEnumerableIterator_1 < TSource
+                    > as quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Enumerable_Iterator_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -3760,16 +3898,19 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereEnumerableIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereEnumerableIterator_1 < TSource
+                    > as quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3778,15 +3919,18 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereEnumerableIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereEnumerableIterator_1 < TSource
+                    > as quest_hook::libil2cpp::Type > ::class(), "MoveNext", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3819,7 +3963,9 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereEnumerableIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>),
                 quest_hook::libil2cpp::Gc<
@@ -3829,13 +3975,14 @@ impl<
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereEnumerableIterator_1 < TSource
+                    > as quest_hook::libil2cpp::Type > ::class(), "Select", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Where(
@@ -3850,7 +3997,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereEnumerableIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>),
                 quest_hook::libil2cpp::Gc<
@@ -3860,13 +4009,14 @@ impl<
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereEnumerableIterator_1 < TSource
+                    > as quest_hook::libil2cpp::Type > ::class(), "Where", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, (predicate)) };
+        > = unsafe { method.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -3880,7 +4030,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereEnumerableIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3893,12 +4045,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereEnumerableIterator_1 < TSource
+                    > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, predicate))
+            method.invoke_unchecked(self, (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3989,7 +4142,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereListIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -3999,13 +4154,14 @@ impl<
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereListIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Enumerable_Iterator_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -4013,15 +4169,18 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereListIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereListIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "MoveNext", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4054,7 +4213,9 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereListIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>),
                 quest_hook::libil2cpp::Gc<
@@ -4064,13 +4225,14 @@ impl<
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereListIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Select", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Where(
@@ -4085,7 +4247,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereListIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, bool>>),
                 quest_hook::libil2cpp::Gc<
@@ -4095,13 +4259,14 @@ impl<
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereListIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), "Where", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { method.invoke_unchecked(self, (predicate)) };
+        > = unsafe { method.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -4115,7 +4280,9 @@ impl<
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereListIterator_1<
+            TSource,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -4128,12 +4295,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereListIterator_1 < TSource > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, predicate))
+            method.invoke_unchecked(self, (source, predicate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4239,7 +4407,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -4249,13 +4420,15 @@ impl<
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectArrayIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Enumerable_Iterator_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -4265,15 +4438,20 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectArrayIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "MoveNext", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4309,7 +4487,10 @@ impl<
         TResult2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, TResult2>>),
                 quest_hook::libil2cpp::Gc<
@@ -4319,13 +4500,15 @@ impl<
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectArrayIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "Select", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult2>,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Where(
@@ -4342,7 +4525,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, bool>>),
                 quest_hook::libil2cpp::Gc<
@@ -4352,13 +4538,15 @@ impl<
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectArrayIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "Where", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, (predicate)) };
+        > = unsafe { method.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -4373,7 +4561,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -4387,12 +4578,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectArrayIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, predicate, selector))
+            method.invoke_unchecked(self, (source, predicate, selector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4505,7 +4698,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -4515,13 +4711,15 @@ impl<
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectEnumerableIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Enumerable_Iterator_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -4533,16 +4731,21 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectEnumerableIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -4553,15 +4756,20 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectEnumerableIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "MoveNext", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4599,7 +4807,10 @@ impl<
         TResult2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, TResult2>>),
                 quest_hook::libil2cpp::Gc<
@@ -4609,13 +4820,15 @@ impl<
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectEnumerableIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "Select", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult2>,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Where(
@@ -4632,7 +4845,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, bool>>),
                 quest_hook::libil2cpp::Gc<
@@ -4642,13 +4858,15 @@ impl<
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectEnumerableIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    "Where", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, (predicate)) };
+        > = unsafe { method.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -4665,7 +4883,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -4679,12 +4900,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectEnumerableIterator_2 <
+                    TSource, TResult > as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, predicate, selector))
+            method.invoke_unchecked(self, (source, predicate, selector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4795,7 +5018,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectListIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -4805,13 +5031,14 @@ impl<
             >("Clone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Clone", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectListIterator_2 < TSource,
+                    TResult > as quest_hook::libil2cpp::Type > ::class(), "Clone", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Enumerable_Iterator_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -4821,15 +5048,20 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectListIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectListIterator_2 < TSource,
+                    TResult > as quest_hook::libil2cpp::Type > ::class(), "MoveNext",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4867,7 +5099,10 @@ impl<
         TResult2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectListIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, TResult2>>),
                 quest_hook::libil2cpp::Gc<
@@ -4877,13 +5112,15 @@ impl<
             >("Select")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Select", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectListIterator_2 < TSource,
+                    TResult > as quest_hook::libil2cpp::Type > ::class(), "Select",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult2>,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Where(
@@ -4900,7 +5137,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectListIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Func_2<TResult, bool>>),
                 quest_hook::libil2cpp::Gc<
@@ -4910,13 +5150,14 @@ impl<
             >("Where")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Where", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectListIterator_2 < TSource,
+                    TResult > as quest_hook::libil2cpp::Type > ::class(), "Where", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { method.invoke_unchecked(self, (predicate)) };
+        > = unsafe { method.invoke_unchecked(self, (predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -4933,7 +5174,10 @@ impl<
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Enumerable_WhereSelectListIterator_2<
+            TSource,
+            TResult,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -4947,12 +5191,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Enumerable_WhereSelectListIterator_2 < TSource,
+                    TResult > as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, predicate, selector))
+            method.invoke_unchecked(self, (source, predicate, selector))?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -60,13 +60,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("Connect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Connect", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "Connect", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (classToProxy, url, data)) };
+        > = unsafe { method.invoke_unchecked((), (classToProxy, url, data))? };
         Ok(__cordl_ret.into())
     }
     pub fn Connect_Type_Il2CppString0(
@@ -75,7 +76,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -86,13 +87,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("Connect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Connect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "Connect", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (classToProxy, url)) };
+        > = unsafe { method.invoke_unchecked((), (classToProxy, url))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientActivatedServerIdentity(
@@ -104,7 +106,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             crate::System::Runtime::Remoting::ClientActivatedIdentity,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -118,13 +120,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("CreateClientActivatedServerIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateClientActivatedServerIdentity", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateClientActivatedServerIdentity", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientActivatedIdentity,
-        > = unsafe { method.invoke_unchecked((), (realObject, objectType, objectUri)) };
+        > = unsafe { method.invoke_unchecked((), (realObject, objectType, objectUri))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientProxyForContextBound(
@@ -137,7 +141,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -154,13 +158,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("CreateClientProxyForContextBound")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateClientProxyForContextBound", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateClientProxyForContextBound", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, activationAttributes)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, activationAttributes))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientProxy_ActivatedClientTypeEntry_Il2CppArray0(
@@ -175,7 +181,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -194,13 +200,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("CreateClientProxy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateClientProxy", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateClientProxy", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (entry, activationAttributes)) };
+        > = unsafe { method.invoke_unchecked((), (entry, activationAttributes))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateClientProxy_Type_Il2CppString_Il2CppArray1(
@@ -214,7 +221,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -232,14 +239,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("CreateClientProxy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateClientProxy", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateClientProxy", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked((), (objectType, url, activationAttributes))
+            method.invoke_unchecked((), (objectType, url, activationAttributes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -250,7 +258,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::WellKnownClientTypeEntry,
@@ -260,13 +268,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("CreateClientProxy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateClientProxy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateClientProxy", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (entry)) };
+        > = unsafe { method.invoke_unchecked((), (entry))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateContextBoundObjectIdentity(
@@ -276,7 +285,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             crate::System::Runtime::Remoting::ClientActivatedIdentity,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<
@@ -286,13 +295,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("CreateContextBoundObjectIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateContextBoundObjectIdentity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateContextBoundObjectIdentity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientActivatedIdentity,
-        > = unsafe { method.invoke_unchecked((), (objectType)) };
+        > = unsafe { method.invoke_unchecked((), (objectType))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateWellKnownServerIdentity(
@@ -302,7 +313,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ServerIdentity>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -316,13 +327,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("CreateWellKnownServerIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateWellKnownServerIdentity", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateWellKnownServerIdentity", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ServerIdentity,
-        > = unsafe { method.invoke_unchecked((), (objectType, objectUri, mode)) };
+        > = unsafe { method.invoke_unchecked((), (objectType, objectUri, mode))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeCallData(
@@ -330,7 +343,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -338,19 +351,21 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("DeserializeCallData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeserializeCallData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "DeserializeCallData",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (array)) };
+        > = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn DisposeIdentity(
         ident: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>),
                 quest_hook::libil2cpp::Void,
@@ -358,12 +373,13 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("DisposeIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisposeIdentity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "DisposeIdentity", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ident))
+            method.invoke_unchecked((), (ident))?
         };
         Ok(__cordl_ret.into())
     }
@@ -378,7 +394,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -394,13 +410,17 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("FindInterfaceMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindInterfaceMethod", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "FindInterfaceMethod",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, methodName, signature)) };
+        > = unsafe {
+            method.invoke_unchecked((), (_cordl_type, methodName, signature))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetClientChannelSinkChain(
@@ -414,7 +434,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -430,13 +450,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetClientChannelSinkChain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetClientChannelSinkChain", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetClientChannelSinkChain",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        > = unsafe { method.invoke_unchecked((), (url, channelData, objectUri)) };
+        > = unsafe { method.invoke_unchecked((), (url, channelData, objectUri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIdentityForUri(
@@ -444,7 +466,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
@@ -452,13 +474,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetIdentityForUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetIdentityForUri", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetIdentityForUri", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Identity,
-        > = unsafe { method.invoke_unchecked((), (uri)) };
+        > = unsafe { method.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMessageTargetIdentity(
@@ -468,7 +491,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -478,13 +501,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetMessageTargetIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMessageTargetIdentity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMessageTargetIdentity",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Identity,
-        > = unsafe { method.invoke_unchecked((), (msg)) };
+        > = unsafe { method.invoke_unchecked((), (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodBaseFromMethodMessage(
@@ -494,7 +519,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Messaging::IMethodMessage,
@@ -504,13 +529,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetMethodBaseFromMethodMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethodBaseFromMethodMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetMethodBaseFromMethodMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (msg)) };
+        > = unsafe { method.invoke_unchecked((), (msg))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodBaseFromName(
@@ -524,7 +551,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -540,13 +567,17 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetMethodBaseFromName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMethodBaseFromName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMethodBaseFromName",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, methodName, signature)) };
+        > = unsafe {
+            method.invoke_unchecked((), (_cordl_type, methodName, signature))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNormalizedUri(
@@ -554,7 +585,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -562,13 +593,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetNormalizedUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNormalizedUri", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNormalizedUri", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (uri)) };
+        > = unsafe { method.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectData(
@@ -578,7 +610,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         >,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -592,12 +624,13 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetObjectData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetObjectData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (obj, info, context))
+            method.invoke_unchecked((), (obj, info, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -610,7 +643,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ClientIdentity>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
@@ -626,13 +659,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetOrCreateClientIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOrCreateClientIdentity", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOrCreateClientIdentity",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ClientIdentity,
-        > = unsafe { method.invoke_unchecked((), (objRef, proxyType, clientProxy)) };
+        > = unsafe { method.invoke_unchecked((), (objRef, proxyType, clientProxy))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetProxyForRemoteObject(
@@ -641,7 +676,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
@@ -652,13 +687,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetProxyForRemoteObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProxyForRemoteObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetProxyForRemoteObject",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objref, classToProxy)) };
+        > = unsafe { method.invoke_unchecked((), (objref, classToProxy))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRealProxy(
@@ -666,7 +703,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Proxies::RealProxy>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<
@@ -676,13 +713,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetRealProxy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRealProxy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRealProxy", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Proxies::RealProxy,
-        > = unsafe { method.invoke_unchecked((), (proxy)) };
+        > = unsafe { method.invoke_unchecked((), (proxy))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRemoteObject(
@@ -691,7 +729,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
@@ -702,19 +740,20 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetRemoteObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRemoteObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRemoteObject", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objRef, proxyType)) };
+        > = unsafe { method.invoke_unchecked((), (objRef, proxyType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServerTypeForUri(
         URI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -722,12 +761,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetServerTypeForUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetServerTypeForUri", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetServerTypeForUri",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (URI))
+            method.invoke_unchecked((), (URI))?
         };
         Ok(__cordl_ret.into())
     }
@@ -737,7 +778,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -748,13 +789,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("GetVirtualMethod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetVirtualMethod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "GetVirtualMethod", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodBase,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type, method)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, method))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalExecute(
@@ -775,7 +817,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
@@ -802,13 +844,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("InternalExecute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalExecute", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalExecute", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (method, obj, parameters, out_args)) };
+        > = unsafe { method.invoke_unchecked((), (method, obj, parameters, out_args))? };
         Ok(__cordl_ret.into())
     }
     pub fn InternalExecuteMessage(
@@ -821,7 +864,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -836,19 +879,21 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("InternalExecuteMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalExecuteMessage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalExecuteMessage",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
-        > = unsafe { method.invoke_unchecked((), (target, reqMsg)) };
+        > = unsafe { method.invoke_unchecked((), (target, reqMsg))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsOneWay(
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>),
                 bool,
@@ -856,17 +901,18 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("IsOneWay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsOneWay", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "IsOneWay", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (method)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (method))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTransparentProxy(
         proxy: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -874,11 +920,12 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("IsTransparentProxy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTransparentProxy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTransparentProxy", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (proxy)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (proxy))? };
         Ok(__cordl_ret.into())
     }
     pub fn Marshal_Il2CppString_Type1(
@@ -888,7 +935,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -900,13 +947,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("Marshal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Marshal", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "Marshal", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ObjRef,
-        > = unsafe { method.invoke_unchecked((), (Obj, ObjURI, RequestedType)) };
+        > = unsafe { method.invoke_unchecked((), (Obj, ObjURI, RequestedType))? };
         Ok(__cordl_ret.into())
     }
     pub fn Marshal_MarshalByRefObject0(
@@ -914,7 +962,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>),
                 quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
@@ -922,19 +970,20 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("Marshal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Marshal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "Marshal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ObjRef,
-        > = unsafe { method.invoke_unchecked((), (Obj)) };
+        > = unsafe { method.invoke_unchecked((), (Obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn NewUri() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -942,19 +991,20 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("NewUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NewUri", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "NewUri", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterInternalChannels() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -962,12 +1012,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("RegisterInternalChannels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterInternalChannels", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterInternalChannels",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -976,7 +1028,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             crate::System::Runtime::Remoting::ServerIdentity,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::ServerIdentity,
@@ -986,12 +1038,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("RegisterServerIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterServerIdentity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterServerIdentity",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (identity))
+            method.invoke_unchecked((), (identity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1000,7 +1054,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1008,13 +1062,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("RemoveAppNameFromUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveAppNameFromUri", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveAppNameFromUri",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (uri)) };
+        > = unsafe { method.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeCallData(
@@ -1022,7 +1078,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1030,13 +1086,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("SerializeCallData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializeCallData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializeCallData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (obj)) };
+        > = unsafe { method.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeExceptionData(
@@ -1044,7 +1101,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Exception>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1052,13 +1109,15 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("SerializeExceptionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializeExceptionData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializeExceptionData",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (ex)) };
+        > = unsafe { method.invoke_unchecked((), (ex))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMessageTargetIdentity(
@@ -1067,7 +1126,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         >,
         ident: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Identity>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1080,12 +1139,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("SetMessageTargetIdentity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMessageTargetIdentity", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMessageTargetIdentity",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (msg, ident))
+            method.invoke_unchecked((), (msg, ident))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1094,7 +1155,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1102,13 +1163,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("Unmarshal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Unmarshal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "Unmarshal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objectRef)) };
+        > = unsafe { method.invoke_unchecked((), (objectRef))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unmarshal__cordl_bool1(
@@ -1117,7 +1179,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ObjRef>,
@@ -1128,13 +1190,14 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("Unmarshal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Unmarshal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "Unmarshal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (objectRef, fRefine)) };
+        > = unsafe { method.invoke_unchecked((), (objectRef, fRefine))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateOutArgObject(
@@ -1142,7 +1205,7 @@ impl crate::System::Runtime::Remoting::RemotingServices {
         local: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         remote: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
@@ -1154,12 +1217,13 @@ impl crate::System::Runtime::Remoting::RemotingServices {
             >("UpdateOutArgObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateOutArgObject", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateOutArgObject", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (pi, local, remote))
+            method.invoke_unchecked((), (pi, local, remote))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1227,16 +1291,17 @@ impl crate::System::Runtime::Remoting::RemotingServices_CACD {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::RemotingServices_CACD as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::RemotingServices_CACD as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

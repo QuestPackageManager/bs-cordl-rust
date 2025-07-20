@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::OculusXRPlugin {
         y: f32,
         z: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusXRPlugin as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -51,12 +51,14 @@ impl crate::GlobalNamespace::OculusXRPlugin {
             >("SetAppSpacePosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAppSpacePosition", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusXRPlugin as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAppSpacePosition",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x, y, z))
+            method.invoke_unchecked((), (x, y, z))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +68,7 @@ impl crate::GlobalNamespace::OculusXRPlugin {
         z: f32,
         w: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusXRPlugin as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -74,12 +76,14 @@ impl crate::GlobalNamespace::OculusXRPlugin {
             >("SetAppSpaceRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAppSpaceRotation", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusXRPlugin as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAppSpaceRotation",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x, y, z, w))
+            method.invoke_unchecked((), (x, y, z, w))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +93,7 @@ impl crate::GlobalNamespace::OculusXRPlugin {
         z: f32,
         w: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusXRPlugin as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -97,12 +101,13 @@ impl crate::GlobalNamespace::OculusXRPlugin {
             >("SetColorOffset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColorOffset", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusXRPlugin as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColorOffset", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x, y, z, w))
+            method.invoke_unchecked((), (x, y, z, w))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +117,7 @@ impl crate::GlobalNamespace::OculusXRPlugin {
         z: f32,
         w: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusXRPlugin as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -120,19 +125,20 @@ impl crate::GlobalNamespace::OculusXRPlugin {
             >("SetColorScale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetColorScale", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusXRPlugin as
+                    quest_hook::libil2cpp::Type > ::class(), "SetColorScale", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (x, y, z, w))
+            method.invoke_unchecked((), (x, y, z, w))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetDepthSubmission(
         enable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusXRPlugin as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -140,19 +146,20 @@ impl crate::GlobalNamespace::OculusXRPlugin {
             >("SetDepthSubmission")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDepthSubmission", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusXRPlugin as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDepthSubmission", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (enable))
+            method.invoke_unchecked((), (enable))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetSpaceWarp(
         on: crate::GlobalNamespace::OVRPlugin_Bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusXRPlugin as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::OVRPlugin_Bool),
                 quest_hook::libil2cpp::Void,
@@ -160,12 +167,13 @@ impl crate::GlobalNamespace::OculusXRPlugin {
             >("SetSpaceWarp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSpaceWarp", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusXRPlugin as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSpaceWarp", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (on))
+            method.invoke_unchecked((), (on))?
         };
         Ok(__cordl_ret.into())
     }

@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -57,13 +57,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("GetCurveParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurveParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurveParameters", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_IPasswordFinder1(
@@ -97,7 +98,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -109,13 +110,15 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadAttributeCertificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadAttributeCertificate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadAttributeCertificate",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadCertificate(
@@ -126,7 +129,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -138,13 +141,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadCertificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadCertificate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadCertificate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Certificate,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadCertificateRequest(
@@ -157,7 +161,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequest,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -169,13 +173,15 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadCertificateRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadCertificateRequest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadCertificateRequest",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequest,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadCrl(
@@ -186,7 +192,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -196,13 +202,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadCrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadCrl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadCrl", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Crl,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObject(
@@ -210,7 +217,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -218,13 +225,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadObject", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadObject", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadPkcs7(
@@ -235,7 +243,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::ContentInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -247,13 +255,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadPkcs7")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadPkcs7", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadPkcs7", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadPrivateKey(
@@ -264,7 +273,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -274,13 +283,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadPrivateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadPrivateKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadPrivateKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadPublicKey(
@@ -293,7 +303,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -305,13 +315,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadPublicKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadRsaPublicKey(
@@ -324,7 +335,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -336,13 +347,14 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >("ReadRsaPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadRsaPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadRsaPublicKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked(self, (pemObject)) };
+        > = unsafe { method.invoke_unchecked(self, (pemObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IPasswordFinder1(
@@ -352,7 +364,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             crate::Org::BouncyCastle::OpenSsl::IPasswordFinder,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
@@ -365,12 +377,13 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader, pFinder))
+            method.invoke_unchecked(self, (reader, pFinder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -378,7 +391,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::OpenSsl::PemReader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>),
                 quest_hook::libil2cpp::Void,
@@ -386,12 +399,13 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::OpenSsl::PemReader as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }

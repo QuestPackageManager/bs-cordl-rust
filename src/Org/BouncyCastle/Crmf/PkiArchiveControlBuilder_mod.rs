@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
@@ -67,13 +67,15 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             >("AddRecipientGenerator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddRecipientGenerator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddRecipientGenerator",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder,
-        > = unsafe { method.invoke_unchecked(self, (recipientGen)) };
+        > = unsafe { method.invoke_unchecked(self, (recipientGen))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build(
@@ -84,7 +86,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PkiArchiveControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::ICipherBuilderWithKey,
@@ -96,13 +98,14 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PkiArchiveControl,
-        > = unsafe { method.invoke_unchecked(self, (contentEncryptor)) };
+        > = unsafe { method.invoke_unchecked(self, (contentEncryptor))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -128,7 +131,7 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -143,12 +146,13 @@ impl crate::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crmf::PkiArchiveControlBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (privateKeyInfo, generalName))
+            method.invoke_unchecked(self, (privateKeyInfo, generalName))?
         };
         Ok(__cordl_ret.into())
     }

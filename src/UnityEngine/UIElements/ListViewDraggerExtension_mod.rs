@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ListViewDraggerExtension as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -62,13 +62,15 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
             >("GetRecycledItemFromId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRecycledItemFromId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ListViewDraggerExtension as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRecycledItemFromId",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ReusableCollectionItem,
-        > = unsafe { method.invoke_unchecked((), (listView, id)) };
+        > = unsafe { method.invoke_unchecked((), (listView, id))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRecycledItemFromIndex(
@@ -79,7 +81,7 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ListViewDraggerExtension as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -94,13 +96,15 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
             >("GetRecycledItemFromIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRecycledItemFromIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ListViewDraggerExtension as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRecycledItemFromIndex",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ReusableCollectionItem,
-        > = unsafe { method.invoke_unchecked((), (listView, index)) };
+        > = unsafe { method.invoke_unchecked((), (listView, index))? };
         Ok(__cordl_ret.into())
     }
 }

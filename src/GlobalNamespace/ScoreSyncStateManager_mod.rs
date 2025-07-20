@@ -67,16 +67,17 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         currTime: i64,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i64, i32, i64, i64), i32, 5usize>("Interpolate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Interpolate", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Interpolate", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (prev, prevTime, curr, currTime, _cordl_time))
+            method.invoke_unchecked(self, (prev, prevTime, curr, currTime, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,16 +91,17 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,7 +110,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
@@ -116,12 +118,14 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
             >("get_deltaMessageType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deltaMessageType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_deltaMessageType",
+                    0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,7 +140,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -150,8 +154,10 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
             >("get_deltaSerializablePool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deltaSerializablePool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_deltaSerializablePool",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -160,45 +166,51 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                     crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deltaUpdateFrequencyMs(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_deltaUpdateFrequencyMs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deltaUpdateFrequencyMs", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_deltaUpdateFrequencyMs", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_fullStateUpdateFrequencyMs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_fullStateUpdateFrequencyMs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_fullStateUpdateFrequencyMs", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_fullStateUpdateFrequencyMs", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_localBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_localBufferSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_localBufferSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_localBufferSize",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_messageType(
@@ -206,7 +218,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
@@ -214,25 +226,28 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
             >("get_messageType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_messageType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_messageType", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_remoteBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_remoteBufferSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_remoteBufferSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_remoteBufferSize",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_serializablePool(
@@ -246,7 +261,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreSyncStateManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -260,8 +275,10 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
             >("get_serializablePool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_serializablePool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreSyncStateManager as
+                    quest_hook::libil2cpp::Type > ::class(), "get_serializablePool",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -270,7 +287,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                     crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

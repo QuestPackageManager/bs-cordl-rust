@@ -88,16 +88,21 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IMemoryPool_3<
+            TParam1,
+            TParam2,
+            TValue,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TParam1, TParam2), TValue, 2usize>("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IMemoryPool_3 < TParam1, TParam2, TValue > as
+                    quest_hook::libil2cpp::Type > ::class(), "Spawn", 2usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (param1, param2))
+            method.invoke_unchecked(self, (param1, param2))?
         };
         Ok(__cordl_ret.into())
     }

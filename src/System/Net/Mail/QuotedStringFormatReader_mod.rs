@@ -43,16 +43,17 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
         allowUnicode: bool,
         ch: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::QuotedStringFormatReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(bool, char), bool, 2usize>("IsValidQtext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidQtext", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::QuotedStringFormatReader as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidQtext", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (allowUnicode, ch))
+            method.invoke_unchecked((), (allowUnicode, ch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -61,7 +62,7 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
         index: i32,
         permitUnicode: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::QuotedStringFormatReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -73,12 +74,13 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
             >("ReadReverseQuoted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadReverseQuoted", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::QuotedStringFormatReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadReverseQuoted", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (data, index, permitUnicode))
+            method.invoke_unchecked((), (data, index, permitUnicode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +90,7 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
         permitUnicode: bool,
         expectCommaDelimiter: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::QuotedStringFormatReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -101,13 +103,18 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
             >("ReadReverseUnQuoted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadReverseUnQuoted", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::QuotedStringFormatReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadReverseUnQuoted",
+                    4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
             method
-                .invoke_unchecked((), (data, index, permitUnicode, expectCommaDelimiter))
+                .invoke_unchecked(
+                    (),
+                    (data, index, permitUnicode, expectCommaDelimiter),
+                )?
         };
         Ok(__cordl_ret.into())
     }

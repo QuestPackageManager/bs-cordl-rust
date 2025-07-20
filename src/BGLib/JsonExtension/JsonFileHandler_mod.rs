@@ -46,7 +46,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::JsonExtension::JsonFileHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 T,
@@ -54,11 +54,12 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             >("ReadFromFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFromFile", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::JsonExtension::JsonFileHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadFromFile", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (filePath)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFromFile_JsonSerializerSettings1<T>(
@@ -71,7 +72,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::JsonExtension::JsonFileHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -84,12 +85,13 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             >("ReadFromFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFromFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::JsonExtension::JsonFileHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadFromFile", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (filePath, settings))
+            method.invoke_unchecked((), (filePath, settings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +105,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::JsonExtension::JsonFileHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
@@ -116,12 +118,13 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             >("ReadFromText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFromText", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::JsonExtension::JsonFileHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadFromText", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (textReader, settings))
+            method.invoke_unchecked((), (textReader, settings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +136,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::JsonExtension::JsonFileHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -141,12 +144,14 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             >("WriteCompactWithoutDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteCompactWithoutDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::JsonExtension::JsonFileHandler as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteCompactWithoutDefault", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, filePath))
+            method.invoke_unchecked((), (content, filePath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +164,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::JsonExtension::JsonFileHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Void,
@@ -167,12 +172,14 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             >("WriteIndentedWithDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteIndentedWithDefault", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::JsonExtension::JsonFileHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteIndentedWithDefault",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, filePath, indentation))
+            method.invoke_unchecked((), (content, filePath, indentation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +199,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::JsonExtension::JsonFileHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     T,
@@ -213,12 +220,13 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             >("WriteToFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteToFile", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::JsonExtension::JsonFileHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteToFile", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (content, filePath, settings, beforeSerialize))
+            method.invoke_unchecked((), (content, filePath, settings, beforeSerialize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -238,7 +246,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::JsonExtension::JsonFileHandler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -259,12 +267,13 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             >("WriteToText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteToText", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::JsonExtension::JsonFileHandler as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteToText", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (writer, content, settings, beforeSerialize))
+            method.invoke_unchecked((), (writer, content, settings, beforeSerialize))?
         };
         Ok(__cordl_ret.into())
     }

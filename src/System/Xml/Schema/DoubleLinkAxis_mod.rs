@@ -44,7 +44,7 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::DoubleLinkAxis as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
@@ -52,13 +52,14 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
             >("ConvertTree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertTree", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::DoubleLinkAxis as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertTree", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::DoubleLinkAxis,
-        > = unsafe { method.invoke_unchecked((), (axis)) };
+        > = unsafe { method.invoke_unchecked((), (axis))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -76,7 +77,7 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
         axis: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
         inputaxis: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::DoubleLinkAxis as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
@@ -87,12 +88,13 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::DoubleLinkAxis as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (axis, inputaxis))
+            method.invoke_unchecked(self, (axis, inputaxis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +103,7 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::DoubleLinkAxis as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
@@ -109,20 +111,21 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
             >("get_Next")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Next", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::DoubleLinkAxis as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Next", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::MS::Internal::Xml::XPath::Axis,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Next(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::DoubleLinkAxis as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>),
                 quest_hook::libil2cpp::Void,
@@ -130,12 +133,13 @@ impl crate::System::Xml::Schema::DoubleLinkAxis {
             >("set_Next")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Next", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::DoubleLinkAxis as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Next", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

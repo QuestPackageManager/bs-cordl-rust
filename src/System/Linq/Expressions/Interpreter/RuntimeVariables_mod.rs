@@ -61,7 +61,7 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
             crate::System::Runtime::CompilerServices::IRuntimeVariables,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::RuntimeVariables as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -77,13 +77,14 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::RuntimeVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::IRuntimeVariables,
-        > = unsafe { method.invoke_unchecked((), (boxes)) };
+        > = unsafe { method.invoke_unchecked((), (boxes))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -111,7 +112,7 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::RuntimeVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -125,12 +126,13 @@ impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::RuntimeVariables as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (boxes))
+            method.invoke_unchecked(self, (boxes))?
         };
         Ok(__cordl_ret.into())
     }

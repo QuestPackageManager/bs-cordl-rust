@@ -58,7 +58,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -79,8 +79,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("CollectFaceGroups")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CollectFaceGroups", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "CollectFaceGroups", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -91,14 +92,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, face)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, face))? };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsDegenerateTriangles_Face2(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -111,11 +112,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("ContainsDegenerateTriangles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsDegenerateTriangles", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ContainsDegenerateTriangles", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, face)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, face))? };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsDegenerateTriangles_IList_1_1(
@@ -126,7 +129,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -145,17 +148,19 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("ContainsDegenerateTriangles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsDegenerateTriangles", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ContainsDegenerateTriangles", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, faces)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, faces))? };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsDegenerateTriangles_ProBuilderMesh0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -165,18 +170,20 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("ContainsDegenerateTriangles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsDegenerateTriangles", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ContainsDegenerateTriangles", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh))? };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsNonContiguousTriangles(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -189,11 +196,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("ContainsNonContiguousTriangles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsNonContiguousTriangles", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ContainsNonContiguousTriangles", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, face)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, face))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureArraySize<T>(
@@ -208,7 +217,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -223,12 +232,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureArraySize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureArraySize", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureArraySize", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute, expectedVertexCount, strategy, fill))
+            method
+                .invoke_unchecked((), (attribute, expectedVertexCount, strategy, fill))?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,7 +257,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -269,15 +280,17 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureFacesAreComposedOfContiguousTriangles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureFacesAreComposedOfContiguousTriangles", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EnsureFacesAreComposedOfContiguousTriangles", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, faces)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, faces))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureListSize<T>(
@@ -292,7 +305,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -309,12 +322,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureListSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureListSize", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureListSize", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute, expectedVertexCount, strategy, fill))
+            method
+                .invoke_unchecked((), (attribute, expectedVertexCount, strategy, fill))?
         };
         Ok(__cordl_ret.into())
     }
@@ -322,7 +337,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         removedVertices: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -335,12 +350,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureMeshIsValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureMeshIsValid", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureMeshIsValid", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (mesh, removedVertices))
+            method.invoke_unchecked((), (mesh, removedVertices))?
         };
         Ok(__cordl_ret.into())
     }
@@ -349,7 +365,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IList_1<
@@ -361,12 +377,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureRealNumbers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureRealNumbers", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureRealNumbers", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute))
+            method.invoke_unchecked((), (attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -375,7 +392,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IList_1<
@@ -387,12 +404,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureRealNumbers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureRealNumbers", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureRealNumbers", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute))
+            method.invoke_unchecked((), (attribute))?
         };
         Ok(__cordl_ret.into())
     }
@@ -401,7 +419,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IList_1<
@@ -413,19 +431,20 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureRealNumbers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureRealNumbers", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureRealNumbers", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (attribute))
+            method.invoke_unchecked((), (attribute))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureValidAttributes(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -435,12 +454,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("EnsureValidAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnsureValidAttributes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "EnsureValidAttributes",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh))
+            method.invoke_unchecked((), (mesh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -460,7 +481,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -481,15 +502,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("RebuildEdges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RebuildEdges", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "RebuildEdges", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = unsafe { method.invoke_unchecked((), (edges, removed)) };
+        > = unsafe { method.invoke_unchecked((), (edges, removed))? };
         Ok(__cordl_ret.into())
     }
     pub fn RebuildIndexes(
@@ -502,7 +524,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -519,13 +541,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("RebuildIndexes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RebuildIndexes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "RebuildIndexes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
-        > = unsafe { method.invoke_unchecked((), (indices, removed)) };
+        > = unsafe { method.invoke_unchecked((), (indices, removed))? };
         Ok(__cordl_ret.into())
     }
     pub fn RebuildSelectionIndexes(
@@ -549,7 +572,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -585,12 +608,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("RebuildSelectionIndexes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RebuildSelectionIndexes", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "RebuildSelectionIndexes",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces, edges, indices, removed))
+            method.invoke_unchecked((), (mesh, faces, edges, indices, removed))?
         };
         Ok(__cordl_ret.into())
     }
@@ -600,7 +625,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::List_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -615,11 +640,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("RemoveDegenerateTriangles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveDegenerateTriangles", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveDegenerateTriangles",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, removed)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, removed))? };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveUnusedVertices(
@@ -628,7 +655,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             crate::System::Collections::Generic::List_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -643,11 +670,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
             >("RemoveUnusedVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveUnusedVertices", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MeshValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveUnusedVertices",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, removed)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, removed))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,7 +47,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         cchFilename: u32,
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRScreenshotError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -63,8 +63,9 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >("GetScreenshotPropertyFilename")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetScreenshotPropertyFilename", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), "GetScreenshotPropertyFilename", 5usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
@@ -72,7 +73,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
                 .invoke_unchecked(
                     self,
                     (screenshotHandle, filenameType, pchFilename, cchFilename, pError),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +82,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         screenshotHandle: u32,
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRScreenshotError>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -94,12 +95,13 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >("GetScreenshotPropertyType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetScreenshotPropertyType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), "GetScreenshotPropertyType", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotType = unsafe {
-            method.invoke_unchecked(self, (screenshotHandle, pError))
+            method.invoke_unchecked(self, (screenshotHandle, pError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +111,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::EVRScreenshotType>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -121,12 +123,13 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >("HookScreenshot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HookScreenshot", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), "HookScreenshot", 1usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (pSupportedTypes))
+            method.invoke_unchecked(self, (pSupportedTypes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +151,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         >,
         pchVRFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<u32>,
@@ -161,8 +164,9 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >("RequestScreenshot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RequestScreenshot", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), "RequestScreenshot", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
@@ -175,7 +179,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
                         pchPreviewFilename,
                         pchVRFilename,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,7 +194,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -203,8 +207,9 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >("SubmitScreenshot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SubmitScreenshot", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), "SubmitScreenshot", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
@@ -217,7 +222,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
                         pchSourcePreviewFilename,
                         pchSourceVRFilename,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +234,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         >,
         pchVRFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<u32>,
@@ -241,8 +246,9 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >("TakeStereoScreenshot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TakeStereoScreenshot", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), "TakeStereoScreenshot", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
@@ -250,7 +256,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
                 .invoke_unchecked(
                     self,
                     (pOutScreenshotHandle, pchPreviewFilename, pchVRFilename),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -259,7 +265,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         screenshotHandle: u32,
         flProgress: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u32, f32),
                 crate::OVR::OpenVR::EVRScreenshotError,
@@ -267,12 +273,13 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >("UpdateScreenshotProgress")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateScreenshotProgress", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), "UpdateScreenshotProgress", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRScreenshotError = unsafe {
-            method.invoke_unchecked(self, (screenshotHandle, flProgress))
+            method.invoke_unchecked(self, (screenshotHandle, flProgress))?
         };
         Ok(__cordl_ret.into())
     }
@@ -280,7 +287,7 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -288,12 +295,13 @@ impl crate::OVR::OpenVR::CVRScreenshots {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRScreenshots as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

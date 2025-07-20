@@ -42,7 +42,7 @@ impl crate::UnityEngine::ProBuilder::VectorHash {
     pub fn GetHashCode_Vector2_0(
         v: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VectorHash as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2),
                 i32,
@@ -50,17 +50,18 @@ impl crate::UnityEngine::ProBuilder::VectorHash {
             >("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VectorHash as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode_Vector3_1(
         v: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VectorHash as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 i32,
@@ -68,17 +69,18 @@ impl crate::UnityEngine::ProBuilder::VectorHash {
             >("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VectorHash as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode_Vector4_2(
         v: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VectorHash as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector4),
                 i32,
@@ -86,23 +88,25 @@ impl crate::UnityEngine::ProBuilder::VectorHash {
             >("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VectorHash as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHashCode", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
     pub fn HashFloat(f: f32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::VectorHash as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), i32, 1usize>("HashFloat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HashFloat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::VectorHash as
+                    quest_hook::libil2cpp::Type > ::class(), "HashFloat", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (f)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (f))? };
         Ok(__cordl_ret.into())
     }
 }

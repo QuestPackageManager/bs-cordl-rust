@@ -48,7 +48,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EventInterestReflectionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -59,12 +59,14 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
             >("ComputeDefaultEventInterests")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeDefaultEventInterests", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EventInterestReflectionUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ComputeDefaultEventInterests", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (elementType, methodName))
+            method.invoke_unchecked((), (elementType, methodName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -73,7 +75,7 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         defaultActionCategories: quest_hook::libil2cpp::ByRefMut<i32>,
         defaultActionAtTargetCategories: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EventInterestReflectionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -85,8 +87,10 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
             >("GetDefaultEventInterests")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultEventInterests", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EventInterestReflectionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDefaultEventInterests",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -98,14 +102,14 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
                         defaultActionCategories,
                         defaultActionAtTargetCategories,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetEventCategory(
         eventType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::EventCategory> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EventInterestReflectionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 crate::UnityEngine::UIElements::EventCategory,
@@ -113,12 +117,13 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
             >("GetEventCategory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEventCategory", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EventInterestReflectionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEventCategory", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::EventCategory = unsafe {
-            method.invoke_unchecked((), (eventType))
+            method.invoke_unchecked((), (eventType))?
         };
         Ok(__cordl_ret.into())
     }

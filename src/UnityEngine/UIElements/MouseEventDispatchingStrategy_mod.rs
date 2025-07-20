@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
         &mut self,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>),
                 bool,
@@ -52,11 +52,12 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("CanDispatchEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanDispatchEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "CanDispatchEvent", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (evt)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (evt))? };
         Ok(__cordl_ret.into())
     }
     pub fn DispatchEvent(
@@ -64,7 +65,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         iPanel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -75,19 +76,20 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("DispatchEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DispatchEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "DispatchEvent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (evt, iPanel))
+            method.invoke_unchecked(self, (evt, iPanel))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsDone(
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>),
                 bool,
@@ -95,11 +97,12 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("IsDone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDone", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDone", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -115,7 +118,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             crate::UnityEngine::UIElements::BaseVisualElementPanel,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -128,11 +131,13 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("SendEventToIMGUIContainer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendEventToIMGUIContainer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "SendEventToIMGUIContainer",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt, panel)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt, panel))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendEventToRegularTarget(
@@ -141,7 +146,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             crate::UnityEngine::UIElements::BaseVisualElementPanel,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -154,11 +159,13 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("SendEventToRegularTarget")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendEventToRegularTarget", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "SendEventToRegularTarget",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt, panel)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt, panel))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendEventToTarget(
@@ -167,7 +174,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             crate::UnityEngine::UIElements::BaseVisualElementPanel,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -180,11 +187,12 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("SendEventToTarget")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendEventToTarget", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "SendEventToTarget", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt, panel)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (evt, panel))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetBestTargetForEvent(
@@ -193,7 +201,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             crate::UnityEngine::UIElements::BaseVisualElementPanel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -206,12 +214,14 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("SetBestTargetForEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBestTargetForEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "SetBestTargetForEvent",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (evt, panel))
+            method.invoke_unchecked((), (evt, panel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +234,7 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -242,28 +252,31 @@ impl crate::UnityEngine::UIElements::MouseEventDispatchingStrategy {
             >("UpdateElementUnderMouse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateElementUnderMouse", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateElementUnderMouse",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (evt, panel, elementUnderMouse))
+            method.invoke_unchecked((), (evt, panel, elementUnderMouse))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventDispatchingStrategy as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventDispatchingStrategy as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

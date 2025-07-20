@@ -49,7 +49,7 @@ impl crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
         bCliSide: bool,
         bAsync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -63,12 +63,14 @@ impl crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
             >("ProcessMessageFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessMessageFinish", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Contexts::IDynamicMessageSink as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessMessageFinish",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (replyMsg, bCliSide, bAsync))
+            method.invoke_unchecked(self, (replyMsg, bCliSide, bAsync))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +82,7 @@ impl crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
         bCliSide: bool,
         bAsync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -94,12 +96,14 @@ impl crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink {
             >("ProcessMessageStart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessMessageStart", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Contexts::IDynamicMessageSink as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessMessageStart",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reqMsg, bCliSide, bAsync))
+            method.invoke_unchecked(self, (reqMsg, bCliSide, bAsync))?
         };
         Ok(__cordl_ret.into())
     }

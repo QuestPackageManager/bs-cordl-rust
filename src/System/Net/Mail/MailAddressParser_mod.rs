@@ -43,7 +43,7 @@ impl crate::System::Net::Mail::MailAddressParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::MailAddressParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -51,13 +51,14 @@ impl crate::System::Net::Mail::MailAddressParser {
             >("NormalizeOrThrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NormalizeOrThrow", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::MailAddressParser as
+                    quest_hook::libil2cpp::Type > ::class(), "NormalizeOrThrow", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseAddress_Il2CppString0(
@@ -65,7 +66,7 @@ impl crate::System::Net::Mail::MailAddressParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Mail::MailAddress>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::MailAddressParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Net::Mail::MailAddress>,
@@ -73,13 +74,14 @@ impl crate::System::Net::Mail::MailAddressParser {
             >("ParseAddress")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseAddress", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::MailAddressParser as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseAddress", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Mail::MailAddress,
-        > = unsafe { method.invoke_unchecked((), (data)) };
+        > = unsafe { method.invoke_unchecked((), (data))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseAddress__cordl_bool_ByRefMut1(
@@ -89,7 +91,7 @@ impl crate::System::Net::Mail::MailAddressParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Mail::MailAddress>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::MailAddressParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -101,14 +103,15 @@ impl crate::System::Net::Mail::MailAddressParser {
             >("ParseAddress")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseAddress", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::MailAddressParser as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseAddress", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Mail::MailAddress,
         > = unsafe {
-            method.invoke_unchecked((), (data, expectMultipleAddresses, index))
+            method.invoke_unchecked((), (data, expectMultipleAddresses, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +122,7 @@ impl crate::System::Net::Mail::MailAddressParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::MailAddressParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -131,14 +134,15 @@ impl crate::System::Net::Mail::MailAddressParser {
             >("ParseDisplayName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseDisplayName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::MailAddressParser as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseDisplayName", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (data, index, expectMultipleAddresses))
+            method.invoke_unchecked((), (data, index, expectMultipleAddresses))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +152,7 @@ impl crate::System::Net::Mail::MailAddressParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::MailAddressParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -159,13 +163,14 @@ impl crate::System::Net::Mail::MailAddressParser {
             >("ParseDomain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseDomain", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::MailAddressParser as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseDomain", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (data, index)) };
+        > = unsafe { method.invoke_unchecked((), (data, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseLocalPart(
@@ -176,7 +181,7 @@ impl crate::System::Net::Mail::MailAddressParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::MailAddressParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -189,8 +194,9 @@ impl crate::System::Net::Mail::MailAddressParser {
             >("ParseLocalPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseLocalPart", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::MailAddressParser as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseLocalPart", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -200,7 +206,7 @@ impl crate::System::Net::Mail::MailAddressParser {
                 .invoke_unchecked(
                     (),
                     (data, index, expectAngleBracket, expectMultipleAddresses),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -208,7 +214,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::MailAddressParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 i32,
@@ -216,11 +222,13 @@ impl crate::System::Net::Mail::MailAddressParser {
             >("ReadCfwsAndThrowIfIncomplete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadCfwsAndThrowIfIncomplete", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::MailAddressParser as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadCfwsAndThrowIfIncomplete", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index))? };
         Ok(__cordl_ret.into())
     }
 }

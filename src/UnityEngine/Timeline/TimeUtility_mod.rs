@@ -42,16 +42,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frames: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), f64, 2usize>("FromFrames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromFrames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "FromFrames", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (frames, frameRate))
+            method.invoke_unchecked((), (frames, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -59,23 +60,24 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frames: i32,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, f64), f64, 2usize>("FromFrames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromFrames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "FromFrames", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (frames, frameRate))
+            method.invoke_unchecked((), (frames, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetAnimationClipLength(
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>),
                 f64,
@@ -83,17 +85,19 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("GetAnimationClipLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAnimationClipLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAnimationClipLength",
+                    1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (clip)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (clip))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetClosestFrameRate(
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameRate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64),
                 crate::UnityEngine::Playables::FrameRate,
@@ -101,12 +105,14 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("GetClosestFrameRate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetClosestFrameRate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetClosestFrameRate",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::FrameRate = unsafe {
-            method.invoke_unchecked((), (frameRate))
+            method.invoke_unchecked((), (frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,16 +120,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), f64, 2usize>("GetEpsilon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEpsilon", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEpsilon", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,16 +138,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), i32, 2usize>("NextFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NextFrame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "NextFrame", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,16 +156,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), f64, 2usize>("NextFrameTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NextFrameTime", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "NextFrameTime", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,16 +175,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
         epsilon: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64, f64), bool, 3usize>("OnFrameBoundary")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnFrameBoundary", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "OnFrameBoundary", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate, epsilon))
+            method.invoke_unchecked((), (_cordl_time, frameRate, epsilon))?
         };
         Ok(__cordl_ret.into())
     }
@@ -183,16 +193,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), bool, 2usize>("OnFrameBoundary")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnFrameBoundary", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "OnFrameBoundary", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,7 +212,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
         defaultValue: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -213,12 +224,13 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("ParseTimeCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseTimeCode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseTimeCode", 3usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (timeCode, frameRate, defaultValue))
+            method.invoke_unchecked((), (timeCode, frameRate, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +239,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         frameRate: f64,
         defaultValue: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -239,12 +251,13 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("ParseTimeSeconds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseTimeSeconds", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseTimeSeconds", 3usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (timeCode, frameRate, defaultValue))
+            method.invoke_unchecked((), (timeCode, frameRate, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,16 +265,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), i32, 2usize>("PreviousFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PreviousFrame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PreviousFrame", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -269,16 +283,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), f64, 2usize>("PreviousFrameTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PreviousFrameTime", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PreviousFrameTime", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -288,7 +303,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -299,29 +314,31 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("RemoveChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveChar", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveChar", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (str, charToRemoveFunc)) };
+        > = unsafe { method.invoke_unchecked((), (str, charToRemoveFunc))? };
         Ok(__cordl_ret.into())
     }
     pub fn RoundToFrame(
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), f64, 2usize>("RoundToFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RoundToFrame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "RoundToFrame", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,7 +349,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     f64,
@@ -344,13 +361,14 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("TimeAsFrames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TimeAsFrames", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "TimeAsFrames", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (timeValue, frameRate, format)) };
+        > = unsafe { method.invoke_unchecked((), (timeValue, frameRate, format))? };
         Ok(__cordl_ret.into())
     }
     pub fn TimeAsTimeCode(
@@ -360,7 +378,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     f64,
@@ -372,36 +390,38 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("TimeAsTimeCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TimeAsTimeCode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "TimeAsTimeCode", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (timeValue, frameRate, format)) };
+        > = unsafe { method.invoke_unchecked((), (timeValue, frameRate, format))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToExactFrames(
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), f64, 2usize>("ToExactFrames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToExactFrames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ToExactFrames", 2usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ToFrameRate(
         enumValue: crate::UnityEngine::Timeline::StandardFrameRates,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameRate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Timeline::StandardFrameRates),
                 crate::UnityEngine::Playables::FrameRate,
@@ -409,12 +429,13 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("ToFrameRate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToFrameRate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ToFrameRate", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::FrameRate = unsafe {
-            method.invoke_unchecked((), (enumValue))
+            method.invoke_unchecked((), (enumValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -422,16 +443,17 @@ impl crate::UnityEngine::Timeline::TimeUtility {
         _cordl_time: f64,
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64, f64), i32, 2usize>("ToFrames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToFrames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ToFrames", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (_cordl_time, frameRate))
+            method.invoke_unchecked((), (_cordl_time, frameRate))?
         };
         Ok(__cordl_ret.into())
     }
@@ -441,7 +463,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             crate::UnityEngine::Timeline::StandardFrameRates,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::FrameRate,
@@ -454,17 +476,21 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("ToStandardFrameRate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToStandardFrameRate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ToStandardFrameRate",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rate, standard)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (rate, standard))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateFrameRate(
         frameRate: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64),
                 quest_hook::libil2cpp::Void,
@@ -472,12 +498,13 @@ impl crate::UnityEngine::Timeline::TimeUtility {
             >("ValidateFrameRate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateFrameRate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ValidateFrameRate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (frameRate))
+            method.invoke_unchecked((), (frameRate))?
         };
         Ok(__cordl_ret.into())
     }

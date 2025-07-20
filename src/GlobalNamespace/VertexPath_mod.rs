@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::VertexPath {
         >,
         vertCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -85,8 +85,9 @@ impl crate::GlobalNamespace::VertexPath {
             >("AddVertex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddVertex", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), "AddVertex", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -104,7 +105,7 @@ impl crate::GlobalNamespace::VertexPath {
                         lastVertex,
                         vertCount,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,16 +113,17 @@ impl crate::GlobalNamespace::VertexPath {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), crate::UnityEngine::Vector3, 1usize>("GetPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPoint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPoint", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::VertexPath {
         tangent: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         normal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -145,12 +147,13 @@ impl crate::GlobalNamespace::VertexPath {
             >("GetVertex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetVertex", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), "GetVertex", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index, position, tangent, normal))
+            method.invoke_unchecked(self, (index, position, tangent, normal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +171,7 @@ impl crate::GlobalNamespace::VertexPath {
         bezierPath: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierPath>,
         numberOfVertexSegments: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierPath>, i32),
                 quest_hook::libil2cpp::Void,
@@ -176,12 +179,13 @@ impl crate::GlobalNamespace::VertexPath {
             >("SplitBezierPathIntoFixNumberOfSegments")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SplitBezierPathIntoFixNumberOfSegments", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), "SplitBezierPathIntoFixNumberOfSegments", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bezierPath, numberOfVertexSegments))
+            method.invoke_unchecked(self, (bezierPath, numberOfVertexSegments))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,22 +193,23 @@ impl crate::GlobalNamespace::VertexPath {
         &mut self,
         pointIndex: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), f32, 1usize>("TimeAtPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TimeAtPoint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), "TimeAtPoint", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (pointIndex)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (pointIndex))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateByBezierPath(
         &mut self,
         bezierPath: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierPath>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierPath>),
                 quest_hook::libil2cpp::Void,
@@ -212,12 +217,13 @@ impl crate::GlobalNamespace::VertexPath {
             >("UpdateByBezierPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateByBezierPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), "UpdateByBezierPath", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bezierPath))
+            method.invoke_unchecked(self, (bezierPath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -225,29 +231,31 @@ impl crate::GlobalNamespace::VertexPath {
         &mut self,
         numberOfPathSegments: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (numberOfPathSegments))
+            method.invoke_unchecked(self, (numberOfPathSegments))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_length")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_length", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::VertexPath as quest_hook::libil2cpp::Type >
+                    ::class(), "get_length", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

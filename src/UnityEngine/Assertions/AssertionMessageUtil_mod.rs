@@ -44,7 +44,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Assertions::AssertionMessageUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -52,13 +52,15 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             >("BooleanFailureMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BooleanFailureMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Assertions::AssertionMessageUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "BooleanFailureMessage",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (expected)) };
+        > = unsafe { method.invoke_unchecked((), (expected))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEqualityMessage(
@@ -68,7 +70,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Assertions::AssertionMessageUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -80,13 +82,14 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             >("GetEqualityMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEqualityMessage", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Assertions::AssertionMessageUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEqualityMessage", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (actual, expected, expectEqual)) };
+        > = unsafe { method.invoke_unchecked((), (actual, expected, expectEqual))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMessage_Il2CppString0(
@@ -94,7 +97,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Assertions::AssertionMessageUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -102,13 +105,14 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             >("GetMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Assertions::AssertionMessageUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (failureMessage)) };
+        > = unsafe { method.invoke_unchecked((), (failureMessage))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMessage_Il2CppString1(
@@ -117,7 +121,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Assertions::AssertionMessageUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -128,13 +132,14 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             >("GetMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMessage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Assertions::AssertionMessageUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMessage", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (failureMessage, expected)) };
+        > = unsafe { method.invoke_unchecked((), (failureMessage, expected))? };
         Ok(__cordl_ret.into())
     }
     pub fn NullFailureMessage(
@@ -143,7 +148,7 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Assertions::AssertionMessageUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, bool),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -151,13 +156,14 @@ impl crate::UnityEngine::Assertions::AssertionMessageUtil {
             >("NullFailureMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NullFailureMessage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Assertions::AssertionMessageUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "NullFailureMessage", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value, expectNull)) };
+        > = unsafe { method.invoke_unchecked((), (value, expectNull))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -84,8 +84,9 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("GetUserAuthToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUserAuthToken", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUserAuthToken", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -94,7 +95,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     crate::GlobalNamespace::PlatformUserAuthTokenData,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUserFriendsUserIds(
@@ -111,7 +112,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -129,8 +130,10 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("GetUserFriendsUserIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUserFriendsUserIds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUserFriendsUserIds",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -141,7 +144,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (cached)) };
+        > = unsafe { method.invoke_unchecked(self, (cached))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUserInfo(
@@ -154,7 +157,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<
@@ -166,15 +169,16 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("GetUserInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUserInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUserInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (ctx)) };
+        > = unsafe { method.invoke_unchecked(self, (ctx))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUserInfoInternalAsync(
@@ -187,7 +191,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<
@@ -199,15 +203,17 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("GetUserInfoInternalAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUserInfoInternalAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUserInfoInternalAsync",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (ctx)) };
+        > = unsafe { method.invoke_unchecked(self, (ctx))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUserNamesForUserIds(
@@ -228,7 +234,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IReadOnlyList_1<
@@ -250,8 +256,10 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("GetUserNamesForUserIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUserNamesForUserIds", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUserNamesForUserIds",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -262,13 +270,13 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (userIds)) };
+        > = unsafe { method.invoke_unchecked(self, (userIds))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUsersSystemLanguage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BGLib::Polyglot::Language,
@@ -276,12 +284,14 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("GetUsersSystemLanguage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUsersSystemLanguage", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUsersSystemLanguage",
+                    0usize
                 )
             });
         let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +314,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<
@@ -316,15 +326,17 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("RequestXPlatformAccessToken")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RequestXPlatformAccessToken", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RequestXPlatformAccessToken", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::XPlatformAccessTokenData,
             >,
-        > = unsafe { method.invoke_unchecked(self, (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn _GetUserNamesForUserIds_g__Fetch_16_0(
@@ -340,7 +352,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -358,8 +370,10 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("<GetUserNamesForUserIds>g__Fetch|16_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<GetUserNamesForUserIds>g__Fetch|16_0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<GetUserNamesForUserIds>g__Fetch|16_0", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -370,14 +384,14 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (userId)) };
+        > = unsafe { method.invoke_unchecked((), (userId))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>),
                 quest_hook::libil2cpp::Void,
@@ -385,12 +399,13 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (platformInit))
+            method.invoke_unchecked(self, (platformInit))?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,7 +417,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -414,27 +429,31 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("add_platformUserInfoDidChangeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_platformUserInfoDidChangeEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "add_platformUserInfoDidChangeEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_CanXPlatformAccessTokenBeCached(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_CanXPlatformAccessTokenBeCached")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CanXPlatformAccessTokenBeCached", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_CanXPlatformAccessTokenBeCached", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_platformUserInfoDidChangeEvent(
@@ -445,7 +464,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -457,12 +476,14 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
             >("remove_platformUserInfoDidChangeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_platformUserInfoDidChangeEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OculusPlatformUserModel as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "remove_platformUserInfoDidChangeEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -612,16 +633,18 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
     pub fn MoveNext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveNext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d
+                    as quest_hook::libil2cpp::Type > ::class(), "MoveNext", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -631,7 +654,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
             crate::System::Runtime::CompilerServices::IAsyncStateMachine,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::CompilerServices::IAsyncStateMachine,
@@ -641,12 +664,14 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
             >("SetStateMachine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetStateMachine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d
+                    as quest_hook::libil2cpp::Type > ::class(), "SetStateMachine", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (stateMachine))
+            method.invoke_unchecked(self, (stateMachine))?
         };
         Ok(__cordl_ret.into())
     }

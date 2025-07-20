@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -102,8 +102,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("AddEncryptedEndpoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddEncryptedEndpoint", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "AddEncryptedEndpoint",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -113,7 +115,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
                 .invoke_unchecked(
                     self,
                     (endPoint, preMasterSecret, serverRandom, clientRandom, isClient),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +137,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -155,8 +157,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("AddEncryptedEndpointAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddEncryptedEndpointAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "AddEncryptedEndpointAsync",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -170,7 +174,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
                 .invoke_unchecked(
                     self,
                     (endPoint, preMasterSecret, serverRandom, clientRandom, isClient),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,7 +190,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -200,8 +204,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("AddPendingEncryptedEndpointAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddPendingEncryptedEndpointAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddPendingEncryptedEndpointAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -211,14 +217,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
                 .invoke_unchecked(
                     self,
                     (endPoint, preMasterSecret, serverRandom, clientRandom, isClient),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Log(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -226,12 +232,13 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("Log")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Log", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "Log", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -241,7 +248,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         offset: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -253,12 +260,13 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("MatchesFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchesFilter", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchesFilter", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (data, offset, length))
+            method.invoke_unchecked(self, (data, offset, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,16 +283,17 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
     pub fn PollUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PollUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PollUpdate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "PollUpdate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -297,7 +306,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -312,12 +321,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("ProcessInboundPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessInboundPacket", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessInboundPacket",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (remoteEndPoint, data, offset, length))
+            method.invoke_unchecked(self, (remoteEndPoint, data, offset, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -331,7 +342,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         length: quest_hook::libil2cpp::ByRefMut<i32>,
         encrypted: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -347,8 +358,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("ProcessInboundPacketInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessInboundPacketInternal", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ProcessInboundPacketInternal", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -356,7 +369,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
                 .invoke_unchecked(
                     self,
                     (remoteEndPoint, data, offset, length, encrypted),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -369,7 +382,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -384,12 +397,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("ProcessOutBoundPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessOutBoundPacket", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessOutBoundPacket",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (remoteEndPoint, data, offset, length))
+            method.invoke_unchecked(self, (remoteEndPoint, data, offset, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -403,7 +418,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         length: quest_hook::libil2cpp::ByRefMut<i32>,
         encrypted: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -419,8 +434,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("ProcessOutBoundPacketInternal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessOutBoundPacketInternal", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ProcessOutBoundPacketInternal", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -428,7 +445,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
                 .invoke_unchecked(
                     self,
                     (remoteEndPoint, data, offset, length, encrypted),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -439,7 +456,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -452,28 +469,31 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("PromotePendingEncryptionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PromotePendingEncryptionState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "PromotePendingEncryptionState", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (endPoint, state))
+            method.invoke_unchecked(self, (endPoint, state))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveAllEndpoints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RemoveAllEndpoints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveAllEndpoints", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveAllEndpoints", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -484,7 +504,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -497,12 +517,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("RemoveEncryptedEndpoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveEncryptedEndpoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveEncryptedEndpoint",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (endPoint, encryptedState))
+            method.invoke_unchecked(self, (endPoint, encryptedState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -512,7 +534,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -520,12 +542,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("SetUnencryptedTrafficFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetUnencryptedTrafficFilter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetUnencryptedTrafficFilter", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (unencryptedTrafficFilter))
+            method.invoke_unchecked(self, (unencryptedTrafficFilter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -538,7 +562,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -553,12 +577,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("TryGetEncryptionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetEncryptionState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetEncryptionState",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (endPoint, state))
+            method.invoke_unchecked(self, (endPoint, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -571,7 +597,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -586,12 +612,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("TryGetPendingEncryptionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetPendingEncryptionState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetPendingEncryptionState", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (endPoint, state))
+            method.invoke_unchecked(self, (endPoint, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -608,7 +636,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -627,12 +655,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("TryGetPotentialPendingEncryptionStates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetPotentialPendingEncryptionStates", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetPotentialPendingEncryptionStates", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (endPoint, encryptionStates))
+            method.invoke_unchecked(self, (endPoint, encryptionStates))?
         };
         Ok(__cordl_ret.into())
     }
@@ -641,7 +671,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
@@ -652,46 +682,51 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (timeProvider, taskUtility))
+            method.invoke_unchecked(self, (timeProvider, taskUtility))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_enableStatistics(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_enableStatistics")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_enableStatistics", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_enableStatistics",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_filterUnencryptedTraffic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_filterUnencryptedTraffic")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_filterUnencryptedTraffic", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_filterUnencryptedTraffic", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_enableStatistics(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -699,12 +734,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("set_enableStatistics")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_enableStatistics", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(), "set_enableStatistics",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -712,7 +749,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -720,12 +757,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             >("set_filterUnencryptedTraffic")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_filterUnencryptedTraffic", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_filterUnencryptedTraffic", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -795,7 +834,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         &mut self,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -803,12 +842,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("AddDecryptionProcessingTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddDecryptionProcessingTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "AddDecryptionProcessingTime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -816,7 +857,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         &mut self,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64),
                 quest_hook::libil2cpp::Void,
@@ -824,19 +865,21 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("AddEncryptionProcessingTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddEncryptionProcessingTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "AddEncryptionProcessingTime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IncrementPacketsReceivedEncrypted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -844,19 +887,21 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("IncrementPacketsReceivedEncrypted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IncrementPacketsReceivedEncrypted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "IncrementPacketsReceivedEncrypted", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IncrementPacketsReceivedPlaintext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -864,19 +909,21 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("IncrementPacketsReceivedPlaintext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IncrementPacketsReceivedPlaintext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "IncrementPacketsReceivedPlaintext", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IncrementPacketsReceivedRejected(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -884,19 +931,21 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("IncrementPacketsReceivedRejected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IncrementPacketsReceivedRejected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "IncrementPacketsReceivedRejected", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IncrementPacketsSentEncrypted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -904,19 +953,21 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("IncrementPacketsSentEncrypted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IncrementPacketsSentEncrypted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "IncrementPacketsSentEncrypted", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IncrementPacketsSentPlaintext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -924,19 +975,21 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("IncrementPacketsSentPlaintext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IncrementPacketsSentPlaintext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "IncrementPacketsSentPlaintext", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IncrementPacketsSentRejected(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -944,12 +997,14 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
             >("IncrementPacketsSentRejected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IncrementPacketsSentRejected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "IncrementPacketsSentRejected", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -963,121 +1018,138 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_decryptionProcessingTime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_decryptionProcessingTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_decryptionProcessingTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_decryptionProcessingTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_encryptionProcessingTime(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_encryptionProcessingTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_encryptionProcessingTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_encryptionProcessingTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_packetsReceivedEncrypted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_packetsReceivedEncrypted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_packetsReceivedEncrypted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_packetsReceivedEncrypted", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_packetsReceivedPlaintext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_packetsReceivedPlaintext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_packetsReceivedPlaintext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_packetsReceivedPlaintext", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_packetsReceivedRejected(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_packetsReceivedRejected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_packetsReceivedRejected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_packetsReceivedRejected", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_packetsSentEncrypted(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_packetsSentEncrypted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_packetsSentEncrypted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_packetsSentEncrypted", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_packetsSentPlaintext(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_packetsSentPlaintext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_packetsSentPlaintext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_packetsSentPlaintext", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_packetsSentRejected(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_packetsSentRejected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_packetsSentRejected", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_packetsSentRejected", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1149,7 +1221,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1162,28 +1234,32 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(), "Add", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (port, encryptionState))
+            method.invoke_unchecked(self, (port, encryptionState))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1199,7 +1275,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -1213,8 +1289,11 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             >("GetSortedEncryptionStates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSortedEncryptionStates", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "GetSortedEncryptionStates", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1223,7 +1302,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
                     crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, (port)) };
+        > = unsafe { method.invoke_unchecked(self, (port))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1240,7 +1319,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1253,25 +1332,29 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             >("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(), "Remove", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (port, encryptionState))
+            method.invoke_unchecked(self, (port, encryptionState))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Remove_i32_0(&mut self, port: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(), "Remove", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (port)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (port))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetEncryptionState(
@@ -1283,7 +1366,7 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1298,41 +1381,48 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
             >("TryGetEncryptionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetEncryptionState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(), "TryGetEncryptionState",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (port, encryptionState))
+            method.invoke_unchecked(self, (port, encryptionState))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isEmpty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList
+                    as quest_hook::libil2cpp::Type > ::class(), "get_isEmpty", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

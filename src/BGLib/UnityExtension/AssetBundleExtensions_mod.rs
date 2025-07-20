@@ -48,7 +48,7 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::AssetBundleExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::AssetBundleCreateRequest,
@@ -60,13 +60,14 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             >("GetAwaiter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAwaiter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::AssetBundleExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAwaiter", 1usize
                 )
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
-        > = unsafe { method.invoke_unchecked((), (assetBundleCreateRequest)) };
+        > = unsafe { method.invoke_unchecked((), (assetBundleCreateRequest))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAwaiter_ResourceRequest1(
@@ -76,7 +77,7 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::AssetBundleExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>),
                 crate::System::Runtime::CompilerServices::TaskAwaiter_1<
@@ -86,13 +87,14 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
             >("GetAwaiter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAwaiter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::AssetBundleExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAwaiter", 1usize
                 )
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        > = unsafe { method.invoke_unchecked((), (resourceRequest)) };
+        > = unsafe { method.invoke_unchecked((), (resourceRequest))? };
         Ok(__cordl_ret.into())
     }
 }

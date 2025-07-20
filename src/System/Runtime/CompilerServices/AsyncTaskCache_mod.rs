@@ -48,7 +48,7 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::AsyncTaskCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (TResult),
                 quest_hook::libil2cpp::Gc<
@@ -58,13 +58,15 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
             >("CreateCacheableTask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCacheableTask", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::AsyncTaskCache as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateCacheableTask",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<TResult>,
-        > = unsafe { method.invoke_unchecked((), (result)) };
+        > = unsafe { method.invoke_unchecked((), (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInt32Tasks() -> quest_hook::libil2cpp::Result<
@@ -74,7 +76,7 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::AsyncTaskCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -88,15 +90,16 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
             >("CreateInt32Tasks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateInt32Tasks", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::AsyncTaskCache as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateInt32Tasks", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

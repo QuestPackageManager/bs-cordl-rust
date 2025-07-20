@@ -117,7 +117,7 @@ impl crate::System::Globalization::EraInfo {
         abbrevEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         englishEraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::EraInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -136,8 +136,9 @@ impl crate::System::Globalization::EraInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::EraInfo as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -156,7 +157,7 @@ impl crate::System::Globalization::EraInfo {
                         abbrevEraName,
                         englishEraName,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +171,7 @@ impl crate::System::Globalization::EraInfo {
         minEraYear: i32,
         maxEraYear: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::EraInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -178,8 +179,9 @@ impl crate::System::Globalization::EraInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::EraInfo as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -195,7 +197,7 @@ impl crate::System::Globalization::EraInfo {
                         minEraYear,
                         maxEraYear,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

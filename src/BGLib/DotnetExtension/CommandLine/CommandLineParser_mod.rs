@@ -51,7 +51,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         option: crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -70,12 +70,13 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("AddParsedOption")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddParsedOption", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(), "AddParsedOption", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (parsedOption, option, value))
+            method.invoke_unchecked((), (parsedOption, option, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +89,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -100,13 +101,14 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("GenerateHint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateHint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateHint", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (options)) };
+        > = unsafe { method.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateOptionsMap(
@@ -126,7 +128,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -148,8 +150,9 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("GenerateOptionsMap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateOptionsMap", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateOptionsMap", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -157,7 +160,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
             >,
-        > = unsafe { method.invoke_unchecked((), (options, argumentIdentifierRegex)) };
+        > = unsafe { method.invoke_unchecked((), (options, argumentIdentifierRegex))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCommandLineArgs() -> quest_hook::libil2cpp::Result<
@@ -167,7 +170,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -179,15 +182,16 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("GetCommandLineArgs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCommandLineArgs", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCommandLineArgs", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseArgs(
@@ -224,7 +228,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -273,8 +277,9 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("ParseArgs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseArgs", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseArgs", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -289,7 +294,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                         parsedOption,
                         ignored,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +312,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     ) -> quest_hook::libil2cpp::Result<
         crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -328,12 +333,13 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("ParseCommandLine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseCommandLine", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseCommandLine", 2usize
                 )
             });
         let __cordl_ret: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult = unsafe {
-            method.invoke_unchecked((), (args, options))
+            method.invoke_unchecked((), (args, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -346,7 +352,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     ) -> quest_hook::libil2cpp::Result<
         crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -358,12 +364,14 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("ParseEnvironmentCommandLine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseEnvironmentCommandLine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ParseEnvironmentCommandLine", 1usize
                 )
             });
         let __cordl_ret: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult = unsafe {
-            method.invoke_unchecked((), (options))
+            method.invoke_unchecked((), (options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -380,7 +388,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::DotnetExtension::CommandLine::CommandLineParser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -396,15 +404,17 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
             >("SelectRequiredOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SelectRequiredOptions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::DotnetExtension::CommandLine::CommandLineParser as
+                    quest_hook::libil2cpp::Type > ::class(), "SelectRequiredOptions",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<
                 crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
             >,
-        > = unsafe { method.invoke_unchecked((), (options)) };
+        > = unsafe { method.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
 }

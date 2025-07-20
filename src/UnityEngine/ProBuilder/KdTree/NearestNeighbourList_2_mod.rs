@@ -92,16 +92,21 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TItem, TDistance), bool, 2usize>("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(), "Add",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (item, distance))
+            method.invoke_unchecked(self, (item, distance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,15 +117,20 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), TItem, 0usize>("GetFurtherest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFurtherest", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(),
+                    "GetFurtherest", 0usize
                 )
             });
-        let __cordl_ret: TItem = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: TItem = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFurtherestDistance(&mut self) -> quest_hook::libil2cpp::Result<TDistance>
@@ -130,15 +140,20 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), TDistance, 0usize>("GetFurtherestDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFurtherestDistance", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(),
+                    "GetFurtherestDistance", 0usize
                 )
             });
-        let __cordl_ret: TDistance = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: TDistance = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -166,15 +181,20 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), TItem, 0usize>("RemoveFurtherest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveFurtherest", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(),
+                    "RemoveFurtherest", 0usize
                 )
             });
-        let __cordl_ret: TItem = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: TItem = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -190,7 +210,10 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -203,12 +226,14 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (maxCapacity, distanceMath))
+            method.invoke_unchecked(self, (maxCapacity, distanceMath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,15 +244,20 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Count")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Count", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(),
+                    "get_Count", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsCapacityReached(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -237,15 +267,20 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsCapacityReached")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsCapacityReached", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(),
+                    "get_IsCapacityReached", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_MaxCapacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
@@ -255,15 +290,20 @@ impl<
         TDistance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<
+            TItem,
+            TDistance,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_MaxCapacity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_MaxCapacity", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2 <
+                    TItem, TDistance > as quest_hook::libil2cpp::Type > ::class(),
+                    "get_MaxCapacity", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

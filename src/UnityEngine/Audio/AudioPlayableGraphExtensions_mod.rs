@@ -48,7 +48,7 @@ impl crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
             crate::UnityEngine::Playables::PlayableOutputHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Audio::AudioPlayableGraphExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -64,12 +64,14 @@ impl crate::UnityEngine::Audio::AudioPlayableGraphExtensions {
             >("InternalCreateAudioOutput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InternalCreateAudioOutput", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Audio::AudioPlayableGraphExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "InternalCreateAudioOutput",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (graph, name, handle))
+            method.invoke_unchecked((), (graph, name, handle))?
         };
         Ok(__cordl_ret.into())
     }

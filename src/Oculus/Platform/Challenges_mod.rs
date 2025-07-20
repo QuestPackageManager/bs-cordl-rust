@@ -50,7 +50,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -67,15 +67,16 @@ impl crate::Oculus::Platform::Challenges {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "Create", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe { method.invoke_unchecked((), (leaderboardName, challengeOptions)) };
+        > = unsafe { method.invoke_unchecked((), (leaderboardName, challengeOptions))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeclineInvite(
@@ -87,7 +88,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -101,15 +102,16 @@ impl crate::Oculus::Platform::Challenges {
             >("DeclineInvite")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeclineInvite", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "DeclineInvite", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe { method.invoke_unchecked((), (challengeID)) };
+        > = unsafe { method.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn Delete(
@@ -117,7 +119,7 @@ impl crate::Oculus::Platform::Challenges {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -125,12 +127,13 @@ impl crate::Oculus::Platform::Challenges {
             >("Delete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Delete", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "Delete", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            method.invoke_unchecked((), (challengeID))
+            method.invoke_unchecked((), (challengeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +146,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -157,15 +160,16 @@ impl crate::Oculus::Platform::Challenges {
             >("Get")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "Get", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe { method.invoke_unchecked((), (challengeID)) };
+        > = unsafe { method.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEntries(
@@ -182,7 +186,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -201,8 +205,9 @@ impl crate::Oculus::Platform::Challenges {
             >("GetEntries")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEntries", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetEntries", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -212,7 +217,7 @@ impl crate::Oculus::Platform::Challenges {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (challengeID, limit, filter, startAt))
+            method.invoke_unchecked((), (challengeID, limit, filter, startAt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +234,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64, i32, u64),
                 quest_hook::libil2cpp::Gc<
@@ -243,8 +248,9 @@ impl crate::Oculus::Platform::Challenges {
             >("GetEntriesAfterRank")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEntriesAfterRank", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetEntriesAfterRank", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -253,7 +259,7 @@ impl crate::Oculus::Platform::Challenges {
                     crate::Oculus::Platform::Models::ChallengeEntryList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (challengeID, limit, afterRank)) };
+        > = unsafe { method.invoke_unchecked((), (challengeID, limit, afterRank))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEntriesByIds(
@@ -270,7 +276,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -289,8 +295,9 @@ impl crate::Oculus::Platform::Challenges {
             >("GetEntriesByIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEntriesByIds", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetEntriesByIds", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -300,7 +307,7 @@ impl crate::Oculus::Platform::Challenges {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (challengeID, limit, startAt, userIDs))
+            method.invoke_unchecked((), (challengeID, limit, startAt, userIDs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -316,7 +323,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ChallengeOptions>,
@@ -333,15 +340,16 @@ impl crate::Oculus::Platform::Challenges {
             >("GetList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetList", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
             >,
-        > = unsafe { method.invoke_unchecked((), (challengeOptions, limit)) };
+        > = unsafe { method.invoke_unchecked((), (challengeOptions, limit))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextChallenges(
@@ -353,7 +361,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::ChallengeList,
@@ -369,15 +377,16 @@ impl crate::Oculus::Platform::Challenges {
             >("GetNextChallenges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextChallenges", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetNextChallenges", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
             >,
-        > = unsafe { method.invoke_unchecked((), (list)) };
+        > = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextEntries(
@@ -393,7 +402,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::ChallengeEntryList,
@@ -409,8 +418,9 @@ impl crate::Oculus::Platform::Challenges {
             >("GetNextEntries")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextEntries", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetNextEntries", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -419,7 +429,7 @@ impl crate::Oculus::Platform::Challenges {
                     crate::Oculus::Platform::Models::ChallengeEntryList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list)) };
+        > = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousChallenges(
@@ -431,7 +441,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::ChallengeList,
@@ -447,15 +457,16 @@ impl crate::Oculus::Platform::Challenges {
             >("GetPreviousChallenges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreviousChallenges", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPreviousChallenges", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
             >,
-        > = unsafe { method.invoke_unchecked((), (list)) };
+        > = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousEntries(
@@ -471,7 +482,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::ChallengeEntryList,
@@ -487,8 +498,9 @@ impl crate::Oculus::Platform::Challenges {
             >("GetPreviousEntries")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreviousEntries", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPreviousEntries", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -497,7 +509,7 @@ impl crate::Oculus::Platform::Challenges {
                     crate::Oculus::Platform::Models::ChallengeEntryList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list)) };
+        > = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn Join(
@@ -509,7 +521,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -523,15 +535,16 @@ impl crate::Oculus::Platform::Challenges {
             >("Join")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Join", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "Join", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe { method.invoke_unchecked((), (challengeID)) };
+        > = unsafe { method.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn Leave(
@@ -543,7 +556,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 quest_hook::libil2cpp::Gc<
@@ -557,15 +570,16 @@ impl crate::Oculus::Platform::Challenges {
             >("Leave")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Leave", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "Leave", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe { method.invoke_unchecked((), (challengeID)) };
+        > = unsafe { method.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateInfo(
@@ -580,7 +594,7 @@ impl crate::Oculus::Platform::Challenges {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -597,15 +611,16 @@ impl crate::Oculus::Platform::Challenges {
             >("UpdateInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Challenges as quest_hook::libil2cpp::Type >
+                    ::class(), "UpdateInfo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
             >,
-        > = unsafe { method.invoke_unchecked((), (challengeID, challengeOptions)) };
+        > = unsafe { method.invoke_unchecked((), (challengeID, challengeOptions))? };
         Ok(__cordl_ret.into())
     }
 }

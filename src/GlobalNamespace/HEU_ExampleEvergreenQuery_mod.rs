@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>),
                 quest_hook::libil2cpp::Void,
@@ -52,12 +52,13 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("ChangeParmsAndCook")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ChangeParmsAndCook", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "ChangeParmsAndCook", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (houdiniAsset))
+            method.invoke_unchecked((), (houdiniAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -66,7 +67,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>),
                 quest_hook::libil2cpp::Void,
@@ -74,12 +75,13 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("CookAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CookAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "CookAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (houdiniAsset))
+            method.invoke_unchecked((), (houdiniAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -99,7 +101,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         partID: i32,
         attrName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -115,13 +117,17 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("QueryAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueryAttribute", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "QueryAttribute", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (houdiniAsset, objName, geoName, partID, attrName))
+                .invoke_unchecked(
+                    (),
+                    (houdiniAsset, objName, geoName, partID, attrName),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,7 +140,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         >,
         attrName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -152,12 +158,14 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("QueryAttributeByStorageType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueryAttributeByStorageType", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "QueryAttributeByStorageType", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID, attrInfo, attrName))
+            method.invoke_unchecked((), (session, geoID, partID, attrInfo, attrName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +173,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         geoInfo: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_GeoInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -180,12 +188,13 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("QueryGeoParts")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueryGeoParts", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "QueryGeoParts", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (session, geoInfo))
+            method.invoke_unchecked((), (session, geoInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +203,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
@@ -202,13 +211,14 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("QueryHoudiniAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueryHoudiniAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "QueryHoudiniAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-        > = unsafe { method.invoke_unchecked((), (rootGO)) };
+        > = unsafe { method.invoke_unchecked((), (rootGO))? };
         Ok(__cordl_ret.into())
     }
     pub fn QueryObjects(
@@ -216,7 +226,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>),
                 quest_hook::libil2cpp::Void,
@@ -224,12 +234,13 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("QueryObjects")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueryObjects", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "QueryObjects", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (houdiniAsset))
+            method.invoke_unchecked((), (houdiniAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -241,7 +252,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         count: i32,
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -258,42 +269,46 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
             >("QueryPartAttributeByOwner")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueryPartAttributeByOwner", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "QueryPartAttributeByOwner",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID, owner, count, sb))
+            method.invoke_unchecked((), (session, geoID, partID, owner, count, sb))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StartQuery() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartQuery")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartQuery", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), "StartQuery", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::HEU_ExampleEvergreenQuery as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::HEU_ExampleEvergreenQuery as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

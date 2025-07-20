@@ -49,7 +49,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -66,12 +66,14 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("ComputeTransitionPropertyData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeTransitionPropertyData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ComputeTransitionPropertyData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (computedStyle, outData))
+            method.invoke_unchecked((), (computedStyle, outData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +82,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::EasingMode),
                 quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
@@ -88,19 +90,21 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("ConvertTransitionFunction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertTransitionFunction", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertTransitionFunction",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>> = unsafe {
-            method.invoke_unchecked((), (mode))
+            method.invoke_unchecked((), (mode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertTransitionTime(
         _cordl_time: crate::UnityEngine::UIElements::TimeValue,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::TimeValue),
                 i32,
@@ -108,11 +112,13 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("ConvertTransitionTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertTransitionTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertTransitionTime",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrComputeTransitionPropertyData(
@@ -126,7 +132,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::ComputedStyle,
@@ -140,15 +146,17 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("GetOrComputeTransitionPropertyData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOrComputeTransitionPropertyData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetOrComputeTransitionPropertyData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::UIElements::ComputedTransitionProperty,
             >,
-        > = unsafe { method.invoke_unchecked((), (computedStyle)) };
+        > = unsafe { method.invoke_unchecked((), (computedStyle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransitionHashCode(
@@ -156,7 +164,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::ComputedStyle,
@@ -166,11 +174,13 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("GetTransitionHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTransitionHashCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTransitionHashCode",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cs)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cs))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransitionProperty(
@@ -182,7 +192,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             crate::UnityEngine::UIElements::ComputedTransitionProperty,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -198,12 +208,14 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("GetTransitionProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTransitionProperty", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTransitionProperty",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (computedStyle, id, result))
+            method.invoke_unchecked((), (computedStyle, id, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -216,7 +228,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -230,12 +242,14 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("GetWrappingTransitionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWrappingTransitionData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetWrappingTransitionData",
+                    3usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked((), (list, i, defaultValue))
+            method.invoke_unchecked((), (list, i, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +259,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         >,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -258,12 +272,14 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("HasTransitionProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasTransitionProperty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "HasTransitionProperty",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (computedStyle, id))
+            method.invoke_unchecked((), (computedStyle, id))?
         };
         Ok(__cordl_ret.into())
     }
@@ -273,7 +289,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         >,
         y: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::ComputedStyle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -288,11 +304,13 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("SameTransitionProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SameTransitionProperty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "SameTransitionProperty",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (x, y)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (x, y))? };
         Ok(__cordl_ret.into())
     }
     pub fn SameTransitionProperty_List_1_List_1_1(
@@ -307,7 +325,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -326,11 +344,13 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("SameTransitionProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SameTransitionProperty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "SameTransitionProperty",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn SameTransitionProperty_List_1_List_1_2(
@@ -345,7 +365,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -364,11 +384,13 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("SameTransitionProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SameTransitionProperty", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "SameTransitionProperty",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateComputedTransitions(
@@ -376,7 +398,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ComputedTransitionUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::UnityEngine::UIElements::ComputedStyle,
@@ -386,12 +408,14 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             >("UpdateComputedTransitions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateComputedTransitions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ComputedTransitionUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateComputedTransitions",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (computedStyle))
+            method.invoke_unchecked((), (computedStyle))?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -56,12 +56,14 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
             >("GenerateNewPrime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateNewPrime", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateNewPrime", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (bits, context))
+            method.invoke_unchecked(self, (bits, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +73,7 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -79,12 +81,14 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
             >("GenerateNewPrime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateNewPrime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateNewPrime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (bits))
+            method.invoke_unchecked(self, (bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +99,7 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -103,12 +107,14 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
             >("GenerateSearchBase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateSearchBase", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateSearchBase", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
-            method.invoke_unchecked(self, (bits, context))
+            method.invoke_unchecked(self, (bits, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +123,7 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
         bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -128,11 +134,13 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
             >("IsPrimeAcceptable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPrimeAcceptable", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as
+                    quest_hook::libil2cpp::Type > ::class(), "IsPrimeAcceptable", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bi, context)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bi, context))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -145,16 +153,18 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

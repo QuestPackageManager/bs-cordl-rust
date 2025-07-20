@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::BitMask256 {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 crate::GlobalNamespace::BitMask256,
@@ -110,19 +110,20 @@ impl crate::GlobalNamespace::BitMask256 {
             >("CreateFromSerializedData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateFromSerializedData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateFromSerializedData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked(self, (reader))
+            method.invoke_unchecked(self, (reader))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
                 crate::GlobalNamespace::BitMask256,
@@ -130,12 +131,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("Deserialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Deserialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "Deserialize", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), (reader))
+            method.invoke_unchecked((), (reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,22 +145,23 @@ impl crate::GlobalNamespace::BitMask256 {
         &mut self,
         other: crate::GlobalNamespace::BitMask256,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(crate::GlobalNamespace::BitMask256), bool, 1usize>("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -166,11 +169,12 @@ impl crate::GlobalNamespace::BitMask256 {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBits(
@@ -178,34 +182,38 @@ impl crate::GlobalNamespace::BitMask256 {
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), u64, 2usize>("GetBits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBits", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "GetBits", 2usize
                 )
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (offset, count)) };
+        let __cordl_ret: u64 = unsafe {
+            method.invoke_unchecked(self, (offset, count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("GetHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHashCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "GetHashCode", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
                 quest_hook::libil2cpp::Void,
@@ -213,12 +221,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("Serialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Serialize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "Serialize", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer))
+            method.invoke_unchecked(self, (writer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +236,7 @@ impl crate::GlobalNamespace::BitMask256 {
         offset: i32,
         bits: u64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, u64),
                 crate::GlobalNamespace::BitMask256,
@@ -235,12 +244,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("SetBits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBits", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "SetBits", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked(self, (offset, bits))
+            method.invoke_unchecked(self, (offset, bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +259,7 @@ impl crate::GlobalNamespace::BitMask256 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -257,29 +267,31 @@ impl crate::GlobalNamespace::BitMask256 {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u64_1(
         &mut self,
         value: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -290,7 +302,7 @@ impl crate::GlobalNamespace::BitMask256 {
         d2: u64,
         d3: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u64, u64, u64, u64),
                 quest_hook::libil2cpp::Void,
@@ -298,31 +310,33 @@ impl crate::GlobalNamespace::BitMask256 {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (d0, d1, d2, d3))
+            method.invoke_unchecked(self, (d0, d1, d2, d3))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_bitCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_bitCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_bitCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "get_bitCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_maxValue() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BitMask256,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::GlobalNamespace::BitMask256,
@@ -330,12 +344,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("get_maxValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_maxValue", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "get_maxValue", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -343,7 +358,7 @@ impl crate::GlobalNamespace::BitMask256 {
         a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
         b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
@@ -354,12 +369,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_BitwiseAnd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_BitwiseAnd", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_BitwiseAnd", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), (a, b))
+            method.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -367,7 +383,7 @@ impl crate::GlobalNamespace::BitMask256 {
         a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
         b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
@@ -378,12 +394,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_BitwiseOr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_BitwiseOr", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_BitwiseOr", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), (a, b))
+            method.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -391,7 +408,7 @@ impl crate::GlobalNamespace::BitMask256 {
         a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
         b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
@@ -402,18 +419,19 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_Equality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Equality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Equality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_ExclusiveOr(
         a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
         b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
@@ -424,19 +442,20 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_ExclusiveOr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_ExclusiveOr", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_ExclusiveOr", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), (a, b))
+            method.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         value: u64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 crate::GlobalNamespace::BitMask256,
@@ -444,12 +463,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -457,7 +477,7 @@ impl crate::GlobalNamespace::BitMask256 {
         a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
         b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
@@ -468,18 +488,19 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_Inequality")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Inequality", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_Inequality", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn op_LeftShift(
         a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
         bits: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
@@ -490,12 +511,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_LeftShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_LeftShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_LeftShift", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), (a, bits))
+            method.invoke_unchecked((), (a, bits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -503,7 +525,7 @@ impl crate::GlobalNamespace::BitMask256 {
         a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
         bits: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
@@ -514,12 +536,13 @@ impl crate::GlobalNamespace::BitMask256 {
             >("op_RightShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_RightShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BitMask256 as quest_hook::libil2cpp::Type >
+                    ::class(), "op_RightShift", 2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BitMask256 = unsafe {
-            method.invoke_unchecked((), (a, bits))
+            method.invoke_unchecked((), (a, bits))?
         };
         Ok(__cordl_ret.into())
     }

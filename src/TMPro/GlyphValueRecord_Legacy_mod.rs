@@ -103,7 +103,7 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
         &mut self,
         valueRecord: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::GlyphValueRecord_Legacy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord),
                 quest_hook::libil2cpp::Void,
@@ -111,12 +111,13 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::GlyphValueRecord_Legacy as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (valueRecord))
+            method.invoke_unchecked(self, (valueRecord))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +125,7 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
         a: crate::TMPro::GlyphValueRecord_Legacy,
         b: crate::TMPro::GlyphValueRecord_Legacy,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::GlyphValueRecord_Legacy> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::GlyphValueRecord_Legacy as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::TMPro::GlyphValueRecord_Legacy,
@@ -135,12 +136,13 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
             >("op_Addition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Addition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::GlyphValueRecord_Legacy as quest_hook::libil2cpp::Type
+                    > ::class(), "op_Addition", 2usize
                 )
             });
         let __cordl_ret: crate::TMPro::GlyphValueRecord_Legacy = unsafe {
-            method.invoke_unchecked((), (a, b))
+            method.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }

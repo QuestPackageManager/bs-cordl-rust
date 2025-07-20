@@ -44,7 +44,7 @@ impl crate::System::Threading::IAsyncLocal {
         currentValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         contextChanged: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::IAsyncLocal as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -56,12 +56,13 @@ impl crate::System::Threading::IAsyncLocal {
             >("OnValueChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnValueChanged", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::IAsyncLocal as quest_hook::libil2cpp::Type
+                    > ::class(), "OnValueChanged", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (previousValue, currentValue, contextChanged))
+            method.invoke_unchecked(self, (previousValue, currentValue, contextChanged))?
         };
         Ok(__cordl_ret.into())
     }

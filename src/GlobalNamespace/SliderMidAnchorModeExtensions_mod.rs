@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::SliderMidAnchorModeExtensions {
     pub fn OppositeDirection(
         sliderMidAnchorMode: crate::GlobalNamespace::SliderMidAnchorMode,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderMidAnchorMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SliderMidAnchorModeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::SliderMidAnchorMode),
                 crate::GlobalNamespace::SliderMidAnchorMode,
@@ -50,12 +50,13 @@ impl crate::GlobalNamespace::SliderMidAnchorModeExtensions {
             >("OppositeDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OppositeDirection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SliderMidAnchorModeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "OppositeDirection", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::SliderMidAnchorMode = unsafe {
-            method.invoke_unchecked((), (sliderMidAnchorMode))
+            method.invoke_unchecked((), (sliderMidAnchorMode))?
         };
         Ok(__cordl_ret.into())
     }

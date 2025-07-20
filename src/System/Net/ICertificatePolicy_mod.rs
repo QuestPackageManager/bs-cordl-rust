@@ -47,7 +47,7 @@ impl crate::System::Net::ICertificatePolicy {
         request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
         certificateProblem: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::ICertificatePolicy as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
@@ -62,8 +62,10 @@ impl crate::System::Net::ICertificatePolicy {
             >("CheckValidationResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckValidationResult", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::ICertificatePolicy as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckValidationResult",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -71,7 +73,7 @@ impl crate::System::Net::ICertificatePolicy {
                 .invoke_unchecked(
                     self,
                     (srvPoint, certificate, request, certificateProblem),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

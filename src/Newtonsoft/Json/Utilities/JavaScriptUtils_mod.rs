@@ -48,7 +48,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         >,
         stringEscapeHandling: crate::Newtonsoft::Json::StringEscapeHandling,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -60,12 +60,13 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("FirstCharToEscape")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FirstCharToEscape", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FirstCharToEscape", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (s, charEscapeFlags, stringEscapeHandling))
+            method.invoke_unchecked((), (s, charEscapeFlags, stringEscapeHandling))?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +76,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Newtonsoft::Json::StringEscapeHandling, char),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
@@ -83,13 +84,14 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("GetCharEscapeFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCharEscapeFlags", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCharEscapeFlags", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<bool>,
-        > = unsafe { method.invoke_unchecked((), (stringEscapeHandling, quoteChar)) };
+        > = unsafe { method.invoke_unchecked((), (stringEscapeHandling, quoteChar))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldEscapeJavaScriptString(
@@ -98,7 +100,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             quest_hook::libil2cpp::Il2CppArray<bool>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -109,12 +111,14 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("ShouldEscapeJavaScriptString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldEscapeJavaScriptString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ShouldEscapeJavaScriptString", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (s, charEscapeFlags))
+            method.invoke_unchecked((), (s, charEscapeFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +130,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -139,8 +143,10 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("ToEscapedJavaScriptString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToEscapedJavaScriptString", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToEscapedJavaScriptString",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -150,7 +156,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                 .invoke_unchecked(
                     (),
                     (value, delimiter, appendDelimiters, stringEscapeHandling),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -161,7 +167,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
@@ -175,12 +181,14 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("TryGetDateConstructorValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetDateConstructorValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetDateConstructorValue", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (reader, integer, errorMessage))
+            method.invoke_unchecked((), (reader, integer, errorMessage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +199,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
@@ -205,12 +213,14 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("TryGetDateFromConstructorJson")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetDateFromConstructorJson", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TryGetDateFromConstructorJson", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (reader, dateTime, errorMessage))
+            method.invoke_unchecked((), (reader, dateTime, errorMessage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -222,7 +232,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -235,13 +245,16 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("WriteCharAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteCharAsync", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteCharAsync", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (task, writer, c, cancellationToken)) };
+        > = unsafe {
+            method.invoke_unchecked((), (task, writer, c, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync(
@@ -258,7 +271,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -275,8 +288,10 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync",
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync",
                     8usize
                 )
             });
@@ -296,7 +311,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                         writeBuffer,
                         cancellationToken,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -316,7 +331,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -339,8 +354,10 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("WriteEscapedJavaScriptString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEscapedJavaScriptString", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteEscapedJavaScriptString", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -357,7 +374,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                         bufferPool,
                         writeBuffer,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -376,7 +393,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -394,8 +411,10 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("WriteEscapedJavaScriptStringAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEscapedJavaScriptStringAsync", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteEscapedJavaScriptStringAsync", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -415,7 +434,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                         writeBuffer,
                         cancellationToken,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -434,7 +453,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -452,8 +471,10 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("WriteEscapedJavaScriptStringWithDelimitersAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEscapedJavaScriptStringWithDelimitersAsync", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteEscapedJavaScriptStringWithDelimitersAsync", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -473,7 +494,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                         writeBuffer,
                         cancellationToken,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -491,7 +512,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -508,8 +529,10 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("WriteEscapedJavaScriptStringWithDelimitersAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEscapedJavaScriptStringWithDelimitersAsync", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteEscapedJavaScriptStringWithDelimitersAsync", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -528,7 +551,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                         writeBuffer,
                         cancellationToken,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -545,7 +568,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::JavaScriptUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -561,8 +584,10 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             >("WriteEscapedJavaScriptStringWithoutDelimitersAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteEscapedJavaScriptStringWithoutDelimitersAsync", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::JavaScriptUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteEscapedJavaScriptStringWithoutDelimitersAsync", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -580,7 +605,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                         writeBuffer,
                         cancellationToken,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

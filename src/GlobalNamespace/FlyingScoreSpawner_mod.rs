@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
             crate::GlobalNamespace::FlyingObjectEffect,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FlyingScoreSpawner as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingObjectEffect>),
                 quest_hook::libil2cpp::Void,
@@ -62,12 +62,14 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
             >("HandleFlyingObjectEffectDidFinish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleFlyingObjectEffectDidFinish", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FlyingScoreSpawner as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "HandleFlyingObjectEffectDidFinish", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (flyingObjectEffect))
+            method.invoke_unchecked(self, (flyingObjectEffect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +87,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         >,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FlyingScoreSpawner as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -98,12 +100,13 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
             >("SpawnFlyingScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SpawnFlyingScore", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FlyingScoreSpawner as
+                    quest_hook::libil2cpp::Type > ::class(), "SpawnFlyingScore", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cutScoreBuffer, color))
+            method.invoke_unchecked(self, (cutScoreBuffer, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +117,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         >,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FlyingScoreSpawner as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -127,12 +130,14 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
             >("SpawnFlyingScoreNextFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SpawnFlyingScoreNextFrame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FlyingScoreSpawner as
+                    quest_hook::libil2cpp::Type > ::class(), "SpawnFlyingScoreNextFrame",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (cutScoreBuffer, color))
+            method.invoke_unchecked(self, (cutScoreBuffer, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +150,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FlyingScoreSpawner as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -158,28 +163,31 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
             >("SpawnFlyingScoreNextFrameCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SpawnFlyingScoreNextFrameCoroutine", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FlyingScoreSpawner as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SpawnFlyingScoreNextFrameCoroutine", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = unsafe { method.invoke_unchecked(self, (cutScoreBuffer, color)) };
+        > = unsafe { method.invoke_unchecked(self, (cutScoreBuffer, color))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FlyingScoreSpawner as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FlyingScoreSpawner as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,7 +272,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
         &mut self,
         spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FlyingScoreSpawner_InitData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition),
                 quest_hook::libil2cpp::Void,
@@ -272,12 +280,13 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FlyingScoreSpawner_InitData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (spawnPosition))
+            method.invoke_unchecked(self, (spawnPosition))?
         };
         Ok(__cordl_ret.into())
     }

@@ -61,7 +61,7 @@ impl crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -71,13 +71,16 @@ impl crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             >("WithGameObjectName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithGameObjectName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder
+                    as quest_hook::libil2cpp::Type > ::class(), "WithGameObjectName",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked(self, (gameObjectName)) };
+        > = unsafe { method.invoke_unchecked(self, (gameObjectName))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -87,7 +90,7 @@ impl crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::GameObjectCreationParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
@@ -100,12 +103,14 @@ impl crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bindInfo, gameObjectInfo))
+            method.invoke_unchecked(self, (bindInfo, gameObjectInfo))?
         };
         Ok(__cordl_ret.into())
     }

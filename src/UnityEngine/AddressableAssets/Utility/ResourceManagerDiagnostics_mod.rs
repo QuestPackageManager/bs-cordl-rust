@@ -58,7 +58,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         &mut self,
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle),
                 i32,
@@ -66,18 +66,21 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             >("CalculateCompletedOperationHashcode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateCompletedOperationHashcode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateCompletedOperationHashcode", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (handle)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateHashCode(
         &mut self,
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle),
                 i32,
@@ -85,26 +88,31 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             >("CalculateHashCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateHashCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics
+                    as quest_hook::libil2cpp::Type > ::class(), "CalculateHashCode",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (handle)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics
+                    as quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +122,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -122,13 +130,16 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             >("GenerateCompletedOperationDisplayName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateCompletedOperationDisplayName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateCompletedOperationDisplayName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (handle)) };
+        > = unsafe { method.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -146,7 +157,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         &mut self,
         eventContext: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext),
                 quest_hook::libil2cpp::Void,
@@ -154,12 +165,15 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             >("OnResourceManagerDiagnosticEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnResourceManagerDiagnosticEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "OnResourceManagerDiagnosticEvent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (eventContext))
+            method.invoke_unchecked(self, (eventContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -167,7 +181,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
         &mut self,
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle),
                 i32,
@@ -175,11 +189,14 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             >("SumDependencyNameHashCodes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SumDependencyNameHashCodes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "SumDependencyNameHashCodes", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (handle)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -188,7 +205,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             crate::UnityEngine::ResourceManagement::ResourceManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ResourceManagement::ResourceManager,
@@ -198,12 +215,14 @@ impl crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics 
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (resourceManager))
+            method.invoke_unchecked(self, (resourceManager))?
         };
         Ok(__cordl_ret.into())
     }

@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::Vector3Extensions {
     pub fn Abs(
         vector: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::Vector3Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                 crate::UnityEngine::Vector3,
@@ -49,12 +49,13 @@ impl crate::GlobalNamespace::Vector3Extensions {
             >("Abs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Abs", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::Vector3Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Abs", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (vector))
+            method.invoke_unchecked((), (vector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -63,7 +64,7 @@ impl crate::GlobalNamespace::Vector3Extensions {
         b: crate::UnityEngine::Vector3,
         value: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::Vector3Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -75,17 +76,18 @@ impl crate::GlobalNamespace::Vector3Extensions {
             >("InverseLerp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InverseLerp", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::Vector3Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "InverseLerp", 3usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b, value)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn MirrorEulerAnglesOnYZPlane(
         vector: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::Vector3Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -93,19 +95,21 @@ impl crate::GlobalNamespace::Vector3Extensions {
             >("MirrorEulerAnglesOnYZPlane")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MirrorEulerAnglesOnYZPlane", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::Vector3Extensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MirrorEulerAnglesOnYZPlane", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (vector))
+            method.invoke_unchecked((), (vector))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MirrorOnYZPlane(
         vector: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::Vector3Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -113,12 +117,13 @@ impl crate::GlobalNamespace::Vector3Extensions {
             >("MirrorOnYZPlane")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MirrorOnYZPlane", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::Vector3Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "MirrorOnYZPlane", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (vector))
+            method.invoke_unchecked((), (vector))?
         };
         Ok(__cordl_ret.into())
     }
@@ -127,7 +132,7 @@ impl crate::GlobalNamespace::Vector3Extensions {
         rotation: crate::UnityEngine::Quaternion,
         pivot: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::Vector3Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -139,12 +144,13 @@ impl crate::GlobalNamespace::Vector3Extensions {
             >("RotatedAroundPivot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotatedAroundPivot", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::Vector3Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "RotatedAroundPivot", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (vector, rotation, pivot))
+            method.invoke_unchecked((), (vector, rotation, pivot))?
         };
         Ok(__cordl_ret.into())
     }

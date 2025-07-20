@@ -43,7 +43,7 @@ impl crate::UnityEngine::InspectorOrderAttribute {
     pub fn get_m_inspectorSort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InspectorSort> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InspectorOrderAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InspectorSort,
@@ -51,19 +51,21 @@ impl crate::UnityEngine::InspectorOrderAttribute {
             >("get_m_inspectorSort")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_m_inspectorSort", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InspectorOrderAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "get_m_inspectorSort",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InspectorSort = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_m_sortDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InspectorSortDirection> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InspectorOrderAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InspectorSortDirection,
@@ -71,12 +73,14 @@ impl crate::UnityEngine::InspectorOrderAttribute {
             >("get_m_sortDirection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_m_sortDirection", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InspectorOrderAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "get_m_sortDirection",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InspectorSortDirection = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

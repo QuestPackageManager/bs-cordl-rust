@@ -52,7 +52,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::DynamicUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Dynamic::IDynamicMetaObjectProvider,
@@ -66,15 +66,17 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils {
             >("GetDynamicMemberNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDynamicMemberNames", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::DynamicUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDynamicMemberNames",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (dynamicProvider)) };
+        > = unsafe { method.invoke_unchecked((), (dynamicProvider))? };
         Ok(__cordl_ret.into())
     }
 }
@@ -138,7 +140,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
     pub fn CreateMemberCalls() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -146,12 +148,13 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
             >("CreateMemberCalls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMemberCalls", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMemberCalls", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,7 +163,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -168,13 +171,15 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
             >("CreateSharpArgumentInfoArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSharpArgumentInfoArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateSharpArgumentInfoArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (values)) };
+        > = unsafe { method.invoke_unchecked((), (values))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMember(
@@ -185,7 +190,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
             crate::System::Runtime::CompilerServices::CallSiteBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -198,26 +203,28 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
             >("GetMember")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMember", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMember", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::CallSiteBinder,
-        > = unsafe { method.invoke_unchecked((), (name, context)) };
+        > = unsafe { method.invoke_unchecked((), (name, context))? };
         Ok(__cordl_ret.into())
     }
     pub fn Init() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +236,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
             crate::System::Runtime::CompilerServices::CallSiteBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -242,13 +249,14 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
             >("SetMember")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMember", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMember", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::CallSiteBinder,
-        > = unsafe { method.invoke_unchecked((), (name, context)) };
+        > = unsafe { method.invoke_unchecked((), (name, context))? };
         Ok(__cordl_ret.into())
     }
 }

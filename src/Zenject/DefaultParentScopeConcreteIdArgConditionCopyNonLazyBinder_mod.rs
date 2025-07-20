@@ -64,7 +64,7 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -74,13 +74,16 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
             >("WithDefaultGameObjectParent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WithDefaultGameObjectParent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "WithDefaultGameObjectParent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked(self, (defaultParentName)) };
+        > = unsafe { method.invoke_unchecked(self, (defaultParentName))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -90,7 +93,7 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
         >,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -103,12 +106,14 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (subContainerBindInfo, bindInfo))
+            method.invoke_unchecked(self, (subContainerBindInfo, bindInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +122,7 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SubContainerCreatorBindInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::SubContainerCreatorBindInfo>,
@@ -125,20 +130,23 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
             >("get_SubContainerCreatorBindInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SubContainerCreatorBindInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "get_SubContainerCreatorBindInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::SubContainerCreatorBindInfo,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_SubContainerCreatorBindInfo(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::Zenject::SubContainerCreatorBindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::SubContainerCreatorBindInfo>),
                 quest_hook::libil2cpp::Void,
@@ -146,12 +154,15 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
             >("set_SubContainerCreatorBindInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_SubContainerCreatorBindInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "set_SubContainerCreatorBindInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

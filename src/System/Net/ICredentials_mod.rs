@@ -45,7 +45,7 @@ impl crate::System::Net::ICredentials {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::ICredentials as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -56,13 +56,14 @@ impl crate::System::Net::ICredentials {
             >("GetCredential")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCredential", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::ICredentials as quest_hook::libil2cpp::Type >
+                    ::class(), "GetCredential", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::NetworkCredential,
-        > = unsafe { method.invoke_unchecked(self, (uri, authType)) };
+        > = unsafe { method.invoke_unchecked(self, (uri, authType))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

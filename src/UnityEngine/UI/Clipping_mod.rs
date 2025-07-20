@@ -46,7 +46,7 @@ impl crate::UnityEngine::UI::Clipping {
         >,
         validRect: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::Clipping as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -61,12 +61,13 @@ impl crate::UnityEngine::UI::Clipping {
             >("FindCullAndClipWorldRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindCullAndClipWorldRect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::Clipping as quest_hook::libil2cpp::Type >
+                    ::class(), "FindCullAndClipWorldRect", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (rectMaskParents, validRect))
+            method.invoke_unchecked((), (rectMaskParents, validRect))?
         };
         Ok(__cordl_ret.into())
     }

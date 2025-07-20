@@ -57,7 +57,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -77,8 +77,10 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
             >("ProvideScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProvideScene", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider
+                    as quest_hook::libil2cpp::Type > ::class(), "ProvideScene", 5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -88,7 +90,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
                 .invoke_unchecked(
                     self,
                     (resourceManager, location, loadMode, activateOnLoad, priority),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,7 +110,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -128,8 +130,10 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
             >("ProvideScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProvideScene", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider
+                    as quest_hook::libil2cpp::Type > ::class(), "ProvideScene", 5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -145,7 +149,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
                         activateOnLoad,
                         priority,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -162,7 +166,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -179,13 +183,17 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
             >("ReleaseScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReleaseScene", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider
+                    as quest_hook::libil2cpp::Type > ::class(), "ReleaseScene", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = unsafe { method.invoke_unchecked(self, (resourceManager, sceneLoadHandle)) };
+        > = unsafe {
+            method.invoke_unchecked(self, (resourceManager, sceneLoadHandle))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

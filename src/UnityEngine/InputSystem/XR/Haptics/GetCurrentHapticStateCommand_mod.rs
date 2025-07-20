@@ -105,7 +105,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand 
     pub fn Create() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand,
@@ -113,19 +113,21 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand 
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand
+                    as quest_hook::libil2cpp::Type > ::class(), "Create", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Type() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -133,12 +135,14 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand 
             >("get_Type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Type", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Type", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -147,7 +151,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand 
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::XR::Haptics::HapticState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::XR::Haptics::HapticState,
@@ -155,12 +159,15 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand 
             >("get_currentState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_currentState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand
+                    as quest_hook::libil2cpp::Type > ::class(), "get_currentState",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::HapticState = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +176,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand 
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -177,12 +184,14 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand 
             >("get_typeStatic")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_typeStatic", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand
+                    as quest_hook::libil2cpp::Type > ::class(), "get_typeStatic", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

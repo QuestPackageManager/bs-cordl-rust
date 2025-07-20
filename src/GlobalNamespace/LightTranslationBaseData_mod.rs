@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::LightTranslationBaseData {
         easeType: crate::GlobalNamespace::EaseType,
         translation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationBaseData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, bool, crate::GlobalNamespace::EaseType, f32),
                 quest_hook::libil2cpp::Void,
@@ -73,8 +73,9 @@ impl crate::GlobalNamespace::LightTranslationBaseData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationBaseData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -82,7 +83,7 @@ impl crate::GlobalNamespace::LightTranslationBaseData {
                 .invoke_unchecked(
                     self,
                     (beat, usePreviousEventTranslationValue, easeType, translation),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

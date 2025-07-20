@@ -102,7 +102,7 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
         &mut self,
         pose: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::RecPlay::PlayerPose>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseOffsets as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::RecPlay::PlayerPose>),
                 quest_hook::libil2cpp::Void,
@@ -110,12 +110,13 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
             >("Adjust")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Adjust", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::RecPlay::PoseOffsets as
+                    quest_hook::libil2cpp::Type > ::class(), "Adjust", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pose))
+            method.invoke_unchecked(self, (pose))?
         };
         Ok(__cordl_ret.into())
     }

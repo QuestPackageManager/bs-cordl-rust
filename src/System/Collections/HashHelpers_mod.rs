@@ -39,39 +39,42 @@ impl std::ops::DerefMut for crate::System::Collections::HashHelpers {
 #[cfg(feature = "System+Collections+HashHelpers")]
 impl crate::System::Collections::HashHelpers {
     pub fn ExpandPrime(oldSize: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::HashHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("ExpandPrime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandPrime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::HashHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandPrime", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (oldSize)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (oldSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrime(min: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::HashHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("GetPrime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPrime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::HashHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPrime", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (min)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (min))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPrime(candidate: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::HashHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("IsPrime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPrime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::HashHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "IsPrime", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (candidate)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (candidate))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SerializationInfoTable() -> quest_hook::libil2cpp::Result<
@@ -84,7 +87,7 @@ impl crate::System::Collections::HashHelpers {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::HashHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -99,8 +102,10 @@ impl crate::System::Collections::HashHelpers {
             >("get_SerializationInfoTable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SerializationInfoTable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::HashHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_SerializationInfoTable", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -110,7 +115,7 @@ impl crate::System::Collections::HashHelpers {
                     crate::System::Runtime::Serialization::SerializationInfo,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

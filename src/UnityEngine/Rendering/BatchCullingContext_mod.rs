@@ -136,7 +136,7 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
         inReceiverPlaneOffset: i32,
         inReceiverPlaneCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::BatchCullingContext as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
@@ -159,8 +159,9 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 12usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::BatchCullingContext as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 12usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -181,7 +182,7 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
                         inReceiverPlaneOffset,
                         inReceiverPlaneCount,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

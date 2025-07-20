@@ -44,7 +44,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::TypeTranslator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
@@ -52,13 +52,15 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             >("FindPrimitiveTypeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindPrimitiveTypeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::TypeTranslator as
+                    quest_hook::libil2cpp::Type > ::class(), "FindPrimitiveTypeData",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::TypeData,
-        > = unsafe { method.invoke_unchecked((), (typeName)) };
+        > = unsafe { method.invoke_unchecked((), (typeName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetArrayName(
@@ -66,7 +68,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::TypeTranslator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -74,13 +76,14 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             >("GetArrayName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArrayName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::TypeTranslator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetArrayName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (elemName)) };
+        > = unsafe { method.invoke_unchecked((), (elemName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrimitiveTypeData_Il2CppString0(
@@ -88,7 +91,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::TypeTranslator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
@@ -96,13 +99,15 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             >("GetPrimitiveTypeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPrimitiveTypeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::TypeTranslator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPrimitiveTypeData",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::TypeData,
-        > = unsafe { method.invoke_unchecked((), (typeName)) };
+        > = unsafe { method.invoke_unchecked((), (typeName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrimitiveTypeData__cordl_bool1(
@@ -111,7 +116,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::TypeTranslator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
@@ -119,13 +124,15 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             >("GetPrimitiveTypeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPrimitiveTypeData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::TypeTranslator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPrimitiveTypeData",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::TypeData,
-        > = unsafe { method.invoke_unchecked((), (typeName, nullable)) };
+        > = unsafe { method.invoke_unchecked((), (typeName, nullable))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeData_Il2CppString__cordl_bool1(
@@ -135,7 +142,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::TypeTranslator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -147,14 +154,15 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             >("GetTypeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTypeData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::TypeTranslator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTypeData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::TypeData,
         > = unsafe {
-            method.invoke_unchecked((), (runtimeType, xmlDataType, underlyingEnumType))
+            method.invoke_unchecked((), (runtimeType, xmlDataType, underlyingEnumType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +171,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::TypeTranslator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeData>,
@@ -171,13 +179,14 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             >("GetTypeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTypeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::TypeTranslator as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTypeData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::TypeData,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseArrayType(
@@ -192,7 +201,7 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Serialization::TypeTranslator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -211,12 +220,13 @@ impl crate::System::Xml::Serialization::TypeTranslator {
             >("ParseArrayType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseArrayType", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Serialization::TypeTranslator as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseArrayType", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (arrayType, _cordl_type, ns, dimensions))
+            method.invoke_unchecked((), (arrayType, _cordl_type, ns, dimensions))?
         };
         Ok(__cordl_ret.into())
     }

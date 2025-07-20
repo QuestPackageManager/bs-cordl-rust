@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DisconnectedReasonMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -60,13 +60,14 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
             >("ErrorCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ErrorCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DisconnectedReasonMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "ErrorCode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (disconnectedReason)) };
+        > = unsafe { method.invoke_unchecked((), (disconnectedReason))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalizedKey(
@@ -74,7 +75,7 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::DisconnectedReasonMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::DisconnectedReason),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -82,13 +83,14 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
             >("LocalizedKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalizedKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::DisconnectedReasonMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalizedKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (connectionFailedReason)) };
+        > = unsafe { method.invoke_unchecked((), (connectionFailedReason))? };
         Ok(__cordl_ret.into())
     }
 }

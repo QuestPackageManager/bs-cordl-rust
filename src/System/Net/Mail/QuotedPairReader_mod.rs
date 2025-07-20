@@ -42,7 +42,7 @@ impl crate::System::Net::Mail::QuotedPairReader {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::QuotedPairReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 i32,
@@ -50,11 +50,12 @@ impl crate::System::Net::Mail::QuotedPairReader {
             >("CountBackslashes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CountBackslashes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::QuotedPairReader as
+                    quest_hook::libil2cpp::Type > ::class(), "CountBackslashes", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn CountQuotedChars(
@@ -62,7 +63,7 @@ impl crate::System::Net::Mail::QuotedPairReader {
         index: i32,
         permitUnicodeEscaping: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::QuotedPairReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -74,12 +75,13 @@ impl crate::System::Net::Mail::QuotedPairReader {
             >("CountQuotedChars")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CountQuotedChars", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::QuotedPairReader as
+                    quest_hook::libil2cpp::Type > ::class(), "CountQuotedChars", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (data, index, permitUnicodeEscaping))
+            method.invoke_unchecked((), (data, index, permitUnicodeEscaping))?
         };
         Ok(__cordl_ret.into())
     }

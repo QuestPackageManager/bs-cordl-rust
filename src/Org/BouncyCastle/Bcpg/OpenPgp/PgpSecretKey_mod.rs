@@ -61,7 +61,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -84,8 +84,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("CertifiedPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CertifiedPublicKey", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "CertifiedPublicKey", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -102,7 +103,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         hashAlgorithm,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +122,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -143,8 +144,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("CertifiedPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CertifiedPublicKey", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "CertifiedPublicKey", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -154,7 +156,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 .invoke_unchecked(
                     (),
                     (certificationLevel, keyPair, id, hashedPackets, unhashedPackets),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +167,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     bool,
@@ -177,13 +179,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("Checksum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Checksum", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "Checksum", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (useSha1, bytes, length)) };
+        > = unsafe { method.invoke_unchecked((), (useSha1, bytes, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyWithNewPassword(
@@ -203,7 +206,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -223,8 +226,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("CopyWithNewPassword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyWithNewPassword", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyWithNewPassword",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -234,7 +239,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 .invoke_unchecked(
                     (),
                     (key, oldPassPhrase, newPassPhrase, newEncAlgorithm, _cordl_rand),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +260,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -275,8 +280,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("CopyWithNewPasswordRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyWithNewPasswordRaw", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyWithNewPasswordRaw",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -292,7 +299,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         newEncAlgorithm,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -313,7 +320,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -333,8 +340,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("CopyWithNewPasswordUtf8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyWithNewPasswordUtf8", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyWithNewPasswordUtf8",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -344,7 +353,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 .invoke_unchecked(
                     (),
                     (key, oldPassPhrase, newPassPhrase, newEncAlgorithm, _cordl_rand),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +375,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -387,8 +396,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("DoCopyWithNewPassword")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoCopyWithNewPassword", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "DoCopyWithNewPassword",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -405,7 +416,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         newEncAlgorithm,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -416,7 +427,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -429,13 +440,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("DoExtractPrivateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoExtractPrivateKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "DoExtractPrivateKey",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-        > = unsafe { method.invoke_unchecked(self, (rawPassPhrase, clearPassPhrase)) };
+        > = unsafe { method.invoke_unchecked(self, (rawPassPhrase, clearPassPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn DoParseSecretKeyFromSExpr_PgpPublicKey0(
@@ -448,7 +461,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -465,8 +478,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("DoParseSecretKeyFromSExpr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoParseSecretKeyFromSExpr", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "DoParseSecretKeyFromSExpr",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -476,7 +491,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 .invoke_unchecked(
                     (),
                     (inputStream, rawPassPhrase, clearPassPhrase, pubKey),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -487,7 +502,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -501,14 +516,16 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("DoParseSecretKeyFromSExpr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoParseSecretKeyFromSExpr", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "DoParseSecretKeyFromSExpr",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
         > = unsafe {
-            method.invoke_unchecked((), (inputStream, rawPassPhrase, clearPassPhrase))
+            method.invoke_unchecked((), (inputStream, rawPassPhrase, clearPassPhrase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -516,7 +533,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                 quest_hook::libil2cpp::Void,
@@ -524,12 +541,13 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("Encode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "Encode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (outStr))
+            method.invoke_unchecked(self, (outStr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -550,7 +568,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
@@ -572,8 +590,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("EncryptData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncryptData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "EncryptData", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -583,7 +602,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 .invoke_unchecked(
                     (),
                     (encAlgorithm, key, data, dataOff, dataLen, random, iv),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -604,7 +623,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -626,8 +645,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("EncryptKeyDataV3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncryptKeyDataV3", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "EncryptKeyDataV3", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -645,7 +665,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         s2k,
                         iv,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -667,7 +687,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -690,8 +710,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("EncryptKeyDataV4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncryptKeyDataV4", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "EncryptKeyDataV4", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -710,7 +731,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         s2k,
                         iv,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -721,7 +742,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -732,13 +753,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ExtractKeyData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractKeyData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractKeyData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (rawPassPhrase, clearPassPhrase)) };
+        > = unsafe { method.invoke_unchecked(self, (rawPassPhrase, clearPassPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractPrivateKey(
@@ -747,7 +769,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>),
                 quest_hook::libil2cpp::Gc<
@@ -757,13 +779,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ExtractPrivateKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractPrivateKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractPrivateKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-        > = unsafe { method.invoke_unchecked(self, (passPhrase)) };
+        > = unsafe { method.invoke_unchecked(self, (passPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractPrivateKeyRaw(
@@ -772,7 +795,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -782,13 +805,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ExtractPrivateKeyRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractPrivateKeyRaw", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractPrivateKeyRaw",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-        > = unsafe { method.invoke_unchecked(self, (rawPassPhrase)) };
+        > = unsafe { method.invoke_unchecked(self, (rawPassPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractPrivateKeyUtf8(
@@ -797,7 +822,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>),
                 quest_hook::libil2cpp::Gc<
@@ -807,13 +832,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ExtractPrivateKeyUtf8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractPrivateKeyUtf8", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractPrivateKeyUtf8",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
-        > = unsafe { method.invoke_unchecked(self, (passPhrase)) };
+        > = unsafe { method.invoke_unchecked(self, (passPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDValue(
@@ -824,7 +851,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -837,8 +864,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("GetDValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDValue", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -848,7 +876,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 .invoke_unchecked(
                     (),
                     (inputStream, rawPassPhrase, clearPassPhrase, curveName),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -863,7 +891,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -878,13 +906,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("GetECKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetECKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "GetECKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
-        > = unsafe { method.invoke_unchecked(self, (algorithm, bcpgIn)) };
+        > = unsafe { method.invoke_unchecked(self, (algorithm, bcpgIn))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEncoded(
@@ -892,7 +921,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -900,13 +929,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("GetEncoded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEncoded", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEncoded", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_PgpPrivateKey_PgpPublicKey_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_SecureRandom__cordl_bool1(
@@ -1412,7 +1442,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1428,13 +1458,17 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ParseSecretKeyFromSExprRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseSecretKeyFromSExprRaw", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ParseSecretKeyFromSExprRaw", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked((), (inputStream, rawPassPhrase, pubKey)) };
+        > = unsafe {
+            method.invoke_unchecked((), (inputStream, rawPassPhrase, pubKey))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseSecretKeyFromSExprRaw_Stream_Il2CppArray1(
@@ -1443,7 +1477,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1456,13 +1490,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ParseSecretKeyFromSExprRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseSecretKeyFromSExprRaw", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ParseSecretKeyFromSExprRaw", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked((), (inputStream, rawPassPhrase)) };
+        > = unsafe { method.invoke_unchecked((), (inputStream, rawPassPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseSecretKeyFromSExprUtf8_PgpPublicKey0(
@@ -1474,7 +1510,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1490,13 +1526,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ParseSecretKeyFromSExprUtf8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseSecretKeyFromSExprUtf8", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ParseSecretKeyFromSExprUtf8", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase, pubKey)) };
+        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase, pubKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseSecretKeyFromSExprUtf8_Stream_Il2CppArray1(
@@ -1505,7 +1543,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1518,13 +1556,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ParseSecretKeyFromSExprUtf8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseSecretKeyFromSExprUtf8", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ParseSecretKeyFromSExprUtf8", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase)) };
+        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseSecretKeyFromSExpr_PgpPublicKey0(
@@ -1536,7 +1576,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1552,13 +1592,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ParseSecretKeyFromSExpr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseSecretKeyFromSExpr", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseSecretKeyFromSExpr",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase, pubKey)) };
+        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase, pubKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseSecretKeyFromSExpr_Stream_Il2CppArray1(
@@ -1567,7 +1609,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1580,13 +1622,15 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ParseSecretKeyFromSExpr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseSecretKeyFromSExpr", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseSecretKeyFromSExpr",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase)) };
+        > = unsafe { method.invoke_unchecked((), (inputStream, passPhrase))? };
         Ok(__cordl_ret.into())
     }
     pub fn RecoverKeyData(
@@ -1602,7 +1646,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
@@ -1620,8 +1664,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("RecoverKeyData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecoverKeyData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "RecoverKeyData", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -1631,7 +1676,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 .invoke_unchecked(
                     (),
                     (encAlgorithm, modeAndPadding, key, iv, keyData, keyOff, keyLen),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1645,7 +1690,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1662,13 +1707,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("ReplacePublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReplacePublicKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "ReplacePublicKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
-        > = unsafe { method.invoke_unchecked((), (secretKey, publicKey)) };
+        > = unsafe { method.invoke_unchecked((), (secretKey, publicKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_PgpPrivateKey_PgpPublicKey_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_SecureRandom__cordl_bool1(
@@ -1688,7 +1734,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
         >,
         isMasterKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1711,8 +1757,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1729,7 +1776,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         _cordl_rand,
                         isMasterKey,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1742,7 +1789,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1757,12 +1804,13 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (secret, _cordl_pub))
+            method.invoke_unchecked(self, (secret, _cordl_pub))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1787,7 +1835,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1814,8 +1862,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1834,7 +1883,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1859,7 +1908,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1886,8 +1935,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1906,7 +1956,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1932,7 +1982,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1960,8 +2010,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1981,7 +2032,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2007,7 +2058,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2035,8 +2086,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2056,7 +2108,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2079,7 +2131,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2104,8 +2156,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2122,7 +2175,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2146,7 +2199,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2172,8 +2225,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2191,7 +2245,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2215,7 +2269,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2241,8 +2295,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2260,7 +2315,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2285,7 +2340,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2312,8 +2367,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2332,7 +2388,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2357,7 +2413,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2384,8 +2440,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2404,7 +2461,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2432,7 +2489,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2462,8 +2519,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2483,7 +2541,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2512,7 +2570,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             crate::Org::BouncyCastle::Security::SecureRandom,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2543,8 +2601,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 12usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 12usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -2565,44 +2624,48 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                         unhashedPackets,
                         _cordl_rand,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsMasterKey(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsMasterKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsMasterKey", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsMasterKey", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsPrivateKeyEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsPrivateKeyEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsPrivateKeyEmpty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsPrivateKeyEmpty",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsSigningKey(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsSigningKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsSigningKey", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsSigningKey", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_KeyEncryptionAlgorithm(
@@ -2610,7 +2673,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
@@ -2618,25 +2681,28 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("get_KeyEncryptionAlgorithm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_KeyEncryptionAlgorithm", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_KeyEncryptionAlgorithm", 0usize
                 )
             });
         let __cordl_ret: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_KeyId(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_KeyId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_KeyId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_KeyId", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PublicKey(
@@ -2644,7 +2710,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -2654,13 +2720,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("get_PublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PublicKey", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_PublicKey", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_S2k(
@@ -2668,7 +2735,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>,
@@ -2676,25 +2743,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("get_S2k")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_S2k", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_S2k", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::S2k,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_S2kUsage(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_S2kUsage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_S2kUsage", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_S2kUsage", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UserAttributes(
@@ -2702,7 +2771,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
@@ -2710,13 +2779,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("get_UserAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UserAttributes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_UserAttributes", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerable,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UserIds(
@@ -2724,7 +2794,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
@@ -2732,13 +2802,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             >("get_UserIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UserIds", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey as
+                    quest_hook::libil2cpp::Type > ::class(), "get_UserIds", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerable,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

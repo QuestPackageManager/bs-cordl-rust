@@ -81,7 +81,7 @@ impl crate::HMUI::ScreenModeData {
         yOffsetRelativeToHead: f32,
         minYPos: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::ScreenModeData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -97,8 +97,9 @@ impl crate::HMUI::ScreenModeData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::ScreenModeData as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -114,7 +115,7 @@ impl crate::HMUI::ScreenModeData {
                         yOffsetRelativeToHead,
                         minYPos,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

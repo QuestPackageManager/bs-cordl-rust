@@ -42,7 +42,7 @@ impl crate::Internal::Runtime::Augments::RuntimeAugments {
     pub fn ReportUnhandledException(
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Runtime::Augments::RuntimeAugments as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Exception>),
                 quest_hook::libil2cpp::Void,
@@ -50,12 +50,14 @@ impl crate::Internal::Runtime::Augments::RuntimeAugments {
             >("ReportUnhandledException")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReportUnhandledException", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Runtime::Augments::RuntimeAugments as
+                    quest_hook::libil2cpp::Type > ::class(), "ReportUnhandledException",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (exception))
+            method.invoke_unchecked((), (exception))?
         };
         Ok(__cordl_ret.into())
     }
@@ -64,7 +66,7 @@ impl crate::Internal::Runtime::Augments::RuntimeAugments {
             crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Runtime::Augments::RuntimeAugments as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -74,13 +76,14 @@ impl crate::Internal::Runtime::Augments::RuntimeAugments {
             >("get_Callbacks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Callbacks", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Runtime::Augments::RuntimeAugments as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Callbacks", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -54,7 +54,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::TextCore::Text::TextGenerationSettings,
@@ -64,11 +64,12 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("ComputeTextHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeTextHeight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeTextHeight", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (tgs)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (tgs))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeTextWidth(
@@ -77,7 +78,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::TextCore::Text::TextGenerationSettings,
@@ -87,11 +88,12 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("ComputeTextWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeTextWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeTextWidth", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (tgs)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (tgs))? };
         Ok(__cordl_ret.into())
     }
     pub fn DistanceToLine(
@@ -99,7 +101,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         b: crate::UnityEngine::Vector3,
         point: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -111,11 +113,12 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("DistanceToLine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DistanceToLine", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "DistanceToLine", 3usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b, point)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindIntersectingLink(
@@ -123,7 +126,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         position: crate::UnityEngine::Vector3,
         inverseYAxis: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3, bool),
                 i32,
@@ -131,12 +134,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("FindIntersectingLink")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindIntersectingLink", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "FindIntersectingLink",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (position, inverseYAxis))
+            method.invoke_unchecked(self, (position, inverseYAxis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +151,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         line: i32,
         visibleOnly: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector2, i32, bool),
                 i32,
@@ -154,12 +159,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("FindNearestCharacterOnLine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindNearestCharacterOnLine", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "FindNearestCharacterOnLine", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (position, line, visibleOnly))
+            method.invoke_unchecked(self, (position, line, visibleOnly))?
         };
         Ok(__cordl_ret.into())
     }
@@ -167,30 +174,33 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         &mut self,
         position: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(crate::UnityEngine::Vector2), i32, 1usize>("FindNearestLine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindNearestLine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "FindNearestLine", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (position)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (position))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacterHeightFromIndex(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), f32, 1usize>("GetCharacterHeightFromIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCharacterHeightFromIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCharacterHeightFromIndex", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (index)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCursorIndexFromPosition(
@@ -198,7 +208,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         position: crate::UnityEngine::Vector2,
         inverseYAxis: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector2, bool),
                 i32,
@@ -206,12 +216,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("GetCursorIndexFromPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCursorIndexFromPosition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCursorIndexFromPosition", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (position, inverseYAxis))
+            method.invoke_unchecked(self, (position, inverseYAxis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +232,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         index: i32,
         inverseYAxis: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, bool),
                 crate::UnityEngine::Vector2,
@@ -228,12 +240,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("GetCursorPositionFromStringIndexUsingCharacterHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCursorPositionFromStringIndexUsingCharacterHeight", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCursorPositionFromStringIndexUsingCharacterHeight", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked(self, (index, inverseYAxis))
+            method.invoke_unchecked(self, (index, inverseYAxis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,7 +257,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         useXAdvance: bool,
         inverseYAxis: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, bool, bool),
                 crate::UnityEngine::Vector2,
@@ -251,12 +265,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("GetCursorPositionFromStringIndexUsingLineHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCursorPositionFromStringIndexUsingLineHeight", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCursorPositionFromStringIndexUsingLineHeight", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked(self, (index, useXAdvance, inverseYAxis))
+            method.invoke_unchecked(self, (index, useXAdvance, inverseYAxis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -264,42 +280,46 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         &mut self,
         lineNumber: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), f32, 1usize>("GetLineHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLineHeight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLineHeight", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (lineNumber)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (lineNumber))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLineHeightFromCharacterIndex(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), f32, 1usize>("GetLineHeightFromCharacterIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLineHeightFromCharacterIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetLineHeightFromCharacterIndex", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (index)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLineNumber(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetLineNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLineNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLineNumber", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (index)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
@@ -307,41 +327,44 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         value: char,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(char, i32), i32, 2usize>("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "IndexOf", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (value, startIndex))
+            method.invoke_unchecked(self, (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsDirty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsDirty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDirty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDirty", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsElided(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsElided")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsElided", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "IsElided", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LastIndexOf(
@@ -349,16 +372,17 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         value: char,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(char, i32), i32, 2usize>("LastIndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LastIndexOf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "LastIndexOf", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (value, startIndex))
+            method.invoke_unchecked(self, (value, startIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,30 +390,34 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         &mut self,
         originalPos: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("LineDownCharacterPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LineDownCharacterPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "LineDownCharacterPosition",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalPos)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalPos))? };
         Ok(__cordl_ret.into())
     }
     pub fn LineUpCharacterPosition(
         &mut self,
         originalPos: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("LineUpCharacterPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LineUpCharacterPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "LineUpCharacterPosition",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalPos)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (originalPos))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -406,7 +434,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         c: crate::UnityEngine::Vector3,
         d: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -420,11 +448,13 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("PointIntersectRectangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointIntersectRectangle", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "PointIntersectRectangle",
+                    5usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (m, a, b, c, d)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (m, a, b, c, d))? };
         Ok(__cordl_ret.into())
     }
     pub fn Substring(
@@ -434,7 +464,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -442,13 +472,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("Substring")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Substring", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "Substring", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (startIndex, length)) };
+        > = unsafe { method.invoke_unchecked(self, (startIndex, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
@@ -459,7 +490,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::TextCore::Text::TextGenerationSettings,
@@ -469,13 +500,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("Update")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Update", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "Update", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextInfo,
-        > = unsafe { method.invoke_unchecked(self, (tgs)) };
+        > = unsafe { method.invoke_unchecked(self, (tgs))? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePreferredValues(
@@ -484,7 +516,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::TextCore::Text::TextGenerationSettings,
@@ -494,35 +526,38 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("UpdatePreferredValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdatePreferredValues", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdatePreferredValues",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tgs))
+            method.invoke_unchecked(self, (tgs))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_layoutTextInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
@@ -530,13 +565,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("get_layoutTextInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_layoutTextInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "get_layoutTextInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextInfo,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_textInfo(
@@ -544,7 +580,7 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextHandle as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
@@ -552,13 +588,14 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             >("get_textInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_textInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextHandle as
+                    quest_hook::libil2cpp::Type > ::class(), "get_textInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextInfo,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

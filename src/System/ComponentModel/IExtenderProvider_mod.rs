@@ -43,7 +43,7 @@ impl crate::System::ComponentModel::IExtenderProvider {
         &mut self,
         extendee: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::IExtenderProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -51,11 +51,12 @@ impl crate::System::ComponentModel::IExtenderProvider {
             >("CanExtend")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanExtend", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::IExtenderProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "CanExtend", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (extendee)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (extendee))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

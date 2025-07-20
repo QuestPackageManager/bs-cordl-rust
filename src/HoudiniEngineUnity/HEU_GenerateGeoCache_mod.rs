@@ -268,7 +268,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         >,
         allFaceCounts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -281,12 +281,14 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("CalculateGroupMeshTopology")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateGroupMeshTopology", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateGroupMeshTopology", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::MeshTopology = unsafe {
-            method.invoke_unchecked((), (groupFaces, allFaceCounts))
+            method.invoke_unchecked((), (groupFaces, allFaceCounts))?
         };
         Ok(__cordl_ret.into())
     }
@@ -308,7 +310,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -333,8 +335,9 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("CombineMeshes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombineMeshes", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "CombineMeshes", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
@@ -348,7 +351,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         bGenerateNormals,
                         meshIndexFormat,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +369,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -387,12 +390,14 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("CombineQuadMeshes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CombineQuadMeshes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "CombineQuadMeshes", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
-            method.invoke_unchecked((), (subMeshesMap, subMeshIndices, bGenerateNormals))
+            method
+                .invoke_unchecked((), (subMeshesMap, subMeshIndices, bGenerateNormals))?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,7 +407,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         >,
         materialAttributeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -415,12 +420,14 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("CreateMaterialInfoEntryFromAttributeIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMaterialInfoEntryFromAttributeIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateMaterialInfoEntryFromAttributeIndex", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (geoCache, materialAttributeIndex))
+            method.invoke_unchecked((), (geoCache, materialAttributeIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -434,7 +441,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MeshData>,
@@ -449,8 +456,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("CreateMeshFromMeshData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMeshFromMeshData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMeshFromMeshData",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
@@ -458,7 +467,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                 .invoke_unchecked(
                     (),
                     (submesh, bGenerateUVs, bGenerateNormals, meshIndexFormat),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -481,7 +490,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         >,
         defaultMaterialKey: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -511,8 +520,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GenerateGeoGroupUsingGeoCachePoints")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateGeoGroupUsingGeoCachePoints", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateGeoGroupUsingGeoCachePoints", 9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -530,7 +541,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         LODGroupMeshes,
                         defaultMaterialKey,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -553,7 +564,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         >,
         defaultMaterialKey: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -583,8 +594,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GenerateGeoGroupUsingGeoCacheVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateGeoGroupUsingGeoCacheVertices", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateGeoGroupUsingGeoCacheVertices", 9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -602,7 +615,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         LODGroupMeshes,
                         defaultMaterialKey,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -625,7 +638,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         bGenerateNormals: bool,
         bPartInstanced: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -655,8 +668,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GenerateLODMeshesFromGeoGroups")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateLODMeshesFromGeoGroups", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateLODMeshesFromGeoGroups", 9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -674,7 +689,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         bGenerateNormals,
                         bPartInstanced,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -700,7 +715,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -731,8 +746,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GenerateMeshFromGeoGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateMeshFromGeoGroup", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateMeshFromGeoGroup",
+                    10usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -751,7 +768,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         newMesh,
                         newMaterials,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -770,7 +787,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         bGenerateNormals: bool,
         bPartInstanced: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -794,8 +811,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GenerateMeshFromSingleGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateMeshFromSingleGroup", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateMeshFromSingleGroup", 9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -813,7 +832,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         bGenerateNormals,
                         bPartInstanced,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -837,7 +856,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -864,8 +883,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GetFinalMaterialsFromComparingNewWithPrevious")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFinalMaterialsFromComparingNewWithPrevious", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetFinalMaterialsFromComparingNewWithPrevious", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -873,7 +894,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                 .invoke_unchecked(
                     (),
                     (gameObject, previousMaterials, newMaterials, finalMaterials),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -890,7 +911,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         >,
         substanceIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -910,8 +931,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GetMaterialKeyFromAttributeIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaterialKeyFromAttributeIndex", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetMaterialKeyFromAttributeIndex", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -925,7 +948,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         substanceName,
                         substanceIndex,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -946,7 +969,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GenerateGeoCache>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -972,8 +995,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("GetPopulatedGeoCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPopulatedGeoCache", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPopulatedGeoCache",
+                    7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -991,7 +1016,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         materialCache,
                         assetCacheFolderPath,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1010,7 +1035,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1029,12 +1054,14 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("ParseLODTransitionAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseLODTransitionAttribute", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ParseLODTransitionAttribute", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID, LODTransitionValues))
+            method.invoke_unchecked((), (session, geoID, partID, LODTransitionValues))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1043,7 +1070,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         bUseLODGroups: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1056,12 +1083,14 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("PopulateGeometryData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PopulateGeometryData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "PopulateGeometryData",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (session, bUseLODGroups))
+            method.invoke_unchecked(self, (session, bUseLODGroups))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1069,7 +1098,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>),
                 quest_hook::libil2cpp::Void,
@@ -1077,12 +1106,14 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("PopulateUnityMaterialData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PopulateUnityMaterialData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "PopulateUnityMaterialData",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (session))
+            method.invoke_unchecked(self, (session))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1107,7 +1138,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -1133,8 +1164,10 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("TransferRegularAttributesToVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TransferRegularAttributesToVertices", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TransferRegularAttributesToVertices", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1150,7 +1183,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                         inData,
                         outData,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1165,7 +1198,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1183,12 +1216,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("UpdateCollider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateCollider", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateCollider", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (geoCache, outputData, colliderInfo))
+            method.invoke_unchecked((), (geoCache, outputData, colliderInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1200,7 +1234,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1215,81 +1249,87 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
             >("UpdateColliders")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateColliders", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateColliders", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (geoCache, outputData))
+            method.invoke_unchecked((), (geoCache, outputData))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_AssetID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_AssetID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_AssetID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "get_AssetID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_GeoID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_GeoID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_GeoID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "get_GeoID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_PartID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_PartID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_PartID", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "get_PartID", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_AssetID(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_AssetID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_AssetID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache as
+                    quest_hook::libil2cpp::Type > ::class(), "set_AssetID", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1377,16 +1417,17 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

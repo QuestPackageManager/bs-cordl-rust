@@ -51,7 +51,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -67,12 +67,13 @@ impl crate::System::Collections::Generic::CollectionExtensions {
             >("GetValueOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValueOrDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::CollectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetValueOrDefault", 2usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked((), (dictionary, key))
+            method.invoke_unchecked((), (dictionary, key))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +90,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::Generic::CollectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -106,12 +107,13 @@ impl crate::System::Collections::Generic::CollectionExtensions {
             >("GetValueOrDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValueOrDefault", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::Generic::CollectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetValueOrDefault", 3usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked((), (dictionary, key, defaultValue))
+            method.invoke_unchecked((), (dictionary, key, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }

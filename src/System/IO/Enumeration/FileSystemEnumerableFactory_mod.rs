@@ -50,7 +50,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -66,15 +66,16 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("DirectoryInfos")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DirectoryInfos", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "DirectoryInfos", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options)) };
+        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn FileInfos(
@@ -88,7 +89,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -104,15 +105,16 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("FileInfos")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FileInfos", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "FileInfos", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options)) };
+        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn FileSystemInfos(
@@ -126,7 +128,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -142,15 +144,16 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("FileSystemInfos")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FileSystemInfos", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "FileSystemInfos", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options)) };
+        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn MatchesPattern(
@@ -158,7 +161,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         name: crate::System::ReadOnlySpan_1<char>,
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -170,12 +173,13 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("MatchesPattern")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchesPattern", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchesPattern", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, name, options))
+            method.invoke_unchecked((), (expression, name, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -188,7 +192,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         >,
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -204,12 +208,13 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("NormalizeInputs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NormalizeInputs", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "NormalizeInputs", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (directory, expression, options))
+            method.invoke_unchecked((), (directory, expression, options))?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +229,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -240,15 +245,16 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("UserDirectories")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UserDirectories", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "UserDirectories", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options)) };
+        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn UserEntries(
@@ -262,7 +268,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -278,15 +284,16 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("UserEntries")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UserEntries", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "UserEntries", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options)) };
+        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
         Ok(__cordl_ret.into())
     }
     pub fn UserFiles(
@@ -300,7 +307,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemEnumerableFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -316,15 +323,16 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
             >("UserFiles")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UserFiles", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemEnumerableFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "UserFiles", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (directory, expression, options)) };
+        > = unsafe { method.invoke_unchecked((), (directory, expression, options))? };
         Ok(__cordl_ret.into())
     }
 }

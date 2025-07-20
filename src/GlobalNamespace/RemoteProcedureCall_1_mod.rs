@@ -67,7 +67,9 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RemoteProcedureCall_1<
+            T0,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
@@ -78,12 +80,13 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
             >("DeserializeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeserializeData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RemoteProcedureCall_1 < T0 > as
+                    quest_hook::libil2cpp::Type > ::class(), "DeserializeData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (reader, protocolVersion))
+            method.invoke_unchecked(self, (reader, protocolVersion))?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +101,9 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RemoteProcedureCall_1<
+            T0,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i64, T0),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall>,
@@ -106,13 +111,14 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RemoteProcedureCall_1 < T0 > as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IRemoteProcedureCall,
-        > = unsafe { method.invoke_unchecked(self, (syncTime, value0)) };
+        > = unsafe { method.invoke_unchecked(self, (syncTime, value0))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -133,16 +139,19 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RemoteProcedureCall_1<
+            T0,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Release", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RemoteProcedureCall_1 < T0 > as
+                    quest_hook::libil2cpp::Type > ::class(), "Release", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -155,7 +164,9 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RemoteProcedureCall_1<
+            T0,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -166,12 +177,13 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
             >("SerializeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SerializeData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RemoteProcedureCall_1 < T0 > as
+                    quest_hook::libil2cpp::Type > ::class(), "SerializeData", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (writer, protocolVersion))
+            method.invoke_unchecked(self, (writer, protocolVersion))?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,16 +192,19 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RemoteProcedureCall_1<
+            T0,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RemoteProcedureCall_1 < T0 > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,15 +213,18 @@ impl<T0: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RemoteProcedureCal
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RemoteProcedureCall_1<
+            T0,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), T0, 0usize>("get_value0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_value0", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RemoteProcedureCall_1 < T0 > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_value0", 0usize
                 )
             });
-        let __cordl_ret: T0 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: T0 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

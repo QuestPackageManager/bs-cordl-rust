@@ -47,7 +47,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         &mut self,
         pRenderModel: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -55,12 +55,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("FreeRenderModel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeRenderModel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "FreeRenderModel", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pRenderModel))
+            method.invoke_unchecked(self, (pRenderModel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,7 +69,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         &mut self,
         pTexture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -76,12 +77,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("FreeTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "FreeTexture", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pTexture))
+            method.invoke_unchecked(self, (pTexture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +91,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         &mut self,
         pD3D11Texture2D: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -97,12 +99,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("FreeTextureD3D11")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FreeTextureD3D11", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "FreeTextureD3D11", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pD3D11Texture2D))
+            method.invoke_unchecked(self, (pD3D11Texture2D))?
         };
         Ok(__cordl_ret.into())
     }
@@ -113,7 +116,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         >,
         pchComponentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -124,12 +127,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetComponentButtonMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComponentButtonMask", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetComponentButtonMask", 2usize
                 )
             });
         let __cordl_ret: u64 = unsafe {
-            method.invoke_unchecked(self, (pchRenderModelName, pchComponentName))
+            method.invoke_unchecked(self, (pchRenderModelName, pchComponentName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +143,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 u32,
@@ -147,12 +151,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetComponentCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComponentCount", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetComponentCount", 1usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked(self, (pchRenderModelName))
+            method.invoke_unchecked(self, (pchRenderModelName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +170,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         pchComponentName: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unComponentNameLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -178,8 +183,9 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetComponentName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComponentName", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetComponentName", 4usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
@@ -192,7 +198,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
                         pchComponentName,
                         unComponentNameLen,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +213,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         >,
         unComponentRenderModelNameLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,8 +226,9 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetComponentRenderModelName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComponentRenderModelName", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetComponentRenderModelName", 4usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
@@ -234,7 +241,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
                         pchComponentRenderModelName,
                         unComponentRenderModelNameLen,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -254,7 +261,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             crate::OVR::OpenVR::RenderModel_ComponentState_t,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -274,8 +281,9 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetComponentState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComponentState", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetComponentState", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -289,7 +297,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
                         pState,
                         pComponentState,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +315,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             crate::OVR::OpenVR::RenderModel_ComponentState_t,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -325,8 +333,9 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetComponentStateForDevicePath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComponentStateForDevicePath", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetComponentStateForDevicePath", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -340,20 +349,21 @@ impl crate::OVR::OpenVR::CVRRenderModels {
                         pState,
                         pComponentState,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetRenderModelCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u32, 0usize>("GetRenderModelCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRenderModelCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRenderModelCount", 0usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRenderModelErrorNameFromEnum(
@@ -362,7 +372,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::OVR::OpenVR::EVRRenderModelError),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -370,13 +380,14 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetRenderModelErrorNameFromEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRenderModelErrorNameFromEnum", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRenderModelErrorNameFromEnum", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (error)) };
+        > = unsafe { method.invoke_unchecked(self, (error))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRenderModelName(
@@ -387,7 +398,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         >,
         unRenderModelNameLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -399,8 +410,9 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetRenderModelName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRenderModelName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRenderModelName", 3usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
@@ -408,7 +420,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
                 .invoke_unchecked(
                     self,
                     (unRenderModelIndex, pchRenderModelName, unRenderModelNameLen),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -421,7 +433,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         unOriginalPathLen: u32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRRenderModelError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -436,8 +448,9 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetRenderModelOriginalPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRenderModelOriginalPath", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRenderModelOriginalPath", 4usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
@@ -445,7 +458,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
                 .invoke_unchecked(
                     self,
                     (pchRenderModelName, pchOriginalPath, unOriginalPathLen, peError),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -458,7 +471,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         unThumbnailURLLen: u32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRRenderModelError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -473,8 +486,9 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("GetRenderModelThumbnailURL")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRenderModelThumbnailURL", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRenderModelThumbnailURL", 4usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
@@ -482,7 +496,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
                 .invoke_unchecked(
                     self,
                     (pchRenderModelName, pchThumbnailURL, unThumbnailURLLen, peError),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -491,7 +505,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         textureId: i32,
         pDstTexture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRRenderModelError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::System::IntPtr),
                 crate::OVR::OpenVR::EVRRenderModelError,
@@ -499,12 +513,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("LoadIntoTextureD3D11_Async")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadIntoTextureD3D11_Async", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadIntoTextureD3D11_Async", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRRenderModelError = unsafe {
-            method.invoke_unchecked(self, (textureId, pDstTexture))
+            method.invoke_unchecked(self, (textureId, pDstTexture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -515,7 +530,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         >,
         ppRenderModel: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRRenderModelError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -526,12 +541,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("LoadRenderModel_Async")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadRenderModel_Async", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadRenderModel_Async", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRRenderModelError = unsafe {
-            method.invoke_unchecked(self, (pchRenderModelName, ppRenderModel))
+            method.invoke_unchecked(self, (pchRenderModelName, ppRenderModel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -541,7 +557,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         pD3D11Device: crate::System::IntPtr,
         ppD3D11Texture2D: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRRenderModelError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -553,12 +569,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("LoadTextureD3D11_Async")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadTextureD3D11_Async", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadTextureD3D11_Async", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRRenderModelError = unsafe {
-            method.invoke_unchecked(self, (textureId, pD3D11Device, ppD3D11Texture2D))
+            method.invoke_unchecked(self, (textureId, pD3D11Device, ppD3D11Texture2D))?
         };
         Ok(__cordl_ret.into())
     }
@@ -567,7 +584,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         textureId: i32,
         ppTexture: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRRenderModelError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>),
                 crate::OVR::OpenVR::EVRRenderModelError,
@@ -575,12 +592,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("LoadTexture_Async")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadTexture_Async", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadTexture_Async", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRRenderModelError = unsafe {
-            method.invoke_unchecked(self, (textureId, ppTexture))
+            method.invoke_unchecked(self, (textureId, ppTexture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -600,7 +618,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         >,
         pchComponentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -611,12 +629,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >("RenderModelHasComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderModelHasComponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), "RenderModelHasComponent", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pchRenderModelName, pchComponentName))
+            method.invoke_unchecked(self, (pchRenderModelName, pchComponentName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -624,7 +643,7 @@ impl crate::OVR::OpenVR::CVRRenderModels {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -632,12 +651,13 @@ impl crate::OVR::OpenVR::CVRRenderModels {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }
@@ -816,7 +836,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -838,8 +858,9 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
             >("BeginInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginInvoke", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginInvoke", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
@@ -855,7 +876,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
                         callback,
                         object,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -872,7 +893,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -891,8 +912,9 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
             >("EndInvoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndInvoke", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as
+                    quest_hook::libil2cpp::Type > ::class(), "EndInvoke", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -900,7 +922,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
                 .invoke_unchecked(
                     self,
                     (pControllerState, pState, pComponentState, result),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -920,7 +942,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
             crate::OVR::OpenVR::RenderModel_ComponentState_t,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -940,8 +962,9 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -955,7 +978,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
                         pState,
                         pComponentState,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -974,7 +997,7 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -985,12 +1008,13 @@ impl crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

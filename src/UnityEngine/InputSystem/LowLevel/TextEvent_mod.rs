@@ -109,7 +109,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::TextEvent,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::TextEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, char, f64),
                 crate::UnityEngine::InputSystem::LowLevel::TextEvent,
@@ -117,12 +117,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::TextEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::TextEvent = unsafe {
-            method.invoke_unchecked((), (deviceId, character, _cordl_time))
+            method.invoke_unchecked((), (deviceId, character, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +134,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::TextEvent,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::TextEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, f64),
                 crate::UnityEngine::InputSystem::LowLevel::TextEvent,
@@ -141,12 +142,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::TextEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::TextEvent = unsafe {
-            method.invoke_unchecked((), (deviceId, character, _cordl_time))
+            method.invoke_unchecked((), (deviceId, character, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -155,7 +157,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::TextEvent as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::InputSystem::LowLevel::InputEventPtr),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -163,13 +165,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
             >("From")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "From", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::TextEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "From", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (eventPtr)) };
+        > = unsafe { method.invoke_unchecked((), (eventPtr))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_typeStatic(
@@ -177,7 +180,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::TextEvent as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -185,12 +188,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
             >("get_typeStatic")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_typeStatic", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::TextEvent as
+                    quest_hook::libil2cpp::Type > ::class(), "get_typeStatic", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

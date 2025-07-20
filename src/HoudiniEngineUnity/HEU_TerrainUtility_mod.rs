@@ -57,7 +57,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -80,8 +80,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("AppendConvertedHeightFieldToAlphaMap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendConvertedHeightFieldToAlphaMap", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AppendConvertedHeightFieldToAlphaMap", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -98,7 +100,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                         strengths,
                         alphaMapIndices,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +121,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
@@ -147,8 +149,9 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("ApplyDetailLayers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyDetailLayers", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyDetailLayers", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -162,7 +165,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                         heuDetailPrototypes,
                         convertedDetailMaps,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -173,7 +176,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         >,
         tileIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
@@ -187,12 +190,13 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("ApplyScatterTrees")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyScatterTrees", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyScatterTrees", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (terrainData, scatterTrees, tileIndex))
+            method.invoke_unchecked((), (terrainData, scatterTrees, tileIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +211,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -225,14 +229,16 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("ConvertHeightFieldToAlphaMap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertHeightFieldToAlphaMap", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ConvertHeightFieldToAlphaMap", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked((), (heightMapWidth, heightMapHeight, heightFields))
+            method.invoke_unchecked((), (heightMapWidth, heightMapHeight, heightFields))?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,7 +249,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -255,14 +261,16 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("ConvertHeightMapHoudiniToUnity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertHeightMapHoudiniToUnity", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ConvertHeightMapHoudiniToUnity", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked((), (heightMapWidth, heightMapHeight, heightValues))
+            method.invoke_unchecked((), (heightMapWidth, heightMapHeight, heightValues))?
         };
         Ok(__cordl_ret.into())
     }
@@ -285,7 +293,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         >,
         bakedMaterialPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -311,8 +319,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GenerateTerrainFromVolume")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateTerrainFromVolume", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GenerateTerrainFromVolume",
+                    9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -330,14 +340,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                         terrain,
                         bakedMaterialPath,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultTerrainMaterialPath() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -345,19 +355,21 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetDefaultTerrainMaterialPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultTerrainMaterialPath", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultTerrainMaterialPath", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultTerrainShaderName() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -365,13 +377,15 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetDefaultTerrainShaderName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultTerrainShaderName", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultTerrainShaderName", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDetailMapFromPart(
@@ -382,7 +396,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -397,14 +411,16 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetDetailMapFromPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDetailMapFromPart", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDetailMapFromPart",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID, detailResolution))
+            method.invoke_unchecked((), (session, geoID, partID, detailResolution))?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,7 +429,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         geoID: i32,
         partID: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -427,12 +443,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetHeightRangeFromHeightfield")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHeightRangeFromHeightfield", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetHeightRangeFromHeightfield", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID))
+            method.invoke_unchecked((), (session, geoID, partID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -442,7 +460,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         partID: i32,
         volumeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HFLayerType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -457,12 +475,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetHeightfieldLayerType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHeightfieldLayerType", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHeightfieldLayerType",
+                    4usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HFLayerType = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID, volumeName))
+            method.invoke_unchecked((), (session, geoID, partID, volumeName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -478,7 +498,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         minHeight: quest_hook::libil2cpp::ByRefMut<f32>,
         maxHeight: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -501,8 +521,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetHeightmapFromPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHeightmapFromPart", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHeightmapFromPart",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -519,7 +541,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                         minHeight,
                         maxHeight,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -536,7 +558,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -556,8 +578,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetNormalizedHeightmapFromPartWithMinMax")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNormalizedHeightmapFromPartWithMinMax", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetNormalizedHeightmapFromPartWithMinMax", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -577,7 +601,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                         heightRange,
                         bUseHeightRangeOverride,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -588,7 +612,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -602,13 +626,15 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetTerrainDataExportPathFromHeightfieldAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTerrainDataExportPathFromHeightfieldAttribute", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetTerrainDataExportPathFromHeightfieldAttribute", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (session, geoID, partID)) };
+        > = unsafe { method.invoke_unchecked((), (session, geoID, partID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTerrainLayerIndex(
@@ -619,7 +645,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
@@ -634,12 +660,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetTerrainLayerIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTerrainLayerIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTerrainLayerIndex",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (layer, terrainLayers))
+            method.invoke_unchecked((), (layer, terrainLayers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -651,7 +679,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -666,12 +694,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetTerrainLayerIndexByName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTerrainLayerIndexByName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetTerrainLayerIndexByName", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (layerName, terrainLayers))
+            method.invoke_unchecked((), (layerName, terrainLayers))?
         };
         Ok(__cordl_ret.into())
     }
@@ -688,7 +718,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -708,8 +738,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetTreePrototypeInfosFromPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTreePrototypeInfosFromPart", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetTreePrototypeInfosFromPart", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -718,7 +750,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                     crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (session, geoID, partID)) };
+        > = unsafe { method.invoke_unchecked((), (session, geoID, partID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetVolumePositionOffset(
@@ -732,7 +764,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         mapHeight: i32,
         minHeight: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -752,8 +784,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("GetVolumePositionOffset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetVolumePositionOffset", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetVolumePositionOffset",
+                    9usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
@@ -771,7 +805,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                         mapHeight,
                         minHeight,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -783,7 +817,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -802,12 +836,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("PopulateDetailProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PopulateDetailProperties", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PopulateDetailProperties",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID, detailProperties))
+            method.invoke_unchecked((), (session, geoID, partID, detailProperties))?
         };
         Ok(__cordl_ret.into())
     }
@@ -819,7 +855,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -838,12 +874,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("PopulateDetailPrototype")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PopulateDetailPrototype", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PopulateDetailPrototype",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID, detailPrototype))
+            method.invoke_unchecked((), (session, geoID, partID, detailPrototype))?
         };
         Ok(__cordl_ret.into())
     }
@@ -857,7 +895,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         >,
         throwWarningIfNoTileAttribute: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -878,8 +916,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("PopulateScatterTrees")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PopulateScatterTrees", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "PopulateScatterTrees",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -894,7 +934,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                         scatterTrees,
                         throwWarningIfNoTileAttribute,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -907,7 +947,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -921,14 +961,16 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("ResampleData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResampleData", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ResampleData", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
         > = unsafe {
-            method.invoke_unchecked((), (data, oldWidth, oldHeight, newWidth, newHeight))
+            method
+                .invoke_unchecked((), (data, oldWidth, oldHeight, newWidth, newHeight))?
         };
         Ok(__cordl_ret.into())
     }
@@ -939,7 +981,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         >,
         bakedMaterialPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
@@ -951,8 +993,9 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("SetTerrainMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTerrainMaterial", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTerrainMaterial", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -960,7 +1003,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                 .invoke_unchecked(
                     (),
                     (terrain, specifiedMaterialName, bakedMaterialPath),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -969,7 +1012,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         geoID: i32,
         partID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TerrainUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -983,12 +1026,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             >("VolumeLayerHasAttributes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "VolumeLayerHasAttributes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TerrainUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "VolumeLayerHasAttributes",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, geoID, partID))
+            method.invoke_unchecked((), (session, geoID, partID))?
         };
         Ok(__cordl_ret.into())
     }

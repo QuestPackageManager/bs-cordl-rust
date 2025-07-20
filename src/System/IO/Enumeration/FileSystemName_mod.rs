@@ -45,7 +45,7 @@ impl crate::System::IO::Enumeration::FileSystemName {
         ignoreCase: bool,
         useExtendedWildcards: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemName as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -58,8 +58,9 @@ impl crate::System::IO::Enumeration::FileSystemName {
             >("MatchPattern")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchPattern", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemName as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchPattern", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -67,7 +68,7 @@ impl crate::System::IO::Enumeration::FileSystemName {
                 .invoke_unchecked(
                     (),
                     (expression, name, ignoreCase, useExtendedWildcards),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +77,7 @@ impl crate::System::IO::Enumeration::FileSystemName {
         name: crate::System::ReadOnlySpan_1<char>,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemName as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -88,12 +89,14 @@ impl crate::System::IO::Enumeration::FileSystemName {
             >("MatchesSimpleExpression")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchesSimpleExpression", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemName as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchesSimpleExpression",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, name, ignoreCase))
+            method.invoke_unchecked((), (expression, name, ignoreCase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +105,7 @@ impl crate::System::IO::Enumeration::FileSystemName {
         name: crate::System::ReadOnlySpan_1<char>,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemName as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -114,12 +117,14 @@ impl crate::System::IO::Enumeration::FileSystemName {
             >("MatchesWin32Expression")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MatchesWin32Expression", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemName as
+                    quest_hook::libil2cpp::Type > ::class(), "MatchesWin32Expression",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expression, name, ignoreCase))
+            method.invoke_unchecked((), (expression, name, ignoreCase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -128,7 +133,7 @@ impl crate::System::IO::Enumeration::FileSystemName {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IO::Enumeration::FileSystemName as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -136,13 +141,15 @@ impl crate::System::IO::Enumeration::FileSystemName {
             >("TranslateWin32Expression")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateWin32Expression", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IO::Enumeration::FileSystemName as
+                    quest_hook::libil2cpp::Type > ::class(), "TranslateWin32Expression",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (expression)) };
+        > = unsafe { method.invoke_unchecked((), (expression))? };
         Ok(__cordl_ret.into())
     }
 }

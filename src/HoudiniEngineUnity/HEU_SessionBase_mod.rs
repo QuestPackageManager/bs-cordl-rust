@@ -55,7 +55,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -70,12 +70,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("AddAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAttribute", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "AddAttribute", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, name, attrInfo))
+            method.invoke_unchecked(self, (nodeID, partID, name, attrInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +87,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         groupType: crate::HoudiniEngineUnity::HAPI_GroupType,
         groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -99,27 +100,30 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("AddGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddGroup", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "AddGroup", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, groupType, groupName))
+            method.invoke_unchecked(self, (nodeID, partID, groupType, groupName))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckAndCloseExistingSession(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("CheckAndCloseExistingSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckAndCloseExistingSession", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CheckAndCloseExistingSession", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckForSpecificErrors(
@@ -127,69 +131,75 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         errorsToCheck: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), i32, 2usize>("CheckForSpecificErrors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckForSpecificErrors", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckForSpecificErrors",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (nodeID, errorsToCheck))
+            method.invoke_unchecked(self, (nodeID, errorsToCheck))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CheckVersionMatch(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("CheckVersionMatch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckVersionMatch", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckVersionMatch", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ClearSessionInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearSessionInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearSessionInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearSessionInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CloseSession(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("CloseSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloseSession", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CloseSession", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CommitGeo(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("CommitGeo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CommitGeo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CommitGeo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (nodeID)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (nodeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComposeChildNodeList(
@@ -200,7 +210,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bRecursive: bool,
         count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, bool, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -208,8 +218,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ComposeChildNodeList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComposeChildNodeList", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ComposeChildNodeList",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -217,7 +229,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (parentNodeID, nodeTypeFilter, nodeFlagFilter, bRecursive, count),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +240,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::HoudiniEngineUnity::HAPI_StatusVerbosity),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -236,13 +248,15 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ComposeNodeCookResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComposeNodeCookResult", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ComposeNodeCookResult",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (nodeId, verbosity)) };
+        > = unsafe { method.invoke_unchecked(self, (nodeId, verbosity))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComposeObjectList(
@@ -250,7 +264,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         objectCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -258,12 +272,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ComposeObjectList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComposeObjectList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ComposeObjectList", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, objectCount))
+            method.invoke_unchecked(self, (nodeID, objectCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -274,12 +289,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeIDToConnect: i32,
         outputIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32, i32, i32), bool, 4usize>("ConnectNodeInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConnectNodeInput", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ConnectNodeInput", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -287,7 +303,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, inputIndex, nodeIDToConnect, outputIndex),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -300,7 +316,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         logError: bool,
         autoInitialize: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -315,8 +331,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ConnectThriftPipeSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConnectThriftPipeSession", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ConnectThriftPipeSession",
+                    6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -331,7 +349,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         logError,
                         autoInitialize,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -345,7 +363,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         logError: bool,
         autoInitialize: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -361,8 +379,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ConnectThriftSocketSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConnectThriftSocketSession", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ConnectThriftSocketSession", 7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -378,7 +398,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         logError,
                         autoInitialize,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -393,7 +413,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_TransformEuler,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -410,13 +430,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ConvertTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertTransform", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertTransform", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (inTransform, RSTOrder, ROTOrder, outTransform))
+                .invoke_unchecked(self, (inTransform, RSTOrder, ROTOrder, outTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -426,17 +447,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bCookTemplatedGeos: bool,
         bSplitGeosByGroup: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, bool, bool), bool, 3usize>("CookNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CookNode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CookNode", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (nodeID, bCookTemplatedGeos, bSplitGeosByGroup))
+                .invoke_unchecked(self, (nodeID, bCookTemplatedGeos, bSplitGeosByGroup))?
         };
         Ok(__cordl_ret.into())
     }
@@ -445,7 +467,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         cookOptions: crate::HoudiniEngineUnity::HAPI_CookOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::HoudiniEngineUnity::HAPI_CookOptions),
                 bool,
@@ -453,12 +475,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("CookNodeWithOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CookNodeWithOptions", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CookNodeWithOptions",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, cookOptions))
+            method.invoke_unchecked(self, (nodeID, cookOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -466,16 +490,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         bIsDefaultSession: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), bool, 1usize>("CreateCustomSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateCustomSession", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateCustomSession",
+                    1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (bIsDefaultSession))
+            method.invoke_unchecked(self, (bIsDefaultSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -492,7 +518,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         maskNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
         mergeNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -511,8 +537,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("CreateHeightFieldInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHeightFieldInput", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateHeightFieldInput",
+                    10usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -531,7 +559,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         maskNodeID,
                         mergeNodeID,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -544,7 +572,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         ySize: i32,
         voxelSize: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -559,8 +587,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("CreateHeightfieldInputVolumeNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHeightfieldInputVolumeNode", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateHeightfieldInputVolumeNode", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -568,7 +598,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (parentNodeID, newNodeID, name, xSize, ySize, voxelSize),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -576,16 +606,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         bIsDefaultSession: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), bool, 1usize>("CreateInProcessSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateInProcessSession", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateInProcessSession",
+                    1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (bIsDefaultSession))
+            method.invoke_unchecked(self, (bIsDefaultSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -594,7 +626,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: quest_hook::libil2cpp::ByRefMut<i32>,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<i32>,
@@ -605,11 +637,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("CreateInputNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateInputNode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateInputNode", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (nodeID, name)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (nodeID, name))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNode(
@@ -620,7 +655,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bCookOnCreation: bool,
         newNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -634,8 +669,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("CreateNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNode", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateNode", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -643,7 +679,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (parentNodeID, operatorName, nodeLabel, bCookOnCreation, newNodeID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -652,16 +688,17 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bOverwriteExisting: bool,
         bIsDefaultSession: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool, bool), bool, 2usize>("CreateSessionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSessionData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateSessionData", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (bOverwriteExisting, bIsDefaultSession))
+            method.invoke_unchecked(self, (bOverwriteExisting, bIsDefaultSession))?
         };
         Ok(__cordl_ret.into())
     }
@@ -673,7 +710,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         timeout: f32,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -687,8 +724,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("CreateThriftPipeSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateThriftPipeSession", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateThriftPipeSession",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -696,7 +735,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (bIsDefaultSession, pipeName, autoClose, timeout, bLogError),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -709,7 +748,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         timeout: f32,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -724,8 +763,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("CreateThriftSocketSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateThriftSocketSession", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateThriftSocketSession",
+                    6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -740,7 +781,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         timeout,
                         bLogError,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -751,7 +792,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         groupType: crate::HoudiniEngineUnity::HAPI_GroupType,
         groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -764,12 +805,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("DeleteGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteGroup", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "DeleteGroup", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, groupType, groupName))
+            method.invoke_unchecked(self, (nodeID, partID, groupType, groupName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -777,16 +819,17 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         nodeID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("DeleteNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteNode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "DeleteNode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nodeID))
+            method.invoke_unchecked(self, (nodeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -796,16 +839,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         inputIndex: i32,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32, bool), bool, 3usize>("DisconnectNodeInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisconnectNodeInput", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "DisconnectNodeInput",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, inputIndex, bLogError))
+            method.invoke_unchecked(self, (nodeID, inputIndex, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -821,7 +866,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -837,8 +882,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ExtractImageToFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractImageToFile", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractImageToFile", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -852,7 +898,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         destinationFolderPath,
                         destinationFilePath,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -865,7 +911,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -880,12 +926,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ExtractImageToMemory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractImageToMemory", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractImageToMemory",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, fileFormat, imagePlanes, buffer))
+            method.invoke_unchecked(self, (nodeID, fileFormat, imagePlanes, buffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -893,7 +941,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         activeCacheCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -901,12 +949,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetActiveCacheCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetActiveCacheCount", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetActiveCacheCount",
+                    1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (activeCacheCount))
+            method.invoke_unchecked(self, (activeCacheCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -917,7 +967,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         activeCacheCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -932,12 +982,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetActiveCacheNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetActiveCacheNames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetActiveCacheNames",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (cacheNamesArray, activeCacheCount))
+            method.invoke_unchecked(self, (cacheNamesArray, activeCacheCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -948,7 +1000,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AssetInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -961,12 +1013,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAssetInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssetInfo", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, assetInfo))
+            method.invoke_unchecked(self, (nodeID, assetInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -984,7 +1037,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1006,8 +1059,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeFloat64Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeFloat64Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeFloat64Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1015,7 +1070,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1033,7 +1088,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1055,8 +1110,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeFloatData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeFloatData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeFloatData",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1064,7 +1121,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1078,7 +1135,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1094,12 +1151,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeInfo", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeInfo", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, name, owner, attributeInfo))
+            method.invoke_unchecked(self, (nodeID, partID, name, owner, attributeInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1117,7 +1175,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1139,8 +1197,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeInt16Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeInt16Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeInt16Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1148,7 +1208,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1166,7 +1226,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1188,8 +1248,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeInt64Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeInt64Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeInt64Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1197,7 +1259,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1215,7 +1277,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1235,8 +1297,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeInt8Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeInt8Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeInt8Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1244,7 +1308,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1262,7 +1326,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1284,8 +1348,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeIntData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeIntData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeIntData",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1293,7 +1359,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1311,7 +1377,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1333,12 +1399,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeNames", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeNames", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, owner, attributeNames, count))
+            method
+                .invoke_unchecked(self, (nodeID, partID, owner, attributeNames, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1356,7 +1424,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1378,8 +1446,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeStringData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeStringData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeStringData",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1387,7 +1457,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, dataArray, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1405,7 +1475,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1425,8 +1495,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAttributeUInt8Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttributeUInt8Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttributeUInt8Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1434,7 +1506,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attributeInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1443,7 +1515,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         libraryID: i32,
         assetCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -1451,12 +1523,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAvailableAssetCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAvailableAssetCount", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAvailableAssetCount",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (libraryID, assetCount))
+            method.invoke_unchecked(self, (libraryID, assetCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1468,7 +1542,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         assetCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1484,12 +1558,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetAvailableAssets")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAvailableAssets", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAvailableAssets", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (libraryID, assetNames, assetCount))
+            method.invoke_unchecked(self, (libraryID, assetNames, assetCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1499,7 +1574,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         partID: i32,
         boxInfo: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_BoxInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1513,12 +1588,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetBoxInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBoxInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBoxInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, boxInfo))
+            method.invoke_unchecked(self, (nodeID, partID, boxInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1528,7 +1604,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         cacheProperty: crate::HoudiniEngineUnity::HAPI_CacheProperty,
         propertyValue: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1540,12 +1616,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCacheProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCacheProperty", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCacheProperty", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (cacheName, cacheProperty, propertyValue))
+            method.invoke_unchecked(self, (cacheName, cacheProperty, propertyValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1553,7 +1630,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         result: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_Result>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::HoudiniEngineUnity::HAPI_Result,
@@ -1563,11 +1640,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCallResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCallResult", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCallResult", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetComposedChildNodeList(
@@ -1576,7 +1654,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         childNodeIDs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1588,12 +1666,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetComposedChildNodeList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComposedChildNodeList", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetComposedChildNodeList",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (parentNodeID, childNodeIDs, count))
+            method.invoke_unchecked(self, (parentNodeID, childNodeIDs, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1610,7 +1690,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1629,12 +1709,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetComposedObjectList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComposedObjectList", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetComposedObjectList",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, objectInfos, start, length))
+            method.invoke_unchecked(self, (nodeID, objectInfos, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1652,7 +1734,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1672,12 +1754,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetComposedObjectTransforms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetComposedObjectTransforms", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetComposedObjectTransforms", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, rstOrder, transforms, start, length))
+            method.invoke_unchecked(self, (nodeID, rstOrder, transforms, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1685,7 +1769,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         result: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_Result>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::HoudiniEngineUnity::HAPI_Result,
@@ -1695,18 +1779,19 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCookResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCookResult", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCookResult", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCookState(
         &mut self,
         state: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_State>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_State>),
                 bool,
@@ -1714,11 +1799,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCookState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCookState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCookState", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (state)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurveCounts(
@@ -1731,7 +1817,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1749,12 +1835,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCurveCounts")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurveCounts", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurveCounts", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, counts, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, counts, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1766,7 +1853,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_CurveInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1780,12 +1867,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCurveInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurveInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurveInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, curveInfo))
+            method.invoke_unchecked(self, (nodeID, partID, curveInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1799,7 +1887,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1817,12 +1905,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCurveKnots")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurveKnots", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurveKnots", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, knots, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, knots, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1836,7 +1925,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1854,12 +1943,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetCurveOrders")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurveOrders", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurveOrders", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, orders, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, orders, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1871,7 +1961,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1885,12 +1975,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetDisplayGeoInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDisplayGeoInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDisplayGeoInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, geoInfo, bLogError))
+            method.invoke_unchecked(self, (nodeID, geoInfo, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1898,7 +1989,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         intType: crate::HoudiniEngineUnity::HAPI_EnvIntType,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::HoudiniEngineUnity::HAPI_EnvIntType),
                 i32,
@@ -1906,11 +1997,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetEnvInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnvInt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEnvInt", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (intType)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (intType))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceCounts__cordl_bool1(
@@ -1924,7 +2016,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         length: i32,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1943,8 +2035,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetFaceCounts")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFaceCounts", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFaceCounts", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1952,7 +2045,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, faceCounts, start, length, bLogError),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1966,7 +2059,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1984,12 +2077,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetFaceCounts")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFaceCounts", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFaceCounts", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, faceCounts, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, faceCounts, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2001,7 +2095,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2015,12 +2109,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetGeoInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGeoInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetGeoInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, geoInfo, bLogError))
+            method.invoke_unchecked(self, (nodeID, geoInfo, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2030,7 +2125,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_size: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2042,12 +2137,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetGeoSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGeoSize", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetGeoSize", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, format, _cordl_size))
+            method.invoke_unchecked(self, (nodeID, format, _cordl_size))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2058,7 +2154,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         pointGroupCount: quest_hook::libil2cpp::ByRefMut<i32>,
         primitiveGroupCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2071,8 +2167,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetGroupCountOnPackedInstancePart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGroupCountOnPackedInstancePart", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetGroupCountOnPackedInstancePart", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2080,7 +2178,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, pointGroupCount, primitiveGroupCount),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2097,7 +2195,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2118,8 +2216,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetGroupMembership")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGroupMembership", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetGroupMembership", 8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2136,7 +2235,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         start,
                         length,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2153,7 +2252,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2174,8 +2273,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetGroupMembershipOnPackedInstancePart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGroupMembershipOnPackedInstancePart", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetGroupMembershipOnPackedInstancePart", 8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2192,7 +2293,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         start,
                         length,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2205,7 +2306,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2222,12 +2323,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetGroupNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGroupNames", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetGroupNames", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, groupType, names, count))
+            method.invoke_unchecked(self, (nodeID, groupType, names, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2241,7 +2343,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         groupCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2259,8 +2361,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetGroupNamesOnPackedInstancePart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGroupNamesOnPackedInstancePart", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetGroupNamesOnPackedInstancePart", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2268,7 +2372,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, groupType, groupNamesArray, groupCount),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2286,7 +2390,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2306,8 +2410,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetHandleBindingInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHandleBindingInfo", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHandleBindingInfo",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2315,7 +2421,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, handleIndex, handleBindingInfos, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2332,7 +2438,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2351,12 +2457,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetHandleInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHandleInfo", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHandleInfo", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, handleInfos, start, length))
+            method.invoke_unchecked(self, (nodeID, handleInfos, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2368,7 +2475,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2382,12 +2489,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetHeightFieldData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHeightFieldData", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHeightFieldData", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, valuesArray, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, valuesArray, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2398,7 +2506,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_ImageInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2411,12 +2519,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetImageInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetImageInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetImageInfo", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (materialNodeID, imageInfo))
+            method.invoke_unchecked(self, (materialNodeID, imageInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2428,7 +2537,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         numImagePlanes: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2444,12 +2553,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetImagePlanes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetImagePlanes", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetImagePlanes", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, imagePlanes, numImagePlanes))
+            method.invoke_unchecked(self, (nodeID, imagePlanes, numImagePlanes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2468,7 +2578,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2489,8 +2599,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetInstanceTransformsOnPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstanceTransformsOnPart", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetInstanceTransformsOnPart", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2498,7 +2610,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, rstOrder, transformsArray, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2511,7 +2623,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2528,13 +2640,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetInstancedObjectIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstancedObjectIds", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetInstancedObjectIds",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (nodeID, instanced_node_id_array, start, length))
+                .invoke_unchecked(
+                    self,
+                    (nodeID, instanced_node_id_array, start, length),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2548,7 +2665,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2566,8 +2683,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetInstancedPartIds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstancedPartIds", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetInstancedPartIds",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2575,7 +2694,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, instancedPartsArray, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2594,7 +2713,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2615,8 +2734,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetInstancerPartTransforms")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstancerPartTransforms", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetInstancerPartTransforms", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2624,7 +2745,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, rstOrder, transformsArray, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2633,7 +2754,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2641,13 +2762,15 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetLastSessionError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLastSessionError", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLastSessionError",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaterialInfo(
@@ -2658,7 +2781,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2672,12 +2795,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetMaterialInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaterialInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaterialInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (materialNodeID, materialInfo, bLogError))
+            method.invoke_unchecked(self, (materialNodeID, materialInfo, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2691,7 +2815,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         faceCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2709,8 +2833,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetMaterialNodeIDsOnFaces")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaterialNodeIDsOnFaces", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaterialNodeIDsOnFaces",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2718,7 +2844,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, bSingleFaceMaterial, materialNodeIDs, faceCount),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2730,7 +2856,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_MaterialInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2744,12 +2870,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetMaterialOnPart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaterialOnPart", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaterialOnPart", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, materialInfo))
+            method.invoke_unchecked(self, (nodeID, partID, materialInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2761,7 +2888,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2775,12 +2902,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetNodeInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNodeInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNodeInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, nodeInfo, bLogError))
+            method.invoke_unchecked(self, (nodeID, nodeInfo, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2790,7 +2918,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         inputIndex: i32,
         nodeNameIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -2798,12 +2926,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetNodeInputName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNodeInputName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNodeInputName", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, inputIndex, nodeNameIndex))
+            method.invoke_unchecked(self, (nodeID, inputIndex, nodeNameIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2815,7 +2944,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2829,12 +2958,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetNodePath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNodePath", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNodePath", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, relativeNodeID, path))
+            method.invoke_unchecked(self, (nodeID, relativeNodeID, path))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2845,7 +2975,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_ObjectInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2858,12 +2988,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetObjectInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetObjectInfo", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, objectInfo))
+            method.invoke_unchecked(self, (nodeID, objectInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2876,7 +3007,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_Transform,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2891,8 +3022,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetObjectTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectTransform", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetObjectTransform", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -2900,7 +3032,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, relativeToNodeID, rstOrder, hapiTransform),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2917,7 +3049,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2936,12 +3068,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamChoiceValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamChoiceValues", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamChoiceValues",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, values, start, length))
+            method.invoke_unchecked(self, (nodeID, values, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2952,7 +3086,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         index: i32,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -2965,12 +3099,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamFloatValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamFloatValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamFloatValue", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmName, index, value))
+            method.invoke_unchecked(self, (nodeID, parmName, index, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2983,7 +3118,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3000,12 +3135,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamFloatValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamFloatValues", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamFloatValues",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, values, start, length))
+            method.invoke_unchecked(self, (nodeID, values, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3016,7 +3153,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         index: i32,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3029,12 +3166,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamIntValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamIntValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamIntValue", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmName, index, value))
+            method.invoke_unchecked(self, (nodeID, parmName, index, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3047,7 +3185,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3064,12 +3202,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamIntValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamIntValues", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamIntValues", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, values, start, length))
+            method.invoke_unchecked(self, (nodeID, values, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3079,7 +3218,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nodeValue: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3091,12 +3230,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamNodeValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamNodeValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamNodeValue", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, paramName, nodeValue))
+            method.invoke_unchecked(self, (nodeID, paramName, nodeValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3107,7 +3247,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         index: i32,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3120,12 +3260,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamStringValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamStringValue",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmName, index, value))
+            method.invoke_unchecked(self, (nodeID, parmName, index, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3138,7 +3280,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3155,12 +3297,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParamStringValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParamStringValues", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParamStringValues",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, values, start, length))
+            method.invoke_unchecked(self, (nodeID, values, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3177,7 +3321,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3196,12 +3340,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParams")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParams", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParams", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmInfos, start, length))
+            method.invoke_unchecked(self, (nodeID, parmInfos, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3211,7 +3356,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         parmName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parmID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3223,12 +3368,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParmIDFromName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParmIDFromName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParmIDFromName", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmName, parmID))
+            method.invoke_unchecked(self, (nodeID, parmName, parmID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3240,7 +3386,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         evaluate: bool,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3254,12 +3400,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParmStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParmStringValue", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParmStringValue", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmName, index, evaluate, value))
+            method.invoke_unchecked(self, (nodeID, parmName, index, evaluate, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3270,7 +3417,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         tagIndex: i32,
         tagName: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -3278,12 +3425,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParmTagName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParmTagName", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParmTagName", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmID, tagIndex, tagName))
+            method.invoke_unchecked(self, (nodeID, parmID, tagIndex, tagName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3294,7 +3442,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         tagName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tagValue: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3307,12 +3455,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParmTagValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParmTagValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParmTagValue", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmID, tagName, tagValue))
+            method.invoke_unchecked(self, (nodeID, parmID, tagName, tagValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3322,7 +3471,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         tagName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parmID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3334,12 +3483,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetParmWithTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParmWithTag", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParmWithTag", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, tagName, parmID))
+            method.invoke_unchecked(self, (nodeID, tagName, parmID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3351,7 +3501,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3365,12 +3515,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetPartInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPartInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPartInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, partInfo))
+            method.invoke_unchecked(self, (nodeID, partID, partInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3381,7 +3532,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3394,12 +3545,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPreset", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, presetData))
+            method.invoke_unchecked(self, (nodeID, presetData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3409,7 +3561,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
@@ -3417,13 +3569,15 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetRegisteredAssetFromID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRegisteredAssetFromID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRegisteredAssetFromID",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-        > = unsafe { method.invoke_unchecked(self, (id)) };
+        > = unsafe { method.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServerEnvString(
@@ -3433,7 +3587,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3446,18 +3600,19 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetServerEnvString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetServerEnvString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetServerEnvString", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (name, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (name, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetServerEnvVarCount(
         &mut self,
         env_count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -3465,11 +3620,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetServerEnvVarCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetServerEnvVarCount", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetServerEnvVarCount",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (env_count)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (env_count))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSessionData(
@@ -3477,7 +3634,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionData>,
@@ -3485,13 +3642,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetSessionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSessionData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSessionData", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_SessionData,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSessionEnvInt(
@@ -3499,7 +3657,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         intType: crate::HoudiniEngineUnity::HAPI_SessionEnvIntType,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::HoudiniEngineUnity::HAPI_SessionEnvIntType, bool),
                 i32,
@@ -3507,12 +3665,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetSessionEnvInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSessionEnvInt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSessionEnvInt", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (intType, bLogError))
+            method.invoke_unchecked(self, (intType, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3521,7 +3680,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3529,13 +3688,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetSessionErrorMsg")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSessionErrorMsg", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSessionErrorMsg", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSessionInfo(
@@ -3543,7 +3703,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3551,13 +3711,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetSessionInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSessionInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSessionInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSessionSyncInfo(
@@ -3566,7 +3727,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_SessionSyncInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::HoudiniEngineUnity::HAPI_SessionSyncInfo,
@@ -3576,11 +3737,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetSessionSyncInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSessionSyncInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSessionSyncInfo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (syncInfo)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (syncInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSphereInfo(
@@ -3591,7 +3753,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_SphereInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3605,12 +3767,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetSphereInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSphereInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSphereInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, sphereInfo))
+            method.invoke_unchecked(self, (nodeID, partID, sphereInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3621,7 +3784,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::HoudiniEngineUnity::HAPI_StatusType,
@@ -3632,13 +3795,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetStatusString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStatusString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStatusString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (statusType, verbosity)) };
+        > = unsafe { method.invoke_unchecked(self, (statusType, verbosity))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetString(
@@ -3649,7 +3813,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         >,
         bufferLength: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3663,12 +3827,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetString", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetString", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (stringHandle, resultString, bufferLength))
+            method.invoke_unchecked(self, (stringHandle, resultString, bufferLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3676,27 +3841,30 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         stringHandle: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("GetStringBufferLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStringBufferLength", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetStringBufferLength",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (stringHandle)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (stringHandle))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("GetTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTime", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTotalCookCount(
@@ -3707,7 +3875,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         includeChildren: bool,
         count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, bool, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -3715,8 +3883,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetTotalCookCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTotalCookCount", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTotalCookCount", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -3724,20 +3893,21 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, nodeTypeFilter, nodeFlagFilter, includeChildren, count),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetUseHoudiniTime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("GetUseHoudiniTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUseHoudiniTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetUseHoudiniTime", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexList(
@@ -3750,7 +3920,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3768,12 +3938,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetVertexList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetVertexList", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetVertexList", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, vertexList, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, vertexList, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3783,7 +3954,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_Viewport,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::HoudiniEngineUnity::HAPI_Viewport,
@@ -3793,11 +3964,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetViewport")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetViewport", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetViewport", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (viewport)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (viewport))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetVolumeBounds(
@@ -3814,7 +3986,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         y_center: quest_hook::libil2cpp::ByRefMut<f32>,
         z_center: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3834,8 +4006,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetVolumeBounds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetVolumeBounds", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetVolumeBounds", 11usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -3855,7 +4028,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         y_center,
                         z_center,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -3867,7 +4040,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -3881,12 +4054,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("GetVolumeInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetVolumeInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "GetVolumeInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, volumeInfo))
+            method.invoke_unchecked(self, (nodeID, partID, volumeInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3897,7 +4071,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bThrowError: bool,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::HoudiniEngineUnity::HAPI_Result,
@@ -3910,12 +4084,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("HandleStatusResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleStatusResult", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleStatusResult", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (result, prependMsg, bThrowError, bLogError))
+            method.invoke_unchecked(self, (result, prependMsg, bThrowError, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3925,7 +4100,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HEU_SessionData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionData>),
                 bool,
@@ -3933,11 +4108,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("InitializeSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeSession", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "InitializeSession", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (sessionData)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (sessionData))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertMultiparmInstance(
@@ -3946,16 +4122,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         parmID: i32,
         instancePosition: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32, i32), bool, 3usize>("InsertMultiparmInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertMultiparmInstance", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertMultiparmInstance",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmID, instancePosition))
+            method.invoke_unchecked(self, (nodeID, parmID, instancePosition))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3963,7 +4141,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>),
                 bool,
@@ -3971,11 +4149,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("IsAssetRegistered")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAssetRegistered", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "IsAssetRegistered", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (asset)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (asset))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNodeValid(
@@ -3983,41 +4162,44 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         uniqueNodeID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), bool, 2usize>("IsNodeValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNodeValid", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNodeValid", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, uniqueNodeID))
+            method.invoke_unchecked(self, (nodeID, uniqueNodeID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsSessionSync(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsSessionSync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSessionSync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSessionSync", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSessionValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsSessionValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSessionValid", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSessionValid", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAssetLibraryFromFile(
@@ -4026,7 +4208,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bAllowOverwrite: bool,
         libraryID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4038,12 +4220,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("LoadAssetLibraryFromFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAssetLibraryFromFile", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadAssetLibraryFromFile",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (assetPath, bAllowOverwrite, libraryID))
+            method.invoke_unchecked(self, (assetPath, bAllowOverwrite, libraryID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4053,7 +4237,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bAllowOverwrite: bool,
         libraryID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -4065,12 +4249,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("LoadAssetLibraryFromMemory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAssetLibraryFromMemory", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadAssetLibraryFromMemory", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (buffer, bAllowOverwrite, libraryID))
+            method.invoke_unchecked(self, (buffer, bAllowOverwrite, libraryID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4079,7 +4265,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         file_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -4087,12 +4273,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("LoadGeoFromFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadGeoFromFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadGeoFromFile", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, file_name))
+            method.invoke_unchecked(self, (nodeID, file_name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4101,7 +4288,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bCookOnLoad: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
                 bool,
@@ -4109,12 +4296,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("LoadHIPFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadHIPFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadHIPFile", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (fileName, bCookOnLoad))
+            method.invoke_unchecked(self, (fileName, bCookOnLoad))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4126,7 +4314,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         cook_on_load: bool,
         newNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4140,8 +4328,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("LoadNodeFromFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadNodeFromFile", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadNodeFromFile", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4149,7 +4338,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (file_name, parentNodeID, nodeLabel, cook_on_load, newNodeID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4167,7 +4356,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         tagName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hasTag: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4180,12 +4369,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ParmHasTag")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParmHasTag", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ParmHasTag", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmID, tagName, hasTag))
+            method.invoke_unchecked(self, (nodeID, parmID, tagName, hasTag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4196,7 +4386,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         connectedNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, quest_hook::libil2cpp::ByRefMut<i32>, bool),
                 bool,
@@ -4204,13 +4394,17 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("QueryNodeInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "QueryNodeInput", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "QueryNodeInput", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (nodeID, inputIndex, connectedNodeID, bLogError))
+                .invoke_unchecked(
+                    self,
+                    (nodeID, inputIndex, connectedNodeID, bLogError),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4218,7 +4412,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>),
                 quest_hook::libil2cpp::Void,
@@ -4226,12 +4420,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("RegisterAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (asset))
+            method.invoke_unchecked(self, (asset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4241,16 +4436,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         parmID: i32,
         instancePosition: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32, i32), bool, 3usize>("RemoveMultiParmInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveMultiParmInstance", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveMultiParmInstance",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmID, instancePosition))
+            method.invoke_unchecked(self, (nodeID, parmID, instancePosition))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4259,7 +4456,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         newName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -4267,12 +4464,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("RenameNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenameNode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RenameNode", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, newName))
+            method.invoke_unchecked(self, (nodeID, newName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4280,15 +4478,16 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         copNodeID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("RenderCOPToImage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderCOPToImage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RenderCOPToImage", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (copNodeID)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (copNodeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn RenderTextureToImage(
@@ -4297,16 +4496,18 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         parmID: i32,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32, bool), bool, 3usize>("RenderTextureToImage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderTextureToImage", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RenderTextureToImage",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (materialNodeID, parmID, bLogError))
+            method.invoke_unchecked(self, (materialNodeID, parmID, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4314,7 +4515,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>),
                 quest_hook::libil2cpp::Void,
@@ -4322,37 +4523,40 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("ReregisterOnAwake")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReregisterOnAwake", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "ReregisterOnAwake", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (asset))
+            method.invoke_unchecked(self, (asset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RestartSession(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("RestartSession")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RestartSession", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RestartSession", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn RevertGeo(&mut self, nodeID: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), bool, 1usize>("RevertGeo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RevertGeo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RevertGeo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (nodeID)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (nodeID))? };
         Ok(__cordl_ret.into())
     }
     pub fn RevertParmToDefault(
@@ -4361,7 +4565,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         parm_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4373,12 +4577,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("RevertParmToDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RevertParmToDefault", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RevertParmToDefault",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parm_name, index))
+            method.invoke_unchecked(self, (nodeID, parm_name, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4387,7 +4593,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         parm_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -4395,12 +4601,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("RevertParmToDefaults")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RevertParmToDefaults", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "RevertParmToDefaults",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parm_name))
+            method.invoke_unchecked(self, (nodeID, parm_name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4409,7 +4617,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -4417,12 +4625,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SaveGeoToFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveGeoToFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveGeoToFile", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, fileName))
+            method.invoke_unchecked(self, (nodeID, fileName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4431,7 +4640,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bLockNodes: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
                 bool,
@@ -4439,12 +4648,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SaveHIPFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveHIPFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveHIPFile", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (fileName, bLockNodes))
+            method.invoke_unchecked(self, (fileName, bLockNodes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4453,7 +4663,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -4461,12 +4671,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SaveNodeToFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveNodeToFile", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveNodeToFile", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, fileName))
+            method.invoke_unchecked(self, (nodeID, fileName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4482,7 +4693,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4500,8 +4711,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetAttributeFloatData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAttributeFloatData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAttributeFloatData",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4509,7 +4722,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attrInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4525,7 +4738,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4543,8 +4756,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetAttributeInt16Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAttributeInt16Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAttributeInt16Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4552,7 +4767,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attrInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4568,7 +4783,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4586,8 +4801,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetAttributeInt64Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAttributeInt64Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAttributeInt64Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4595,7 +4812,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attrInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4611,7 +4828,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4629,8 +4846,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetAttributeInt8Data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAttributeInt8Data", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAttributeInt8Data",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4638,7 +4857,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attrInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4654,7 +4873,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4672,8 +4891,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetAttributeIntData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAttributeIntData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAttributeIntData",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4681,7 +4902,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attrInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4701,7 +4922,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4725,8 +4946,10 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetAttributeStringData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAttributeStringData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetAttributeStringData",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4734,7 +4957,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, attrInfo, data, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4744,7 +4967,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         cacheProperty: crate::HoudiniEngineUnity::HAPI_CacheProperty,
         propertyValue: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4756,12 +4979,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetCacheProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCacheProperty", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCacheProperty", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (cacheName, cacheProperty, propertyValue))
+            method.invoke_unchecked(self, (cacheName, cacheProperty, propertyValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4773,7 +4997,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4787,12 +5011,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetCurveCounts")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCurveCounts", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCurveCounts", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, counts, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, counts, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4804,7 +5029,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_CurveInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4818,12 +5043,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetCurveInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCurveInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCurveInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, curveInfo))
+            method.invoke_unchecked(self, (nodeID, partID, curveInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4835,7 +5061,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4849,12 +5075,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetCurveKnots")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCurveKnots", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCurveKnots", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, knots, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, knots, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4866,7 +5093,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4880,12 +5107,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetCurveOrders")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCurveOrders", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetCurveOrders", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, orders, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, orders, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4897,7 +5125,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4911,12 +5139,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetFaceCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetFaceCount", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetFaceCount", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, faceCounts, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, faceCounts, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4932,7 +5161,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4952,8 +5181,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetGroupMembership")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetGroupMembership", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetGroupMembership", 7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -4969,7 +5199,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                         start,
                         length,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4982,7 +5212,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -4997,8 +5227,9 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetHeightFieldData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetHeightFieldData", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetHeightFieldData", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -5006,7 +5237,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
                 .invoke_unchecked(
                     self,
                     (nodeID, partID, name, valuesArray, start, length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -5017,7 +5248,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_ImageInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5030,12 +5261,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetImageInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetImageInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetImageInfo", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (materialNodeID, imageInfo))
+            method.invoke_unchecked(self, (materialNodeID, imageInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5043,7 +5275,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -5051,12 +5283,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetLibraryErrorMsg")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLibraryErrorMsg", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetLibraryErrorMsg", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bLogError))
+            method.invoke_unchecked(self, (bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5065,16 +5298,17 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         node_id: i32,
         onOff: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), bool, 2usize>("SetNodeDisplay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetNodeDisplay", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetNodeDisplay", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (node_id, onOff))
+            method.invoke_unchecked(self, (node_id, onOff))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5085,7 +5319,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_TransformEuler,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5098,12 +5332,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetObjectTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetObjectTransform", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetObjectTransform", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, hapiTransform))
+            method.invoke_unchecked(self, (nodeID, hapiTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5114,7 +5349,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         index: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5127,12 +5362,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetParamFloatValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParamFloatValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetParamFloatValue", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, paramName, index, value))
+            method.invoke_unchecked(self, (nodeID, paramName, index, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5145,7 +5381,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5162,12 +5398,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetParamFloatValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParamFloatValues", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetParamFloatValues",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, values, start, length))
+            method.invoke_unchecked(self, (nodeID, values, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5178,7 +5416,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         index: i32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5191,12 +5429,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetParamIntValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParamIntValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetParamIntValue", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, paramName, index, value))
+            method.invoke_unchecked(self, (nodeID, paramName, index, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5209,7 +5448,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5226,12 +5465,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetParamIntValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParamIntValues", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetParamIntValues", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, values, start, length))
+            method.invoke_unchecked(self, (nodeID, values, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5241,7 +5481,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nodeValueID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5253,12 +5493,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetParamNodeValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParamNodeValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetParamNodeValue", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, paramName, nodeValueID))
+            method.invoke_unchecked(self, (nodeID, paramName, nodeValueID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5269,7 +5510,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         parmValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5282,12 +5523,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetParamStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParamStringValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetParamStringValue",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, parmName, parmValue, index))
+            method.invoke_unchecked(self, (nodeID, parmName, parmValue, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5298,7 +5541,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         parmID: i32,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5311,12 +5554,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetParamStringValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetParamStringValue", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetParamStringValue",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, strValue, parmID, index))
+            method.invoke_unchecked(self, (nodeID, strValue, parmID, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5328,7 +5573,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5342,12 +5587,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetPartInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPartInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPartInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, partInfo))
+            method.invoke_unchecked(self, (nodeID, partID, partInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5356,7 +5602,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         nodeID: i32,
         presetData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 bool,
@@ -5364,12 +5610,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetPreset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPreset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetPreset", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, presetData))
+            method.invoke_unchecked(self, (nodeID, presetData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5378,7 +5625,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5389,12 +5636,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetServerEnvString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetServerEnvString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetServerEnvString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (name, value))
+            method.invoke_unchecked(self, (name, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5405,7 +5653,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         bIsHARSRunning: bool,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5418,12 +5666,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetSessionConnectionErrorMsg")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSessionConnectionErrorMsg", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetSessionConnectionErrorMsg", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (introMsg, result, bIsHARSRunning, bLogError))
+            method.invoke_unchecked(self, (introMsg, result, bIsHARSRunning, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5433,7 +5683,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HEU_SessionData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionData>),
                 quest_hook::libil2cpp::Void,
@@ -5441,12 +5691,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetSessionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSessionData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSessionData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sessionData))
+            method.invoke_unchecked(self, (sessionData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5455,7 +5706,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bLogError: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
                 quest_hook::libil2cpp::Void,
@@ -5463,12 +5714,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetSessionErrorMsg")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSessionErrorMsg", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSessionErrorMsg", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (msg, bLogError))
+            method.invoke_unchecked(self, (msg, bLogError))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5476,15 +5728,16 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         enable: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), bool, 1usize>("SetSessionSync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSessionSync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSessionSync", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (enable)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (enable))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSessionSyncInfo(
@@ -5493,7 +5746,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_SessionSyncInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::HoudiniEngineUnity::HAPI_SessionSyncInfo,
@@ -5503,38 +5756,41 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetSessionSyncInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSessionSyncInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSessionSyncInfo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (syncInfo)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (syncInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTime(&mut self, _cordl_time: f32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), bool, 1usize>("SetTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTime", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (_cordl_time)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (_cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetUseHoudiniTime(
         &mut self,
         enable: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), bool, 1usize>("SetUseHoudiniTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetUseHoudiniTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetUseHoudiniTime", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (enable)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (enable))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexList(
@@ -5545,7 +5801,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5559,12 +5815,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetVertexList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetVertexList", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetVertexList", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, vertexList, start, length))
+            method.invoke_unchecked(self, (nodeID, partID, vertexList, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5574,7 +5831,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_Viewport,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::HoudiniEngineUnity::HAPI_Viewport,
@@ -5584,11 +5841,12 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetViewport")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetViewport", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetViewport", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (viewport)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (viewport))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetVolumeInfo(
@@ -5599,7 +5857,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5613,12 +5871,13 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetVolumeInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetVolumeInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetVolumeInfo", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (nodeID, partID, volumeInfo))
+            method.invoke_unchecked(self, (nodeID, partID, volumeInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5632,7 +5891,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         valuesArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -5648,13 +5907,15 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("SetVolumeTileFloatData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetVolumeTileFloatData", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "SetVolumeTileFloatData",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (nodeID, partID, tileInfo, valuesArray, length))
+                .invoke_unchecked(self, (nodeID, partID, tileInfo, valuesArray, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5662,32 +5923,34 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         id: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("UnregisterAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnregisterAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "UnregisterAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id))
+            method.invoke_unchecked(self, (id))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5696,7 +5959,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
     ) -> quest_hook::libil2cpp::Result<
         crate::HoudiniEngineUnity::SessionConnectionState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::HoudiniEngineUnity::SessionConnectionState,
@@ -5704,19 +5967,21 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("get_ConnectionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ConnectionState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ConnectionState",
+                    0usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::SessionConnectionState = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_LastCallResultCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_Result> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::HoudiniEngineUnity::HAPI_Result,
@@ -5724,31 +5989,35 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("get_LastCallResultCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LastCallResultCode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_LastCallResultCode",
+                    0usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_Result = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_LogErrorOverride(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_LogErrorOverride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LogErrorOverride", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_LogErrorOverride",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ThisSessionMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::SessionMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::HoudiniEngineUnity::SessionMode,
@@ -5756,46 +6025,52 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("get_ThisSessionMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ThisSessionMode", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ThisSessionMode",
+                    0usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::SessionMode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ThrowErrorOverride(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_ThrowErrorOverride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ThrowErrorOverride", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ThrowErrorOverride",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UserNotifiedSessionInvalid(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_UserNotifiedSessionInvalid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UserNotifiedSessionInvalid", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_UserNotifiedSessionInvalid", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ConnectionState(
         &mut self,
         value: crate::HoudiniEngineUnity::SessionConnectionState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::HoudiniEngineUnity::SessionConnectionState),
                 quest_hook::libil2cpp::Void,
@@ -5803,12 +6078,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("set_ConnectionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ConnectionState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ConnectionState",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5816,7 +6093,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         value: crate::HoudiniEngineUnity::HAPI_Result,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::HoudiniEngineUnity::HAPI_Result),
                 quest_hook::libil2cpp::Void,
@@ -5824,12 +6101,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("set_LastCallResultCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_LastCallResultCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "set_LastCallResultCode",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5837,7 +6116,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -5845,12 +6124,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("set_LogErrorOverride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_LogErrorOverride", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "set_LogErrorOverride",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5858,7 +6139,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         value: crate::HoudiniEngineUnity::SessionMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::HoudiniEngineUnity::SessionMode),
                 quest_hook::libil2cpp::Void,
@@ -5866,12 +6147,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("set_ThisSessionMode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ThisSessionMode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ThisSessionMode",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5879,7 +6162,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -5887,12 +6170,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("set_ThrowErrorOverride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_ThrowErrorOverride", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(), "set_ThrowErrorOverride",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5900,7 +6185,7 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_SessionBase as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -5908,12 +6193,14 @@ impl crate::HoudiniEngineUnity::HEU_SessionBase {
             >("set_UserNotifiedSessionInvalid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_UserNotifiedSessionInvalid", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_SessionBase as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_UserNotifiedSessionInvalid", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

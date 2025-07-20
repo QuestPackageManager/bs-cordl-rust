@@ -43,7 +43,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::Memory::MemoryProfiler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
                 quest_hook::libil2cpp::Void,
@@ -51,19 +51,20 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
             >("FinalizeSnapshot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FinalizeSnapshot", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::Memory::MemoryProfiler as
+                    quest_hook::libil2cpp::Type > ::class(), "FinalizeSnapshot", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (path, result))
+            method.invoke_unchecked((), (path, result))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareMetadata() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::Memory::MemoryProfiler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -71,13 +72,14 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
             >("PrepareMetadata")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareMetadata", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::Memory::MemoryProfiler as
+                    quest_hook::libil2cpp::Type > ::class(), "PrepareMetadata", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveScreenshotToDisk(
@@ -89,7 +91,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::Memory::MemoryProfiler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -105,8 +107,10 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
             >("SaveScreenshotToDisk")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveScreenshotToDisk", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::Memory::MemoryProfiler as
+                    quest_hook::libil2cpp::Type > ::class(), "SaveScreenshotToDisk",
+                    7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -114,7 +118,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
                 .invoke_unchecked(
                     (),
                     (path, result, pixelsPtr, pixelsCount, format, width, height),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +127,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         offset: i32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::Memory::MemoryProfiler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -135,12 +139,14 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
             >("WriteIntToByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteIntToByteArray", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::Memory::MemoryProfiler as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteIntToByteArray",
+                    3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, offset, value))
+            method.invoke_unchecked((), (array, offset, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,7 +155,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         offset: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Profiling::Memory::MemoryProfiler as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -161,12 +167,14 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
             >("WriteStringToByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteStringToByteArray", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Profiling::Memory::MemoryProfiler as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteStringToByteArray",
+                    3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (array, offset, value))
+            method.invoke_unchecked((), (array, offset, value))?
         };
         Ok(__cordl_ret.into())
     }

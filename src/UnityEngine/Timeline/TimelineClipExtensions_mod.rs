@@ -45,7 +45,7 @@ impl crate::UnityEngine::Timeline::TimelineClipExtensions {
             crate::UnityEngine::Timeline::TrackAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -58,12 +58,13 @@ impl crate::UnityEngine::Timeline::TimelineClipExtensions {
             >("MoveToTrack")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveToTrack", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelineClipExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "MoveToTrack", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clip, destinationTrack))
+            method.invoke_unchecked((), (clip, destinationTrack))?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +76,7 @@ impl crate::UnityEngine::Timeline::TimelineClipExtensions {
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parentTrack: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -90,12 +91,13 @@ impl crate::UnityEngine::Timeline::TimelineClipExtensions {
             >("MoveToTrack_Impl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveToTrack_Impl", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelineClipExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "MoveToTrack_Impl", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (clip, destinationTrack, asset, parentTrack))
+            method.invoke_unchecked((), (clip, destinationTrack, asset, parentTrack))?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +107,7 @@ impl crate::UnityEngine::Timeline::TimelineClipExtensions {
             crate::UnityEngine::Timeline::TrackAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelineClipExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -118,12 +120,13 @@ impl crate::UnityEngine::Timeline::TimelineClipExtensions {
             >("TryMoveToTrack")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryMoveToTrack", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelineClipExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TryMoveToTrack", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (clip, destinationTrack))
+            method.invoke_unchecked((), (clip, destinationTrack))?
         };
         Ok(__cordl_ret.into())
     }

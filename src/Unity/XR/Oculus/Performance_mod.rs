@@ -43,7 +43,7 @@ impl crate::Unity::XR::Oculus::Performance {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -53,17 +53,18 @@ impl crate::Unity::XR::Oculus::Performance {
             >("TryGetAvailableDisplayRefreshRates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetAvailableDisplayRefreshRates", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type
+                    > ::class(), "TryGetAvailableDisplayRefreshRates", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (refreshRates)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (refreshRates))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDisplayRefreshRate(
         refreshRate: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<f32>),
                 bool,
@@ -71,49 +72,53 @@ impl crate::Unity::XR::Oculus::Performance {
             >("TryGetDisplayRefreshRate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetDisplayRefreshRate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type
+                    > ::class(), "TryGetDisplayRefreshRate", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (refreshRate)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (refreshRate))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrySetCPULevel(level: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("TrySetCPULevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrySetCPULevel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type
+                    > ::class(), "TrySetCPULevel", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (level)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (level))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrySetDisplayRefreshRate(
         refreshRate: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), bool, 1usize>("TrySetDisplayRefreshRate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrySetDisplayRefreshRate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type
+                    > ::class(), "TrySetDisplayRefreshRate", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (refreshRate)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (refreshRate))? };
         Ok(__cordl_ret.into())
     }
     pub fn TrySetGPULevel(level: i32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), bool, 1usize>("TrySetGPULevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrySetGPULevel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::XR::Oculus::Performance as quest_hook::libil2cpp::Type
+                    > ::class(), "TrySetGPULevel", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (level)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (level))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -43,7 +43,7 @@ impl crate::UnityEngine::TextCore::Text::ColorUtilities {
         a: crate::UnityEngine::Color32,
         b: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::ColorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                 bool,
@@ -51,18 +51,19 @@ impl crate::UnityEngine::TextCore::Text::ColorUtilities {
             >("CompareColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareColors", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::ColorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareColors", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyColors(
         c1: crate::UnityEngine::Color32,
         c2: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::ColorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                 crate::UnityEngine::Color32,
@@ -70,12 +71,13 @@ impl crate::UnityEngine::TextCore::Text::ColorUtilities {
             >("MultiplyColors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MultiplyColors", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::ColorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "MultiplyColors", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (c1, c2))
+            method.invoke_unchecked((), (c1, c2))?
         };
         Ok(__cordl_ret.into())
     }

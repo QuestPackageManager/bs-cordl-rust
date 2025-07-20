@@ -48,7 +48,7 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetConnectRequestPacket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NetConnectRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>),
                 quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetConnectRequestPacket>,
@@ -56,19 +56,20 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
             >("FromData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NetConnectRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "FromData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::NetConnectRequestPacket,
-        > = unsafe { method.invoke_unchecked((), (packet)) };
+        > = unsafe { method.invoke_unchecked((), (packet))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetProtocolId(
         packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NetConnectRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>),
                 i32,
@@ -76,11 +77,12 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
             >("GetProtocolId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProtocolId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NetConnectRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "GetProtocolId", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (packet)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (packet))? };
         Ok(__cordl_ret.into())
     }
     pub fn Make(
@@ -90,7 +92,7 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NetConnectRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -102,12 +104,13 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
             >("Make")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Make", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NetConnectRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Make", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket> = unsafe {
-            method.invoke_unchecked((), (connectData, addressBytes, connectId))
+            method.invoke_unchecked((), (connectData, addressBytes, connectId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +136,7 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
         targetAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         data: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NetConnectRequestPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i64,
@@ -146,8 +149,9 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NetConnectRequestPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -155,7 +159,7 @@ impl crate::LiteNetLib::NetConnectRequestPacket {
                 .invoke_unchecked(
                     self,
                     (connectionTime, connectionNumber, targetAddress, data),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

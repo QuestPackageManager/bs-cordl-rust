@@ -41,23 +41,24 @@ impl crate::Oculus::Platform::Voip {
     pub fn Accept(
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), quest_hook::libil2cpp::Void, 1usize>("Accept")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Accept", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "Accept", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (userID))
+            method.invoke_unchecked((), (userID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetIsConnectionUsingDtx(
         peerID: u64,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::VoipDtxState> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 crate::Oculus::Platform::VoipDtxState,
@@ -65,19 +66,20 @@ impl crate::Oculus::Platform::Voip {
             >("GetIsConnectionUsingDtx")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetIsConnectionUsingDtx", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "GetIsConnectionUsingDtx", 1usize
                 )
             });
         let __cordl_ret: crate::Oculus::Platform::VoipDtxState = unsafe {
-            method.invoke_unchecked((), (peerID))
+            method.invoke_unchecked((), (peerID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocalBitrate(
         peerID: u64,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::VoipBitrate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 crate::Oculus::Platform::VoipBitrate,
@@ -85,12 +87,13 @@ impl crate::Oculus::Platform::Voip {
             >("GetLocalBitrate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLocalBitrate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "GetLocalBitrate", 1usize
                 )
             });
         let __cordl_ret: crate::Oculus::Platform::VoipBitrate = unsafe {
-            method.invoke_unchecked((), (peerID))
+            method.invoke_unchecked((), (peerID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +106,7 @@ impl crate::Oculus::Platform::Voip {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -117,8 +120,9 @@ impl crate::Oculus::Platform::Voip {
             >("GetMicrophoneAvailability")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMicrophoneAvailability", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "GetMicrophoneAvailability", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -127,13 +131,13 @@ impl crate::Oculus::Platform::Voip {
                     crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRemoteBitrate(
         peerID: u64,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::VoipBitrate> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u64),
                 crate::Oculus::Platform::VoipBitrate,
@@ -141,19 +145,20 @@ impl crate::Oculus::Platform::Voip {
             >("GetRemoteBitrate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRemoteBitrate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRemoteBitrate", 1usize
                 )
             });
         let __cordl_ret: crate::Oculus::Platform::VoipBitrate = unsafe {
-            method.invoke_unchecked((), (peerID))
+            method.invoke_unchecked((), (peerID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetSystemVoipMicrophoneMuted() -> quest_hook::libil2cpp::Result<
         crate::Oculus::Platform::VoipMuteState,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::Oculus::Platform::VoipMuteState,
@@ -161,19 +166,20 @@ impl crate::Oculus::Platform::Voip {
             >("GetSystemVoipMicrophoneMuted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSystemVoipMicrophoneMuted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSystemVoipMicrophoneMuted", 0usize
                 )
             });
         let __cordl_ret: crate::Oculus::Platform::VoipMuteState = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetSystemVoipStatus() -> quest_hook::libil2cpp::Result<
         crate::Oculus::Platform::SystemVoipStatus,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::Oculus::Platform::SystemVoipStatus,
@@ -181,12 +187,13 @@ impl crate::Oculus::Platform::Voip {
             >("GetSystemVoipStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSystemVoipStatus", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSystemVoipStatus", 0usize
                 )
             });
         let __cordl_ret: crate::Oculus::Platform::SystemVoipStatus = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,7 +204,7 @@ impl crate::Oculus::Platform::Voip {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Message_1_Callback<
@@ -209,20 +216,21 @@ impl crate::Oculus::Platform::Voip {
             >("SetMicrophoneAvailabilityStateUpdateNotificationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMicrophoneAvailabilityStateUpdateNotificationCallback",
-                    1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(),
+                    "SetMicrophoneAvailabilityStateUpdateNotificationCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))
+            method.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetMicrophoneFilterCallback(
         callback: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::CAPI_FilterCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::CAPI_FilterCallback,
@@ -232,19 +240,20 @@ impl crate::Oculus::Platform::Voip {
             >("SetMicrophoneFilterCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMicrophoneFilterCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "SetMicrophoneFilterCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))
+            method.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetMicrophoneMuted(
         state: crate::Oculus::Platform::VoipMuteState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Oculus::Platform::VoipMuteState),
                 quest_hook::libil2cpp::Void,
@@ -252,19 +261,20 @@ impl crate::Oculus::Platform::Voip {
             >("SetMicrophoneMuted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMicrophoneMuted", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "SetMicrophoneMuted", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (state))
+            method.invoke_unchecked((), (state))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetNewConnectionOptions(
         voipOptions: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::VoipOptions>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::VoipOptions>),
                 quest_hook::libil2cpp::Void,
@@ -272,12 +282,13 @@ impl crate::Oculus::Platform::Voip {
             >("SetNewConnectionOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetNewConnectionOptions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "SetNewConnectionOptions", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (voipOptions))
+            method.invoke_unchecked((), (voipOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -290,7 +301,7 @@ impl crate::Oculus::Platform::Voip {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Message_1_Callback<
@@ -304,12 +315,13 @@ impl crate::Oculus::Platform::Voip {
             >("SetSystemVoipStateNotificationCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSystemVoipStateNotificationCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "SetSystemVoipStateNotificationCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callback))
+            method.invoke_unchecked((), (callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -324,7 +336,7 @@ impl crate::Oculus::Platform::Voip {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -338,8 +350,9 @@ impl crate::Oculus::Platform::Voip {
             >("SetSystemVoipSuppressed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSystemVoipSuppressed", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "SetSystemVoipSuppressed", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -348,38 +361,40 @@ impl crate::Oculus::Platform::Voip {
                     crate::Oculus::Platform::Models::SystemVoipState,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (suppressed)) };
+        > = unsafe { method.invoke_unchecked((), (suppressed))? };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), quest_hook::libil2cpp::Void, 1usize>("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "Start", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (userID))
+            method.invoke_unchecked((), (userID))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Stop(
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Voip as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), quest_hook::libil2cpp::Void, 1usize>("Stop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Stop", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Voip as quest_hook::libil2cpp::Type >
+                    ::class(), "Stop", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (userID))
+            method.invoke_unchecked((), (userID))?
         };
         Ok(__cordl_ret.into())
     }

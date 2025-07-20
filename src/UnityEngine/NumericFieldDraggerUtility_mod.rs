@@ -43,31 +43,34 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         shiftPressed: bool,
         altPressed: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(bool, bool), f32, 2usize>("Acceleration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Acceleration", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "Acceleration", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (shiftPressed, altPressed))
+            method.invoke_unchecked((), (shiftPressed, altPressed))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateFloatDragSensitivity_f64_0(
         value: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), f64, 1usize>("CalculateFloatDragSensitivity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateFloatDragSensitivity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateFloatDragSensitivity", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateFloatDragSensitivity_f64_f64_1(
@@ -75,7 +78,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         minValue: f64,
         maxValue: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, f64, f64),
                 f64,
@@ -83,41 +86,47 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
             >("CalculateFloatDragSensitivity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateFloatDragSensitivity", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateFloatDragSensitivity", 3usize
                 )
             });
         let __cordl_ret: f64 = unsafe {
-            method.invoke_unchecked((), (value, minValue, maxValue))
+            method.invoke_unchecked((), (value, minValue, maxValue))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateIntDragSensitivity_f64_2(
         value: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f64), f64, 1usize>("CalculateIntDragSensitivity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateIntDragSensitivity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateIntDragSensitivity", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateIntDragSensitivity_i64_0(
         value: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i64), i64, 1usize>("CalculateIntDragSensitivity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateIntDragSensitivity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateIntDragSensitivity", 1usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateIntDragSensitivity_i64_i64_i64_3(
@@ -125,7 +134,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         minValue: i64,
         maxValue: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, i64, i64),
                 i64,
@@ -133,34 +142,38 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
             >("CalculateIntDragSensitivity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateIntDragSensitivity", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateIntDragSensitivity", 3usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (value, minValue, maxValue))
+            method.invoke_unchecked((), (value, minValue, maxValue))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateIntDragSensitivity_u64_1(
         value: u64,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), u64, 1usize>("CalculateIntDragSensitivity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateIntDragSensitivity", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateIntDragSensitivity", 1usize
                 )
             });
-        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (value)) };
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn NiceDelta(
         deviceDelta: crate::UnityEngine::Vector2,
         acceleration: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::NumericFieldDraggerUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2, f32),
                 f32,
@@ -168,12 +181,13 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
             >("NiceDelta")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NiceDelta", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::NumericFieldDraggerUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "NiceDelta", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (deviceDelta, acceleration))
+            method.invoke_unchecked((), (deviceDelta, acceleration))?
         };
         Ok(__cordl_ret.into())
     }

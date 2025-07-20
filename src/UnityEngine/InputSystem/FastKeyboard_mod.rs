@@ -47,7 +47,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -62,13 +62,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard0", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard0",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard1(
@@ -78,7 +80,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -93,13 +95,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard1", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard1",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard2(
@@ -109,7 +113,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -124,13 +128,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard2",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard3(
@@ -140,7 +146,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -155,13 +161,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard3", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard3",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard4(
@@ -171,7 +179,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -186,13 +194,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard4", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard4",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard5(
@@ -202,7 +212,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -217,13 +227,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard5")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard5", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard5",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard6(
@@ -233,7 +245,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -248,13 +260,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard6", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard6",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard7(
@@ -264,7 +278,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -279,13 +293,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard7")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard7", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard7",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard8(
@@ -295,7 +311,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -310,13 +326,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard8", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard8",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboard9(
@@ -326,7 +344,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -341,13 +359,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboard9")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboard9", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboard9",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardIMESelected(
@@ -359,7 +379,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -374,13 +394,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardIMESelected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardIMESelected", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardIMESelected", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM1(
@@ -390,7 +412,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -405,13 +427,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardOEM1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardOEM1", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardOEM1", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM2(
@@ -421,7 +445,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -436,13 +460,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardOEM2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardOEM2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardOEM2", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM3(
@@ -452,7 +478,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -467,13 +493,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardOEM3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardOEM3", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardOEM3", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM4(
@@ -483,7 +511,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -498,13 +526,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardOEM4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardOEM4", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardOEM4", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardOEM5(
@@ -514,7 +544,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -529,13 +559,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardOEM5")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardOEM5", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardOEM5", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarda(
@@ -545,7 +577,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -560,13 +592,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboarda")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboarda", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboarda",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardalt(
@@ -578,7 +612,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -593,13 +627,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardalt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardalt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardalt", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardanyKey(
@@ -611,7 +647,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             crate::UnityEngine::InputSystem::Controls::AnyKeyControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -626,13 +662,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardanyKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardanyKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardanyKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AnyKeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kAnyKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kAnyKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardb(
@@ -642,7 +680,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -657,13 +695,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardb")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardb", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardb",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardbackquote(
@@ -673,7 +713,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -688,13 +728,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardbackquote")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardbackquote", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardbackquote", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardbackslash(
@@ -704,7 +746,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -719,13 +761,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardbackslash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardbackslash", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardbackslash", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardbackspace(
@@ -735,7 +779,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -750,13 +794,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardbackspace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardbackspace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardbackspace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardc(
@@ -766,7 +812,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -781,13 +827,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardc")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardc", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardc",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardcapsLock(
@@ -797,7 +845,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -812,13 +860,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardcapsLock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardcapsLock", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardcapsLock", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardcomma(
@@ -828,7 +878,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -843,13 +893,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardcomma")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardcomma", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardcomma", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardcontextMenu(
@@ -859,7 +911,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -874,13 +926,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardcontextMenu")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardcontextMenu", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardcontextMenu", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardctrl(
@@ -892,7 +946,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -907,13 +961,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardctrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardctrl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardctrl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardd(
@@ -923,7 +979,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -938,13 +994,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardd", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardd",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarddelete(
@@ -954,7 +1012,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -969,13 +1027,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboarddelete")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboarddelete", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboarddelete", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarddownArrow(
@@ -985,7 +1045,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1000,13 +1060,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboarddownArrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboarddownArrow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboarddownArrow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboarde(
@@ -1016,7 +1078,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1031,13 +1093,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboarde")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboarde", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboarde",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardend(
@@ -1047,7 +1111,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1062,13 +1126,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardend")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardend", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardend", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardenter(
@@ -1078,7 +1144,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1093,13 +1159,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardenter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardenter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardenter", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardequals(
@@ -1109,7 +1177,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1124,13 +1192,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardequals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardequals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardequals", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardescape(
@@ -1140,7 +1210,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1155,13 +1225,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardescape")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardescape", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardescape", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf(
@@ -1171,7 +1243,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1186,13 +1258,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf1(
@@ -1202,7 +1276,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1217,13 +1291,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf1", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf1",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf10(
@@ -1233,7 +1309,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1248,13 +1324,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf10")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf10", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardf10", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf11(
@@ -1264,7 +1342,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1279,13 +1357,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf11")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf11", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardf11", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf12(
@@ -1295,7 +1375,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1310,13 +1390,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf12")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf12", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardf12", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf2(
@@ -1326,7 +1408,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1341,13 +1423,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf2",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf3(
@@ -1357,7 +1441,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1372,13 +1456,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf3", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf3",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf4(
@@ -1388,7 +1474,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1403,13 +1489,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf4", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf4",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf5(
@@ -1419,7 +1507,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1434,13 +1522,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf5")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf5", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf5",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf6(
@@ -1450,7 +1540,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1465,13 +1555,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf6", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf6",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf7(
@@ -1481,7 +1573,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1496,13 +1588,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf7")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf7", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf7",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf8(
@@ -1512,7 +1606,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1527,13 +1621,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf8", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf8",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardf9(
@@ -1543,7 +1639,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1558,13 +1654,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardf9")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardf9", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardf9",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardg(
@@ -1574,7 +1672,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1589,13 +1687,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardg")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardg", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardg",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardh(
@@ -1605,7 +1705,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1620,13 +1720,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardh", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardh",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardhome(
@@ -1636,7 +1738,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1651,13 +1753,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardhome")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardhome", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardhome", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardi(
@@ -1667,7 +1771,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1682,13 +1786,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardi")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardi", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardi",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardinsert(
@@ -1698,7 +1804,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1713,13 +1819,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardinsert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardinsert", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardinsert", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardj(
@@ -1729,7 +1837,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1744,13 +1852,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardj")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardj", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardj",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardk(
@@ -1760,7 +1870,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1775,13 +1885,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardk")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardk", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardk",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardl(
@@ -1791,7 +1903,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1806,13 +1918,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardl",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftAlt(
@@ -1822,7 +1936,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1837,13 +1951,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardleftAlt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardleftAlt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardleftAlt", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftArrow(
@@ -1853,7 +1969,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1868,13 +1984,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardleftArrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardleftArrow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardleftArrow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftBracket(
@@ -1884,7 +2002,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1899,13 +2017,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardleftBracket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardleftBracket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardleftBracket", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftCtrl(
@@ -1915,7 +2035,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1930,13 +2050,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardleftCtrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardleftCtrl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardleftCtrl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftMeta(
@@ -1946,7 +2068,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1961,13 +2083,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardleftMeta")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardleftMeta", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardleftMeta", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardleftShift(
@@ -1977,7 +2101,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1992,13 +2116,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardleftShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardleftShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardleftShift", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardm(
@@ -2008,7 +2134,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2023,13 +2149,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardm")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardm", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardm",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardminus(
@@ -2039,7 +2167,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2054,13 +2182,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardminus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardminus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardminus", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardn(
@@ -2070,7 +2200,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2085,13 +2215,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardn", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardn",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumLock(
@@ -2101,7 +2233,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2116,13 +2248,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumLock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumLock", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumLock", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad0(
@@ -2132,7 +2266,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2147,13 +2281,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad0", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad0", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad1(
@@ -2163,7 +2299,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2178,13 +2314,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad1", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad1", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad2(
@@ -2194,7 +2332,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2209,13 +2347,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad2", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad3(
@@ -2225,7 +2365,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2240,13 +2380,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad3")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad3", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad3", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad4(
@@ -2256,7 +2398,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2271,13 +2413,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad4", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad4", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad5(
@@ -2287,7 +2431,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2302,13 +2446,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad5")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad5", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad5", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad6(
@@ -2318,7 +2464,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2333,13 +2479,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad6")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad6", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad6", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad7(
@@ -2349,7 +2497,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2364,13 +2512,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad7")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad7", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad7", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad8(
@@ -2380,7 +2530,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2395,13 +2545,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad8")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad8", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad8", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpad9(
@@ -2411,7 +2563,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2426,13 +2578,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpad9")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpad9", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpad9", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadDivide(
@@ -2442,7 +2596,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2457,13 +2611,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpadDivide")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpadDivide", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpadDivide", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadEnter(
@@ -2473,7 +2629,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2488,13 +2644,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpadEnter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpadEnter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpadEnter", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadEquals(
@@ -2504,7 +2662,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2519,13 +2677,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpadEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpadEquals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpadEquals", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadMinus(
@@ -2535,7 +2695,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2550,13 +2710,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpadMinus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpadMinus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpadMinus", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadMultiply(
@@ -2566,7 +2728,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2581,13 +2743,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpadMultiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpadMultiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpadMultiply", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadPeriod(
@@ -2597,7 +2761,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2612,13 +2776,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpadPeriod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpadPeriod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpadPeriod", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardnumpadPlus(
@@ -2628,7 +2794,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2643,13 +2809,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardnumpadPlus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardnumpadPlus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardnumpadPlus", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardo(
@@ -2659,7 +2827,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2674,13 +2842,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardo",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardp(
@@ -2690,7 +2860,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2705,13 +2875,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardp", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardp",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardpageDown(
@@ -2721,7 +2893,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2736,13 +2908,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardpageDown")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardpageDown", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardpageDown", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardpageUp(
@@ -2752,7 +2926,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2767,13 +2941,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardpageUp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardpageUp", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardpageUp", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardpause(
@@ -2783,7 +2959,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2798,13 +2974,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardpause")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardpause", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardpause", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardperiod(
@@ -2814,7 +2992,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2829,13 +3007,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardperiod")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardperiod", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardperiod", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardprintScreen(
@@ -2845,7 +3025,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2860,13 +3040,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardprintScreen")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardprintScreen", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardprintScreen", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardq(
@@ -2876,7 +3058,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2891,13 +3073,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardq")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardq", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardq",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardquote(
@@ -2907,7 +3091,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2922,13 +3106,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardquote")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardquote", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardquote", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardr(
@@ -2938,7 +3124,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2953,13 +3139,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardr")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardr", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardr",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightAlt(
@@ -2969,7 +3157,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2984,13 +3172,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardrightAlt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardrightAlt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardrightAlt", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightArrow(
@@ -3000,7 +3190,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3015,13 +3205,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardrightArrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardrightArrow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardrightArrow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightBracket(
@@ -3031,7 +3223,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3046,13 +3238,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardrightBracket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardrightBracket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardrightBracket", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightCtrl(
@@ -3062,7 +3256,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3077,13 +3271,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardrightCtrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardrightCtrl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardrightCtrl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightMeta(
@@ -3093,7 +3289,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3108,13 +3304,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardrightMeta")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardrightMeta", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardrightMeta", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardrightShift(
@@ -3124,7 +3322,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3139,13 +3337,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardrightShift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardrightShift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardrightShift", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboards(
@@ -3155,7 +3355,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3170,13 +3370,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboards")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboards", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboards",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardscrollLock(
@@ -3186,7 +3388,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3201,13 +3403,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardscrollLock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardscrollLock", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardscrollLock", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardsemicolon(
@@ -3217,7 +3421,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3232,13 +3436,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardsemicolon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardsemicolon", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardsemicolon", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardshift(
@@ -3250,7 +3456,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3265,13 +3471,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardshift")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardshift", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardshift", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl,
-        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kDiscreteButtonLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardslash(
@@ -3281,7 +3489,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3296,13 +3504,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardslash")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardslash", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardslash", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardspace(
@@ -3312,7 +3522,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3327,13 +3537,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardspace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardspace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardspace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardt(
@@ -3343,7 +3555,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3358,13 +3570,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardt", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardt",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardtab(
@@ -3374,7 +3588,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3389,13 +3603,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardtab")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardtab", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardtab", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardu(
@@ -3405,7 +3621,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3420,13 +3636,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardu")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardu", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardu",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardupArrow(
@@ -3436,7 +3654,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3451,13 +3669,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardupArrow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardupArrow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "Initialize_ctrlKeyboardupArrow", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardv(
@@ -3467,7 +3687,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3482,13 +3702,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardv")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardv", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardv",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardw(
@@ -3498,7 +3720,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3513,13 +3735,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardw", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardw",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardx(
@@ -3529,7 +3753,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3544,13 +3768,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardx")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardx", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardx",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardy(
@@ -3560,7 +3786,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3575,13 +3801,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardy", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardy",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlKeyboardz(
@@ -3591,7 +3819,7 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::KeyControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3606,13 +3834,15 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
             >("Initialize_ctrlKeyboardz")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize_ctrlKeyboardz", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize_ctrlKeyboardz",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::KeyControl,
-        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (kKeyLayout, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -3625,16 +3855,17 @@ impl crate::UnityEngine::InputSystem::FastKeyboard {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::FastKeyboard as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::FastKeyboard as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

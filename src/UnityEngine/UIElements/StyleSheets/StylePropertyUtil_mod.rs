@@ -43,7 +43,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
     pub fn IsAnimatable(
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
                 bool,
@@ -51,18 +51,19 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
             >("IsAnimatable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAnimatable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleSheets::StylePropertyUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "IsAnimatable", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (id)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMatchingShorthand(
         shorthand: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -73,11 +74,13 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
             >("IsMatchingShorthand")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsMatchingShorthand", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleSheets::StylePropertyUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "IsMatchingShorthand",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (shorthand, id)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (shorthand, id))? };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetEnumIntValue(
@@ -85,7 +88,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         intValue: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
@@ -97,12 +100,13 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
             >("TryGetEnumIntValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetEnumIntValue", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleSheets::StylePropertyUtil as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetEnumIntValue", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (enumType, value, intValue))
+            method.invoke_unchecked((), (enumType, value, intValue))?
         };
         Ok(__cordl_ret.into())
     }

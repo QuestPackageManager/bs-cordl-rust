@@ -50,7 +50,7 @@ impl crate::OVR::OpenVR::CVRInput {
             quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::VRBoneTransform_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::IntPtr,
@@ -69,8 +69,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("DecompressSkeletalBoneData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecompressSkeletalBoneData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "DecompressSkeletalBoneData", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -83,7 +84,7 @@ impl crate::OVR::OpenVR::CVRInput {
                         peTransformSpace,
                         pTransformArray,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -92,7 +93,7 @@ impl crate::OVR::OpenVR::CVRInput {
         pchActionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -103,12 +104,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetActionHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetActionHandle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetActionHandle", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (pchActionName, pHandle))
+            method.invoke_unchecked(self, (pchActionName, pHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +120,7 @@ impl crate::OVR::OpenVR::CVRInput {
         digitalActionHandle: u64,
         originsOut: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -130,8 +132,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetActionOrigins")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetActionOrigins", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetActionOrigins", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -139,7 +142,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 .invoke_unchecked(
                     self,
                     (actionSetHandle, digitalActionHandle, originsOut),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +151,7 @@ impl crate::OVR::OpenVR::CVRInput {
         pchActionSetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -159,12 +162,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetActionSetHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetActionSetHandle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetActionSetHandle", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (pchActionSetName, pHandle))
+            method.invoke_unchecked(self, (pchActionSetName, pHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,7 +181,7 @@ impl crate::OVR::OpenVR::CVRInput {
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -192,8 +196,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetAnalogActionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAnalogActionData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetAnalogActionData", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -201,7 +206,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 .invoke_unchecked(
                     self,
                     (action, pActionData, unActionDataSize, ulRestrictToDevice),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +219,7 @@ impl crate::OVR::OpenVR::CVRInput {
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -229,8 +234,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetDigitalActionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDigitalActionData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetDigitalActionData", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -238,7 +244,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 .invoke_unchecked(
                     self,
                     (action, pActionData, unActionDataSize, ulRestrictToDevice),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +255,7 @@ impl crate::OVR::OpenVR::CVRInput {
         >,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -260,12 +266,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetInputSourceHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInputSourceHandle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetInputSourceHandle", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (pchInputSourcePath, pHandle))
+            method.invoke_unchecked(self, (pchInputSourcePath, pHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +282,7 @@ impl crate::OVR::OpenVR::CVRInput {
         pchNameArray: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unNameArraySize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -287,12 +294,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetOriginLocalizedName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOriginLocalizedName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOriginLocalizedName", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (origin, pchNameArray, unNameArraySize))
+            method.invoke_unchecked(self, (origin, pchNameArray, unNameArraySize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +312,7 @@ impl crate::OVR::OpenVR::CVRInput {
         >,
         unOriginInfoSize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -318,12 +326,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetOriginTrackedDeviceInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOriginTrackedDeviceInfo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetOriginTrackedDeviceInfo", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (origin, pOriginInfo, unOriginInfoSize))
+            method.invoke_unchecked(self, (origin, pOriginInfo, unOriginInfoSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +347,7 @@ impl crate::OVR::OpenVR::CVRInput {
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -355,8 +364,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetPoseActionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPoseActionData", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPoseActionData", 6usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -371,7 +381,7 @@ impl crate::OVR::OpenVR::CVRInput {
                         unActionDataSize,
                         ulRestrictToDevice,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -384,7 +394,7 @@ impl crate::OVR::OpenVR::CVRInput {
         unActionDataSize: u32,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -399,8 +409,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetSkeletalActionData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSkeletalActionData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSkeletalActionData", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -408,7 +419,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 .invoke_unchecked(
                     self,
                     (action, pActionData, unActionDataSize, ulRestrictToDevice),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -422,7 +433,7 @@ impl crate::OVR::OpenVR::CVRInput {
         >,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -440,8 +451,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetSkeletalBoneData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSkeletalBoneData", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSkeletalBoneData", 5usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -455,7 +467,7 @@ impl crate::OVR::OpenVR::CVRInput {
                         pTransformArray,
                         ulRestrictToDevice,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -469,7 +481,7 @@ impl crate::OVR::OpenVR::CVRInput {
         punRequiredCompressedSize: quest_hook::libil2cpp::ByRefMut<u32>,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u64,
@@ -485,8 +497,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("GetSkeletalBoneDataCompressed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSkeletalBoneDataCompressed", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSkeletalBoneDataCompressed", 7usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -502,7 +515,7 @@ impl crate::OVR::OpenVR::CVRInput {
                         punRequiredCompressedSize,
                         ulRestrictToDevice,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -521,7 +534,7 @@ impl crate::OVR::OpenVR::CVRInput {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::OVR::OpenVR::EVRInputError,
@@ -529,12 +542,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("SetActionManifestPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetActionManifestPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "SetActionManifestPath", 1usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (pchActionManifestPath))
+            method.invoke_unchecked(self, (pchActionManifestPath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -543,7 +557,7 @@ impl crate::OVR::OpenVR::CVRInput {
         actionSetHandle: u64,
         ulActionHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u64, u64),
                 crate::OVR::OpenVR::EVRInputError,
@@ -551,12 +565,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("ShowActionOrigins")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShowActionOrigins", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "ShowActionOrigins", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (actionSetHandle, ulActionHandle))
+            method.invoke_unchecked(self, (actionSetHandle, ulActionHandle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -568,7 +583,7 @@ impl crate::OVR::OpenVR::CVRInput {
         unSizeOfVRSelectedActionSet_t: u32,
         originToHighlight: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -584,8 +599,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("ShowBindingsForActionSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShowBindingsForActionSet", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "ShowBindingsForActionSet", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -593,7 +609,7 @@ impl crate::OVR::OpenVR::CVRInput {
                 .invoke_unchecked(
                     self,
                     (pSets, unSizeOfVRSelectedActionSet_t, originToHighlight),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -606,7 +622,7 @@ impl crate::OVR::OpenVR::CVRInput {
         fAmplitude: f32,
         ulRestrictToDevice: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u64, f32, f32, f32, f32, u64),
                 crate::OVR::OpenVR::EVRInputError,
@@ -614,8 +630,9 @@ impl crate::OVR::OpenVR::CVRInput {
             >("TriggerHapticVibrationAction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriggerHapticVibrationAction", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "TriggerHapticVibrationAction", 6usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
@@ -630,7 +647,7 @@ impl crate::OVR::OpenVR::CVRInput {
                         fAmplitude,
                         ulRestrictToDevice,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -641,7 +658,7 @@ impl crate::OVR::OpenVR::CVRInput {
         >,
         unSizeOfVRSelectedActionSet_t: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -656,12 +673,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >("UpdateActionState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateActionState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), "UpdateActionState", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRInputError = unsafe {
-            method.invoke_unchecked(self, (pSets, unSizeOfVRSelectedActionSet_t))
+            method.invoke_unchecked(self, (pSets, unSizeOfVRSelectedActionSet_t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -669,7 +687,7 @@ impl crate::OVR::OpenVR::CVRInput {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -677,12 +695,13 @@ impl crate::OVR::OpenVR::CVRInput {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRInput as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

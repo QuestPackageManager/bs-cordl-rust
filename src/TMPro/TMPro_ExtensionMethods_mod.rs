@@ -43,7 +43,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -51,20 +51,21 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("ArrayToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ArrayToString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "ArrayToString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (chars)) };
+        > = unsafe { method.invoke_unchecked((), (chars))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareRGB_Color32_Color32_0(
         a: crate::UnityEngine::Color32,
         b: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                 bool,
@@ -72,18 +73,19 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("CompareRGB")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareRGB", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "CompareRGB", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareRGB_Color_Color1(
         a: crate::UnityEngine::Color,
         b: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color, crate::UnityEngine::Color),
                 bool,
@@ -91,18 +93,19 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("CompareRGB")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareRGB", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "CompareRGB", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compare_Color32_Color32_0(
         a: crate::UnityEngine::Color32,
         b: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                 bool,
@@ -110,18 +113,19 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "Compare", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compare_Color_Color1(
         a: crate::UnityEngine::Color,
         b: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color, crate::UnityEngine::Color),
                 bool,
@@ -129,11 +133,12 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "Compare", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compare_Quaternion_Quaternion_i32_3(
@@ -141,7 +146,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         q2: crate::UnityEngine::Quaternion,
         accuracy: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Quaternion, crate::UnityEngine::Quaternion, i32),
                 bool,
@@ -149,12 +154,13 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "Compare", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (q1, q2, accuracy))
+            method.invoke_unchecked((), (q1, q2, accuracy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +169,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         v2: crate::UnityEngine::Vector3,
         accuracy: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, i32),
                 bool,
@@ -171,12 +177,13 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "Compare", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (v1, v2, accuracy))
+            method.invoke_unchecked((), (v1, v2, accuracy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -188,7 +195,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -201,11 +208,12 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("FindInstanceID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindInstanceID", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "FindInstanceID", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, target)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, target))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntToString_Il2CppArray0(
@@ -213,7 +221,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -221,13 +229,14 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("IntToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntToString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "IntToString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (unicodes)) };
+        > = unsafe { method.invoke_unchecked((), (unicodes))? };
         Ok(__cordl_ret.into())
     }
     pub fn IntToString_i32_i32_1(
@@ -237,7 +246,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -249,20 +258,21 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("IntToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IntToString", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "IntToString", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (unicodes, start, length)) };
+        > = unsafe { method.invoke_unchecked((), (unicodes, start, length))? };
         Ok(__cordl_ret.into())
     }
     pub fn MinAlpha(
         c1: crate::UnityEngine::Color,
         c2: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color, crate::UnityEngine::Color),
                 crate::UnityEngine::Color,
@@ -270,12 +280,13 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("MinAlpha")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MinAlpha", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "MinAlpha", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked((), (c1, c2))
+            method.invoke_unchecked((), (c1, c2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -283,7 +294,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         c1: crate::UnityEngine::Color32,
         c2: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                 crate::UnityEngine::Color32,
@@ -291,12 +302,13 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("Multiply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Multiply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "Multiply", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (c1, c2))
+            method.invoke_unchecked((), (c1, c2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +316,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         c1: crate::UnityEngine::Color32,
         c2: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                 crate::UnityEngine::Color32,
@@ -312,12 +324,13 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("Tint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Tint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "Tint", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (c1, c2))
+            method.invoke_unchecked((), (c1, c2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -325,7 +338,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         c1: crate::UnityEngine::Color32,
         tint: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32, f32),
                 crate::UnityEngine::Color32,
@@ -333,12 +346,13 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("Tint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Tint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "Tint", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (c1, tint))
+            method.invoke_unchecked((), (c1, tint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -347,7 +361,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -355,13 +369,14 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("ToIntArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToIntArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "ToIntArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = unsafe { method.invoke_unchecked((), (text)) };
+        > = unsafe { method.invoke_unchecked((), (text))? };
         Ok(__cordl_ret.into())
     }
     pub fn UintToString(
@@ -371,7 +386,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<u32>,
@@ -381,13 +396,14 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             >("UintToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UintToString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::TMPro::TMPro_ExtensionMethods as quest_hook::libil2cpp::Type
+                    > ::class(), "UintToString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (unicodes)) };
+        > = unsafe { method.invoke_unchecked((), (unicodes))? };
         Ok(__cordl_ret.into())
     }
 }

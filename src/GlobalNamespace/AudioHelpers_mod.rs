@@ -39,30 +39,32 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AudioHelpers {
 #[cfg(feature = "AudioHelpers")]
 impl crate::GlobalNamespace::AudioHelpers {
     pub fn DBToNormalizedVolume(db: f32) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AudioHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), f32, 1usize>("DBToNormalizedVolume")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DBToNormalizedVolume", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AudioHelpers as quest_hook::libil2cpp::Type
+                    > ::class(), "DBToNormalizedVolume", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (db)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (db))? };
         Ok(__cordl_ret.into())
     }
     pub fn NormalizedVolumeToDB(
         normalizedVolume: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AudioHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32), f32, 1usize>("NormalizedVolumeToDB")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NormalizedVolumeToDB", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AudioHelpers as quest_hook::libil2cpp::Type
+                    > ::class(), "NormalizedVolumeToDB", 1usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (normalizedVolume))
+            method.invoke_unchecked((), (normalizedVolume))?
         };
         Ok(__cordl_ret.into())
     }

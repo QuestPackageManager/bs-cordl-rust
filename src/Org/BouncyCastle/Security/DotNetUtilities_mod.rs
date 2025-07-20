@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -58,13 +58,15 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ConvertRSAParametersField")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertRSAParametersField", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertRSAParametersField",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (n, _cordl_size)) };
+        > = unsafe { method.invoke_unchecked((), (n, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRSAProvider_CspParameters1(
@@ -75,7 +77,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Security::Cryptography::RSAParameters,
@@ -88,13 +90,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("CreateRSAProvider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateRSAProvider", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateRSAProvider", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rp, csp)) };
+        > = unsafe { method.invoke_unchecked((), (rp, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRSAProvider_RSAParameters0(
@@ -102,7 +105,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::Cryptography::RSAParameters),
                 quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
@@ -110,13 +113,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("CreateRSAProvider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateRSAProvider", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateRSAProvider", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rp)) };
+        > = unsafe { method.invoke_unchecked((), (rp))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromX509Certificate(
@@ -126,7 +130,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -138,13 +142,15 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("FromX509Certificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromX509Certificate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FromX509Certificate",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Certificate,
-        > = unsafe { method.invoke_unchecked((), (x509Cert)) };
+        > = unsafe { method.invoke_unchecked((), (x509Cert))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaKeyPair_DSA0(
@@ -154,7 +160,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>),
                 quest_hook::libil2cpp::Gc<
@@ -164,13 +170,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetDsaKeyPair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDsaKeyPair", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDsaKeyPair", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (dsa)) };
+        > = unsafe { method.invoke_unchecked((), (dsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaKeyPair_DSAParameters1(
@@ -180,7 +187,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::Cryptography::DSAParameters),
                 quest_hook::libil2cpp::Gc<
@@ -190,13 +197,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetDsaKeyPair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDsaKeyPair", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDsaKeyPair", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (dp)) };
+        > = unsafe { method.invoke_unchecked((), (dp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaPublicKey_DSA0(
@@ -206,7 +214,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>),
                 quest_hook::libil2cpp::Gc<
@@ -216,13 +224,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetDsaPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDsaPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDsaPublicKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (dsa)) };
+        > = unsafe { method.invoke_unchecked((), (dsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDsaPublicKey_DSAParameters1(
@@ -232,7 +241,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::Cryptography::DSAParameters),
                 quest_hook::libil2cpp::Gc<
@@ -242,13 +251,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetDsaPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDsaPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDsaPublicKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DsaPublicKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (dp)) };
+        > = unsafe { method.invoke_unchecked((), (dp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyPair(
@@ -260,7 +270,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Security::Cryptography::AsymmetricAlgorithm,
@@ -272,13 +282,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetKeyPair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetKeyPair", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetKeyPair", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (privateKey)) };
+        > = unsafe { method.invoke_unchecked((), (privateKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaKeyPair_RSA0(
@@ -288,7 +299,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>),
                 quest_hook::libil2cpp::Gc<
@@ -298,13 +309,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetRsaKeyPair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRsaKeyPair", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRsaKeyPair", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (rsa)) };
+        > = unsafe { method.invoke_unchecked((), (rsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaKeyPair_RSAParameters1(
@@ -314,7 +326,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::Cryptography::RSAParameters),
                 quest_hook::libil2cpp::Gc<
@@ -324,13 +336,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetRsaKeyPair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRsaKeyPair", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRsaKeyPair", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = unsafe { method.invoke_unchecked((), (rp)) };
+        > = unsafe { method.invoke_unchecked((), (rp))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaPublicKey_RSA0(
@@ -340,7 +353,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>),
                 quest_hook::libil2cpp::Gc<
@@ -350,13 +363,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetRsaPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRsaPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRsaPublicKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (rsa)) };
+        > = unsafe { method.invoke_unchecked((), (rsa))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRsaPublicKey_RSAParameters1(
@@ -366,7 +380,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::Cryptography::RSAParameters),
                 quest_hook::libil2cpp::Gc<
@@ -376,13 +390,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("GetRsaPublicKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRsaPublicKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRsaPublicKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-        > = unsafe { method.invoke_unchecked((), (rp)) };
+        > = unsafe { method.invoke_unchecked((), (rp))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -399,7 +414,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::RSAParameters,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
@@ -409,12 +424,13 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSAParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSAParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSAParameters", 1usize
                 )
             });
         let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
-            method.invoke_unchecked((), (rsaKey))
+            method.invoke_unchecked((), (rsaKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -425,7 +441,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::RSAParameters,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
@@ -435,12 +451,13 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSAParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSAParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSAParameters", 1usize
                 )
             });
         let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
-            method.invoke_unchecked((), (privKey))
+            method.invoke_unchecked((), (privKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -451,7 +468,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::RSAParameters,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure,
@@ -461,12 +478,13 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSAParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSAParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSAParameters", 1usize
                 )
             });
         let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
-            method.invoke_unchecked((), (privKey))
+            method.invoke_unchecked((), (privKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -477,7 +495,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
@@ -487,13 +505,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSA", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSA", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rsaKey)) };
+        > = unsafe { method.invoke_unchecked((), (rsaKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaKeyParameters_CspParameters1(
@@ -506,7 +525,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -521,13 +540,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSA", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSA", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (rsaKey, csp)) };
+        > = unsafe { method.invoke_unchecked((), (rsaKey, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateCrtKeyParameters2(
@@ -537,7 +557,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters,
@@ -547,13 +567,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSA", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSA", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey)) };
+        > = unsafe { method.invoke_unchecked((), (privKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateCrtKeyParameters_CspParameters3(
@@ -566,7 +587,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -581,13 +602,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSA", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSA", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey, csp)) };
+        > = unsafe { method.invoke_unchecked((), (privKey, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateKeyStructure4(
@@ -597,7 +619,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure,
@@ -607,13 +629,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSA", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSA", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey)) };
+        > = unsafe { method.invoke_unchecked((), (privKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToRSA_RsaPrivateKeyStructure_CspParameters5(
@@ -626,7 +649,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -641,13 +664,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToRSA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToRSA", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToRSA", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = unsafe { method.invoke_unchecked((), (privKey, csp)) };
+        > = unsafe { method.invoke_unchecked((), (privKey, csp))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToX509Certificate_X509Certificate1(
@@ -659,7 +683,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::X509::X509Certificate,
@@ -671,13 +695,14 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToX509Certificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToX509Certificate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToX509Certificate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        > = unsafe { method.invoke_unchecked((), (x509Cert)) };
+        > = unsafe { method.invoke_unchecked((), (x509Cert))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToX509Certificate_X509CertificateStructure0(
@@ -689,7 +714,7 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
@@ -701,28 +726,30 @@ impl crate::Org::BouncyCastle::Security::DotNetUtilities {
             >("ToX509Certificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToX509Certificate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ToX509Certificate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        > = unsafe { method.invoke_unchecked((), (x509Struct)) };
+        > = unsafe { method.invoke_unchecked((), (x509Struct))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Security::DotNetUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Security::DotNetUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

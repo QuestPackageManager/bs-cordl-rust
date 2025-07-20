@@ -54,7 +54,7 @@ impl crate::Zenject::DisposeBlock {
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IDisposable>),
                 quest_hook::libil2cpp::Void,
@@ -62,12 +62,13 @@ impl crate::Zenject::DisposeBlock {
             >("Add")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Add", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Add", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disposable))
+            method.invoke_unchecked(self, (disposable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +82,7 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IList_1<T>,
@@ -91,35 +92,37 @@ impl crate::Zenject::DisposeBlock {
             >("AddRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddRange", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "AddRange", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disposables))
+            method.invoke_unchecked(self, (disposables))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LazyInitializeDisposableList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -127,12 +130,13 @@ impl crate::Zenject::DisposeBlock {
             >("LazyInitializeDisposableList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LazyInitializeDisposableList", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "LazyInitializeDisposableList", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +150,7 @@ impl crate::Zenject::DisposeBlock {
     pub fn OnDespawned(
         that: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>),
                 quest_hook::libil2cpp::Void,
@@ -154,19 +158,20 @@ impl crate::Zenject::DisposeBlock {
             >("OnDespawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDespawned", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "OnDespawned", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (that))
+            method.invoke_unchecked((), (that))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnSpawned(
         that: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>),
                 quest_hook::libil2cpp::Void,
@@ -174,12 +179,13 @@ impl crate::Zenject::DisposeBlock {
             >("OnSpawned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnSpawned", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "OnSpawned", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (that))
+            method.invoke_unchecked((), (that))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +193,7 @@ impl crate::Zenject::DisposeBlock {
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IDisposable>),
                 quest_hook::libil2cpp::Void,
@@ -195,12 +201,13 @@ impl crate::Zenject::DisposeBlock {
             >("Remove")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Remove", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Remove", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (disposable))
+            method.invoke_unchecked(self, (disposable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -213,7 +220,7 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -223,13 +230,14 @@ impl crate::Zenject::DisposeBlock {
             >("SpawnList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SpawnList", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "SpawnList", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnList_IEnumerable_1_0<T>(
@@ -244,7 +252,7 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<T>,
@@ -256,19 +264,20 @@ impl crate::Zenject::DisposeBlock {
             >("SpawnList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SpawnList", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "SpawnList", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { method.invoke_unchecked(self, (elements)) };
+        > = unsafe { method.invoke_unchecked(self, (elements))? };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_8() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
@@ -276,12 +285,13 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -293,7 +303,7 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>),
                 T,
@@ -301,11 +311,12 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (pool)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (pool))? };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_2_TParam1_1<TValue, TParam1>(
@@ -319,7 +330,7 @@ impl crate::Zenject::DisposeBlock {
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -332,11 +343,12 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 2usize
                 )
             });
-        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, (pool, p1)) };
+        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, (pool, p1))? };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_3_TParam1_TParam2_2<TValue, TParam1, TParam2>(
@@ -355,7 +367,7 @@ impl crate::Zenject::DisposeBlock {
         TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -369,12 +381,13 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 3usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (pool, p1, p2))
+            method.invoke_unchecked(self, (pool, p1, p2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -402,7 +415,7 @@ impl crate::Zenject::DisposeBlock {
         TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -417,12 +430,13 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 4usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (pool, p1, p2, p3))
+            method.invoke_unchecked(self, (pool, p1, p2, p3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +468,7 @@ impl crate::Zenject::DisposeBlock {
         TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -476,12 +490,13 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 5usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (pool, p1, p2, p3, p4))
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4))?
         };
         Ok(__cordl_ret.into())
     }
@@ -524,7 +539,7 @@ impl crate::Zenject::DisposeBlock {
         TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -548,12 +563,13 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 6usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5))
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5))?
         };
         Ok(__cordl_ret.into())
     }
@@ -601,7 +617,7 @@ impl crate::Zenject::DisposeBlock {
         TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -627,12 +643,13 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 7usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5, p6))
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5, p6))?
         };
         Ok(__cordl_ret.into())
     }
@@ -685,7 +702,7 @@ impl crate::Zenject::DisposeBlock {
         TParam7: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -713,12 +730,13 @@ impl crate::Zenject::DisposeBlock {
             >("Spawn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Spawn", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "Spawn", 8usize
                 )
             });
         let __cordl_ret: TValue = unsafe {
-            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5, p6, p7))
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5, p6, p7))?
         };
         Ok(__cordl_ret.into())
     }
@@ -731,7 +749,7 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     T,
@@ -744,28 +762,30 @@ impl crate::Zenject::DisposeBlock {
             >("StoreSpawnedObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StoreSpawnedObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), "StoreSpawnedObject", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (obj, pool))
+            method.invoke_unchecked(self, (obj, pool))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::DisposeBlock as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::DisposeBlock as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

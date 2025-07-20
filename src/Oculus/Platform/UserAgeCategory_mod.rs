@@ -47,7 +47,7 @@ impl crate::Oculus::Platform::UserAgeCategory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserAgeCategory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -61,8 +61,9 @@ impl crate::Oculus::Platform::UserAgeCategory {
             >("Get")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserAgeCategory as
+                    quest_hook::libil2cpp::Type > ::class(), "Get", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -71,7 +72,7 @@ impl crate::Oculus::Platform::UserAgeCategory {
                     crate::Oculus::Platform::Models::UserAccountAgeCategory,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Report(
@@ -79,7 +80,7 @@ impl crate::Oculus::Platform::UserAgeCategory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::UserAgeCategory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Oculus::Platform::AppAgeCategory),
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -87,12 +88,13 @@ impl crate::Oculus::Platform::UserAgeCategory {
             >("Report")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Report", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::UserAgeCategory as
+                    quest_hook::libil2cpp::Type > ::class(), "Report", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
-            method.invoke_unchecked((), (age_category))
+            method.invoke_unchecked((), (age_category))?
         };
         Ok(__cordl_ret.into())
     }

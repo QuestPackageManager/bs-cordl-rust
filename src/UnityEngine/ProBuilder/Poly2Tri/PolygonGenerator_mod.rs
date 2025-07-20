@@ -52,7 +52,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Polygon>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, i32),
                 quest_hook::libil2cpp::Gc<
@@ -62,13 +62,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator {
             >("RandomCircleSweep")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RandomCircleSweep", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "RandomCircleSweep", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
-        > = unsafe { method.invoke_unchecked((), (scale, vertexCount)) };
+        > = unsafe { method.invoke_unchecked((), (scale, vertexCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn RandomCircleSweep2(
@@ -77,7 +78,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Polygon>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f64, i32),
                 quest_hook::libil2cpp::Gc<
@@ -87,28 +88,30 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator {
             >("RandomCircleSweep2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RandomCircleSweep2", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), "RandomCircleSweep2", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
-        > = unsafe { method.invoke_unchecked((), (scale, vertexCount)) };
+        > = unsafe { method.invoke_unchecked((), (scale, vertexCount))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::PolygonGenerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

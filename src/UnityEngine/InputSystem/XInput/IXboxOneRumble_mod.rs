@@ -46,7 +46,7 @@ impl crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
         leftTrigger: f32,
         rightTrigger: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::XInput::IXboxOneRumble as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -54,8 +54,9 @@ impl crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
             >("SetMotorSpeeds")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMotorSpeeds", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::XInput::IXboxOneRumble as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMotorSpeeds", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -63,7 +64,7 @@ impl crate::UnityEngine::InputSystem::XInput::IXboxOneRumble {
                 .invoke_unchecked(
                     self,
                     (lowFrequency, highFrequency, leftTrigger, rightTrigger),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

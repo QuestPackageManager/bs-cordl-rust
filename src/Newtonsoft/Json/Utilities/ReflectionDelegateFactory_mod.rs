@@ -50,7 +50,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
@@ -58,12 +58,14 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateDefaultConstructor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateDefaultConstructor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateDefaultConstructor",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>> = unsafe {
-            method.invoke_unchecked(self, (_cordl_type))
+            method.invoke_unchecked(self, (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -82,7 +84,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -95,8 +97,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateGet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateGet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateGet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -104,7 +107,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
                 T,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (fieldInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (fieldInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateGet_MemberInfo0<T>(
@@ -122,7 +125,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -135,8 +138,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateGet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateGet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateGet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -144,7 +148,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
                 T,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (memberInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (memberInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateGet_PropertyInfo1<T>(
@@ -162,7 +166,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -175,8 +179,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateGet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateGet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateGet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -184,7 +189,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
                 T,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (propertyInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (propertyInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMethodCall<T>(
@@ -202,7 +207,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>),
                 quest_hook::libil2cpp::Gc<
@@ -215,8 +220,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateMethodCall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMethodCall", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMethodCall", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -224,7 +230,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
                 T,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (method)) };
+        > = unsafe { method.invoke_unchecked(self, (method))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateParameterizedConstructor(
@@ -237,7 +243,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>),
                 quest_hook::libil2cpp::Gc<
@@ -249,15 +255,17 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateParameterizedConstructor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateParameterizedConstructor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateParameterizedConstructor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (method)) };
+        > = unsafe { method.invoke_unchecked(self, (method))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSet_FieldInfo1<T>(
@@ -275,7 +283,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -288,8 +296,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateSet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -297,7 +306,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
                 T,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (fieldInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (fieldInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSet_MemberInfo0<T>(
@@ -315,7 +324,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -328,8 +337,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateSet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -337,7 +347,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
                 T,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (memberInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (memberInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSet_PropertyInfo2<T>(
@@ -355,7 +365,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -368,8 +378,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
             >("CreateSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateSet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -377,7 +388,7 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
                 T,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (propertyInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (propertyInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -390,16 +401,17 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::ReflectionDelegateFactory as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

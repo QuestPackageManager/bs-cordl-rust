@@ -159,7 +159,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::InstructionArray as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -199,8 +199,9 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::InstructionArray as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -215,7 +216,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
                         labels,
                         debugCookies,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -274,7 +275,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<
@@ -286,15 +287,18 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
             >("GetInstructionViews")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetInstructionViews", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::InstructionArray_DebugView
+                    as quest_hook::libil2cpp::Type > ::class(), "GetInstructionViews",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView,
             >,
-        > = unsafe { method.invoke_unchecked(self, (includeDebugCookies)) };
+        > = unsafe { method.invoke_unchecked(self, (includeDebugCookies))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -310,22 +314,25 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("<GetInstructionViews>b__4_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<GetInstructionViews>b__4_0", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::InstructionArray_DebugView
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "<GetInstructionViews>b__4_0", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (index)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         array: crate::System::Linq::Expressions::Interpreter::InstructionArray,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Linq::Expressions::Interpreter::InstructionArray),
                 quest_hook::libil2cpp::Void,
@@ -333,12 +340,14 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray_DebugView {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::InstructionArray_DebugView
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (array))
+            method.invoke_unchecked(self, (array))?
         };
         Ok(__cordl_ret.into())
     }

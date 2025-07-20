@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelCompletionResultsHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -116,8 +116,9 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 18usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelCompletionResultsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 18usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -146,7 +147,7 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
                         songTime,
                         invalidated,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -166,7 +167,7 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
             crate::GlobalNamespace::PlatformLeaderboardsModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LevelCompletionResultsHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -189,8 +190,9 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
             >("ProcessScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessScore", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LevelCompletionResultsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessScore", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -205,7 +207,7 @@ impl crate::GlobalNamespace::LevelCompletionResultsHelper {
                         transformedBeatmapData,
                         platformLeaderboardsModel,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

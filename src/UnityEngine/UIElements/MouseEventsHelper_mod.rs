@@ -57,7 +57,7 @@ impl crate::UnityEngine::UIElements::MouseEventsHelper {
         TEnterEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventsHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -76,8 +76,9 @@ impl crate::UnityEngine::UIElements::MouseEventsHelper {
             >("SendEnterLeave")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendEnterLeave", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SendEnterLeave", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -90,7 +91,7 @@ impl crate::UnityEngine::UIElements::MouseEventsHelper {
                         triggerEvent,
                         mousePosition,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +107,7 @@ impl crate::UnityEngine::UIElements::MouseEventsHelper {
         >,
         mousePosition: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MouseEventsHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -125,8 +126,10 @@ impl crate::UnityEngine::UIElements::MouseEventsHelper {
             >("SendMouseOverMouseOut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendMouseOverMouseOut", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MouseEventsHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "SendMouseOverMouseOut",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -139,7 +142,7 @@ impl crate::UnityEngine::UIElements::MouseEventsHelper {
                         triggerEvent,
                         mousePosition,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

@@ -55,7 +55,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         TQueryType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -70,19 +70,22 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             >("AddDescriptorSubset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddDescriptorSubset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as
+                    quest_hook::libil2cpp::Type > ::class(), "AddDescriptorSubset",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (copyFrom, copyTo))
+            method.invoke_unchecked((), (copyFrom, copyTo))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearManagedDescriptors() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -90,12 +93,15 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             >("ClearManagedDescriptors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearManagedDescriptors", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearManagedDescriptors",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,7 +114,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<T>,
@@ -118,12 +124,15 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             >("GetSubsystemDescriptors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSubsystemDescriptors", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSubsystemDescriptors",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (descriptors))
+            method.invoke_unchecked((), (descriptors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +142,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             crate::UnityEngine::IntegratedSubsystemDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -146,19 +155,22 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             >("InitializeManagedDescriptor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeManagedDescriptor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InitializeManagedDescriptor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, desc))
+            method.invoke_unchecked((), (ptr, desc))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterDeprecatedDescriptor(
         descriptor: quest_hook::libil2cpp::Gc<crate::UnityEngine::SubsystemDescriptor>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::SubsystemDescriptor>),
                 quest_hook::libil2cpp::Void,
@@ -166,12 +178,15 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             >("RegisterDeprecatedDescriptor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterDeprecatedDescriptor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RegisterDeprecatedDescriptor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (descriptor))
+            method.invoke_unchecked((), (descriptor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -187,7 +202,7 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
         TBaseTypeInList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     TDescriptor,
@@ -200,19 +215,21 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             >("RegisterDescriptor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RegisterDescriptor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as
+                    quest_hook::libil2cpp::Type > ::class(), "RegisterDescriptor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (descriptor, storeInList))
+            method.invoke_unchecked((), (descriptor, storeInList))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ReportSingleSubsystemAnalytics(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -220,12 +237,15 @@ impl crate::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore {
             >("ReportSingleSubsystemAnalytics")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReportSingleSubsystemAnalytics", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::SubsystemsImplementation::SubsystemDescriptorStore as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReportSingleSubsystemAnalytics", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (id))
+            method.invoke_unchecked((), (id))?
         };
         Ok(__cordl_ret.into())
     }

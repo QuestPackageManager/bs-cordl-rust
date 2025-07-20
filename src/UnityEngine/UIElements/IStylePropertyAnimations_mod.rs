@@ -42,7 +42,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
     pub fn CancelAllAnimations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -50,12 +50,14 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("CancelAllAnimations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CancelAllAnimations", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "CancelAllAnimations",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -63,7 +65,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         &mut self,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
                 quest_hook::libil2cpp::Void,
@@ -71,12 +73,13 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("CancelAnimation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CancelAnimation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "CancelAnimation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id))
+            method.invoke_unchecked(self, (id))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +91,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -100,12 +103,13 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("GetAllAnimations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllAnimations", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAllAnimations", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (outPropertyIds))
+            method.invoke_unchecked(self, (outPropertyIds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +122,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -133,13 +137,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("StartEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartEnum", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "StartEnum", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,7 +160,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -167,13 +175,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,7 +198,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -201,13 +213,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +236,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -235,13 +251,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -254,7 +274,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -269,13 +289,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -288,7 +312,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -303,13 +327,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -322,7 +350,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -337,13 +365,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -356,7 +388,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -371,13 +403,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -390,7 +426,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -405,13 +441,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -424,7 +464,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -439,13 +479,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -458,7 +502,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -473,13 +517,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -492,7 +540,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -507,13 +555,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -526,7 +578,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -541,13 +593,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -560,7 +616,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -575,13 +631,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -594,7 +654,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -609,13 +669,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -628,7 +692,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -643,13 +707,17 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked(self, (id, from, to, durationMs, delayMs, easingCurve))
+                .invoke_unchecked(
+                    self,
+                    (id, from, to, durationMs, delayMs, easingCurve),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -657,7 +725,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         &mut self,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
                 quest_hook::libil2cpp::Void,
@@ -665,12 +733,13 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("UpdateAnimation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateAnimation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateAnimation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id))
+            method.invoke_unchecked(self, (id))?
         };
         Ok(__cordl_ret.into())
     }
@@ -680,34 +749,38 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_completedAnimationCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_completedAnimationCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_completedAnimationCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_completedAnimationCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_runningAnimationCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_runningAnimationCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_runningAnimationCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "get_runningAnimationCount",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_completedAnimationCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -715,12 +788,14 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("set_completedAnimationCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_completedAnimationCount", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "set_completedAnimationCount", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -728,7 +803,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IStylePropertyAnimations as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -736,12 +811,14 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
             >("set_runningAnimationCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_runningAnimationCount", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IStylePropertyAnimations as
+                    quest_hook::libil2cpp::Type > ::class(), "set_runningAnimationCount",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

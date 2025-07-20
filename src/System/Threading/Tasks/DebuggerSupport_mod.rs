@@ -42,7 +42,7 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
     pub fn AddToActiveTasks(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
                 quest_hook::libil2cpp::Void,
@@ -50,19 +50,20 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("AddToActiveTasks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddToActiveTasks", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(), "AddToActiveTasks", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (task))
+            method.invoke_unchecked((), (task))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AddToActiveTasksNonInlined(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
                 quest_hook::libil2cpp::Void,
@@ -70,19 +71,21 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("AddToActiveTasksNonInlined")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddToActiveTasksNonInlined", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddToActiveTasksNonInlined", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (task))
+            method.invoke_unchecked((), (task))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveFromActiveTasks(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
                 quest_hook::libil2cpp::Void,
@@ -90,19 +93,21 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("RemoveFromActiveTasks")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveFromActiveTasks", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveFromActiveTasks",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (task))
+            method.invoke_unchecked((), (task))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveFromActiveTasksNonInlined(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
                 quest_hook::libil2cpp::Void,
@@ -110,12 +115,14 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("RemoveFromActiveTasksNonInlined")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveFromActiveTasksNonInlined", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RemoveFromActiveTasksNonInlined", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (task))
+            method.invoke_unchecked((), (task))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +131,7 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         status: crate::Internal::Runtime::Augments::AsyncStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Threading::Tasks::CausalityTraceLevel,
@@ -136,12 +143,14 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("TraceOperationCompletion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TraceOperationCompletion", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(), "TraceOperationCompletion",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (traceLevel, task, status))
+            method.invoke_unchecked((), (traceLevel, task, status))?
         };
         Ok(__cordl_ret.into())
     }
@@ -151,7 +160,7 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
         operationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         relatedContext: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Threading::Tasks::CausalityTraceLevel,
@@ -164,13 +173,15 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("TraceOperationCreation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TraceOperationCreation", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(), "TraceOperationCreation",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (traceLevel, task, operationName, relatedContext))
+                .invoke_unchecked((), (traceLevel, task, operationName, relatedContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +190,7 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         relation: crate::System::Threading::Tasks::CausalityRelation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Threading::Tasks::CausalityTraceLevel,
@@ -191,12 +202,14 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("TraceOperationRelation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TraceOperationRelation", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(), "TraceOperationRelation",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (traceLevel, task, relation))
+            method.invoke_unchecked((), (traceLevel, task, relation))?
         };
         Ok(__cordl_ret.into())
     }
@@ -204,7 +217,7 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
         traceLevel: crate::System::Threading::Tasks::CausalityTraceLevel,
         work: crate::System::Threading::Tasks::CausalitySynchronousWork,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Threading::Tasks::CausalityTraceLevel,
@@ -215,12 +228,14 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("TraceSynchronousWorkCompletion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TraceSynchronousWorkCompletion", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TraceSynchronousWorkCompletion", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (traceLevel, work))
+            method.invoke_unchecked((), (traceLevel, work))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +244,7 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         work: crate::System::Threading::Tasks::CausalitySynchronousWork,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Threading::Tasks::CausalityTraceLevel,
@@ -241,25 +256,28 @@ impl crate::System::Threading::Tasks::DebuggerSupport {
             >("TraceSynchronousWorkStart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TraceSynchronousWorkStart", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(), "TraceSynchronousWorkStart",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (traceLevel, task, work))
+            method.invoke_unchecked((), (traceLevel, task, work))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_LoggingOn() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::DebuggerSupport as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_LoggingOn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LoggingOn", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::DebuggerSupport as
+                    quest_hook::libil2cpp::Type > ::class(), "get_LoggingOn", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

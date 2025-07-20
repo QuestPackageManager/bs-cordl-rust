@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::EventDebugger {
             crate::UnityEngine::UIElements::PropagationPaths,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::EventDebugger as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
@@ -58,12 +58,14 @@ impl crate::UnityEngine::UIElements::EventDebugger {
             >("LogPropagationPaths")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogPropagationPaths", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::EventDebugger as
+                    quest_hook::libil2cpp::Type > ::class(), "LogPropagationPaths",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (evt, paths))
+            method.invoke_unchecked((), (evt, paths))?
         };
         Ok(__cordl_ret.into())
     }

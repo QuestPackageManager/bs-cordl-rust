@@ -44,7 +44,7 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         s: crate::Newtonsoft::Json::Utilities::StringReference,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringReferenceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Newtonsoft::Json::Utilities::StringReference,
@@ -55,11 +55,12 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
             >("EndsWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndsWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringReferenceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "EndsWith", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, text)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, text))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
@@ -68,7 +69,7 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         startIndex: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringReferenceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Newtonsoft::Json::Utilities::StringReference, char, i32, i32),
                 i32,
@@ -76,12 +77,13 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringReferenceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "IndexOf", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (s, c, startIndex, length))
+            method.invoke_unchecked((), (s, c, startIndex, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +91,7 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
         s: crate::Newtonsoft::Json::Utilities::StringReference,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::StringReferenceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::Newtonsoft::Json::Utilities::StringReference,
@@ -100,11 +102,12 @@ impl crate::Newtonsoft::Json::Utilities::StringReferenceExtensions {
             >("StartsWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartsWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::StringReferenceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "StartsWith", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, text)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, text))? };
         Ok(__cordl_ret.into())
     }
 }

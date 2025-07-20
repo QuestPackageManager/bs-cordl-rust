@@ -44,7 +44,7 @@ impl crate::System::Threading::Tasks::TaskAwaiters {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::Tasks::ForceAsyncAwaiter,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::Tasks::TaskAwaiters as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
                 crate::System::Threading::Tasks::ForceAsyncAwaiter,
@@ -52,12 +52,13 @@ impl crate::System::Threading::Tasks::TaskAwaiters {
             >("ForceAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ForceAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::Tasks::TaskAwaiters as
+                    quest_hook::libil2cpp::Type > ::class(), "ForceAsync", 1usize
                 )
             });
         let __cordl_ret: crate::System::Threading::Tasks::ForceAsyncAwaiter = unsafe {
-            method.invoke_unchecked((), (task))
+            method.invoke_unchecked((), (task))?
         };
         Ok(__cordl_ret.into())
     }

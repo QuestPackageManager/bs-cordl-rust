@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeAwardData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -79,8 +79,9 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
             >("CalculateBadgeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateBadgeData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateBadgeData", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -90,7 +91,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
                 .invoke_unchecked(
                     self,
                     (resultsData, playerDataModel, beatmapKey, randomMultiplier),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -107,7 +108,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeAwardData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -126,13 +127,14 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
             >("CalculateMax")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateMax", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateMax", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerBadgeAwardData,
-        > = unsafe { method.invoke_unchecked(self, (resultsData, randomMultiplier)) };
+        > = unsafe { method.invoke_unchecked(self, (resultsData, randomMultiplier))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateMin(
@@ -148,7 +150,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeAwardData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -167,13 +169,14 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
             >("CalculateMin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateMin", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateMin", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerBadgeAwardData,
-        > = unsafe { method.invoke_unchecked(self, (resultsData, randomMultiplier)) };
+        > = unsafe { method.invoke_unchecked(self, (resultsData, randomMultiplier))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValue(
@@ -182,7 +185,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
             crate::GlobalNamespace::MultiplayerPlayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::MultiplayerPlayerResultsData,
@@ -192,11 +195,12 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
             >("GetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValue", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as
+                    quest_hook::libil2cpp::Type > ::class(), "GetValue", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (result)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -209,16 +213,17 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

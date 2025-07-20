@@ -64,7 +64,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -83,8 +83,10 @@ impl crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction {
             >("ToDebugString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToDebugString", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::LocalAccessInstruction as
+                    quest_hook::libil2cpp::Type > ::class(), "ToDebugString", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -94,7 +96,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction {
                 .invoke_unchecked(
                     self,
                     (instructionIndex, cookie, labelIndexer, objects),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,16 +104,18 @@ impl crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::LocalAccessInstruction as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }

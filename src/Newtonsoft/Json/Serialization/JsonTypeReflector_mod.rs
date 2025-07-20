@@ -53,7 +53,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -68,12 +68,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("CanTypeDescriptorConvertString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CanTypeDescriptorConvertString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CanTypeDescriptorConvertString", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_type, typeConverter))
+            method.invoke_unchecked((), (_cordl_type, typeConverter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -87,7 +89,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -104,13 +106,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("CreateJsonConverterInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateJsonConverterInstance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateJsonConverterInstance", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::JsonConverter,
-        > = unsafe { method.invoke_unchecked((), (converterType, args)) };
+        > = unsafe { method.invoke_unchecked((), (converterType, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNamingStrategyInstance(
@@ -123,7 +127,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::NamingStrategy>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -142,19 +146,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("CreateNamingStrategyInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNamingStrategyInstance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateNamingStrategyInstance", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::NamingStrategy,
-        > = unsafe { method.invoke_unchecked((), (namingStrategyType, args)) };
+        > = unsafe { method.invoke_unchecked((), (namingStrategyType, args))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssociateMetadataTypeFromAttribute(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -162,19 +168,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetAssociateMetadataTypeFromAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssociateMetadataTypeFromAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetAssociateMetadataTypeFromAttribute", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssociatedMetadataType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -182,12 +190,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetAssociatedMetadataType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssociatedMetadataType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssociatedMetadataType",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +208,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 T,
@@ -206,11 +216,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttribute", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (provider)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttribute_MemberInfo1<T>(
@@ -220,7 +231,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 T,
@@ -228,11 +239,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttribute", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (memberInfo)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (memberInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttribute_Type0<T>(
@@ -242,7 +254,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 T,
@@ -250,11 +262,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAttribute", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCachedAttribute<T>(
@@ -264,7 +277,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 T,
@@ -272,11 +285,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetCachedAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCachedAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCachedAttribute", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (attributeProvider)) };
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (attributeProvider))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetContainerNamingStrategy(
@@ -286,7 +302,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::NamingStrategy>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Newtonsoft::Json::JsonContainerAttribute,
@@ -298,13 +314,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetContainerNamingStrategy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetContainerNamingStrategy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetContainerNamingStrategy", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::NamingStrategy,
-        > = unsafe { method.invoke_unchecked((), (containerAttribute)) };
+        > = unsafe { method.invoke_unchecked((), (containerAttribute))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCreator(
@@ -321,7 +339,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<
@@ -340,8 +358,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetCreator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCreator", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCreator", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -353,7 +372,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
                 >,
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDataContractAttribute(
@@ -363,7 +382,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             crate::System::Runtime::Serialization::DataContractAttribute,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<
@@ -373,13 +392,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetDataContractAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDataContractAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDataContractAttribute",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::DataContractAttribute,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDataMemberAttribute(
@@ -389,7 +410,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             crate::System::Runtime::Serialization::DataMemberAttribute,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -399,13 +420,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetDataMemberAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDataMemberAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDataMemberAttribute",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::DataMemberAttribute,
-        > = unsafe { method.invoke_unchecked((), (memberInfo)) };
+        > = unsafe { method.invoke_unchecked((), (memberInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetJsonConverter(
@@ -413,7 +436,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
@@ -421,20 +444,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetJsonConverter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetJsonConverter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "GetJsonConverter", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::JsonConverter,
-        > = unsafe { method.invoke_unchecked((), (attributeProvider)) };
+        > = unsafe { method.invoke_unchecked((), (attributeProvider))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectMemberSerialization(
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         ignoreSerializableAttribute: bool,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::MemberSerialization> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                 crate::Newtonsoft::Json::MemberSerialization,
@@ -442,19 +466,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("GetObjectMemberSerialization")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectMemberSerialization", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetObjectMemberSerialization", 2usize
                 )
             });
         let __cordl_ret: crate::Newtonsoft::Json::MemberSerialization = unsafe {
-            method.invoke_unchecked((), (objectType, ignoreSerializableAttribute))
+            method.invoke_unchecked((), (objectType, ignoreSerializableAttribute))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsNonSerializable(
         provider: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -462,17 +488,18 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("IsNonSerializable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNonSerializable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNonSerializable", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (provider)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSerializable(
         provider: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -480,35 +507,39 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("IsSerializable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSerializable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSerializable", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (provider)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_DynamicCodeGeneration() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_DynamicCodeGeneration")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DynamicCodeGeneration", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DynamicCodeGeneration",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_FullyTrusted() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_FullyTrusted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_FullyTrusted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(), "get_FullyTrusted", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ReflectionDelegateFactory() -> quest_hook::libil2cpp::Result<
@@ -516,7 +547,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Serialization::JsonTypeReflector as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -526,13 +557,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
             >("get_ReflectionDelegateFactory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ReflectionDelegateFactory", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Serialization::JsonTypeReflector as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ReflectionDelegateFactory", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

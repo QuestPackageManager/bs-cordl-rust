@@ -44,7 +44,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         pchDescriptor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -55,12 +55,13 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
             >("CreateSpatialAnchorFromDescriptor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSpatialAnchorFromDescriptor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateSpatialAnchorFromDescriptor", 2usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
-            method.invoke_unchecked(self, (pchDescriptor, pHandleOut))
+            method.invoke_unchecked(self, (pchDescriptor, pHandleOut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -71,7 +72,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         pPose: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::SpatialAnchorPose_t>,
         pHandleOut: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -86,12 +87,13 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
             >("CreateSpatialAnchorFromPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateSpatialAnchorFromPose", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type
+                    > ::class(), "CreateSpatialAnchorFromPose", 4usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
-            method.invoke_unchecked(self, (unDeviceIndex, eOrigin, pPose, pHandleOut))
+            method.invoke_unchecked(self, (unDeviceIndex, eOrigin, pPose, pHandleOut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,7 +103,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         pchDescriptorOut: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         punDescriptorBufferLenInOut: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -113,8 +115,9 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
             >("GetSpatialAnchorDescriptor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSpatialAnchorDescriptor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type
+                    > ::class(), "GetSpatialAnchorDescriptor", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
@@ -122,7 +125,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
                 .invoke_unchecked(
                     self,
                     (unHandle, pchDescriptorOut, punDescriptorBufferLenInOut),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -134,7 +137,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
             crate::OVR::OpenVR::SpatialAnchorPose_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRSpatialAnchorError> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u32,
@@ -148,12 +151,13 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
             >("GetSpatialAnchorPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSpatialAnchorPose", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type
+                    > ::class(), "GetSpatialAnchorPose", 3usize
                 )
             });
         let __cordl_ret: crate::OVR::OpenVR::EVRSpatialAnchorError = unsafe {
-            method.invoke_unchecked(self, (unHandle, eOrigin, pPoseOut))
+            method.invoke_unchecked(self, (unHandle, eOrigin, pPoseOut))?
         };
         Ok(__cordl_ret.into())
     }
@@ -170,7 +174,7 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -178,12 +182,13 @@ impl crate::OVR::OpenVR::CVRSpatialAnchors {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRSpatialAnchors as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

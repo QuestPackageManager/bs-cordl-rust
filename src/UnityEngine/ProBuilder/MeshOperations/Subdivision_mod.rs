@@ -53,7 +53,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Subdivision as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -76,15 +76,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
             >("Subdivide")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subdivide", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Subdivision as
+                    quest_hook::libil2cpp::Type > ::class(), "Subdivide", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (pb, faces)) };
+        > = unsafe { method.invoke_unchecked((), (pb, faces))? };
         Ok(__cordl_ret.into())
     }
     pub fn Subdivide_ProBuilderMesh0(
@@ -92,7 +93,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Subdivision as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -102,13 +103,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
             >("Subdivide")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subdivide", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Subdivision as
+                    quest_hook::libil2cpp::Type > ::class(), "Subdivide", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
-        > = unsafe { method.invoke_unchecked((), (pb)) };
+        > = unsafe { method.invoke_unchecked((), (pb))? };
         Ok(__cordl_ret.into())
     }
 }

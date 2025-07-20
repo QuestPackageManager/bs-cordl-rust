@@ -47,7 +47,7 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Application as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -61,8 +61,9 @@ impl crate::Oculus::Platform::Application {
             >("CancelAppDownload")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CancelAppDownload", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Application as quest_hook::libil2cpp::Type
+                    > ::class(), "CancelAppDownload", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -71,7 +72,7 @@ impl crate::Oculus::Platform::Application {
                     crate::Oculus::Platform::Models::AppDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CheckAppDownloadProgress() -> quest_hook::libil2cpp::Result<
@@ -83,7 +84,7 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Application as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -97,8 +98,9 @@ impl crate::Oculus::Platform::Application {
             >("CheckAppDownloadProgress")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckAppDownloadProgress", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Application as quest_hook::libil2cpp::Type
+                    > ::class(), "CheckAppDownloadProgress", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -107,7 +109,7 @@ impl crate::Oculus::Platform::Application {
                     crate::Oculus::Platform::Models::AppDownloadProgressResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetVersion() -> quest_hook::libil2cpp::Result<
@@ -119,7 +121,7 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Application as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -133,8 +135,9 @@ impl crate::Oculus::Platform::Application {
             >("GetVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetVersion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Application as quest_hook::libil2cpp::Type
+                    > ::class(), "GetVersion", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -143,7 +146,7 @@ impl crate::Oculus::Platform::Application {
                     crate::Oculus::Platform::Models::ApplicationVersion,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InstallAppUpdateAndRelaunch(
@@ -159,7 +162,7 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Application as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ApplicationOptions>),
                 quest_hook::libil2cpp::Gc<
@@ -173,8 +176,9 @@ impl crate::Oculus::Platform::Application {
             >("InstallAppUpdateAndRelaunch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallAppUpdateAndRelaunch", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Application as quest_hook::libil2cpp::Type
+                    > ::class(), "InstallAppUpdateAndRelaunch", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -183,7 +187,7 @@ impl crate::Oculus::Platform::Application {
                     crate::Oculus::Platform::Models::AppDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (deeplink_options)) };
+        > = unsafe { method.invoke_unchecked((), (deeplink_options))? };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchOtherApp(
@@ -198,7 +202,7 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Application as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u64,
@@ -215,15 +219,16 @@ impl crate::Oculus::Platform::Application {
             >("LaunchOtherApp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LaunchOtherApp", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Application as quest_hook::libil2cpp::Type
+                    > ::class(), "LaunchOtherApp", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (appID, deeplink_options)) };
+        > = unsafe { method.invoke_unchecked((), (appID, deeplink_options))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartAppDownload() -> quest_hook::libil2cpp::Result<
@@ -235,7 +240,7 @@ impl crate::Oculus::Platform::Application {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Application as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -249,8 +254,9 @@ impl crate::Oculus::Platform::Application {
             >("StartAppDownload")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartAppDownload", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Application as quest_hook::libil2cpp::Type
+                    > ::class(), "StartAppDownload", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -259,7 +265,7 @@ impl crate::Oculus::Platform::Application {
                     crate::Oculus::Platform::Models::AppDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

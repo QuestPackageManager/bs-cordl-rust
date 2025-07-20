@@ -88,16 +88,17 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +113,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -126,8 +127,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >("get_Clothes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Clothes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Clothes", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -136,7 +138,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
                     crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Eyes(
@@ -150,7 +152,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -164,8 +166,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >("get_Eyes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Eyes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Eyes", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -174,7 +177,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
                     crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_FacialHair(
@@ -188,7 +191,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -202,8 +205,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >("get_FacialHair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_FacialHair", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_FacialHair", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -212,7 +216,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
                     crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Glasses(
@@ -226,7 +230,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -240,8 +244,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >("get_Glasses")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Glasses", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Glasses", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -250,7 +255,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
                     crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Hands(
@@ -264,7 +269,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -278,8 +283,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >("get_Hands")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Hands", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Hands", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -288,7 +294,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
                     crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Mouths(
@@ -302,7 +308,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -316,8 +322,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >("get_Mouths")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Mouths", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Mouths", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -326,7 +333,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
                     crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_headTops(
@@ -340,7 +347,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -354,8 +361,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
             >("get_headTops")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_headTops", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_headTops", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -364,7 +372,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
                     crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

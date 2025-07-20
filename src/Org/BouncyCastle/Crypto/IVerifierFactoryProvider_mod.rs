@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IVerifierFactory>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<
@@ -55,13 +55,15 @@ impl crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
             >("CreateVerifierFactory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateVerifierFactory", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::IVerifierFactoryProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateVerifierFactory",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IVerifierFactory,
-        > = unsafe { method.invoke_unchecked(self, (algorithmDetails)) };
+        > = unsafe { method.invoke_unchecked(self, (algorithmDetails))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

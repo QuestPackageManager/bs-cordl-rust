@@ -52,7 +52,7 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -64,11 +64,13 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("CreateArrayResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArrayResult", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "CreateArrayResult",
+                    1usize
                 )
             });
-        let __cordl_ret: TObject = unsafe { method.invoke_unchecked((), (allAssets)) };
+        let __cordl_ret: TObject = unsafe { method.invoke_unchecked((), (allAssets))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArrayResult_Type_Il2CppArray0(
@@ -79,7 +81,7 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -94,12 +96,14 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("CreateArrayResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateArrayResult", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "CreateArrayResult",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = unsafe {
-            method.invoke_unchecked((), (_cordl_type, allAssets))
+            method.invoke_unchecked((), (_cordl_type, allAssets))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,7 +118,7 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -126,11 +130,13 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("CreateListResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateListResult", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "CreateListResult",
+                    1usize
                 )
             });
-        let __cordl_ret: TObject = unsafe { method.invoke_unchecked((), (allAssets)) };
+        let __cordl_ret: TObject = unsafe { method.invoke_unchecked((), (allAssets))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateListResult_Type_Il2CppArray0(
@@ -143,7 +149,7 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -158,12 +164,14 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("CreateListResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateListResult", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "CreateListResult",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
-            method.invoke_unchecked((), (_cordl_type, allAssets))
+            method.invoke_unchecked((), (_cordl_type, allAssets))?
         };
         Ok(__cordl_ret.into())
     }
@@ -176,7 +184,7 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -192,12 +200,14 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("ExtractKeyAndSubKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractKeyAndSubKey", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "ExtractKeyAndSubKey",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (keyObj, mainKey, subKey))
+            method.invoke_unchecked((), (keyObj, mainKey, subKey))?
         };
         Ok(__cordl_ret.into())
     }
@@ -208,21 +218,22 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
         T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("IsInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsInstance", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "IsInstance", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsPathRemote(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -230,29 +241,32 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("IsPathRemote")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPathRemote", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "IsPathRemote", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (path)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn PlatformCanLoadLocallyFromUrlPath() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("PlatformCanLoadLocallyFromUrlPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PlatformCanLoadLocallyFromUrlPath", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "PlatformCanLoadLocallyFromUrlPath", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldPathUseWebRequest(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -260,11 +274,13 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("ShouldPathUseWebRequest")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldPathUseWebRequest", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "ShouldPathUseWebRequest", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (path)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn StripQueryParameters(
@@ -272,7 +288,7 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -280,13 +296,15 @@ impl crate::UnityEngine::ResourceManagement::Util::ResourceManagerConfig {
             >("StripQueryParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StripQueryParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::ResourceManagerConfig
+                    as quest_hook::libil2cpp::Type > ::class(), "StripQueryParameters",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (path)) };
+        > = unsafe { method.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
 }

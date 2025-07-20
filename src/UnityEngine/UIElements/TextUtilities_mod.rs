@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -60,11 +60,13 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             >("ConvertPixelUnitsToTextCoreRelativeUnits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertPixelUnitsToTextCoreRelativeUnits", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::TextUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ConvertPixelUnitsToTextCoreRelativeUnits", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (ve, fontAsset)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (ve, fontAsset))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFontAsset(
@@ -72,7 +74,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -82,13 +84,14 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             >("GetFontAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFontAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::TextUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFontAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::FontAsset,
-        > = unsafe { method.invoke_unchecked((), (ve)) };
+        > = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTextCoreSettingsForElement(
@@ -96,7 +99,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::UIR::TextCoreSettings,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -106,12 +109,14 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             >("GetTextCoreSettingsForElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTextCoreSettingsForElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::TextUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetTextCoreSettingsForElement", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::TextCoreSettings = unsafe {
-            method.invoke_unchecked((), (ve))
+            method.invoke_unchecked((), (ve))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +125,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PanelTextSettings>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -132,19 +137,21 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             >("GetTextSettingsFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTextSettingsFrom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::TextUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTextSettingsFrom",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PanelTextSettings,
-        > = unsafe { method.invoke_unchecked((), (ve)) };
+        > = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFontAssigned(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -154,11 +161,12 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             >("IsFontAssigned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsFontAssigned", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::TextUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsFontAssigned", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve))? };
         Ok(__cordl_ret.into())
     }
     pub fn MeasureVisualElementTextSize(
@@ -169,7 +177,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         height: f32,
         heightMode: crate::UnityEngine::UIElements::VisualElement_MeasureMode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::TextUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -186,8 +194,10 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             >("MeasureVisualElementTextSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MeasureVisualElementTextSize", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::TextUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MeasureVisualElementTextSize", 6usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
@@ -195,7 +205,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                 .invoke_unchecked(
                     (),
                     (te, textToMeasure, width, widthMode, height, heightMode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

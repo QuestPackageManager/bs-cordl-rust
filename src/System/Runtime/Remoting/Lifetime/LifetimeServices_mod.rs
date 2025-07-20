@@ -45,7 +45,7 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             crate::System::Runtime::Remoting::ServerIdentity,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::ServerIdentity,
@@ -55,19 +55,20 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("TrackLifetime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrackLifetime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "TrackLifetime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (identity))
+            method.invoke_unchecked((), (identity))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_LeaseManagerPollTime() -> quest_hook::libil2cpp::Result<
         crate::System::TimeSpan,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::System::TimeSpan,
@@ -75,33 +76,36 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("get_LeaseManagerPollTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LeaseManagerPollTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "get_LeaseManagerPollTime",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_LeaseTime() -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), crate::System::TimeSpan, 0usize>("get_LeaseTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LeaseTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "get_LeaseTime", 0usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_RenewOnCallTime() -> quest_hook::libil2cpp::Result<
         crate::System::TimeSpan,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::System::TimeSpan,
@@ -109,19 +113,21 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("get_RenewOnCallTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_RenewOnCallTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "get_RenewOnCallTime",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_SponsorshipTimeout() -> quest_hook::libil2cpp::Result<
         crate::System::TimeSpan,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::System::TimeSpan,
@@ -129,19 +135,21 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("get_SponsorshipTimeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SponsorshipTimeout", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "get_SponsorshipTimeout",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::TimeSpan = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_LeaseManagerPollTime(
         value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan),
                 quest_hook::libil2cpp::Void,
@@ -149,19 +157,21 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("set_LeaseManagerPollTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_LeaseManagerPollTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "set_LeaseManagerPollTime",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_LeaseTime(
         value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan),
                 quest_hook::libil2cpp::Void,
@@ -169,19 +179,20 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("set_LeaseTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_LeaseTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "set_LeaseTime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_RenewOnCallTime(
         value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan),
                 quest_hook::libil2cpp::Void,
@@ -189,19 +200,21 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("set_RenewOnCallTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_RenewOnCallTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "set_RenewOnCallTime",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn set_SponsorshipTimeout(
         value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Lifetime::LifetimeServices as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::TimeSpan),
                 quest_hook::libil2cpp::Void,
@@ -209,12 +222,14 @@ impl crate::System::Runtime::Remoting::Lifetime::LifetimeServices {
             >("set_SponsorshipTimeout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_SponsorshipTimeout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Lifetime::LifetimeServices as
+                    quest_hook::libil2cpp::Type > ::class(), "set_SponsorshipTimeout",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }

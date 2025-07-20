@@ -52,16 +52,17 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Environments::Definitions::EnvironmentsAsyncInstaller as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InstallBindings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstallBindings", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Environments::Definitions::EnvironmentsAsyncInstaller as
+                    quest_hook::libil2cpp::Type > ::class(), "InstallBindings", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +79,7 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Environments::Definitions::EnvironmentsAsyncInstaller as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::System::Nullable_1<
@@ -96,8 +97,10 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
             >("LoadEnvironmentInfoListAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadEnvironmentInfoListAsync", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Environments::Definitions::EnvironmentsAsyncInstaller as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadEnvironmentInfoListAsync", 0usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<
@@ -110,7 +113,7 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
                     >,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadResourcesBeforeInstall(
@@ -124,7 +127,7 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Environments::Definitions::EnvironmentsAsyncInstaller as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -143,12 +146,14 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
             >("LoadResourcesBeforeInstall")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadResourcesBeforeInstall", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Environments::Definitions::EnvironmentsAsyncInstaller as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadResourcesBeforeInstall", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (environmentInfos, registry))
+            method.invoke_unchecked(self, (environmentInfos, registry))?
         };
         Ok(__cordl_ret.into())
     }
@@ -162,16 +167,17 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Environments::Definitions::EnvironmentsAsyncInstaller as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Environments::Definitions::EnvironmentsAsyncInstaller as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +186,7 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Environments::Definitions::EnvironmentsAsyncInstaller as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -188,13 +194,15 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
             >("get_assetLabelRuntimeKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_assetLabelRuntimeKey", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Environments::Definitions::EnvironmentsAsyncInstaller as
+                    quest_hook::libil2cpp::Type > ::class(), "get_assetLabelRuntimeKey",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -41,7 +41,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
     pub fn PostRegisteredAtlas(
         spriteAtlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::U2D::SpriteAtlasManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>),
                 quest_hook::libil2cpp::Void,
@@ -49,19 +49,21 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
             >("PostRegisteredAtlas")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PostRegisteredAtlas", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::U2D::SpriteAtlasManager as
+                    quest_hook::libil2cpp::Type > ::class(), "PostRegisteredAtlas",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (spriteAtlas))
+            method.invoke_unchecked((), (spriteAtlas))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Register(
         spriteAtlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::U2D::SpriteAtlasManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>),
                 quest_hook::libil2cpp::Void,
@@ -69,19 +71,20 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
             >("Register")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Register", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::U2D::SpriteAtlasManager as
+                    quest_hook::libil2cpp::Type > ::class(), "Register", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (spriteAtlas))
+            method.invoke_unchecked((), (spriteAtlas))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RequestAtlas(
         tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::U2D::SpriteAtlasManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -89,11 +92,12 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
             >("RequestAtlas")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RequestAtlas", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::U2D::SpriteAtlasManager as
+                    quest_hook::libil2cpp::Type > ::class(), "RequestAtlas", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tag)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tag))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_atlasRegistered(
@@ -103,7 +107,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::U2D::SpriteAtlasManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -115,12 +119,14 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
             >("add_atlasRegistered")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_atlasRegistered", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::U2D::SpriteAtlasManager as
+                    quest_hook::libil2cpp::Type > ::class(), "add_atlasRegistered",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,7 +137,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::U2D::SpriteAtlasManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<
@@ -143,12 +149,14 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
             >("remove_atlasRegistered")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_atlasRegistered", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::U2D::SpriteAtlasManager as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_atlasRegistered",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -107,16 +107,18 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Map
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Execute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob
+                    as quest_hook::libil2cpp::Type > ::class(), "Execute", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -252,7 +254,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
         channelCount: i32,
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32, i32, bool),
                 quest_hook::libil2cpp::Void,
@@ -260,8 +262,10 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -269,80 +273,94 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
                 .invoke_unchecked(
                     self,
                     (width, height, resolution, slicesPerRow, channelCount, flipY),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ChannelCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_ChannelCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ChannelCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings
+                    as quest_hook::libil2cpp::Type > ::class(), "get_ChannelCount",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_FlipY(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_FlipY")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_FlipY", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings
+                    as quest_hook::libil2cpp::Type > ::class(), "get_FlipY", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Height")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Height", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Height", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Resolution(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Resolution")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Resolution", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Resolution", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SlicesPerRow(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_SlicesPerRow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SlicesPerRow", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings
+                    as quest_hook::libil2cpp::Type > ::class(), "get_SlicesPerRow",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_Width")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Width", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings
+                    as quest_hook::libil2cpp::Type > ::class(), "get_Width", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -406,7 +424,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     pub fn ChannelsToCount(
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels),
                 i32,
@@ -414,18 +432,19 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("ChannelsToCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ChannelsToCount", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "ChannelsToCount", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (channels)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (channels))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
         &mut self,
         lutData: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData),
                 quest_hook::libil2cpp::Void,
@@ -433,12 +452,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lutData))
+            method.invoke_unchecked(self, (lutData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -450,7 +470,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -460,12 +480,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("CreateLutData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateLutData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateLutData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colorBytes))
+            method.invoke_unchecked(self, (colorBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -477,7 +498,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
@@ -487,12 +508,14 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("CreateLutDataFromArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateLutDataFromArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateLutDataFromArray",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colors))
+            method.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -504,7 +527,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
@@ -514,12 +537,14 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("CreateLutDataFromArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateLutDataFromArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateLutDataFromArray",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colors))
+            method.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -529,7 +554,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
@@ -537,12 +562,14 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("CreateLutDataFromArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateLutDataFromArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateLutDataFromArray",
+                    1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (colors))
+            method.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -553,7 +580,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>, bool),
                 crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
@@ -561,60 +588,65 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("CreateLutDataFromTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateLutDataFromTexture", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateLutDataFromTexture",
+                    2usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData = unsafe {
-            method.invoke_unchecked(self, (lut, flipY))
+            method.invoke_unchecked(self, (lut, flipY))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Destroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Destroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Destroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "Destroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Finalize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "Finalize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -625,7 +657,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>),
                 i32,
@@ -633,11 +665,12 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("GetArraySize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetArraySize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "GetArraySize", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetChannelsForTextureFormat(
@@ -645,7 +678,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::TextureFormat),
                 crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
@@ -653,33 +686,37 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("GetChannelsForTextureFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetChannelsForTextureFormat", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetChannelsForTextureFormat", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels = unsafe {
-            method.invoke_unchecked((), (format))
+            method.invoke_unchecked((), (format))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetResolutionFromSize(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), u32, 1usize>("GetResolutionFromSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResolutionFromSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "GetResolutionFromSize",
+                    1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (_cordl_size)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (_cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTextureSize(
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                 i32,
@@ -687,11 +724,12 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("GetTextureSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTextureSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTextureSize", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (texture)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (texture))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTextureSizeFromByteArray(
@@ -700,7 +738,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -711,25 +749,28 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("GetTextureSizeFromByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTextureSizeFromByteArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetTextureSizeFromByteArray", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (initialColorLut, channels))
+            method.invoke_unchecked((), (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsPowerOfTwo(x: u32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), bool, 1usize>("IsPowerOfTwo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsPowerOfTwo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "IsPowerOfTwo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (x)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (x))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsResolutionAccepted(
@@ -739,7 +780,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     u32,
@@ -753,12 +794,14 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("IsResolutionAccepted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsResolutionAccepted", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "IsResolutionAccepted",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (resolution, _cordl_size, errorMessage))
+            method.invoke_unchecked((), (resolution, _cordl_size, errorMessage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -768,7 +811,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -781,12 +824,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("IsTextureSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTextureSupported", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTextureSupported", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (texture, errorMessage))
+            method.invoke_unchecked((), (texture, errorMessage))?
         };
         Ok(__cordl_ret.into())
     }
@@ -799,7 +843,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>, i32),
                 bool,
@@ -807,12 +851,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("IsValidLutUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidLutUpdate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidLutUpdate", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (colorArray, elementByteSize))
+            method.invoke_unchecked(self, (colorArray, elementByteSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -821,16 +866,18 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         lutSize: i32,
         elementByteSize: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32, i32), bool, 2usize>("IsValidUpdateResolution")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidUpdateResolution", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidUpdateResolution",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (lutSize, elementByteSize))
+            method.invoke_unchecked(self, (lutSize, elementByteSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -896,7 +943,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
@@ -906,12 +953,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("UpdateFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateFrom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateFrom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors))
+            method.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -921,7 +969,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
@@ -931,12 +979,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("UpdateFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateFrom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateFrom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors))
+            method.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -944,7 +993,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         &mut self,
         colors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -952,12 +1001,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("UpdateFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateFrom", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateFrom", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors))
+            method.invoke_unchecked(self, (colors))?
         };
         Ok(__cordl_ret.into())
     }
@@ -966,7 +1016,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         lutTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>, bool),
                 quest_hook::libil2cpp::Void,
@@ -974,12 +1024,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("UpdateFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateFrom", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateFrom", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lutTexture, flipY))
+            method.invoke_unchecked(self, (lutTexture, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -990,7 +1041,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1003,12 +1054,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("WriteColorsAsBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteColorsAsBytes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteColorsAsBytes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors, target))
+            method.invoke_unchecked(self, (colors, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1019,7 +1071,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1032,12 +1084,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("WriteColorsAsBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteColorsAsBytes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteColorsAsBytes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors, target))
+            method.invoke_unchecked(self, (colors, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1048,7 +1101,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1061,12 +1114,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialColorLut, channels))
+            method.invoke_unchecked(self, (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1077,7 +1131,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1090,12 +1144,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialColorLut, channels))
+            method.invoke_unchecked(self, (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1106,7 +1161,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         >,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1117,12 +1172,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialColorLut, channels))
+            method.invoke_unchecked(self, (initialColorLut, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1131,7 +1187,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         initialLutTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>, bool),
                 quest_hook::libil2cpp::Void,
@@ -1139,12 +1195,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (initialLutTexture, flipY))
+            method.invoke_unchecked(self, (initialLutTexture, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1153,7 +1210,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         _cordl_size: i32,
         channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels),
                 quest_hook::libil2cpp::Void,
@@ -1161,12 +1218,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_size, channels))
+            method.invoke_unchecked(self, (_cordl_size, channels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1175,7 +1233,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
@@ -1183,44 +1241,47 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("get_Channels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Channels", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Channels", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsInitialized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "get_IsInitialized", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Resolution(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), u32, 0usize>("get_Resolution")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Resolution", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Resolution", 0usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Channels(
         &mut self,
         value: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels),
                 quest_hook::libil2cpp::Void,
@@ -1228,12 +1289,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("set_Channels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Channels", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Channels", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1241,7 +1303,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1249,12 +1311,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
             >("set_IsInitialized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_IsInitialized", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "set_IsInitialized", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1262,16 +1325,17 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         &mut self,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("set_Resolution")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Resolution", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Resolution", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1446,7 +1510,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>, i32, bool),
                 crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
@@ -1454,12 +1518,14 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
             >("GetTextureSettings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTextureSettings", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTextureSettings", 3usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings = unsafe {
-            method.invoke_unchecked((), (lut, channelCount, flipY))
+            method.invoke_unchecked((), (lut, channelCount, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1468,7 +1534,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         source: crate::Unity::Collections::NativeArray_1<u8>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
@@ -1480,12 +1546,14 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
             >("MapColorValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MapColorValues", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "MapColorValues", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (settings, source, target))
+            method.invoke_unchecked((), (settings, source, target))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1495,7 +1563,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         flipY: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -1508,12 +1576,15 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
             >("TextureToColorByteMap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TextureToColorByteMap", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "TextureToColorByteMap",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (lut, channelCount, target, flipY))
+            method.invoke_unchecked((), (lut, channelCount, target, flipY))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1526,7 +1597,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -1542,8 +1613,11 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
             >("TryGetTextureLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetTextureLayout", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetTextureLayout",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -1551,7 +1625,7 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
                 .invoke_unchecked(
                     (),
                     (width, height, resolution, slicesPerRow, errorMessage),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1675,16 +1749,17 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Execute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob
+                    as quest_hook::libil2cpp::Type > ::class(), "Execute", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (index))
+            method.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }

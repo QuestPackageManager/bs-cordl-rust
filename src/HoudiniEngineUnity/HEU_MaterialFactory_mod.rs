@@ -44,7 +44,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -52,12 +52,13 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("CopyMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyMaterial", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CopyMaterial", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (material))
+            method.invoke_unchecked((), (material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +79,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -102,8 +103,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("CreateHoudiniMaterialData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateHoudiniMaterialData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateHoudiniMaterialData",
+                    7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -121,7 +124,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                         materialCache,
                         assetCacheFolderPath,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -141,7 +144,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -162,8 +165,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("CreateMaterialInCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMaterialInCache", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMaterialInCache",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -180,7 +185,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                         materialCache,
                         assetCacheFolderPath,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,7 +198,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -205,13 +210,18 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("CreateNewHoudiniStandardMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNewHoudiniStandardMaterial", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateNewHoudiniStandardMaterial", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
             method
-                .invoke_unchecked((), (assetCacheFolderPath, materialName, bWriteToFile))
+                .invoke_unchecked(
+                    (),
+                    (assetCacheFolderPath, materialName, bWriteToFile),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +241,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -252,8 +262,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("CreateUnitySubstanceMaterialData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateUnitySubstanceMaterialData", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateUnitySubstanceMaterialData", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -270,14 +282,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                         materialCache,
                         assetCacheFolderPath,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteAssetMaterial(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                 quest_hook::libil2cpp::Void,
@@ -285,12 +297,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("DeleteAssetMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeleteAssetMaterial", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "DeleteAssetMaterial",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (material))
+            method.invoke_unchecked((), (material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -298,7 +312,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         bRegisterUndo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>, bool),
                 quest_hook::libil2cpp::Void,
@@ -306,19 +320,21 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("DestroyNonAssetMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DestroyNonAssetMaterial", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "DestroyNonAssetMaterial",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (material, bRegisterUndo))
+            method.invoke_unchecked((), (material, bRegisterUndo))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DoesMaterialExistInAssetCache(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                 bool,
@@ -326,17 +342,19 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("DoesMaterialExistInAssetCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoesMaterialExistInAssetCache", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DoesMaterialExistInAssetCache", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (material)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (material))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnableGPUInstancing(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                 quest_hook::libil2cpp::Void,
@@ -344,12 +362,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("EnableGPUInstancing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EnableGPUInstancing", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "EnableGPUInstancing",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (material))
+            method.invoke_unchecked((), (material))?
         };
         Ok(__cordl_ret.into())
     }
@@ -363,7 +383,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -378,8 +398,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("ExtractHoudiniImageToTextureFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractHoudiniImageToTextureFile", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ExtractHoudiniImageToTextureFile", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
@@ -387,7 +409,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                 .invoke_unchecked(
                     (),
                     (session, materialInfo, imagePlanes, assetCacheFolderPath),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -398,7 +420,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -412,12 +434,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("ExtractHoudiniImageToTexturePNGJPEG")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractHoudiniImageToTexturePNGJPEG", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ExtractHoudiniImageToTexturePNGJPEG", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked((), (session, materialInfo, imagePlanes))
+            method.invoke_unchecked((), (session, materialInfo, imagePlanes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -428,7 +452,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -442,12 +466,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("ExtractHoudiniImageToTextureRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractHoudiniImageToTextureRaw", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ExtractHoudiniImageToTextureRaw", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked((), (session, materialInfo, imagePlanes))
+            method.invoke_unchecked((), (session, materialInfo, imagePlanes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -456,7 +482,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -464,12 +490,13 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("FindPluginShader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindPluginShader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "FindPluginShader", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = unsafe {
-            method.invoke_unchecked((), (shaderName))
+            method.invoke_unchecked((), (shaderName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -478,7 +505,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -486,12 +513,13 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("FindShader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindShader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "FindShader", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = unsafe {
-            method.invoke_unchecked((), (shaderName))
+            method.invoke_unchecked((), (shaderName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -501,7 +529,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -509,19 +537,21 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("GenerateDefaultMaterialName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateDefaultMaterialName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateDefaultMaterialName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (geoID, partID)) };
+        > = unsafe { method.invoke_unchecked((), (geoID, partID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultStandardMaterial() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -529,12 +559,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("GetDefaultStandardMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultStandardMaterial", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetDefaultStandardMaterial", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -548,7 +580,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -565,13 +597,15 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("GetMaterialDataFromCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaterialDataFromCache", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMaterialDataFromCache",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_MaterialData,
-        > = unsafe { method.invoke_unchecked((), (materialKey, materialCache)) };
+        > = unsafe { method.invoke_unchecked((), (materialKey, materialCache))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaterialDataMapFromCache(
@@ -588,7 +622,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -609,8 +643,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("GetMaterialDataMapFromCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMaterialDataMapFromCache", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetMaterialDataMapFromCache", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -618,7 +654,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                 i32,
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
             >,
-        > = unsafe { method.invoke_unchecked((), (materialCache)) };
+        > = unsafe { method.invoke_unchecked((), (materialCache))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNewMaterialWithShader(
@@ -631,7 +667,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -644,8 +680,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("GetNewMaterialWithShader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNewMaterialWithShader", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNewMaterialWithShader",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
@@ -653,7 +691,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                 .invoke_unchecked(
                     (),
                     (assetCacheFolderPath, shaderName, materialName, bWriteToFile),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -673,7 +711,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -696,8 +734,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("GetOrCreateDefaultMaterialInCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOrCreateDefaultMaterialInCache", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetOrCreateDefaultMaterialInCache", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -714,7 +754,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                         materialCache,
                         assetCacheFolderPath,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -725,7 +765,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
         substanceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         substanceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -737,13 +777,18 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("GetUnitySubstanceMaterialKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetUnitySubstanceMaterialKey", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetUnitySubstanceMaterialKey", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
             method
-                .invoke_unchecked((), (unityMaterialPath, substanceName, substanceIndex))
+                .invoke_unchecked(
+                    (),
+                    (unityMaterialPath, substanceName, substanceIndex),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -753,7 +798,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -761,12 +806,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("LoadSubstanceMaterialWithIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSubstanceMaterialWithIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadSubstanceMaterialWithIndex", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (materialPath, substanceMaterialIndex))
+            method.invoke_unchecked((), (materialPath, substanceMaterialIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -776,7 +823,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -787,12 +834,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("LoadSubstanceMaterialWithName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSubstanceMaterialWithName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadSubstanceMaterialWithName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (materialPath, substanceName))
+            method.invoke_unchecked((), (materialPath, substanceName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -801,7 +850,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -809,12 +858,13 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("LoadTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadTexture", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked((), (path))
+            method.invoke_unchecked((), (path))?
         };
         Ok(__cordl_ret.into())
     }
@@ -823,7 +873,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -831,19 +881,20 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("LoadUnityMaterial")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadUnityMaterial", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadUnityMaterial", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
-            method.invoke_unchecked((), (materialPath))
+            method.invoke_unchecked((), (materialPath))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MaterialHasGPUInstancingEnabled(
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                 bool,
@@ -851,17 +902,19 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("MaterialHasGPUInstancingEnabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MaterialHasGPUInstancingEnabled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MaterialHasGPUInstancingEnabled", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (material)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (material))? };
         Ok(__cordl_ret.into())
     }
     pub fn MaterialNameToKey(
         materialName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 i32,
@@ -869,11 +922,12 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("MaterialNameToKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MaterialNameToKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "MaterialNameToKey", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (materialName)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (materialName))? };
         Ok(__cordl_ret.into())
     }
     pub fn RenderAndExtractImageToTexture(
@@ -889,7 +943,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -907,8 +961,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("RenderAndExtractImageToTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderAndExtractImageToTexture", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RenderAndExtractImageToTexture", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
@@ -924,14 +980,14 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                         isNormalMap,
                         invertTexture,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WhiteTexture() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -939,12 +995,13 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("WhiteTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WhiteTexture", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "WhiteTexture", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -956,7 +1013,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
         materialName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bOverwriteExisting: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_MaterialFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -969,8 +1026,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
             >("WriteMaterialToAssetCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteMaterialToAssetCache", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_MaterialFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteMaterialToAssetCache",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -978,7 +1037,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                 .invoke_unchecked(
                     (),
                     (material, assetCacheFolderPath, materialName, bOverwriteExisting),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

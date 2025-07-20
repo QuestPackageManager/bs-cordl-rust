@@ -47,7 +47,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             crate::UnityEngine::Experimental::GlobalIllumination::LinearColor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Color,
@@ -60,19 +60,22 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("ApplyColorTemperature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyColorTemperature", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyColorTemperature",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (cct, lightColor))
+            method.invoke_unchecked((), (cct, lightColor))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractColorTemperature(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>),
                 crate::UnityEngine::Color,
@@ -80,12 +83,15 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("ExtractColorTemperature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractColorTemperature", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractColorTemperature",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked((), (l))
+            method.invoke_unchecked((), (l))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +100,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::GlobalIllumination::LinearColor,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>),
                 crate::UnityEngine::Experimental::GlobalIllumination::LinearColor,
@@ -102,19 +108,21 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("ExtractIndirect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractIndirect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractIndirect", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LinearColor = unsafe {
-            method.invoke_unchecked((), (l))
+            method.invoke_unchecked((), (l))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractInnerCone(
         l: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>),
                 f32,
@@ -122,11 +130,13 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("ExtractInnerCone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractInnerCone", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractInnerCone", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (l)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (l))? };
         Ok(__cordl_ret.into())
     }
     pub fn Extract_Light_ByRefMut1(
@@ -135,7 +145,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
@@ -148,12 +158,14 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("Extract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Extract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Extract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (l, dir))
+            method.invoke_unchecked((), (l, dir))?
         };
         Ok(__cordl_ret.into())
     }
@@ -163,7 +175,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             crate::UnityEngine::Experimental::GlobalIllumination::PointLight,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
@@ -176,12 +188,14 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("Extract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Extract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Extract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (l, point))
+            method.invoke_unchecked((), (l, point))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +205,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             crate::UnityEngine::Experimental::GlobalIllumination::SpotLight,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
@@ -204,12 +218,14 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("Extract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Extract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Extract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (l, spot))
+            method.invoke_unchecked((), (l, spot))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +235,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
@@ -232,12 +248,14 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("Extract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Extract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Extract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (l, rect))
+            method.invoke_unchecked((), (l, rect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -247,7 +265,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             crate::UnityEngine::Experimental::GlobalIllumination::DiscLight,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
@@ -260,12 +278,14 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("Extract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Extract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Extract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (l, disc))
+            method.invoke_unchecked((), (l, disc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +295,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             crate::UnityEngine::Experimental::GlobalIllumination::Cookie,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,
@@ -288,12 +308,14 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("Extract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Extract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Extract", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (l, cookie))
+            method.invoke_unchecked((), (l, cookie))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +324,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::GlobalIllumination::LightMode,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::LightmapBakeType),
                 crate::UnityEngine::Experimental::GlobalIllumination::LightMode,
@@ -310,12 +332,14 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
             >("Extract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Extract", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "Extract", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LightMode = unsafe {
-            method.invoke_unchecked((), (baketype))
+            method.invoke_unchecked((), (baketype))?
         };
         Ok(__cordl_ret.into())
     }

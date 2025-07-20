@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
         squishAmount: f32,
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataTransformHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     f32,
@@ -78,8 +78,10 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
             >("AddTestBurstSlider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddTestBurstSlider", 14usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataTransformHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "AddTestBurstSlider",
+                    14usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -102,7 +104,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
                         squishAmount,
                         beatmapData,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +126,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
         hasTailNote: bool,
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataTransformHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     f32,
@@ -149,8 +151,9 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
             >("AddTestSlider")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddTestSlider", 16usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataTransformHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "AddTestSlider", 16usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -175,7 +178,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
                         hasTailNote,
                         beatmapData,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +199,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataTransformHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -216,8 +219,10 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
             >("CreateTransformedBeatmapData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTransformedBeatmapData", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataTransformHelper as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateTransformedBeatmapData", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -235,7 +240,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
                         environmentIntensityReductionOptions,
                         settings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,7 +248,7 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         screenDisplacementEffectsEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataTransformHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>, bool),
                 bool,
@@ -251,12 +256,15 @@ impl crate::GlobalNamespace::BeatmapDataTransformHelper {
             >("IsObstaclesMergingNeeded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsObstaclesMergingNeeded", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataTransformHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "IsObstaclesMergingNeeded",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (beatmapLevel, screenDisplacementEffectsEnabled))
+            method
+                .invoke_unchecked((), (beatmapLevel, screenDisplacementEffectsEnabled))?
         };
         Ok(__cordl_ret.into())
     }

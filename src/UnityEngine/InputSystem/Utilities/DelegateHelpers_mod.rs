@@ -58,7 +58,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::DelegateHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -80,12 +80,14 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             >("InvokeCallbacksSafe_AndInvokeReturnedActions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeCallbacksSafe_AndInvokeReturnedActions", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::DelegateHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InvokeCallbacksSafe_AndInvokeReturnedActions", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callbacks, argument, callbackName, context))
+            method.invoke_unchecked((), (callbacks, argument, callbackName, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +107,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         TReturn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::DelegateHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -124,12 +126,14 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             >("InvokeCallbacksSafe_AnyCallbackReturnsObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeCallbacksSafe_AnyCallbackReturnsObject", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::DelegateHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InvokeCallbacksSafe_AnyCallbackReturnsObject", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (callbacks, argument, callbackName, context))
+            method.invoke_unchecked((), (callbacks, argument, callbackName, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +154,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         TValue2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::DelegateHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -170,8 +174,10 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             >("InvokeCallbacksSafe_AnyCallbackReturnsTrue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeCallbacksSafe_AnyCallbackReturnsTrue", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::DelegateHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InvokeCallbacksSafe_AnyCallbackReturnsTrue", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -179,7 +185,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                 .invoke_unchecked(
                     (),
                     (callbacks, argument1, argument2, callbackName, context),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +198,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         callbackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::DelegateHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -208,12 +214,14 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             >("InvokeCallbacksSafe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeCallbacksSafe", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::DelegateHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "InvokeCallbacksSafe",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callbacks, callbackName, context))
+            method.invoke_unchecked((), (callbacks, callbackName, context))?
         };
         Ok(__cordl_ret.into())
     }
@@ -237,7 +245,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         TValue2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::DelegateHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -257,8 +265,10 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             >("InvokeCallbacksSafe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeCallbacksSafe", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::DelegateHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "InvokeCallbacksSafe",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -266,7 +276,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                 .invoke_unchecked(
                     (),
                     (callbacks, argument1, argument2, callbackName, context),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +294,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::DelegateHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -301,12 +311,14 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             >("InvokeCallbacksSafe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeCallbacksSafe", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::DelegateHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "InvokeCallbacksSafe",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (callbacks, argument, callbackName, context))
+            method.invoke_unchecked((), (callbacks, argument, callbackName, context))?
         };
         Ok(__cordl_ret.into())
     }

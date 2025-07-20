@@ -148,7 +148,7 @@ impl crate::Zenject::Internal::ReflectionTypeInfo {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionTypeInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -183,8 +183,9 @@ impl crate::Zenject::Internal::ReflectionTypeInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionTypeInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -199,7 +200,7 @@ impl crate::Zenject::Internal::ReflectionTypeInfo {
                         injectFields,
                         injectProperties,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -297,7 +298,7 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -316,12 +317,13 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (constructorInfo, parameters))
+            method.invoke_unchecked(self, (constructorInfo, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +397,7 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
         fieldInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
         injectableInfo: quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
@@ -406,12 +408,13 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (fieldInfo, injectableInfo))
+            method.invoke_unchecked(self, (fieldInfo, injectableInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -503,7 +506,7 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -520,12 +523,13 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (methodInfo, parameters))
+            method.invoke_unchecked(self, (methodInfo, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -606,7 +610,7 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
         >,
         injectableInfo: quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
@@ -617,12 +621,13 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parameterInfo, injectableInfo))
+            method.invoke_unchecked(self, (parameterInfo, injectableInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -697,7 +702,7 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
         propertyInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         injectableInfo: quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
@@ -708,12 +713,13 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (propertyInfo, injectableInfo))
+            method.invoke_unchecked(self, (propertyInfo, injectableInfo))?
         };
         Ok(__cordl_ret.into())
     }

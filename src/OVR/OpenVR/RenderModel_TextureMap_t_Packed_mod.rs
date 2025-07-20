@@ -109,7 +109,7 @@ impl crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
             crate::OVR::OpenVR::RenderModel_TextureMap_t,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     crate::OVR::OpenVR::RenderModel_TextureMap_t,
@@ -119,12 +119,13 @@ impl crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
             >("Unpack")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Unpack", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::RenderModel_TextureMap_t_Packed as
+                    quest_hook::libil2cpp::Type > ::class(), "Unpack", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (unpacked))
+            method.invoke_unchecked(self, (unpacked))?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +133,7 @@ impl crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
         &mut self,
         unpacked: crate::OVR::OpenVR::RenderModel_TextureMap_t,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::OVR::OpenVR::RenderModel_TextureMap_t),
                 quest_hook::libil2cpp::Void,
@@ -140,12 +141,13 @@ impl crate::OVR::OpenVR::RenderModel_TextureMap_t_Packed {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::RenderModel_TextureMap_t_Packed as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (unpacked))
+            method.invoke_unchecked(self, (unpacked))?
         };
         Ok(__cordl_ret.into())
     }

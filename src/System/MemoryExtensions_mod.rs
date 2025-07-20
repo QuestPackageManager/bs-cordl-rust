@@ -46,7 +46,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>, i32),
                 crate::System::Span_1<T>,
@@ -54,12 +54,13 @@ impl crate::System::MemoryExtensions {
             >("AsSpan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsSpan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "AsSpan", 2usize
                 )
             });
         let __cordl_ret: crate::System::Span_1<T> = unsafe {
-            method.invoke_unchecked((), (array, start))
+            method.invoke_unchecked((), (array, start))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +73,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -84,19 +85,20 @@ impl crate::System::MemoryExtensions {
             >("AsSpan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsSpan", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "AsSpan", 3usize
                 )
             });
         let __cordl_ret: crate::System::Span_1<T> = unsafe {
-            method.invoke_unchecked((), (array, start, length))
+            method.invoke_unchecked((), (array, start, length))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AsSpan_Il2CppString1(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::System::ReadOnlySpan_1<char>,
@@ -104,12 +106,13 @@ impl crate::System::MemoryExtensions {
             >("AsSpan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsSpan", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "AsSpan", 1usize
                 )
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            method.invoke_unchecked((), (text))
+            method.invoke_unchecked((), (text))?
         };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +120,7 @@ impl crate::System::MemoryExtensions {
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 crate::System::ReadOnlySpan_1<char>,
@@ -125,12 +128,13 @@ impl crate::System::MemoryExtensions {
             >("AsSpan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsSpan", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "AsSpan", 2usize
                 )
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            method.invoke_unchecked((), (text, start))
+            method.invoke_unchecked((), (text, start))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +143,7 @@ impl crate::System::MemoryExtensions {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -151,12 +155,13 @@ impl crate::System::MemoryExtensions {
             >("AsSpan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsSpan", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "AsSpan", 3usize
                 )
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            method.invoke_unchecked((), (text, start, length))
+            method.invoke_unchecked((), (text, start, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +169,7 @@ impl crate::System::MemoryExtensions {
         source: crate::System::ReadOnlySpan_1<char>,
         value: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, char),
                 bool,
@@ -172,11 +177,12 @@ impl crate::System::MemoryExtensions {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "Contains", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn CopyTo<T>(
@@ -187,7 +193,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -198,12 +204,13 @@ impl crate::System::MemoryExtensions {
             >("CopyTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyTo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "CopyTo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (source, destination))
+            method.invoke_unchecked((), (source, destination))?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,7 +222,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<T>, crate::System::ReadOnlySpan_1<T>),
                 bool,
@@ -223,11 +230,12 @@ impl crate::System::MemoryExtensions {
             >("EndsWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndsWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "EndsWith", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn EndsWith_StringComparison0(
@@ -235,7 +243,7 @@ impl crate::System::MemoryExtensions {
         value: crate::System::ReadOnlySpan_1<char>,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -247,12 +255,13 @@ impl crate::System::MemoryExtensions {
             >("EndsWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndsWith", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "EndsWith", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (span, value, comparisonType))
+            method.invoke_unchecked((), (span, value, comparisonType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,7 +269,7 @@ impl crate::System::MemoryExtensions {
         span: crate::System::ReadOnlySpan_1<char>,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -271,18 +280,19 @@ impl crate::System::MemoryExtensions {
             >("EqualsOrdinal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EqualsOrdinal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "EqualsOrdinal", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn EqualsOrdinalIgnoreCase(
         span: crate::System::ReadOnlySpan_1<char>,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -293,11 +303,12 @@ impl crate::System::MemoryExtensions {
             >("EqualsOrdinalIgnoreCase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EqualsOrdinalIgnoreCase", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "EqualsOrdinalIgnoreCase", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
@@ -308,7 +319,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<T>, T),
                 i32,
@@ -316,11 +327,12 @@ impl crate::System::MemoryExtensions {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOf", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (span, value)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (span, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfAny<T>(
@@ -331,7 +343,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<T>, crate::System::ReadOnlySpan_1<T>),
                 i32,
@@ -339,11 +351,12 @@ impl crate::System::MemoryExtensions {
             >("IndexOfAny")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOfAny", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOfAny", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (span, values)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (span, values))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTypeComparableAsBytes<T>(
@@ -353,7 +366,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<u64>),
                 bool,
@@ -361,11 +374,12 @@ impl crate::System::MemoryExtensions {
             >("IsTypeComparableAsBytes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTypeComparableAsBytes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "IsTypeComparableAsBytes", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_size)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn SequenceEqual<T>(
@@ -376,7 +390,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<T>, crate::System::ReadOnlySpan_1<T>),
                 bool,
@@ -384,11 +398,12 @@ impl crate::System::MemoryExtensions {
             >("SequenceEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SequenceEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "SequenceEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn StartsWith<T>(
@@ -399,7 +414,7 @@ impl crate::System::MemoryExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<T>, crate::System::ReadOnlySpan_1<T>),
                 bool,
@@ -407,18 +422,19 @@ impl crate::System::MemoryExtensions {
             >("StartsWith")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartsWith", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "StartsWith", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToUpperInvariant(
         source: crate::System::ReadOnlySpan_1<char>,
         destination: crate::System::Span_1<char>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, crate::System::Span_1<char>),
                 i32,
@@ -426,19 +442,20 @@ impl crate::System::MemoryExtensions {
             >("ToUpperInvariant")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToUpperInvariant", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "ToUpperInvariant", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (source, destination))
+            method.invoke_unchecked((), (source, destination))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Trim(
         span: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>),
                 crate::System::ReadOnlySpan_1<char>,
@@ -446,19 +463,20 @@ impl crate::System::MemoryExtensions {
             >("Trim")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Trim", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "Trim", 1usize
                 )
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            method.invoke_unchecked((), (span))
+            method.invoke_unchecked((), (span))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn TrimEnd(
         span: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>),
                 crate::System::ReadOnlySpan_1<char>,
@@ -466,19 +484,20 @@ impl crate::System::MemoryExtensions {
             >("TrimEnd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrimEnd", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "TrimEnd", 1usize
                 )
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            method.invoke_unchecked((), (span))
+            method.invoke_unchecked((), (span))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn TrimStart(
         span: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::MemoryExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>),
                 crate::System::ReadOnlySpan_1<char>,
@@ -486,12 +505,13 @@ impl crate::System::MemoryExtensions {
             >("TrimStart")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TrimStart", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::MemoryExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "TrimStart", 1usize
                 )
             });
         let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
-            method.invoke_unchecked((), (span))
+            method.invoke_unchecked((), (span))?
         };
         Ok(__cordl_ret.into())
     }

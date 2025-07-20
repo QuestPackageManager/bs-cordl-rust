@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
                 quest_hook::libil2cpp::Gc<
@@ -63,15 +63,16 @@ impl crate::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism {
             >("DecomposeScalar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecomposeScalar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Math::EC::Endo::GlvEndomorphism as
+                    quest_hook::libil2cpp::Type > ::class(), "DecomposeScalar", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (k)) };
+        > = unsafe { method.invoke_unchecked(self, (k))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrailElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrailElement>,
@@ -63,13 +63,14 @@ impl crate::GlobalNamespace::TrailElementCollection {
             >("GetElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), "GetElement", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::TrailElement,
-        > = unsafe { method.invoke_unchecked(self, (index)) };
+        > = unsafe { method.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitSnapshots(
@@ -78,7 +79,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         defaultEndPosition: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                 quest_hook::libil2cpp::Void,
@@ -86,8 +87,9 @@ impl crate::GlobalNamespace::TrailElementCollection {
             >("InitSnapshots")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSnapshots", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSnapshots", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
                 .invoke_unchecked(
                     self,
                     (defaultStartPosition, defaultEndPosition, _cordl_time),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +111,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         normal: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         _cordl_time: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -125,28 +127,30 @@ impl crate::GlobalNamespace::TrailElementCollection {
             >("Interpolate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Interpolate", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), "Interpolate", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (t, lerpState, position, normal, _cordl_time))
+            method.invoke_unchecked(self, (t, lerpState, position, normal, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MoveTailToHead(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MoveTailToHead")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MoveTailToHead", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), "MoveTailToHead", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -171,7 +175,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         end: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                 quest_hook::libil2cpp::Void,
@@ -179,28 +183,30 @@ impl crate::GlobalNamespace::TrailElementCollection {
             >("SetHeadData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetHeadData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), "SetHeadData", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (start, end, _cordl_time))
+            method.invoke_unchecked(self, (start, end, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDistances(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateDistances")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateDistances", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateDistances", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -211,7 +217,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
             crate::GlobalNamespace::TrailElementCollection_InterpolationState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -224,12 +230,13 @@ impl crate::GlobalNamespace::TrailElementCollection {
             >("UpdateLerpState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateLerpState", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateLerpState", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (t, interpolationState))
+            method.invoke_unchecked(self, (t, interpolationState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,7 +247,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         defaultEndPosition: crate::UnityEngine::Vector3,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::TrailElementCollection as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                 quest_hook::libil2cpp::Void,
@@ -248,8 +255,9 @@ impl crate::GlobalNamespace::TrailElementCollection {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::TrailElementCollection as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -257,7 +265,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
                 .invoke_unchecked(
                     self,
                     (capacity, defaultStartPosition, defaultEndPosition, _cordl_time),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

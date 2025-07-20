@@ -68,7 +68,7 @@ impl crate::Mono::Security::Interface::ValidationResult {
             crate::Mono::Security::Interface::MonoSslPolicyErrors,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::ValidationResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -83,8 +83,9 @@ impl crate::Mono::Security::Interface::ValidationResult {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::ValidationResult as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -92,32 +93,34 @@ impl crate::Mono::Security::Interface::ValidationResult {
                 .invoke_unchecked(
                     self,
                     (trusted, user_denied, error_code, policy_errors),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Trusted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::ValidationResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_Trusted")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Trusted", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::ValidationResult as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Trusted", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_UserDenied(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Interface::ValidationResult as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_UserDenied")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UserDenied", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Interface::ValidationResult as
+                    quest_hook::libil2cpp::Type > ::class(), "get_UserDenied", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

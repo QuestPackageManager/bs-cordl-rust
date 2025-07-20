@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::IEnumerableExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::IEnumerableExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -58,11 +58,12 @@ impl crate::UnityEngine::UIElements::IEnumerableExtensions {
             >("HasValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasValues", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::IEnumerableExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "HasValues", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (collection)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (collection))? };
         Ok(__cordl_ret.into())
     }
 }

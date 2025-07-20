@@ -70,7 +70,7 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
         newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         action: crate::System::Xml::XmlNodeChangedAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlNodeChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
@@ -85,8 +85,9 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlNodeChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -94,14 +95,14 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
                 .invoke_unchecked(
                     self,
                     (node, oldParent, newParent, oldValue, newValue, action),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Action(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeChangedAction> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::XmlNodeChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Xml::XmlNodeChangedAction,
@@ -109,12 +110,13 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
             >("get_Action")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Action", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::XmlNodeChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Action", 0usize
                 )
             });
         let __cordl_ret: crate::System::Xml::XmlNodeChangedAction = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -108,16 +108,17 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::CurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), crate::UnityEngine::Vector3, 1usize>("Evaluate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Evaluate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::CurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "Evaluate", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (t))
+            method.invoke_unchecked(self, (t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +127,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
         pivot: crate::UnityEngine::Vector3,
         rot: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::CurveData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Vector3,
@@ -138,12 +139,14 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
             >("RotatePointAroundPivot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotatePointAroundPivot", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::CurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "RotatePointAroundPivot",
+                    3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (point, pivot, rot))
+            method.invoke_unchecked((), (point, pivot, rot))?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +157,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
     ) -> quest_hook::libil2cpp::Result<
         crate::BGLib::UnityExtension::BezierCurves::CurveData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::BezierCurves::CurveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Quaternion),
                 crate::BGLib::UnityExtension::BezierCurves::CurveData,
@@ -162,12 +165,14 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
             >("RotatePointsAroundPivot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotatePointsAroundPivot", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::BezierCurves::CurveData as
+                    quest_hook::libil2cpp::Type > ::class(), "RotatePointsAroundPivot",
+                    2usize
                 )
             });
         let __cordl_ret: crate::BGLib::UnityExtension::BezierCurves::CurveData = unsafe {
-            method.invoke_unchecked(self, (pivot, rot))
+            method.invoke_unchecked(self, (pivot, rot))?
         };
         Ok(__cordl_ret.into())
     }

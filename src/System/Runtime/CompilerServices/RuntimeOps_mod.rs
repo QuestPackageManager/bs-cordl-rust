@@ -43,7 +43,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
         expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
         version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::RuntimeOps as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
@@ -54,12 +54,14 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
             >("ExpandoCheckVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandoCheckVersion", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::RuntimeOps as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandoCheckVersion",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expando, version))
+            method.invoke_unchecked((), (expando, version))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,7 +70,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
         oldClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         newClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::RuntimeOps as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
@@ -80,12 +82,14 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
             >("ExpandoPromoteClass")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandoPromoteClass", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::RuntimeOps as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandoPromoteClass",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (expando, oldClass, newClass))
+            method.invoke_unchecked((), (expando, oldClass, newClass))?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +100,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::RuntimeOps as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
@@ -110,12 +114,14 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
             >("ExpandoTryDeleteValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandoTryDeleteValue", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::RuntimeOps as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandoTryDeleteValue",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (expando, indexClass, index, name, ignoreCase))
+            method.invoke_unchecked((), (expando, indexClass, index, name, ignoreCase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -129,7 +135,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::RuntimeOps as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
@@ -146,8 +152,9 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
             >("ExpandoTryGetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandoTryGetValue", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::RuntimeOps as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandoTryGetValue", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -155,7 +162,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
                 .invoke_unchecked(
                     (),
                     (expando, indexClass, index, name, ignoreCase, value),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -169,7 +176,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::CompilerServices::RuntimeOps as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
@@ -184,8 +191,9 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
             >("ExpandoTrySetValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExpandoTrySetValue", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::CompilerServices::RuntimeOps as
+                    quest_hook::libil2cpp::Type > ::class(), "ExpandoTrySetValue", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -195,7 +203,7 @@ impl crate::System::Runtime::CompilerServices::RuntimeOps {
                 .invoke_unchecked(
                     (),
                     (expando, indexClass, index, value, name, ignoreCase),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

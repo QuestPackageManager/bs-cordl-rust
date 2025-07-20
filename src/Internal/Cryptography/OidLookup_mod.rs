@@ -45,7 +45,7 @@ impl crate::Internal::Cryptography::OidLookup {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Cryptography::OidLookup as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -57,14 +57,16 @@ impl crate::Internal::Cryptography::OidLookup {
             >("NativeFriendlyNameToOid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NativeFriendlyNameToOid", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Cryptography::OidLookup as
+                    quest_hook::libil2cpp::Type > ::class(), "NativeFriendlyNameToOid",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (friendlyName, oidGroup, fallBackToAllGroups))
+            method.invoke_unchecked((), (friendlyName, oidGroup, fallBackToAllGroups))?
         };
         Ok(__cordl_ret.into())
     }
@@ -75,7 +77,7 @@ impl crate::Internal::Cryptography::OidLookup {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Cryptography::OidLookup as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -87,19 +89,23 @@ impl crate::Internal::Cryptography::OidLookup {
             >("NativeOidToFriendlyName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NativeOidToFriendlyName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Cryptography::OidLookup as
+                    quest_hook::libil2cpp::Type > ::class(), "NativeOidToFriendlyName",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (oid, oidGroup, fallBackToAllGroups)) };
+        > = unsafe {
+            method.invoke_unchecked((), (oid, oidGroup, fallBackToAllGroups))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldUseCache(
         oidGroup: crate::System::Security::Cryptography::OidGroup,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Cryptography::OidLookup as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Security::Cryptography::OidGroup),
                 bool,
@@ -107,11 +113,12 @@ impl crate::Internal::Cryptography::OidLookup {
             >("ShouldUseCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldUseCache", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Cryptography::OidLookup as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldUseCache", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (oidGroup)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (oidGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToFriendlyName(
@@ -121,7 +128,7 @@ impl crate::Internal::Cryptography::OidLookup {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Cryptography::OidLookup as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -133,13 +140,16 @@ impl crate::Internal::Cryptography::OidLookup {
             >("ToFriendlyName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToFriendlyName", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Cryptography::OidLookup as
+                    quest_hook::libil2cpp::Type > ::class(), "ToFriendlyName", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (oid, oidGroup, fallBackToAllGroups)) };
+        > = unsafe {
+            method.invoke_unchecked((), (oid, oidGroup, fallBackToAllGroups))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToOid(
@@ -149,7 +159,7 @@ impl crate::Internal::Cryptography::OidLookup {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Cryptography::OidLookup as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -161,14 +171,15 @@ impl crate::Internal::Cryptography::OidLookup {
             >("ToOid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToOid", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Cryptography::OidLookup as
+                    quest_hook::libil2cpp::Type > ::class(), "ToOid", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (friendlyName, oidGroup, fallBackToAllGroups))
+            method.invoke_unchecked((), (friendlyName, oidGroup, fallBackToAllGroups))?
         };
         Ok(__cordl_ret.into())
     }

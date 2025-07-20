@@ -44,7 +44,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -52,13 +52,15 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("CancelIfRequestedAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CancelIfRequestedAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "CancelIfRequestedAsync",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn CancelIfRequestedAsync_CancellationToken1<T>(
@@ -70,7 +72,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
@@ -78,13 +80,15 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("CancelIfRequestedAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CancelIfRequestedAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "CancelIfRequestedAsync",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<T>,
-        > = unsafe { method.invoke_unchecked((), (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromCanceled_CancellationToken0(
@@ -92,7 +96,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -100,13 +104,14 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("FromCanceled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromCanceled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FromCanceled", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromCanceled_CancellationToken1<T>(
@@ -118,7 +123,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Threading::CancellationToken),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
@@ -126,19 +131,20 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("FromCanceled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromCanceled", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "FromCanceled", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<T>,
-        > = unsafe { method.invoke_unchecked((), (cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCompletedSuccessfully(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
                 bool,
@@ -146,11 +152,13 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("IsCompletedSuccessfully")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsCompletedSuccessfully", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "IsCompletedSuccessfully",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (task)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (task))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsync(
@@ -162,7 +170,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
@@ -176,15 +184,16 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("ReadAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<i32>,
         > = unsafe {
             method
-                .invoke_unchecked((), (reader, buffer, index, count, cancellationToken))
+                .invoke_unchecked((), (reader, buffer, index, count, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,7 +202,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
@@ -201,13 +210,14 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("ToAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "ToAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken2(
@@ -219,7 +229,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -233,14 +243,16 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("WriteAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = unsafe {
-            method.invoke_unchecked((), (writer, value, start, count, cancellationToken))
+            method
+                .invoke_unchecked((), (writer, value, start, count, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,7 +263,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -263,13 +275,14 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("WriteAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (writer, value, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (writer, value, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteAsync__cordl_char_CancellationToken0(
@@ -279,7 +292,7 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::AsyncUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -291,13 +304,14 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
             >("WriteAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::AsyncUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (writer, value, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (writer, value, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
 }

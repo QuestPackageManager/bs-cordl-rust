@@ -47,7 +47,7 @@ impl crate::Zenject::SignalExtensions {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::SignalExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                 quest_hook::libil2cpp::Gc<
@@ -57,13 +57,14 @@ impl crate::Zenject::SignalExtensions {
             >("BindSignal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BindSignal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::SignalExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "BindSignal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::BindSignalIdToBinder_1<TSignal>,
-        > = unsafe { method.invoke_unchecked((), (container)) };
+        > = unsafe { method.invoke_unchecked((), (container))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDefaultSignalDeclarationBindInfo(
@@ -72,7 +73,7 @@ impl crate::Zenject::SignalExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::SignalExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -83,13 +84,14 @@ impl crate::Zenject::SignalExtensions {
             >("CreateDefaultSignalDeclarationBindInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateDefaultSignalDeclarationBindInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::SignalExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateDefaultSignalDeclarationBindInfo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::SignalDeclarationBindInfo,
-        > = unsafe { method.invoke_unchecked((), (container, signalType)) };
+        > = unsafe { method.invoke_unchecked((), (container, signalType))? };
         Ok(__cordl_ret.into())
     }
     pub fn DeclareSignal<TSignal>(
@@ -103,7 +105,7 @@ impl crate::Zenject::SignalExtensions {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::SignalExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                 quest_hook::libil2cpp::Gc<
@@ -113,13 +115,14 @@ impl crate::Zenject::SignalExtensions {
             >("DeclareSignal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DeclareSignal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::SignalExtensions as quest_hook::libil2cpp::Type >
+                    ::class(), "DeclareSignal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder,
-        > = unsafe { method.invoke_unchecked((), (container)) };
+        > = unsafe { method.invoke_unchecked((), (container))? };
         Ok(__cordl_ret.into())
     }
 }

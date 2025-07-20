@@ -129,7 +129,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
             crate::System::Collections::Generic::Dictionary_2<i32, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::MaterialReference as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -152,8 +152,10 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
             >("AddMaterialReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddMaterialReference", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::MaterialReference as
+                    quest_hook::libil2cpp::Type > ::class(), "AddMaterialReference",
+                    4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -166,7 +168,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                         materialReferences,
                         materialReferenceIndexLookup,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,7 +188,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
             crate::System::Collections::Generic::Dictionary_2<i32, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::MaterialReference as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -209,8 +211,10 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
             >("AddMaterialReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddMaterialReference", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::MaterialReference as
+                    quest_hook::libil2cpp::Type > ::class(), "AddMaterialReference",
+                    4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -223,7 +227,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                         materialReferences,
                         materialReferenceIndexLookup,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +243,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         padding: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::MaterialReference as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -257,8 +261,9 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::MaterialReference as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -266,7 +271,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                 .invoke_unchecked(
                     self,
                     (index, fontAsset, spriteAsset, material, padding),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

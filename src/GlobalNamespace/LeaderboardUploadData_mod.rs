@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::LeaderboardUploadData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LeaderboardUploadData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -136,8 +136,9 @@ impl crate::GlobalNamespace::LeaderboardUploadData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 11usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LeaderboardUploadData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 11usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -157,7 +158,7 @@ impl crate::GlobalNamespace::LeaderboardUploadData {
                         infoHash,
                         modifiers,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

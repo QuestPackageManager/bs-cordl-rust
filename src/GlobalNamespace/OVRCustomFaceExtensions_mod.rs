@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -86,8 +86,10 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("AutoGenerateMapping")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoGenerateMapping", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AutoGenerateMapping",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -104,14 +106,14 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
                         faceExpressions,
                         allowDuplicateMapping,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AutoMapBlendshapes(
         customFace: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCustomFace>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCustomFace>),
                 quest_hook::libil2cpp::Void,
@@ -119,19 +121,20 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("AutoMapBlendshapes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoMapBlendshapes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AutoMapBlendshapes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (customFace))
+            method.invoke_unchecked((), (customFace))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearBlendshapes(
         customFace: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCustomFace>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCustomFace>),
                 quest_hook::libil2cpp::Void,
@@ -139,12 +142,13 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("ClearBlendshapes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearBlendshapes", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearBlendshapes", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (customFace))
+            method.invoke_unchecked((), (customFace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +163,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCustomFace>,
@@ -175,8 +179,10 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("CustomAutoGeneratedMapping")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CustomAutoGeneratedMapping", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CustomAutoGeneratedMapping", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -184,7 +190,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
                 crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (customFace, sharedMesh, allowDuplicateMapping))
+            method.invoke_unchecked((), (customFace, sharedMesh, allowDuplicateMapping))?
         };
         Ok(__cordl_ret.into())
     }
@@ -208,7 +214,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -235,8 +241,9 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("FindBestMatch")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindBestMatch", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FindBestMatch", 4usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::OVRFaceExpressions_FaceExpression = unsafe {
@@ -244,14 +251,14 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
                 .invoke_unchecked(
                     (),
                     (tokenizedOptions, searchString, expressions, fallback),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsLipsToward(
         blendshapeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -259,11 +266,14 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("IsLipsToward")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLipsToward", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "IsLipsToward", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (blendshapeName)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (blendshapeName))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OculusFaceAutoGenerateMapping(
@@ -276,7 +286,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>, bool),
                 quest_hook::libil2cpp::Gc<
@@ -288,15 +298,17 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("OculusFaceAutoGenerateMapping")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OculusFaceAutoGenerateMapping", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "OculusFaceAutoGenerateMapping", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
             >,
-        > = unsafe { method.invoke_unchecked((), (sharedMesh, allowDuplicateMapping)) };
+        > = unsafe { method.invoke_unchecked((), (sharedMesh, allowDuplicateMapping))? };
         Ok(__cordl_ret.into())
     }
     pub fn SplitCamelCase(
@@ -304,7 +316,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -312,13 +324,14 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("SplitCamelCase")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SplitCamelCase", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SplitCamelCase", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (input)) };
+        > = unsafe { method.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn TokenizeString(
@@ -330,7 +343,7 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::OVRCustomFaceExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -342,15 +355,16 @@ impl crate::GlobalNamespace::OVRCustomFaceExtensions {
             >("TokenizeString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TokenizeString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::OVRCustomFaceExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TokenizeString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (s)) };
+        > = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
 }

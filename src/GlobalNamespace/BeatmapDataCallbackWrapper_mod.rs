@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::BeatmapDataCallbackWrapper {
         &mut self,
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataCallbackWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>),
                 quest_hook::libil2cpp::Void,
@@ -56,12 +56,13 @@ impl crate::GlobalNamespace::BeatmapDataCallbackWrapper {
             >("CallCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CallCallback", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataCallbackWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), "CallCallback", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (beatmapData))
+            method.invoke_unchecked(self, (beatmapData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +90,7 @@ impl crate::GlobalNamespace::BeatmapDataCallbackWrapper {
             quest_hook::libil2cpp::Il2CppArray<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataCallbackWrapper as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     f32,
@@ -101,8 +102,9 @@ impl crate::GlobalNamespace::BeatmapDataCallbackWrapper {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataCallbackWrapper as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -110,7 +112,7 @@ impl crate::GlobalNamespace::BeatmapDataCallbackWrapper {
                 .invoke_unchecked(
                     self,
                     (aheadTime, BasicBeatmapEventType, subtypeIdentifiers),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

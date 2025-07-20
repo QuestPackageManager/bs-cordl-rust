@@ -44,7 +44,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequestAssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -54,13 +54,14 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             >("GetAssetBundle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetBundle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequestAssetBundle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssetBundle", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri)) };
+        > = unsafe { method.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Il2CppString_u32_2(
@@ -69,7 +70,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequestAssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, u32),
                 quest_hook::libil2cpp::Gc<
@@ -79,13 +80,14 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             >("GetAssetBundle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetBundle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequestAssetBundle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssetBundle", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri, crc)) };
+        > = unsafe { method.invoke_unchecked((), (uri, crc))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Uri1(
@@ -93,7 +95,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequestAssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                 quest_hook::libil2cpp::Gc<
@@ -103,13 +105,14 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             >("GetAssetBundle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetBundle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequestAssetBundle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssetBundle", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri)) };
+        > = unsafe { method.invoke_unchecked((), (uri))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Uri_CachedAssetBundle_u32_4(
@@ -119,7 +122,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequestAssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -133,13 +136,14 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             >("GetAssetBundle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetBundle", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequestAssetBundle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssetBundle", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri, cachedAssetBundle, crc)) };
+        > = unsafe { method.invoke_unchecked((), (uri, cachedAssetBundle, crc))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundle_Uri_u32_3(
@@ -148,7 +152,7 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Networking::UnityWebRequestAssetBundle as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Uri>, u32),
                 quest_hook::libil2cpp::Gc<
@@ -158,13 +162,14 @@ impl crate::UnityEngine::Networking::UnityWebRequestAssetBundle {
             >("GetAssetBundle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetBundle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Networking::UnityWebRequestAssetBundle as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssetBundle", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = unsafe { method.invoke_unchecked((), (uri, crc)) };
+        > = unsafe { method.invoke_unchecked((), (uri, crc))? };
         Ok(__cordl_ret.into())
     }
 }

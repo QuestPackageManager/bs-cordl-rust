@@ -43,7 +43,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         &mut self,
         configFile: crate::OVR::OpenVR::EChaperoneConfigFile,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::OVR::OpenVR::EChaperoneConfigFile),
                 bool,
@@ -51,11 +51,12 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("CommitWorkingCopy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CommitWorkingCopy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "CommitWorkingCopy", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (configFile)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (configFile))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExportLiveToBuffer(
@@ -63,7 +64,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         pBuffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         pnBufferLength: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -74,12 +75,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("ExportLiveToBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExportLiveToBuffer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "ExportLiveToBuffer", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pBuffer, pnBufferLength))
+            method.invoke_unchecked(self, (pBuffer, pnBufferLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +93,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<
@@ -103,11 +105,14 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetLiveCollisionBoundsInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLiveCollisionBoundsInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLiveCollisionBoundsInfo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pQuadsBuffer)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pQuadsBuffer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLiveCollisionBoundsTagsInfo(
@@ -116,7 +121,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -126,11 +131,12 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetLiveCollisionBoundsTagsInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLiveCollisionBoundsTagsInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLiveCollisionBoundsTagsInfo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pTagsBuffer)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pTagsBuffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLivePhysicalBoundsInfo(
@@ -141,7 +147,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<
@@ -153,11 +159,14 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetLivePhysicalBoundsInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLivePhysicalBoundsInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLivePhysicalBoundsInfo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pQuadsBuffer)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pQuadsBuffer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLiveSeatedZeroPoseToRawTrackingPose(
@@ -166,7 +175,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>),
                 bool,
@@ -174,12 +183,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetLiveSeatedZeroPoseToRawTrackingPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLiveSeatedZeroPoseToRawTrackingPose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLiveSeatedZeroPoseToRawTrackingPose", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pmatSeatedZeroPoseToRawTrackingPose))
+            method.invoke_unchecked(self, (pmatSeatedZeroPoseToRawTrackingPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +201,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<
@@ -203,18 +213,21 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetWorkingCollisionBoundsInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWorkingCollisionBoundsInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetWorkingCollisionBoundsInfo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pQuadsBuffer)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pQuadsBuffer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetWorkingPlayAreaRect(
         &mut self,
         rect: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdQuad_t>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdQuad_t>),
                 bool,
@@ -222,11 +235,12 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetWorkingPlayAreaRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWorkingPlayAreaRect", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetWorkingPlayAreaRect", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rect)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rect))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWorkingPlayAreaSize(
@@ -234,7 +248,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         pSizeX: quest_hook::libil2cpp::ByRefMut<f32>,
         pSizeZ: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<f32>,
@@ -245,12 +259,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetWorkingPlayAreaSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWorkingPlayAreaSize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetWorkingPlayAreaSize", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pSizeX, pSizeZ))
+            method.invoke_unchecked(self, (pSizeX, pSizeZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,7 +275,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>),
                 bool,
@@ -268,12 +283,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetWorkingSeatedZeroPoseToRawTrackingPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWorkingSeatedZeroPoseToRawTrackingPose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetWorkingSeatedZeroPoseToRawTrackingPose", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pmatSeatedZeroPoseToRawTrackingPose))
+            method.invoke_unchecked(self, (pmatSeatedZeroPoseToRawTrackingPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -283,7 +299,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>),
                 bool,
@@ -291,12 +307,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("GetWorkingStandingZeroPoseToRawTrackingPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWorkingStandingZeroPoseToRawTrackingPose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "GetWorkingStandingZeroPoseToRawTrackingPose", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pmatStandingZeroPoseToRawTrackingPose))
+            method.invoke_unchecked(self, (pmatStandingZeroPoseToRawTrackingPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,7 +322,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         pBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nImportFlags: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, u32),
                 bool,
@@ -313,12 +330,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("ImportFromBufferToWorking")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ImportFromBufferToWorking", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "ImportFromBufferToWorking", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (pBuffer, nImportFlags))
+            method.invoke_unchecked(self, (pBuffer, nImportFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -335,7 +353,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         &mut self,
         configFile: crate::OVR::OpenVR::EChaperoneConfigFile,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::OVR::OpenVR::EChaperoneConfigFile),
                 quest_hook::libil2cpp::Void,
@@ -343,28 +361,30 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("ReloadFromDisk")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReloadFromDisk", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "ReloadFromDisk", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (configFile))
+            method.invoke_unchecked(self, (configFile))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RevertWorkingCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RevertWorkingCopy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RevertWorkingCopy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "RevertWorkingCopy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -374,7 +394,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::HmdQuad_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::HmdQuad_t>,
@@ -384,12 +404,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("SetWorkingCollisionBoundsInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetWorkingCollisionBoundsInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "SetWorkingCollisionBoundsInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pQuadsBuffer))
+            method.invoke_unchecked(self, (pQuadsBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -397,7 +418,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         &mut self,
         pTagsBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Void,
@@ -405,12 +426,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("SetWorkingCollisionBoundsTagsInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetWorkingCollisionBoundsTagsInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "SetWorkingCollisionBoundsTagsInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pTagsBuffer))
+            method.invoke_unchecked(self, (pTagsBuffer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -420,7 +442,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::HmdQuad_t>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<crate::OVR::OpenVR::HmdQuad_t>,
@@ -430,11 +452,14 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("SetWorkingPhysicalBoundsInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetWorkingPhysicalBoundsInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "SetWorkingPhysicalBoundsInfo", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (pQuadsBuffer)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pQuadsBuffer))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetWorkingPlayAreaSize(
@@ -442,7 +467,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         sizeX: f32,
         sizeZ: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -450,12 +475,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("SetWorkingPlayAreaSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetWorkingPlayAreaSize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "SetWorkingPlayAreaSize", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sizeX, sizeZ))
+            method.invoke_unchecked(self, (sizeX, sizeZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -465,7 +491,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>),
                 quest_hook::libil2cpp::Void,
@@ -473,12 +499,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("SetWorkingSeatedZeroPoseToRawTrackingPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetWorkingSeatedZeroPoseToRawTrackingPose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "SetWorkingSeatedZeroPoseToRawTrackingPose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pMatSeatedZeroPoseToRawTrackingPose))
+            method.invoke_unchecked(self, (pMatSeatedZeroPoseToRawTrackingPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -488,7 +515,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>),
                 quest_hook::libil2cpp::Void,
@@ -496,12 +523,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >("SetWorkingStandingZeroPoseToRawTrackingPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetWorkingStandingZeroPoseToRawTrackingPose", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), "SetWorkingStandingZeroPoseToRawTrackingPose", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pMatStandingZeroPoseToRawTrackingPose))
+            method.invoke_unchecked(self, (pMatStandingZeroPoseToRawTrackingPose))?
         };
         Ok(__cordl_ret.into())
     }
@@ -509,7 +537,7 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -517,12 +545,13 @@ impl crate::OVR::OpenVR::CVRChaperoneSetup {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::OVR::OpenVR::CVRChaperoneSetup as quest_hook::libil2cpp::Type
+                    > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pInterface))
+            method.invoke_unchecked(self, (pInterface))?
         };
         Ok(__cordl_ret.into())
     }

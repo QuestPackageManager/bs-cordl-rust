@@ -47,7 +47,7 @@ impl crate::Mono::Unity::CertHelper {
         >,
         errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::CertHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -61,13 +61,14 @@ impl crate::Mono::Unity::CertHelper {
             >("AddCertificateToNativeChain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddCertificateToNativeChain", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Unity::CertHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "AddCertificateToNativeChain", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (nativeCertificateChain, certificate, errorState))
+                .invoke_unchecked((), (nativeCertificateChain, certificate, errorState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +81,7 @@ impl crate::Mono::Unity::CertHelper {
         >,
         errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Unity::CertHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -94,13 +95,17 @@ impl crate::Mono::Unity::CertHelper {
             >("AddCertificatesToNativeChain")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddCertificatesToNativeChain", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Unity::CertHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "AddCertificatesToNativeChain", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (nativeCertificateChain, certificates, errorState))
+                .invoke_unchecked(
+                    (),
+                    (nativeCertificateChain, certificates, errorState),
+                )?
         };
         Ok(__cordl_ret.into())
     }

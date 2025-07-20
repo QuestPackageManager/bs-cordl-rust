@@ -49,7 +49,7 @@ impl crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     bool,
@@ -62,13 +62,14 @@ impl crate::Org::BouncyCastle::Crypto::Operators::WrapperProvider {
             >("CreateWrapper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateWrapper", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Operators::WrapperProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateWrapper", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (forWrapping, parameters)) };
+        > = unsafe { method.invoke_unchecked(self, (forWrapping, parameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

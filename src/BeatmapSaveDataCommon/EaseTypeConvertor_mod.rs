@@ -42,7 +42,7 @@ impl crate::BeatmapSaveDataCommon::EaseTypeConvertor {
     pub fn Convert(
         easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataCommon::EaseTypeConvertor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::EaseType),
                 crate::BeatmapSaveDataCommon::EaseType,
@@ -50,12 +50,13 @@ impl crate::BeatmapSaveDataCommon::EaseTypeConvertor {
             >("Convert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Convert", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataCommon::EaseTypeConvertor as
+                    quest_hook::libil2cpp::Type > ::class(), "Convert", 1usize
                 )
             });
         let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = unsafe {
-            method.invoke_unchecked((), (easeType))
+            method.invoke_unchecked((), (easeType))?
         };
         Ok(__cordl_ret.into())
     }

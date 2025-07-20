@@ -131,7 +131,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -151,8 +151,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("AddChildControl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChildControl", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChildControl", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -170,7 +171,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                         childIndex,
                         nameOverride,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,7 +187,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -206,8 +207,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("AddChildControlIfMissing")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChildControlIfMissing", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChildControlIfMissing",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -221,7 +224,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                         haveChildrenUsingStateFromOtherControls,
                         controlItem,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -234,7 +237,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         haveChildrenUsingStateFromOtherControls: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -251,8 +254,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("AddChildControls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChildControls", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChildControls", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -260,7 +264,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                 .invoke_unchecked(
                     self,
                     (layout, variants, parent, haveChildrenUsingStateFromOtherControls),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -272,7 +276,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         left: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
         right: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -286,12 +290,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("AddChildren")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddChildren", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddChildren", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parent, left, right))
+            method.invoke_unchecked(self, (parent, left, right))?
         };
         Ok(__cordl_ret.into())
     }
@@ -303,7 +308,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         controlIndiciesNextFreeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         nodeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -317,8 +322,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("AddControlToNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddControlToNode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddControlToNode", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -326,7 +332,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                 .invoke_unchecked(
                     self,
                     (control, controlIndiciesNextFreeIndex, nodeIndex),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -337,7 +343,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         shortName: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -351,12 +357,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("AddParentDisplayNameRecursive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddParentDisplayNameRecursive", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddParentDisplayNameRecursive", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control, stringBuilder, shortName))
+            method.invoke_unchecked((), (control, stringBuilder, shortName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -369,7 +377,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         >,
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -385,12 +393,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("AddProcessors")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddProcessors", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddProcessors", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control, controlItem, layoutName))
+            method.invoke_unchecked((), (control, controlItem, layoutName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -403,7 +412,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -421,12 +430,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("ApplyUseStateFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyUseStateFrom", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ApplyUseStateFrom", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (parent, controlItem, layout))
+            method.invoke_unchecked((), (parent, controlItem, layout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -437,7 +447,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -450,19 +460,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("ChildControlOverridePath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ChildControlOverridePath", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ChildControlOverridePath",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (parent, controlName)) };
+        > = unsafe { method.invoke_unchecked(self, (parent, controlName))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeStateLayout(
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::InputSystem::InputControl,
@@ -472,35 +484,37 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("ComputeStateLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeStateLayout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeStateLayout", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control))
+            method.invoke_unchecked((), (control))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FinalizeControlHierarchy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -508,12 +522,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("FinalizeControlHierarchy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FinalizeControlHierarchy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "FinalizeControlHierarchy",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -532,7 +548,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         dontReset: bool,
         controlIndiciesNextFreeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -555,8 +571,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("FinalizeControlHierarchyRecursive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FinalizeControlHierarchyRecursive", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "FinalizeControlHierarchyRecursive", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -571,7 +589,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                         dontReset,
                         controlIndiciesNextFreeIndex,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -582,7 +600,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -592,13 +610,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("FindOrLoadLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindOrLoadLayout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "FindOrLoadLayout", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
     pub fn Finish(
@@ -606,7 +625,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
@@ -614,13 +633,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("Finish")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Finish", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Finish", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputDevice,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBestMidPoint(
@@ -628,7 +648,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         parent: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
         startOffset: u16,
     ) -> quest_hook::libil2cpp::Result<u16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode, u16),
                 u16,
@@ -636,12 +656,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("GetBestMidPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBestMidPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBestMidPoint", 2usize
                 )
             });
         let __cordl_ret: u16 = unsafe {
-            method.invoke_unchecked(self, (parent, startOffset))
+            method.invoke_unchecked(self, (parent, startOffset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -649,7 +670,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         &mut self,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<u16> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::InputSystem::InputControl,
@@ -659,11 +680,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("GetControlIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetControlIndex", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetControlIndex", 1usize
                 )
             });
-        let __cordl_ret: u16 = unsafe { method.invoke_unchecked(self, (control)) };
+        let __cordl_ret: u16 = unsafe { method.invoke_unchecked(self, (control))? };
         Ok(__cordl_ret.into())
     }
     pub fn InsertChildControl(
@@ -680,7 +702,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -700,8 +722,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("InsertChildControl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertChildControl", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertChildControl", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -717,7 +740,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                         haveChildrenUsingStateFromOtherControls,
                         controlItem,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -728,7 +751,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -743,12 +766,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("InsertChildControlOverride")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertChildControlOverride", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InsertChildControlOverride", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (parent, controlItem))
+            method.invoke_unchecked(self, (parent, controlItem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -763,7 +788,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         controlIndiciesNextFreeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         startOffset: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -780,8 +805,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("InsertControlBitRangeNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsertControlBitRangeNode", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InsertControlBitRangeNode",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -789,7 +816,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                 .invoke_unchecked(
                     self,
                     (parent, control, controlIndiciesNextFreeIndex, startOffset),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -804,7 +831,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -821,13 +848,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("InstantiateLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateLayout", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InstantiateLayout", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
-        > = unsafe { method.invoke_unchecked(self, (layout, variants, name, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (layout, variants, name, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateLayout_InternedString0(
@@ -839,7 +867,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -854,19 +882,20 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("InstantiateLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateLayout", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InstantiateLayout", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
-        > = unsafe { method.invoke_unchecked(self, (layout, variants, name, parent)) };
+        > = unsafe { method.invoke_unchecked(self, (layout, variants, name, parent))? };
         Ok(__cordl_ret.into())
     }
     pub fn Ref() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance,
@@ -874,28 +903,30 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("Ref")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Ref", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Ref", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -912,7 +943,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         >,
         shortName: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -927,8 +958,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("SetDisplayName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetDisplayName", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetDisplayName", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -941,7 +973,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                         shortDisplayNameFromLayout,
                         shortName,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -951,7 +983,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         >,
         controlItem: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -964,12 +996,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("SetFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetFormat", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (control, controlItem))
+            method.invoke_unchecked((), (control, controlItem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -979,7 +1012,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
         deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -991,12 +1024,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("Setup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Setup", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Setup", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (layout, variants, deviceDescription))
+            method.invoke_unchecked(self, (layout, variants, deviceDescription))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1007,7 +1041,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             crate::UnityEngine::InputSystem::InputControl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1023,12 +1057,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("ShiftChildIndicesInHierarchyOneUp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShiftChildIndicesInHierarchyOneUp", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ShiftChildIndicesInHierarchyOneUp", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (device, startIndex, exceptControl))
+            method.invoke_unchecked((), (device, startIndex, exceptControl))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1037,7 +1073,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::ByRefMut<
@@ -1047,13 +1083,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             >("get_instance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_instance", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "get_instance", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1175,16 +1212,18 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance
+                    as quest_hook::libil2cpp::Type > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

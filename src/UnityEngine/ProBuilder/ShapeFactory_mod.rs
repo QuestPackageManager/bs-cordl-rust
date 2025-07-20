@@ -48,7 +48,7 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::ProBuilder::PivotLocation),
                 quest_hook::libil2cpp::Gc<
@@ -58,13 +58,14 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
             >("Instantiate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Instantiate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ShapeFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "Instantiate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { method.invoke_unchecked((), (pivotType)) };
+        > = unsafe { method.invoke_unchecked((), (pivotType))? };
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_Shape_PivotLocation2(
@@ -73,7 +74,7 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -88,13 +89,14 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
             >("Instantiate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Instantiate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ShapeFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "Instantiate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { method.invoke_unchecked((), (shape, pivotType)) };
+        > = unsafe { method.invoke_unchecked((), (shape, pivotType))? };
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_Type_PivotLocation1(
@@ -103,7 +105,7 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::ShapeFactory as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -116,13 +118,14 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
             >("Instantiate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Instantiate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::ShapeFactory as
+                    quest_hook::libil2cpp::Type > ::class(), "Instantiate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { method.invoke_unchecked((), (shapeType, pivotType)) };
+        > = unsafe { method.invoke_unchecked((), (shapeType, pivotType))? };
         Ok(__cordl_ret.into())
     }
 }

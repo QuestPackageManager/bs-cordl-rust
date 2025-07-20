@@ -44,7 +44,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IEventPreProcessor {
         &mut self,
         currentEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::LowLevel::IEventPreProcessor as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::LowLevel::InputEventPtr),
                 bool,
@@ -52,12 +52,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::IEventPreProcessor {
             >("PreProcessEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PreProcessEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::LowLevel::IEventPreProcessor as
+                    quest_hook::libil2cpp::Type > ::class(), "PreProcessEvent", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (currentEventPtr))
+            method.invoke_unchecked(self, (currentEventPtr))?
         };
         Ok(__cordl_ret.into())
     }

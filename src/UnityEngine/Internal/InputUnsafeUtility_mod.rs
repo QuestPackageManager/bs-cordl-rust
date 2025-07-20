@@ -42,7 +42,7 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
     pub fn GetAxis(
         axisName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 f32,
@@ -50,17 +50,18 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetAxis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAxis", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAxis", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (axisName)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (axisName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAxisRaw(
         axisName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 f32,
@@ -68,18 +69,19 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetAxisRaw")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAxisRaw", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAxisRaw", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (axisName)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (axisName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAxisRaw__Unmanaged(
         axisName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         axisNameLen: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 f32,
@@ -87,12 +89,14 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetAxisRaw__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAxisRaw__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAxisRaw__Unmanaged",
+                    2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (axisName, axisNameLen))
+            method.invoke_unchecked((), (axisName, axisNameLen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +104,7 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
         axisName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         axisNameLen: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 f32,
@@ -108,19 +112,20 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetAxis__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAxis__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAxis__Unmanaged", 2usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (axisName, axisNameLen))
+            method.invoke_unchecked((), (axisName, axisNameLen))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetButton(
         buttonName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -128,17 +133,18 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetButton")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetButton", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetButton", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (buttonName)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (buttonName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetButtonDown(
         buttonName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -146,18 +152,19 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetButtonDown")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetButtonDown", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetButtonDown", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (buttonName)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (buttonName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetButtonDown__Unmanaged(
         buttonName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         buttonNameLen: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 u8,
@@ -165,12 +172,14 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetButtonDown__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetButtonDown__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetButtonDown__Unmanaged",
+                    2usize
                 )
             });
         let __cordl_ret: u8 = unsafe {
-            method.invoke_unchecked((), (buttonName, buttonNameLen))
+            method.invoke_unchecked((), (buttonName, buttonNameLen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -178,7 +187,7 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
         buttonName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         buttonNameLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 bool,
@@ -186,12 +195,14 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetButtonUp__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetButtonUp__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetButtonUp__Unmanaged",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (buttonName, buttonNameLen))
+            method.invoke_unchecked((), (buttonName, buttonNameLen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,7 +210,7 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
         buttonName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         buttonNameLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 bool,
@@ -207,12 +218,14 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetButton__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetButton__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetButton__Unmanaged",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (buttonName, buttonNameLen))
+            method.invoke_unchecked((), (buttonName, buttonNameLen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +233,7 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nameLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 bool,
@@ -228,18 +241,20 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetKeyDownString__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetKeyDownString__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetKeyDownString__Unmanaged", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, nameLen)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, nameLen))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyString__Unmanaged(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nameLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 bool,
@@ -247,18 +262,20 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetKeyString__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetKeyString__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetKeyString__Unmanaged",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, nameLen)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, nameLen))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyUpString__Unmanaged(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nameLen: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Internal::InputUnsafeUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 bool,
@@ -266,11 +283,13 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             >("GetKeyUpString__Unmanaged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetKeyUpString__Unmanaged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Internal::InputUnsafeUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetKeyUpString__Unmanaged",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, nameLen)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, nameLen))? };
         Ok(__cordl_ret.into())
     }
 }

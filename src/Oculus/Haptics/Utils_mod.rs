@@ -41,7 +41,7 @@ impl crate::Oculus::Haptics::Utils {
     pub fn ControllerToFfiController(
         controller: crate::Oculus::Haptics::Controller,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Controller> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Haptics::Utils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Oculus::Haptics::Controller),
                 crate::Oculus::Haptics::Ffi_Controller,
@@ -49,12 +49,13 @@ impl crate::Oculus::Haptics::Utils {
             >("ControllerToFfiController")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ControllerToFfiController", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Haptics::Utils as quest_hook::libil2cpp::Type >
+                    ::class(), "ControllerToFfiController", 1usize
                 )
             });
         let __cordl_ret: crate::Oculus::Haptics::Ffi_Controller = unsafe {
-            method.invoke_unchecked((), (controller))
+            method.invoke_unchecked((), (controller))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,16 +66,17 @@ impl crate::Oculus::Haptics::Utils {
         outMin: i32,
         outMax: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Haptics::Utils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32, i32, i32, i32), f32, 5usize>("Map")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Map", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Haptics::Utils as quest_hook::libil2cpp::Type >
+                    ::class(), "Map", 5usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (input, inMin, inMax, outMin, outMax))
+            method.invoke_unchecked((), (input, inMin, inMax, outMin, outMax))?
         };
         Ok(__cordl_ret.into())
     }

@@ -103,16 +103,17 @@ impl crate::System::DTSubString {
         &mut self,
         relativeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<char> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DTSubString as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), char, 1usize>("get_Item")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Item", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DTSubString as quest_hook::libil2cpp::Type >
+                    ::class(), "get_Item", 1usize
                 )
             });
         let __cordl_ret: char = unsafe {
-            method.invoke_unchecked(self, (relativeIndex))
+            method.invoke_unchecked(self, (relativeIndex))?
         };
         Ok(__cordl_ret.into())
     }

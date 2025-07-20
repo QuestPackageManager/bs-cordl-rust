@@ -45,7 +45,7 @@ impl crate::System::WindowsConsoleDriver {
         handle: crate::System::IntPtr,
         info: quest_hook::libil2cpp::ByRefMut<crate::System::ConsoleScreenBufferInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -58,17 +58,18 @@ impl crate::System::WindowsConsoleDriver {
             >("GetConsoleScreenBufferInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetConsoleScreenBufferInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type >
+                    ::class(), "GetConsoleScreenBufferInfo", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle, info)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle, info))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetStdHandle(
         handle: crate::System::Handles,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Handles),
                 crate::System::IntPtr,
@@ -76,25 +77,29 @@ impl crate::System::WindowsConsoleDriver {
             >("GetStdHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetStdHandle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type >
+                    ::class(), "GetStdHandle", 1usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), (handle))
+            method.invoke_unchecked((), (handle))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsModifierKey(virtualKeyCode: i16) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i16), bool, 1usize>("IsModifierKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsModifierKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type >
+                    ::class(), "IsModifierKey", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (virtualKeyCode)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (virtualKeyCode))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -110,7 +115,7 @@ impl crate::System::WindowsConsoleDriver {
         length: i32,
         nread: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -123,12 +128,13 @@ impl crate::System::WindowsConsoleDriver {
             >("ReadConsoleInput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadConsoleInput", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type >
+                    ::class(), "ReadConsoleInput", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handle, record, length, nread))
+            method.invoke_unchecked((), (handle, record, length, nread))?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,32 +142,34 @@ impl crate::System::WindowsConsoleDriver {
         &mut self,
         intercept: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), crate::System::ConsoleKeyInfo, 1usize>("ReadKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type >
+                    ::class(), "ReadKey", 1usize
                 )
             });
         let __cordl_ret: crate::System::ConsoleKeyInfo = unsafe {
-            method.invoke_unchecked(self, (intercept))
+            method.invoke_unchecked(self, (intercept))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::WindowsConsoleDriver as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

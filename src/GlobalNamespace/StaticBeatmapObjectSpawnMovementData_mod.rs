@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
         noteLinesCount: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, crate::GlobalNamespace::NoteLineLayer),
                 crate::UnityEngine::Vector2,
@@ -58,19 +58,20 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
             >("Get2DNoteOffset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Get2DNoteOffset", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "Get2DNoteOffset", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (noteLineIndex, noteLinesCount, noteLineLayer))
+            method.invoke_unchecked((), (noteLineIndex, noteLinesCount, noteLineLayer))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LineYPosForLineLayer(
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::NoteLineLayer),
                 f32,
@@ -78,23 +79,26 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
             >("LineYPosForLineLayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LineYPosForLineLayer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "LineYPosForLineLayer",
+                    1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (lineLayer)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (lineLayer))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_layerHeight() -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), f32, 0usize>("get_layerHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_layerHeight", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::StaticBeatmapObjectSpawnMovementData as
+                    quest_hook::libil2cpp::Type > ::class(), "get_layerHeight", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

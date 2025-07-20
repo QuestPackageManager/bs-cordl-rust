@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AudioClipAsyncLoaderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -68,15 +68,16 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
             >("LoadPreview")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadPreview", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AudioClipAsyncLoaderExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadPreview", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
             >,
-        > = unsafe { method.invoke_unchecked((), (asyncLoader, beatmapLevel)) };
+        > = unsafe { method.invoke_unchecked((), (asyncLoader, beatmapLevel))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSong(
@@ -93,7 +94,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AudioClipAsyncLoaderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -110,15 +111,16 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
             >("LoadSong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSong", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AudioClipAsyncLoaderExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadSong", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
             >,
-        > = unsafe { method.invoke_unchecked((), (asyncLoader, beatmapLevelData)) };
+        > = unsafe { method.invoke_unchecked((), (asyncLoader, beatmapLevelData))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnloadPreview(
@@ -127,7 +129,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
         >,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AudioClipAsyncLoaderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -140,12 +142,13 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
             >("UnloadPreview")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnloadPreview", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AudioClipAsyncLoaderExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "UnloadPreview", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (_cordl__, beatmapLevel))
+            method.invoke_unchecked((), (_cordl__, beatmapLevel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -157,7 +160,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
             crate::GlobalNamespace::IBeatmapLevelData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AudioClipAsyncLoaderExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -170,12 +173,13 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
             >("UnloadSong")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnloadSong", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AudioClipAsyncLoaderExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "UnloadSong", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asyncLoader, beatmapLevelData))
+            method.invoke_unchecked((), (asyncLoader, beatmapLevelData))?
         };
         Ok(__cordl_ret.into())
     }

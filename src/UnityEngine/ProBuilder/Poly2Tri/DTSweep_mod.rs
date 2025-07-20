@@ -46,7 +46,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
@@ -56,11 +56,12 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("BasinAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BasinAngle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "BasinAngle", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn EdgeEvent_DTSweepConstraint_AdvancingFrontNode0(
@@ -74,7 +75,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -92,12 +93,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("EdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "EdgeEvent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +120,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -142,12 +144,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("EdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EdgeEvent", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "EdgeEvent", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, ep, eq, triangle, point))
+            method.invoke_unchecked((), (tcx, ep, eq, triangle, point))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +162,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -174,12 +177,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("Fill")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Fill", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "Fill", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, node))
+            method.invoke_unchecked((), (tcx, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +195,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -206,12 +210,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillAdvancingFront")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillAdvancingFront", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillAdvancingFront", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, n))
+            method.invoke_unchecked((), (tcx, n))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +228,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -238,12 +243,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillBasin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillBasin", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillBasin", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, node))
+            method.invoke_unchecked((), (tcx, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -255,7 +261,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -270,12 +276,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillBasinReq")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillBasinReq", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillBasinReq", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, node))
+            method.invoke_unchecked((), (tcx, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -290,7 +297,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -308,12 +315,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillEdgeEvent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -328,7 +336,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -346,12 +354,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillLeftAboveEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillLeftAboveEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillLeftAboveEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -366,7 +376,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -384,12 +394,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillLeftBelowEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillLeftBelowEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillLeftBelowEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -404,7 +416,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -422,12 +434,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillLeftConcaveEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillLeftConcaveEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillLeftConcaveEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -442,7 +456,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -460,12 +474,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillLeftConvexEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillLeftConvexEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillLeftConvexEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -480,7 +496,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -498,12 +514,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillRightAboveEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillRightAboveEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillRightAboveEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -518,7 +536,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -536,12 +554,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillRightBelowEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillRightBelowEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillRightBelowEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -556,7 +576,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -574,12 +594,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillRightConcaveEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillRightConcaveEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillRightConcaveEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -594,7 +616,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -612,12 +634,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FillRightConvexEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillRightConvexEdgeEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FillRightConvexEdgeEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, edge, node))
+            method.invoke_unchecked((), (tcx, edge, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -626,7 +650,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
@@ -636,12 +660,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FinalizationConvexHull")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FinalizationConvexHull", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FinalizationConvexHull",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))
+            method.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -650,7 +676,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
@@ -660,12 +686,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FinalizationPolygon")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FinalizationPolygon", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FinalizationPolygon",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))
+            method.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -686,7 +714,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -710,12 +738,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FlipEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FlipEdgeEvent", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FlipEdgeEvent", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, ep, eq, t, p))
+            method.invoke_unchecked((), (tcx, ep, eq, t, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -739,7 +768,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -766,12 +795,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("FlipScanEdgeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FlipScanEdgeEvent", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "FlipScanEdgeEvent", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, ep, eq, flipTriangle, t, p))
+            method.invoke_unchecked((), (tcx, ep, eq, flipTriangle, t, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -780,7 +810,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
@@ -790,11 +820,12 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("HoleAngle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HoleAngle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "HoleAngle", 1usize
                 )
             });
-        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (node)) };
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsEdgeSideOfTriangle(
@@ -808,7 +839,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -826,12 +857,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("IsEdgeSideOfTriangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEdgeSideOfTriangle", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEdgeSideOfTriangle",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (triangle, ep, eq))
+            method.invoke_unchecked((), (triangle, ep, eq))?
         };
         Ok(__cordl_ret.into())
     }
@@ -843,7 +876,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -858,11 +891,12 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("IsShallow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsShallow", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "IsShallow", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tcx, node)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tcx, node))? };
         Ok(__cordl_ret.into())
     }
     pub fn Legalize(
@@ -873,7 +907,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -888,11 +922,12 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("Legalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Legalize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "Legalize", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tcx, t)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (tcx, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn NewFrontTriangle(
@@ -910,7 +945,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -930,13 +965,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("NewFrontTriangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NewFrontTriangle", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "NewFrontTriangle", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = unsafe { method.invoke_unchecked((), (tcx, point, node)) };
+        > = unsafe { method.invoke_unchecked((), (tcx, point, node))? };
         Ok(__cordl_ret.into())
     }
     pub fn NextFlipPoint(
@@ -957,7 +993,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -980,13 +1016,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("NextFlipPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NextFlipPoint", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "NextFlipPoint", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-        > = unsafe { method.invoke_unchecked((), (ep, eq, ot, op)) };
+        > = unsafe { method.invoke_unchecked((), (ep, eq, ot, op))? };
         Ok(__cordl_ret.into())
     }
     pub fn NextFlipTriangle(
@@ -1011,7 +1048,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1038,13 +1075,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("NextFlipTriangle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NextFlipTriangle", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "NextFlipTriangle", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-        > = unsafe { method.invoke_unchecked((), (tcx, o, t, ot, p, op)) };
+        > = unsafe { method.invoke_unchecked((), (tcx, o, t, ot, p, op))? };
         Ok(__cordl_ret.into())
     }
     pub fn PointEvent(
@@ -1059,7 +1097,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1076,13 +1114,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("PointEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PointEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "PointEvent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = unsafe { method.invoke_unchecked((), (tcx, point)) };
+        > = unsafe { method.invoke_unchecked((), (tcx, point))? };
         Ok(__cordl_ret.into())
     }
     pub fn RotateTrianglePair(
@@ -1099,7 +1138,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1120,12 +1159,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("RotateTrianglePair")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RotateTrianglePair", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "RotateTrianglePair", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (t, p, ot, op))
+            method.invoke_unchecked((), (t, p, ot, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1140,7 +1180,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1158,12 +1198,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("SplitEdge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SplitEdge", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "SplitEdge", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ep, eq, p))
+            method.invoke_unchecked((), (ep, eq, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1172,7 +1213,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
@@ -1182,12 +1223,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("Sweep")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sweep", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "Sweep", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))
+            method.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1196,7 +1238,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext,
@@ -1206,12 +1248,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("Triangulate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Triangulate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "Triangulate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx))
+            method.invoke_unchecked((), (tcx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1226,7 +1269,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1244,12 +1287,14 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
             >("TurnAdvancingFrontConvex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TurnAdvancingFrontConvex", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::Poly2Tri::DTSweep as
+                    quest_hook::libil2cpp::Type > ::class(), "TurnAdvancingFrontConvex",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tcx, b, c))
+            method.invoke_unchecked((), (tcx, b, c))?
         };
         Ok(__cordl_ret.into())
     }

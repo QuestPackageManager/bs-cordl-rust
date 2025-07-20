@@ -52,7 +52,7 @@ impl crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -66,12 +66,14 @@ impl crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
             >("CopyToNonGenericICollectionHelper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CopyToNonGenericICollectionHelper", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers
+                    as quest_hook::libil2cpp::Type > ::class(),
+                    "CopyToNonGenericICollectionHelper", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (collection, array, index))
+            method.invoke_unchecked((), (collection, array, index))?
         };
         Ok(__cordl_ret.into())
     }

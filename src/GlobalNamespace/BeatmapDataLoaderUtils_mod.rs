@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentKeywords>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataLoaderUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
@@ -58,14 +58,16 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
             >("GetEnvironmentKeywords")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnvironmentKeywords", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataLoaderUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEnvironmentKeywords",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentKeywords,
         > = unsafe {
-            method.invoke_unchecked((), (environmentInfo, beatmapLevelDataVersion))
+            method.invoke_unchecked((), (environmentInfo, beatmapLevelDataVersion))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +78,7 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentLightGroups>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDataLoaderUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>),
                 quest_hook::libil2cpp::Gc<
@@ -86,13 +88,15 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
             >("GetEnvironmentLightGroups")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnvironmentLightGroups", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDataLoaderUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEnvironmentLightGroups",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IEnvironmentLightGroups,
-        > = unsafe { method.invoke_unchecked((), (environmentInfo)) };
+        > = unsafe { method.invoke_unchecked((), (environmentInfo))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -42,7 +42,7 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
     pub fn ReadColor(
         binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::BinaryReadWriteHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
                 crate::UnityEngine::Color,
@@ -50,12 +50,13 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
             >("ReadColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadColor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::BinaryReadWriteHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadColor", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked((), (binaryReader))
+            method.invoke_unchecked((), (binaryReader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -63,7 +64,7 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
         binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::BinaryReadWriteHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
@@ -74,12 +75,13 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
             >("Write")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Write", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::BinaryReadWriteHelper as
+                    quest_hook::libil2cpp::Type > ::class(), "Write", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (binaryWriter, color))
+            method.invoke_unchecked((), (binaryWriter, color))?
         };
         Ok(__cordl_ret.into())
     }

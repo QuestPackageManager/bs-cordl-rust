@@ -43,7 +43,7 @@ impl crate::UnityEngine::Cubemap {
         updateMipmaps: bool,
         makeNoLongerReadable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -51,28 +51,30 @@ impl crate::UnityEngine::Cubemap {
             >("ApplyImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyImpl", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "ApplyImpl", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (updateMipmaps, makeNoLongerReadable))
+            method.invoke_unchecked(self, (updateMipmaps, makeNoLongerReadable))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Apply_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Apply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Apply", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "Apply", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,16 +82,17 @@ impl crate::UnityEngine::Cubemap {
         &mut self,
         updateMipmaps: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Apply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Apply", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "Apply", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (updateMipmaps))
+            method.invoke_unchecked(self, (updateMipmaps))?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,23 +101,24 @@ impl crate::UnityEngine::Cubemap {
         updateMipmaps: bool,
         makeNoLongerReadable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(bool, bool), quest_hook::libil2cpp::Void, 2usize>("Apply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Apply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "Apply", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (updateMipmaps, makeNoLongerReadable))
+            method.invoke_unchecked(self, (updateMipmaps, makeNoLongerReadable))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearRequestedMipmapLevel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -122,12 +126,13 @@ impl crate::UnityEngine::Cubemap {
             >("ClearRequestedMipmapLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearRequestedMipmapLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "ClearRequestedMipmapLevel", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +144,7 @@ impl crate::UnityEngine::Cubemap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::UnityEngine::TextureFormat, bool, crate::System::IntPtr),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
@@ -147,12 +152,13 @@ impl crate::UnityEngine::Cubemap {
             >("CreateExternalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateExternalTexture", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateExternalTexture", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap> = unsafe {
-            method.invoke_unchecked((), (width, format, mipmap, nativeTex))
+            method.invoke_unchecked((), (width, format, mipmap, nativeTex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +171,7 @@ impl crate::UnityEngine::Cubemap {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::CubemapFace),
                 crate::Unity::Collections::NativeArray_1<T>,
@@ -173,12 +179,13 @@ impl crate::UnityEngine::Cubemap {
             >("GetPixelData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPixelData", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPixelData", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
-            method.invoke_unchecked(self, (mipLevel, face))
+            method.invoke_unchecked(self, (mipLevel, face))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +196,7 @@ impl crate::UnityEngine::Cubemap {
         x: i32,
         y: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 crate::UnityEngine::Color,
@@ -197,12 +204,13 @@ impl crate::UnityEngine::Cubemap {
             >("GetPixelImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPixelImpl", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPixelImpl", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, (image, mip, x, y))
+            method.invoke_unchecked(self, (image, mip, x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +222,7 @@ impl crate::UnityEngine::Cubemap {
         y: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -228,12 +236,13 @@ impl crate::UnityEngine::Cubemap {
             >("GetPixelImpl_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPixelImpl_Injected", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPixelImpl_Injected", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (image, mip, x, y, ret))
+            method.invoke_unchecked(self, (image, mip, x, y, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,7 +252,7 @@ impl crate::UnityEngine::Cubemap {
         x: i32,
         y: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::CubemapFace, i32, i32),
                 crate::UnityEngine::Color,
@@ -251,12 +260,13 @@ impl crate::UnityEngine::Cubemap {
             >("GetPixel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPixel", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPixel", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, (face, x, y))
+            method.invoke_unchecked(self, (face, x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -267,7 +277,7 @@ impl crate::UnityEngine::Cubemap {
         y: i32,
         mip: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::CubemapFace, i32, i32, i32),
                 crate::UnityEngine::Color,
@@ -275,12 +285,13 @@ impl crate::UnityEngine::Cubemap {
             >("GetPixel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPixel", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPixel", 4usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
-            method.invoke_unchecked(self, (face, x, y, mip))
+            method.invoke_unchecked(self, (face, x, y, mip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -292,7 +303,7 @@ impl crate::UnityEngine::Cubemap {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::CubemapFace),
                 quest_hook::libil2cpp::Gc<
@@ -302,13 +313,14 @@ impl crate::UnityEngine::Cubemap {
             >("GetPixels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPixels", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPixels", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-        > = unsafe { method.invoke_unchecked(self, (face)) };
+        > = unsafe { method.invoke_unchecked(self, (face))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPixels_i32_0(
@@ -320,7 +332,7 @@ impl crate::UnityEngine::Cubemap {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::CubemapFace, i32),
                 quest_hook::libil2cpp::Gc<
@@ -330,29 +342,31 @@ impl crate::UnityEngine::Cubemap {
             >("GetPixels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPixels", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPixels", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-        > = unsafe { method.invoke_unchecked(self, (face, miplevel)) };
+        > = unsafe { method.invoke_unchecked(self, (face, miplevel))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWritableImageData(
         &mut self,
         frame: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), crate::System::IntPtr, 1usize>("GetWritableImageData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWritableImageData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "GetWritableImageData", 1usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked(self, (frame))
+            method.invoke_unchecked(self, (frame))?
         };
         Ok(__cordl_ret.into())
     }
@@ -365,7 +379,7 @@ impl crate::UnityEngine::Cubemap {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         nativeTex: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
@@ -381,8 +395,9 @@ impl crate::UnityEngine::Cubemap {
             >("Internal_Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Internal_Create", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "Internal_Create", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -390,7 +405,7 @@ impl crate::UnityEngine::Cubemap {
                 .invoke_unchecked(
                     (),
                     (mono, ext, mipCount, format, colorSpace, flags, nativeTex),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -403,7 +418,7 @@ impl crate::UnityEngine::Cubemap {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         nativeTex: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
@@ -419,8 +434,9 @@ impl crate::UnityEngine::Cubemap {
             >("Internal_CreateImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Internal_CreateImpl", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "Internal_CreateImpl", 7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -428,22 +444,23 @@ impl crate::UnityEngine::Cubemap {
                 .invoke_unchecked(
                     (),
                     (mono, ext, mipCount, format, colorSpace, flags, nativeTex),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsRequestedMipmapLevelLoaded(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsRequestedMipmapLevelLoaded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsRequestedMipmapLevelLoaded", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "IsRequestedMipmapLevelLoaded", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New_DefaultFormat_TextureCreationFlags0(
@@ -566,7 +583,7 @@ impl crate::UnityEngine::Cubemap {
         dataArraySize: i32,
         sourceDataStartIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr, i32, i32, i32, i32, i32),
                 bool,
@@ -574,8 +591,9 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixelDataImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixelDataImpl", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixelDataImpl", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -590,7 +608,7 @@ impl crate::UnityEngine::Cubemap {
                         dataArraySize,
                         sourceDataStartIndex,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -603,7 +621,7 @@ impl crate::UnityEngine::Cubemap {
         dataArraySize: i32,
         sourceDataStartIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -618,8 +636,9 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixelDataImplArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixelDataImplArray", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixelDataImplArray", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -634,7 +653,7 @@ impl crate::UnityEngine::Cubemap {
                         dataArraySize,
                         sourceDataStartIndex,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -649,7 +668,7 @@ impl crate::UnityEngine::Cubemap {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -662,12 +681,13 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixelData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixelData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixelData", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data, mipLevel, face, sourceDataStartIndex))
+            method.invoke_unchecked(self, (data, mipLevel, face, sourceDataStartIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -682,7 +702,7 @@ impl crate::UnityEngine::Cubemap {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Unity::Collections::NativeArray_1<T>,
@@ -695,12 +715,13 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixelData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixelData", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixelData", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (data, mipLevel, face, sourceDataStartIndex))
+            method.invoke_unchecked(self, (data, mipLevel, face, sourceDataStartIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -712,7 +733,7 @@ impl crate::UnityEngine::Cubemap {
         y: i32,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32, crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -720,12 +741,13 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixelImpl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixelImpl", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixelImpl", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (image, mip, x, y, color))
+            method.invoke_unchecked(self, (image, mip, x, y, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -737,7 +759,7 @@ impl crate::UnityEngine::Cubemap {
         y: i32,
         color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -751,12 +773,13 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixelImpl_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixelImpl_Injected", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixelImpl_Injected", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (image, mip, x, y, color))
+            method.invoke_unchecked(self, (image, mip, x, y, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -767,7 +790,7 @@ impl crate::UnityEngine::Cubemap {
         y: i32,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::CubemapFace, i32, i32, crate::UnityEngine::Color),
                 quest_hook::libil2cpp::Void,
@@ -775,12 +798,13 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixel", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixel", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (face, x, y, color))
+            method.invoke_unchecked(self, (face, x, y, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -792,7 +816,7 @@ impl crate::UnityEngine::Cubemap {
         color: crate::UnityEngine::Color,
         mip: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::CubemapFace,
@@ -806,12 +830,13 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixel", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixel", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (face, x, y, color, mip))
+            method.invoke_unchecked(self, (face, x, y, color, mip))?
         };
         Ok(__cordl_ret.into())
     }
@@ -822,7 +847,7 @@ impl crate::UnityEngine::Cubemap {
         >,
         face: crate::UnityEngine::CubemapFace,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -835,12 +860,13 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixels", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixels", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors, face))
+            method.invoke_unchecked(self, (colors, face))?
         };
         Ok(__cordl_ret.into())
     }
@@ -852,7 +878,7 @@ impl crate::UnityEngine::Cubemap {
         face: crate::UnityEngine::CubemapFace,
         miplevel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -866,28 +892,30 @@ impl crate::UnityEngine::Cubemap {
             >("SetPixels")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPixels", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPixels", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (colors, face, miplevel))
+            method.invoke_unchecked(self, (colors, face, miplevel))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SmoothEdges_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SmoothEdges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SmoothEdges", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SmoothEdges", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -895,16 +923,17 @@ impl crate::UnityEngine::Cubemap {
         &mut self,
         smoothRegionWidthInPixels: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("SmoothEdges")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SmoothEdges", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "SmoothEdges", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (smoothRegionWidthInPixels))
+            method.invoke_unchecked(self, (smoothRegionWidthInPixels))?
         };
         Ok(__cordl_ret.into())
     }
@@ -912,7 +941,7 @@ impl crate::UnityEngine::Cubemap {
         &mut self,
         nativeTexture: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -920,12 +949,13 @@ impl crate::UnityEngine::Cubemap {
             >("UpdateExternalTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateExternalTexture", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "UpdateExternalTexture", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nativeTexture))
+            method.invoke_unchecked(self, (nativeTexture))?
         };
         Ok(__cordl_ret.into())
     }
@@ -934,7 +964,7 @@ impl crate::UnityEngine::Cubemap {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         width: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Experimental::Rendering::GraphicsFormat, i32),
                 bool,
@@ -942,12 +972,13 @@ impl crate::UnityEngine::Cubemap {
             >("ValidateFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "ValidateFormat", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (format, width))
+            method.invoke_unchecked(self, (format, width))?
         };
         Ok(__cordl_ret.into())
     }
@@ -956,7 +987,7 @@ impl crate::UnityEngine::Cubemap {
         format: crate::UnityEngine::TextureFormat,
         width: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::TextureFormat, i32),
                 bool,
@@ -964,19 +995,20 @@ impl crate::UnityEngine::Cubemap {
             >("ValidateFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateFormat", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "ValidateFormat", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (format, width))
+            method.invoke_unchecked(self, (format, width))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateIsNotCrunched(
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Experimental::Rendering::TextureCreationFlags),
                 quest_hook::libil2cpp::Void,
@@ -984,12 +1016,13 @@ impl crate::UnityEngine::Cubemap {
             >("ValidateIsNotCrunched")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateIsNotCrunched", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "ValidateIsNotCrunched", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (flags))
+            method.invoke_unchecked((), (flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -999,7 +1032,7 @@ impl crate::UnityEngine::Cubemap {
         format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1011,12 +1044,13 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width, format, flags))
+            method.invoke_unchecked(self, (width, format, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1027,7 +1061,7 @@ impl crate::UnityEngine::Cubemap {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1040,12 +1074,13 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width, format, flags, mipCount))
+            method.invoke_unchecked(self, (width, format, flags, mipCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1055,7 +1090,7 @@ impl crate::UnityEngine::Cubemap {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1067,12 +1102,13 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width, format, flags))
+            method.invoke_unchecked(self, (width, format, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1083,7 +1119,7 @@ impl crate::UnityEngine::Cubemap {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1096,12 +1132,13 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width, format, flags, mipCount))
+            method.invoke_unchecked(self, (width, format, flags, mipCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1111,7 +1148,7 @@ impl crate::UnityEngine::Cubemap {
         textureFormat: crate::UnityEngine::TextureFormat,
         mipChain: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::TextureFormat, bool),
                 quest_hook::libil2cpp::Void,
@@ -1119,12 +1156,13 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width, textureFormat, mipChain))
+            method.invoke_unchecked(self, (width, textureFormat, mipChain))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1135,7 +1173,7 @@ impl crate::UnityEngine::Cubemap {
         mipChain: bool,
         createUninitialized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::TextureFormat, bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -1143,8 +1181,9 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1152,7 +1191,7 @@ impl crate::UnityEngine::Cubemap {
                 .invoke_unchecked(
                     self,
                     (width, textureFormat, mipChain, createUninitialized),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1162,7 +1201,7 @@ impl crate::UnityEngine::Cubemap {
         format: crate::UnityEngine::TextureFormat,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::TextureFormat, i32),
                 quest_hook::libil2cpp::Void,
@@ -1170,12 +1209,13 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width, format, mipCount))
+            method.invoke_unchecked(self, (width, format, mipCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1187,7 +1227,7 @@ impl crate::UnityEngine::Cubemap {
         nativeTex: crate::System::IntPtr,
         createUninitialized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -1201,8 +1241,9 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1210,7 +1251,7 @@ impl crate::UnityEngine::Cubemap {
                 .invoke_unchecked(
                     self,
                     (width, textureFormat, mipCount, nativeTex, createUninitialized),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1221,7 +1262,7 @@ impl crate::UnityEngine::Cubemap {
         mipCount: i32,
         createUninitialized: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::TextureFormat, i32, bool),
                 quest_hook::libil2cpp::Void,
@@ -1229,146 +1270,158 @@ impl crate::UnityEngine::Cubemap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width, format, mipCount, createUninitialized))
+            method
+                .invoke_unchecked(self, (width, format, mipCount, createUninitialized))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_desiredMipmapLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_desiredMipmapLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_desiredMipmapLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_desiredMipmapLevel", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextureFormat> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::UnityEngine::TextureFormat, 0usize>("get_format")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_format", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_format", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::TextureFormat = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_isPreProcessed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isPreProcessed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isPreProcessed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_isPreProcessed", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isReadable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isReadable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_isReadable", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_loadAllMips(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_loadAllMips")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_loadAllMips", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_loadAllMips", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_loadedMipmapLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_loadedMipmapLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_loadedMipmapLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_loadedMipmapLevel", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_loadingMipmapLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_loadingMipmapLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_loadingMipmapLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_loadingMipmapLevel", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_requestedMipmapLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_requestedMipmapLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_requestedMipmapLevel", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_requestedMipmapLevel", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_streamingMipmaps(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_streamingMipmaps")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_streamingMipmaps", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_streamingMipmaps", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_streamingMipmapsPriority(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_streamingMipmapsPriority")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_streamingMipmapsPriority", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "get_streamingMipmapsPriority", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_loadAllMips(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -1376,12 +1429,13 @@ impl crate::UnityEngine::Cubemap {
             >("set_loadAllMips")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_loadAllMips", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "set_loadAllMips", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1389,7 +1443,7 @@ impl crate::UnityEngine::Cubemap {
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Cubemap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Void,
@@ -1397,12 +1451,13 @@ impl crate::UnityEngine::Cubemap {
             >("set_requestedMipmapLevel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_requestedMipmapLevel", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Cubemap as quest_hook::libil2cpp::Type >
+                    ::class(), "set_requestedMipmapLevel", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

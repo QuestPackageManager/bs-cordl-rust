@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::ColorSchemeConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorSchemeConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::ColorSchemeNetSerializable),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
@@ -52,13 +52,15 @@ impl crate::GlobalNamespace::ColorSchemeConverter {
             >("FromNetSerializable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromNetSerializable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ColorSchemeConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "FromNetSerializable",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
-        > = unsafe { method.invoke_unchecked((), (serialized)) };
+        > = unsafe { method.invoke_unchecked((), (serialized))? };
         Ok(__cordl_ret.into())
     }
 }

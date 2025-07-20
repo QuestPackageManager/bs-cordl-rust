@@ -53,7 +53,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ShuffleExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -71,14 +71,16 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             >("PickRandomElementsWithTombstone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickRandomElementsWithTombstone", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ShuffleExtensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "PickRandomElementsWithTombstone", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
         > = unsafe {
-            method.invoke_unchecked((), (source, limit, count, random, tombstone))
+            method.invoke_unchecked((), (source, limit, count, random, tombstone))?
         };
         Ok(__cordl_ret.into())
     }
@@ -94,7 +96,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ShuffleExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -109,13 +111,14 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             >("Shuffle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Shuffle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ShuffleExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Shuffle", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (source, random)) };
+        > = unsafe { method.invoke_unchecked((), (source, random))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShuffleInPlace<T>(
@@ -126,7 +129,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ShuffleExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -139,12 +142,13 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             >("ShuffleInPlace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShuffleInPlace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ShuffleExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ShuffleInPlace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (list, random))
+            method.invoke_unchecked((), (list, random))?
         };
         Ok(__cordl_ret.into())
     }
@@ -161,7 +165,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ShuffleExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -177,13 +181,14 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             >("TakeWithTombstone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TakeWithTombstone", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ShuffleExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "TakeWithTombstone", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { method.invoke_unchecked((), (source, limit, tombstone)) };
+        > = unsafe { method.invoke_unchecked((), (source, limit, tombstone))? };
         Ok(__cordl_ret.into())
     }
     pub fn ZipSkipTombstone(
@@ -201,7 +206,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ShuffleExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -221,8 +226,9 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             >("ZipSkipTombstone")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ZipSkipTombstone", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ShuffleExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ZipSkipTombstone", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -230,7 +236,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                 crate::System::ValueTuple_2<i32, i32>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (collection1, collection2, collection2Tombstone))
+            method
+                .invoke_unchecked((), (collection1, collection2, collection2Tombstone))?
         };
         Ok(__cordl_ret.into())
     }

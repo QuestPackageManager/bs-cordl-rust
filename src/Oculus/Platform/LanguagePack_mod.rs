@@ -45,7 +45,7 @@ impl crate::Oculus::Platform::LanguagePack {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::LanguagePack as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -59,15 +59,16 @@ impl crate::Oculus::Platform::LanguagePack {
             >("GetCurrent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrent", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::LanguagePack as quest_hook::libil2cpp::Type
+                    > ::class(), "GetCurrent", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurrent(
@@ -81,7 +82,7 @@ impl crate::Oculus::Platform::LanguagePack {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::LanguagePack as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -95,8 +96,9 @@ impl crate::Oculus::Platform::LanguagePack {
             >("SetCurrent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetCurrent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::LanguagePack as quest_hook::libil2cpp::Type
+                    > ::class(), "SetCurrent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -105,7 +107,7 @@ impl crate::Oculus::Platform::LanguagePack {
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (tag)) };
+        > = unsafe { method.invoke_unchecked((), (tag))? };
         Ok(__cordl_ret.into())
     }
 }

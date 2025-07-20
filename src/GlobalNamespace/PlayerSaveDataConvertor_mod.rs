@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     pub fn GetRuntimeData_PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData2(
         saveData: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ArcVisibilityType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerSaveDataConvertor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData),
                 crate::GlobalNamespace::ArcVisibilityType,
@@ -50,12 +50,13 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
             >("GetRuntimeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRuntimeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerSaveDataConvertor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRuntimeData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::ArcVisibilityType = unsafe {
-            method.invoke_unchecked((), (saveData))
+            method.invoke_unchecked((), (saveData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -64,7 +65,7 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerSaveDataConvertor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData),
                 crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
@@ -72,12 +73,13 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
             >("GetRuntimeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRuntimeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerSaveDataConvertor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRuntimeData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = unsafe {
-            method.invoke_unchecked((), (saveData))
+            method.invoke_unchecked((), (saveData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -86,7 +88,7 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerSaveDataConvertor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData),
                 crate::GlobalNamespace::NoteJumpDurationTypeSettings,
@@ -94,12 +96,13 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
             >("GetRuntimeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRuntimeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerSaveDataConvertor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRuntimeData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::NoteJumpDurationTypeSettings = unsafe {
-            method.invoke_unchecked((), (saveData))
+            method.invoke_unchecked((), (saveData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,7 +111,7 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerSaveDataConvertor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::ArcVisibilityType),
                 crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData,
@@ -116,12 +119,13 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
             >("GetSaveData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSaveData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerSaveDataConvertor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSaveData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData = unsafe {
-            method.invoke_unchecked((), (data))
+            method.invoke_unchecked((), (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +134,7 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerSaveDataConvertor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::EnvironmentEffectsFilterPreset),
                 crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData,
@@ -138,12 +142,13 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
             >("GetSaveData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSaveData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerSaveDataConvertor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSaveData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData = unsafe {
-            method.invoke_unchecked((), (data))
+            method.invoke_unchecked((), (data))?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,7 +157,7 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::PlayerSaveDataConvertor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::NoteJumpDurationTypeSettings),
                 crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData,
@@ -160,12 +165,13 @@ impl crate::GlobalNamespace::PlayerSaveDataConvertor {
             >("GetSaveData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSaveData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::PlayerSaveDataConvertor as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSaveData", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData = unsafe {
-            method.invoke_unchecked((), (data))
+            method.invoke_unchecked((), (data))?
         };
         Ok(__cordl_ret.into())
     }

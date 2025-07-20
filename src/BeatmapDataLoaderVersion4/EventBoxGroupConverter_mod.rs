@@ -53,7 +53,7 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::BeatmapSaveDataVersion4::EventBoxGroup,
@@ -65,13 +65,14 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
             >("Convert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Convert", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::EventBoxGroupConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "Convert", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-        > = unsafe { method.invoke_unchecked(self, (eventBoxGroup)) };
+        > = unsafe { method.invoke_unchecked(self, (eventBoxGroup))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertEvents(
@@ -81,7 +82,7 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::BeatmapSaveDataVersion4::EventBox,
@@ -92,13 +93,14 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
             >("ConvertEvents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertEvents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::EventBoxGroupConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertEvents", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapEventDataBox,
-        > = unsafe { method.invoke_unchecked(self, (eventBox, indexFilter)) };
+        > = unsafe { method.invoke_unchecked(self, (eventBox, indexFilter))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -124,7 +126,7 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
             crate::GlobalNamespace::IEnvironmentLightGroups,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -139,12 +141,13 @@ impl crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::EventBoxGroupConverter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lightshowSaveData, lightGroups))
+            method.invoke_unchecked(self, (lightshowSaveData, lightGroups))?
         };
         Ok(__cordl_ret.into())
     }

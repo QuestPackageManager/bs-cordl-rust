@@ -74,7 +74,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             crate::System::Linq::Expressions::Interpreter::LocalVariable,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Linq::Expressions::ParameterExpression,
@@ -86,13 +86,14 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >("AddClosureVariable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddClosureVariable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "AddClosureVariable", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::LocalVariable,
-        > = unsafe { method.invoke_unchecked(self, (variable)) };
+        > = unsafe { method.invoke_unchecked(self, (variable))? };
         Ok(__cordl_ret.into())
     }
     pub fn Box(
@@ -104,7 +105,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             crate::System::Linq::Expressions::Interpreter::InstructionList,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -119,12 +120,13 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >("Box")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Box", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "Box", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (variable, instructions))
+            method.invoke_unchecked(self, (variable, instructions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +139,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::Interpreter::LocalDefinition,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -150,12 +152,13 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >("DefineLocal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DefineLocal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "DefineLocal", 2usize
                 )
             });
         let __cordl_ret: crate::System::Linq::Expressions::Interpreter::LocalDefinition = unsafe {
-            method.invoke_unchecked(self, (variable, start))
+            method.invoke_unchecked(self, (variable, start))?
         };
         Ok(__cordl_ret.into())
     }
@@ -177,7 +180,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -194,11 +197,13 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >("TryGetLocalOrClosure")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetLocalOrClosure", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetLocalOrClosure",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (var, local)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (var, local))? };
         Ok(__cordl_ret.into())
     }
     pub fn UndefineLocal(
@@ -206,7 +211,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
         definition: crate::System::Linq::Expressions::Interpreter::LocalDefinition,
         end: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Linq::Expressions::Interpreter::LocalDefinition, i32),
                 quest_hook::libil2cpp::Void,
@@ -214,28 +219,30 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >("UndefineLocal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UndefineLocal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "UndefineLocal", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (definition, end))
+            method.invoke_unchecked(self, (definition, end))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -253,7 +260,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -270,8 +277,10 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
             >("get_ClosureVariables")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ClosureVariables", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ClosureVariables",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -283,19 +292,20 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
                     crate::System::Linq::Expressions::Interpreter::LocalVariable,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_LocalCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_LocalCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_LocalCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::Expressions::Interpreter::LocalVariables as
+                    quest_hook::libil2cpp::Type > ::class(), "get_LocalCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -392,7 +402,7 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope
             crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -408,12 +418,14 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (variable, start, parent))
+            method.invoke_unchecked(self, (variable, start, parent))?
         };
         Ok(__cordl_ret.into())
     }

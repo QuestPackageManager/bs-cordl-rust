@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
         first: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         second: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LastUsedBeatmapDataCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -128,18 +128,20 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
             >("AreRequiredGameplayModifiersSame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AreRequiredGameplayModifiersSame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LastUsedBeatmapDataCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AreRequiredGameplayModifiersSame", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (first, second)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreRequiredPlayerSettingsSame(
         first: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
         second: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LastUsedBeatmapDataCache as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -154,11 +156,13 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
             >("AreRequiredPlayerSettingsSame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AreRequiredPlayerSettingsSame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LastUsedBeatmapDataCache as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AreRequiredPlayerSettingsSame", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (first, second)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn AreSameBeatmapDataCached(
@@ -174,7 +178,7 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LastUsedBeatmapDataCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -189,8 +193,10 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
             >("AreSameBeatmapDataCached")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AreSameBeatmapDataCached", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LastUsedBeatmapDataCache as
+                    quest_hook::libil2cpp::Type > ::class(), "AreSameBeatmapDataCached",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -203,7 +209,7 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
                         gameplayModifiers,
                         playerSpecificSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +229,7 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LastUsedBeatmapDataCache as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -241,8 +247,9 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LastUsedBeatmapDataCache as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -256,7 +263,7 @@ impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
                         gameplayModifiers,
                         playerSpecificSettings,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

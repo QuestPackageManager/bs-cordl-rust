@@ -44,7 +44,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -52,12 +52,13 @@ impl crate::Zenject::IInstantiator {
             >("CreateEmptyGameObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateEmptyGameObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateEmptyGameObject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked(self, (name))
+            method.invoke_unchecked(self, (name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -68,15 +69,16 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), T, 0usize>("InstantiateComponentOnNewGameObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponentOnNewGameObject", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponentOnNewGameObject", 0usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateComponentOnNewGameObject_IEnumerable_1_2<T>(
@@ -91,7 +93,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -103,11 +105,12 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateComponentOnNewGameObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponentOnNewGameObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponentOnNewGameObject", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (extraArgs)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (extraArgs))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateComponentOnNewGameObject_Il2CppString1<T>(
@@ -118,7 +121,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 T,
@@ -126,11 +129,12 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateComponentOnNewGameObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponentOnNewGameObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponentOnNewGameObject", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (gameObjectName)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (gameObjectName))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateComponentOnNewGameObject_Il2CppString_IEnumerable_1_3<T>(
@@ -146,7 +150,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -163,12 +167,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateComponentOnNewGameObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponentOnNewGameObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponentOnNewGameObject", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (gameObjectName, extraArgs))
+            method.invoke_unchecked(self, (gameObjectName, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +185,7 @@ impl crate::Zenject::IInstantiator {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                 TContract,
@@ -188,12 +193,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponent", 1usize
                 )
             });
         let __cordl_ret: TContract = unsafe {
-            method.invoke_unchecked(self, (gameObject))
+            method.invoke_unchecked(self, (gameObject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -210,7 +216,7 @@ impl crate::Zenject::IInstantiator {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -227,12 +233,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponent", 2usize
                 )
             });
         let __cordl_ret: TContract = unsafe {
-            method.invoke_unchecked(self, (gameObject, extraArgs))
+            method.invoke_unchecked(self, (gameObject, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -243,7 +250,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -254,12 +261,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component> = unsafe {
-            method.invoke_unchecked(self, (componentType, gameObject))
+            method.invoke_unchecked(self, (componentType, gameObject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +283,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -293,12 +301,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateComponent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateComponent", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component> = unsafe {
-            method.invoke_unchecked(self, (componentType, gameObject, extraArgs))
+            method.invoke_unchecked(self, (componentType, gameObject, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -310,7 +319,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                 T,
@@ -318,11 +327,12 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabForComponent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabForComponent", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (prefab)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (prefab))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiatePrefabForComponent_Object_IEnumerable_1_1<T>(
@@ -338,7 +348,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -355,12 +365,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabForComponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabForComponent", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (prefab, extraArgs))
+            method.invoke_unchecked(self, (prefab, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,7 +384,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -384,12 +395,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabForComponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabForComponent", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (prefab, parentTransform))
+            method.invoke_unchecked(self, (prefab, parentTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -407,7 +419,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -425,12 +437,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabForComponent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabForComponent", 3usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (prefab, parentTransform, extraArgs))
+            method.invoke_unchecked(self, (prefab, parentTransform, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -445,7 +458,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -458,12 +471,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabForComponent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabForComponent", 4usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (prefab, position, rotation, parentTransform))
+            method.invoke_unchecked(self, (prefab, position, rotation, parentTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -485,7 +499,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -505,8 +519,9 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabForComponent", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabForComponent", 5usize
                 )
             });
         let __cordl_ret: T = unsafe {
@@ -514,7 +529,7 @@ impl crate::Zenject::IInstantiator {
                 .invoke_unchecked(
                     self,
                     (prefab, position, rotation, parentTransform, extraArgs),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -531,7 +546,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -550,8 +565,9 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabForComponent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabForComponent", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -561,7 +577,7 @@ impl crate::Zenject::IInstantiator {
                 .invoke_unchecked(
                     self,
                     (concreteType, prefab, parentTransform, extraArgs),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -573,7 +589,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 T,
@@ -581,11 +597,12 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResourceForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResourceForComponent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResourceForComponent", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (resourcePath)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (resourcePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiatePrefabResourceForComponent_Il2CppString_IEnumerable_1_1<T>(
@@ -601,7 +618,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -618,12 +635,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResourceForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResourceForComponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResourceForComponent", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (resourcePath, extraArgs))
+            method.invoke_unchecked(self, (resourcePath, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -636,7 +654,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -647,12 +665,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResourceForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResourceForComponent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResourceForComponent", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (resourcePath, parentTransform))
+            method.invoke_unchecked(self, (resourcePath, parentTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -672,7 +691,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -690,12 +709,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResourceForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResourceForComponent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResourceForComponent", 3usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (resourcePath, parentTransform, extraArgs))
+            method.invoke_unchecked(self, (resourcePath, parentTransform, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -712,7 +732,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -725,8 +745,9 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResourceForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResourceForComponent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResourceForComponent", 4usize
                 )
             });
         let __cordl_ret: T = unsafe {
@@ -734,7 +755,7 @@ impl crate::Zenject::IInstantiator {
                 .invoke_unchecked(
                     self,
                     (resourcePath, position, rotation, parentTransform),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -756,7 +777,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -776,8 +797,9 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResourceForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResourceForComponent", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResourceForComponent", 5usize
                 )
             });
         let __cordl_ret: T = unsafe {
@@ -785,7 +807,7 @@ impl crate::Zenject::IInstantiator {
                 .invoke_unchecked(
                     self,
                     (resourcePath, position, rotation, parentTransform, extraArgs),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -802,7 +824,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -821,8 +843,9 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResourceForComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResourceForComponent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResourceForComponent", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -832,7 +855,7 @@ impl crate::Zenject::IInstantiator {
                 .invoke_unchecked(
                     self,
                     (concreteType, resourcePath, parentTransform, extraArgs),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -842,7 +865,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -850,12 +873,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResource", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResource", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked(self, (resourcePath))
+            method.invoke_unchecked(self, (resourcePath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -866,7 +890,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -877,12 +901,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResource", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResource", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked(self, (resourcePath, parentTransform))
+            method.invoke_unchecked(self, (resourcePath, parentTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -895,7 +920,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -908,8 +933,9 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefabResource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefabResource", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefabResource", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
@@ -917,7 +943,7 @@ impl crate::Zenject::IInstantiator {
                 .invoke_unchecked(
                     self,
                     (resourcePath, position, rotation, parentTransform),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -927,7 +953,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -935,12 +961,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefab")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefab", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefab", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked(self, (prefab))
+            method.invoke_unchecked(self, (prefab))?
         };
         Ok(__cordl_ret.into())
     }
@@ -951,7 +978,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -962,12 +989,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefab")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefab", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefab", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked(self, (prefab, parentTransform))
+            method.invoke_unchecked(self, (prefab, parentTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -980,7 +1008,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -993,12 +1021,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiatePrefab")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiatePrefab", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiatePrefab", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked(self, (prefab, position, rotation, parentTransform))
+            method.invoke_unchecked(self, (prefab, position, rotation, parentTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1010,7 +1039,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 T,
@@ -1018,11 +1047,12 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateScriptableObjectResource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateScriptableObjectResource", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateScriptableObjectResource", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (resourcePath)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (resourcePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateScriptableObjectResource_Il2CppString_IEnumerable_1_1<T>(
@@ -1038,7 +1068,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1055,12 +1085,13 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateScriptableObjectResource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateScriptableObjectResource", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateScriptableObjectResource", 2usize
                 )
             });
         let __cordl_ret: T = unsafe {
-            method.invoke_unchecked(self, (resourcePath, extraArgs))
+            method.invoke_unchecked(self, (resourcePath, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1071,7 +1102,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1082,14 +1113,15 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateScriptableObjectResource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateScriptableObjectResource", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateScriptableObjectResource", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked(self, (scriptableObjectType, resourcePath))
+            method.invoke_unchecked(self, (scriptableObjectType, resourcePath))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1105,7 +1137,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1123,15 +1155,16 @@ impl crate::Zenject::IInstantiator {
             >("InstantiateScriptableObjectResource")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateScriptableObjectResource", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "InstantiateScriptableObjectResource", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
             method
-                .invoke_unchecked(self, (scriptableObjectType, resourcePath, extraArgs))
+                .invoke_unchecked(self, (scriptableObjectType, resourcePath, extraArgs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1140,15 +1173,16 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), T, 0usize>("Instantiate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Instantiate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "Instantiate", 0usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_IEnumerable_1_1<T>(
@@ -1163,7 +1197,7 @@ impl crate::Zenject::IInstantiator {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<
@@ -1175,11 +1209,12 @@ impl crate::Zenject::IInstantiator {
             >("Instantiate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Instantiate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "Instantiate", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (extraArgs)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (extraArgs))? };
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_Type2(
@@ -1188,7 +1223,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1196,13 +1231,14 @@ impl crate::Zenject::IInstantiator {
             >("Instantiate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Instantiate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "Instantiate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (concreteType)) };
+        > = unsafe { method.invoke_unchecked(self, (concreteType))? };
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_Type_IEnumerable_1_3(
@@ -1216,7 +1252,7 @@ impl crate::Zenject::IInstantiator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::IInstantiator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1233,13 +1269,14 @@ impl crate::Zenject::IInstantiator {
             >("Instantiate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Instantiate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::IInstantiator as quest_hook::libil2cpp::Type >
+                    ::class(), "Instantiate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (concreteType, extraArgs)) };
+        > = unsafe { method.invoke_unchecked(self, (concreteType, extraArgs))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

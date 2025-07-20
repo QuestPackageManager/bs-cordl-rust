@@ -53,7 +53,7 @@ impl crate::Unity::Burst::Intrinsics::BurstTargetCpuAttribute {
         &mut self,
         TargetCpu: crate::Unity::Burst::BurstTargetCpu,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Burst::Intrinsics::BurstTargetCpuAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Burst::BurstTargetCpu),
                 quest_hook::libil2cpp::Void,
@@ -61,12 +61,13 @@ impl crate::Unity::Burst::Intrinsics::BurstTargetCpuAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Burst::Intrinsics::BurstTargetCpuAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (TargetCpu))
+            method.invoke_unchecked(self, (TargetCpu))?
         };
         Ok(__cordl_ret.into())
     }

@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::IMediaAsyncLoader {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IMediaAsyncLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -60,15 +60,17 @@ impl crate::GlobalNamespace::IMediaAsyncLoader {
             >("LoadAudioClipFromFilePathAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAudioClipFromFilePathAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IMediaAsyncLoader as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "LoadAudioClipFromFilePathAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (filePath)) };
+        > = unsafe { method.invoke_unchecked(self, (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

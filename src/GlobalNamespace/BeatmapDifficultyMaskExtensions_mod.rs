@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         mask: crate::GlobalNamespace::BeatmapDifficultyMask,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -54,12 +54,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (mask, difficulty))
+            method.invoke_unchecked((), (mask, difficulty))?
         };
         Ok(__cordl_ret.into())
     }
@@ -67,7 +68,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         mask: crate::GlobalNamespace::BeatmapDifficultyMask,
         other: crate::GlobalNamespace::BeatmapDifficultyMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -78,18 +79,19 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("Contains")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Contains", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Contains", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mask, other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mask, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn DifferenceFrom(
         mask: crate::GlobalNamespace::BeatmapDifficultyMask,
         other: crate::GlobalNamespace::BeatmapDifficultyMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -100,17 +102,18 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("DifferenceFrom")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DifferenceFrom", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DifferenceFrom", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (mask, other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (mask, other))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromMask(
         mask: crate::GlobalNamespace::BeatmapDifficultyMask,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficulty> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::BeatmapDifficultyMask),
                 crate::GlobalNamespace::BeatmapDifficulty,
@@ -118,12 +121,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("FromMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMask", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FromMask", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapDifficulty = unsafe {
-            method.invoke_unchecked((), (mask))
+            method.invoke_unchecked((), (mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -132,7 +136,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::GlobalNamespace::BeatmapDifficulty>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::BeatmapDifficultyMask),
                 crate::System::Nullable_1<crate::GlobalNamespace::BeatmapDifficulty>,
@@ -140,13 +144,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("FromMaskMaybe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMaskMaybe", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FromMaskMaybe", 1usize
                 )
             });
         let __cordl_ret: crate::System::Nullable_1<
             crate::GlobalNamespace::BeatmapDifficulty,
-        > = unsafe { method.invoke_unchecked((), (mask)) };
+        > = unsafe { method.invoke_unchecked((), (mask))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocalizedKey(
@@ -154,7 +159,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::BeatmapDifficultyMask),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -162,13 +167,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("LocalizedKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalizedKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalizedKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (mask)) };
+        > = unsafe { method.invoke_unchecked((), (mask))? };
         Ok(__cordl_ret.into())
     }
     pub fn ShortLocalizedKey(
@@ -176,7 +182,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::BeatmapDifficultyMask),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -184,13 +190,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("ShortLocalizedKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShortLocalizedKey", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ShortLocalizedKey", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (mask)) };
+        > = unsafe { method.invoke_unchecked((), (mask))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToHexString(
@@ -198,7 +205,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::BeatmapDifficultyMask),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -206,19 +213,20 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("ToHexString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToHexString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToHexString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (mask)) };
+        > = unsafe { method.invoke_unchecked((), (mask))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToMask(
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficultyMask> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BeatmapDifficultyMaskExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::BeatmapDifficulty),
                 crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -226,12 +234,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
             >("ToMask")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToMask", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BeatmapDifficultyMaskExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ToMask", 1usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapDifficultyMask = unsafe {
-            method.invoke_unchecked((), (difficulty))
+            method.invoke_unchecked((), (difficulty))?
         };
         Ok(__cordl_ret.into())
     }

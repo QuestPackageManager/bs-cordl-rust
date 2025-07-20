@@ -79,16 +79,17 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -96,7 +97,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         &mut self,
         useKindFlags: crate::JetBrains::Annotations::ImplicitUseKindFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::ImplicitUseKindFlags),
                 quest_hook::libil2cpp::Void,
@@ -104,12 +105,13 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (useKindFlags))
+            method.invoke_unchecked(self, (useKindFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -118,7 +120,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         useKindFlags: crate::JetBrains::Annotations::ImplicitUseKindFlags,
         targetFlags: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::JetBrains::Annotations::ImplicitUseKindFlags,
@@ -129,12 +131,13 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (useKindFlags, targetFlags))
+            method.invoke_unchecked(self, (useKindFlags, targetFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -142,7 +145,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         &mut self,
         targetFlags: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::ImplicitUseTargetFlags),
                 quest_hook::libil2cpp::Void,
@@ -150,12 +153,13 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (targetFlags))
+            method.invoke_unchecked(self, (targetFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,7 +168,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         crate::JetBrains::Annotations::ImplicitUseTargetFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::JetBrains::Annotations::ImplicitUseTargetFlags,
@@ -172,12 +176,13 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             >("get_TargetFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_TargetFlags", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "get_TargetFlags", 0usize
                 )
             });
         let __cordl_ret: crate::JetBrains::Annotations::ImplicitUseTargetFlags = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -186,7 +191,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     ) -> quest_hook::libil2cpp::Result<
         crate::JetBrains::Annotations::ImplicitUseKindFlags,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::JetBrains::Annotations::ImplicitUseKindFlags,
@@ -194,12 +199,13 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             >("get_UseKindFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_UseKindFlags", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "get_UseKindFlags", 0usize
                 )
             });
         let __cordl_ret: crate::JetBrains::Annotations::ImplicitUseKindFlags = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +213,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         &mut self,
         value: crate::JetBrains::Annotations::ImplicitUseTargetFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::ImplicitUseTargetFlags),
                 quest_hook::libil2cpp::Void,
@@ -215,12 +221,13 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             >("set_TargetFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_TargetFlags", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "set_TargetFlags", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -228,7 +235,7 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         &mut self,
         value: crate::JetBrains::Annotations::ImplicitUseKindFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::JetBrains::Annotations::UsedImplicitlyAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::JetBrains::Annotations::ImplicitUseKindFlags),
                 quest_hook::libil2cpp::Void,
@@ -236,12 +243,13 @@ impl crate::JetBrains::Annotations::UsedImplicitlyAttribute {
             >("set_UseKindFlags")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_UseKindFlags", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::JetBrains::Annotations::UsedImplicitlyAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), "set_UseKindFlags", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

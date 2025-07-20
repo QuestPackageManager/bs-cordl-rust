@@ -344,7 +344,7 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
         >,
         useNormalEventsAsCompatibleEvents: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapSaveDataVersion3::BeatmapSaveData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -458,8 +458,9 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 17usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapSaveDataVersion3::BeatmapSaveData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 17usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -485,7 +486,7 @@ impl crate::BeatmapSaveDataVersion3::BeatmapSaveData {
                         basicEventTypesWithKeywords,
                         useNormalEventsAsCompatibleEvents,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

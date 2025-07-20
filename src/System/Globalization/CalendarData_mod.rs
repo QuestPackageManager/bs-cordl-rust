@@ -119,7 +119,7 @@ impl crate::System::Globalization::CalendarData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -127,13 +127,15 @@ impl crate::System::Globalization::CalendarData {
             >("CalendarIdToCultureName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalendarIdToCultureName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), "CalendarIdToCultureName",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (calendarId)) };
+        > = unsafe { method.invoke_unchecked((), (calendarId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCalendarData(
@@ -141,7 +143,7 @@ impl crate::System::Globalization::CalendarData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::CalendarData>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::System::Globalization::CalendarData>,
@@ -149,13 +151,14 @@ impl crate::System::Globalization::CalendarData {
             >("GetCalendarData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCalendarData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCalendarData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::CalendarData,
-        > = unsafe { method.invoke_unchecked((), (calendarId)) };
+        > = unsafe { method.invoke_unchecked((), (calendarId))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetJapaneseEnglishEraNames() -> quest_hook::libil2cpp::Result<
@@ -165,7 +168,7 @@ impl crate::System::Globalization::CalendarData {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -177,15 +180,17 @@ impl crate::System::Globalization::CalendarData {
             >("GetJapaneseEnglishEraNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetJapaneseEnglishEraNames", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetJapaneseEnglishEraNames", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetJapaneseEraNames() -> quest_hook::libil2cpp::Result<
@@ -195,7 +200,7 @@ impl crate::System::Globalization::CalendarData {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -207,15 +212,17 @@ impl crate::System::Globalization::CalendarData {
             >("GetJapaneseEraNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetJapaneseEraNames", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), "GetJapaneseEraNames",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeAbbreviatedEraNames(
@@ -223,7 +230,7 @@ impl crate::System::Globalization::CalendarData {
         localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         calendarId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Void,
@@ -231,12 +238,14 @@ impl crate::System::Globalization::CalendarData {
             >("InitializeAbbreviatedEraNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeAbbreviatedEraNames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InitializeAbbreviatedEraNames", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (localeName, calendarId))
+            method.invoke_unchecked(self, (localeName, calendarId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +254,7 @@ impl crate::System::Globalization::CalendarData {
         localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         calendarId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Void,
@@ -253,12 +262,13 @@ impl crate::System::Globalization::CalendarData {
             >("InitializeEraNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitializeEraNames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), "InitializeEraNames", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (localeName, calendarId))
+            method.invoke_unchecked(self, (localeName, calendarId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -283,16 +293,17 @@ impl crate::System::Globalization::CalendarData {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +313,7 @@ impl crate::System::Globalization::CalendarData {
         calendarId: i32,
         bUseUserOverrides: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -314,12 +325,13 @@ impl crate::System::Globalization::CalendarData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (localeName, calendarId, bUseUserOverrides))
+            method.invoke_unchecked(self, (localeName, calendarId, bUseUserOverrides))?
         };
         Ok(__cordl_ret.into())
     }
@@ -328,7 +340,7 @@ impl crate::System::Globalization::CalendarData {
         localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         datetimeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 bool,
@@ -336,12 +348,13 @@ impl crate::System::Globalization::CalendarData {
             >("fill_calendar_data")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "fill_calendar_data", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), "fill_calendar_data", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (localeName, datetimeIndex))
+            method.invoke_unchecked(self, (localeName, datetimeIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -350,7 +363,7 @@ impl crate::System::Globalization::CalendarData {
         localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         calendarId: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -364,25 +377,29 @@ impl crate::System::Globalization::CalendarData {
             >("nativeGetCalendarData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "nativeGetCalendarData", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), "nativeGetCalendarData",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (data, localeName, calendarId))
+            method.invoke_unchecked((), (data, localeName, calendarId))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn nativeGetTwoDigitYearMax(calID: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::CalendarData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("nativeGetTwoDigitYearMax")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "nativeGetTwoDigitYearMax", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::CalendarData as
+                    quest_hook::libil2cpp::Type > ::class(), "nativeGetTwoDigitYearMax",
+                    1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (calID)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (calID))? };
         Ok(__cordl_ret.into())
     }
 }

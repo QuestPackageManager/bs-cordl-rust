@@ -62,7 +62,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
@@ -86,15 +86,16 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter {
             >("ExecuteFilter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExecuteFilter", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), "ExecuteFilter", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (root, current, settings)) };
+        > = unsafe { method.invoke_unchecked(self, (root, current, settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -114,7 +115,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter {
             crate::System::Collections::Generic::List_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<i32>,
@@ -124,12 +125,13 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Linq::JsonPath::ArrayMultipleIndexFilter as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (indexes))
+            method.invoke_unchecked(self, (indexes))?
         };
         Ok(__cordl_ret.into())
     }

@@ -100,7 +100,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         pos: f32,
         previewMode: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -112,44 +112,47 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("BeginDragResize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BeginDragResize", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "BeginDragResize", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column, pos, previewMode))
+            method.invoke_unchecked(self, (column, pos, previewMode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ClearCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearCache", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearCache", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Dirty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dirty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dirty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "Dirty", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -174,7 +177,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         resizeToFit: bool,
         dragResize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -207,8 +210,9 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("DistributeExcess")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DistributeExcess", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "DistributeExcess", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -223,7 +227,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                         resizeToFit,
                         dragResize,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -248,7 +252,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         resizeToFit: bool,
         dragResize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -281,8 +285,9 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("DistributeOverflow")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DistributeOverflow", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "DistributeOverflow", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -297,7 +302,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                         resizeToFit,
                         dragResize,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,16 +310,17 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         &mut self,
         width: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("DoLayout")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoLayout", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "DoLayout", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width))
+            method.invoke_unchecked(self, (width))?
         };
         Ok(__cordl_ret.into())
     }
@@ -323,7 +329,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         pos: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>, f32),
                 quest_hook::libil2cpp::Void,
@@ -331,12 +337,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("DragResize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DragResize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "DragResize", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column, pos))
+            method.invoke_unchecked(self, (column, pos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -345,7 +352,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         cancelled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -356,12 +363,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("EndDragResize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndDragResize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "EndDragResize", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column, cancelled))
+            method.invoke_unchecked(self, (column, cancelled))?
         };
         Ok(__cordl_ret.into())
     }
@@ -369,7 +377,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>),
                 f32,
@@ -377,18 +385,19 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("GetDesiredPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDesiredPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDesiredPosition", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (column)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (column))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDesiredWidth(
         &mut self,
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>),
                 f32,
@@ -396,11 +405,12 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("GetDesiredWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDesiredWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDesiredWidth", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (c)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsClamped(
@@ -408,16 +418,17 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         min: f32,
         max: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32, f32), bool, 3usize>("IsClamped")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsClamped", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "IsClamped", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (value, min, max))
+            method.invoke_unchecked((), (value, min, max))?
         };
         Ok(__cordl_ret.into())
     }
@@ -435,7 +446,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>, i32),
                 quest_hook::libil2cpp::Void,
@@ -443,12 +454,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("OnColumnAdded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnColumnAdded", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "OnColumnAdded", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column, index))
+            method.invoke_unchecked(self, (column, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -457,7 +469,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -468,12 +480,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("OnColumnChanged")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnColumnChanged", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "OnColumnChanged", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column, _cordl_type))
+            method.invoke_unchecked(self, (column, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -481,7 +494,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>),
                 quest_hook::libil2cpp::Void,
@@ -489,12 +502,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("OnColumnRemoved")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnColumnRemoved", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "OnColumnRemoved", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column))
+            method.invoke_unchecked(self, (column))?
         };
         Ok(__cordl_ret.into())
     }
@@ -504,7 +518,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         from: i32,
         to: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -516,12 +530,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("OnColumnReordered")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnColumnReordered", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "OnColumnReordered", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column, from, to))
+            method.invoke_unchecked(self, (column, from, to))?
         };
         Ok(__cordl_ret.into())
     }
@@ -529,7 +544,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>),
                 quest_hook::libil2cpp::Void,
@@ -537,12 +552,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("OnColumnResized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnColumnResized", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "OnColumnResized", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column))
+            method.invoke_unchecked(self, (column))?
         };
         Ok(__cordl_ret.into())
     }
@@ -553,7 +569,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         setDesiredWidthOnly: bool,
         distributeOverflow: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -566,8 +582,10 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("RecomputeToDesiredWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecomputeToDesiredWidth", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "RecomputeToDesiredWidth",
+                    4usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
@@ -575,7 +593,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                 .invoke_unchecked(
                     self,
                     (column, distributedDelta, setDesiredWidthOnly, distributeOverflow),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -590,7 +608,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         setDesiredWidthOnly: bool,
         distributeOverflow: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -609,8 +627,10 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("RecomputeToDesiredWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecomputeToDesiredWidth", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "RecomputeToDesiredWidth",
+                    4usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
@@ -618,7 +638,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                 .invoke_unchecked(
                     self,
                     (columns, distributedDelta, setDesiredWidthOnly, distributeOverflow),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -632,7 +652,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -650,13 +670,18 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("RecomputeToMaxWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecomputeToMaxWidth", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "RecomputeToMaxWidth",
+                    3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
             method
-                .invoke_unchecked(self, (columns, distributedDelta, setDesiredWidthOnly))
+                .invoke_unchecked(
+                    self,
+                    (columns, distributedDelta, setDesiredWidthOnly),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -670,7 +695,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -688,13 +713,18 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("RecomputeToMaxWidthProportionally")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecomputeToMaxWidthProportionally", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RecomputeToMaxWidthProportionally", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
             method
-                .invoke_unchecked(self, (columns, distributedDelta, setDesiredWidthOnly))
+                .invoke_unchecked(
+                    self,
+                    (columns, distributedDelta, setDesiredWidthOnly),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -708,7 +738,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -726,13 +756,18 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("RecomputeToMinWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecomputeToMinWidth", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "RecomputeToMinWidth",
+                    3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
             method
-                .invoke_unchecked(self, (columns, distributedDelta, setDesiredWidthOnly))
+                .invoke_unchecked(
+                    self,
+                    (columns, distributedDelta, setDesiredWidthOnly),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -746,7 +781,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -764,13 +799,18 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("RecomputeToMinWidthProportionally")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecomputeToMinWidthProportionally", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RecomputeToMinWidthProportionally", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
             method
-                .invoke_unchecked(self, (columns, distributedDelta, setDesiredWidthOnly))
+                .invoke_unchecked(
+                    self,
+                    (columns, distributedDelta, setDesiredWidthOnly),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -778,7 +818,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         &mut self,
         _cordl_type: crate::UnityEngine::UIElements::ColumnDataType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::ColumnDataType),
                 bool,
@@ -786,11 +826,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("RequiresLayoutUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RequiresLayoutUpdate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "RequiresLayoutUpdate",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn ResizeColumn(
@@ -799,7 +841,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         width: f32,
         setDesiredWidthOnly: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -811,12 +853,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("ResizeColumn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResizeColumn", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "ResizeColumn", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (column, width, setDesiredWidthOnly))
+            method.invoke_unchecked(self, (column, width, setDesiredWidthOnly))?
         };
         Ok(__cordl_ret.into())
     }
@@ -824,16 +867,17 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         &mut self,
         width: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("ResizeToFit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResizeToFit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "ResizeToFit", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (width))
+            method.invoke_unchecked(self, (width))?
         };
         Ok(__cordl_ret.into())
     }
@@ -858,7 +902,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         resizeToFit: bool,
         dragResize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -891,8 +935,10 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("StretchResizeColumns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StretchResizeColumns", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "StretchResizeColumns",
+                    6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -907,30 +953,31 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                         resizeToFit,
                         dragResize,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateCache")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateCache", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "UpdateCache", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateMinAndMaxColumnsWidth(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -938,12 +985,14 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("UpdateMinAndMaxColumnsWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdateMinAndMaxColumnsWidth", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "UpdateMinAndMaxColumnsWidth", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -952,7 +1001,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         c1: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         c2: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -963,11 +1012,12 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("<DoLayout>b__49_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<DoLayout>b__49_0", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "<DoLayout>b__49_0", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2))? };
         Ok(__cordl_ret.into())
     }
     pub fn _DoLayout_b__49_1(
@@ -975,7 +1025,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         c1: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         c2: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -986,11 +1036,12 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("<DoLayout>b__49_1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<DoLayout>b__49_1", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "<DoLayout>b__49_1", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2))? };
         Ok(__cordl_ret.into())
     }
     pub fn _RecomputeToMaxWidthProportionally_b__53_0(
@@ -998,7 +1049,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         c1: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         c2: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -1009,11 +1060,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("<RecomputeToMaxWidthProportionally>b__53_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<RecomputeToMaxWidthProportionally>b__53_0", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<RecomputeToMaxWidthProportionally>b__53_0", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2))? };
         Ok(__cordl_ret.into())
     }
     pub fn _RecomputeToMinWidthProportionally_b__54_0(
@@ -1021,7 +1074,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         c1: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         c2: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -1032,18 +1085,20 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("<RecomputeToMinWidthProportionally>b__54_0")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "<RecomputeToMinWidthProportionally>b__54_0", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "<RecomputeToMinWidthProportionally>b__54_0", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (c1, c2))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>),
                 quest_hook::libil2cpp::Void,
@@ -1051,12 +1106,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (columns))
+            method.invoke_unchecked(self, (columns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1064,7 +1120,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -1072,12 +1128,14 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("add_layoutRequested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_layoutRequested", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "add_layoutRequested",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1086,7 +1144,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
@@ -1094,94 +1152,105 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("get_columns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_columns", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "get_columns", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Columns,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_columnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_columnsWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_columnsWidth", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "get_columnsWidth", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasRelativeWidthColumns(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_hasRelativeWidthColumns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_hasRelativeWidthColumns", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_hasRelativeWidthColumns", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasStretchableColumns(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_hasStretchableColumns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_hasStretchableColumns", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "get_hasStretchableColumns",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_layoutWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_layoutWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_layoutWidth", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "get_layoutWidth", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_maxColumnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_maxColumnsWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_maxColumnsWidth", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "get_maxColumnsWidth",
+                    0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_minColumnsWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_minColumnsWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_minColumnsWidth", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "get_minColumnsWidth",
+                    0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_layoutRequested(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ColumnLayout as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Action>),
                 quest_hook::libil2cpp::Void,
@@ -1189,12 +1258,14 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
             >("remove_layoutRequested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_layoutRequested", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ColumnLayout as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_layoutRequested",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

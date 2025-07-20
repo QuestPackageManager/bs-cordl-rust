@@ -65,7 +65,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::IObservable_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IObservable_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::IObserver_1<T>>),
                 quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -73,12 +75,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::IObservable_1<T> {
             >("Subscribe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Subscribe", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IObservable_1 < T > as quest_hook::libil2cpp::Type >
+                    ::class(), "Subscribe", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
-            method.invoke_unchecked(self, (observer))
+            method.invoke_unchecked(self, (observer))?
         };
         Ok(__cordl_ret.into())
     }

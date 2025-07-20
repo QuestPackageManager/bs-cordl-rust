@@ -50,7 +50,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -70,8 +70,10 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("SetMeshDetailAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMeshDetailAttribute", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMeshDetailAttribute",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -79,7 +81,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
                 .invoke_unchecked(
                     (),
                     (session, geoID, partID, attrName, tupleSize, data, partInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +99,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -122,13 +124,18 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("SetMeshPointAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMeshPointAttribute", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMeshPointAttribute",
+                    6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
             method
-                .invoke_unchecked((), (session, geoID, partID, attrName, data, partInfo))
+                .invoke_unchecked(
+                    (),
+                    (session, geoID, partID, attrName, data, partInfo),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +150,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -163,8 +170,10 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("SetMeshPointAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMeshPointAttribute", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMeshPointAttribute",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -172,7 +181,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
                 .invoke_unchecked(
                     (),
                     (session, geoID, partID, attrName, tupleSize, data, partInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +198,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -213,8 +222,10 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("SetMeshPointAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMeshPointAttribute", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMeshPointAttribute",
+                    7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -222,7 +233,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
                 .invoke_unchecked(
                     (),
                     (session, geoID, partID, attrName, tupleSize, data, partInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,7 +251,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
         >,
         bConvertToHoudiniCoordinateSystem: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -263,8 +274,10 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("SetMeshPointAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMeshPointAttribute", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMeshPointAttribute",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -281,7 +294,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
                         partInfo,
                         bConvertToHoudiniCoordinateSystem,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -300,7 +313,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
         >,
         bConvertToHoudiniCoordinateSystem: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -324,8 +337,10 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("SetMeshVertexAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMeshVertexAttribute", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMeshVertexAttribute",
+                    9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -343,7 +358,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
                         partInfo,
                         bConvertToHoudiniCoordinateSystem,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -359,7 +374,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -380,8 +395,10 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("SetMeshVertexFloatAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMeshVertexFloatAttribute", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetMeshVertexFloatAttribute", 8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -398,7 +415,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
                         indices,
                         partInfo,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +428,7 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_InputMeshUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -429,12 +446,14 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             >("UploadMeshIntoHoudiniNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UploadMeshIntoHoudiniNode", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_InputMeshUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "UploadMeshIntoHoudiniNode",
+                    5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, assetNodeID, objectID, geoID, mesh))
+            method.invoke_unchecked((), (session, assetNodeID, objectID, geoID, mesh))?
         };
         Ok(__cordl_ret.into())
     }

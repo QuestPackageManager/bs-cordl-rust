@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
     pub fn InsideUnitSphere(
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::UnitySpecificRandomExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Random>),
                 crate::UnityEngine::Vector3,
@@ -50,19 +50,20 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
             >("InsideUnitSphere")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InsideUnitSphere", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::UnitySpecificRandomExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "InsideUnitSphere", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (random))
+            method.invoke_unchecked((), (random))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn OnUnitSphere(
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::UnitySpecificRandomExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Random>),
                 crate::UnityEngine::Vector3,
@@ -70,12 +71,13 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
             >("OnUnitSphere")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnUnitSphere", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::UnitySpecificRandomExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "OnUnitSphere", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (random))
+            method.invoke_unchecked((), (random))?
         };
         Ok(__cordl_ret.into())
     }

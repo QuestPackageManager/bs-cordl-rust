@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
         off: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -60,12 +60,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
             >("ReceivedHandshakeRecord")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReceivedHandshakeRecord", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit as
+                    quest_hook::libil2cpp::Type > ::class(), "ReceivedHandshakeRecord",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (epoch, buf, off, len))
+            method.invoke_unchecked(self, (epoch, buf, off, len))?
         };
         Ok(__cordl_ret.into())
     }

@@ -75,7 +75,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         port: i32,
         parent: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
@@ -88,12 +88,13 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("CacheTrack")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CacheTrack", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "CacheTrack", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (track, playable, port, parent))
+            method.invoke_unchecked(self, (track, playable, port, parent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +111,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         autoRebalance: bool,
         createOutputs: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -131,8 +132,9 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("Compile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compile", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "Compile", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -140,7 +142,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
                 .invoke_unchecked(
                     self,
                     (graph, timelinePlayable, tracks, go, autoRebalance, createOutputs),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -156,7 +158,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         createOutputs: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -176,8 +178,9 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("CompileTrackList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompileTrackList", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "CompileTrackList", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -185,7 +188,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
                 .invoke_unchecked(
                     self,
                     (graph, timelinePlayable, tracks, go, createOutputs),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -204,7 +207,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelinePlayable>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -228,15 +231,16 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelinePlayable>,
         > = unsafe {
             method
-                .invoke_unchecked((), (graph, tracks, go, autoRebalance, createOutputs))
+                .invoke_unchecked((), (graph, tracks, go, autoRebalance, createOutputs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -248,7 +252,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         playable: crate::UnityEngine::Playables::Playable,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -262,12 +266,13 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("CreateTrackOutput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTrackOutput", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateTrackOutput", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (graph, track, go, playable, port))
+            method.invoke_unchecked(self, (graph, track, go, playable, port))?
         };
         Ok(__cordl_ret.into())
     }
@@ -279,7 +284,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         createOutputs: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::PlayableGraph,
@@ -293,8 +298,10 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("CreateTrackPlayable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTrackPlayable", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateTrackPlayable",
+                    5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
@@ -302,7 +309,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
                 .invoke_unchecked(
                     self,
                     (graph, timelinePlayable, track, go, createOutputs),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -311,7 +318,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         playable: crate::UnityEngine::Playables::Playable,
         frameData: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::Playable,
@@ -322,12 +329,13 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("Evaluate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Evaluate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "Evaluate", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable, frameData))
+            method.invoke_unchecked(self, (playable, frameData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,7 +344,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         animOutput: crate::UnityEngine::Animations::AnimationPlayableOutput,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
@@ -347,12 +355,14 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("EvaluateAnimationPreviewUpdateCallback")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluateAnimationPreviewUpdateCallback", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EvaluateAnimationPreviewUpdateCallback", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (track, animOutput))
+            method.invoke_unchecked(self, (track, animOutput))?
         };
         Ok(__cordl_ret.into())
     }
@@ -361,7 +371,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         animOutput: crate::UnityEngine::Animations::AnimationPlayableOutput,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
@@ -372,19 +382,21 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("EvaluateWeightsForAnimationPlayableOutput")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvaluateWeightsForAnimationPlayableOutput", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EvaluateWeightsForAnimationPlayableOutput", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (track, animOutput))
+            method.invoke_unchecked(self, (track, animOutput))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ForAOTCompilationOnly() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -392,12 +404,14 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("ForAOTCompilationOnly")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ForAOTCompilationOnly", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "ForAOTCompilationOnly",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,7 +427,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::Playables::Playable,
@@ -424,28 +438,30 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             >("PrepareFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareFrame", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), "PrepareFrame", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (playable, info))
+            method.invoke_unchecked(self, (playable, info))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::TimelinePlayable as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::TimelinePlayable as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

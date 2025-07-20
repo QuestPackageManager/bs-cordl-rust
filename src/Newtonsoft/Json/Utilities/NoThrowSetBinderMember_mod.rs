@@ -50,7 +50,7 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
@@ -62,13 +62,14 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
             >("FallbackSetMember")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FallbackSetMember", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::NoThrowSetBinderMember as
+                    quest_hook::libil2cpp::Type > ::class(), "FallbackSetMember", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { method.invoke_unchecked(self, (target, value, errorSuggestion)) };
+        > = unsafe { method.invoke_unchecked(self, (target, value, errorSuggestion))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -84,7 +85,7 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
         &mut self,
         innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>),
                 quest_hook::libil2cpp::Void,
@@ -92,12 +93,13 @@ impl crate::Newtonsoft::Json::Utilities::NoThrowSetBinderMember {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Newtonsoft::Json::Utilities::NoThrowSetBinderMember as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (innerBinder))
+            method.invoke_unchecked(self, (innerBinder))?
         };
         Ok(__cordl_ret.into())
     }

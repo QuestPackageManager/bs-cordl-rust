@@ -59,7 +59,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
         escapedCharacter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -70,12 +70,14 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("AddPercentEncodedOctetToRawOctetsList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddPercentEncodedOctetToRawOctetsList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddPercentEncodedOctetToRawOctetsList", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (encoding, escapedCharacter))
+            method.invoke_unchecked(self, (encoding, escapedCharacter))?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +86,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -92,13 +94,15 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("AddSlashToAsteriskOnlyPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddSlashToAsteriskOnlyPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddSlashToAsteriskOnlyPath", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (path)) };
+        > = unsafe { method.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn AppendOctetsPercentEncoded(
@@ -107,7 +111,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             crate::System::Collections::Generic::IEnumerable_1<u8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -120,12 +124,14 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("AppendOctetsPercentEncoded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendOctetsPercentEncoded", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AppendOctetsPercentEncoded", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (target, octets))
+            method.invoke_unchecked((), (target, octets))?
         };
         Ok(__cordl_ret.into())
     }
@@ -133,7 +139,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         &mut self,
         codePoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -141,17 +147,19 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("AppendUnicodeCodePointValuePercentEncoded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendUnicodeCodePointValuePercentEncoded", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AppendUnicodeCodePointValuePercentEncoded", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (codePoint)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (codePoint))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -159,19 +167,20 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn BuildRequestUriUsingCookedPath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -179,19 +188,21 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("BuildRequestUriUsingCookedPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildRequestUriUsingCookedPath", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildRequestUriUsingCookedPath", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn BuildRequestUriUsingRawPath_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -199,12 +210,14 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("BuildRequestUriUsingRawPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildRequestUriUsingRawPath", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildRequestUriUsingRawPath", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -214,7 +227,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                 crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
@@ -222,12 +235,14 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("BuildRequestUriUsingRawPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildRequestUriUsingRawPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildRequestUriUsingRawPath", 1usize
                 )
             });
         let __cordl_ret: crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult = unsafe {
-            method.invoke_unchecked(self, (encoding))
+            method.invoke_unchecked(self, (encoding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -235,7 +250,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         &mut self,
         encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                 bool,
@@ -243,11 +258,13 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("EmptyDecodeAndAppendRawOctetsList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EmptyDecodeAndAppendRawOctetsList", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "EmptyDecodeAndAppendRawOctetsList", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (encoding)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (encoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEncoding(
@@ -255,7 +272,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Net::HttpListenerRequestUriBuilder_EncodingType),
                 quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -263,12 +280,13 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("GetEncoding")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEncoding", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEncoding", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = unsafe {
-            method.invoke_unchecked((), (_cordl_type))
+            method.invoke_unchecked((), (_cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -279,7 +297,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IEnumerable_1<u8>,
@@ -289,13 +307,14 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("GetOctetsAsString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOctetsAsString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOctetsAsString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (octets)) };
+        > = unsafe { method.invoke_unchecked((), (octets))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPath(
@@ -303,7 +322,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -311,13 +330,14 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("GetPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPath", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (uriString)) };
+        > = unsafe { method.invoke_unchecked((), (uriString))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRequestUri(
@@ -327,7 +347,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -341,8 +361,9 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("GetRequestUri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRequestUri", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRequestUri", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = unsafe {
@@ -356,7 +377,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                         cookedUriPath,
                         cookedUriQuery,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -370,7 +391,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -388,12 +409,13 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("LogWarning")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogWarning", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "LogWarning", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (methodName, message, args))
+            method.invoke_unchecked(self, (methodName, message, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -419,7 +441,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                 crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
@@ -427,12 +449,13 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >("ParseRawPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseRawPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseRawPath", 1usize
                 )
             });
         let __cordl_ret: crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult = unsafe {
-            method.invoke_unchecked(self, (encoding))
+            method.invoke_unchecked(self, (encoding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -444,7 +467,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::HttpListenerRequestUriBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -458,8 +481,9 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::HttpListenerRequestUriBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -473,7 +497,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                         cookedUriPath,
                         cookedUriQuery,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

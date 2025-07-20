@@ -48,7 +48,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         n: i32,
         digits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -60,12 +60,14 @@ impl crate::System::Globalization::TimeSpanFormat {
             >("AppendNonNegativeInt32")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendNonNegativeInt32", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendNonNegativeInt32",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (sb, n, digits))
+            method.invoke_unchecked((), (sb, n, digits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +78,7 @@ impl crate::System::Globalization::TimeSpanFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::TimeSpan,
@@ -88,13 +90,14 @@ impl crate::System::Globalization::TimeSpanFormat {
             >("Format")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Format", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat as
+                    quest_hook::libil2cpp::Type > ::class(), "Format", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value, format, formatProvider)) };
+        > = unsafe { method.invoke_unchecked((), (value, format, formatProvider))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatCustomized(
@@ -107,7 +110,7 @@ impl crate::System::Globalization::TimeSpanFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::TimeSpan,
@@ -122,12 +125,13 @@ impl crate::System::Globalization::TimeSpanFormat {
             >("FormatCustomized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatCustomized", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatCustomized", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
-            method.invoke_unchecked((), (value, format, dtfi, result))
+            method.invoke_unchecked((), (value, format, dtfi, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -139,7 +143,7 @@ impl crate::System::Globalization::TimeSpanFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::TimeSpan,
@@ -152,12 +156,13 @@ impl crate::System::Globalization::TimeSpanFormat {
             >("FormatStandard")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatStandard", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatStandard", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
-            method.invoke_unchecked((), (value, isInvariant, format, pattern))
+            method.invoke_unchecked((), (value, isInvariant, format, pattern))?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +173,7 @@ impl crate::System::Globalization::TimeSpanFormat {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::TimeSpan,
@@ -180,12 +185,13 @@ impl crate::System::Globalization::TimeSpanFormat {
             >("FormatToBuilder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatToBuilder", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatToBuilder", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
-            method.invoke_unchecked((), (value, format, formatProvider))
+            method.invoke_unchecked((), (value, format, formatProvider))?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +202,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         format: crate::System::ReadOnlySpan_1<char>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::TimeSpan,
@@ -210,8 +216,9 @@ impl crate::System::Globalization::TimeSpanFormat {
             >("TryFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryFormat", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat as
+                    quest_hook::libil2cpp::Type > ::class(), "TryFormat", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -219,7 +226,7 @@ impl crate::System::Globalization::TimeSpanFormat {
                 .invoke_unchecked(
                     (),
                     (value, destination, charsWritten, format, formatProvider),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +358,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         format: crate::System::ReadOnlySpan_1<char>,
         useInvariantFieldLengths: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ReadOnlySpan_1<char>, bool),
                 quest_hook::libil2cpp::Void,
@@ -359,12 +366,13 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("Init")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Init", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "Init", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (format, useInvariantFieldLengths))
+            method.invoke_unchecked(self, (format, useInvariantFieldLengths))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,7 +381,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 crate::System::Globalization::TimeSpanFormat_FormatLiterals,
@@ -381,12 +389,13 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("InitInvariant")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitInvariant", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "InitInvariant", 1usize
                 )
             });
         let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = unsafe {
-            method.invoke_unchecked((), (isNegative))
+            method.invoke_unchecked((), (isNegative))?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +404,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -403,13 +412,14 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("get_DayHourSep")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DayHourSep", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DayHourSep", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_End(
@@ -417,7 +427,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -425,13 +435,14 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("get_End")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_End", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "get_End", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_HourMinuteSep(
@@ -439,7 +450,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -447,13 +458,14 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("get_HourMinuteSep")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_HourMinuteSep", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "get_HourMinuteSep", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_MinuteSecondSep(
@@ -461,7 +473,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -469,13 +481,15 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("get_MinuteSecondSep")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_MinuteSecondSep", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "get_MinuteSecondSep",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_SecondFractionSep(
@@ -483,7 +497,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -491,13 +505,15 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("get_SecondFractionSep")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_SecondFractionSep", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "get_SecondFractionSep",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Start(
@@ -505,7 +521,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Globalization::TimeSpanFormat_FormatLiterals as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -513,13 +529,14 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             >("get_Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Start", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Globalization::TimeSpanFormat_FormatLiterals as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Start", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

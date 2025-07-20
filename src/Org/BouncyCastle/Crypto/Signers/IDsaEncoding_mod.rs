@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -69,15 +69,16 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
             >("Decode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Signers::IDsaEncoding as
+                    quest_hook::libil2cpp::Type > ::class(), "Decode", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
-        > = unsafe { method.invoke_unchecked(self, (n, encoding)) };
+        > = unsafe { method.invoke_unchecked(self, (n, encoding))? };
         Ok(__cordl_ret.into())
     }
     pub fn Encode(
@@ -88,7 +89,7 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -104,13 +105,14 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IDsaEncoding {
             >("Encode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Signers::IDsaEncoding as
+                    quest_hook::libil2cpp::Type > ::class(), "Encode", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (n, r, s)) };
+        > = unsafe { method.invoke_unchecked(self, (n, r, s))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

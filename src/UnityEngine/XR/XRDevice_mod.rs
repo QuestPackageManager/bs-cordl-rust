@@ -42,7 +42,7 @@ impl crate::UnityEngine::XR::XRDevice {
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         disabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRDevice as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>, bool),
                 quest_hook::libil2cpp::Void,
@@ -50,19 +50,20 @@ impl crate::UnityEngine::XR::XRDevice {
             >("DisableAutoXRCameraTracking")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DisableAutoXRCameraTracking", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRDevice as quest_hook::libil2cpp::Type >
+                    ::class(), "DisableAutoXRCameraTracking", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (camera, disabled))
+            method.invoke_unchecked((), (camera, disabled))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeDeviceLoaded(
         loadedDeviceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRDevice as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -70,19 +71,20 @@ impl crate::UnityEngine::XR::XRDevice {
             >("InvokeDeviceLoaded")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeDeviceLoaded", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRDevice as quest_hook::libil2cpp::Type >
+                    ::class(), "InvokeDeviceLoaded", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (loadedDeviceName))
+            method.invoke_unchecked((), (loadedDeviceName))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SetTrackingSpaceType(
         trackingSpaceType: crate::UnityEngine::XR::TrackingSpaceType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::XR::XRDevice as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::XR::TrackingSpaceType),
                 bool,
@@ -90,12 +92,13 @@ impl crate::UnityEngine::XR::XRDevice {
             >("SetTrackingSpaceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTrackingSpaceType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::XR::XRDevice as quest_hook::libil2cpp::Type >
+                    ::class(), "SetTrackingSpaceType", 1usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (trackingSpaceType))
+            method.invoke_unchecked((), (trackingSpaceType))?
         };
         Ok(__cordl_ret.into())
     }

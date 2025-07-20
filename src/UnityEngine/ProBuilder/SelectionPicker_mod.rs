@@ -63,7 +63,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -94,8 +94,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >("PickEdgesInRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickEdgesInRect", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPicker as
+                    quest_hook::libil2cpp::Type > ::class(), "PickEdgesInRect", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -110,7 +111,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))
+            method
+                .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +125,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -137,13 +139,14 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >("PickFace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickFace", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPicker as
+                    quest_hook::libil2cpp::Type > ::class(), "PickFace", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (camera, mousePosition, pickable)) };
+        > = unsafe { method.invoke_unchecked((), (camera, mousePosition, pickable))? };
         Ok(__cordl_ret.into())
     }
     pub fn PickFacesInRect(
@@ -170,7 +173,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -203,8 +206,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >("PickFacesInRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickFacesInRect", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPicker as
+                    quest_hook::libil2cpp::Type > ::class(), "PickFacesInRect", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -219,7 +223,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))
+            method
+                .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +250,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPicker as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -274,8 +279,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >("PickVerticesInRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickVerticesInRect", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPicker as
+                    quest_hook::libil2cpp::Type > ::class(), "PickVerticesInRect", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -288,7 +294,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                 >,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))
+            method
+                .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?
         };
         Ok(__cordl_ret.into())
     }

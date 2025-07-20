@@ -161,7 +161,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -169,12 +175,15 @@ impl<
             >("ClearBufferedStates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearBufferedStates", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "ClearBufferedStates",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -198,7 +207,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -212,13 +227,16 @@ impl<
             >("GetDisconnectedSyncState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDisconnectedSyncState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDisconnectedSyncState",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
-        > = unsafe { method.invoke_unchecked(self, (i)) };
+        > = unsafe { method.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSyncState(
@@ -241,7 +259,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -255,13 +279,15 @@ impl<
             >("GetSyncState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSyncState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSyncState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
-        > = unsafe { method.invoke_unchecked(self, (i)) };
+        > = unsafe { method.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSyncStateForPlayer(
@@ -284,7 +310,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
                 quest_hook::libil2cpp::Gc<
@@ -298,13 +330,16 @@ impl<
             >("GetSyncStateForPlayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSyncStateForPlayer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSyncStateForPlayer",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
-        > = unsafe { method.invoke_unchecked(self, (player)) };
+        > = unsafe { method.invoke_unchecked(self, (player))? };
         Ok(__cordl_ret.into())
     }
     pub fn HandlePlayerConnected(
@@ -323,7 +358,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
                 quest_hook::libil2cpp::Void,
@@ -331,12 +372,15 @@ impl<
             >("HandlePlayerConnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlayerConnected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "HandlePlayerConnected",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (player))
+            method.invoke_unchecked(self, (player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -356,7 +400,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
                 quest_hook::libil2cpp::Void,
@@ -364,12 +414,15 @@ impl<
             >("HandlePlayerDisconnected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandlePlayerDisconnected", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "HandlePlayerDisconnected",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (player))
+            method.invoke_unchecked(self, (player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -390,7 +443,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     TDeltaSerializable,
@@ -401,12 +460,15 @@ impl<
             >("HandleSyncDeltaPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleSyncDeltaPacket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleSyncDeltaPacket",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, player))
+            method.invoke_unchecked(self, (packet, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -427,7 +489,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     TSerializable,
@@ -438,12 +506,14 @@ impl<
             >("HandleSyncPacket")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleSyncPacket", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "HandleSyncPacket", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (packet, player))
+            method.invoke_unchecked(self, (packet, player))?
         };
         Ok(__cordl_ret.into())
     }
@@ -467,7 +537,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (TState, i64, TState, i64, i64),
                 TState,
@@ -475,12 +551,14 @@ impl<
             >("Interpolate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Interpolate", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "Interpolate", 5usize
                 )
             });
         let __cordl_ret: TState = unsafe {
-            method.invoke_unchecked(self, (a, timeA, b, timeB, _cordl_time))
+            method.invoke_unchecked(self, (a, timeA, b, timeB, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,16 +577,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LateUpdate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "LateUpdate", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -546,16 +632,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OnDestroy", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "OnDestroy", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -577,16 +671,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(TState, TState, f32), TState, 3usize>("Smooth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Smooth", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "Smooth", 3usize
                 )
             });
         let __cordl_ret: TState = unsafe {
-            method.invoke_unchecked(self, (a, b, smoooth))
+            method.invoke_unchecked(self, (a, b, smoooth))?
         };
         Ok(__cordl_ret.into())
     }
@@ -603,16 +705,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Start", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "Start", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -631,7 +741,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -639,12 +755,15 @@ impl<
             >("TryCreateLocalState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryCreateLocalState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "TryCreateLocalState",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -661,16 +780,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -687,15 +814,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_connectedPlayerCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_connectedPlayerCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_connectedPlayerCount",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deltaMessageType(
@@ -715,7 +851,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
@@ -723,12 +865,15 @@ impl<
             >("get_deltaMessageType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deltaMessageType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_deltaMessageType",
+                    0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -751,7 +896,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -761,13 +912,16 @@ impl<
             >("get_deltaSerializablePool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deltaSerializablePool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_deltaSerializablePool",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IPacketPool_1<TDeltaSerializable>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deltaUpdateFrequencyMs(&mut self) -> quest_hook::libil2cpp::Result<i64>
@@ -783,15 +937,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_deltaUpdateFrequencyMs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_deltaUpdateFrequencyMs", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_deltaUpdateFrequencyMs", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_disconnectedPlayerCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
@@ -807,15 +970,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_disconnectedPlayerCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_disconnectedPlayerCount", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_disconnectedPlayerCount", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_fullStateUpdateFrequencyMs(
@@ -833,15 +1005,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_fullStateUpdateFrequencyMs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_fullStateUpdateFrequencyMs", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_fullStateUpdateFrequencyMs", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_localBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
@@ -857,15 +1038,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_localBufferSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_localBufferSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_localBufferSize",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_localState(
@@ -891,7 +1081,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -905,8 +1101,10 @@ impl<
             >("get_localState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_localState", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_localState", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -915,7 +1113,7 @@ impl<
                 TType,
                 TState,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_messageType(
@@ -935,7 +1133,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
@@ -943,12 +1147,14 @@ impl<
             >("get_messageType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_messageType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_messageType", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -969,7 +1175,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -979,13 +1191,16 @@ impl<
             >("get_multiplayerSessionManager")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_multiplayerSessionManager", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_multiplayerSessionManager", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IMultiplayerSessionManager,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_remoteBufferSize(&mut self) -> quest_hook::libil2cpp::Result<i32>
@@ -1001,15 +1216,24 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_remoteBufferSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_remoteBufferSize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_remoteBufferSize",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_serializablePool(
@@ -1029,7 +1253,13 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -1039,13 +1269,16 @@ impl<
             >("get_serializablePool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_serializablePool", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_serializablePool",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IPacketPool_1<TSerializable>,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>
@@ -1061,15 +1294,23 @@ impl<
         TDeltaSerializable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+            TStateTable,
+            TType,
+            TState,
+            TSerializable,
+            TDeltaSerializable,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i64, 0usize>("get_syncTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_syncTime", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MultiplayerSyncStateManager_5 < TStateTable,
+                    TType, TState, TSerializable, TDeltaSerializable > as
+                    quest_hook::libil2cpp::Type > ::class(), "get_syncTime", 0usize
                 )
             });
-        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

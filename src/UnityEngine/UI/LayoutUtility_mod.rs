@@ -41,7 +41,7 @@ impl crate::UnityEngine::UI::LayoutUtility {
     pub fn GetFlexibleHeight(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                 f32,
@@ -49,18 +49,19 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetFlexibleHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFlexibleHeight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetFlexibleHeight", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFlexibleSize(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         axis: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>, i32),
                 f32,
@@ -68,17 +69,18 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetFlexibleSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFlexibleSize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetFlexibleSize", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect, axis)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect, axis))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFlexibleWidth(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                 f32,
@@ -86,11 +88,12 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetFlexibleWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFlexibleWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetFlexibleWidth", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLayoutProperty_ByRefMut1(
@@ -106,7 +109,7 @@ impl crate::UnityEngine::UI::LayoutUtility {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -128,12 +131,13 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetLayoutProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLayoutProperty", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLayoutProperty", 4usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (rect, property, defaultValue, source))
+            method.invoke_unchecked((), (rect, property, defaultValue, source))?
         };
         Ok(__cordl_ret.into())
     }
@@ -147,7 +151,7 @@ impl crate::UnityEngine::UI::LayoutUtility {
         >,
         defaultValue: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -166,19 +170,20 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetLayoutProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLayoutProperty", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetLayoutProperty", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (rect, property, defaultValue))
+            method.invoke_unchecked((), (rect, property, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinHeight(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                 f32,
@@ -186,18 +191,19 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetMinHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMinHeight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMinHeight", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinSize(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         axis: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>, i32),
                 f32,
@@ -205,17 +211,18 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetMinSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMinSize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMinSize", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect, axis)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect, axis))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinWidth(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                 f32,
@@ -223,17 +230,18 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetMinWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMinWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMinWidth", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreferredHeight(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                 f32,
@@ -241,18 +249,19 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetPreferredHeight")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreferredHeight", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetPreferredHeight", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreferredSize(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         axis: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>, i32),
                 f32,
@@ -260,17 +269,18 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetPreferredSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreferredSize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetPreferredSize", 2usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect, axis)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect, axis))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreferredWidth(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                 f32,
@@ -278,11 +288,12 @@ impl crate::UnityEngine::UI::LayoutUtility {
             >("GetPreferredWidth")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPreferredWidth", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UI::LayoutUtility as quest_hook::libil2cpp::Type
+                    > ::class(), "GetPreferredWidth", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (rect))? };
         Ok(__cordl_ret.into())
     }
 }

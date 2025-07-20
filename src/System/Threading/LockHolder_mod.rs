@@ -99,23 +99,24 @@ impl crate::System::Threading::LockHolder {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LockHolder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Dispose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LockHolder as quest_hook::libil2cpp::Type
+                    > ::class(), "Dispose", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Hold(
         l: quest_hook::libil2cpp::Gc<crate::System::Threading::Lock>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::LockHolder> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Threading::LockHolder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Threading::Lock>),
                 crate::System::Threading::LockHolder,
@@ -123,12 +124,13 @@ impl crate::System::Threading::LockHolder {
             >("Hold")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Hold", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Threading::LockHolder as quest_hook::libil2cpp::Type
+                    > ::class(), "Hold", 1usize
                 )
             });
         let __cordl_ret: crate::System::Threading::LockHolder = unsafe {
-            method.invoke_unchecked((), (l))
+            method.invoke_unchecked((), (l))?
         };
         Ok(__cordl_ret.into())
     }

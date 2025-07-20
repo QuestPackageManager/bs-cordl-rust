@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
         value1: crate::UnityEngine::Vector3,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FixedUpdateVector3SmoothValue as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                 crate::UnityEngine::Vector3,
@@ -57,12 +57,13 @@ impl crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
             >("Interpolate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Interpolate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FixedUpdateVector3SmoothValue as
+                    quest_hook::libil2cpp::Type > ::class(), "Interpolate", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked(self, (value0, value1, t))
+            method.invoke_unchecked(self, (value0, value1, t))?
         };
         Ok(__cordl_ret.into())
     }
@@ -79,16 +80,17 @@ impl crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
         &mut self,
         smooth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FixedUpdateVector3SmoothValue as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FixedUpdateVector3SmoothValue as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (smooth))
+            method.invoke_unchecked(self, (smooth))?
         };
         Ok(__cordl_ret.into())
     }

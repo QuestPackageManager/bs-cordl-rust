@@ -47,7 +47,7 @@ impl crate::System::Dynamic::IDynamicMetaObjectProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Dynamic::IDynamicMetaObjectProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Linq::Expressions::Expression,
@@ -57,13 +57,14 @@ impl crate::System::Dynamic::IDynamicMetaObjectProvider {
             >("GetMetaObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMetaObject", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Dynamic::IDynamicMetaObjectProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMetaObject", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = unsafe { method.invoke_unchecked(self, (parameter)) };
+        > = unsafe { method.invoke_unchecked(self, (parameter))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

@@ -50,7 +50,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -68,13 +68,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
             >("GetBestQuadConnection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetBestQuadConnection", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::QuadUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetBestQuadConnection",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (wing, connections)) };
+        > = unsafe { method.invoke_unchecked((), (wing, connections))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetQuadScore(
@@ -83,7 +85,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
         right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         normalThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -102,12 +104,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
             >("GetQuadScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetQuadScore", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::QuadUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetQuadScore", 4usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (mesh, left, right, normalThreshold))
+            method.invoke_unchecked((), (mesh, left, right, normalThreshold))?
         };
         Ok(__cordl_ret.into())
     }
@@ -126,7 +129,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -150,15 +153,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
             >("ToQuads")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToQuads", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::QuadUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ToQuads", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = unsafe { method.invoke_unchecked((), (mesh, faces, smoothing)) };
+        > = unsafe { method.invoke_unchecked((), (mesh, faces, smoothing))? };
         Ok(__cordl_ret.into())
     }
 }

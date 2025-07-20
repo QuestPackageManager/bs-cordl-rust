@@ -47,7 +47,7 @@ impl crate::System::DomainNameHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -61,8 +61,9 @@ impl crate::System::DomainNameHelper {
             >("IdnEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IdnEquivalent", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IdnEquivalent", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -72,7 +73,7 @@ impl crate::System::DomainNameHelper {
                 .invoke_unchecked(
                     (),
                     (hostname, start, end, allAscii, atLeastOneValidIdn),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -87,7 +88,7 @@ impl crate::System::DomainNameHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -103,15 +104,19 @@ impl crate::System::DomainNameHelper {
             >("IdnEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IdnEquivalent", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IdnEquivalent", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
             method
-                .invoke_unchecked((), (hostname, start, end, allAscii, bidiStrippedHost))
+                .invoke_unchecked(
+                    (),
+                    (hostname, start, end, allAscii, bidiStrippedHost),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -119,7 +124,7 @@ impl crate::System::DomainNameHelper {
         character: char,
         notCanonical: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (char, quest_hook::libil2cpp::ByRefMut<bool>),
                 bool,
@@ -127,12 +132,13 @@ impl crate::System::DomainNameHelper {
             >("IsASCIILetterOrDigit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsASCIILetterOrDigit", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsASCIILetterOrDigit", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (character, notCanonical))
+            method.invoke_unchecked((), (character, notCanonical))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +146,7 @@ impl crate::System::DomainNameHelper {
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
                 bool,
@@ -148,18 +154,19 @@ impl crate::System::DomainNameHelper {
             >("IsIdnAce")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsIdnAce", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsIdnAce", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input, index)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsIdnAce_Il2CppString0(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 bool,
@@ -167,11 +174,12 @@ impl crate::System::DomainNameHelper {
             >("IsIdnAce")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsIdnAce", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsIdnAce", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input, index)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (input, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid(
@@ -181,7 +189,7 @@ impl crate::System::DomainNameHelper {
         notCanonical: quest_hook::libil2cpp::ByRefMut<bool>,
         notImplicitFile: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -195,8 +203,9 @@ impl crate::System::DomainNameHelper {
             >("IsValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValid", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsValid", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -204,7 +213,7 @@ impl crate::System::DomainNameHelper {
                 .invoke_unchecked(
                     (),
                     (name, pos, returnedEnd, notCanonical, notImplicitFile),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -215,7 +224,7 @@ impl crate::System::DomainNameHelper {
         notCanonical: quest_hook::libil2cpp::ByRefMut<bool>,
         notImplicitFile: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -229,8 +238,9 @@ impl crate::System::DomainNameHelper {
             >("IsValidByIri")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidByIri", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsValidByIri", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -238,7 +248,7 @@ impl crate::System::DomainNameHelper {
                 .invoke_unchecked(
                     (),
                     (name, pos, returnedEnd, notCanonical, notImplicitFile),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,7 +256,7 @@ impl crate::System::DomainNameHelper {
         character: char,
         notCanonical: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (char, quest_hook::libil2cpp::ByRefMut<bool>),
                 bool,
@@ -254,12 +264,13 @@ impl crate::System::DomainNameHelper {
             >("IsValidDomainLabelCharacter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidDomainLabelCharacter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsValidDomainLabelCharacter", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (character, notCanonical))
+            method.invoke_unchecked((), (character, notCanonical))?
         };
         Ok(__cordl_ret.into())
     }
@@ -271,7 +282,7 @@ impl crate::System::DomainNameHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -284,13 +295,14 @@ impl crate::System::DomainNameHelper {
             >("ParseCanonicalName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseCanonicalName", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseCanonicalName", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (str, start, end, loopback)) };
+        > = unsafe { method.invoke_unchecked((), (str, start, end, loopback))? };
         Ok(__cordl_ret.into())
     }
     pub fn UnicodeEquivalent_Il2CppObject_i32_ByRefMut_ByRefMut1(
@@ -302,7 +314,7 @@ impl crate::System::DomainNameHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -316,8 +328,9 @@ impl crate::System::DomainNameHelper {
             >("UnicodeEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnicodeEquivalent", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "UnicodeEquivalent", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -327,7 +340,7 @@ impl crate::System::DomainNameHelper {
                 .invoke_unchecked(
                     (),
                     (hostname, start, end, allAscii, atLeastOneValidIdn),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -339,7 +352,7 @@ impl crate::System::DomainNameHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::DomainNameHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -352,13 +365,14 @@ impl crate::System::DomainNameHelper {
             >("UnicodeEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UnicodeEquivalent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::DomainNameHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "UnicodeEquivalent", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (idnHost, hostname, start, end)) };
+        > = unsafe { method.invoke_unchecked((), (idnHost, hostname, start, end))? };
         Ok(__cordl_ret.into())
     }
 }

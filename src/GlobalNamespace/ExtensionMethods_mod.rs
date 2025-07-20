@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         layerMask: crate::UnityEngine::LayerMask,
         layer: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::LayerMask, i32),
                 bool,
@@ -50,12 +50,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("ContainsLayer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ContainsLayer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "ContainsLayer", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (layerMask, layer))
+            method.invoke_unchecked((), (layerMask, layer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,7 +66,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -76,12 +77,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("CreateTexture2D")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTexture2D", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateTexture2D", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked((), (renderTexture, textureFormat))
+            method.invoke_unchecked((), (renderTexture, textureFormat))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +92,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -98,13 +100,14 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("GetPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPath", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (current)) };
+        > = unsafe { method.invoke_unchecked((), (current))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRange<T>(
@@ -120,7 +123,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -136,20 +139,21 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("GetRange")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRange", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRange", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { method.invoke_unchecked((), (list, index, count)) };
+        > = unsafe { method.invoke_unchecked((), (list, index, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDescendantOf(
         transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -160,12 +164,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("IsDescendantOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsDescendantOf", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "IsDescendantOf", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (transform, parent))
+            method.invoke_unchecked((), (transform, parent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -178,7 +183,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IReadOnlyList_1<T>,
@@ -188,18 +193,19 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("LastUnsafe")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LastUnsafe", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "LastUnsafe", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (list)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn Reflect(
         source: crate::UnityEngine::Quaternion,
         normal: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Quaternion, crate::UnityEngine::Vector3),
                 crate::UnityEngine::Quaternion,
@@ -207,12 +213,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("Reflect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reflect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "Reflect", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked((), (source, normal))
+            method.invoke_unchecked((), (source, normal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +227,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         vector: crate::UnityEngine::Vector2,
         rads: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector2, f32),
                 crate::UnityEngine::Vector2,
@@ -228,12 +235,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("Rotate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Rotate", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "Rotate", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (vector, rads))
+            method.invoke_unchecked((), (vector, rads))?
         };
         Ok(__cordl_ret.into())
     }
@@ -242,7 +250,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         pos: crate::UnityEngine::Vector3,
         rot: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -254,12 +262,14 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("SetLocalPositionAndRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetLocalPositionAndRotation", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetLocalPositionAndRotation", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tr, pos, rot))
+            method.invoke_unchecked((), (tr, pos, rot))?
         };
         Ok(__cordl_ret.into())
     }
@@ -267,7 +277,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
         seed: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>, u32),
                 quest_hook::libil2cpp::Void,
@@ -275,12 +285,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("SetSeed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSeed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSeed", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (particleSystem, seed))
+            method.invoke_unchecked((), (particleSystem, seed))?
         };
         Ok(__cordl_ret.into())
     }
@@ -294,7 +305,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
@@ -311,12 +322,14 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("StartUniqueCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartUniqueCoroutine", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "StartUniqueCoroutine",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine> = unsafe {
-            method.invoke_unchecked((), (m, func))
+            method.invoke_unchecked((), (m, func))?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,7 +349,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
@@ -355,12 +368,14 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("StartUniqueCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartUniqueCoroutine", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "StartUniqueCoroutine",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine> = unsafe {
-            method.invoke_unchecked((), (m, func, value))
+            method.invoke_unchecked((), (m, func, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -372,7 +387,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
@@ -389,12 +404,14 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("StopUniqueCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StopUniqueCoroutine", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "StopUniqueCoroutine",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (m, func))
+            method.invoke_unchecked((), (m, func))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +428,7 @@ impl crate::GlobalNamespace::ExtensionMethods {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ExtensionMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
@@ -429,12 +446,14 @@ impl crate::GlobalNamespace::ExtensionMethods {
             >("StopUniqueCoroutine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StopUniqueCoroutine", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ExtensionMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "StopUniqueCoroutine",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (m, func))
+            method.invoke_unchecked((), (m, func))?
         };
         Ok(__cordl_ret.into())
     }

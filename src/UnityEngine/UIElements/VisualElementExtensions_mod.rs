@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             crate::UnityEngine::UIElements::IManipulator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -60,12 +60,13 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             >("AddManipulator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddManipulator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AddManipulator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ele, manipulator))
+            method.invoke_unchecked((), (ele, manipulator))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +75,7 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         point: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -90,12 +91,14 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             >("ChangeCoordinatesTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ChangeCoordinatesTo", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ChangeCoordinatesTo",
+                    3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (src, dest, point))
+            method.invoke_unchecked((), (src, dest, point))?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +106,7 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
         ele: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         p: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -116,12 +119,13 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             >("LocalToWorld")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocalToWorld", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "LocalToWorld", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (ele, p))
+            method.invoke_unchecked((), (ele, p))?
         };
         Ok(__cordl_ret.into())
     }
@@ -131,7 +135,7 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             crate::UnityEngine::UIElements::IManipulator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -146,19 +150,20 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             >("RemoveManipulator")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemoveManipulator", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "RemoveManipulator", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ele, manipulator))
+            method.invoke_unchecked((), (ele, manipulator))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StretchToParentSize(
         elem: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::VisualElement,
@@ -168,12 +173,14 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             >("StretchToParentSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StretchToParentSize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "StretchToParentSize",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (elem))
+            method.invoke_unchecked((), (elem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -181,7 +188,7 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
         ele: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         r: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -194,12 +201,13 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             >("WorldToLocal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WorldToLocal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "WorldToLocal", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            method.invoke_unchecked((), (ele, r))
+            method.invoke_unchecked((), (ele, r))?
         };
         Ok(__cordl_ret.into())
     }
@@ -207,7 +215,7 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
         ele: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         p: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::VisualElementExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -220,12 +228,13 @@ impl crate::UnityEngine::UIElements::VisualElementExtensions {
             >("WorldToLocal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WorldToLocal", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::VisualElementExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "WorldToLocal", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (ele, p))
+            method.invoke_unchecked((), (ele, p))?
         };
         Ok(__cordl_ret.into())
     }

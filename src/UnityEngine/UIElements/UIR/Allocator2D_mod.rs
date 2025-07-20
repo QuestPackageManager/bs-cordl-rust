@@ -74,7 +74,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         minSize: crate::UnityEngine::Vector2Int,
         maxSize: crate::UnityEngine::Vector2Int,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -92,12 +92,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             >("BuildAreas")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAreas", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAreas", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (areas, minSize, maxSize))
+            method.invoke_unchecked((), (areas, minSize, maxSize))?
         };
         Ok(__cordl_ret.into())
     }
@@ -113,7 +114,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Gc<
@@ -127,8 +128,9 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             >("BuildRowArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildRowArray", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildRowArray", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -137,7 +139,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
                     crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (maxRowHeight, rowHeightBias)) };
+        > = unsafe { method.invoke_unchecked((), (maxRowHeight, rowHeightBias))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeMaxAllocSize(
@@ -150,7 +152,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         >,
         rowHeightBias: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -167,12 +169,14 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             >("ComputeMaxAllocSize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeMaxAllocSize", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeMaxAllocSize",
+                    2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2Int = unsafe {
-            method.invoke_unchecked((), (areas, rowHeightBias))
+            method.invoke_unchecked((), (areas, rowHeightBias))?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +184,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         &mut self,
         alloc2D: crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D),
                 quest_hook::libil2cpp::Void,
@@ -188,12 +192,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             >("Free")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Free", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D as
+                    quest_hook::libil2cpp::Type > ::class(), "Free", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (alloc2D))
+            method.invoke_unchecked(self, (alloc2D))?
         };
         Ok(__cordl_ret.into())
     }
@@ -216,7 +221,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -230,12 +235,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             >("TryAllocate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryAllocate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D as
+                    quest_hook::libil2cpp::Type > ::class(), "TryAllocate", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (width, height, alloc2D))
+            method.invoke_unchecked(self, (width, height, alloc2D))?
         };
         Ok(__cordl_ret.into())
     }
@@ -245,7 +251,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
         maxSize: crate::UnityEngine::Vector2Int,
         rowHeightBias: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::Vector2Int, crate::UnityEngine::Vector2Int, i32),
                 quest_hook::libil2cpp::Void,
@@ -253,12 +259,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (minSize, maxSize, rowHeightBias))
+            method.invoke_unchecked(self, (minSize, maxSize, rowHeightBias))?
         };
         Ok(__cordl_ret.into())
     }
@@ -389,7 +396,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -404,12 +411,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (row, alloc, width, height))
+            method.invoke_unchecked(self, (row, alloc, width, height))?
         };
         Ok(__cordl_ret.into())
     }
@@ -472,7 +480,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
         &mut self,
         rect: crate::UnityEngine::RectInt,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D_Area as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::RectInt),
                 quest_hook::libil2cpp::Void,
@@ -480,12 +488,13 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D_Area as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (rect))
+            method.invoke_unchecked(self, (rect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -559,7 +568,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     pub fn Create() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D_Row as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -569,13 +578,14 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D_Row as
+                    quest_hook::libil2cpp::Type > ::class(), "Create", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -590,7 +600,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
             crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D_Row as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
@@ -600,28 +610,30 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
             >("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D_Row as
+                    quest_hook::libil2cpp::Type > ::class(), "Reset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (row))
+            method.invoke_unchecked((), (row))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::Allocator2D_Row as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::Allocator2D_Row as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

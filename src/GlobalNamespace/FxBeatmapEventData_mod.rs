@@ -60,16 +60,17 @@ impl crate::GlobalNamespace::FxBeatmapEventData {
         groupId: i32,
         elementId: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventData as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32, i32), i32, 2usize>("SubtypeIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SubtypeIdentifier", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FxBeatmapEventData as
+                    quest_hook::libil2cpp::Type > ::class(), "SubtypeIdentifier", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (groupId, elementId))
+            method.invoke_unchecked((), (groupId, elementId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +81,7 @@ impl crate::GlobalNamespace::FxBeatmapEventData {
         elementId: i32,
         usePreviousEventValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::FxBeatmapEventData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, i32, i32, bool),
                 quest_hook::libil2cpp::Void,
@@ -88,8 +89,9 @@ impl crate::GlobalNamespace::FxBeatmapEventData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::FxBeatmapEventData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -97,7 +99,7 @@ impl crate::GlobalNamespace::FxBeatmapEventData {
                 .invoke_unchecked(
                     self,
                     (_cordl_time, groupId, elementId, usePreviousEventValue),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

@@ -47,7 +47,7 @@ impl crate::Zenject::ZenjectMoqExtensions {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectMoqExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Zenject::FactoryFromBinder_1<TContract>,
@@ -57,13 +57,14 @@ impl crate::Zenject::ZenjectMoqExtensions {
             >("FromMock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMock", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectMoqExtensions as quest_hook::libil2cpp::Type
+                    > ::class(), "FromMock", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (binder)) };
+        > = unsafe { method.invoke_unchecked((), (binder))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromMock_FromBinderGeneric_1_0<TContract>(
@@ -77,7 +78,7 @@ impl crate::Zenject::ZenjectMoqExtensions {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectMoqExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Zenject::FromBinderGeneric_1<TContract>,
@@ -89,13 +90,14 @@ impl crate::Zenject::ZenjectMoqExtensions {
             >("FromMock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMock", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectMoqExtensions as quest_hook::libil2cpp::Type
+                    > ::class(), "FromMock", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (binder)) };
+        > = unsafe { method.invoke_unchecked((), (binder))? };
         Ok(__cordl_ret.into())
     }
 }

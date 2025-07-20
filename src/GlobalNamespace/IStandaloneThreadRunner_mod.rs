@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::IStandaloneThreadRunner {
             crate::GlobalNamespace::IStandaloneThreadRunnable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IStandaloneThreadRunner as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::IStandaloneThreadRunnable,
@@ -55,12 +55,13 @@ impl crate::GlobalNamespace::IStandaloneThreadRunner {
             >("Run")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Run", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IStandaloneThreadRunner as
+                    quest_hook::libil2cpp::Type > ::class(), "Run", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (runnable))
+            method.invoke_unchecked(self, (runnable))?
         };
         Ok(__cordl_ret.into())
     }

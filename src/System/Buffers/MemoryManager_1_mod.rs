@@ -63,16 +63,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::MemoryManager_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::System::Span_1<T>, 0usize>("GetSpan")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSpan", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::MemoryManager_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSpan", 0usize
                 )
             });
         let __cordl_ret: crate::System::Span_1<T> = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,16 +87,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::MemoryManager_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), crate::System::Buffers::MemoryHandle, 1usize>("Pin")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Pin", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::MemoryManager_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "Pin", 1usize
                 )
             });
         let __cordl_ret: crate::System::Buffers::MemoryHandle = unsafe {
-            method.invoke_unchecked(self, (elementIndex))
+            method.invoke_unchecked(self, (elementIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +111,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::MemoryManager_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::System::ArraySegment_1<T>>),
                 bool,
@@ -113,11 +121,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
             >("TryGetArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TryGetArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::MemoryManager_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), "TryGetArray", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (segment)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (segment))? };
         Ok(__cordl_ret.into())
     }
 }

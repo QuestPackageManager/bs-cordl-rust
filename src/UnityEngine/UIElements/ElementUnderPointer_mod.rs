@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         >,
         contextType: crate::UnityEngine::UIElements::ContextType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -85,12 +85,14 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("CommitElementUnderPointers")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CommitElementUnderPointers", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CommitElementUnderPointers", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dispatcher, contextType))
+            method.invoke_unchecked(self, (dispatcher, contextType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -100,7 +102,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             crate::UnityEngine::UIElements::EventBase,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>),
                 crate::UnityEngine::Vector2,
@@ -108,12 +110,14 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("GetEventPointerPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEventPointerPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEventPointerPosition",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked(self, (triggerEvent))
+            method.invoke_unchecked(self, (triggerEvent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,7 +129,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -137,14 +141,16 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("GetTopElementUnderPointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTopElementUnderPointer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTopElementUnderPointer",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
         > = unsafe {
-            method.invoke_unchecked(self, (pointerId, pickPosition, isTemporary))
+            method.invoke_unchecked(self, (pointerId, pickPosition, isTemporary))?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +160,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -162,13 +168,15 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("GetTopElementUnderPointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTopElementUnderPointer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetTopElementUnderPointer",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
-        > = unsafe { method.invoke_unchecked(self, (pointerId)) };
+        > = unsafe { method.invoke_unchecked(self, (pointerId))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -188,7 +196,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             crate::UnityEngine::UIElements::EventBase,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -202,8 +210,10 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("SetElementUnderPointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetElementUnderPointer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(), "SetElementUnderPointer",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -211,7 +221,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                 .invoke_unchecked(
                     self,
                     (newElementUnderPointer, pointerId, triggerEvent),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -226,7 +236,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         >,
         temporary: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -241,8 +251,10 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("SetElementUnderPointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetElementUnderPointer", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(), "SetElementUnderPointer",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -250,7 +262,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                 .invoke_unchecked(
                     self,
                     (newElementUnderPointer, pointerId, triggerEvent, temporary),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -262,7 +274,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         pointerId: i32,
         pointerPos: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -276,13 +288,15 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("SetElementUnderPointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetElementUnderPointer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(), "SetElementUnderPointer",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (newElementUnderPointer, pointerId, pointerPos))
+                .invoke_unchecked(self, (newElementUnderPointer, pointerId, pointerPos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -296,7 +310,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             crate::UnityEngine::UIElements::EventBase,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -310,8 +324,10 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
             >("SetTemporaryElementUnderPointer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTemporaryElementUnderPointer", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetTemporaryElementUnderPointer", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -319,23 +335,24 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                 .invoke_unchecked(
                     self,
                     (newElementUnderPointer, pointerId, triggerEvent),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::ElementUnderPointer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::ElementUnderPointer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

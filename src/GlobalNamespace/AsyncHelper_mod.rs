@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::AsyncHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AsyncHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<
@@ -61,13 +61,14 @@ impl crate::GlobalNamespace::AsyncHelper {
             >("AnyTaskTrueNonAlloc")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AnyTaskTrueNonAlloc", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AsyncHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "AnyTaskTrueNonAlloc", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { method.invoke_unchecked((), (tasks)) };
+        > = unsafe { method.invoke_unchecked((), (tasks))? };
         Ok(__cordl_ret.into())
     }
     pub fn RunSync_Func_1_0(
@@ -77,7 +78,7 @@ impl crate::GlobalNamespace::AsyncHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AsyncHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Func_1<
@@ -89,12 +90,13 @@ impl crate::GlobalNamespace::AsyncHelper {
             >("RunSync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RunSync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AsyncHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "RunSync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (asyncTask))
+            method.invoke_unchecked((), (asyncTask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -109,7 +111,7 @@ impl crate::GlobalNamespace::AsyncHelper {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::AsyncHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Func_1<
@@ -123,11 +125,12 @@ impl crate::GlobalNamespace::AsyncHelper {
             >("RunSync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RunSync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::AsyncHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "RunSync", 1usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (asyncTask)) };
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (asyncTask))? };
         Ok(__cordl_ret.into())
     }
 }

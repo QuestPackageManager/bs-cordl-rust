@@ -59,16 +59,17 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +78,7 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType,
@@ -85,12 +86,14 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
             >("get_dataTransformation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_dataTransformation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_dataTransformation",
+                    0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -99,7 +102,7 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType,
@@ -107,37 +110,40 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
             >("get_markerType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_markerType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_markerType", 0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_needsFiltering(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_needsFiltering")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_needsFiltering", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_needsFiltering", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_visible(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_visible")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_visible", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::TrackDefinitions::EventTrackDefinitionSO as
+                    quest_hook::libil2cpp::Type > ::class(), "get_visible", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

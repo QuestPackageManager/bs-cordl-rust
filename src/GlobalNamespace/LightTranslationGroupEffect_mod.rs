@@ -70,16 +70,17 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Cleanup", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(), "Cleanup", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +91,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         distributionLimits: crate::UnityEngine::Vector2,
         mirrored: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     f32,
@@ -104,8 +105,9 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             >("ComputeTranslation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeTranslation", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(), "ComputeTranslation", 5usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
@@ -119,7 +121,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
                         distributionLimits,
                         mirrored,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +140,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
@@ -157,8 +159,10 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             >("GetTranslationEventHandler")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetTranslationEventHandler", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetTranslationEventHandler", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -172,7 +176,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
                 .invoke_unchecked(
                     self,
                     (translationTween, translationLimits, distributionLimits, mirrored),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -200,16 +204,17 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         &mut self,
         _cordl__: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("SetTranslation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTranslation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTranslation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl__))
+            method.invoke_unchecked(self, (_cordl__))?
         };
         Ok(__cordl_ret.into())
     }
@@ -221,7 +226,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         endTime: f32,
         easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
@@ -236,12 +241,13 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             >("SetTweenData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTweenData", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTweenData", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (tween, from, to, startTime, endTime, easeType))
+            method.invoke_unchecked((), (tween, from, to, startTime, endTime, easeType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +263,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             crate::GlobalNamespace::BeatmapCallbacksController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationGroupEffect as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -273,8 +279,9 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationGroupEffect as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -282,7 +289,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
                 .invoke_unchecked(
                     self,
                     (initData, tweeningManager, beatmapCallbacksController),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -410,7 +417,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
         zTranslationLimits: crate::UnityEngine::Vector2,
         zDistributionLimits: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::LightTranslationGroupEffect_InitData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -433,8 +440,9 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 14usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::LightTranslationGroupEffect_InitData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 14usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -457,7 +465,7 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
                         zTranslationLimits,
                         zDistributionLimits,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

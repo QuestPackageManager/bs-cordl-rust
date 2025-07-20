@@ -48,7 +48,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         >,
         currentTimeMillis: i64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -62,12 +62,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
             >("ConstrainWaitMillis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConstrainWaitMillis", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), "ConstrainWaitMillis",
+                    3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (waitMillis, timeout, currentTimeMillis))
+            method.invoke_unchecked((), (waitMillis, timeout, currentTimeMillis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -76,7 +78,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::Timeout>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -86,13 +88,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
             >("ForWaitMillis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ForWaitMillis", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), "ForWaitMillis", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::Timeout,
-        > = unsafe { method.invoke_unchecked((), (waitMillis)) };
+        > = unsafe { method.invoke_unchecked((), (waitMillis))? };
         Ok(__cordl_ret.into())
     }
     pub fn ForWaitMillis_i64_1(
@@ -101,7 +104,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::Timeout>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i64),
                 quest_hook::libil2cpp::Gc<
@@ -111,13 +114,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
             >("ForWaitMillis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ForWaitMillis", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), "ForWaitMillis", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::Timeout,
-        > = unsafe { method.invoke_unchecked((), (waitMillis, currentTimeMillis)) };
+        > = unsafe { method.invoke_unchecked((), (waitMillis, currentTimeMillis))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetWaitMillis(
@@ -126,7 +130,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         >,
         currentTimeMillis: i64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -139,12 +143,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
             >("GetWaitMillis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetWaitMillis", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), "GetWaitMillis", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (timeout, currentTimeMillis))
+            method.invoke_unchecked((), (timeout, currentTimeMillis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +159,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         >,
         currentTimeMillis: i64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -167,12 +172,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
             >("HasExpired")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasExpired", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), "HasExpired", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (timeout, currentTimeMillis))
+            method.invoke_unchecked((), (timeout, currentTimeMillis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,16 +205,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         &mut self,
         currentTimeMillis: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64), i64, 1usize>("RemainingMillis")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemainingMillis", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), "RemainingMillis", 1usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked(self, (currentTimeMillis))
+            method.invoke_unchecked(self, (currentTimeMillis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -216,16 +223,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         &mut self,
         durationMillis: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (durationMillis))
+            method.invoke_unchecked(self, (durationMillis))?
         };
         Ok(__cordl_ret.into())
     }
@@ -234,16 +242,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
         durationMillis: i64,
         currentTimeMillis: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::Timeout as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64, i64), quest_hook::libil2cpp::Void, 2usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Crypto::Tls::Timeout as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (durationMillis, currentTimeMillis))
+            method.invoke_unchecked(self, (durationMillis, currentTimeMillis))?
         };
         Ok(__cordl_ret.into())
     }

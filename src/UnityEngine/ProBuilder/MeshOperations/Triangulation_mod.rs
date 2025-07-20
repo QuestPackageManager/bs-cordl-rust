@@ -49,7 +49,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Triangulation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -69,12 +69,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >("SortAndTriangulate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SortAndTriangulate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Triangulation as
+                    quest_hook::libil2cpp::Type > ::class(), "SortAndTriangulate", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (points, indexes, convex))
+            method.invoke_unchecked((), (points, indexes, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +91,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         unordered: bool,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Triangulation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -113,12 +114,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >("TriangulateVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriangulateVertices", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Triangulation as
+                    quest_hook::libil2cpp::Type > ::class(), "TriangulateVertices",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (vertices, triangles, unordered, convex))
+            method.invoke_unchecked((), (vertices, triangles, unordered, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +140,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Triangulation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -163,12 +166,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >("TriangulateVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriangulateVertices", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Triangulation as
+                    quest_hook::libil2cpp::Type > ::class(), "TriangulateVertices",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (vertices, triangles, holes))
+            method.invoke_unchecked((), (vertices, triangles, holes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +187,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         unordered: bool,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Triangulation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -201,12 +206,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >("TriangulateVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TriangulateVertices", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Triangulation as
+                    quest_hook::libil2cpp::Type > ::class(), "TriangulateVertices",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (vertices, triangles, unordered, convex))
+            method.invoke_unchecked((), (vertices, triangles, unordered, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -219,7 +226,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Triangulation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -239,12 +246,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >("Triangulate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Triangulate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Triangulation as
+                    quest_hook::libil2cpp::Type > ::class(), "Triangulate", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (points, indexes, convex))
+            method.invoke_unchecked((), (points, indexes, convex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -265,7 +273,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Triangulation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -293,12 +301,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >("Triangulate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Triangulate", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Triangulation as
+                    quest_hook::libil2cpp::Type > ::class(), "Triangulate", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (points, holes, indexes))
+            method.invoke_unchecked((), (points, holes, indexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -307,7 +316,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::Triangulation as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -317,13 +326,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >("get_triangulationContext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_triangulationContext", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::Triangulation as
+                    quest_hook::libil2cpp::Type > ::class(), "get_triangulationContext",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -42,7 +42,7 @@ impl crate::HMUI::RoundedCornersDirectionExtensions {
     pub fn GetFlipAndSymmetry(
         direction: crate::HMUI::RoundedCornersDirection,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HMUI::RoundedCornersDirectionExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::HMUI::RoundedCornersDirection),
                 crate::UnityEngine::Vector4,
@@ -50,12 +50,13 @@ impl crate::HMUI::RoundedCornersDirectionExtensions {
             >("GetFlipAndSymmetry")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetFlipAndSymmetry", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HMUI::RoundedCornersDirectionExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetFlipAndSymmetry", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
-            method.invoke_unchecked((), (direction))
+            method.invoke_unchecked((), (direction))?
         };
         Ok(__cordl_ret.into())
     }

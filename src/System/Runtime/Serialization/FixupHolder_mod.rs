@@ -59,7 +59,7 @@ impl crate::System::Runtime::Serialization::FixupHolder {
         fixupInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         fixupType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::FixupHolder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i64,
@@ -71,12 +71,13 @@ impl crate::System::Runtime::Serialization::FixupHolder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::FixupHolder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (id, fixupInfo, fixupType))
+            method.invoke_unchecked(self, (id, fixupInfo, fixupType))?
         };
         Ok(__cordl_ret.into())
     }

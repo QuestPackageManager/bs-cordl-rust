@@ -121,7 +121,7 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
         placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         placementStatus: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::MultiplayerPlacementErrorCode,
@@ -139,8 +139,9 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGNet::Core::GameLift::GetMultiplayerInstanceResponse as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -156,7 +157,7 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
                         placementId,
                         placementStatus,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

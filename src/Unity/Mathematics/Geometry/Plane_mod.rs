@@ -103,7 +103,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
     pub fn CheckPlaneIsNormalized(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Void,
@@ -111,12 +111,14 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("CheckPlaneIsNormalized")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CheckPlaneIsNormalized", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "CheckPlaneIsNormalized",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +126,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         unitNormal: crate::Unity::Mathematics::float3,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::float3, f32),
                 crate::Unity::Mathematics::Geometry::Plane,
@@ -132,12 +134,14 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("CreateFromUnitNormalAndDistance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateFromUnitNormalAndDistance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateFromUnitNormalAndDistance", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = unsafe {
-            method.invoke_unchecked((), (unitNormal, distance))
+            method.invoke_unchecked((), (unitNormal, distance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -145,7 +149,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         unitNormal: crate::Unity::Mathematics::float3,
         pointInPlane: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::float3, crate::Unity::Mathematics::float3),
                 crate::Unity::Mathematics::Geometry::Plane,
@@ -153,19 +157,21 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("CreateFromUnitNormalAndPointInPlane")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateFromUnitNormalAndPointInPlane", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CreateFromUnitNormalAndPointInPlane", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = unsafe {
-            method.invoke_unchecked((), (unitNormal, pointInPlane))
+            method.invoke_unchecked((), (unitNormal, pointInPlane))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Normalize_Plane0(
         plane: crate::Unity::Mathematics::Geometry::Plane,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::Geometry::Plane),
                 crate::Unity::Mathematics::Geometry::Plane,
@@ -173,19 +179,20 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("Normalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Normalize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "Normalize", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = unsafe {
-            method.invoke_unchecked((), (plane))
+            method.invoke_unchecked((), (plane))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Normalize_float4_1(
         planeCoefficients: crate::Unity::Mathematics::float4,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::float4),
                 crate::Unity::Mathematics::float4,
@@ -193,12 +200,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("Normalize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Normalize", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "Normalize", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::float4 = unsafe {
-            method.invoke_unchecked((), (planeCoefficients))
+            method.invoke_unchecked((), (planeCoefficients))?
         };
         Ok(__cordl_ret.into())
     }
@@ -206,7 +214,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         &mut self,
         point: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::float3),
                 crate::Unity::Mathematics::float3,
@@ -214,12 +222,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("Projection")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Projection", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "Projection", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::float3 = unsafe {
-            method.invoke_unchecked(self, (point))
+            method.invoke_unchecked(self, (point))?
         };
         Ok(__cordl_ret.into())
     }
@@ -227,7 +236,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         &mut self,
         point: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::float3),
                 f32,
@@ -235,11 +244,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("SignedDistanceToPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SignedDistanceToPoint", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "SignedDistanceToPoint",
+                    1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (point)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (point))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_f32_f32_0(
@@ -249,7 +260,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         coefficientC: f32,
         coefficientD: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, f32, f32, f32),
                 quest_hook::libil2cpp::Void,
@@ -257,8 +268,9 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -266,7 +278,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                 .invoke_unchecked(
                     self,
                     (coefficientA, coefficientB, coefficientC, coefficientD),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +287,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         normal: crate::Unity::Mathematics::float3,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::float3, f32),
                 quest_hook::libil2cpp::Void,
@@ -283,12 +295,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (normal, distance))
+            method.invoke_unchecked(self, (normal, distance))?
         };
         Ok(__cordl_ret.into())
     }
@@ -297,7 +310,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         normal: crate::Unity::Mathematics::float3,
         pointInPlane: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::float3, crate::Unity::Mathematics::float3),
                 quest_hook::libil2cpp::Void,
@@ -305,12 +318,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (normal, pointInPlane))
+            method.invoke_unchecked(self, (normal, pointInPlane))?
         };
         Ok(__cordl_ret.into())
     }
@@ -320,7 +334,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         vector2InPlane: crate::Unity::Mathematics::float3,
         pointInPlane: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::Unity::Mathematics::float3,
@@ -332,31 +346,34 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (vector1InPlane, vector2InPlane, pointInPlane))
+            method
+                .invoke_unchecked(self, (vector1InPlane, vector2InPlane, pointInPlane))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), f32, 0usize>("get_Distance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Distance", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Distance", 0usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Flipped(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::Unity::Mathematics::Geometry::Plane,
@@ -364,35 +381,37 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("get_Flipped")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Flipped", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Flipped", 0usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Normal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::Unity::Mathematics::float3, 0usize>("get_Normal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Normal", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Normal", 0usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::float3 = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         plane: crate::Unity::Mathematics::Geometry::Plane,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::Unity::Mathematics::Geometry::Plane),
                 crate::Unity::Mathematics::float4,
@@ -400,12 +419,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("op_Implicit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "op_Implicit", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "op_Implicit", 1usize
                 )
             });
         let __cordl_ret: crate::Unity::Mathematics::float4 = unsafe {
-            method.invoke_unchecked((), (plane))
+            method.invoke_unchecked((), (plane))?
         };
         Ok(__cordl_ret.into())
     }
@@ -413,16 +433,17 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_Distance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Distance", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Distance", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -430,7 +451,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         &mut self,
         value: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Unity::Mathematics::Geometry::Plane as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::Unity::Mathematics::float3),
                 quest_hook::libil2cpp::Void,
@@ -438,12 +459,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             >("set_Normal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_Normal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Unity::Mathematics::Geometry::Plane as
+                    quest_hook::libil2cpp::Type > ::class(), "set_Normal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

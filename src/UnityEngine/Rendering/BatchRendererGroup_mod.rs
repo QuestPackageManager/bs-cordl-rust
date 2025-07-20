@@ -57,7 +57,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup {
         >,
         userContext: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::BatchRendererGroup as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -76,12 +76,14 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup {
             >("InvokeOnPerformCulling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeOnPerformCulling", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::BatchRendererGroup as
+                    quest_hook::libil2cpp::Type > ::class(), "InvokeOnPerformCulling",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (group, context, lodParameters, userContext))
+            method.invoke_unchecked((), (group, context, lodParameters, userContext))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +150,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         cullingOutput: crate::UnityEngine::Rendering::BatchCullingOutput,
         userContext: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -163,8 +165,9 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling
+                    as quest_hook::libil2cpp::Type > ::class(), "Invoke", 4usize
                 )
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
@@ -172,7 +175,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
                 .invoke_unchecked(
                     self,
                     (rendererGroup, cullingContext, cullingOutput, userContext),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -191,7 +194,7 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -202,12 +205,13 @@ impl crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

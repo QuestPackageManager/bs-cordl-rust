@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Pkix::PkixParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -59,12 +59,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("AddAdditionalStoreFromLocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAdditionalStoreFromLocation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddAdditionalStoreFromLocation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (location, pkixParams))
+            method.invoke_unchecked((), (location, pkixParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -74,7 +76,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Pkix::PkixParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -89,12 +91,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("AddAdditionalStoresFromAltNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAdditionalStoresFromAltNames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddAdditionalStoresFromAltNames", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (cert, pkixParams))
+            method.invoke_unchecked((), (cert, pkixParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +110,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Pkix::PkixParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -121,12 +125,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("AddAdditionalStoresFromCrlDistributionPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAdditionalStoresFromCrlDistributionPoint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "AddAdditionalStoresFromCrlDistributionPoint", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (crldp, pkixParams))
+            method.invoke_unchecked((), (crldp, pkixParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +144,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -151,13 +157,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("FindCertificates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindCertificates", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FindCertificates", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = unsafe { method.invoke_unchecked((), (certSelect, certStores)) };
+        > = unsafe { method.invoke_unchecked((), (certSelect, certStores))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindCertificates_X509CertStoreSelector0(
@@ -168,7 +175,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -181,13 +188,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("FindCertificates")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindCertificates", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FindCertificates", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = unsafe { method.invoke_unchecked((), (certSelect, certStores)) };
+        > = unsafe { method.invoke_unchecked((), (certSelect, certStores))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindIssuerCerts(
@@ -198,7 +206,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -213,13 +221,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("FindIssuerCerts")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindIssuerCerts", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FindIssuerCerts", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = unsafe { method.invoke_unchecked((), (cert, pkixParams)) };
+        > = unsafe { method.invoke_unchecked((), (cert, pkixParams))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindTrustAnchor(
@@ -230,7 +239,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::TrustAnchor>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -245,13 +254,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("FindTrustAnchor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindTrustAnchor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "FindTrustAnchor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkix::TrustAnchor,
-        > = unsafe { method.invoke_unchecked((), (cert, trustAnchors)) };
+        > = unsafe { method.invoke_unchecked((), (cert, trustAnchors))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAlgorithmIdentifier(
@@ -263,7 +273,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
@@ -275,13 +285,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetAlgorithmIdentifier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAlgorithmIdentifier", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAlgorithmIdentifier",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        > = unsafe { method.invoke_unchecked((), (key)) };
+        > = unsafe { method.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCertStatus(
@@ -290,7 +302,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
         cert: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         certStatus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::CertStatus>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -303,12 +315,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetCertStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCertStatus", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCertStatus", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (validDate, crl, cert, certStatus))
+            method.invoke_unchecked((), (validDate, crl, cert, certStatus))?
         };
         Ok(__cordl_ret.into())
     }
@@ -324,7 +337,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -343,13 +356,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetCompleteCrls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCompleteCrls", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCompleteCrls", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked((), (dp, cert, currentDate, paramsPKIX)) };
+        > = unsafe { method.invoke_unchecked((), (dp, cert, currentDate, paramsPKIX))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCrlIssuersFromDistributionPoint(
@@ -366,7 +380,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Pkix::PkixParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -385,12 +399,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetCrlIssuersFromDistributionPoint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCrlIssuersFromDistributionPoint", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetCrlIssuersFromDistributionPoint", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (dp, issuerPrincipals, selector, pkixParams))
+            method.invoke_unchecked((), (dp, issuerPrincipals, selector, pkixParams))?
         };
         Ok(__cordl_ret.into())
     }
@@ -403,7 +419,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::DateTime,
@@ -419,14 +435,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetDeltaCrls")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDeltaCrls", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDeltaCrls", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         > = unsafe {
-            method.invoke_unchecked((), (currentDate, paramsPKIX, completeCRL))
+            method.invoke_unchecked((), (currentDate, paramsPKIX, completeCRL))?
         };
         Ok(__cordl_ret.into())
     }
@@ -438,7 +455,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -453,13 +470,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetExtensionValue")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetExtensionValue", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetExtensionValue", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Object,
-        > = unsafe { method.invoke_unchecked((), (ext, oid)) };
+        > = unsafe { method.invoke_unchecked((), (ext, oid))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIssuerPrincipal(
@@ -467,7 +485,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<
@@ -477,13 +495,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetIssuerPrincipal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetIssuerPrincipal", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetIssuerPrincipal", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509Name,
-        > = unsafe { method.invoke_unchecked((), (cert)) };
+        > = unsafe { method.invoke_unchecked((), (cert))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextWorkingKey(
@@ -494,7 +513,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>, i32),
                 quest_hook::libil2cpp::Gc<
@@ -504,13 +523,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetNextWorkingKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextWorkingKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextWorkingKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        > = unsafe { method.invoke_unchecked((), (certs, index)) };
+        > = unsafe { method.invoke_unchecked((), (certs, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetQualifierSet(
@@ -520,7 +540,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -532,13 +552,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetQualifierSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetQualifierSet", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetQualifierSet", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        > = unsafe { method.invoke_unchecked((), (qualifiers)) };
+        > = unsafe { method.invoke_unchecked((), (qualifiers))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSerialNumber(
@@ -546,7 +567,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -554,13 +575,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetSerialNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSerialNumber", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetSerialNumber", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = unsafe { method.invoke_unchecked((), (cert)) };
+        > = unsafe { method.invoke_unchecked((), (cert))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValidCertDateFromValidityModel(
@@ -572,7 +594,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -588,12 +610,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetValidCertDateFromValidityModel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValidCertDateFromValidityModel", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetValidCertDateFromValidityModel", 3usize
                 )
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (paramsPkix, certPath, index))
+            method.invoke_unchecked((), (paramsPkix, certPath, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -602,7 +626,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Pkix::PkixParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Pkix::PkixParameters,
@@ -612,12 +636,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("GetValidDate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetValidDate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "GetValidDate", 1usize
                 )
             });
         let __cordl_ret: crate::System::DateTime = unsafe {
-            method.invoke_unchecked((), (paramsPKIX))
+            method.invoke_unchecked((), (paramsPKIX))?
         };
         Ok(__cordl_ret.into())
     }
@@ -626,7 +651,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Utilities::Collections::ISet,
@@ -636,11 +661,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("IsAnyPolicy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAnyPolicy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsAnyPolicy", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (policySet)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (policySet))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsIssuerTrustAnchor(
@@ -649,7 +675,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -664,19 +690,21 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("IsIssuerTrustAnchor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsIssuerTrustAnchor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsIssuerTrustAnchor",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (cert, trustAnchors))
+            method.invoke_unchecked((), (cert, trustAnchors))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsSelfIssued(
         cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::X509::X509Certificate,
@@ -686,11 +714,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("IsSelfIssued")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSelfIssued", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSelfIssued", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cert)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cert))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -711,7 +740,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
         m_idp: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -731,12 +760,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("PrepareNextCertB1")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareNextCertB1", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "PrepareNextCertB1", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (i, policyNodes, id_p, m_idp, cert))
+            method.invoke_unchecked((), (i, policyNodes, id_p, m_idp, cert))?
         };
         Ok(__cordl_ret.into())
     }
@@ -754,7 +784,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::PkixPolicyNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -775,14 +805,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("PrepareNextCertB2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareNextCertB2", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "PrepareNextCertB2", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
         > = unsafe {
-            method.invoke_unchecked((), (i, policyNodes, id_p, validPolicyTree))
+            method.invoke_unchecked((), (i, policyNodes, id_p, validPolicyTree))?
         };
         Ok(__cordl_ret.into())
     }
@@ -800,7 +831,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -821,12 +852,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("ProcessCertD1i")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessCertD1i", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessCertD1i", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (index, policyNodes, pOid, pq))
+            method.invoke_unchecked((), (index, policyNodes, pOid, pq))?
         };
         Ok(__cordl_ret.into())
     }
@@ -844,7 +876,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     i32,
@@ -865,12 +897,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("ProcessCertD1ii")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessCertD1ii", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessCertD1ii", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (index, policyNodes, _poid, _pq))
+            method.invoke_unchecked((), (index, policyNodes, _poid, _pq))?
         };
         Ok(__cordl_ret.into())
     }
@@ -887,7 +920,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::PkixPolicyNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -909,14 +942,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("RemovePolicyNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemovePolicyNode", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "RemovePolicyNode", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
         > = unsafe {
-            method.invoke_unchecked((), (validPolicyTree, policyNodes, _node))
+            method.invoke_unchecked((), (validPolicyTree, policyNodes, _node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -928,7 +962,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
         >,
         _node: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::PkixPolicyNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -945,35 +979,38 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("RemovePolicyNodeRecurse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RemovePolicyNodeRecurse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "RemovePolicyNodeRecurse",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (policyNodes, _node))
+            method.invoke_unchecked((), (policyNodes, _node))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn isDeltaCrl(
         crl: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>),
                 bool,
@@ -981,11 +1018,12 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities {
             >("isDeltaCrl")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "isDeltaCrl", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Pkix::PkixCertPathValidatorUtilities as
+                    quest_hook::libil2cpp::Type > ::class(), "isDeltaCrl", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (crl)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (crl))? };
         Ok(__cordl_ret.into())
     }
 }

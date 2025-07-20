@@ -96,7 +96,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
         >,
         backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::MissionGameplaySceneSetupData as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -117,8 +117,9 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::MissionGameplaySceneSetupData as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -133,7 +134,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
                         gameplayModifiers,
                         backButtonText,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

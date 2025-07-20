@@ -69,7 +69,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         >,
         bidx: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     u8,
@@ -83,12 +83,14 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("AppendBufferPrimitive")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendBufferPrimitive", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendBufferPrimitive",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value, buf, bidx))
+            method.invoke_unchecked(self, (value, buf, bidx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -97,7 +99,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         lv1msb: u8,
         lv1lsb: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u8, u8),
                 quest_hook::libil2cpp::Void,
@@ -105,12 +107,13 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("AppendCJKExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendCJKExtension", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendCJKExtension", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lv1msb, lv1lsb))
+            method.invoke_unchecked(self, (lv1msb, lv1lsb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,7 +128,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         isKatakana: bool,
         isHalfWidth: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u8, u8, u8, u8, bool, u8, bool, bool),
                 quest_hook::libil2cpp::Void,
@@ -133,8 +136,9 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("AppendKana")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendKana", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendKana", 8usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -151,7 +155,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                         isKatakana,
                         isHalfWidth,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -160,16 +164,17 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         category: u8,
         lv1: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u8, u8), quest_hook::libil2cpp::Void, 2usize>("AppendLevel5")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendLevel5", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendLevel5", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (category, lv1))
+            method.invoke_unchecked(self, (category, lv1))?
         };
         Ok(__cordl_ret.into())
     }
@@ -180,7 +185,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         lv2: u8,
         lv3: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (u8, u8, u8, u8),
                 quest_hook::libil2cpp::Void,
@@ -188,12 +193,13 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("AppendNormal")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendNormal", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "AppendNormal", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (category, lv1, lv2, lv3))
+            method.invoke_unchecked(self, (category, lv1, lv2, lv3))?
         };
         Ok(__cordl_ret.into())
     }
@@ -203,7 +209,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         len: i32,
         defaultValue: u8,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -215,12 +221,13 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("GetOptimizedLength")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetOptimizedLength", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetOptimizedLength", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (data, len, defaultValue))
+            method.invoke_unchecked(self, (data, len, defaultValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +236,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
@@ -237,13 +244,14 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("GetResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResult", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetResult", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetResultAndReset(
@@ -251,7 +259,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
@@ -259,13 +267,14 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("GetResultAndReset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResultAndReset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "GetResultAndReset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
@@ -275,7 +284,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         frenchSort: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Globalization::CompareOptions,
@@ -288,12 +297,13 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
             >("Initialize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Initialize", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "Initialize", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (options, lcid, s, frenchSort))
+            method.invoke_unchecked(self, (options, lcid, s, frenchSort))?
         };
         Ok(__cordl_ret.into())
     }
@@ -309,16 +319,17 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reset", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), "Reset", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -326,16 +337,17 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         &mut self,
         lcid: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Globalization::Unicode::SortKeyBuffer as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Globalization::Unicode::SortKeyBuffer as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (lcid))
+            method.invoke_unchecked(self, (lcid))?
         };
         Ok(__cordl_ret.into())
     }

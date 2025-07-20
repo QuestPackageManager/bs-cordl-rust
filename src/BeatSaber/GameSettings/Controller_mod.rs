@@ -102,15 +102,16 @@ for crate::BeatSaber::GameSettings::Controller {
 #[cfg(feature = "BeatSaber+GameSettings+Controller")]
 impl crate::BeatSaber::GameSettings::Controller {
     pub fn HasDefaultValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::GameSettings::Controller as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("HasDefaultValues")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasDefaultValues", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::GameSettings::Controller as
+                    quest_hook::libil2cpp::Type > ::class(), "HasDefaultValues", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

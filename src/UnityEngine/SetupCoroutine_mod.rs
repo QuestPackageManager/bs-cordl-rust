@@ -45,7 +45,7 @@ impl crate::UnityEngine::SetupCoroutine {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SetupCoroutine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -57,20 +57,21 @@ impl crate::UnityEngine::SetupCoroutine {
             >("InvokeMember")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeMember", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SetupCoroutine as quest_hook::libil2cpp::Type >
+                    ::class(), "InvokeMember", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (behaviour, name, variable)) };
+        > = unsafe { method.invoke_unchecked((), (behaviour, name, variable))? };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeMoveNext(
         enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
         returnValueAddress: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::SetupCoroutine as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -81,12 +82,13 @@ impl crate::UnityEngine::SetupCoroutine {
             >("InvokeMoveNext")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InvokeMoveNext", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::SetupCoroutine as quest_hook::libil2cpp::Type >
+                    ::class(), "InvokeMoveNext", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (enumerator, returnValueAddress))
+            method.invoke_unchecked((), (enumerator, returnValueAddress))?
         };
         Ok(__cordl_ret.into())
     }

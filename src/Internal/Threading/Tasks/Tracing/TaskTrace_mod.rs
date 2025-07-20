@@ -46,7 +46,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         CreatingTaskID: i32,
         TaskCreationOptions: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Threading::Tasks::Tracing::TaskTrace as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -54,8 +54,9 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
             >("TaskScheduled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TaskScheduled", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Threading::Tasks::Tracing::TaskTrace as
+                    quest_hook::libil2cpp::Type > ::class(), "TaskScheduled", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -69,7 +70,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
                         CreatingTaskID,
                         TaskCreationOptions,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +79,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Threading::Tasks::Tracing::TaskTrace as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -86,8 +87,10 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
             >("TaskWaitBegin_Asynchronous")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TaskWaitBegin_Asynchronous", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Threading::Tasks::Tracing::TaskTrace as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TaskWaitBegin_Asynchronous", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -95,7 +98,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
                 .invoke_unchecked(
                     (),
                     (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -104,7 +107,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Threading::Tasks::Tracing::TaskTrace as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -112,8 +115,10 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
             >("TaskWaitBegin_Synchronous")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TaskWaitBegin_Synchronous", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Threading::Tasks::Tracing::TaskTrace as
+                    quest_hook::libil2cpp::Type > ::class(), "TaskWaitBegin_Synchronous",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -121,7 +126,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
                 .invoke_unchecked(
                     (),
                     (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -130,7 +135,7 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Threading::Tasks::Tracing::TaskTrace as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -138,8 +143,9 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
             >("TaskWaitEnd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TaskWaitEnd", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Threading::Tasks::Tracing::TaskTrace as
+                    quest_hook::libil2cpp::Type > ::class(), "TaskWaitEnd", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -147,20 +153,21 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
                 .invoke_unchecked(
                     (),
                     (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_Enabled() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Internal::Threading::Tasks::Tracing::TaskTrace as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("get_Enabled")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Enabled", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Internal::Threading::Tasks::Tracing::TaskTrace as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Enabled", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

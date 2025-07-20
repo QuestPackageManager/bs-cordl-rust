@@ -45,15 +45,16 @@ impl crate::System::Xml::IDtdParserAdapterWithValidation {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_DtdValidation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::IDtdParserAdapterWithValidation as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_DtdValidation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_DtdValidation", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::IDtdParserAdapterWithValidation as
+                    quest_hook::libil2cpp::Type > ::class(), "get_DtdValidation", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationEventHandling(
@@ -61,7 +62,7 @@ impl crate::System::Xml::IDtdParserAdapterWithValidation {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::IValidationEventHandling>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::IDtdParserAdapterWithValidation as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::IValidationEventHandling>,
@@ -69,13 +70,15 @@ impl crate::System::Xml::IDtdParserAdapterWithValidation {
             >("get_ValidationEventHandling")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ValidationEventHandling", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::IDtdParserAdapterWithValidation as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_ValidationEventHandling", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::IValidationEventHandling,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

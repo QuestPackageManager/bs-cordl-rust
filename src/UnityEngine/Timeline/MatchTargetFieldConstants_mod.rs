@@ -43,7 +43,7 @@ impl crate::UnityEngine::Timeline::MatchTargetFieldConstants {
         me: crate::UnityEngine::Timeline::MatchTargetFields,
         fields: crate::UnityEngine::Timeline::MatchTargetFields,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::MatchTargetFieldConstants as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::MatchTargetFields,
@@ -54,18 +54,19 @@ impl crate::UnityEngine::Timeline::MatchTargetFieldConstants {
             >("HasAny")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasAny", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::MatchTargetFieldConstants as
+                    quest_hook::libil2cpp::Type > ::class(), "HasAny", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (me, fields)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (me, fields))? };
         Ok(__cordl_ret.into())
     }
     pub fn Toggle(
         me: crate::UnityEngine::Timeline::MatchTargetFields,
         flag: crate::UnityEngine::Timeline::MatchTargetFields,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::MatchTargetFields> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::MatchTargetFieldConstants as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::Timeline::MatchTargetFields,
@@ -76,12 +77,13 @@ impl crate::UnityEngine::Timeline::MatchTargetFieldConstants {
             >("Toggle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Toggle", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::MatchTargetFieldConstants as
+                    quest_hook::libil2cpp::Type > ::class(), "Toggle", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Timeline::MatchTargetFields = unsafe {
-            method.invoke_unchecked((), (me, flag))
+            method.invoke_unchecked((), (me, flag))?
         };
         Ok(__cordl_ret.into())
     }

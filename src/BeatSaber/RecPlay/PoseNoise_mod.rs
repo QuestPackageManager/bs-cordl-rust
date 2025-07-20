@@ -102,23 +102,24 @@ impl crate::BeatSaber::RecPlay::PoseNoise {
         &mut self,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseNoise as quest_hook::libil2cpp::Type>::class()
             .find_method::<(f32), crate::UnityEngine::Pose, 1usize>("Sample")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Sample", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::RecPlay::PoseNoise as quest_hook::libil2cpp::Type
+                    > ::class(), "Sample", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            method.invoke_unchecked(self, (_cordl_time))
+            method.invoke_unchecked(self, (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SampleLemniscateOfBernoulli(
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::RecPlay::PoseNoise as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32),
                 crate::UnityEngine::Vector2,
@@ -126,12 +127,13 @@ impl crate::BeatSaber::RecPlay::PoseNoise {
             >("SampleLemniscateOfBernoulli")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SampleLemniscateOfBernoulli", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::RecPlay::PoseNoise as quest_hook::libil2cpp::Type
+                    > ::class(), "SampleLemniscateOfBernoulli", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            method.invoke_unchecked((), (_cordl_time))
+            method.invoke_unchecked((), (_cordl_time))?
         };
         Ok(__cordl_ret.into())
     }

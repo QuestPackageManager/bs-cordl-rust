@@ -44,7 +44,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
     pub fn IsVarFunction(
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::UIElements::StyleValueHandle),
                 bool,
@@ -52,11 +52,12 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
             >("IsVarFunction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsVarFunction", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "IsVarFunction", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsString(
@@ -65,7 +66,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -78,13 +79,14 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
             >("ReadAsString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadAsString", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadAsString", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (sheet, handle)) };
+        > = unsafe { method.invoke_unchecked((), (sheet, handle))? };
         Ok(__cordl_ret.into())
     }
 }

@@ -45,7 +45,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
             crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
@@ -55,12 +55,14 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
             >("add_poseDidChangeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "add_poseDidChangeEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::IAvatarPoseDataProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "add_poseDidChangeEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +74,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
     pub fn get_currentPose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::AvatarCore::AvatarPoseData> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::BeatSaber::AvatarCore::AvatarPoseData,
@@ -80,12 +82,13 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
             >("get_currentPose")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_currentPose", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::IAvatarPoseDataProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "get_currentPose", 0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::AvatarCore::AvatarPoseData = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +98,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
             crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
@@ -105,12 +108,14 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
             >("remove_poseDidChangeEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "remove_poseDidChangeEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::AvatarCore::IAvatarPoseDataProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "remove_poseDidChangeEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -54,7 +54,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -76,8 +76,9 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("Compute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compute", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "Compute", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -85,7 +86,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                 .invoke_unchecked(
                     (),
                     (type2, level, username, password, domain, lm, ntlm),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +96,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -106,13 +107,14 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("Compute_LM")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compute_LM", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "Compute_LM", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (password, challenge)) };
+        > = unsafe { method.invoke_unchecked((), (password, challenge))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compute_NTLM(
@@ -121,7 +123,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -132,13 +134,14 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("Compute_NTLM")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compute_NTLM", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "Compute_NTLM", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (password, challenge)) };
+        > = unsafe { method.invoke_unchecked((), (password, challenge))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compute_NTLM_Password(
@@ -146,7 +149,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -154,13 +157,15 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("Compute_NTLM_Password")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compute_NTLM_Password", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "Compute_NTLM_Password",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (password)) };
+        > = unsafe { method.invoke_unchecked((), (password))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compute_NTLMv2(
@@ -173,7 +178,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -188,13 +193,14 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("Compute_NTLMv2")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compute_NTLMv2", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "Compute_NTLMv2", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (type2, username, password, domain)) };
+        > = unsafe { method.invoke_unchecked((), (type2, username, password, domain))? };
         Ok(__cordl_ret.into())
     }
     pub fn Compute_NTLMv2_Session(
@@ -207,7 +213,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -224,12 +230,14 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("Compute_NTLMv2_Session")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compute_NTLMv2_Session", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "Compute_NTLMv2_Session",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (password, challenge, lm, ntlm))
+            method.invoke_unchecked((), (password, challenge, lm, ntlm))?
         };
         Ok(__cordl_ret.into())
     }
@@ -239,7 +247,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -250,13 +258,14 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("GetResponse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetResponse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "GetResponse", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (challenge, pwd)) };
+        > = unsafe { method.invoke_unchecked((), (challenge, pwd))? };
         Ok(__cordl_ret.into())
     }
     pub fn PasswordToKey(
@@ -265,7 +274,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -273,13 +282,14 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("PasswordToKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PasswordToKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "PasswordToKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (password, position)) };
+        > = unsafe { method.invoke_unchecked((), (password, position))? };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareDESKey(
@@ -288,7 +298,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -296,13 +306,14 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
             >("PrepareDESKey")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareDESKey", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Mono::Security::Protocol::Ntlm::ChallengeResponse2 as
+                    quest_hook::libil2cpp::Type > ::class(), "PrepareDESKey", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (key56bits, position)) };
+        > = unsafe { method.invoke_unchecked((), (key56bits, position))? };
         Ok(__cordl_ret.into())
     }
 }

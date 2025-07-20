@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         numAttempts: i32,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GraphAPIClient as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::GlobalNamespace::GraphAPIClient_PostOptions),
                 i32,
@@ -56,12 +56,14 @@ impl crate::GlobalNamespace::GraphAPIClient {
             >("CalculateDelayMsBeforeRetry")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateDelayMsBeforeRetry", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GraphAPIClient as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CalculateDelayMsBeforeRetry", 2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (numAttempts, postOptions))
+            method.invoke_unchecked((), (numAttempts, postOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -89,7 +91,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GraphAPIClient as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -104,15 +106,16 @@ impl crate::GlobalNamespace::GraphAPIClient {
             >("PostLoggedOut")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PostLoggedOut", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GraphAPIClient as
+                    quest_hook::libil2cpp::Type > ::class(), "PostLoggedOut", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<TResponse>,
         > = unsafe {
             method
-                .invoke_unchecked(self, (path, request, postOptions, cancellationToken))
+                .invoke_unchecked(self, (path, request, postOptions, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -135,7 +138,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GraphAPIClient as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -151,8 +154,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
             >("Post")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Post", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GraphAPIClient as
+                    quest_hook::libil2cpp::Type > ::class(), "Post", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -162,7 +166,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
                 .invoke_unchecked(
                     self,
                     (path, accessToken, request, postOptions, cancellationToken),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +183,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GraphAPIClient as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -194,8 +198,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
             >("Post")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Post", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GraphAPIClient as
+                    quest_hook::libil2cpp::Type > ::class(), "Post", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -205,7 +210,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
                 .invoke_unchecked(
                     self,
                     (uri, accessToken, httpContent, cancellationToken),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -213,7 +218,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         &mut self,
         networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::GraphAPIClient as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>),
                 quest_hook::libil2cpp::Void,
@@ -221,12 +226,13 @@ impl crate::GlobalNamespace::GraphAPIClient {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::GraphAPIClient as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (networkConfig))
+            method.invoke_unchecked(self, (networkConfig))?
         };
         Ok(__cordl_ret.into())
     }

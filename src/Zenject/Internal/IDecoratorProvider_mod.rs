@@ -49,7 +49,7 @@ impl crate::Zenject::Internal::IDecoratorProvider {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::Internal::IDecoratorProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -67,12 +67,13 @@ impl crate::Zenject::Internal::IDecoratorProvider {
             >("GetAllInstances")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllInstances", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::Internal::IDecoratorProvider as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAllInstances", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (provider, context, buffer))
+            method.invoke_unchecked(self, (provider, context, buffer))?
         };
         Ok(__cordl_ret.into())
     }

@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::X509::Store::IX509Store {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::X509::Store::IX509Store as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::X509::Store::IX509Selector,
@@ -57,13 +57,14 @@ impl crate::Org::BouncyCastle::X509::Store::IX509Store {
             >("GetMatches")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMatches", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::X509::Store::IX509Store as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMatches", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = unsafe { method.invoke_unchecked(self, (selector)) };
+        > = unsafe { method.invoke_unchecked(self, (selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

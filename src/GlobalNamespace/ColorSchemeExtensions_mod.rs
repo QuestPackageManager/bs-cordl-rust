@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
         beatmapOverrideColor: crate::System::Nullable_1<crate::UnityEngine::Color>,
         environmentColor: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorSchemeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Nullable_1<crate::UnityEngine::Color>,
@@ -60,8 +60,9 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
             >("ResolveColor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResolveColor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ColorSchemeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ResolveColor", 5usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
@@ -75,7 +76,7 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
                         beatmapOverrideColor,
                         environmentColor,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -93,7 +94,7 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ColorSchemeExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
@@ -106,8 +107,9 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
             >("ResolveColorScheme")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResolveColorScheme", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ColorSchemeExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ResolveColorScheme", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -122,7 +124,7 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
                         beatmapOverrideColorScheme,
                         environmentColorScheme,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

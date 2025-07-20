@@ -55,7 +55,7 @@ impl crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
         &mut self,
         classInterfaceType: crate::System::Runtime::InteropServices::ClassInterfaceType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::ClassInterfaceAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Runtime::InteropServices::ClassInterfaceType),
                 quest_hook::libil2cpp::Void,
@@ -63,12 +63,13 @@ impl crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::InteropServices::ClassInterfaceAttribute as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (classInterfaceType))
+            method.invoke_unchecked(self, (classInterfaceType))?
         };
         Ok(__cordl_ret.into())
     }

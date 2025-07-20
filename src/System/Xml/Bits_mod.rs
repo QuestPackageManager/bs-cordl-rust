@@ -39,27 +39,29 @@ impl std::ops::DerefMut for crate::System::Xml::Bits {
 #[cfg(feature = "System+Xml+Bits")]
 impl crate::System::Xml::Bits {
     pub fn Count(num: u32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Bits as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), i32, 1usize>("Count")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Count", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Bits as quest_hook::libil2cpp::Type > ::class(),
+                    "Count", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (num)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (num))? };
         Ok(__cordl_ret.into())
     }
     pub fn LeastPosition(num: u32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Bits as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32), i32, 1usize>("LeastPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LeastPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Bits as quest_hook::libil2cpp::Type > ::class(),
+                    "LeastPosition", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (num)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (num))? };
         Ok(__cordl_ret.into())
     }
 }

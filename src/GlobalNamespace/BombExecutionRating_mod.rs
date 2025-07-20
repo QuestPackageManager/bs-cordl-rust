@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::BombExecutionRating {
         _cordl_time: f32,
         rating: crate::GlobalNamespace::BombExecutionRating_Rating,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BombExecutionRating as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, crate::GlobalNamespace::BombExecutionRating_Rating),
                 quest_hook::libil2cpp::Void,
@@ -64,12 +64,13 @@ impl crate::GlobalNamespace::BombExecutionRating {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BombExecutionRating as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (_cordl_time, rating))
+            method.invoke_unchecked(self, (_cordl_time, rating))?
         };
         Ok(__cordl_ret.into())
     }
@@ -78,7 +79,7 @@ impl crate::GlobalNamespace::BombExecutionRating {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BombExecutionRating_Rating,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BombExecutionRating as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::GlobalNamespace::BombExecutionRating_Rating,
@@ -86,12 +87,13 @@ impl crate::GlobalNamespace::BombExecutionRating {
             >("get_rating")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_rating", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BombExecutionRating as
+                    quest_hook::libil2cpp::Type > ::class(), "get_rating", 0usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::BombExecutionRating_Rating = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

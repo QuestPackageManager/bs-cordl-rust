@@ -43,7 +43,7 @@ impl crate::Microsoft::Win32::Win32Native {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::Win32Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -51,25 +51,27 @@ impl crate::Microsoft::Win32::Win32Native {
             >("GetMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMessage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::Win32Native as quest_hook::libil2cpp::Type
+                    > ::class(), "GetMessage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (hr)) };
+        > = unsafe { method.invoke_unchecked((), (hr))? };
         Ok(__cordl_ret.into())
     }
     pub fn MakeHRFromErrorCode(errorCode: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::Win32Native as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(i32), i32, 1usize>("MakeHRFromErrorCode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeHRFromErrorCode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::Win32Native as quest_hook::libil2cpp::Type
+                    > ::class(), "MakeHRFromErrorCode", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (errorCode)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (errorCode))? };
         Ok(__cordl_ret.into())
     }
 }

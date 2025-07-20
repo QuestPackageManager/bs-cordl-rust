@@ -166,7 +166,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>),
                 quest_hook::libil2cpp::Void,
@@ -174,12 +174,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("AddAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddAttribute", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddAttribute", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -189,7 +190,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
             crate::System::Xml::Schema::XmlSchemaParticle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::Schema::XmlSchemaParticle,
@@ -199,12 +200,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("AddParticle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddParticle", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddParticle", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (particle))
+            method.invoke_unchecked(self, (particle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -212,7 +214,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -223,12 +225,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAnnotated_Id")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAnnotated_Id", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAnnotated_Id", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -236,7 +239,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -247,12 +250,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAnyAttribute_Namespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAnyAttribute_Namespace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildAnyAttribute_Namespace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -260,7 +265,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -271,12 +276,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAnyAttribute_ProcessContents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAnyAttribute_ProcessContents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildAnyAttribute_ProcessContents", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -284,7 +291,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -295,12 +302,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAny_Namespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAny_Namespace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAny_Namespace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -308,7 +316,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -319,12 +327,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAny_ProcessContents")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAny_ProcessContents", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAny_ProcessContents",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -332,7 +342,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -343,12 +353,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAppinfo_Source")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAppinfo_Source", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAppinfo_Source",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -356,7 +368,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -367,12 +379,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttributeGroupRef_Ref")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttributeGroupRef_Ref", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildAttributeGroupRef_Ref", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -380,7 +394,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -391,12 +405,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttributeGroup_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttributeGroup_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttributeGroup_Name",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -404,7 +420,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -415,12 +431,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttribute_Default")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttribute_Default", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttribute_Default",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -428,7 +446,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -439,12 +457,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttribute_Fixed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttribute_Fixed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttribute_Fixed",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -452,7 +472,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -463,12 +483,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttribute_Form")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttribute_Form", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttribute_Form",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -476,7 +498,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -487,12 +509,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttribute_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttribute_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttribute_Name",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -500,7 +524,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -511,12 +535,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttribute_Ref")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttribute_Ref", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttribute_Ref", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -524,7 +549,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -535,12 +560,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttribute_Type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttribute_Type", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttribute_Type",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -548,7 +575,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -559,12 +586,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildAttribute_Use")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildAttribute_Use", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildAttribute_Use", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -572,7 +600,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -583,12 +611,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexContentExtension_Base")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexContentExtension_Base", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildComplexContentExtension_Base", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -596,7 +626,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -607,12 +637,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexContentRestriction_Base")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexContentRestriction_Base", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildComplexContentRestriction_Base", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -620,7 +652,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -631,12 +663,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexContent_Mixed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexContent_Mixed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildComplexContent_Mixed",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -644,7 +678,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -655,12 +689,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexType_Abstract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexType_Abstract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildComplexType_Abstract",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -668,7 +704,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -679,12 +715,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexType_Block")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexType_Block", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildComplexType_Block",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -692,7 +730,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -703,12 +741,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexType_Final")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexType_Final", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildComplexType_Final",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -716,7 +756,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -727,12 +767,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexType_Mixed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexType_Mixed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildComplexType_Mixed",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -740,7 +782,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -751,12 +793,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildComplexType_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildComplexType_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildComplexType_Name",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -764,7 +808,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -775,12 +819,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildDocumentation_Source")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildDocumentation_Source", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildDocumentation_Source",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -788,7 +834,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -799,12 +845,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildDocumentation_XmlLang")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildDocumentation_XmlLang", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildDocumentation_XmlLang", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -812,7 +860,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -823,12 +871,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Abstract")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Abstract", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Abstract",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -836,7 +886,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -847,12 +897,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Block")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Block", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Block", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -860,7 +911,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -871,12 +922,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Default")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Default", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Default",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -884,7 +937,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -895,12 +948,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Final")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Final", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Final", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -908,7 +962,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -919,12 +973,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Fixed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Fixed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Fixed", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -932,7 +987,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -943,12 +998,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Form")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Form", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Form", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -956,7 +1012,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -967,12 +1023,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_MaxOccurs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_MaxOccurs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_MaxOccurs",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -980,7 +1038,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -991,12 +1049,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_MinOccurs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_MinOccurs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_MinOccurs",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1004,7 +1064,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1015,12 +1075,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Name", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1028,7 +1089,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1039,12 +1100,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Nillable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Nillable", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Nillable",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1052,7 +1115,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1063,12 +1126,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Ref")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Ref", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Ref", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1076,7 +1140,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1087,12 +1151,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_SubstitutionGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_SubstitutionGroup", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildElement_SubstitutionGroup", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1100,7 +1166,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1111,12 +1177,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildElement_Type")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildElement_Type", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildElement_Type", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1124,7 +1191,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1135,12 +1202,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildFacet_Fixed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildFacet_Fixed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildFacet_Fixed", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1148,7 +1216,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1159,12 +1227,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildFacet_Value")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildFacet_Value", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildFacet_Value", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1172,7 +1241,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1183,12 +1252,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildField_XPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildField_XPath", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildField_XPath", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1196,7 +1266,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1207,12 +1277,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildGroupRef_Ref")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildGroupRef_Ref", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildGroupRef_Ref", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1220,7 +1291,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1231,12 +1302,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildGroup_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildGroup_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildGroup_Name", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1244,7 +1316,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1255,12 +1327,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildIdentityConstraint_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildIdentityConstraint_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildIdentityConstraint_Name", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1268,7 +1342,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1279,12 +1353,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildIdentityConstraint_Refer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildIdentityConstraint_Refer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildIdentityConstraint_Refer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1292,7 +1368,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1303,12 +1379,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildImport_Namespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildImport_Namespace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildImport_Namespace",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1316,7 +1394,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1327,12 +1405,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildImport_SchemaLocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildImport_SchemaLocation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildImport_SchemaLocation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1340,7 +1420,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1351,12 +1431,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildInclude_SchemaLocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildInclude_SchemaLocation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildInclude_SchemaLocation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1364,7 +1446,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1375,12 +1457,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildNotation_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildNotation_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildNotation_Name", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1388,7 +1471,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1399,12 +1482,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildNotation_Public")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildNotation_Public", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildNotation_Public",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1412,7 +1497,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1423,12 +1508,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildNotation_System")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildNotation_System", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildNotation_System",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1436,7 +1523,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1447,12 +1534,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildParticle_MaxOccurs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildParticle_MaxOccurs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildParticle_MaxOccurs",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1460,7 +1549,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1471,12 +1560,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildParticle_MinOccurs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildParticle_MinOccurs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildParticle_MinOccurs",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1484,7 +1575,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1495,12 +1586,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildRedefine_SchemaLocation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildRedefine_SchemaLocation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildRedefine_SchemaLocation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1508,7 +1601,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1519,12 +1612,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSchema_AttributeFormDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSchema_AttributeFormDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSchema_AttributeFormDefault", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1532,7 +1627,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1543,12 +1638,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSchema_BlockDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSchema_BlockDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildSchema_BlockDefault",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1556,7 +1653,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1567,12 +1664,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSchema_ElementFormDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSchema_ElementFormDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSchema_ElementFormDefault", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1580,7 +1679,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1591,12 +1690,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSchema_FinalDefault")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSchema_FinalDefault", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildSchema_FinalDefault",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1604,7 +1705,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1615,12 +1716,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSchema_TargetNamespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSchema_TargetNamespace", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSchema_TargetNamespace", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1628,7 +1731,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1639,12 +1742,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSchema_Version")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSchema_Version", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildSchema_Version",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1652,7 +1757,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1663,12 +1768,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSelector_XPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSelector_XPath", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildSelector_XPath",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1676,7 +1783,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1687,12 +1794,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSimpleContentExtension_Base")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSimpleContentExtension_Base", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSimpleContentExtension_Base", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1700,7 +1809,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1711,12 +1820,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSimpleContentRestriction_Base")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSimpleContentRestriction_Base", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSimpleContentRestriction_Base", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1724,7 +1835,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1735,12 +1846,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSimpleTypeList_ItemType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSimpleTypeList_ItemType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSimpleTypeList_ItemType", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1748,7 +1861,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1759,12 +1872,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSimpleTypeRestriction_Base")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSimpleTypeRestriction_Base", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSimpleTypeRestriction_Base", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1772,7 +1887,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1783,12 +1898,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSimpleTypeUnion_MemberTypes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSimpleTypeUnion_MemberTypes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "BuildSimpleTypeUnion_MemberTypes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1796,7 +1913,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1807,12 +1924,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSimpleType_Final")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSimpleType_Final", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildSimpleType_Final",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1820,7 +1939,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1831,19 +1950,21 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("BuildSimpleType_Name")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildSimpleType_Name", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildSimpleType_Name",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndAppinfo(
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>),
                 quest_hook::libil2cpp::Void,
@@ -1851,35 +1972,37 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("EndAppinfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndAppinfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "EndAppinfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder))
+            method.invoke_unchecked((), (builder))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndChildren(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EndChildren")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndChildren", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "EndChildren", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndDocumentation(
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>),
                 quest_hook::libil2cpp::Void,
@@ -1887,19 +2010,20 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("EndDocumentation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndDocumentation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "EndDocumentation", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder))
+            method.invoke_unchecked((), (builder))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn EndRedefine(
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>),
                 quest_hook::libil2cpp::Void,
@@ -1907,12 +2031,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("EndRedefine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndRedefine", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "EndRedefine", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder))
+            method.invoke_unchecked((), (builder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1922,7 +2047,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Xml::Schema::XsdBuilder_State),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
@@ -1930,20 +2055,21 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("GetContainer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetContainer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetContainer", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaObject,
-        > = unsafe { method.invoke_unchecked(self, (state)) };
+        > = unsafe { method.invoke_unchecked(self, (state))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextState(
         &mut self,
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
                 bool,
@@ -1951,18 +2077,19 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("GetNextState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNextState", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (qname)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (qname))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitAll(
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1973,12 +2100,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAll")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAll", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAll", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1986,7 +2114,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -1997,12 +2125,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAnnotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAnnotation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAnnotation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2010,7 +2139,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2021,12 +2150,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAny")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAny", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAny", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2034,7 +2164,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2045,12 +2175,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAnyAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAnyAttribute", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAnyAttribute", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2058,7 +2189,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2069,12 +2200,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAppinfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAppinfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAppinfo", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2082,7 +2214,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2093,12 +2225,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAttribute", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAttribute", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2106,7 +2239,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2117,12 +2250,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAttributeGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAttributeGroup", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAttributeGroup", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2130,7 +2264,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2141,12 +2275,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitAttributeGroupRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitAttributeGroupRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitAttributeGroupRef",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2154,7 +2290,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2165,12 +2301,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitChoice")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitChoice", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitChoice", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2178,7 +2315,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2189,12 +2326,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitComplexContent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitComplexContent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitComplexContent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2202,7 +2340,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2213,12 +2351,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitComplexContentExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitComplexContentExtension", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InitComplexContentExtension", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2226,7 +2366,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2237,12 +2377,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitComplexContentRestriction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitComplexContentRestriction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InitComplexContentRestriction", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2250,7 +2392,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2261,12 +2403,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitComplexType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitComplexType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitComplexType", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2274,7 +2417,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2285,12 +2428,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitDocumentation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitDocumentation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitDocumentation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2298,7 +2442,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2309,12 +2453,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitElement", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitElement", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2322,7 +2467,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2333,12 +2478,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitFacet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitFacet", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitFacet", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2346,7 +2492,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2357,12 +2503,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitField")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitField", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitField", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2370,7 +2517,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2381,12 +2528,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitGroup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitGroup", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitGroup", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2394,7 +2542,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2405,12 +2553,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitGroupRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitGroupRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitGroupRef", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2418,7 +2567,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2429,12 +2578,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitIdentityConstraint")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitIdentityConstraint", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitIdentityConstraint",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2442,7 +2593,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2453,12 +2604,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitImport")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitImport", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitImport", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2466,7 +2618,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2477,12 +2629,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitInclude")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitInclude", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitInclude", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2490,7 +2643,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2501,12 +2654,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitNotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitNotation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitNotation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2514,7 +2668,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2525,12 +2679,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitRedefine")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitRedefine", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitRedefine", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2538,7 +2693,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2549,12 +2704,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSchema", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSchema", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2562,7 +2718,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2573,12 +2729,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSelector")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSelector", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSelector", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2586,7 +2743,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2597,12 +2754,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSequence")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSequence", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSequence", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2610,7 +2768,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2621,12 +2779,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSimpleContent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSimpleContent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSimpleContent", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2634,7 +2793,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2645,12 +2804,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSimpleContentExtension")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSimpleContentExtension", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InitSimpleContentExtension", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2658,7 +2819,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2669,12 +2830,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSimpleContentRestriction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSimpleContentRestriction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "InitSimpleContentRestriction", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2682,7 +2845,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2693,12 +2856,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSimpleType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSimpleType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSimpleType", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2706,7 +2870,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2717,12 +2881,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSimpleTypeList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSimpleTypeList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSimpleTypeList", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2730,7 +2895,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2741,12 +2906,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSimpleTypeRestriction")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSimpleTypeRestriction", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSimpleTypeRestriction",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2754,7 +2921,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -2765,32 +2932,35 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("InitSimpleTypeUnion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InitSimpleTypeUnion", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "InitSimpleTypeUnion",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (builder, value))
+            method.invoke_unchecked((), (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsContentParsed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsContentParsed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsContentParsed", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "IsContentParsed", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSkipableElement(
         &mut self,
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
                 bool,
@@ -2798,11 +2968,12 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("IsSkipableElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSkipableElement", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSkipableElement", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (qname)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (qname))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2829,7 +3000,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2840,12 +3011,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ParseBlockFinalEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseBlockFinalEnum", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseBlockFinalEnum",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (value, attributeName))
+            method.invoke_unchecked(self, (value, attributeName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2854,7 +3027,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2865,12 +3038,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ParseBoolean")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseBoolean", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseBoolean", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (value, attributeName))
+            method.invoke_unchecked(self, (value, attributeName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2884,7 +3058,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2902,12 +3076,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ParseEnum")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseEnum", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseEnum", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (value, attributeName, values))
+            method.invoke_unchecked(self, (value, attributeName, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2918,7 +3093,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2929,13 +3104,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ParseQName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseQName", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseQName", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::XmlQualifiedName,
-        > = unsafe { method.invoke_unchecked(self, (value, attributeName)) };
+        > = unsafe { method.invoke_unchecked(self, (value, attributeName))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseUriReference(
@@ -2943,7 +3119,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2951,26 +3127,28 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ParseUriReference")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseUriReference", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseUriReference", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (s)) };
+        > = unsafe { method.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Pop")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Pop", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Pop", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -2981,7 +3159,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2994,12 +3172,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ProcessAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessAttribute", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessAttribute", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, name, ns, value))
+            method.invoke_unchecked(self, (prefix, name, ns, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3007,7 +3186,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -3015,12 +3194,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ProcessCData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessCData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessCData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3030,7 +3210,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3042,12 +3222,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ProcessElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessElement", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessElement", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked(self, (prefix, name, ns))
+            method.invoke_unchecked(self, (prefix, name, ns))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3059,7 +3240,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -3071,44 +3252,47 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("ProcessMarkup")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessMarkup", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessMarkup", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (markup))
+            method.invoke_unchecked(self, (markup))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Push(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Push")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Push", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Push", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RecordPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RecordPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RecordPosition", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "RecordPosition", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3122,7 +3306,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         >,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3140,12 +3324,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, args, severity))
+            method.invoke_unchecked(self, (code, args, severity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3154,7 +3340,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3165,12 +3351,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, msg))
+            method.invoke_unchecked(self, (code, msg))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3181,7 +3369,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3194,12 +3382,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (code, arg0, arg1, arg2))
+            method.invoke_unchecked(self, (code, arg0, arg1, arg2))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3207,7 +3397,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Xml::Schema::XmlSchemaException,
@@ -3217,12 +3407,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e))
+            method.invoke_unchecked(self, (e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3231,7 +3423,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         e: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3244,12 +3436,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SendValidationEvent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendValidationEvent", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SendValidationEvent",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (e, severity))
+            method.invoke_unchecked(self, (e, severity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3258,7 +3452,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         state: crate::System::Xml::Schema::XsdBuilder_State,
         container: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::Schema::XsdBuilder_State,
@@ -3269,12 +3463,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SetContainer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetContainer", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetContainer", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (state, container))
+            method.invoke_unchecked(self, (state, container))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3285,7 +3480,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3298,12 +3493,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SetMaxOccurs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMaxOccurs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMaxOccurs", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (particle, value))
+            method.invoke_unchecked(self, (particle, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3314,7 +3510,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -3327,28 +3523,30 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("SetMinOccurs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMinOccurs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMinOccurs", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (particle, value))
+            method.invoke_unchecked(self, (particle, value))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn StartChildren(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartChildren")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "StartChildren", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "StartChildren", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3363,7 +3561,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
             crate::System::Xml::Schema::ValidationEventHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -3380,8 +3578,9 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -3389,14 +3588,14 @@ impl crate::System::Xml::Schema::XsdBuilder {
                 .invoke_unchecked(
                     self,
                     (reader, curmgr, schema, nameTable, schemaNames, eventhandler),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_CurrentElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::SchemaNames_Token> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Xml::Schema::SchemaNames_Token,
@@ -3404,12 +3603,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("get_CurrentElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CurrentElement", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "get_CurrentElement", 0usize
                 )
             });
         let __cordl_ret: crate::System::Xml::Schema::SchemaNames_Token = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3418,7 +3618,7 @@ impl crate::System::Xml::Schema::XsdBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
@@ -3426,19 +3626,21 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("get_ParentContainer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ParentContainer", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ParentContainer",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_ParentElement(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::SchemaNames_Token> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Xml::Schema::SchemaNames_Token,
@@ -3446,12 +3648,13 @@ impl crate::System::Xml::Schema::XsdBuilder {
             >("get_ParentElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ParentElement", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ParentElement", 0usize
                 )
             });
         let __cordl_ret: crate::System::Xml::Schema::SchemaNames_Token = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -3515,7 +3718,7 @@ impl crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3523,13 +3726,14 @@ impl crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
             >("LookupNamespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LookupNamespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "LookupNamespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (prefix)) };
+        > = unsafe { method.invoke_unchecked(self, (prefix))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3547,7 +3751,7 @@ impl crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
         nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
@@ -3558,12 +3762,13 @@ impl crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (nsMgr, reader))
+            method.invoke_unchecked(self, (nsMgr, reader))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3780,7 +3985,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
             crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::Schema::SchemaNames_Token,
@@ -3793,12 +3998,13 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdAttributeEntry as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (a, build))
+            method.invoke_unchecked(self, (a, build))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3859,7 +4065,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -3870,12 +4076,13 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdBuildFunction as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (builder, value))
+            method.invoke_unchecked(self, (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3894,7 +4101,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -3905,12 +4112,13 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdBuildFunction as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3970,7 +4178,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
         &mut self,
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>),
                 quest_hook::libil2cpp::Void,
@@ -3978,12 +4186,13 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdEndChildFunction as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (builder))
+            method.invoke_unchecked(self, (builder))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4002,7 +4211,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -4013,12 +4222,13 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdEndChildFunction as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4149,7 +4359,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEntry {
         >,
         parseContent: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdEntry as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Xml::Schema::SchemaNames_Token,
@@ -4179,8 +4389,9 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEntry {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdEntry as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -4188,7 +4399,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdEntry {
                 .invoke_unchecked(
                     self,
                     (n, state, nextStates, attributes, init, end, parseContent),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -4249,7 +4460,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
         builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdInitFunction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XsdBuilder>,
@@ -4260,12 +4471,13 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
             >("Invoke")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Invoke", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdInitFunction as
+                    quest_hook::libil2cpp::Type > ::class(), "Invoke", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (builder, value))
+            method.invoke_unchecked(self, (builder, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4284,7 +4496,7 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::Schema::XsdBuilder_XsdInitFunction as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -4295,12 +4507,13 @@ impl crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::Schema::XsdBuilder_XsdInitFunction as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (object, method))
+            method.invoke_unchecked(self, (object, method))?
         };
         Ok(__cordl_ret.into())
     }

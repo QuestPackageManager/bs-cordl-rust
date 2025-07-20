@@ -49,7 +49,7 @@ impl crate::System::Xml::IDtdParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::IDtdParser as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -64,8 +64,9 @@ impl crate::System::Xml::IDtdParser {
             >("ParseFreeFloatingDtd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseFreeFloatingDtd", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::IDtdParser as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseFreeFloatingDtd", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo> = unsafe {
@@ -73,7 +74,7 @@ impl crate::System::Xml::IDtdParser {
                 .invoke_unchecked(
                     self,
                     (baseUri, docTypeName, publicId, systemId, internalSubset, adapter),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -84,7 +85,7 @@ impl crate::System::Xml::IDtdParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Xml::IDtdParser as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>, bool),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo>,
@@ -92,12 +93,13 @@ impl crate::System::Xml::IDtdParser {
             >("ParseInternalDtd")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseInternalDtd", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Xml::IDtdParser as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseInternalDtd", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdInfo> = unsafe {
-            method.invoke_unchecked(self, (adapter, saveInternalSubset))
+            method.invoke_unchecked(self, (adapter, saveInternalSubset))?
         };
         Ok(__cordl_ret.into())
     }

@@ -60,7 +60,7 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -84,8 +84,10 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
             >("GetGameLiftPlayerSessionInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetGameLiftPlayerSessionInfo", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetGameLiftPlayerSessionInfo", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -107,7 +109,7 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
                         code,
                         cancellationToken,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

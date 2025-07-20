@@ -42,7 +42,7 @@ impl crate::System::Net::Mail::WhitespaceReader {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::WhitespaceReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 i32,
@@ -50,18 +50,19 @@ impl crate::System::Net::Mail::WhitespaceReader {
             >("ReadCfwsReverse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadCfwsReverse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::WhitespaceReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadCfwsReverse", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFwsReverse(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::Mail::WhitespaceReader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
                 i32,
@@ -69,11 +70,12 @@ impl crate::System::Net::Mail::WhitespaceReader {
             >("ReadFwsReverse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFwsReverse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::Mail::WhitespaceReader as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadFwsReverse", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, index))? };
         Ok(__cordl_ret.into())
     }
 }

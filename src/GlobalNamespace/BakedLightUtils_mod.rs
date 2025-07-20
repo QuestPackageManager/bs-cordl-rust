@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::BakedLightUtils {
     pub fn ValidateLoadedEnvironmentScene(
         validateBakedGIEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::BakedLightUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (bool),
                 quest_hook::libil2cpp::Void,
@@ -51,12 +51,14 @@ impl crate::GlobalNamespace::BakedLightUtils {
             >("ValidateLoadedEnvironmentScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateLoadedEnvironmentScene", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::BakedLightUtils as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ValidateLoadedEnvironmentScene", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (validateBakedGIEnabled))
+            method.invoke_unchecked((), (validateBakedGIEnabled))?
         };
         Ok(__cordl_ret.into())
     }

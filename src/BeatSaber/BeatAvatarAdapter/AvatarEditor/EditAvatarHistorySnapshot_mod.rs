@@ -111,7 +111,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapsho
         >,
         avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -124,12 +124,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapsho
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (avatarData, avatarEditPart))
+            method.invoke_unchecked(self, (avatarData, avatarEditPart))?
         };
         Ok(__cordl_ret.into())
     }

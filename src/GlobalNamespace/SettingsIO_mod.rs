@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::SettingsIO {
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -59,11 +59,14 @@ impl crate::GlobalNamespace::SettingsIO {
             >("Decode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Decode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Decode", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (settings, text)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (settings, text))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Encode(
@@ -71,7 +74,7 @@ impl crate::GlobalNamespace::SettingsIO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -79,20 +82,21 @@ impl crate::GlobalNamespace::SettingsIO {
             >("Encode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Encode", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Encode", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (settings)) };
+        > = unsafe { method.invoke_unchecked((), (settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn Load(
         fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
         platform: crate::GlobalNamespace::HardwareCategory,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::Settings> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
@@ -103,12 +107,13 @@ impl crate::GlobalNamespace::SettingsIO {
             >("Load")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Load", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type >
+                    ::class(), "Load", 2usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Settings::Settings = unsafe {
-            method.invoke_unchecked((), (fileStorage, platform))
+            method.invoke_unchecked((), (fileStorage, platform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -120,7 +125,7 @@ impl crate::GlobalNamespace::SettingsIO {
             crate::System::Threading::Tasks::Task_1<crate::BeatSaber::Settings::Settings>,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
@@ -135,13 +140,14 @@ impl crate::GlobalNamespace::SettingsIO {
             >("LoadAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<crate::BeatSaber::Settings::Settings>,
-        > = unsafe { method.invoke_unchecked((), (fileStorage, platform)) };
+        > = unsafe { method.invoke_unchecked((), (fileStorage, platform))? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveAsync(
@@ -150,7 +156,7 @@ impl crate::GlobalNamespace::SettingsIO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
@@ -161,13 +167,14 @@ impl crate::GlobalNamespace::SettingsIO {
             >("SaveAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type >
+                    ::class(), "SaveAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (fileStorage, settings)) };
+        > = unsafe { method.invoke_unchecked((), (fileStorage, settings))? };
         Ok(__cordl_ret.into())
     }
     pub fn WipeAsync(
@@ -175,7 +182,7 @@ impl crate::GlobalNamespace::SettingsIO {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>),
                 quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -183,13 +190,14 @@ impl crate::GlobalNamespace::SettingsIO {
             >("WipeAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WipeAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::SettingsIO as quest_hook::libil2cpp::Type >
+                    ::class(), "WipeAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = unsafe { method.invoke_unchecked((), (fileStorage)) };
+        > = unsafe { method.invoke_unchecked((), (fileStorage))? };
         Ok(__cordl_ret.into())
     }
 }

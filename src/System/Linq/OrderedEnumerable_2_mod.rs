@@ -94,7 +94,10 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::OrderedEnumerable_2<
+            TElement,
+            TKey,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Linq::EnumerableSorter_1<TElement>,
@@ -106,13 +109,15 @@ impl<
             >("GetEnumerableSorter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnumerableSorter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::OrderedEnumerable_2 < TElement, TKey > as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEnumerableSorter",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::EnumerableSorter_1<TElement>,
-        > = unsafe { method.invoke_unchecked(self, (next)) };
+        > = unsafe { method.invoke_unchecked(self, (next))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -154,7 +159,10 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Linq::OrderedEnumerable_2<
+            TElement,
+            TKey,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -171,12 +179,13 @@ impl<
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Linq::OrderedEnumerable_2 < TElement, TKey > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (source, keySelector, comparer, descending))
+            method.invoke_unchecked(self, (source, keySelector, comparer, descending))?
         };
         Ok(__cordl_ret.into())
     }

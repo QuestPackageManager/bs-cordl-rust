@@ -55,7 +55,7 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
         &mut self,
         callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Runtime::InteropServices::CallingConvention),
                 quest_hook::libil2cpp::Void,
@@ -63,12 +63,14 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (callingConvention))
+            method.invoke_unchecked(self, (callingConvention))?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +79,7 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::InteropServices::CallingConvention,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::Runtime::InteropServices::CallingConvention,
@@ -85,12 +87,15 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
             >("get_CallingConvention")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_CallingConvention", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute
+                    as quest_hook::libil2cpp::Type > ::class(), "get_CallingConvention",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::Runtime::InteropServices::CallingConvention = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

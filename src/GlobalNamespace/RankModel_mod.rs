@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::RankModel {
         maxMultipliedScore: i32,
         maxModifiedScore: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::RankModel_Rank> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RankModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, i32, i32, i32),
                 crate::GlobalNamespace::RankModel_Rank,
@@ -54,8 +54,9 @@ impl crate::GlobalNamespace::RankModel {
             >("GetRankForScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRankForScore", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RankModel as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRankForScore", 4usize
                 )
             });
         let __cordl_ret: crate::GlobalNamespace::RankModel_Rank = unsafe {
@@ -68,7 +69,7 @@ impl crate::GlobalNamespace::RankModel {
                         maxMultipliedScore,
                         maxModifiedScore,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -77,7 +78,7 @@ impl crate::GlobalNamespace::RankModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::RankModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::RankModel_Rank),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -85,13 +86,14 @@ impl crate::GlobalNamespace::RankModel {
             >("GetRankName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRankName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::RankModel as quest_hook::libil2cpp::Type >
+                    ::class(), "GetRankName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (rank)) };
+        > = unsafe { method.invoke_unchecked((), (rank))? };
         Ok(__cordl_ret.into())
     }
 }

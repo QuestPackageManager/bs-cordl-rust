@@ -109,7 +109,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
         a: crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
         b: crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
@@ -120,11 +120,12 @@ impl crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord as
+                    quest_hook::libil2cpp::Type > ::class(), "Compare", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -132,7 +133,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         styleSheetIndexInStack: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -145,12 +146,13 @@ impl crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sheet, styleSheetIndexInStack))
+            method.invoke_unchecked(self, (sheet, styleSheetIndexInStack))?
         };
         Ok(__cordl_ret.into())
     }

@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
             crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -66,13 +66,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
             >("GetLoginParameters")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetLoginParameters", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetLoginParameters", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
-        > = unsafe { method.invoke_unchecked(self, (identity)) };
+        > = unsafe { method.invoke_unchecked(self, (identity))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRfc5054Default(
@@ -85,7 +87,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
             crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -100,13 +102,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
             >("GetRfc5054Default")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRfc5054Default", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRfc5054Default", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager,
-        > = unsafe { method.invoke_unchecked((), (group, seedKey)) };
+        > = unsafe { method.invoke_unchecked((), (group, seedKey))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -134,7 +138,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         >,
         mac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -150,12 +154,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (group, verifierGenerator, mac))
+            method.invoke_unchecked(self, (group, verifierGenerator, mac))?
         };
         Ok(__cordl_ret.into())
     }

@@ -42,7 +42,7 @@ impl crate::System::SpanHelpers {
         ip: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
         pointerSizeLength: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>, u64),
                 quest_hook::libil2cpp::Void,
@@ -50,12 +50,13 @@ impl crate::System::SpanHelpers {
             >("ClearWithReferences")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearWithReferences", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "ClearWithReferences", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ip, pointerSizeLength))
+            method.invoke_unchecked((), (ip, pointerSizeLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -63,7 +64,7 @@ impl crate::System::SpanHelpers {
         b: quest_hook::libil2cpp::ByRefMut<u8>,
         byteLength: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<u8>, u64),
                 quest_hook::libil2cpp::Void,
@@ -71,12 +72,13 @@ impl crate::System::SpanHelpers {
             >("ClearWithoutReferences")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ClearWithoutReferences", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "ClearWithoutReferences", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (b, byteLength))
+            method.invoke_unchecked((), (b, byteLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -85,7 +87,7 @@ impl crate::System::SpanHelpers {
         value: crate::System::ReadOnlySpan_1<char>,
         compareInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -97,12 +99,13 @@ impl crate::System::SpanHelpers {
             >("EndsWithCultureHelper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndsWithCultureHelper", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "EndsWithCultureHelper", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (span, value, compareInfo))
+            method.invoke_unchecked((), (span, value, compareInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -111,7 +114,7 @@ impl crate::System::SpanHelpers {
         value: crate::System::ReadOnlySpan_1<char>,
         compareInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -123,12 +126,13 @@ impl crate::System::SpanHelpers {
             >("EndsWithCultureIgnoreCaseHelper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndsWithCultureIgnoreCaseHelper", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "EndsWithCultureIgnoreCaseHelper", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (span, value, compareInfo))
+            method.invoke_unchecked((), (span, value, compareInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -136,7 +140,7 @@ impl crate::System::SpanHelpers {
         span: crate::System::ReadOnlySpan_1<char>,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -147,11 +151,12 @@ impl crate::System::SpanHelpers {
             >("EndsWithOrdinalIgnoreCaseHelper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EndsWithOrdinalIgnoreCaseHelper", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "EndsWithOrdinalIgnoreCaseHelper", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (span, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfAny_ByRefMut_i32_ByRefMut_i32_0(
@@ -160,7 +165,7 @@ impl crate::System::SpanHelpers {
         value: quest_hook::libil2cpp::ByRefMut<u8>,
         valueLength: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<u8>,
@@ -173,8 +178,9 @@ impl crate::System::SpanHelpers {
             >("IndexOfAny")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOfAny", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOfAny", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -182,7 +188,7 @@ impl crate::System::SpanHelpers {
                 .invoke_unchecked(
                     (),
                     (searchSpace, searchSpaceLength, value, valueLength),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +202,7 @@ impl crate::System::SpanHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -209,8 +215,9 @@ impl crate::System::SpanHelpers {
             >("IndexOfAny")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOfAny", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOfAny", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -218,7 +225,7 @@ impl crate::System::SpanHelpers {
                 .invoke_unchecked(
                     (),
                     (searchSpace, searchSpaceLength, value, valueLength),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -231,7 +238,7 @@ impl crate::System::SpanHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<T>, T, i32),
                 i32,
@@ -239,12 +246,13 @@ impl crate::System::SpanHelpers {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOf", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))
+            method.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -253,7 +261,7 @@ impl crate::System::SpanHelpers {
         value: char,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<char>, char, i32),
                 i32,
@@ -261,12 +269,13 @@ impl crate::System::SpanHelpers {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOf", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))
+            method.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -275,7 +284,7 @@ impl crate::System::SpanHelpers {
         value: u8,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<u8>, u8, i32),
                 i32,
@@ -283,12 +292,13 @@ impl crate::System::SpanHelpers {
             >("IndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IndexOf", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "IndexOf", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))
+            method.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -297,7 +307,7 @@ impl crate::System::SpanHelpers {
         value: char,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<char>, char, i32),
                 i32,
@@ -305,19 +315,20 @@ impl crate::System::SpanHelpers {
             >("LastIndexOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LastIndexOf", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "LastIndexOf", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (searchSpace, value, length))
+            method.invoke_unchecked((), (searchSpace, value, length))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LocateFirstFoundChar_Vector_1_0(
         _cordl_match: crate::System::Numerics::Vector_1<u16>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Numerics::Vector_1<u16>),
                 i32,
@@ -325,31 +336,33 @@ impl crate::System::SpanHelpers {
             >("LocateFirstFoundChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocateFirstFoundChar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "LocateFirstFoundChar", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocateFirstFoundChar_u64_1(
         _cordl_match: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), i32, 1usize>("LocateFirstFoundChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocateFirstFoundChar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "LocateFirstFoundChar", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocateLastFoundChar_Vector_1_0(
         _cordl_match: crate::System::Numerics::Vector_1<u16>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Numerics::Vector_1<u16>),
                 i32,
@@ -357,25 +370,27 @@ impl crate::System::SpanHelpers {
             >("LocateLastFoundChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocateLastFoundChar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "LocateLastFoundChar", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocateLastFoundChar_u64_1(
         _cordl_match: u64,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u64), i32, 1usize>("LocateLastFoundChar")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocateLastFoundChar", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "LocateLastFoundChar", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_match))? };
         Ok(__cordl_ret.into())
     }
     pub fn SequenceCompareTo(
@@ -384,7 +399,7 @@ impl crate::System::SpanHelpers {
         second: quest_hook::libil2cpp::ByRefMut<char>,
         secondLength: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<char>,
@@ -397,12 +412,13 @@ impl crate::System::SpanHelpers {
             >("SequenceCompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SequenceCompareTo", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "SequenceCompareTo", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (first, firstLength, second, secondLength))
+            method.invoke_unchecked((), (first, firstLength, second, secondLength))?
         };
         Ok(__cordl_ret.into())
     }
@@ -415,7 +431,7 @@ impl crate::System::SpanHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<T>,
@@ -427,12 +443,13 @@ impl crate::System::SpanHelpers {
             >("SequenceEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SequenceEqual", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "SequenceEqual", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (first, second, length))
+            method.invoke_unchecked((), (first, second, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -441,7 +458,7 @@ impl crate::System::SpanHelpers {
         second: quest_hook::libil2cpp::ByRefMut<u8>,
         length: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::SpanHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<u8>,
@@ -453,12 +470,13 @@ impl crate::System::SpanHelpers {
             >("SequenceEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SequenceEqual", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::SpanHelpers as quest_hook::libil2cpp::Type >
+                    ::class(), "SequenceEqual", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (first, second, length))
+            method.invoke_unchecked((), (first, second, length))?
         };
         Ok(__cordl_ret.into())
     }

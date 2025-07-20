@@ -50,7 +50,7 @@ impl crate::ModestTree::Util::ValuePair {
         T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::Util::ValuePair as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T1, T2),
                 quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_2<T1, T2>>,
@@ -58,13 +58,14 @@ impl crate::ModestTree::Util::ValuePair {
             >("New")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "New", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::Util::ValuePair as quest_hook::libil2cpp::Type >
+                    ::class(), "New", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::ModestTree::Util::ValuePair_2<T1, T2>,
-        > = unsafe { method.invoke_unchecked((), (first, second)) };
+        > = unsafe { method.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_T3_1<T1, T2, T3>(
@@ -82,7 +83,7 @@ impl crate::ModestTree::Util::ValuePair {
         T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::Util::ValuePair as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T1, T2, T3),
                 quest_hook::libil2cpp::Gc<
@@ -92,13 +93,14 @@ impl crate::ModestTree::Util::ValuePair {
             >("New")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "New", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::Util::ValuePair as quest_hook::libil2cpp::Type >
+                    ::class(), "New", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::ModestTree::Util::ValuePair_3<T1, T2, T3>,
-        > = unsafe { method.invoke_unchecked((), (first, second, third)) };
+        > = unsafe { method.invoke_unchecked((), (first, second, third))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_T3_T4_2<T1, T2, T3, T4>(
@@ -119,7 +121,7 @@ impl crate::ModestTree::Util::ValuePair {
         T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ModestTree::Util::ValuePair as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (T1, T2, T3, T4),
                 quest_hook::libil2cpp::Gc<
@@ -129,13 +131,14 @@ impl crate::ModestTree::Util::ValuePair {
             >("New")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "New", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ModestTree::Util::ValuePair as quest_hook::libil2cpp::Type >
+                    ::class(), "New", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::ModestTree::Util::ValuePair_4<T1, T2, T3, T4>,
-        > = unsafe { method.invoke_unchecked((), (first, second, third, fourth)) };
+        > = unsafe { method.invoke_unchecked((), (first, second, third, fourth))? };
         Ok(__cordl_ret.into())
     }
 }

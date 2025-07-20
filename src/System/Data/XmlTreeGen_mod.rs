@@ -67,7 +67,7 @@ impl crate::System::Data::XmlTreeGen {
         col: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         root: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -78,12 +78,13 @@ impl crate::System::Data::XmlTreeGen {
             >("AddColumnProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddColumnProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AddColumnProperties", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (col, root))
+            method.invoke_unchecked(self, (col, root))?
         };
         Ok(__cordl_ret.into())
     }
@@ -91,7 +92,7 @@ impl crate::System::Data::XmlTreeGen {
         props: quest_hook::libil2cpp::Gc<crate::System::Data::PropertyCollection>,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::PropertyCollection>,
@@ -102,12 +103,13 @@ impl crate::System::Data::XmlTreeGen {
             >("AddExtendedProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddExtendedProperties", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AddExtendedProperties", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (props, node))
+            method.invoke_unchecked((), (props, node))?
         };
         Ok(__cordl_ret.into())
     }
@@ -116,7 +118,7 @@ impl crate::System::Data::XmlTreeGen {
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::PropertyCollection>,
@@ -128,12 +130,13 @@ impl crate::System::Data::XmlTreeGen {
             >("AddExtendedProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddExtendedProperties", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AddExtendedProperties", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (props, node, _cordl_type))
+            method.invoke_unchecked((), (props, node, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +146,7 @@ impl crate::System::Data::XmlTreeGen {
         root: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         xd: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -155,12 +158,13 @@ impl crate::System::Data::XmlTreeGen {
             >("AddXdoProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddXdoProperties", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AddXdoProperties", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (instance, root, xd))
+            method.invoke_unchecked(self, (instance, root, xd))?
         };
         Ok(__cordl_ret.into())
     }
@@ -171,7 +175,7 @@ impl crate::System::Data::XmlTreeGen {
         root: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         xd: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -186,12 +190,13 @@ impl crate::System::Data::XmlTreeGen {
             >("AddXdoProperty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddXdoProperty", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AddXdoProperty", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pd, instance, root, xd))
+            method.invoke_unchecked(self, (pd, instance, root, xd))?
         };
         Ok(__cordl_ret.into())
     }
@@ -202,7 +207,7 @@ impl crate::System::Data::XmlTreeGen {
         el: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         refString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -215,19 +220,20 @@ impl crate::System::Data::XmlTreeGen {
             >("AppendChildWithoutRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AppendChildWithoutRef", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AppendChildWithoutRef", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (node, Namespace, el, refString))
+            method.invoke_unchecked(self, (node, Namespace, el, refString))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AutoGenerated_DataColumn0(
         col: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>),
                 bool,
@@ -235,17 +241,18 @@ impl crate::System::Data::XmlTreeGen {
             >("AutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AutoGenerated", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (col)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (col))? };
         Ok(__cordl_ret.into())
     }
     pub fn AutoGenerated_DataRelation1(
         rel: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>),
                 bool,
@@ -253,18 +260,19 @@ impl crate::System::Data::XmlTreeGen {
             >("AutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AutoGenerated", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rel)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (rel))? };
         Ok(__cordl_ret.into())
     }
     pub fn AutoGenerated_ForeignKeyConstraint3(
         &mut self,
         fk: quest_hook::libil2cpp::Gc<crate::System::Data::ForeignKeyConstraint>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::ForeignKeyConstraint>),
                 bool,
@@ -272,18 +280,19 @@ impl crate::System::Data::XmlTreeGen {
             >("AutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AutoGenerated", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (fk)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (fk))? };
         Ok(__cordl_ret.into())
     }
     pub fn AutoGenerated_ForeignKeyConstraint__cordl_bool4(
         fk: quest_hook::libil2cpp::Gc<crate::System::Data::ForeignKeyConstraint>,
         checkRelation: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::ForeignKeyConstraint>,
@@ -294,19 +303,20 @@ impl crate::System::Data::XmlTreeGen {
             >("AutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoGenerated", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AutoGenerated", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (fk, checkRelation))
+            method.invoke_unchecked((), (fk, checkRelation))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn AutoGenerated_UniqueConstraint2(
         unique: quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::UniqueConstraint>),
                 bool,
@@ -314,18 +324,19 @@ impl crate::System::Data::XmlTreeGen {
             >("AutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "AutoGenerated", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (unique)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (unique))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRelations(
         &mut self,
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                 quest_hook::libil2cpp::Void,
@@ -333,12 +344,13 @@ impl crate::System::Data::XmlTreeGen {
             >("CreateRelations")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateRelations", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateRelations", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dt))
+            method.invoke_unchecked(self, (dt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -346,7 +358,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                 quest_hook::libil2cpp::Void,
@@ -354,12 +366,13 @@ impl crate::System::Data::XmlTreeGen {
             >("CreateTablesHierarchy")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateTablesHierarchy", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateTablesHierarchy", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dt))
+            method.invoke_unchecked(self, (dt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -372,7 +385,7 @@ impl crate::System::Data::XmlTreeGen {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -384,15 +397,16 @@ impl crate::System::Data::XmlTreeGen {
             >("CreateToplevelTables")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateToplevelTables", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "CreateToplevelTables", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
             >,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FillDataSetElement(
@@ -403,7 +417,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -415,12 +429,13 @@ impl crate::System::Data::XmlTreeGen {
             >("FillDataSetElement")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FillDataSetElement", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "FillDataSetElement", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (xd, ds, dt))
+            method.invoke_unchecked(self, (xd, ds, dt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -430,7 +445,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -441,12 +456,13 @@ impl crate::System::Data::XmlTreeGen {
             >("FindSimpleType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindSimpleType", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "FindSimpleType", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked((), (schema, name))
+            method.invoke_unchecked((), (schema, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -456,7 +472,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -464,13 +480,14 @@ impl crate::System::Data::XmlTreeGen {
             >("FindTargetNamespace")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindTargetNamespace", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "FindTargetNamespace", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, (table)) };
+        > = unsafe { method.invoke_unchecked(self, (table))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindTypeNode(
@@ -480,7 +497,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -491,12 +508,13 @@ impl crate::System::Data::XmlTreeGen {
             >("FindTypeNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindTypeNode", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "FindTypeNode", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (node, strType))
+            method.invoke_unchecked(self, (node, strType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -504,7 +522,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         tables: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>),
                 quest_hook::libil2cpp::Void,
@@ -512,12 +530,13 @@ impl crate::System::Data::XmlTreeGen {
             >("GenerateConstraintNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateConstraintNames", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateConstraintNames", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (tables))
+            method.invoke_unchecked(self, (tables))?
         };
         Ok(__cordl_ret.into())
     }
@@ -525,7 +544,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                 quest_hook::libil2cpp::Void,
@@ -533,12 +552,13 @@ impl crate::System::Data::XmlTreeGen {
             >("GenerateConstraintNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateConstraintNames", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateConstraintNames", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ds))
+            method.invoke_unchecked(self, (ds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -547,7 +567,7 @@ impl crate::System::Data::XmlTreeGen {
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         fromTable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>, bool),
                 quest_hook::libil2cpp::Void,
@@ -555,12 +575,13 @@ impl crate::System::Data::XmlTreeGen {
             >("GenerateConstraintNames")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateConstraintNames", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "GenerateConstraintNames", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (table, fromTable))
+            method.invoke_unchecked(self, (table, fromTable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -570,7 +591,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -578,12 +599,13 @@ impl crate::System::Data::XmlTreeGen {
             >("GetSchema")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetSchema", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "GetSchema", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (NamespaceURI))
+            method.invoke_unchecked(self, (NamespaceURI))?
         };
         Ok(__cordl_ret.into())
     }
@@ -596,7 +618,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -609,12 +631,13 @@ impl crate::System::Data::XmlTreeGen {
             >("HandleColumn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleColumn", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "HandleColumn", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (col, dc, schema, fWriteOrdinal))
+            method.invoke_unchecked(self, (col, dc, schema, fWriteOrdinal))?
         };
         Ok(__cordl_ret.into())
     }
@@ -625,7 +648,7 @@ impl crate::System::Data::XmlTreeGen {
         root: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -638,12 +661,13 @@ impl crate::System::Data::XmlTreeGen {
             >("HandleColumnType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleColumnType", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "HandleColumnType", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (col, dc, root, schema))
+            method.invoke_unchecked(self, (col, dc, root, schema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -654,7 +678,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
@@ -665,12 +689,13 @@ impl crate::System::Data::XmlTreeGen {
             >("HandleRelation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleRelation", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "HandleRelation", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (rel, dc))
+            method.invoke_unchecked(self, (rel, dc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -682,7 +707,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -694,12 +719,13 @@ impl crate::System::Data::XmlTreeGen {
             >("HandleTable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleTable", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "HandleTable", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (table, dc, schema))
+            method.invoke_unchecked(self, (table, dc, schema))?
         };
         Ok(__cordl_ret.into())
     }
@@ -712,7 +738,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -725,12 +751,13 @@ impl crate::System::Data::XmlTreeGen {
             >("HandleTable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HandleTable", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "HandleTable", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (table, dc, schema, genNested))
+            method.invoke_unchecked(self, (table, dc, schema, genNested))?
         };
         Ok(__cordl_ret.into())
     }
@@ -738,7 +765,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                 bool,
@@ -746,18 +773,19 @@ impl crate::System::Data::XmlTreeGen {
             >("HasMixedColumns")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasMixedColumns", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "HasMixedColumns", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (table)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (table))? };
         Ok(__cordl_ret.into())
     }
     pub fn HaveExtendedProperties(
         &mut self,
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                 bool,
@@ -765,18 +793,19 @@ impl crate::System::Data::XmlTreeGen {
             >("HaveExtendedProperties")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HaveExtendedProperties", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "HaveExtendedProperties", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ds)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (ds))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsAutoGenerated(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                 bool,
@@ -784,11 +813,12 @@ impl crate::System::Data::XmlTreeGen {
             >("IsAutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "IsAutoGenerated", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -806,7 +836,7 @@ impl crate::System::Data::XmlTreeGen {
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -818,12 +848,13 @@ impl crate::System::Data::XmlTreeGen {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "Save", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ds, dt, xw))
+            method.invoke_unchecked(self, (ds, dt, xw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -834,7 +865,7 @@ impl crate::System::Data::XmlTreeGen {
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         writeHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -847,12 +878,13 @@ impl crate::System::Data::XmlTreeGen {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "Save", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ds, dt, xw, writeHierarchy))
+            method.invoke_unchecked(self, (ds, dt, xw, writeHierarchy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -869,7 +901,7 @@ impl crate::System::Data::XmlTreeGen {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -890,8 +922,9 @@ impl crate::System::Data::XmlTreeGen {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "Save", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -899,7 +932,7 @@ impl crate::System::Data::XmlTreeGen {
                 .invoke_unchecked(
                     self,
                     (ds, dt, xw, writeHierarchy, multipleTargetConverter),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -908,7 +941,7 @@ impl crate::System::Data::XmlTreeGen {
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -919,12 +952,13 @@ impl crate::System::Data::XmlTreeGen {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "Save", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ds, xw))
+            method.invoke_unchecked(self, (ds, xw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -933,7 +967,7 @@ impl crate::System::Data::XmlTreeGen {
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -944,12 +978,13 @@ impl crate::System::Data::XmlTreeGen {
             >("Save")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Save", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "Save", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dt, xw))
+            method.invoke_unchecked(self, (dt, xw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -960,7 +995,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -971,12 +1006,13 @@ impl crate::System::Data::XmlTreeGen {
             >("SchemaTree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SchemaTree", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "SchemaTree", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement> = unsafe {
-            method.invoke_unchecked(self, (xd, dt))
+            method.invoke_unchecked(self, (xd, dt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -988,7 +1024,7 @@ impl crate::System::Data::XmlTreeGen {
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         writeHierarchy: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -1002,12 +1038,13 @@ impl crate::System::Data::XmlTreeGen {
             >("SchemaTree")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SchemaTree", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "SchemaTree", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (xd, xmlWriter, ds, dt, writeHierarchy))
+            method.invoke_unchecked(self, (xd, xmlWriter, ds, dt, writeHierarchy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1016,7 +1053,7 @@ impl crate::System::Data::XmlTreeGen {
         root: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -1027,12 +1064,13 @@ impl crate::System::Data::XmlTreeGen {
             >("SetMSDataAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMSDataAttribute", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "SetMSDataAttribute", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (root, _cordl_type))
+            method.invoke_unchecked(self, (root, _cordl_type))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1040,7 +1078,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>),
                 quest_hook::libil2cpp::Void,
@@ -1048,12 +1086,13 @@ impl crate::System::Data::XmlTreeGen {
             >("SetPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "SetPath", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (xw))
+            method.invoke_unchecked(self, (xw))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1061,7 +1100,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         dt: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>),
                 quest_hook::libil2cpp::Void,
@@ -1069,12 +1108,13 @@ impl crate::System::Data::XmlTreeGen {
             >("SetupAutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetupAutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "SetupAutoGenerated", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dt))
+            method.invoke_unchecked(self, (dt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1082,7 +1122,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                 quest_hook::libil2cpp::Void,
@@ -1090,12 +1130,13 @@ impl crate::System::Data::XmlTreeGen {
             >("SetupAutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetupAutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "SetupAutoGenerated", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (ds))
+            method.invoke_unchecked(self, (ds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1103,7 +1144,7 @@ impl crate::System::Data::XmlTreeGen {
         &mut self,
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                 quest_hook::libil2cpp::Void,
@@ -1111,12 +1152,13 @@ impl crate::System::Data::XmlTreeGen {
             >("SetupAutoGenerated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetupAutoGenerated", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "SetupAutoGenerated", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dt))
+            method.invoke_unchecked(self, (dt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1125,7 +1167,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Data::AcceptRejectRule),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1133,13 +1175,14 @@ impl crate::System::Data::XmlTreeGen {
             >("TranslateAcceptRejectRule")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateAcceptRejectRule", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "TranslateAcceptRejectRule", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (rule)) };
+        > = unsafe { method.invoke_unchecked((), (rule))? };
         Ok(__cordl_ret.into())
     }
     pub fn TranslateRule(
@@ -1147,7 +1190,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Data::Rule),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1155,19 +1198,20 @@ impl crate::System::Data::XmlTreeGen {
             >("TranslateRule")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TranslateRule", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "TranslateRule", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (rule)) };
+        > = unsafe { method.invoke_unchecked((), (rule))? };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateColumnMapping(
         columnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Void,
@@ -1175,12 +1219,13 @@ impl crate::System::Data::XmlTreeGen {
             >("ValidateColumnMapping")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ValidateColumnMapping", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "ValidateColumnMapping", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (columnType))
+            method.invoke_unchecked((), (columnType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1190,7 +1235,7 @@ impl crate::System::Data::XmlTreeGen {
         rootSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -1202,12 +1247,13 @@ impl crate::System::Data::XmlTreeGen {
             >("WriteSchemaRoot")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteSchemaRoot", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "WriteSchemaRoot", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (xd, rootSchema, targetNamespace))
+            method.invoke_unchecked(self, (xd, rootSchema, targetNamespace))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1216,7 +1262,7 @@ impl crate::System::Data::XmlTreeGen {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Type>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1224,19 +1270,20 @@ impl crate::System::Data::XmlTreeGen {
             >("XmlDataTypeName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "XmlDataTypeName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "XmlDataTypeName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
     pub fn _PropsNotEmpty(
         props: quest_hook::libil2cpp::Gc<crate::System::Data::PropertyCollection>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::PropertyCollection>),
                 bool,
@@ -1244,18 +1291,19 @@ impl crate::System::Data::XmlTreeGen {
             >("_PropsNotEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "_PropsNotEmpty", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), "_PropsNotEmpty", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (props)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (props))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         format: crate::System::Data::SchemaFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Data::SchemaFormat),
                 quest_hook::libil2cpp::Void,
@@ -1263,12 +1311,13 @@ impl crate::System::Data::XmlTreeGen {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::XmlTreeGen as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (format))
+            method.invoke_unchecked(self, (format))?
         };
         Ok(__cordl_ret.into())
     }

@@ -52,7 +52,7 @@ impl crate::System::Runtime::Remoting::Contexts::IContributeEnvoySink {
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Contexts::IContributeEnvoySink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -67,13 +67,14 @@ impl crate::System::Runtime::Remoting::Contexts::IContributeEnvoySink {
             >("GetEnvoySink")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnvoySink", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Contexts::IContributeEnvoySink as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEnvoySink", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        > = unsafe { method.invoke_unchecked(self, (obj, nextSink)) };
+        > = unsafe { method.invoke_unchecked(self, (obj, nextSink))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

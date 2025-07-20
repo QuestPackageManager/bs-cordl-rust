@@ -44,7 +44,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
         unityTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -57,12 +57,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("ApplyLocalTransfromFromHoudiniToUnity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyLocalTransfromFromHoudiniToUnity", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ApplyLocalTransfromFromHoudiniToUnity", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hapiTransform, unityTransform))
+            method.invoke_unchecked((), (hapiTransform, unityTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -72,7 +74,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
         unityTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -85,12 +87,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("ApplyLocalTransfromFromHoudiniToUnityForInstance")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyLocalTransfromFromHoudiniToUnityForInstance", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ApplyLocalTransfromFromHoudiniToUnityForInstance", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hapiTransform, unityTransform))
+            method.invoke_unchecked((), (hapiTransform, unityTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +102,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         matrix: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
         transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
@@ -109,12 +113,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("ApplyMatrixToLocalTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyMatrixToLocalTransform", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ApplyMatrixToLocalTransform", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (matrix, transform))
+            method.invoke_unchecked((), (matrix, transform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -124,7 +130,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
         unityTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -137,12 +143,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("ApplyWorldTransfromFromHoudiniToUnity")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApplyWorldTransfromFromHoudiniToUnity", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ApplyWorldTransfromFromHoudiniToUnity", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (hapiTransform, unityTransform))
+            method.invoke_unchecked((), (hapiTransform, unityTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,7 +160,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         bCookTemplatedGeos: bool,
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -167,12 +175,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CookNodeInHoudini")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CookNodeInHoudini", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CookNodeInHoudini", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, nodeID, bCookTemplatedGeos, assetName))
+            method
+                .invoke_unchecked((), (session, nodeID, bCookTemplatedGeos, assetName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -182,7 +192,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         options: crate::HoudiniEngineUnity::HAPI_CookOptions,
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -197,12 +207,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CookNodeInHoudiniWithOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CookNodeInHoudiniWithOptions", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CookNodeInHoudiniWithOptions", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, nodeID, options, assetName))
+            method.invoke_unchecked((), (session, nodeID, options, assetName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -212,7 +224,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         bCookTemplatedGeos: bool,
         newAssetID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -227,8 +239,10 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CreateAndCookAssetNode")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateAndCookAssetNode", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateAndCookAssetNode",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -236,7 +250,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (session, assetName, bCookTemplatedGeos, newAssetID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,7 +260,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         bCookTemplatedGeos: bool,
         newAssetID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -261,8 +275,10 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CreateAndCookCurveAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateAndCookCurveAsset", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateAndCookCurveAsset",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -270,7 +286,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (session, assetName, bCookTemplatedGeos, newAssetID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -280,7 +296,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         bCookTemplatedGeos: bool,
         newAssetID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -295,8 +311,10 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CreateAndCookInputAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateAndCookInputAsset", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateAndCookInputAsset",
+                    4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -304,7 +322,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (session, assetName, bCookTemplatedGeos, newAssetID),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -318,7 +336,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType,
@@ -335,8 +353,9 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CreateNewAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNewAsset", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateNewAsset", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
@@ -344,7 +363,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (assetType, rootName, parentTransform, session, bBuildAsync, rootGO),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -357,7 +376,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -373,8 +392,10 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CreateNewCurveAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNewCurveAsset", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateNewCurveAsset",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
@@ -382,7 +403,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (name, parentTransform, session, bBuildAsync, rootGO),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -395,7 +416,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -411,8 +432,10 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("CreateNewInputAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateNewInputAsset", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateNewInputAsset",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
@@ -420,14 +443,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (name, parentTransform, session, bBuildAsync, rootGO),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DestroyChildren(
         inTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                 quest_hook::libil2cpp::Void,
@@ -435,12 +458,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("DestroyChildren")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DestroyChildren", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "DestroyChildren", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (inTransform))
+            method.invoke_unchecked((), (inTransform))?
         };
         Ok(__cordl_ret.into())
     }
@@ -451,7 +475,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                 quest_hook::libil2cpp::Void,
@@ -459,12 +483,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("DestroyChildrenWithComponent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DestroyChildrenWithComponent", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "DestroyChildrenWithComponent", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (gameObject))
+            method.invoke_unchecked((), (gameObject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -472,7 +498,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         gameObect: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         bRegisterUndo: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>, bool),
                 quest_hook::libil2cpp::Void,
@@ -480,12 +506,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("DestroyGameObject")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DestroyGameObject", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "DestroyGameObject", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (gameObect, bRegisterUndo))
+            method.invoke_unchecked((), (gameObect, bRegisterUndo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,7 +526,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -518,8 +545,10 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("DoesGeoPartHaveAttribute")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoesGeoPartHaveAttribute", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "DoesGeoPartHaveAttribute",
+                    6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -527,14 +556,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (session, geoID, partID, attrName, owner, attributeInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DoesMappedPathExist(
         inPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -542,11 +571,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("DoesMappedPathExist")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DoesMappedPathExist", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "DoesMappedPathExist",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (inPath)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (inPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn FindHoudiniAssetFileInPathWithExt(
@@ -554,7 +585,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -562,13 +593,15 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("FindHoudiniAssetFileInPathWithExt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FindHoudiniAssetFileInPathWithExt", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "FindHoudiniAssetFileInPathWithExt", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (filePath)) };
+        > = unsafe { method.invoke_unchecked((), (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetInScene(
@@ -576,7 +609,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<
@@ -586,19 +619,20 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetAssetInScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAssetInScene", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAssetInScene", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
-        > = unsafe { method.invoke_unchecked((), (assetID)) };
+        > = unsafe { method.invoke_unchecked((), (assetID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultCookOptions(
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_CookOptions> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>),
                 crate::HoudiniEngineUnity::HAPI_CookOptions,
@@ -606,19 +640,21 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetDefaultCookOptions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefaultCookOptions", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetDefaultCookOptions",
+                    1usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_CookOptions = unsafe {
-            method.invoke_unchecked((), (session))
+            method.invoke_unchecked((), (session))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentPath() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -626,13 +662,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetEnvironmentPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetEnvironmentPath", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetEnvironmentPath", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHAPITransform(
@@ -640,7 +677,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         r: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         s: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_TransformEuler> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -652,19 +689,20 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetHAPITransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHAPITransform", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetHAPITransform", 3usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_TransformEuler = unsafe {
-            method.invoke_unchecked((), (p, r, s))
+            method.invoke_unchecked((), (p, r, s))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHAPITransformFromMatrix(
         mat: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_TransformEuler> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>),
                 crate::HoudiniEngineUnity::HAPI_TransformEuler,
@@ -672,19 +710,21 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetHAPITransformFromMatrix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHAPITransformFromMatrix", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetHAPITransformFromMatrix", 1usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_TransformEuler = unsafe {
-            method.invoke_unchecked((), (mat))
+            method.invoke_unchecked((), (mat))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHAPITransformQuatFromMatrix(
         mat: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::HoudiniEngineUnity::HAPI_Transform> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>),
                 crate::HoudiniEngineUnity::HAPI_Transform,
@@ -692,19 +732,21 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetHAPITransformQuatFromMatrix")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHAPITransformQuatFromMatrix", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetHAPITransformQuatFromMatrix", 1usize
                 )
             });
         let __cordl_ret: crate::HoudiniEngineUnity::HAPI_Transform = unsafe {
-            method.invoke_unchecked((), (mat))
+            method.invoke_unchecked((), (mat))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetHoudiniEngineInstallationInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -712,13 +754,15 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetHoudiniEngineInstallationInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetHoudiniEngineInstallationInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetHoudiniEngineInstallationInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMatrix4x4(
@@ -726,7 +770,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         r: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         s: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -738,12 +782,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetMatrix4x4")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMatrix4x4", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetMatrix4x4", 3usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (p, r, s))
+            method.invoke_unchecked((), (p, r, s))?
         };
         Ok(__cordl_ret.into())
     }
@@ -753,7 +798,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         >,
         bConvertToUnity: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -766,12 +811,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetMatrixFromHAPITransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetMatrixFromHAPITransform", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GetMatrixFromHAPITransform", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Matrix4x4 = unsafe {
-            method.invoke_unchecked((), (hapiTransform, bConvertToUnity))
+            method.invoke_unchecked((), (hapiTransform, bConvertToUnity))?
         };
         Ok(__cordl_ret.into())
     }
@@ -796,7 +843,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -826,8 +873,9 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetObjectInfos")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetObjectInfos", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetObjectInfos", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -835,7 +883,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                 .invoke_unchecked(
                     (),
                     (session, assetID, nodeInfo, objectInfos, objectTransforms),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -843,7 +891,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         nodeID: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -856,17 +904,20 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetParentNodeID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetParentNodeID", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetParentNodeID", 2usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (session, nodeID)) };
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (session, nodeID))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPosition(
         m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>),
                 crate::UnityEngine::Vector3,
@@ -874,19 +925,20 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPosition", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (m))
+            method.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetQuaternion(
         m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>),
                 crate::UnityEngine::Quaternion,
@@ -894,12 +946,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetQuaternion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetQuaternion", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetQuaternion", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked((), (m))
+            method.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
@@ -908,7 +961,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -916,19 +969,21 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetRealPathFromHFSPath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetRealPathFromHFSPath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetRealPathFromHFSPath",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (inPath)) };
+        > = unsafe { method.invoke_unchecked((), (inPath))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetScale(
         m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>),
                 crate::UnityEngine::Vector3,
@@ -936,12 +991,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("GetScale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetScale", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "GetScale", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (m))
+            method.invoke_unchecked((), (m))?
         };
         Ok(__cordl_ret.into())
     }
@@ -956,7 +1012,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -974,8 +1030,9 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("InstantiateHDA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "InstantiateHDA", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "InstantiateHDA", 7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
@@ -991,26 +1048,27 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                         bAlwaysOverwriteOnLoad,
                         rootGO,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsEqualTol(a: f32, b: f32, t: f32) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32, f32), bool, 3usize>("IsEqualTol")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEqualTol", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEqualTol", 3usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, t)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b, t))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsHoudiniAssetFile(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 bool,
@@ -1018,18 +1076,19 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("IsHoudiniAssetFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsHoudiniAssetFile", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsHoudiniAssetFile", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (filePath)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (filePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNodeValidInHoudini(
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         nodeID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1042,12 +1101,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("IsNodeValidInHoudini")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsNodeValidInHoudini", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsNodeValidInHoudini",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, nodeID))
+            method.invoke_unchecked((), (session, nodeID))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1057,7 +1118,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         r: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         s: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
@@ -1070,12 +1131,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("IsSameTransform")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSameTransform", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSameTransform", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (transformMatrix, p, r, s))
+            method.invoke_unchecked((), (transformMatrix, p, r, s))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1087,7 +1149,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             crate::HoudiniEngineUnity::HAPI_SessionSyncInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1102,17 +1164,18 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("IsSessionSyncEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSessionSyncEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSessionSyncEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (syncA, syncB)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (syncA, syncB))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsSupportedPolygonType(
         partType: crate::HoudiniEngineUnity::HAPI_PartType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::HoudiniEngineUnity::HAPI_PartType),
                 bool,
@@ -1120,11 +1183,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("IsSupportedPolygonType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsSupportedPolygonType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsSupportedPolygonType",
+                    1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (partType)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (partType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTransformEqual(
@@ -1135,7 +1200,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             crate::HoudiniEngineUnity::HAPI_Transform,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1150,18 +1215,21 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("IsTransformEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTransformEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsTransformEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (transA, transB)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (transA, transB))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsViewportEqual(
         viewA: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_Viewport>,
         viewB: quest_hook::libil2cpp::ByRefMut<crate::HoudiniEngineUnity::HAPI_Viewport>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -1176,11 +1244,12 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("IsViewportEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsViewportEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "IsViewportEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (viewA, viewB)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (viewA, viewB))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadGeoWithNewGeoSync(
@@ -1188,7 +1257,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -1196,12 +1265,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("LoadGeoWithNewGeoSync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadGeoWithNewGeoSync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadGeoWithNewGeoSync",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
-            method.invoke_unchecked((), (session))
+            method.invoke_unchecked((), (session))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1217,7 +1288,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1240,12 +1311,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("LoadHDAFile")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadHDAFile", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LoadHDAFile", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, assetPath, assetLibraryID, assetNames))
+            method
+                .invoke_unchecked((), (session, assetPath, assetLibraryID, assetNames))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1255,7 +1328,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1266,13 +1339,15 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("LocateValidFilePath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocateValidFilePath", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LocateValidFilePath",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (assetName, inFilePath)) };
+        > = unsafe { method.invoke_unchecked((), (assetName, inFilePath))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocateValidFilePath_Object0(
@@ -1280,7 +1355,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1288,19 +1363,21 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("LocateValidFilePath")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocateValidFilePath", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LocateValidFilePath",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (inObject)) };
+        > = unsafe { method.invoke_unchecked((), (inObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn Log(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1308,19 +1385,20 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("Log")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Log", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "Log", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LogError(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1328,19 +1406,20 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("LogError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogError", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LogError", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn LogWarning(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -1348,12 +1427,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("LogWarning")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LogWarning", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "LogWarning", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (message))
+            method.invoke_unchecked((), (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1361,7 +1441,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1374,12 +1454,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("ProcessHoudiniCookStatus")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ProcessHoudiniCookStatus", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "ProcessHoudiniCookStatus",
+                    2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (session, assetName))
+            method.invoke_unchecked((), (session, assetName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1389,7 +1471,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             crate::System::Collections::Generic::List_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -1402,12 +1484,14 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("SetAnimationCurveTangentModes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetAnimationCurveTangentModes", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "SetAnimationCurveTangentModes", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (animCurve, tangentValues))
+            method.invoke_unchecked((), (animCurve, tangentValues))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1415,7 +1499,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
         m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_HAPIUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
@@ -1426,12 +1510,13 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
             >("SetMatrixPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMatrixPosition", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_HAPIUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMatrixPosition", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (m, position))
+            method.invoke_unchecked((), (m, position))?
         };
         Ok(__cordl_ret.into())
     }

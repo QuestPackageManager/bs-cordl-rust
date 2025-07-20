@@ -45,7 +45,7 @@ impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::IndexFilterConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::BeatmapSaveDataVersion4::IndexFilter, i32),
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
@@ -53,20 +53,21 @@ impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
             >("Convert")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Convert", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::IndexFilterConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "Convert", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IndexFilter,
-        > = unsafe { method.invoke_unchecked((), (indexFilter, groupSize)) };
+        > = unsafe { method.invoke_unchecked((), (indexFilter, groupSize))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsIndexFilterValid(
         indexFilter: crate::BeatmapSaveDataVersion4::IndexFilter,
         groupSize: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatmapDataLoaderVersion4::IndexFilterConverter as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::BeatmapSaveDataVersion4::IndexFilter, i32),
                 bool,
@@ -74,12 +75,13 @@ impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
             >("IsIndexFilterValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsIndexFilterValid", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatmapDataLoaderVersion4::IndexFilterConverter as
+                    quest_hook::libil2cpp::Type > ::class(), "IsIndexFilterValid", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (indexFilter, groupSize))
+            method.invoke_unchecked((), (indexFilter, groupSize))?
         };
         Ok(__cordl_ret.into())
     }

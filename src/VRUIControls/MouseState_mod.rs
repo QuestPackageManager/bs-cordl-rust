@@ -44,27 +44,29 @@ impl std::ops::DerefMut for crate::VRUIControls::MouseState {
 #[cfg(feature = "VRUIControls+MouseState")]
 impl crate::VRUIControls::MouseState {
     pub fn AnyPressesThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::VRUIControls::MouseState as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("AnyPressesThisFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AnyPressesThisFrame", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::VRUIControls::MouseState as quest_hook::libil2cpp::Type >
+                    ::class(), "AnyPressesThisFrame", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn AnyReleasesThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::VRUIControls::MouseState as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("AnyReleasesThisFrame")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AnyReleasesThisFrame", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::VRUIControls::MouseState as quest_hook::libil2cpp::Type >
+                    ::class(), "AnyReleasesThisFrame", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetButtonState(
@@ -73,7 +75,7 @@ impl crate::VRUIControls::MouseState {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::VRUIControls::ButtonState>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::VRUIControls::MouseState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::EventSystems::PointerEventData_InputButton),
                 quest_hook::libil2cpp::Gc<crate::VRUIControls::ButtonState>,
@@ -81,12 +83,13 @@ impl crate::VRUIControls::MouseState {
             >("GetButtonState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetButtonState", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::VRUIControls::MouseState as quest_hook::libil2cpp::Type >
+                    ::class(), "GetButtonState", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::VRUIControls::ButtonState> = unsafe {
-            method.invoke_unchecked(self, (button))
+            method.invoke_unchecked(self, (button))?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +108,7 @@ impl crate::VRUIControls::MouseState {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::VRUIControls::MouseState as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::EventSystems::PointerEventData_InputButton,
@@ -119,28 +122,30 @@ impl crate::VRUIControls::MouseState {
             >("SetButtonState")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetButtonState", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::VRUIControls::MouseState as quest_hook::libil2cpp::Type >
+                    ::class(), "SetButtonState", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (button, stateForMouseButton, data))
+            method.invoke_unchecked(self, (button, stateForMouseButton, data))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::VRUIControls::MouseState as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::VRUIControls::MouseState as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

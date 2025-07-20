@@ -73,7 +73,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -97,12 +97,13 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("BuildEdgeMesh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildEdgeMesh", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildEdgeMesh", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
-            method.invoke_unchecked((), (pb, map, index))
+            method.invoke_unchecked((), (pb, map, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -123,7 +124,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -147,19 +148,20 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("BuildVertexMesh")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildVertexMesh", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildVertexMesh", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
-            method.invoke_unchecked((), (pb, map, index))
+            method.invoke_unchecked((), (pb, map, index))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DecodeRGBA(
         color: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Color32),
                 u32,
@@ -167,17 +169,18 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("DecodeRGBA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecodeRGBA", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "DecodeRGBA", 1usize
                 )
             });
-        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (color)) };
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (color))? };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeRGBA(
         hash: u32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (u32),
                 crate::UnityEngine::Color32,
@@ -185,12 +188,13 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("EncodeRGBA")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EncodeRGBA", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "EncodeRGBA", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            method.invoke_unchecked((), (hash))
+            method.invoke_unchecked((), (hash))?
         };
         Ok(__cordl_ret.into())
     }
@@ -229,7 +233,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -273,8 +277,10 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("GenerateEdgePickingObjects")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateEdgePickingObjects", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateEdgePickingObjects", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -282,7 +288,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                 .invoke_unchecked(
                     (),
                     (selection, doDepthTest, map, depthObjects, pickerObjects),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -312,7 +318,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -347,15 +353,17 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("GenerateFacePickingObjects")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateFacePickingObjects", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateFacePickingObjects", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
             >,
-        > = unsafe { method.invoke_unchecked((), (selection, map)) };
+        > = unsafe { method.invoke_unchecked((), (selection, map))? };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateVertexPickingObjects(
@@ -393,7 +401,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -437,8 +445,10 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("GenerateVertexPickingObjects")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GenerateVertexPickingObjects", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "GenerateVertexPickingObjects", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -446,7 +456,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                 .invoke_unchecked(
                     (),
                     (selection, doDepthTest, map, depthObjects, pickerObjects),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -475,7 +485,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -507,8 +517,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("PickEdgesInRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickEdgesInRect", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "PickEdgesInRect", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -534,7 +545,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                         renderTextureWidth,
                         renderTextureHeight,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -562,7 +573,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -595,8 +606,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("PickFacesInRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickFacesInRect", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "PickFacesInRect", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -621,7 +633,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                         renderTextureWidth,
                         renderTextureHeight,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -648,7 +660,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -678,8 +690,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("PickVerticesInRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PickVerticesInRect", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "PickVerticesInRect", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -703,7 +716,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                         renderTextureWidth,
                         renderTextureHeight,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -732,7 +745,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -766,12 +779,14 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("RenderSelectionPickerTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderSelectionPickerTexture", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RenderSelectionPickerTexture", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked((), (camera, selection, map, width, height))
+            method.invoke_unchecked((), (camera, selection, map, width, height))?
         };
         Ok(__cordl_ret.into())
     }
@@ -801,7 +816,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -834,8 +849,10 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("RenderSelectionPickerTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderSelectionPickerTexture", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RenderSelectionPickerTexture", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
@@ -843,7 +860,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                 .invoke_unchecked(
                     (),
                     (camera, selection, doDepthTest, map, width, height),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -873,7 +890,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -906,8 +923,10 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("RenderSelectionPickerTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderSelectionPickerTexture", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "RenderSelectionPickerTexture", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
@@ -915,20 +934,21 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                 .invoke_unchecked(
                     (),
                     (camera, selection, doDepthTest, map, width, height),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldUseHDRP() -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), bool, 0usize>("ShouldUseHDRP")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldUseHDRP", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldUseHDRP", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pickerRenderer() -> quest_hook::libil2cpp::Result<
@@ -936,7 +956,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -946,19 +966,20 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("get_pickerRenderer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_pickerRenderer", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_pickerRenderer", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_renderTextureFormat() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::RenderTextureFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::RenderTextureFormat,
@@ -966,19 +987,21 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("get_renderTextureFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_renderTextureFormat", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_renderTextureFormat",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::RenderTextureFormat = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_textureFormat() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextureFormat,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::UnityEngine::TextureFormat,
@@ -986,12 +1009,13 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >("get_textureFormat")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_textureFormat", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::SelectionPickerRenderer as
+                    quest_hook::libil2cpp::Type > ::class(), "get_textureFormat", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::TextureFormat = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1069,7 +1093,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRen
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -1083,12 +1107,15 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRen
             >("RenderLookupTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderLookupTexture", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer
+                    as quest_hook::libil2cpp::Type > ::class(), "RenderLookupTexture",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked(self, (camera, shader, tag, width, height))
+            method.invoke_unchecked(self, (camera, shader, tag, width, height))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1180,7 +1207,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -1194,28 +1221,33 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
             >("RenderLookupTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderLookupTexture", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP
+                    as quest_hook::libil2cpp::Type > ::class(), "RenderLookupTexture",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked(self, (camera, shader, tag, width, height))
+            method.invoke_unchecked(self, (camera, shader, tag, width, height))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1328,7 +1360,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -1342,28 +1374,33 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
             >("RenderLookupTexture")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "RenderLookupTexture", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard
+                    as quest_hook::libil2cpp::Type > ::class(), "RenderLookupTexture",
+                    5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            method.invoke_unchecked(self, (camera, shader, tag, width, height))
+            method.invoke_unchecked(self, (camera, shader, tag, width, height))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

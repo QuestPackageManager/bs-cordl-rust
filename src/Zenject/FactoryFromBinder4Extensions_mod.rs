@@ -81,7 +81,7 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder4Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -116,13 +116,14 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
             >("FromIFactory")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromIFactory", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder4Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FromIFactory", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (fromBinder, factoryBindGenerator)) };
+        > = unsafe { method.invoke_unchecked((), (fromBinder, factoryBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromMonoPoolableMemoryPool_Action_1_1<
@@ -163,7 +164,7 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder4Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -190,13 +191,15 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
             >("FromMonoPoolableMemoryPool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMonoPoolableMemoryPool", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder4Extensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "FromMonoPoolableMemoryPool", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (fromBinder, poolBindGenerator)) };
+        > = unsafe { method.invoke_unchecked((), (fromBinder, poolBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromMonoPoolableMemoryPool_FactoryFromBinder_5_0<
@@ -230,7 +233,7 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder4Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Zenject::FactoryFromBinder_5<
@@ -246,13 +249,15 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
             >("FromMonoPoolableMemoryPool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromMonoPoolableMemoryPool", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder4Extensions as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "FromMonoPoolableMemoryPool", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (fromBinder)) };
+        > = unsafe { method.invoke_unchecked((), (fromBinder))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromPoolableMemoryPool_Action_1_1<
@@ -293,7 +298,7 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder4Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -320,13 +325,15 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
             >("FromPoolableMemoryPool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromPoolableMemoryPool", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder4Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FromPoolableMemoryPool",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (fromBinder, poolBindGenerator)) };
+        > = unsafe { method.invoke_unchecked((), (fromBinder, poolBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromPoolableMemoryPool_Action_1_3<
@@ -370,7 +377,7 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
         TMemoryPool: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder4Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -397,13 +404,15 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
             >("FromPoolableMemoryPool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromPoolableMemoryPool", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder4Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FromPoolableMemoryPool",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (fromBinder, poolBindGenerator)) };
+        > = unsafe { method.invoke_unchecked((), (fromBinder, poolBindGenerator))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromPoolableMemoryPool_FactoryFromBinder_5_0<
@@ -437,7 +446,7 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder4Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Zenject::FactoryFromBinder_5<
@@ -453,13 +462,15 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
             >("FromPoolableMemoryPool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromPoolableMemoryPool", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder4Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FromPoolableMemoryPool",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (fromBinder)) };
+        > = unsafe { method.invoke_unchecked((), (fromBinder))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromPoolableMemoryPool_FactoryFromBinder_5_2<
@@ -496,7 +507,7 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
         TMemoryPool: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::FactoryFromBinder4Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Zenject::FactoryFromBinder_5<
@@ -512,13 +523,15 @@ impl crate::Zenject::FactoryFromBinder4Extensions {
             >("FromPoolableMemoryPool")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromPoolableMemoryPool", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::FactoryFromBinder4Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "FromPoolableMemoryPool",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = unsafe { method.invoke_unchecked((), (fromBinder)) };
+        > = unsafe { method.invoke_unchecked((), (fromBinder))? };
         Ok(__cordl_ret.into())
     }
 }

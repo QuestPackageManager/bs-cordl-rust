@@ -51,7 +51,7 @@ impl crate::System::Runtime::Remoting::Contexts::IContributeServerContextSink {
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Contexts::IContributeServerContextSink as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Runtime::Remoting::Messaging::IMessageSink,
@@ -63,13 +63,16 @@ impl crate::System::Runtime::Remoting::Contexts::IContributeServerContextSink {
             >("GetServerContextSink")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetServerContextSink", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate
+                    ::System::Runtime::Remoting::Contexts::IContributeServerContextSink
+                    as quest_hook::libil2cpp::Type > ::class(), "GetServerContextSink",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
-        > = unsafe { method.invoke_unchecked(self, (nextSink)) };
+        > = unsafe { method.invoke_unchecked(self, (nextSink))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

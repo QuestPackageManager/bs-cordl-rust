@@ -93,7 +93,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -118,13 +118,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             >("CreateObjectInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateObjectInfo", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::ObjectMap
+                    as quest_hook::libil2cpp::Type > ::class(), "CreateObjectInfo",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
-        > = unsafe { method.invoke_unchecked(self, (si, memberData)) };
+        > = unsafe { method.invoke_unchecked(self, (si, memberData))? };
         Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
@@ -162,7 +164,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -204,8 +206,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::ObjectMap
+                    as quest_hook::libil2cpp::Type > ::class(), "Create", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -225,7 +228,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                         assemblyInfo,
                         assemIdToAssemblyTable,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -249,7 +252,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -276,8 +279,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             >("Create")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Create", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::ObjectMap
+                    as quest_hook::libil2cpp::Type > ::class(), "Create", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -287,7 +291,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                 .invoke_unchecked(
                     (),
                     (name, objectType, memberNames, objectReader, objectId, assemblyInfo),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -405,7 +409,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -445,8 +449,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::ObjectMap
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 9usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -464,7 +469,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                         assemblyInfo,
                         assemIdToAssemblyTable,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -485,7 +490,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -510,8 +515,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Serialization::Formatters::Binary::ObjectMap
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -526,7 +532,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                         objectId,
                         assemblyInfo,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

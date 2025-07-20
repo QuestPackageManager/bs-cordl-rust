@@ -49,7 +49,7 @@ impl crate::System::Net::NetworkInformation::SystemNetworkInterface {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Net::NetworkInformation::SystemNetworkInterface as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -63,8 +63,10 @@ impl crate::System::Net::NetworkInformation::SystemNetworkInterface {
             >("GetNetworkInterfaces")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNetworkInterfaces", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Net::NetworkInformation::SystemNetworkInterface as
+                    quest_hook::libil2cpp::Type > ::class(), "GetNetworkInterfaces",
+                    0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -73,7 +75,7 @@ impl crate::System::Net::NetworkInformation::SystemNetworkInterface {
                     crate::System::Net::NetworkInformation::NetworkInterface,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

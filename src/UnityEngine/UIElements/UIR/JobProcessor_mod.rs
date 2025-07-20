@@ -43,7 +43,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         buffer: crate::System::IntPtr,
         jobCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::JobProcessor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, i32),
                 crate::Unity::Jobs::JobHandle,
@@ -51,12 +51,14 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
             >("ScheduleConvertMeshJobs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScheduleConvertMeshJobs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::JobProcessor as
+                    quest_hook::libil2cpp::Type > ::class(), "ScheduleConvertMeshJobs",
+                    2usize
                 )
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            method.invoke_unchecked((), (buffer, jobCount))
+            method.invoke_unchecked((), (buffer, jobCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -65,7 +67,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         jobCount: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::JobProcessor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -77,12 +79,14 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
             >("ScheduleConvertMeshJobs_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScheduleConvertMeshJobs_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::JobProcessor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScheduleConvertMeshJobs_Injected", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buffer, jobCount, ret))
+            method.invoke_unchecked((), (buffer, jobCount, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +94,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         buffer: crate::System::IntPtr,
         jobCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::JobProcessor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, i32),
                 crate::Unity::Jobs::JobHandle,
@@ -98,12 +102,14 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
             >("ScheduleCopyClosingMeshJobs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScheduleCopyClosingMeshJobs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::JobProcessor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScheduleCopyClosingMeshJobs", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            method.invoke_unchecked((), (buffer, jobCount))
+            method.invoke_unchecked((), (buffer, jobCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +118,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         jobCount: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::JobProcessor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -124,12 +130,14 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
             >("ScheduleCopyClosingMeshJobs_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScheduleCopyClosingMeshJobs_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::JobProcessor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScheduleCopyClosingMeshJobs_Injected", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buffer, jobCount, ret))
+            method.invoke_unchecked((), (buffer, jobCount, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +145,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         buffer: crate::System::IntPtr,
         jobCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::JobProcessor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, i32),
                 crate::Unity::Jobs::JobHandle,
@@ -145,12 +153,13 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
             >("ScheduleNudgeJobs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScheduleNudgeJobs", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::JobProcessor as
+                    quest_hook::libil2cpp::Type > ::class(), "ScheduleNudgeJobs", 2usize
                 )
             });
         let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
-            method.invoke_unchecked((), (buffer, jobCount))
+            method.invoke_unchecked((), (buffer, jobCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +168,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         jobCount: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::UIR::JobProcessor as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -171,12 +180,14 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
             >("ScheduleNudgeJobs_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ScheduleNudgeJobs_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::UIR::JobProcessor as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ScheduleNudgeJobs_Injected", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (buffer, jobCount, ret))
+            method.invoke_unchecked((), (buffer, jobCount, ret))?
         };
         Ok(__cordl_ret.into())
     }

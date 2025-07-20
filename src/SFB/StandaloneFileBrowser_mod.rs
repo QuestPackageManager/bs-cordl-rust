@@ -62,7 +62,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -88,12 +88,13 @@ impl crate::SFB::StandaloneFileBrowser {
             >("OpenFilePanelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenFilePanelAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "OpenFilePanelAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, extensions, multiselect, cb))
+            method.invoke_unchecked((), (title, directory, extensions, multiselect, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +113,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -136,12 +137,13 @@ impl crate::SFB::StandaloneFileBrowser {
             >("OpenFilePanelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenFilePanelAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "OpenFilePanelAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, extension, multiselect, cb))
+            method.invoke_unchecked((), (title, directory, extension, multiselect, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +161,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -178,8 +180,9 @@ impl crate::SFB::StandaloneFileBrowser {
             >("OpenFilePanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenFilePanel", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "OpenFilePanel", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -187,7 +190,7 @@ impl crate::SFB::StandaloneFileBrowser {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, extensions, multiselect))
+            method.invoke_unchecked((), (title, directory, extensions, multiselect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -203,7 +206,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,8 +223,9 @@ impl crate::SFB::StandaloneFileBrowser {
             >("OpenFilePanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenFilePanel", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "OpenFilePanel", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -229,7 +233,7 @@ impl crate::SFB::StandaloneFileBrowser {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, extension, multiselect))
+            method.invoke_unchecked((), (title, directory, extension, multiselect))?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +248,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -260,15 +264,16 @@ impl crate::SFB::StandaloneFileBrowser {
             >("OpenFolderPanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenFolderPanel", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "OpenFolderPanel", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = unsafe { method.invoke_unchecked((), (title, directory, multiselect)) };
+        > = unsafe { method.invoke_unchecked((), (title, directory, multiselect))? };
         Ok(__cordl_ret.into())
     }
     pub fn OpenFolderPanelAsync(
@@ -285,7 +290,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -308,12 +313,13 @@ impl crate::SFB::StandaloneFileBrowser {
             >("OpenFolderPanelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OpenFolderPanelAsync", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "OpenFolderPanelAsync", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, multiselect, cb))
+            method.invoke_unchecked((), (title, directory, multiselect, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -330,7 +336,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -352,12 +358,13 @@ impl crate::SFB::StandaloneFileBrowser {
             >("SaveFilePanelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveFilePanelAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "SaveFilePanelAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extensions, cb))
+            method.invoke_unchecked((), (title, directory, defaultName, extensions, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -372,7 +379,7 @@ impl crate::SFB::StandaloneFileBrowser {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -392,12 +399,13 @@ impl crate::SFB::StandaloneFileBrowser {
             >("SaveFilePanelAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveFilePanelAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "SaveFilePanelAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extension, cb))
+            method.invoke_unchecked((), (title, directory, defaultName, extension, cb))?
         };
         Ok(__cordl_ret.into())
     }
@@ -411,7 +419,7 @@ impl crate::SFB::StandaloneFileBrowser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -426,14 +434,15 @@ impl crate::SFB::StandaloneFileBrowser {
             >("SaveFilePanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveFilePanel", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "SaveFilePanel", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extensions))
+            method.invoke_unchecked((), (title, directory, defaultName, extensions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -445,7 +454,7 @@ impl crate::SFB::StandaloneFileBrowser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -458,30 +467,32 @@ impl crate::SFB::StandaloneFileBrowser {
             >("SaveFilePanel")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SaveFilePanel", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), "SaveFilePanel", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
-            method.invoke_unchecked((), (title, directory, defaultName, extension))
+            method.invoke_unchecked((), (title, directory, defaultName, extension))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::SFB::StandaloneFileBrowser as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

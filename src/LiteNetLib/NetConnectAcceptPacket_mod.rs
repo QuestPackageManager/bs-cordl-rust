@@ -47,7 +47,7 @@ impl crate::LiteNetLib::NetConnectAcceptPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetConnectAcceptPacket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NetConnectAcceptPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>),
                 quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetConnectAcceptPacket>,
@@ -55,13 +55,14 @@ impl crate::LiteNetLib::NetConnectAcceptPacket {
             >("FromData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FromData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NetConnectAcceptPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "FromData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::NetConnectAcceptPacket,
-        > = unsafe { method.invoke_unchecked((), (packet)) };
+        > = unsafe { method.invoke_unchecked((), (packet))? };
         Ok(__cordl_ret.into())
     }
     pub fn Make(
@@ -71,7 +72,7 @@ impl crate::LiteNetLib::NetConnectAcceptPacket {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NetConnectAcceptPacket as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i64, u8, bool),
                 quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
@@ -79,12 +80,13 @@ impl crate::LiteNetLib::NetConnectAcceptPacket {
             >("Make")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Make", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NetConnectAcceptPacket as
+                    quest_hook::libil2cpp::Type > ::class(), "Make", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket> = unsafe {
-            method.invoke_unchecked((), (connectId, connectNum, reusedPeer))
+            method.invoke_unchecked((), (connectId, connectNum, reusedPeer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,16 +107,18 @@ impl crate::LiteNetLib::NetConnectAcceptPacket {
         connectionNumber: u8,
         isReusedPeer: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::LiteNetLib::NetConnectAcceptPacket as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i64, u8, bool), quest_hook::libil2cpp::Void, 3usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::LiteNetLib::NetConnectAcceptPacket as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (connectionId, connectionNumber, isReusedPeer))
+            method
+                .invoke_unchecked(self, (connectionId, connectionNumber, isReusedPeer))?
         };
         Ok(__cordl_ret.into())
     }

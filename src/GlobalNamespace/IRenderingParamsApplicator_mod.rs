@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::IRenderingParamsApplicator {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::IRenderingParamsApplicator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::GlobalNamespace::SceneType,
@@ -57,12 +57,14 @@ impl crate::GlobalNamespace::IRenderingParamsApplicator {
             >("Apply")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Apply", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::IRenderingParamsApplicator as
+                    quest_hook::libil2cpp::Type > ::class(), "Apply", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneType, optionalEnvironmentSerializedName))
+            method
+                .invoke_unchecked(self, (sceneType, optionalEnvironmentSerializedName))?
         };
         Ok(__cordl_ret.into())
     }

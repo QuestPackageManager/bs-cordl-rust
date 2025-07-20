@@ -48,7 +48,7 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
             crate::UnityEngine::Networking::UnityWebRequest_Result,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::UnityWebRequestExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
@@ -60,13 +60,14 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
             >("GetAwaiter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAwaiter", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::UnityWebRequestExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "GetAwaiter", 1usize
                 )
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             crate::UnityEngine::Networking::UnityWebRequest_Result,
-        > = unsafe { method.invoke_unchecked((), (webRequestOperation)) };
+        > = unsafe { method.invoke_unchecked((), (webRequestOperation))? };
         Ok(__cordl_ret.into())
     }
     pub fn SendWebRequestAsync(
@@ -81,7 +82,7 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BGLib::UnityExtension::UnityWebRequestExtensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -98,15 +99,17 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
             >("SendWebRequestAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SendWebRequestAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BGLib::UnityExtension::UnityWebRequestExtensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SendWebRequestAsync",
+                    2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::UnityEngine::Networking::UnityWebRequest_Result,
             >,
-        > = unsafe { method.invoke_unchecked((), (request, cancellationToken)) };
+        > = unsafe { method.invoke_unchecked((), (request, cancellationToken))? };
         Ok(__cordl_ret.into())
     }
 }

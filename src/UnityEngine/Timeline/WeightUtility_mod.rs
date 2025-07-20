@@ -41,7 +41,7 @@ impl crate::UnityEngine::Timeline::WeightUtility {
     pub fn NormalizeMixer(
         mixer: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Timeline::WeightUtility as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Playables::Playable),
                 f32,
@@ -49,11 +49,12 @@ impl crate::UnityEngine::Timeline::WeightUtility {
             >("NormalizeMixer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "NormalizeMixer", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Timeline::WeightUtility as
+                    quest_hook::libil2cpp::Type > ::class(), "NormalizeMixer", 1usize
                 )
             });
-        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (mixer)) };
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (mixer))? };
         Ok(__cordl_ret.into())
     }
 }

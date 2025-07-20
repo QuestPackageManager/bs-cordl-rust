@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::ScoreModel {
             crate::GlobalNamespace::IReadonlyBeatmapData,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::IReadonlyBeatmapData,
@@ -62,11 +62,12 @@ impl crate::GlobalNamespace::ScoreModel {
             >("ComputeMaxMultipliedScoreForBeatmap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeMaxMultipliedScoreForBeatmap", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type >
+                    ::class(), "ComputeMaxMultipliedScoreForBeatmap", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (beatmapData)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (beatmapData))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeQuickInaccurateMaxMultipliedScoreForBeatmap(
@@ -74,7 +75,7 @@ impl crate::GlobalNamespace::ScoreModel {
             crate::GlobalNamespace::BeatmapBasicData,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapBasicData>),
                 i32,
@@ -82,12 +83,14 @@ impl crate::GlobalNamespace::ScoreModel {
             >("ComputeQuickInaccurateMaxMultipliedScoreForBeatmap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeQuickInaccurateMaxMultipliedScoreForBeatmap", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type >
+                    ::class(), "ComputeQuickInaccurateMaxMultipliedScoreForBeatmap",
+                    1usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (beatmapBasicData))
+            method.invoke_unchecked((), (beatmapBasicData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -95,7 +98,7 @@ impl crate::GlobalNamespace::ScoreModel {
         multipliedScore: i32,
         gameplayModifiersScoreMultiplier: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, f32),
                 i32,
@@ -103,8 +106,10 @@ impl crate::GlobalNamespace::ScoreModel {
             >("GetModifiedScoreForGameplayModifiersScoreMultiplier")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetModifiedScoreForGameplayModifiersScoreMultiplier", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type >
+                    ::class(), "GetModifiedScoreForGameplayModifiersScoreMultiplier",
+                    2usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
@@ -112,7 +117,7 @@ impl crate::GlobalNamespace::ScoreModel {
                 .invoke_unchecked(
                     (),
                     (multipliedScore, gameplayModifiersScoreMultiplier),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -121,7 +126,7 @@ impl crate::GlobalNamespace::ScoreModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoreModel_NoteScoreDefinition>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::GlobalNamespace::NoteData_ScoringType),
                 quest_hook::libil2cpp::Gc<
@@ -131,13 +136,14 @@ impl crate::GlobalNamespace::ScoreModel {
             >("GetNoteScoreDefinition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNoteScoreDefinition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type >
+                    ::class(), "GetNoteScoreDefinition", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
-        > = unsafe { method.invoke_unchecked((), (scoringType)) };
+        > = unsafe { method.invoke_unchecked((), (scoringType))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -150,16 +156,17 @@ impl crate::GlobalNamespace::ScoreModel {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +231,7 @@ impl crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
             crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
@@ -234,11 +241,12 @@ impl crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel_MaxScoreCounterElement as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -256,7 +264,7 @@ impl crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
         scoringType: crate::GlobalNamespace::NoteData_ScoringType,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::GlobalNamespace::NoteData_ScoringType, f32),
                 quest_hook::libil2cpp::Void,
@@ -264,12 +272,13 @@ impl crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel_MaxScoreCounterElement as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (scoringType, _cordl_time))
+            method.invoke_unchecked(self, (scoringType, _cordl_time))?
         };
         Ok(__cordl_ret.into())
     }
@@ -400,7 +409,7 @@ impl crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
         maxAfterCutScore: i32,
         fixedCutScore: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel_NoteScoreDefinition as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -408,8 +417,9 @@ impl crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel_NoteScoreDefinition as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -424,32 +434,34 @@ impl crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
                         maxAfterCutScore,
                         fixedCutScore,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_executionOrder(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel_NoteScoreDefinition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_executionOrder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_executionOrder", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel_NoteScoreDefinition as
+                    quest_hook::libil2cpp::Type > ::class(), "get_executionOrder", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_maxCutScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::GlobalNamespace::ScoreModel_NoteScoreDefinition as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_maxCutScore")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_maxCutScore", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::GlobalNamespace::ScoreModel_NoteScoreDefinition as
+                    quest_hook::libil2cpp::Type > ::class(), "get_maxCutScore", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

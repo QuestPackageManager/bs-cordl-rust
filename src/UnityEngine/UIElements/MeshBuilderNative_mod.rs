@@ -51,7 +51,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
@@ -62,12 +62,13 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeBorder")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeBorder", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeBorder", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method.invoke_unchecked((), (borderParams, posZ))
+            method.invoke_unchecked((), (borderParams, posZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +81,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -96,12 +97,14 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeBorder_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeBorder_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeBorder_Injected",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (borderParams, posZ, ret))
+            method.invoke_unchecked((), (borderParams, posZ, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -111,7 +114,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
@@ -122,12 +125,13 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeSolidRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeSolidRect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeSolidRect", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ))
+            method.invoke_unchecked((), (rectParams, posZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +144,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -156,12 +160,14 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeSolidRect_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeSolidRect_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeSolidRect_Injected",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ, ret))
+            method.invoke_unchecked((), (rectParams, posZ, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -171,7 +177,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
@@ -182,12 +188,13 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeTexturedRect")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeTexturedRect", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeTexturedRect", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ))
+            method.invoke_unchecked((), (rectParams, posZ))?
         };
         Ok(__cordl_ret.into())
     }
@@ -200,7 +207,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<
@@ -216,12 +223,14 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeTexturedRect_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeTexturedRect_Injected", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(), "MakeTexturedRect_Injected",
+                    3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (rectParams, posZ, ret))
+            method.invoke_unchecked((), (rectParams, posZ, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -240,7 +249,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -262,8 +271,10 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeVectorGraphics9SliceBackground")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeVectorGraphics9SliceBackground", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MakeVectorGraphics9SliceBackground", 9usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
@@ -281,7 +292,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         colorPage,
                         settingIndexOffset,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -303,7 +314,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -330,8 +341,10 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeVectorGraphics9SliceBackground_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeVectorGraphics9SliceBackground_Injected", 10usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MakeVectorGraphics9SliceBackground_Injected", 10usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -350,7 +363,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         settingIndexOffset,
                         ret,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -372,7 +385,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -397,8 +410,10 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeVectorGraphicsStretchBackground")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeVectorGraphicsStretchBackground", 12usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MakeVectorGraphicsStretchBackground", 12usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
@@ -419,7 +434,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         finalVertexCount,
                         finalIndexCount,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -444,7 +459,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::UIElements::MeshBuilderNative as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -474,8 +489,10 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             >("MakeVectorGraphicsStretchBackground_Injected")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MakeVectorGraphicsStretchBackground_Injected", 13usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::UIElements::MeshBuilderNative as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "MakeVectorGraphicsStretchBackground_Injected", 13usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -497,7 +514,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         finalIndexCount,
                         ret,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

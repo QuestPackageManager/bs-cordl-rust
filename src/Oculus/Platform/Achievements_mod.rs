@@ -50,7 +50,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, u64),
                 quest_hook::libil2cpp::Gc<
@@ -64,8 +64,9 @@ impl crate::Oculus::Platform::Achievements {
             >("AddCount")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddCount", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "AddCount", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -74,7 +75,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementUpdate,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (name, count)) };
+        > = unsafe { method.invoke_unchecked((), (name, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddFields(
@@ -89,7 +90,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -106,8 +107,9 @@ impl crate::Oculus::Platform::Achievements {
             >("AddFields")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddFields", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "AddFields", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -116,7 +118,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementUpdate,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (name, fields)) };
+        > = unsafe { method.invoke_unchecked((), (name, fields))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllDefinitions() -> quest_hook::libil2cpp::Result<
@@ -128,7 +130,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -142,8 +144,9 @@ impl crate::Oculus::Platform::Achievements {
             >("GetAllDefinitions")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllDefinitions", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "GetAllDefinitions", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -152,7 +155,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementDefinitionList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllProgress() -> quest_hook::libil2cpp::Result<
@@ -164,7 +167,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -178,8 +181,9 @@ impl crate::Oculus::Platform::Achievements {
             >("GetAllProgress")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetAllProgress", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "GetAllProgress", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -188,7 +192,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementProgressList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefinitionsByName(
@@ -206,7 +210,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -224,8 +228,9 @@ impl crate::Oculus::Platform::Achievements {
             >("GetDefinitionsByName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetDefinitionsByName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "GetDefinitionsByName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -234,7 +239,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementDefinitionList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (names)) };
+        > = unsafe { method.invoke_unchecked((), (names))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextAchievementDefinitionListPage(
@@ -250,7 +255,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::AchievementDefinitionList,
@@ -266,8 +271,9 @@ impl crate::Oculus::Platform::Achievements {
             >("GetNextAchievementDefinitionListPage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextAchievementDefinitionListPage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "GetNextAchievementDefinitionListPage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -276,7 +282,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementDefinitionList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list)) };
+        > = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextAchievementProgressListPage(
@@ -292,7 +298,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::AchievementProgressList,
@@ -308,8 +314,9 @@ impl crate::Oculus::Platform::Achievements {
             >("GetNextAchievementProgressListPage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetNextAchievementProgressListPage", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "GetNextAchievementProgressListPage", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -318,7 +325,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementProgressList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (list)) };
+        > = unsafe { method.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetProgressByName(
@@ -336,7 +343,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -354,8 +361,9 @@ impl crate::Oculus::Platform::Achievements {
             >("GetProgressByName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProgressByName", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "GetProgressByName", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -364,7 +372,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementProgressList,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (names)) };
+        > = unsafe { method.invoke_unchecked((), (names))? };
         Ok(__cordl_ret.into())
     }
     pub fn Unlock(
@@ -378,7 +386,7 @@ impl crate::Oculus::Platform::Achievements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<
@@ -392,8 +400,9 @@ impl crate::Oculus::Platform::Achievements {
             >("Unlock")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Unlock", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Achievements as quest_hook::libil2cpp::Type
+                    > ::class(), "Unlock", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -402,7 +411,7 @@ impl crate::Oculus::Platform::Achievements {
                     crate::Oculus::Platform::Models::AchievementUpdate,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (name)) };
+        > = unsafe { method.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
 }

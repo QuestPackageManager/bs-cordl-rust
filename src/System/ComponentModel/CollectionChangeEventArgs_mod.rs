@@ -58,7 +58,7 @@ impl crate::System::ComponentModel::CollectionChangeEventArgs {
         action: crate::System::ComponentModel::CollectionChangeAction,
         element: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::CollectionChangeEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ComponentModel::CollectionChangeAction,
@@ -69,12 +69,13 @@ impl crate::System::ComponentModel::CollectionChangeEventArgs {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::CollectionChangeEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (action, element))
+            method.invoke_unchecked(self, (action, element))?
         };
         Ok(__cordl_ret.into())
     }
@@ -83,7 +84,7 @@ impl crate::System::ComponentModel::CollectionChangeEventArgs {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ComponentModel::CollectionChangeAction,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::CollectionChangeEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::ComponentModel::CollectionChangeAction,
@@ -91,12 +92,13 @@ impl crate::System::ComponentModel::CollectionChangeEventArgs {
             >("get_Action")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Action", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::CollectionChangeEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Action", 0usize
                 )
             });
         let __cordl_ret: crate::System::ComponentModel::CollectionChangeAction = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -105,7 +107,7 @@ impl crate::System::ComponentModel::CollectionChangeEventArgs {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::CollectionChangeEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -113,13 +115,14 @@ impl crate::System::ComponentModel::CollectionChangeEventArgs {
             >("get_Element")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_Element", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::CollectionChangeEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "get_Element", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

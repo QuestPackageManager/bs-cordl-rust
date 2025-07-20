@@ -44,7 +44,7 @@ impl crate::System::Data::ParentForeignKeyConstraintEnumerator {
         &mut self,
         constraint: quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::ParentForeignKeyConstraintEnumerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>),
                 bool,
@@ -52,11 +52,12 @@ impl crate::System::Data::ParentForeignKeyConstraintEnumerator {
             >("IsValidCandidate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidCandidate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::ParentForeignKeyConstraintEnumerator as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidCandidate", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (constraint)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (constraint))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -74,7 +75,7 @@ impl crate::System::Data::ParentForeignKeyConstraintEnumerator {
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         inTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::ParentForeignKeyConstraintEnumerator as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -85,12 +86,13 @@ impl crate::System::Data::ParentForeignKeyConstraintEnumerator {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::ParentForeignKeyConstraintEnumerator as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (dataSet, inTable))
+            method.invoke_unchecked(self, (dataSet, inTable))?
         };
         Ok(__cordl_ret.into())
     }

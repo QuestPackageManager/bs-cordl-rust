@@ -41,15 +41,16 @@ impl crate::Microsoft::Win32::NativeMethods {
     pub fn CloseProcess(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(crate::System::IntPtr), bool, 1usize>("CloseProcess")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CloseProcess", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "CloseProcess", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (handle))? };
         Ok(__cordl_ret.into())
     }
     pub fn DuplicateHandle(
@@ -65,7 +66,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         bInheritHandle: bool,
         dwOptions: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::Runtime::InteropServices::HandleRef,
@@ -85,8 +86,9 @@ impl crate::Microsoft::Win32::NativeMethods {
             >("DuplicateHandle")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DuplicateHandle", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "DuplicateHandle", 7usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -102,41 +104,44 @@ impl crate::Microsoft::Win32::NativeMethods {
                         bInheritHandle,
                         dwOptions,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentProcess() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), crate::System::IntPtr, 0usize>("GetCurrentProcess")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentProcess", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurrentProcess", 0usize
                 )
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurrentProcessId() -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(), i32, 0usize>("GetCurrentProcessId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetCurrentProcessId", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetCurrentProcessId",
+                    0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetExitCodeProcess_IntPtr0(
         processHandle: crate::System::IntPtr,
         exitCode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>),
                 bool,
@@ -144,12 +149,13 @@ impl crate::Microsoft::Win32::NativeMethods {
             >("GetExitCodeProcess")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetExitCodeProcess", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetExitCodeProcess", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (processHandle, exitCode))
+            method.invoke_unchecked((), (processHandle, exitCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,7 +165,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         >,
         exitCode: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -172,12 +178,13 @@ impl crate::Microsoft::Win32::NativeMethods {
             >("GetExitCodeProcess")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetExitCodeProcess", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetExitCodeProcess", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (processHandle, exitCode))
+            method.invoke_unchecked((), (processHandle, exitCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -188,7 +195,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         kernel: quest_hook::libil2cpp::ByRefMut<i64>,
         user: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::IntPtr,
@@ -202,12 +209,13 @@ impl crate::Microsoft::Win32::NativeMethods {
             >("GetProcessTimes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProcessTimes", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetProcessTimes", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))
+            method.invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))?
         };
         Ok(__cordl_ret.into())
     }
@@ -220,7 +228,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         kernel: quest_hook::libil2cpp::ByRefMut<i64>,
         user: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Microsoft::Win32::NativeMethods as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -236,12 +244,13 @@ impl crate::Microsoft::Win32::NativeMethods {
             >("GetProcessTimes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetProcessTimes", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Microsoft::Win32::NativeMethods as
+                    quest_hook::libil2cpp::Type > ::class(), "GetProcessTimes", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))
+            method.invoke_unchecked((), (handle, creation, _cordl_exit, kernel, user))?
         };
         Ok(__cordl_ret.into())
     }

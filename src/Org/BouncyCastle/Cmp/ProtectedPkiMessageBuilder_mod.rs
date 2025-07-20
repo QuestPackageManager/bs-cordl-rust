@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::X509::X509Certificate,
@@ -67,13 +67,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("AddCmpCertificate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddCmpCertificate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddCmpCertificate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (certificate)) };
+        > = unsafe { method.invoke_unchecked(self, (certificate))? };
         Ok(__cordl_ret.into())
     }
     pub fn AddGeneralInfo(
@@ -86,7 +87,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
@@ -98,13 +99,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("AddGeneralInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddGeneralInfo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "AddGeneralInfo", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (genInfo)) };
+        > = unsafe { method.invoke_unchecked(self, (genInfo))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build_IMacFactory1(
@@ -113,7 +115,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::IMacFactory,
@@ -125,13 +127,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
-        > = unsafe { method.invoke_unchecked(self, (factory)) };
+        > = unsafe { method.invoke_unchecked(self, (factory))? };
         Ok(__cordl_ret.into())
     }
     pub fn Build_ISignatureFactory0(
@@ -142,7 +145,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Crypto::ISignatureFactory,
@@ -154,13 +157,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("Build")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Build", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "Build", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
-        > = unsafe { method.invoke_unchecked(self, (signatureFactory)) };
+        > = unsafe { method.invoke_unchecked(self, (signatureFactory))? };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateSignature(
@@ -175,7 +179,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -193,13 +197,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("CalculateSignature")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CalculateSignature", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "CalculateSignature", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked(self, (signer, header, body)) };
+        > = unsafe { method.invoke_unchecked(self, (signer, header, body))? };
         Ok(__cordl_ret.into())
     }
     pub fn FinalizeHeader(
@@ -208,7 +213,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
@@ -218,12 +223,13 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("FinalizeHeader")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FinalizeHeader", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "FinalizeHeader", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (algorithmIdentifier))
+            method.invoke_unchecked(self, (algorithmIdentifier))?
         };
         Ok(__cordl_ret.into())
     }
@@ -238,7 +244,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -255,13 +261,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("FinalizeMessage")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FinalizeMessage", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "FinalizeMessage", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage,
-        > = unsafe { method.invoke_unchecked(self, (header, protection)) };
+        > = unsafe { method.invoke_unchecked(self, (header, protection))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_GeneralName0(
@@ -301,7 +308,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Cmp::PkiBody,
@@ -313,13 +320,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetBody")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBody", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetBody", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (body)) };
+        > = unsafe { method.invoke_unchecked(self, (body))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetFreeText(
@@ -332,7 +340,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::Cmp::PkiFreeText,
@@ -344,13 +352,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetFreeText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetFreeText", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetFreeText", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (freeText)) };
+        > = unsafe { method.invoke_unchecked(self, (freeText))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetMessageTime(
@@ -363,7 +372,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
@@ -375,13 +384,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetMessageTime")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetMessageTime", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetMessageTime", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (generalizedTime)) };
+        > = unsafe { method.invoke_unchecked(self, (generalizedTime))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipKID(
@@ -392,7 +402,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -402,13 +412,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetRecipKID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetRecipKID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetRecipKID", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (id)) };
+        > = unsafe { method.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetRecipNonce(
@@ -419,7 +430,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -429,13 +440,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetRecipNonce")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetRecipNonce", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetRecipNonce", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce)) };
+        > = unsafe { method.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderKID(
@@ -446,7 +458,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -456,13 +468,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetSenderKID")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSenderKID", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSenderKID", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (id)) };
+        > = unsafe { method.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetSenderNonce(
@@ -473,7 +486,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -483,13 +496,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetSenderNonce")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetSenderNonce", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetSenderNonce", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (nonce)) };
+        > = unsafe { method.invoke_unchecked(self, (nonce))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetTransactionId(
@@ -500,7 +514,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<
@@ -510,13 +524,14 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >("SetTransactionId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTransactionId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), "SetTransactionId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder,
-        > = unsafe { method.invoke_unchecked(self, (tid)) };
+        > = unsafe { method.invoke_unchecked(self, (tid))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_GeneralName0(
@@ -528,7 +543,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -543,12 +558,13 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sender, recipient))
+            method.invoke_unchecked(self, (sender, recipient))?
         };
         Ok(__cordl_ret.into())
     }
@@ -562,7 +578,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -578,12 +594,13 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Cmp::ProtectedPkiMessageBuilder as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (pvno, sender, recipient))
+            method.invoke_unchecked(self, (pvno, sender, recipient))?
         };
         Ok(__cordl_ret.into())
     }

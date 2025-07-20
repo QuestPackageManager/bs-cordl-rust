@@ -46,7 +46,7 @@ impl crate::System::IPv4AddressHelper {
         notImplicitFile: bool,
         unknownScheme: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IPv4AddressHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -61,8 +61,9 @@ impl crate::System::IPv4AddressHelper {
             >("IsValid")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValid", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IPv4AddressHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsValid", 6usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -70,7 +71,7 @@ impl crate::System::IPv4AddressHelper {
                 .invoke_unchecked(
                     (),
                     (name, start, end, allowIPv6, notImplicitFile, unknownScheme),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +82,7 @@ impl crate::System::IPv4AddressHelper {
         allowIPv6: bool,
         notImplicitFile: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IPv4AddressHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -95,12 +96,13 @@ impl crate::System::IPv4AddressHelper {
             >("IsValidCanonical")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidCanonical", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IPv4AddressHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "IsValidCanonical", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, start, end, allowIPv6, notImplicitFile))
+            method.invoke_unchecked((), (name, start, end, allowIPv6, notImplicitFile))?
         };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +112,7 @@ impl crate::System::IPv4AddressHelper {
         start: i32,
         end: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IPv4AddressHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -123,12 +125,13 @@ impl crate::System::IPv4AddressHelper {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IPv4AddressHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "Parse", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, numbers, start, end))
+            method.invoke_unchecked((), (name, numbers, start, end))?
         };
         Ok(__cordl_ret.into())
     }
@@ -138,7 +141,7 @@ impl crate::System::IPv4AddressHelper {
         start: i32,
         end: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IPv4AddressHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::System::ReadOnlySpan_1<char>,
@@ -151,12 +154,13 @@ impl crate::System::IPv4AddressHelper {
             >("ParseCanonical")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseCanonical", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IPv4AddressHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseCanonical", 4usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (name, numbers, start, end))
+            method.invoke_unchecked((), (name, numbers, start, end))?
         };
         Ok(__cordl_ret.into())
     }
@@ -168,7 +172,7 @@ impl crate::System::IPv4AddressHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IPv4AddressHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -181,13 +185,14 @@ impl crate::System::IPv4AddressHelper {
             >("ParseCanonicalName")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseCanonicalName", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IPv4AddressHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseCanonicalName", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (str, start, end, isLoopback)) };
+        > = unsafe { method.invoke_unchecked((), (str, start, end, isLoopback))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseHostNumber(
@@ -195,7 +200,7 @@ impl crate::System::IPv4AddressHelper {
         start: i32,
         end: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IPv4AddressHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::ReadOnlySpan_1<char>, i32, i32),
                 i32,
@@ -203,11 +208,14 @@ impl crate::System::IPv4AddressHelper {
             >("ParseHostNumber")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseHostNumber", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IPv4AddressHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseHostNumber", 3usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (str, start, end)) };
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (str, start, end))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseNonCanonical(
@@ -216,7 +224,7 @@ impl crate::System::IPv4AddressHelper {
         end: quest_hook::libil2cpp::ByRefMut<i32>,
         notImplicitFile: bool,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::IPv4AddressHelper as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -229,12 +237,13 @@ impl crate::System::IPv4AddressHelper {
             >("ParseNonCanonical")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseNonCanonical", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::IPv4AddressHelper as quest_hook::libil2cpp::Type >
+                    ::class(), "ParseNonCanonical", 4usize
                 )
             });
         let __cordl_ret: i64 = unsafe {
-            method.invoke_unchecked((), (name, start, end, notImplicitFile))
+            method.invoke_unchecked((), (name, start, end, notImplicitFile))?
         };
         Ok(__cordl_ret.into())
     }

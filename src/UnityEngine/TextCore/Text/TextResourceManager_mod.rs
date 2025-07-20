@@ -46,7 +46,7 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextResourceManager as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::TextCore::Text::FontAsset,
@@ -56,12 +56,13 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager {
             >("AddFontAsset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AddFontAsset", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextResourceManager as
+                    quest_hook::libil2cpp::Type > ::class(), "AddFontAsset", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (fontAsset))
+            method.invoke_unchecked((), (fontAsset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +195,7 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -209,8 +210,9 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -218,7 +220,7 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
                 .invoke_unchecked(
                     self,
                     (nameHashCode, familyNameHashCode, styleNameHashCode, fontAsset),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

@@ -45,16 +45,17 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         offset: u32,
         sizeInBytes: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32, u32), u32, 2usize>("AlignNatural")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AlignNatural", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AlignNatural", 2usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (offset, sizeInBytes))
+            method.invoke_unchecked((), (offset, sizeInBytes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -63,7 +64,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         ptr2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         region: crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -75,12 +76,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("Compare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Compare", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "Compare", 3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (ptr1, ptr2, region))
+            method.invoke_unchecked((), (ptr1, ptr2, region))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,16 +90,18 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         byteOffset: u32,
         sizeInBits: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(u32, u32), u32, 2usize>("ComputeFollowingByteOffset")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ComputeFollowingByteOffset", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ComputeFollowingByteOffset", 2usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (byteOffset, sizeInBits))
+            method.invoke_unchecked((), (byteOffset, sizeInBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -108,7 +112,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitCount: u32,
         mask: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -122,12 +126,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("MemCmpBitRegion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemCmpBitRegion", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "MemCmpBitRegion", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (ptr1, ptr2, bitOffset, bitCount, mask))
+            method.invoke_unchecked((), (ptr1, ptr2, bitOffset, bitCount, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -137,7 +142,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitOffset: u32,
         bitCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -150,12 +155,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("MemCpyBitRegion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemCpyBitRegion", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "MemCpyBitRegion", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, source, bitOffset, bitCount))
+            method.invoke_unchecked((), (destination, source, bitOffset, bitCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +171,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         numBytes: i32,
         mask: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -178,12 +184,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("MemCpyMasked")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemCpyMasked", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "MemCpyMasked", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, source, numBytes, mask))
+            method.invoke_unchecked((), (destination, source, numBytes, mask))?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,7 +199,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         numBytes: i32,
         value: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -204,12 +211,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("MemSet")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MemSet", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "MemSet", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (destination, numBytes, value))
+            method.invoke_unchecked((), (destination, numBytes, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -218,7 +226,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitOffset: u32,
         bitCount: u32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -230,12 +238,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("ReadExcessKMultipleBitsAsInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadExcessKMultipleBitsAsInt", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadExcessKMultipleBitsAsInt", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -244,7 +254,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitOffset: u32,
         bitCount: u32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -256,12 +266,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("ReadMultipleBitsAsNormalizedUInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadMultipleBitsAsNormalizedUInt", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadMultipleBitsAsNormalizedUInt", 3usize
                 )
             });
         let __cordl_ret: f32 = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +282,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitOffset: u32,
         bitCount: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -282,12 +294,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("ReadMultipleBitsAsUInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadMultipleBitsAsUInt", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadMultipleBitsAsUInt",
+                    3usize
                 )
             });
         let __cordl_ret: u32 = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -295,7 +309,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bitOffset: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, u32),
                 bool,
@@ -303,11 +317,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("ReadSingleBit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadSingleBit", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ReadSingleBit", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ptr, bitOffset)) };
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (ptr, bitOffset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTwosComplementMultipleBitsAsInt(
@@ -315,7 +332,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitOffset: u32,
         bitCount: u32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -327,12 +344,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("ReadTwosComplementMultipleBitsAsInt")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadTwosComplementMultipleBitsAsInt", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadTwosComplementMultipleBitsAsInt", 3usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -343,7 +362,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         sizeInBits: i32,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -357,13 +376,17 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("SetBitsInBuffer")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetBitsInBuffer", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "SetBitsInBuffer", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked((), (buffer, byteOffset, bitOffset, sizeInBits, value))
+                .invoke_unchecked(
+                    (),
+                    (buffer, byteOffset, bitOffset, sizeInBits, value),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -375,7 +398,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::ByRefMut<TValue>,
@@ -386,12 +409,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("Swap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Swap", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "Swap", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (a, b))
+            method.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }
@@ -401,7 +425,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitCount: u32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -414,12 +438,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("WriteIntAsExcessKMultipleBits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteIntAsExcessKMultipleBits", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteIntAsExcessKMultipleBits", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -429,7 +455,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitCount: u32,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -442,12 +468,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("WriteIntAsTwosComplementMultipleBits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteIntAsTwosComplementMultipleBits", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteIntAsTwosComplementMultipleBits", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -457,7 +485,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitCount: u32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -470,12 +498,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("WriteNormalizedUIntAsMultipleBits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteNormalizedUIntAsMultipleBits", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "WriteNormalizedUIntAsMultipleBits", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -484,7 +514,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitOffset: u32,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -496,12 +526,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("WriteSingleBit")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteSingleBit", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteSingleBit", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, value))
+            method.invoke_unchecked((), (ptr, bitOffset, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -511,7 +542,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
         bitCount: u32,
         value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -524,12 +555,14 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers {
             >("WriteUIntAsMultipleBits")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "WriteUIntAsMultipleBits", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "WriteUIntAsMultipleBits",
+                    4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))
+            method.invoke_unchecked((), (ptr, bitOffset, bitCount, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -654,7 +687,7 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion),
                 crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion,
@@ -662,12 +695,13 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
             >("Overlap")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Overlap", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion
+                    as quest_hook::libil2cpp::Type > ::class(), "Overlap", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion = unsafe {
-            method.invoke_unchecked(self, (other))
+            method.invoke_unchecked(self, (other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -677,16 +711,17 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
         bitOffset: u32,
         sizeInBits: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32, u32, u32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (byteOffset, bitOffset, sizeInBits))
+            method.invoke_unchecked(self, (byteOffset, bitOffset, sizeInBits))?
         };
         Ok(__cordl_ret.into())
     }
@@ -695,29 +730,31 @@ impl crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion {
         bitOffset: u32,
         sizeInBits: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32, u32), quest_hook::libil2cpp::Void, 2usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion
+                    as quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bitOffset, sizeInBits))
+            method.invoke_unchecked(self, (bitOffset, sizeInBits))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_isEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_isEmpty")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_isEmpty", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::InputSystem::Utilities::MemoryHelpers_BitRegion
+                    as quest_hook::libil2cpp::Type > ::class(), "get_isEmpty", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

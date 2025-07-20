@@ -98,7 +98,7 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             crate::System::ComponentModel::PropertyDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ListChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ComponentModel::ListChangedType,
@@ -111,12 +111,13 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ListChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listChangedType, propDesc))
+            method.invoke_unchecked(self, (listChangedType, propDesc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,7 +126,7 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
         listChangedType: crate::System::ComponentModel::ListChangedType,
         newIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ListChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ComponentModel::ListChangedType, i32),
                 quest_hook::libil2cpp::Void,
@@ -133,12 +134,13 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ListChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listChangedType, newIndex))
+            method.invoke_unchecked(self, (listChangedType, newIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +152,7 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             crate::System::ComponentModel::PropertyDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ListChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::ComponentModel::ListChangedType,
@@ -164,12 +166,13 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ListChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listChangedType, newIndex, propDesc))
+            method.invoke_unchecked(self, (listChangedType, newIndex, propDesc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +182,7 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
         newIndex: i32,
         oldIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ListChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::ComponentModel::ListChangedType, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -187,19 +190,20 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ListChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (listChangedType, newIndex, oldIndex))
+            method.invoke_unchecked(self, (listChangedType, newIndex, oldIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_ListChangedType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ComponentModel::ListChangedType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ListChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::System::ComponentModel::ListChangedType,
@@ -207,37 +211,41 @@ impl crate::System::ComponentModel::ListChangedEventArgs {
             >("get_ListChangedType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_ListChangedType", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ListChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "get_ListChangedType",
+                    0usize
                 )
             });
         let __cordl_ret: crate::System::ComponentModel::ListChangedType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_NewIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ListChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_NewIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_NewIndex", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ListChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "get_NewIndex", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_OldIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::ComponentModel::ListChangedEventArgs as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), i32, 0usize>("get_OldIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_OldIndex", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::ComponentModel::ListChangedEventArgs as
+                    quest_hook::libil2cpp::Type > ::class(), "get_OldIndex", 0usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

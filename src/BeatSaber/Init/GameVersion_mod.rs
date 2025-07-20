@@ -58,7 +58,7 @@ impl crate::BeatSaber::Init::GameVersion {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>),
                 i32,
@@ -66,18 +66,19 @@ impl crate::BeatSaber::Init::GameVersion {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type >
+                    ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>),
                 bool,
@@ -85,11 +86,12 @@ impl crate::BeatSaber::Init::GameVersion {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type >
+                    ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -107,7 +109,7 @@ impl crate::BeatSaber::Init::GameVersion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
@@ -115,13 +117,14 @@ impl crate::BeatSaber::Init::GameVersion {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type >
+                    ::class(), "Parse", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::Init::GameVersion,
-        > = unsafe { method.invoke_unchecked((), (version)) };
+        > = unsafe { method.invoke_unchecked((), (version))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -129,7 +132,7 @@ impl crate::BeatSaber::Init::GameVersion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -137,13 +140,14 @@ impl crate::BeatSaber::Init::GameVersion {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type >
+                    ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePlatformId(
@@ -152,7 +156,7 @@ impl crate::BeatSaber::Init::GameVersion {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
@@ -160,13 +164,14 @@ impl crate::BeatSaber::Init::GameVersion {
             >("UpdatePlatformId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "UpdatePlatformId", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type >
+                    ::class(), "UpdatePlatformId", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::Init::GameVersion,
-        > = unsafe { method.invoke_unchecked(self, (newPlatformId)) };
+        > = unsafe { method.invoke_unchecked(self, (newPlatformId))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -174,7 +179,7 @@ impl crate::BeatSaber::Init::GameVersion {
         content: crate::BeatSaber::Init::GameVersion_Content,
         metadata: crate::System::Nullable_1<crate::BeatSaber::Init::GameVersion_Metadata>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::BeatSaber::Init::GameVersion_Content,
@@ -187,25 +192,27 @@ impl crate::BeatSaber::Init::GameVersion {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (content, metadata))
+            method.invoke_unchecked(self, (content, metadata))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReleasable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_IsReleasable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_IsReleasable", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion as quest_hook::libil2cpp::Type >
+                    ::class(), "get_IsReleasable", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -388,7 +395,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_BuildInfo,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_BuildInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_BuildInfo),
                 i32,
@@ -396,18 +403,19 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_BuildInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_BuildInfo,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_BuildInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_BuildInfo),
                 bool,
@@ -415,11 +423,12 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_BuildInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractNumberFromPlatformId(
@@ -428,7 +437,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_BuildInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::BeatSaber::Init::RuntimePlatformType,
@@ -439,13 +448,15 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             >("ExtractNumberFromPlatformId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractNumberFromPlatformId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_BuildInfo as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ExtractNumberFromPlatformId", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (platform, inputPlatformId)) };
+        > = unsafe { method.invoke_unchecked((), (platform, inputPlatformId))? };
         Ok(__cordl_ret.into())
     }
     pub fn FormatPlatformId(
@@ -454,7 +465,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_BuildInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     crate::BeatSaber::Init::RuntimePlatformType,
@@ -465,13 +476,14 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             >("FormatPlatformId")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FormatPlatformId", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_BuildInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "FormatPlatformId", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (platform, inputPlatformId)) };
+        > = unsafe { method.invoke_unchecked((), (platform, inputPlatformId))? };
         Ok(__cordl_ret.into())
     }
     pub fn Parse(
@@ -479,7 +491,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_BuildInfo> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_BuildInfo as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::BeatSaber::Init::GameVersion_BuildInfo,
@@ -487,12 +499,13 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_BuildInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "Parse", 1usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_BuildInfo = unsafe {
-            method.invoke_unchecked((), (buildMetadataValue))
+            method.invoke_unchecked((), (buildMetadataValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -501,7 +514,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_BuildInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -509,13 +522,14 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_BuildInfo as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -524,7 +538,7 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         platformId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buildId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_BuildInfo as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::BeatSaber::Init::RuntimePlatformType,
@@ -536,12 +550,13 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_BuildInfo as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (platform, platformId, buildId))
+            method.invoke_unchecked(self, (platform, platformId, buildId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -699,7 +714,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_Content,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_Content),
                 i32,
@@ -707,18 +722,19 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_Content,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_Content),
                 bool,
@@ -726,17 +742,18 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ParseOnStartOf(
         versionCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::BeatSaber::Init::GameVersion_Content,
@@ -744,19 +761,20 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             >("ParseOnStartOf")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ParseOnStartOf", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(), "ParseOnStartOf", 1usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), (versionCode))
+            method.invoke_unchecked((), (versionCode))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Parse_Il2CppString0(
         versionCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::BeatSaber::Init::GameVersion_Content,
@@ -764,12 +782,13 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(), "Parse", 1usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), (versionCode))
+            method.invoke_unchecked((), (versionCode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -777,7 +796,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         versionCore: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -788,19 +807,20 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(), "Parse", 2usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), (versionCore, pattern))
+            method.invoke_unchecked((), (versionCore, pattern))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFromApplicationVersion() -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::Init::GameVersion_Content,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 crate::BeatSaber::Init::GameVersion_Content,
@@ -808,12 +828,14 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             >("ReadFromApplicationVersion")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ReadFromApplicationVersion", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "ReadFromApplicationVersion", 0usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -822,7 +844,7 @@ impl crate::BeatSaber::Init::GameVersion_Content {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -830,13 +852,14 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -845,16 +868,17 @@ impl crate::BeatSaber::Init::GameVersion_Content {
         minor: u32,
         patch: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Content as quest_hook::libil2cpp::Type>::class()
             .find_method::<(u32, u32, u32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Content as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (major, minor, patch))
+            method.invoke_unchecked(self, (major, minor, patch))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1006,7 +1030,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1014,20 +1038,21 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >("BuildInfoText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BuildInfoText", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), "BuildInfoText", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo(
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_Metadata,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_Metadata),
                 i32,
@@ -1035,18 +1060,19 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_Metadata,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_Metadata),
                 bool,
@@ -1054,11 +1080,12 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractSubStrings(
@@ -1070,7 +1097,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1086,8 +1113,9 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >("ExtractSubStrings")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ExtractSubStrings", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), "ExtractSubStrings", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -1095,14 +1123,14 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
                 .invoke_unchecked(
                     (),
                     (versionMetadata, preReleaseLabelString, buildInfoString),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Parse(
         versionMetadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Metadata> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::BeatSaber::Init::GameVersion_Metadata,
@@ -1110,12 +1138,13 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), "Parse", 1usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_Metadata = unsafe {
-            method.invoke_unchecked((), (versionMetadata))
+            method.invoke_unchecked((), (versionMetadata))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1124,7 +1153,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1132,13 +1161,14 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_GameVersion_PreReleaseLabel_Nullable_1_1(
@@ -1148,7 +1178,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             crate::BeatSaber::Init::GameVersion_BuildInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
@@ -1161,12 +1191,13 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (preReleaseLabel, buildInfo))
+            method.invoke_unchecked(self, (preReleaseLabel, buildInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1176,7 +1207,7 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             crate::BeatSaber::Init::GameVersion_BuildInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_Metadata as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Nullable_1<
                     crate::BeatSaber::Init::GameVersion_BuildInfo,
@@ -1186,12 +1217,13 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_Metadata as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (buildInfo))
+            method.invoke_unchecked(self, (buildInfo))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1344,7 +1376,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_PreReleaseLabel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_PreReleaseLabel),
                 i32,
@@ -1352,18 +1384,19 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             >("CompareTo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CompareTo", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_PreReleaseLabel as
+                    quest_hook::libil2cpp::Type > ::class(), "CompareTo", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_PreReleaseLabel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::BeatSaber::Init::GameVersion_PreReleaseLabel),
                 bool,
@@ -1371,11 +1404,12 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             >("Equals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Equals", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_PreReleaseLabel as
+                    quest_hook::libil2cpp::Type > ::class(), "Equals", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other))? };
         Ok(__cordl_ret.into())
     }
     pub fn FirstLetterToUpper(
@@ -1385,7 +1419,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_PreReleaseLabel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::ByRefMut<
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1395,13 +1429,14 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             >("FirstLetterToUpper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FirstLetterToUpper", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_PreReleaseLabel as
+                    quest_hook::libil2cpp::Type > ::class(), "FirstLetterToUpper", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (value)) };
+        > = unsafe { method.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrefixText(
@@ -1409,7 +1444,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_PreReleaseLabel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1417,13 +1452,14 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             >("GetPrefixText")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPrefixText", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_PreReleaseLabel as
+                    quest_hook::libil2cpp::Type > ::class(), "GetPrefixText", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Parse(
@@ -1431,7 +1467,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_PreReleaseLabel as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
@@ -1439,12 +1475,13 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             >("Parse")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Parse", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_PreReleaseLabel as
+                    quest_hook::libil2cpp::Type > ::class(), "Parse", 1usize
                 )
             });
         let __cordl_ret: crate::BeatSaber::Init::GameVersion_PreReleaseLabel = unsafe {
-            method.invoke_unchecked((), (releaseLabel))
+            method.invoke_unchecked((), (releaseLabel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1453,7 +1490,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_PreReleaseLabel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1461,13 +1498,14 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             >("ToString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ToString", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_PreReleaseLabel as
+                    quest_hook::libil2cpp::Type > ::class(), "ToString", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1475,7 +1513,7 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         prefix: crate::BeatSaber::Init::GameVersion_PreReleasePrefix,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::BeatSaber::Init::GameVersion_PreReleaseLabel as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::BeatSaber::Init::GameVersion_PreReleasePrefix,
@@ -1486,12 +1524,13 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::BeatSaber::Init::GameVersion_PreReleaseLabel as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (prefix, label))
+            method.invoke_unchecked(self, (prefix, label))?
         };
         Ok(__cordl_ret.into())
     }

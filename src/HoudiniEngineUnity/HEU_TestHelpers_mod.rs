@@ -56,7 +56,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         optional2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         optional3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -73,8 +73,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -82,7 +84,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -106,7 +108,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -127,8 +129,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -136,7 +140,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -154,7 +158,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -175,8 +179,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -184,7 +190,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -206,7 +212,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         optional2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         optional3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -235,8 +241,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -244,7 +252,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +278,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -299,8 +307,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -308,7 +318,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -338,7 +348,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -367,8 +377,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -376,7 +388,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -394,7 +406,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -411,8 +423,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -420,7 +434,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -434,7 +448,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         optional2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         optional3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -451,8 +465,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -460,7 +476,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -486,7 +502,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -515,8 +531,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -524,7 +542,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -554,7 +572,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -583,8 +601,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    8usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -592,7 +612,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                 .invoke_unchecked(
                     (),
                     (a, b, result, header, subject, optional1, optional2, optional3),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -613,7 +633,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -637,8 +657,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -656,7 +678,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                         optional3,
                         _cordl__,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -677,7 +699,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -701,8 +723,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -720,7 +744,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                         optional3,
                         _cordl__,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -741,7 +765,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     T,
@@ -761,8 +785,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("AssertTrueLogEquivalent")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AssertTrueLogEquivalent", 9usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "AssertTrueLogEquivalent",
+                    9usize
                 )
             });
         let __cordl_ret: bool = unsafe {
@@ -780,7 +806,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                         optional3,
                         _cordl__,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -800,7 +826,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         optional2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         optional3: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     bool,
@@ -816,8 +842,10 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("PrintTestLogAndSetResult")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrintTestLogAndSetResult", 7usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "PrintTestLogAndSetResult",
+                    7usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -833,7 +861,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
                         optional2,
                         optional3,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -844,7 +872,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         subject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -858,12 +886,13 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("ShouldBeTested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldBeTested", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldBeTested", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, bResult, header, subject))
+            method.invoke_unchecked((), (a, b, bResult, header, subject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -882,7 +911,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -900,12 +929,13 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("ShouldBeTested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldBeTested", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldBeTested", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, bResult, header, subject))
+            method.invoke_unchecked((), (a, b, bResult, header, subject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -920,7 +950,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -938,12 +968,13 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("ShouldBeTested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldBeTested", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldBeTested", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, bResult, header, subject))
+            method.invoke_unchecked((), (a, b, bResult, header, subject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -958,7 +989,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -972,12 +1003,13 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("ShouldBeTested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldBeTested", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldBeTested", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, bResult, header, subject))
+            method.invoke_unchecked((), (a, b, bResult, header, subject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -988,7 +1020,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         header: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         subject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1002,12 +1034,13 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("ShouldBeTested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldBeTested", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldBeTested", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, bResult, header, subject))
+            method.invoke_unchecked((), (a, b, bResult, header, subject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1022,7 +1055,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -1040,12 +1073,13 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("ShouldBeTested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldBeTested", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldBeTested", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, bResult, header, subject))
+            method.invoke_unchecked((), (a, b, bResult, header, subject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1060,7 +1094,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     T,
@@ -1074,12 +1108,13 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("ShouldBeTested")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ShouldBeTested", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), "ShouldBeTested", 5usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (a, b, bResult, header, subject))
+            method.invoke_unchecked((), (a, b, bResult, header, subject))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1087,7 +1122,7 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
         a: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         b: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -1098,26 +1133,29 @@ impl crate::HoudiniEngineUnity::HEU_TestHelpers {
             >("TestOutputObjectEquivalence")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "TestOutputObjectEquivalence", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "TestOutputObjectEquivalence", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1209,16 +1247,19 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1311,16 +1352,19 @@ impl<
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<
+            T,
+        > as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1 < T > as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

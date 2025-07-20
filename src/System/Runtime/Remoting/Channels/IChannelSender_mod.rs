@@ -53,7 +53,7 @@ impl crate::System::Runtime::Remoting::Channels::IChannelSender {
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Runtime::Remoting::Channels::IChannelSender as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -69,14 +69,15 @@ impl crate::System::Runtime::Remoting::Channels::IChannelSender {
             >("CreateMessageSink")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CreateMessageSink", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Runtime::Remoting::Channels::IChannelSender as
+                    quest_hook::libil2cpp::Type > ::class(), "CreateMessageSink", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         > = unsafe {
-            method.invoke_unchecked(self, (url, remoteChannelData, objectURI))
+            method.invoke_unchecked(self, (url, remoteChannelData, objectURI))?
         };
         Ok(__cordl_ret.into())
     }

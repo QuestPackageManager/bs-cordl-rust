@@ -61,7 +61,7 @@ impl crate::UnityEngine::ProBuilder::RaycastHit {
         normal: crate::UnityEngine::Vector3,
         face: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::RaycastHit as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (f32, crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, i32),
                 quest_hook::libil2cpp::Void,
@@ -69,12 +69,13 @@ impl crate::UnityEngine::ProBuilder::RaycastHit {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::RaycastHit as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (distance, point, normal, face))
+            method.invoke_unchecked(self, (distance, point, normal, face))?
         };
         Ok(__cordl_ret.into())
     }

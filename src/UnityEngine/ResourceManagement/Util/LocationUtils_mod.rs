@@ -55,7 +55,7 @@ impl crate::UnityEngine::ResourceManagement::Util::LocationUtils {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::LocationUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -78,11 +78,12 @@ impl crate::UnityEngine::ResourceManagement::Util::LocationUtils {
             >("DependenciesEqual")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DependenciesEqual", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::LocationUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "DependenciesEqual", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (deps1, deps2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (deps1, deps2))? };
         Ok(__cordl_ret.into())
     }
     pub fn LocationEquals(
@@ -93,7 +94,7 @@ impl crate::UnityEngine::ResourceManagement::Util::LocationUtils {
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ResourceManagement::Util::LocationUtils as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -108,11 +109,12 @@ impl crate::UnityEngine::ResourceManagement::Util::LocationUtils {
             >("LocationEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LocationEquals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ResourceManagement::Util::LocationUtils as
+                    quest_hook::libil2cpp::Type > ::class(), "LocationEquals", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (loc1, loc2)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (loc1, loc2))? };
         Ok(__cordl_ret.into())
     }
 }

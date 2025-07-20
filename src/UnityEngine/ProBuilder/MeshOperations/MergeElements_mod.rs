@@ -48,7 +48,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MergeElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -67,12 +67,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
             >("CollapseCoincidentVertices")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "CollapseCoincidentVertices", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MergeElements as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "CollapseCoincidentVertices", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mesh, faces))
+            method.invoke_unchecked((), (mesh, faces))?
         };
         Ok(__cordl_ret.into())
     }
@@ -88,7 +90,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MergeElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -107,13 +109,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
             >("Merge")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Merge", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MergeElements as
+                    quest_hook::libil2cpp::Type > ::class(), "Merge", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = unsafe { method.invoke_unchecked((), (target, faces)) };
+        > = unsafe { method.invoke_unchecked((), (target, faces))? };
         Ok(__cordl_ret.into())
     }
     pub fn MergePairs(
@@ -136,7 +139,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::ProBuilder::MeshOperations::MergeElements as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -165,8 +168,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
             >("MergePairs")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "MergePairs", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::ProBuilder::MeshOperations::MergeElements as
+                    quest_hook::libil2cpp::Type > ::class(), "MergePairs", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -174,7 +178,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
         > = unsafe {
-            method.invoke_unchecked((), (target, pairs, collapseCoincidentVertices))
+            method.invoke_unchecked((), (target, pairs, collapseCoincidentVertices))?
         };
         Ok(__cordl_ret.into())
     }

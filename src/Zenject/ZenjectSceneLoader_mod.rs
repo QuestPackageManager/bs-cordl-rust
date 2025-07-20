@@ -46,7 +46,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -54,12 +54,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
-            method.invoke_unchecked(self, (sceneName))
+            method.invoke_unchecked(self, (sceneName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -70,7 +71,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -81,12 +82,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
-            method.invoke_unchecked(self, (sceneName, loadMode))
+            method.invoke_unchecked(self, (sceneName, loadMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,7 +104,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,12 +120,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
-            method.invoke_unchecked(self, (sceneName, loadMode, extraBindings))
+            method.invoke_unchecked(self, (sceneName, loadMode, extraBindings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -150,7 +153,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -177,8 +180,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
@@ -193,7 +197,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                         containerMode,
                         extraBindingsLate,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -210,7 +214,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -227,8 +231,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
@@ -236,7 +241,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                 .invoke_unchecked(
                     self,
                     (sceneName, loadMode, extraBindings, containerMode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -246,7 +251,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -254,12 +259,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
-            method.invoke_unchecked(self, (sceneIndex))
+            method.invoke_unchecked(self, (sceneIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -270,7 +276,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::SceneManagement::LoadSceneMode),
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -278,12 +284,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
-            method.invoke_unchecked(self, (sceneIndex, loadMode))
+            method.invoke_unchecked(self, (sceneIndex, loadMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -299,7 +306,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -315,12 +322,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
-            method.invoke_unchecked(self, (sceneIndex, loadMode, extraBindings))
+            method.invoke_unchecked(self, (sceneIndex, loadMode, extraBindings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -337,7 +345,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -354,8 +362,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
@@ -363,7 +372,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                 .invoke_unchecked(
                     self,
                     (sceneIndex, loadMode, extraBindings, containerMode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -385,7 +394,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -407,8 +416,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneAsync", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneAsync", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
@@ -422,7 +432,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                         containerMode,
                         extraBindingsLate,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -453,7 +463,7 @@ impl crate::Zenject::ZenjectSceneLoader {
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -484,8 +494,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadSceneFromAddressablesAsync")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadSceneFromAddressablesAsync", 8usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadSceneFromAddressablesAsync", 8usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -504,7 +515,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                         containerMode,
                         extraBindingsLate,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -512,7 +523,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         &mut self,
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Void,
@@ -520,12 +531,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneName))
+            method.invoke_unchecked(self, (sceneName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -534,7 +546,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -545,12 +557,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneName, loadMode))
+            method.invoke_unchecked(self, (sceneName, loadMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -564,7 +577,7 @@ impl crate::Zenject::ZenjectSceneLoader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -580,12 +593,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneName, loadMode, extraBindings))
+            method.invoke_unchecked(self, (sceneName, loadMode, extraBindings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -600,7 +614,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -617,8 +631,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -626,7 +641,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                 .invoke_unchecked(
                     self,
                     (sceneName, loadMode, extraBindings, containerMode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -646,7 +661,7 @@ impl crate::Zenject::ZenjectSceneLoader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -668,8 +683,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -683,7 +699,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                         containerMode,
                         extraBindingsLate,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -691,16 +707,17 @@ impl crate::Zenject::ZenjectSceneLoader {
         &mut self,
         sceneIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneIndex))
+            method.invoke_unchecked(self, (sceneIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -709,7 +726,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         sceneIndex: i32,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, crate::UnityEngine::SceneManagement::LoadSceneMode),
                 quest_hook::libil2cpp::Void,
@@ -717,12 +734,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneIndex, loadMode))
+            method.invoke_unchecked(self, (sceneIndex, loadMode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -736,7 +754,7 @@ impl crate::Zenject::ZenjectSceneLoader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -752,12 +770,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneIndex, loadMode, extraBindings))
+            method.invoke_unchecked(self, (sceneIndex, loadMode, extraBindings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -772,7 +791,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -789,8 +808,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -798,7 +818,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                 .invoke_unchecked(
                     self,
                     (sceneIndex, loadMode, extraBindings, containerMode),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -818,7 +838,7 @@ impl crate::Zenject::ZenjectSceneLoader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -840,8 +860,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("LoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LoadScene", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "LoadScene", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -855,7 +876,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                         containerMode,
                         extraBindingsLate,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -889,7 +910,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::UnityEngine::SceneManagement::LoadSceneMode,
@@ -915,8 +936,9 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("PrepareForLoadScene")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "PrepareForLoadScene", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "PrepareForLoadScene", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -930,7 +952,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                         extraBindingsLate,
                         containerMode,
                     ),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -943,7 +965,7 @@ impl crate::Zenject::ZenjectSceneLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     quest_hook::libil2cpp::Il2CppArray<
@@ -955,19 +977,20 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("__zenCreate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "__zenCreate", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "__zenCreate", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (P_0)) };
+        > = unsafe { method.invoke_unchecked((), (P_0))? };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -975,12 +998,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >("__zenCreateInjectTypeInfo")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "__zenCreateInjectTypeInfo", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), "__zenCreateInjectTypeInfo", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = unsafe {
-            method.invoke_unchecked((), ())
+            method.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -989,7 +1013,7 @@ impl crate::Zenject::ZenjectSceneLoader {
         sceneRoot: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
         projectKernel: quest_hook::libil2cpp::Gc<crate::Zenject::ProjectKernel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
@@ -1000,12 +1024,13 @@ impl crate::Zenject::ZenjectSceneLoader {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Zenject::ZenjectSceneLoader as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (sceneRoot, projectKernel))
+            method.invoke_unchecked(self, (sceneRoot, projectKernel))?
         };
         Ok(__cordl_ret.into())
     }

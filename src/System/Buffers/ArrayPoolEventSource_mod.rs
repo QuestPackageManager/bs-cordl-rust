@@ -49,7 +49,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         bucketId: i32,
         reason: crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::ArrayPoolEventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -63,13 +63,17 @@ impl crate::System::Buffers::ArrayPoolEventSource {
             >("BufferAllocated")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BufferAllocated", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::ArrayPoolEventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "BufferAllocated", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (bufferId, bufferSize, poolId, bucketId, reason))
+                .invoke_unchecked(
+                    self,
+                    (bufferId, bufferSize, poolId, bucketId, reason),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +84,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         poolId: i32,
         bucketId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::ArrayPoolEventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -88,12 +92,13 @@ impl crate::System::Buffers::ArrayPoolEventSource {
             >("BufferRented")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BufferRented", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::ArrayPoolEventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "BufferRented", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bufferId, bufferSize, poolId, bucketId))
+            method.invoke_unchecked(self, (bufferId, bufferSize, poolId, bucketId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -103,7 +108,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         bufferSize: i32,
         poolId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::ArrayPoolEventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -111,12 +116,13 @@ impl crate::System::Buffers::ArrayPoolEventSource {
             >("BufferReturned")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BufferReturned", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::ArrayPoolEventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "BufferReturned", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bufferId, bufferSize, poolId))
+            method.invoke_unchecked(self, (bufferId, bufferSize, poolId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -125,7 +131,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         milliseconds: i32,
         pressure: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::ArrayPoolEventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -133,12 +139,13 @@ impl crate::System::Buffers::ArrayPoolEventSource {
             >("BufferTrimPoll")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BufferTrimPoll", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::ArrayPoolEventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "BufferTrimPoll", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (milliseconds, pressure))
+            method.invoke_unchecked(self, (milliseconds, pressure))?
         };
         Ok(__cordl_ret.into())
     }
@@ -148,7 +155,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         bufferSize: i32,
         poolId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::ArrayPoolEventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (i32, i32, i32),
                 quest_hook::libil2cpp::Void,
@@ -156,12 +163,13 @@ impl crate::System::Buffers::ArrayPoolEventSource {
             >("BufferTrimmed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BufferTrimmed", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::ArrayPoolEventSource as
+                    quest_hook::libil2cpp::Type > ::class(), "BufferTrimmed", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (bufferId, bufferSize, poolId))
+            method.invoke_unchecked(self, (bufferId, bufferSize, poolId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -175,16 +183,17 @@ impl crate::System::Buffers::ArrayPoolEventSource {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Buffers::ArrayPoolEventSource as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Buffers::ArrayPoolEventSource as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

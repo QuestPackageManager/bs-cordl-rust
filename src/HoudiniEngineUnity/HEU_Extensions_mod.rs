@@ -42,7 +42,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         quatA: crate::UnityEngine::Quaternion,
         value: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Quaternion, crate::UnityEngine::Quaternion),
                 bool,
@@ -50,11 +50,13 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("ApproximatelyEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApproximatelyEquals", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ApproximatelyEquals",
+                    2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (quatA, value)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (quatA, value))? };
         Ok(__cordl_ret.into())
     }
     pub fn ApproximatelyEquals_f32_f32_f32_1(
@@ -62,16 +64,18 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         other: f32,
         epsilon: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<(f32, f32, f32), bool, 3usize>("ApproximatelyEquals")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ApproximatelyEquals", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ApproximatelyEquals",
+                    3usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_self, other, epsilon))
+            method.invoke_unchecked((), (_cordl_self, other, epsilon))?
         };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +84,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -88,13 +92,14 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("AsByteArray")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsByteArray", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AsByteArray", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_self))? };
         Ok(__cordl_ret.into())
     }
     pub fn AsString(
@@ -102,7 +107,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -110,13 +115,14 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("AsString")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "AsString", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "AsString", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { method.invoke_unchecked((), (buffer)) };
+        > = unsafe { method.invoke_unchecked((), (buffer))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertArrayToEquivable<T>(
@@ -132,7 +138,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>),
                 quest_hook::libil2cpp::Gc<
@@ -146,15 +152,17 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("ConvertArrayToEquivable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertArrayToEquivable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertArrayToEquivable",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
             >,
-        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_self))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertList<T, U>(
@@ -170,7 +178,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<T>,
@@ -182,13 +190,14 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("ConvertList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertList", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertList", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<U>,
-        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_self))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertListToEquivable<T>(
@@ -206,7 +215,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::List_1<T>,
@@ -222,21 +231,23 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("ConvertListToEquivable")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ConvertListToEquivable", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "ConvertListToEquivable",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
             >,
-        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_self))? };
         Ok(__cordl_ret.into())
     }
     pub fn DecomposeToPosition(
         _cordl_self: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Matrix4x4),
                 crate::UnityEngine::Vector3,
@@ -244,19 +255,21 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("DecomposeToPosition")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecomposeToPosition", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DecomposeToPosition",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (_cordl_self))
+            method.invoke_unchecked((), (_cordl_self))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DecomposeToRotation(
         _cordl_self: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Matrix4x4),
                 crate::UnityEngine::Quaternion,
@@ -264,19 +277,21 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("DecomposeToRotation")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecomposeToRotation", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DecomposeToRotation",
+                    1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            method.invoke_unchecked((), (_cordl_self))
+            method.invoke_unchecked((), (_cordl_self))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn DecomposeToScale(
         _cordl_self: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Matrix4x4),
                 crate::UnityEngine::Vector3,
@@ -284,12 +299,13 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("DecomposeToScale")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DecomposeToScale", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "DecomposeToScale", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (_cordl_self))
+            method.invoke_unchecked((), (_cordl_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,7 +321,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -320,13 +336,14 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("Filter")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Filter", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Filter", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { method.invoke_unchecked((), (_cordl_self, predicate)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_self, predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsEquivalentList<T>(
@@ -339,7 +356,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -354,12 +371,13 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("IsEquivalentList")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsEquivalentList", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "IsEquivalentList", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_self, other))
+            method.invoke_unchecked((), (_cordl_self, other))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,7 +391,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -386,12 +404,13 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("IsValidIndex")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsValidIndex", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "IsValidIndex", 2usize
                 )
             });
         let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (_cordl_self, index))
+            method.invoke_unchecked((), (_cordl_self, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -409,7 +428,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -424,13 +443,14 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("Map")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Map", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Map", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<R>,
-        > = unsafe { method.invoke_unchecked((), (_cordl_self, selector)) };
+        > = unsafe { method.invoke_unchecked((), (_cordl_self, selector))? };
         Ok(__cordl_ret.into())
     }
     pub fn Reduce<T>(
@@ -443,7 +463,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<
@@ -456,17 +476,20 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("Reduce")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Reduce", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "Reduce", 2usize
                 )
             });
-        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (_cordl_self, func)) };
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (_cordl_self, func))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwapXAndY(
         _cordl_self: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -474,19 +497,20 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("SwapXAndY")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SwapXAndY", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SwapXAndY", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (_cordl_self))
+            method.invoke_unchecked((), (_cordl_self))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SwapXAndZ(
         _cordl_self: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -494,19 +518,20 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("SwapXAndZ")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SwapXAndZ", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SwapXAndZ", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (_cordl_self))
+            method.invoke_unchecked((), (_cordl_self))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn SwapYAndZ(
         _cordl_self: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::HoudiniEngineUnity::HEU_Extensions as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::Vector3),
                 crate::UnityEngine::Vector3,
@@ -514,12 +539,13 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             >("SwapYAndZ")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SwapYAndZ", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::HoudiniEngineUnity::HEU_Extensions as
+                    quest_hook::libil2cpp::Type > ::class(), "SwapYAndZ", 1usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            method.invoke_unchecked((), (_cordl_self))
+            method.invoke_unchecked((), (_cordl_self))?
         };
         Ok(__cordl_ret.into())
     }

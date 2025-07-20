@@ -51,7 +51,7 @@ impl crate::System::Data::BinaryNode {
         op: i32,
         comparer: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -65,12 +65,13 @@ impl crate::System::Data::BinaryNode {
             >("BinaryCompare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BinaryCompare", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "BinaryCompare", 5usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (vLeft, vRight, resultType, op, comparer))
+            method.invoke_unchecked(self, (vLeft, vRight, resultType, op, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -81,7 +82,7 @@ impl crate::System::Data::BinaryNode {
         resultType: crate::System::Data::Common::StorageType,
         op: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -94,12 +95,13 @@ impl crate::System::Data::BinaryNode {
             >("BinaryCompare")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "BinaryCompare", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "BinaryCompare", 4usize
                 )
             });
         let __cordl_ret: i32 = unsafe {
-            method.invoke_unchecked(self, (vLeft, vRight, resultType, op))
+            method.invoke_unchecked(self, (vLeft, vRight, resultType, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -112,7 +114,7 @@ impl crate::System::Data::BinaryNode {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -127,12 +129,13 @@ impl crate::System::Data::BinaryNode {
             >("Bind")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Bind", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "Bind", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (table, list))
+            method.invoke_unchecked(self, (table, list))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,7 +143,7 @@ impl crate::System::Data::BinaryNode {
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>),
                 bool,
@@ -148,11 +151,12 @@ impl crate::System::Data::BinaryNode {
             >("DependsOn")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "DependsOn", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "DependsOn", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (column)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (column))? };
         Ok(__cordl_ret.into())
     }
     pub fn EvalBinaryOp(
@@ -166,7 +170,7 @@ impl crate::System::Data::BinaryNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -181,14 +185,15 @@ impl crate::System::Data::BinaryNode {
             >("EvalBinaryOp")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "EvalBinaryOp", 6usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "EvalBinaryOp", 6usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe {
-            method.invoke_unchecked(self, (op, left, right, row, version, recordNos))
+            method.invoke_unchecked(self, (op, left, right, row, version, recordNos))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,7 +202,7 @@ impl crate::System::Data::BinaryNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -205,13 +210,14 @@ impl crate::System::Data::BinaryNode {
             >("Eval")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Eval", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "Eval", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Eval_DataRow_DataRowVersion1(
@@ -221,7 +227,7 @@ impl crate::System::Data::BinaryNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -232,13 +238,14 @@ impl crate::System::Data::BinaryNode {
             >("Eval")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Eval", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "Eval", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (row, version)) };
+        > = unsafe { method.invoke_unchecked(self, (row, version))? };
         Ok(__cordl_ret.into())
     }
     pub fn Eval_ExpressionNode_DataRow_DataRowVersion_Il2CppArray3(
@@ -249,7 +256,7 @@ impl crate::System::Data::BinaryNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
@@ -262,13 +269,14 @@ impl crate::System::Data::BinaryNode {
             >("Eval")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Eval", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "Eval", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked((), (expr, row, version, recordNos)) };
+        > = unsafe { method.invoke_unchecked((), (expr, row, version, recordNos))? };
         Ok(__cordl_ret.into())
     }
     pub fn Eval_Il2CppArray2(
@@ -277,7 +285,7 @@ impl crate::System::Data::BinaryNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -285,13 +293,14 @@ impl crate::System::Data::BinaryNode {
             >("Eval")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Eval", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "Eval", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = unsafe { method.invoke_unchecked(self, (recordNos)) };
+        > = unsafe { method.invoke_unchecked(self, (recordNos))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrecedence(
@@ -300,7 +309,7 @@ impl crate::System::Data::BinaryNode {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Data::BinaryNode_DataTypePrecedence,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::System::Data::Common::StorageType),
                 crate::System::Data::BinaryNode_DataTypePrecedence,
@@ -308,19 +317,20 @@ impl crate::System::Data::BinaryNode {
             >("GetPrecedence")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPrecedence", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPrecedence", 1usize
                 )
             });
         let __cordl_ret: crate::System::Data::BinaryNode_DataTypePrecedence = unsafe {
-            method.invoke_unchecked(self, (storageType))
+            method.invoke_unchecked(self, (storageType))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrecedenceType(
         code: crate::System::Data::BinaryNode_DataTypePrecedence,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Common::StorageType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::Data::BinaryNode_DataTypePrecedence),
                 crate::System::Data::Common::StorageType,
@@ -328,49 +338,53 @@ impl crate::System::Data::BinaryNode {
             >("GetPrecedenceType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "GetPrecedenceType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "GetPrecedenceType", 1usize
                 )
             });
         let __cordl_ret: crate::System::Data::Common::StorageType = unsafe {
-            method.invoke_unchecked((), (code))
+            method.invoke_unchecked((), (code))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("HasLocalAggregate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasLocalAggregate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "HasLocalAggregate", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HasRemoteAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("HasRemoteAggregate")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "HasRemoteAggregate", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "HasRemoteAggregate", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsConstant")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsConstant", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "IsConstant", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMixed(
@@ -378,7 +392,7 @@ impl crate::System::Data::BinaryNode {
         left: crate::System::Data::Common::StorageType,
         right: crate::System::Data::Common::StorageType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Data::Common::StorageType,
@@ -389,11 +403,12 @@ impl crate::System::Data::BinaryNode {
             >("IsMixed")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsMixed", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "IsMixed", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMixedSql(
@@ -401,7 +416,7 @@ impl crate::System::Data::BinaryNode {
         left: crate::System::Data::Common::StorageType,
         right: crate::System::Data::Common::StorageType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Data::Common::StorageType,
@@ -412,23 +427,25 @@ impl crate::System::Data::BinaryNode {
             >("IsMixedSql")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsMixedSql", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "IsMixedSql", 2usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (left, right))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("IsTableConstant")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsTableConstant", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "IsTableConstant", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -448,7 +465,7 @@ impl crate::System::Data::BinaryNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
@@ -456,13 +473,14 @@ impl crate::System::Data::BinaryNode {
             >("Optimize")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Optimize", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "Optimize", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::ExpressionNode,
-        > = unsafe { method.invoke_unchecked(self, ()) };
+        > = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ResultSqlType(
@@ -473,7 +491,7 @@ impl crate::System::Data::BinaryNode {
         rc: bool,
         op: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Common::StorageType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Data::Common::StorageType,
@@ -487,12 +505,13 @@ impl crate::System::Data::BinaryNode {
             >("ResultSqlType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResultSqlType", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "ResultSqlType", 5usize
                 )
             });
         let __cordl_ret: crate::System::Data::Common::StorageType = unsafe {
-            method.invoke_unchecked(self, (left, right, lc, rc, op))
+            method.invoke_unchecked(self, (left, right, lc, rc, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -504,7 +523,7 @@ impl crate::System::Data::BinaryNode {
         rc: bool,
         op: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Common::StorageType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     crate::System::Data::Common::StorageType,
@@ -518,12 +537,13 @@ impl crate::System::Data::BinaryNode {
             >("ResultType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "ResultType", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "ResultType", 5usize
                 )
             });
         let __cordl_ret: crate::System::Data::Common::StorageType = unsafe {
-            method.invoke_unchecked(self, (left, right, lc, rc, op))
+            method.invoke_unchecked(self, (left, right, lc, rc, op))?
         };
         Ok(__cordl_ret.into())
     }
@@ -533,7 +553,7 @@ impl crate::System::Data::BinaryNode {
         left: quest_hook::libil2cpp::Gc<crate::System::Type>,
         right: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     i32,
@@ -545,12 +565,13 @@ impl crate::System::Data::BinaryNode {
             >("SetTypeMismatchError")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SetTypeMismatchError", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "SetTypeMismatchError", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (op, left, right))
+            method.invoke_unchecked(self, (op, left, right))?
         };
         Ok(__cordl_ret.into())
     }
@@ -558,15 +579,16 @@ impl crate::System::Data::BinaryNode {
         &mut self,
         typeCode: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<(i32), i32, 1usize>("SqlResultType")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "SqlResultType", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), "SqlResultType", 1usize
                 )
             });
-        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (typeCode)) };
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (typeCode))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -576,7 +598,7 @@ impl crate::System::Data::BinaryNode {
         left: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
         right: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::System::Data::BinaryNode as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -589,12 +611,13 @@ impl crate::System::Data::BinaryNode {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 4usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::System::Data::BinaryNode as quest_hook::libil2cpp::Type >
+                    ::class(), ".ctor", 4usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (table, op, left, right))
+            method.invoke_unchecked(self, (table, op, left, right))?
         };
         Ok(__cordl_ret.into())
     }

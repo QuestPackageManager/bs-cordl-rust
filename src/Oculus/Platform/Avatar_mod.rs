@@ -49,7 +49,7 @@ impl crate::Oculus::Platform::Avatar {
             >,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Oculus::Platform::Avatar as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::AvatarEditorOptions,
@@ -65,8 +65,9 @@ impl crate::Oculus::Platform::Avatar {
             >("LaunchAvatarEditor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "LaunchAvatarEditor", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Oculus::Platform::Avatar as quest_hook::libil2cpp::Type >
+                    ::class(), "LaunchAvatarEditor", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
@@ -75,7 +76,7 @@ impl crate::Oculus::Platform::Avatar {
                     crate::Oculus::Platform::Models::AvatarEditorResult,
                 >,
             >,
-        > = unsafe { method.invoke_unchecked((), (options)) };
+        > = unsafe { method.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
 }

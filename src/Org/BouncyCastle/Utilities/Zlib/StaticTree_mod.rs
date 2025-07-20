@@ -75,7 +75,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::StaticTree {
         elems: i32,
         max_length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::Org::BouncyCastle::Utilities::Zlib::StaticTree as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
@@ -89,8 +89,9 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::StaticTree {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 5usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::Org::BouncyCastle::Utilities::Zlib::StaticTree as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 5usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
@@ -98,7 +99,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::StaticTree {
                 .invoke_unchecked(
                     self,
                     (static_tree, extra_bits, extra_base, elems, max_length),
-                )
+                )?
         };
         Ok(__cordl_ret.into())
     }

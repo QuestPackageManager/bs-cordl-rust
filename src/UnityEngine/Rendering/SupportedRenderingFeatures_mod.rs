@@ -82,7 +82,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     pub fn FallbackLightmapperByRef(
         lightmapperPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -90,19 +90,21 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("FallbackLightmapperByRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FallbackLightmapperByRef", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "FallbackLightmapperByRef",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (lightmapperPtr))
+            method.invoke_unchecked((), (lightmapperPtr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn FallbackMixedLightingModeByRef(
         fallbackModePtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -110,19 +112,21 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("FallbackMixedLightingModeByRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "FallbackMixedLightingModeByRef", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "FallbackMixedLightingModeByRef", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (fallbackModePtr))
+            method.invoke_unchecked((), (fallbackModePtr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsAutoAmbientProbeBakingSupported(
         isSupportedPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -130,19 +134,21 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsAutoAmbientProbeBakingSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAutoAmbientProbeBakingSupported", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsAutoAmbientProbeBakingSupported", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (isSupportedPtr))
+            method.invoke_unchecked((), (isSupportedPtr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsAutoDefaultReflectionProbeBakingSupported(
         isSupportedPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -150,19 +156,21 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsAutoDefaultReflectionProbeBakingSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsAutoDefaultReflectionProbeBakingSupported", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsAutoDefaultReflectionProbeBakingSupported", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (isSupportedPtr))
+            method.invoke_unchecked((), (isSupportedPtr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsLightmapBakeTypeSupported(
         bakeType: crate::UnityEngine::LightmapBakeType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::LightmapBakeType),
                 bool,
@@ -170,18 +178,20 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsLightmapBakeTypeSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLightmapBakeTypeSupported", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsLightmapBakeTypeSupported", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bakeType)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (bakeType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsLightmapBakeTypeSupportedByRef(
         bakeType: crate::UnityEngine::LightmapBakeType,
         isSupportedPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::LightmapBakeType, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -189,12 +199,14 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsLightmapBakeTypeSupportedByRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLightmapBakeTypeSupportedByRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsLightmapBakeTypeSupportedByRef", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (bakeType, isSupportedPtr))
+            method.invoke_unchecked((), (bakeType, isSupportedPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -202,7 +214,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         lightmapper: i32,
         isSupportedPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (i32, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -210,12 +222,14 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsLightmapperSupportedByRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLightmapperSupportedByRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsLightmapperSupportedByRef", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (lightmapper, isSupportedPtr))
+            method.invoke_unchecked((), (lightmapper, isSupportedPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +237,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         mode: crate::UnityEngine::LightmapsMode,
         isSupportedPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::LightmapsMode, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -231,19 +245,21 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsLightmapsModeSupportedByRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsLightmapsModeSupportedByRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsLightmapsModeSupportedByRef", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mode, isSupportedPtr))
+            method.invoke_unchecked((), (mode, isSupportedPtr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsMixedLightingModeSupported(
         mixedMode: crate::UnityEngine::MixedLightingMode,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::MixedLightingMode),
                 bool,
@@ -251,18 +267,20 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsMixedLightingModeSupported")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsMixedLightingModeSupported", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsMixedLightingModeSupported", 1usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mixedMode)) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mixedMode))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsMixedLightingModeSupportedByRef(
         mixedMode: crate::UnityEngine::MixedLightingMode,
         isSupportedPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::UnityEngine::MixedLightingMode, crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -270,19 +288,21 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsMixedLightingModeSupportedByRef")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsMixedLightingModeSupportedByRef", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "IsMixedLightingModeSupportedByRef", 2usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (mixedMode, isSupportedPtr))
+            method.invoke_unchecked((), (mixedMode, isSupportedPtr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IsUIOverlayRenderedBySRP(
         isSupportedPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -290,12 +310,14 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("IsUIOverlayRenderedBySRP")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "IsUIOverlayRenderedBySRP", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "IsUIOverlayRenderedBySRP",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (isSupportedPtr))
+            method.invoke_unchecked((), (isSupportedPtr))?
         };
         Ok(__cordl_ret.into())
     }
@@ -309,7 +331,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     pub fn OverridesLightProbeSystem(
         overridesPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (crate::System::IntPtr),
                 quest_hook::libil2cpp::Void,
@@ -317,28 +339,31 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("OverridesLightProbeSystem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "OverridesLightProbeSystem", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "OverridesLightProbeSystem",
+                    1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (overridesPtr))
+            method.invoke_unchecked((), (overridesPtr))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), ".ctor", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -347,7 +372,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             crate::UnityEngine::Rendering::SupportedRenderingFeatures,
         >,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (),
                 quest_hook::libil2cpp::Gc<
@@ -357,39 +382,44 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("get_active")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_active", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "get_active", 0usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::SupportedRenderingFeatures,
-        > = unsafe { method.invoke_unchecked((), ()) };
+        > = unsafe { method.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_autoAmbientProbeBaking(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_autoAmbientProbeBaking")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_autoAmbientProbeBaking", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_autoAmbientProbeBaking", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_autoDefaultReflectionProbeBaking(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_autoDefaultReflectionProbeBaking")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_autoDefaultReflectionProbeBaking", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_autoDefaultReflectionProbeBaking", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultMixedLightingModes(
@@ -397,7 +427,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
@@ -405,43 +435,48 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("get_defaultMixedLightingModes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_defaultMixedLightingModes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_defaultMixedLightingModes", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_enlighten(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_enlighten")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_enlighten", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "get_enlighten", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_enlightenLightmapper(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_enlightenLightmapper")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_enlightenLightmapper", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "get_enlightenLightmapper",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_lightmapBakeTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LightmapBakeType> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::LightmapBakeType,
@@ -449,19 +484,21 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("get_lightmapBakeTypes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lightmapBakeTypes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "get_lightmapBakeTypes",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::LightmapBakeType = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_lightmapsModes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LightmapsMode> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::LightmapsMode,
@@ -469,12 +506,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("get_lightmapsModes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_lightmapsModes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "get_lightmapsModes", 0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::LightmapsMode = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -483,7 +521,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
     > {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (),
                 crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
@@ -491,39 +529,45 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("get_mixedLightingModes")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_mixedLightingModes", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "get_mixedLightingModes",
+                    0usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_overridesLightProbeSystem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_overridesLightProbeSystem")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_overridesLightProbeSystem", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(),
+                    "get_overridesLightProbeSystem", 0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_rendersUIOverlay(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), bool, 0usize>("get_rendersUIOverlay")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_rendersUIOverlay", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "get_rendersUIOverlay",
+                    0usize
                 )
             });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_active(
@@ -531,7 +575,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             crate::UnityEngine::Rendering::SupportedRenderingFeatures,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Rendering::SupportedRenderingFeatures as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::Rendering::SupportedRenderingFeatures,
@@ -541,12 +585,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
             >("set_active")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_active", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Rendering::SupportedRenderingFeatures as
+                    quest_hook::libil2cpp::Type > ::class(), "set_active", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked((), (value))
+            method.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }

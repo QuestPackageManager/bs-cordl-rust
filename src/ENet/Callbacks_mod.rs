@@ -56,7 +56,7 @@ impl crate::ENet::Callbacks {
         freeCallback: quest_hook::libil2cpp::Gc<crate::ENet::FreeCallback>,
         noMemoryCallback: quest_hook::libil2cpp::Gc<crate::ENet::NoMemoryCallback>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Callbacks as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (
                     quest_hook::libil2cpp::Gc<crate::ENet::AllocCallback>,
@@ -68,29 +68,31 @@ impl crate::ENet::Callbacks {
             >(".ctor")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, ".ctor", 3usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::Callbacks as quest_hook::libil2cpp::Type > ::class(),
+                    ".ctor", 3usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
-                .invoke_unchecked(self, (allocCallback, freeCallback, noMemoryCallback))
+                .invoke_unchecked(self, (allocCallback, freeCallback, noMemoryCallback))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_NativeData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::ENet::ENetCallbacks> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Callbacks as quest_hook::libil2cpp::Type>::class()
             .find_method::<(), crate::ENet::ENetCallbacks, 0usize>("get_NativeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "get_NativeData", 0usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::Callbacks as quest_hook::libil2cpp::Type > ::class(),
+                    "get_NativeData", 0usize
                 )
             });
         let __cordl_ret: crate::ENet::ENetCallbacks = unsafe {
-            method.invoke_unchecked(self, ())
+            method.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +100,7 @@ impl crate::ENet::Callbacks {
         &mut self,
         value: crate::ENet::ENetCallbacks,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::ENet::Callbacks as quest_hook::libil2cpp::Type>::class()
             .find_method::<
                 (crate::ENet::ENetCallbacks),
                 quest_hook::libil2cpp::Void,
@@ -106,12 +108,13 @@ impl crate::ENet::Callbacks {
             >("set_NativeData")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "set_NativeData", 1usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::ENet::Callbacks as quest_hook::libil2cpp::Type > ::class(),
+                    "set_NativeData", 1usize
                 )
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, (value))
+            method.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

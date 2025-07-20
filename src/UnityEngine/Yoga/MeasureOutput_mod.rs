@@ -42,7 +42,7 @@ impl crate::UnityEngine::Yoga::MeasureOutput {
         width: f32,
         height: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaSize> {
-        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <crate::UnityEngine::Yoga::MeasureOutput as quest_hook::libil2cpp::Type>::class()
             .find_static_method::<
                 (f32, f32),
                 crate::UnityEngine::Yoga::YogaSize,
@@ -50,12 +50,13 @@ impl crate::UnityEngine::Yoga::MeasureOutput {
             >("Make")
             .unwrap_or_else(|e| {
                 panic!(
-                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                    self, "Make", 2usize
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}", <
+                    crate ::UnityEngine::Yoga::MeasureOutput as
+                    quest_hook::libil2cpp::Type > ::class(), "Make", 2usize
                 )
             });
         let __cordl_ret: crate::UnityEngine::Yoga::YogaSize = unsafe {
-            method.invoke_unchecked((), (width, height))
+            method.invoke_unchecked((), (width, height))?
         };
         Ok(__cordl_ret.into())
     }
